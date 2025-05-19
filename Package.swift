@@ -190,79 +190,79 @@ let package = Package(
         ),
         .binaryTarget(
             name: "DriveKitBeaconUtils",
-            path: "DriveKitBeaconUtilsModule.xcframework"
+            path: "Frameworks/DriveKitBeaconUtils/DriveKitBeaconUtilsModule.xcframework"
         ),
         .binaryTarget(
             name: "DriveKitChallenge",
-            path: "DriveKitChallengeModule.xcframework"
+            path: "Frameworks/DriveKitChallenge/DriveKitChallengeModule.xcframework"
         ),
         .binaryTarget(
             name: "DriveKitCoaching",
-            path: "DriveKitCoachingModule.xcframework"
+            path: "Frameworks/DriveKitCoaching/DriveKitCoachingModule.xcframework"
         ),
         .binaryTarget(
             name: "DriveKitCore",
-            path: "DriveKitCoreModule.xcframework"
+            path: "Frameworks/DriveKitCore/DriveKitCoreModule.xcframework"
         ),
         .binaryTarget(
             name: "DriveKitDBAchievementAccess",
-            path: "DriveKitDBAchievementAccessModule.xcframework"
+            path: "Frameworks/DriveKitDBAchievementAccess/DriveKitDBAchievementAccessModule.xcframework"
         ),
         .binaryTarget(
             name: "DriveKitDBChallengeAccess",
-            path: "DriveKitDBChallengeAccessModule.xcframework"
+            path: "Frameworks/DriveKitDBChallengeAccess/DriveKitDBChallengeAccessModule.xcframework"
         ),
         .binaryTarget(
             name: "DriveKitDBCoachingAccess",
-            path: "DriveKitDBCoachingAccessModule.xcframework"
+            path: "Frameworks/DriveKitDBCoachingAccess/DriveKitDBCoachingAccessModule.xcframework"
         ),
         .binaryTarget(
             name: "DriveKitDBGroupAccess",
-            path: "DriveKitDBGroupAccessModule.xcframework"
+            path: "Frameworks/DriveKitDBGroupAccess/DriveKitDBGroupAccessModule.xcframework"
         ),
         .binaryTarget(
             name: "DriveKitDBTripAccess",
-            path: "DriveKitDBTripAccessModule.xcframework"
+            path: "Frameworks/DriveKitDBTripAccess/DriveKitDBTripAccessModule.xcframework"
         ),
         .binaryTarget(
             name: "DriveKitDBVehicleAccess",
-            path: "DriveKitDBVehicleAccessModule.xcframework"
+            path: "Frameworks/DriveKitDBVehicleAccess/DriveKitDBVehicleAccessModule.xcframework"
         ),
         .binaryTarget(
             name: "DriveKitDriverAchievement",
-            path: "DriveKitDriverAchievementModule.xcframework"
+            path: "Frameworks/DriveKitDriverAchievement/DriveKitDriverAchievementModule.xcframework"
         ),
         .binaryTarget(
             name: "DriveKitDriverData",
-            path: "DriveKitDriverDataModule.xcframework"
+            path: "Frameworks/DriveKitDriverData/DriveKitDriverDataModule.xcframework"
         ),
         .binaryTarget(
             name: "DriveKitGroup",
-            path: "DriveKitGroupModule.xcframework"
+            path: "Frameworks/DriveKitGroup/DriveKitGroupModule.xcframework"
         ),
         .binaryTarget(
             name: "DriveKitNetworking",
-            path: "DriveKitNetworkingModule.xcframework"
+            path: "Frameworks/DriveKitNetworking/DriveKitNetworkingModule.xcframework"
         ),
         .binaryTarget(
             name: "DriveKitTripAnalysis",
-            path: "DriveKitTripAnalysisModule.xcframework"
+            path: "Frameworks/DriveKitTripAnalysis/DriveKitTripAnalysisModule.xcframework"
         ),
         .binaryTarget(
             name: "DriveKitTripSimulator",
-            path: "DriveKitTripSimulatorModule.xcframework"
+            path: "Frameworks/DriveKitTripSimulator/DriveKitTripSimulatorModule.xcframework"
         ),
         .binaryTarget(
             name: "DriveKitTripSimulatorApi",
-            path: "DriveKitTripSimulatorApiModule.xcframework"
+            path: "Frameworks/DriveKitTripSimulatorApi/DriveKitTripSimulatorApiModule.xcframework"
         ),
         .binaryTarget(
             name: "DriveKitTripSimulatorNoop",
-            path: "DriveKitTripSimulatorNoopModule.xcframework"
+            path: "Frameworks/DriveKitTripSimulatorNoop/DriveKitTripSimulatorModule.xcframework"
         ),
         .binaryTarget(
             name: "DriveKitVehicle",
-            path: "DriveKitVehicleModule.xcframework"
+            path: "Frameworks/DriveKitVehicle/DriveKitVehicleModule.xcframework"
         ),
     ]
 )
