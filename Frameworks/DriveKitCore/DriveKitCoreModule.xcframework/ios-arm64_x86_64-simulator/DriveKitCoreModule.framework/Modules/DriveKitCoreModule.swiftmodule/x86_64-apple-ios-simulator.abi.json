@@ -26040,14 +26040,14 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/logs\/DriveKitLog.swift",
       "kind": "StringLiteral",
-      "offset": 13480,
+      "offset": 13612,
       "length": 7,
       "value": "\"ERROR\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/logs\/DriveKitLog.swift",
       "kind": "StringLiteral",
-      "offset": 13504,
+      "offset": 13636,
       "length": 6,
       "value": "\"INFO\""
     },
@@ -26600,196 +26600,196 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "Dictionary",
-      "offset": 409,
+      "offset": 441,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 733,
+      "offset": 765,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "StringLiteral",
-      "offset": 889,
+      "offset": 921,
       "length": 44,
       "value": "\"com.drivequant.drivekit-core.delegateQueue\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2396,
+      "offset": 2428,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 6811,
+      "offset": 6843,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 6886,
+      "offset": 6918,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "StringLiteral",
-      "offset": 7142,
+      "offset": 7174,
       "length": 15,
       "value": "\"Unknown error\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7211,
+      "offset": 7243,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7218,
+      "offset": 7250,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7396,
+      "offset": 7428,
       "length": 3,
       "value": "401"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7466,
+      "offset": 7498,
       "length": 3,
       "value": "403"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7530,
+      "offset": 7562,
       "length": 3,
       "value": "429"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7633,
+      "offset": 7665,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7640,
+      "offset": 7672,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7731,
+      "offset": 7763,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7738,
+      "offset": 7770,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "StringLiteral",
-      "offset": 7936,
+      "offset": 7968,
       "length": 107,
       "value": "\"Error response received for network task with identifier \""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "StringLiteral",
-      "offset": 8007,
+      "offset": 8039,
       "length": 3,
       "value": "\" and http status code \""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "StringLiteral",
-      "offset": 8042,
+      "offset": 8074,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 9351,
+      "offset": 9383,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 9358,
+      "offset": 9390,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "StringLiteral",
-      "offset": 9442,
+      "offset": 9474,
       "length": 66,
       "value": "\"Response received for network task with identifier \""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "StringLiteral",
-      "offset": 9507,
+      "offset": 9539,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "StringLiteral",
-      "offset": 9824,
+      "offset": 9856,
       "length": 107,
       "value": "\"Error response received for network task with identifier \""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "StringLiteral",
-      "offset": 9895,
+      "offset": 9927,
       "length": 3,
       "value": "\" and http status code \""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "StringLiteral",
-      "offset": 9930,
+      "offset": 9962,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "Dictionary",
-      "offset": 12516,
+      "offset": 12548,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "Dictionary",
-      "offset": 12945,
+      "offset": 12977,
       "length": 3,
       "value": "[]"
     },
@@ -27006,7 +27006,7 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/NTP\/NSTimer+ClosureKit.swift",
       "kind": "BooleanLiteral",
-      "offset": 1000,
+      "offset": 1045,
       "length": 5,
       "value": "false"
     },

@@ -46051,21 +46051,21 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/LocationService.swift",
       "kind": "Array",
-      "offset": 506,
+      "offset": 518,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/LocationService.swift",
       "kind": "BooleanLiteral",
-      "offset": 549,
+      "offset": 561,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/LocationService.swift",
       "kind": "StringLiteral",
-      "offset": 655,
+      "offset": 667,
       "length": 60,
       "value": "\"com.drivequant.drivekit-tripAnalysis.locationService.queue\""
     },
@@ -48319,21 +48319,28 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/DriveKitTripAnalysis.swift",
       "kind": "BooleanLiteral",
-      "offset": 4360,
+      "offset": 3244,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/DriveKitTripAnalysis.swift",
       "kind": "BooleanLiteral",
-      "offset": 4410,
+      "offset": 4402,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/DriveKitTripAnalysis.swift",
       "kind": "BooleanLiteral",
-      "offset": 21304,
+      "offset": 4452,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/DriveKitTripAnalysis.swift",
+      "kind": "BooleanLiteral",
+      "offset": 21708,
       "length": 5,
       "value": "false"
     },
