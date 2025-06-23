@@ -8617,16 +8617,6 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "DriveKitTripAnalysisModule",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "DriveKitNetworkingModule",
         "printedName": "DriveKitNetworkingModule",
         "declKind": "Import",
