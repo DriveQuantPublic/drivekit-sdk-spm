@@ -18,7 +18,7 @@
 		</data>
 		<key>ios-arm64/DriveKitNetworkingModule.framework/Info.plist</key>
 		<data>
-		jAKJZz6eYaPrQRPaY7ijR0VOkgQ=
+		OH8VnM8AiUbZCQ4VJDZga08lR3E=
 		</data>
 		<key>ios-arm64/DriveKitNetworkingModule.framework/Modules/DriveKitNetworkingModule.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitNetworkingModule.framework/DriveKitNetworkingModule</key>
 		<data>
-		vU7ps7oxCkEjAUtfB6/X4qdu5qE=
+		939lH5tds3k70qrGuqeUbLI71XY=
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitNetworkingModule.framework/Headers/DriveKitNetworkingModule-Swift.h</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitNetworkingModule.framework/Info.plist</key>
 		<data>
-		Js5tLyxUGfoaXW/g8QR8VAf/hZA=
+		F/NUaBN49cwMqE9u1ZrembMtTjw=
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitNetworkingModule.framework/Modules/DriveKitNetworkingModule.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -102,7 +102,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitNetworkingModule.framework/_CodeSignature/CodeResources</key>
 		<data>
-		YzeZ2FVD+OPkHtOQl22mZiomjJw=
+		j8uv/UzhIAXxl4kcoD1H3xLbWZA=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -144,11 +144,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			jAKJZz6eYaPrQRPaY7ijR0VOkgQ=
+			OH8VnM8AiUbZCQ4VJDZga08lR3E=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZpZ9IKiZSn8KFOiEpc0RqyJhLdazSTJMPwOz/LBMs2A=
+			qTD66hZwmKSGBKKqkNjPnZi9OexeDq2ZLAcDjbU1bYQ=
 			</data>
 		</dict>
 		<key>ios-arm64/DriveKitNetworkingModule.framework/Modules/DriveKitNetworkingModule.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -221,11 +221,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			vU7ps7oxCkEjAUtfB6/X4qdu5qE=
+			939lH5tds3k70qrGuqeUbLI71XY=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZvBRAZ24b7sidUc0zNK1RD2CTrXpe9te6oe2q4CfXtQ=
+			kN40F+Di1Hl0bZ4Vl2UVMyeyfsdqQPR4JWiOO79nweA=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/DriveKitNetworkingModule.framework/Headers/DriveKitNetworkingModule-Swift.h</key>
@@ -254,11 +254,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Js5tLyxUGfoaXW/g8QR8VAf/hZA=
+			F/NUaBN49cwMqE9u1ZrembMtTjw=
 			</data>
 			<key>hash2</key>
 			<data>
-			t5zAzmO92suYVvbqQZNrQrNzsTrwCzQJF9k3QIWv6lQ=
+			RYAZjyFM5Fi4a6te/OuoroE8UE2PmrtqoT1BMgu+4zY=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/DriveKitNetworkingModule.framework/Modules/DriveKitNetworkingModule.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -375,11 +375,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YzeZ2FVD+OPkHtOQl22mZiomjJw=
+			j8uv/UzhIAXxl4kcoD1H3xLbWZA=
 			</data>
 			<key>hash2</key>
 			<data>
-			WeRkrJYrx4cnJ1M4hYnjJdIwURtu7OiYB44TwubZG7E=
+			wQmUm8+T/N6jom0wlyEegTLoaDz5d/f6CcLqWye4NZU=
 			</data>
 		</dict>
 	</dict>
