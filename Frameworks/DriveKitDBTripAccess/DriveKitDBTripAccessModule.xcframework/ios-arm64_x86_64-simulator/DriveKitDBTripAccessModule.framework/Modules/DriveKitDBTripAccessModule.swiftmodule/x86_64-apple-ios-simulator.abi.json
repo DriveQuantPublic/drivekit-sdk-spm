@@ -27302,6 +27302,70 @@
           },
           {
             "kind": "Var",
+            "name": "occupantInfo",
+            "printedName": "occupantInfo",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "DriveKitDBTripAccessModule.DKOccupantInfo?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKOccupantInfo",
+                    "printedName": "DriveKitDBTripAccessModule.DKOccupantInfo",
+                    "usr": "c:@M@DriveKitDBTripAccessModule@objc(cs)DKOccupantInfo"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:26DriveKitDBTripAccessModule6DKTripC12occupantInfoAA010DKOccupantH0CSgvp",
+            "mangledName": "$s26DriveKitDBTripAccessModule6DKTripC12occupantInfoAA010DKOccupantH0CSgvp",
+            "moduleName": "DriveKitDBTripAccessModule",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "DriveKitDBTripAccessModule.DKOccupantInfo?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKOccupantInfo",
+                        "printedName": "DriveKitDBTripAccessModule.DKOccupantInfo",
+                        "usr": "c:@M@DriveKitDBTripAccessModule@objc(cs)DKOccupantInfo"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26DriveKitDBTripAccessModule6DKTripC12occupantInfoAA010DKOccupantH0CSgvg",
+                "mangledName": "$s26DriveKitDBTripAccessModule6DKTripC12occupantInfoAA010DKOccupantH0CSgvg",
+                "moduleName": "DriveKitDBTripAccessModule",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "advancedEnergyEstimation",
             "printedName": "advancedEnergyEstimation",
             "children": [
@@ -28871,6 +28935,553 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DKOccupantInfo",
+        "printedName": "DKOccupantInfo",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "role",
+            "printedName": "role",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DKOccupantRole",
+                "printedName": "DriveKitDBTripAccessModule.DKOccupantRole",
+                "usr": "c:@M@DriveKitDBTripAccessModule@E@DKOccupantRole"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:26DriveKitDBTripAccessModule14DKOccupantInfoC4roleAA0F4RoleOvp",
+            "mangledName": "$s26DriveKitDBTripAccessModule14DKOccupantInfoC4roleAA0F4RoleOvp",
+            "moduleName": "DriveKitDBTripAccessModule",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKOccupantRole",
+                    "printedName": "DriveKitDBTripAccessModule.DKOccupantRole",
+                    "usr": "c:@M@DriveKitDBTripAccessModule@E@DKOccupantRole"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26DriveKitDBTripAccessModule14DKOccupantInfoC4roleAA0F4RoleOvg",
+                "mangledName": "$s26DriveKitDBTripAccessModule14DKOccupantInfoC4roleAA0F4RoleOvg",
+                "moduleName": "DriveKitDBTripAccessModule",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "passengerProbability",
+            "printedName": "passengerProbability",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:26DriveKitDBTripAccessModule14DKOccupantInfoC20passengerProbabilitys5Int32Vvp",
+            "mangledName": "$s26DriveKitDBTripAccessModule14DKOccupantInfoC20passengerProbabilitys5Int32Vvp",
+            "moduleName": "DriveKitDBTripAccessModule",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int32",
+                    "printedName": "Swift.Int32",
+                    "usr": "s:s5Int32V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26DriveKitDBTripAccessModule14DKOccupantInfoC20passengerProbabilitys5Int32Vvg",
+                "mangledName": "$s26DriveKitDBTripAccessModule14DKOccupantInfoC20passengerProbabilitys5Int32Vvg",
+                "moduleName": "DriveKitDBTripAccessModule",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DKOccupantInfo",
+                "printedName": "DriveKitDBTripAccessModule.DKOccupantInfo",
+                "usr": "c:@M@DriveKitDBTripAccessModule@objc(cs)DKOccupantInfo"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@DriveKitDBTripAccessModule@objc(cs)DKOccupantInfo(im)init",
+            "mangledName": "$s26DriveKitDBTripAccessModule14DKOccupantInfoCACycfc",
+            "moduleName": "DriveKitDBTripAccessModule",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@DriveKitDBTripAccessModule@objc(cs)DKOccupantInfo",
+        "mangledName": "$s26DriveKitDBTripAccessModule14DKOccupantInfoC",
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DKOccupantRole",
+        "printedName": "DKOccupantRole",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "unavailable",
+            "printedName": "unavailable",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitDBTripAccessModule.DKOccupantRole.Type) -> DriveKitDBTripAccessModule.DKOccupantRole",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKOccupantRole",
+                    "printedName": "DriveKitDBTripAccessModule.DKOccupantRole",
+                    "usr": "c:@M@DriveKitDBTripAccessModule@E@DKOccupantRole"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DriveKitDBTripAccessModule.DKOccupantRole.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKOccupantRole",
+                        "printedName": "DriveKitDBTripAccessModule.DKOccupantRole",
+                        "usr": "c:@M@DriveKitDBTripAccessModule@E@DKOccupantRole"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@DriveKitDBTripAccessModule@E@DKOccupantRole@DKOccupantRoleUnavailable",
+            "mangledName": "$s26DriveKitDBTripAccessModule14DKOccupantRoleO11unavailableyA2CmF",
+            "moduleName": "DriveKitDBTripAccessModule",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 0
+          },
+          {
+            "kind": "Var",
+            "name": "driver",
+            "printedName": "driver",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitDBTripAccessModule.DKOccupantRole.Type) -> DriveKitDBTripAccessModule.DKOccupantRole",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKOccupantRole",
+                    "printedName": "DriveKitDBTripAccessModule.DKOccupantRole",
+                    "usr": "c:@M@DriveKitDBTripAccessModule@E@DKOccupantRole"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DriveKitDBTripAccessModule.DKOccupantRole.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKOccupantRole",
+                        "printedName": "DriveKitDBTripAccessModule.DKOccupantRole",
+                        "usr": "c:@M@DriveKitDBTripAccessModule@E@DKOccupantRole"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@DriveKitDBTripAccessModule@E@DKOccupantRole@DKOccupantRoleDriver",
+            "mangledName": "$s26DriveKitDBTripAccessModule14DKOccupantRoleO6driveryA2CmF",
+            "moduleName": "DriveKitDBTripAccessModule",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
+            "name": "passenger",
+            "printedName": "passenger",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitDBTripAccessModule.DKOccupantRole.Type) -> DriveKitDBTripAccessModule.DKOccupantRole",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKOccupantRole",
+                    "printedName": "DriveKitDBTripAccessModule.DKOccupantRole",
+                    "usr": "c:@M@DriveKitDBTripAccessModule@E@DKOccupantRole"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DriveKitDBTripAccessModule.DKOccupantRole.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKOccupantRole",
+                        "printedName": "DriveKitDBTripAccessModule.DKOccupantRole",
+                        "usr": "c:@M@DriveKitDBTripAccessModule@E@DKOccupantRole"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@DriveKitDBTripAccessModule@E@DKOccupantRole@DKOccupantRolePassenger",
+            "mangledName": "$s26DriveKitDBTripAccessModule14DKOccupantRoleO9passengeryA2CmF",
+            "moduleName": "DriveKitDBTripAccessModule",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 2
+          },
+          {
+            "kind": "Var",
+            "name": "notApplicable",
+            "printedName": "notApplicable",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitDBTripAccessModule.DKOccupantRole.Type) -> DriveKitDBTripAccessModule.DKOccupantRole",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKOccupantRole",
+                    "printedName": "DriveKitDBTripAccessModule.DKOccupantRole",
+                    "usr": "c:@M@DriveKitDBTripAccessModule@E@DKOccupantRole"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DriveKitDBTripAccessModule.DKOccupantRole.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKOccupantRole",
+                        "printedName": "DriveKitDBTripAccessModule.DKOccupantRole",
+                        "usr": "c:@M@DriveKitDBTripAccessModule@E@DKOccupantRole"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@DriveKitDBTripAccessModule@E@DKOccupantRole@DKOccupantRoleNotApplicable",
+            "mangledName": "$s26DriveKitDBTripAccessModule14DKOccupantRoleO13notApplicableyA2CmF",
+            "moduleName": "DriveKitDBTripAccessModule",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 3
+          },
+          {
+            "kind": "Function",
+            "name": "fromString",
+            "printedName": "fromString(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DKOccupantRole",
+                "printedName": "DriveKitDBTripAccessModule.DKOccupantRole",
+                "usr": "c:@M@DriveKitDBTripAccessModule@E@DKOccupantRole"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:26DriveKitDBTripAccessModule14DKOccupantRoleO10fromStringyACSSSgFZ",
+            "mangledName": "$s26DriveKitDBTripAccessModule14DKOccupantRoleO10fromStringyACSSSgFZ",
+            "moduleName": "DriveKitDBTripAccessModule",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "DriveKitDBTripAccessModule.DKOccupantRole?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKOccupantRole",
+                    "printedName": "DriveKitDBTripAccessModule.DKOccupantRole",
+                    "usr": "c:@M@DriveKitDBTripAccessModule@E@DKOccupantRole"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:26DriveKitDBTripAccessModule14DKOccupantRoleO8rawValueACSgSi_tcfc",
+            "mangledName": "$s26DriveKitDBTripAccessModule14DKOccupantRoleO8rawValueACSgSi_tcfc",
+            "moduleName": "DriveKitDBTripAccessModule",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:26DriveKitDBTripAccessModule14DKOccupantRoleO8rawValueSivp",
+            "mangledName": "$s26DriveKitDBTripAccessModule14DKOccupantRoleO8rawValueSivp",
+            "moduleName": "DriveKitDBTripAccessModule",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26DriveKitDBTripAccessModule14DKOccupantRoleO8rawValueSivg",
+                "mangledName": "$s26DriveKitDBTripAccessModule14DKOccupantRoleO8rawValueSivg",
+                "moduleName": "DriveKitDBTripAccessModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@DriveKitDBTripAccessModule@E@DKOccupantRole",
+        "mangledName": "$s26DriveKitDBTripAccessModule14DKOccupantRoleO",
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "enumRawTypeName": "Int",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
           }
         ]
       },
@@ -62760,6 +63371,557 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "DBOccupantInfo",
+        "printedName": "DBOccupantInfo",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(entity:insertInto:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DBOccupantInfo",
+                "printedName": "DriveKitDBTripAccessModule.DBOccupantInfo",
+                "usr": "c:@M@DriveKitDBTripAccessModule@objc(cs)DBOccupantInfo"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSEntityDescription",
+                "printedName": "CoreData.NSEntityDescription",
+                "usr": "c:objc(cs)NSEntityDescription"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "CoreData.NSManagedObjectContext?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSManagedObjectContext",
+                    "printedName": "CoreData.NSManagedObjectContext",
+                    "usr": "c:objc(cs)NSManagedObjectContext"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@DriveKitDBTripAccessModule@objc(cs)DBOccupantInfo(im)initWithEntity:insertIntoManagedObjectContext:",
+            "mangledName": "$s26DriveKitDBTripAccessModule14DBOccupantInfoC6entity10insertIntoACSo19NSEntityDescriptionC_So22NSManagedObjectContextCSgtcfc",
+            "moduleName": "DriveKitDBTripAccessModule",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithEntity:insertIntoManagedObjectContext:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "convertToUnmanagedObject",
+            "printedName": "convertToUnmanagedObject()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "GenericTypeParam",
+                "printedName": "τ_0_0"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:26DriveKitDBTripAccessModule14DBOccupantInfoC24convertToUnmanagedObjectxylF",
+            "mangledName": "$s26DriveKitDBTripAccessModule14DBOccupantInfoC24convertToUnmanagedObjectxylF",
+            "moduleName": "DriveKitDBTripAccessModule",
+            "genericSig": "<τ_0_0>",
+            "sugared_genericSig": "<T>",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchRequest",
+            "printedName": "fetchRequest()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NSFetchRequest",
+                "printedName": "CoreData.NSFetchRequest<DriveKitDBTripAccessModule.DBOccupantInfo>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DBOccupantInfo",
+                    "printedName": "DriveKitDBTripAccessModule.DBOccupantInfo",
+                    "usr": "c:@M@DriveKitDBTripAccessModule@objc(cs)DBOccupantInfo"
+                  }
+                ],
+                "usr": "c:objc(cs)NSFetchRequest"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:26DriveKitDBTripAccessModule14DBOccupantInfoC12fetchRequestSo07NSFetchI0CyACGyFZ",
+            "mangledName": "$s26DriveKitDBTripAccessModule14DBOccupantInfoC12fetchRequestSo07NSFetchI0CyACGyFZ",
+            "moduleName": "DriveKitDBTripAccessModule",
+            "static": true,
+            "declAttributes": [
+              "AccessControl",
+              "NonObjC"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "passengerProbability",
+            "printedName": "passengerProbability",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int32",
+                "printedName": "Swift.Int32",
+                "usr": "s:s5Int32V"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@DriveKitDBTripAccessModule@objc(cs)DBOccupantInfo(py)passengerProbability",
+            "mangledName": "$s26DriveKitDBTripAccessModule14DBOccupantInfoC20passengerProbabilitys5Int32Vvp",
+            "moduleName": "DriveKitDBTripAccessModule",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int32",
+                    "printedName": "Swift.Int32",
+                    "usr": "s:s5Int32V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@DriveKitDBTripAccessModule@objc(cs)DBOccupantInfo(im)passengerProbability",
+                "mangledName": "$s26DriveKitDBTripAccessModule14DBOccupantInfoC20passengerProbabilitys5Int32Vvg",
+                "moduleName": "DriveKitDBTripAccessModule",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int32",
+                    "printedName": "Swift.Int32",
+                    "usr": "s:s5Int32V"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@DriveKitDBTripAccessModule@objc(cs)DBOccupantInfo(im)setPassengerProbability:",
+                "mangledName": "$s26DriveKitDBTripAccessModule14DBOccupantInfoC20passengerProbabilitys5Int32Vvs",
+                "moduleName": "DriveKitDBTripAccessModule",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "role",
+            "printedName": "role",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@DriveKitDBTripAccessModule@objc(cs)DBOccupantInfo(py)role",
+            "mangledName": "$s26DriveKitDBTripAccessModule14DBOccupantInfoC4roleSSSgvp",
+            "moduleName": "DriveKitDBTripAccessModule",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@DriveKitDBTripAccessModule@objc(cs)DBOccupantInfo(im)role",
+                "mangledName": "$s26DriveKitDBTripAccessModule14DBOccupantInfoC4roleSSSgvg",
+                "moduleName": "DriveKitDBTripAccessModule",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@DriveKitDBTripAccessModule@objc(cs)DBOccupantInfo(im)setRole:",
+                "mangledName": "$s26DriveKitDBTripAccessModule14DBOccupantInfoC4roleSSSgvs",
+                "moduleName": "DriveKitDBTripAccessModule",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "itinerary",
+            "printedName": "itinerary",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "DriveKitDBTripAccessModule.DBTrip?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DBTrip",
+                    "printedName": "DriveKitDBTripAccessModule.DBTrip",
+                    "usr": "c:@M@DriveKitDBTripAccessModule@objc(cs)DBTrip"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@DriveKitDBTripAccessModule@objc(cs)DBOccupantInfo(py)itinerary",
+            "mangledName": "$s26DriveKitDBTripAccessModule14DBOccupantInfoC9itineraryAA0C0CSgvp",
+            "moduleName": "DriveKitDBTripAccessModule",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "DriveKitDBTripAccessModule.DBTrip?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DBTrip",
+                        "printedName": "DriveKitDBTripAccessModule.DBTrip",
+                        "usr": "c:@M@DriveKitDBTripAccessModule@objc(cs)DBTrip"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@DriveKitDBTripAccessModule@objc(cs)DBOccupantInfo(im)itinerary",
+                "mangledName": "$s26DriveKitDBTripAccessModule14DBOccupantInfoC9itineraryAA0C0CSgvg",
+                "moduleName": "DriveKitDBTripAccessModule",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "DriveKitDBTripAccessModule.DBTrip?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DBTrip",
+                        "printedName": "DriveKitDBTripAccessModule.DBTrip",
+                        "usr": "c:@M@DriveKitDBTripAccessModule@objc(cs)DBTrip"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@DriveKitDBTripAccessModule@objc(cs)DBOccupantInfo(im)setItinerary:",
+                "mangledName": "$s26DriveKitDBTripAccessModule14DBOccupantInfoC9itineraryAA0C0CSgvs",
+                "moduleName": "DriveKitDBTripAccessModule",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@DriveKitDBTripAccessModule@objc(cs)DBOccupantInfo",
+        "mangledName": "$s26DriveKitDBTripAccessModule14DBOccupantInfoC",
+        "moduleName": "DriveKitDBTripAccessModule",
+        "objc_name": "DBOccupantInfo",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSManagedObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "CoreData.NSManagedObject",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ObservableObject",
+            "printedName": "ObservableObject",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ObjectWillChangePublisher",
+                "printedName": "ObjectWillChangePublisher",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObservableObjectPublisher",
+                    "printedName": "Combine.ObservableObjectPublisher",
+                    "usr": "s:7Combine25ObservableObjectPublisherC"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:7Combine16ObservableObjectP",
+            "mangledName": "$s7Combine16ObservableObjectP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Identifiable",
+            "printedName": "Identifiable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "ID",
+                "printedName": "ID",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ObjectIdentifier",
+                    "printedName": "Swift.ObjectIdentifier",
+                    "usr": "s:SO"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s12IdentifiableP",
+            "mangledName": "$ss12IdentifiableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "DriveKitDBTripAccessModule"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "DriveKitDBTripAccessModule"
+      },
+      {
+        "kind": "TypeDecl",
         "name": "DBPollutants",
         "printedName": "DBPollutants",
         "children": [
@@ -73384,6 +74546,109 @@
           },
           {
             "kind": "Var",
+            "name": "occupantInfo",
+            "printedName": "occupantInfo",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "DriveKitDBTripAccessModule.DBOccupantInfo?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DBOccupantInfo",
+                    "printedName": "DriveKitDBTripAccessModule.DBOccupantInfo",
+                    "usr": "c:@M@DriveKitDBTripAccessModule@objc(cs)DBOccupantInfo"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@DriveKitDBTripAccessModule@objc(cs)DBTrip(py)occupantInfo",
+            "mangledName": "$s26DriveKitDBTripAccessModule0C0C12occupantInfoAA010DBOccupantG0CSgvp",
+            "moduleName": "DriveKitDBTripAccessModule",
+            "declAttributes": [
+              "Dynamic",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "DriveKitDBTripAccessModule.DBOccupantInfo?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DBOccupantInfo",
+                        "printedName": "DriveKitDBTripAccessModule.DBOccupantInfo",
+                        "usr": "c:@M@DriveKitDBTripAccessModule@objc(cs)DBOccupantInfo"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@DriveKitDBTripAccessModule@objc(cs)DBTrip(im)occupantInfo",
+                "mangledName": "$s26DriveKitDBTripAccessModule0C0C12occupantInfoAA010DBOccupantG0CSgvg",
+                "moduleName": "DriveKitDBTripAccessModule",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "DriveKitDBTripAccessModule.DBOccupantInfo?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DBOccupantInfo",
+                        "printedName": "DriveKitDBTripAccessModule.DBOccupantInfo",
+                        "usr": "c:@M@DriveKitDBTripAccessModule@objc(cs)DBOccupantInfo"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@DriveKitDBTripAccessModule@objc(cs)DBTrip(im)setOccupantInfo:",
+                "mangledName": "$s26DriveKitDBTripAccessModule0C0C12occupantInfoAA010DBOccupantG0CSgvs",
+                "moduleName": "DriveKitDBTripAccessModule",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "pollutants",
             "printedName": "pollutants",
             "children": [
@@ -79331,6 +80596,27 @@
       "value": "false"
     },
     {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-db-trip-access\/Model\/DKTrip.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9959,
+      "length": 6,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-db-trip-access\/Model\/DKTrip.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9967,
+      "length": 9,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-db-trip-access\/Model\/DKTrip.swift",
+      "kind": "IntegerLiteral",
+      "offset": 9978,
+      "length": 13,
+      "value": "3"
+    },
+    {
       "filePath": "\/Users\/vagrant\/git\/drivekit-db-trip-access\/ManualTrip\/DKManualTrip.swift",
       "kind": "IntegerLiteral",
       "offset": 9495,
@@ -79417,91 +80703,91 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-db-trip-access\/DriveKitDBTripAccess.swift",
       "kind": "IntegerLiteral",
-      "offset": 16442,
+      "offset": 16553,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-db-trip-access\/DriveKitDBTripAccess.swift",
       "kind": "IntegerLiteral",
-      "offset": 16459,
+      "offset": 16570,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-db-trip-access\/DriveKitDBTripAccess.swift",
       "kind": "IntegerLiteral",
-      "offset": 16477,
+      "offset": 16588,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-db-trip-access\/DriveKitDBTripAccess.swift",
       "kind": "IntegerLiteral",
-      "offset": 16496,
+      "offset": 16607,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-db-trip-access\/DriveKitDBTripAccess.swift",
       "kind": "IntegerLiteral",
-      "offset": 16513,
+      "offset": 16624,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-db-trip-access\/DriveKitDBTripAccess.swift",
       "kind": "IntegerLiteral",
-      "offset": 16532,
+      "offset": 16643,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-db-trip-access\/DriveKitDBTripAccess.swift",
       "kind": "IntegerLiteral",
-      "offset": 16550,
+      "offset": 16661,
       "length": 1,
       "value": "7"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-db-trip-access\/DriveKitDBTripAccess.swift",
       "kind": "IntegerLiteral",
-      "offset": 16568,
+      "offset": 16679,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-db-trip-access\/DriveKitDBTripAccess.swift",
       "kind": "IntegerLiteral",
-      "offset": 16588,
+      "offset": 16699,
       "length": 1,
       "value": "9"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-db-trip-access\/DriveKitDBTripAccess.swift",
       "kind": "IntegerLiteral",
-      "offset": 16608,
+      "offset": 16719,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-db-trip-access\/DriveKitDBTripAccess.swift",
       "kind": "IntegerLiteral",
-      "offset": 16629,
+      "offset": 16740,
       "length": 2,
       "value": "11"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-db-trip-access\/DriveKitDBTripAccess.swift",
       "kind": "IntegerLiteral",
-      "offset": 16648,
+      "offset": 16759,
       "length": 2,
       "value": "12"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-db-trip-access\/DriveKitDBTripAccess.swift",
       "kind": "IntegerLiteral",
-      "offset": 16668,
+      "offset": 16779,
       "length": 2,
       "value": "13"
     },

@@ -596,6 +596,17 @@ SWIFT_CLASS_NAMED("DBManualTrip")
 @property (nonatomic, strong) DBManualManeuver * _Nullable maneuver;
 @end
 
+SWIFT_CLASS_NAMED("DBOccupantInfo")
+@interface DBOccupantInfo : NSManagedObject
+- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@interface DBOccupantInfo (SWIFT_EXTENSION(DriveKitDBTripAccessModule))
+@property (nonatomic) int32_t passengerProbability;
+@property (nonatomic, copy) NSString * _Nullable role;
+@property (nonatomic, strong) DBTrip * _Nullable itinerary;
+@end
+
 SWIFT_CLASS_NAMED("DBPollutants")
 @interface DBPollutants : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
@@ -780,17 +791,17 @@ SWIFT_CLASS_NAMED("DBTrip")
 @end
 
 @interface DBTrip (SWIFT_EXTENSION(DriveKitDBTripAccessModule))
-- (void)addAdvancedEnergyEstimationObject:(DBAdvancedEnergyEstimation * _Nonnull)value;
-- (void)removeAdvancedEnergyEstimationObject:(DBAdvancedEnergyEstimation * _Nonnull)value;
-- (void)addAdvancedEnergyEstimation:(NSSet * _Nonnull)values;
-- (void)removeAdvancedEnergyEstimation:(NSSet * _Nonnull)values;
-@end
-
-@interface DBTrip (SWIFT_EXTENSION(DriveKitDBTripAccessModule))
 - (void)addCallsObject:(DBCall * _Nonnull)value;
 - (void)removeCallsObject:(DBCall * _Nonnull)value;
 - (void)addCalls:(NSSet * _Nonnull)values;
 - (void)removeCalls:(NSSet * _Nonnull)values;
+@end
+
+@interface DBTrip (SWIFT_EXTENSION(DriveKitDBTripAccessModule))
+- (void)addAdvancedEnergyEstimationObject:(DBAdvancedEnergyEstimation * _Nonnull)value;
+- (void)removeAdvancedEnergyEstimationObject:(DBAdvancedEnergyEstimation * _Nonnull)value;
+- (void)addAdvancedEnergyEstimation:(NSSet * _Nonnull)values;
+- (void)removeAdvancedEnergyEstimation:(NSSet * _Nonnull)values;
 @end
 
 @class NSDictionary;
@@ -821,6 +832,7 @@ SWIFT_CLASS_NAMED("DBTrip")
 @property (nonatomic, strong) NSSet * _Nullable fuelEstimationContexts;
 @property (nonatomic, strong) DBLogbook * _Nullable logbook;
 @property (nonatomic, strong) DBManeuver * _Nullable maneuver;
+@property (nonatomic, strong) DBOccupantInfo * _Nullable occupantInfo;
 @property (nonatomic, strong) DBPollutants * _Nullable pollutants;
 @property (nonatomic, strong) DBSafety * _Nullable safety;
 @property (nonatomic, strong) NSSet * _Nullable safetyContexts;
@@ -1022,6 +1034,19 @@ SWIFT_CLASS("_TtC26DriveKitDBTripAccessModule12DKManualTrip")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+SWIFT_CLASS("_TtC26DriveKitDBTripAccessModule14DKOccupantInfo")
+@interface DKOccupantInfo : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+typedef SWIFT_ENUM(NSInteger, DKOccupantRole, open) {
+  DKOccupantRoleUnavailable = 0,
+  DKOccupantRoleDriver = 1,
+  DKOccupantRolePassenger = 2,
+  DKOccupantRoleNotApplicable = 3,
+};
 
 SWIFT_CLASS("_TtC26DriveKitDBTripAccessModule12DKPollutants")
 @interface DKPollutants : NSObject

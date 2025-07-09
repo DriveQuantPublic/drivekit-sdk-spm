@@ -11000,6 +11000,114 @@
       },
       {
         "kind": "Import",
+        "name": "DriveKitNetworkingModule",
+        "printedName": "DriveKitNetworkingModule",
+        "declKind": "Import",
+        "moduleName": "DriveKitTripAnalysisModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "OccupantInfo",
+        "printedName": "OccupantInfo",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "toJSON",
+            "printedName": "toJSON()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:26DriveKitTripAnalysisModule12OccupantInfoV6toJSONSDySSypGyF",
+            "mangledName": "$s26DriveKitTripAnalysisModule12OccupantInfoV6toJSONSDySSypGyF",
+            "moduleName": "DriveKitTripAnalysisModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(json:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "OccupantInfo",
+                "printedName": "DriveKitTripAnalysisModule.OccupantInfo",
+                "usr": "s:26DriveKitTripAnalysisModule12OccupantInfoV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SwiftyJSON",
+                "printedName": "DriveKitNetworkingModule.SwiftyJSON",
+                "usr": "s:24DriveKitNetworkingModule10SwiftyJSONV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:26DriveKitTripAnalysisModule12OccupantInfoV4jsonAC0ab10NetworkingE010SwiftyJSONV_tcfc",
+            "mangledName": "$s26DriveKitTripAnalysisModule12OccupantInfoV4jsonAC0ab10NetworkingE010SwiftyJSONV_tcfc",
+            "moduleName": "DriveKitTripAnalysisModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:26DriveKitTripAnalysisModule12OccupantInfoV",
+        "mangledName": "$s26DriveKitTripAnalysisModule12OccupantInfoV",
+        "moduleName": "DriveKitTripAnalysisModule",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "DriveKitModel",
+            "printedName": "DriveKitModel",
+            "usr": "s:24DriveKitNetworkingModule0aB5ModelP",
+            "mangledName": "$s24DriveKitNetworkingModule0aB5ModelP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -19256,6 +19364,67 @@
                 "declKind": "Accessor",
                 "usr": "s:26DriveKitTripAnalysisModule19PostGenericResponseC18speedingStatisticsAA08SpeedingJ0VSgvg",
                 "mangledName": "$s26DriveKitTripAnalysisModule19PostGenericResponseC18speedingStatisticsAA08SpeedingJ0VSgvg",
+                "moduleName": "DriveKitTripAnalysisModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "occupantInfo",
+            "printedName": "occupantInfo",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "DriveKitTripAnalysisModule.OccupantInfo?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "OccupantInfo",
+                    "printedName": "DriveKitTripAnalysisModule.OccupantInfo",
+                    "usr": "s:26DriveKitTripAnalysisModule12OccupantInfoV"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:26DriveKitTripAnalysisModule19PostGenericResponseC12occupantInfoAA08OccupantJ0VSgvp",
+            "mangledName": "$s26DriveKitTripAnalysisModule19PostGenericResponseC12occupantInfoAA08OccupantJ0VSgvp",
+            "moduleName": "DriveKitTripAnalysisModule",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "DriveKitTripAnalysisModule.OccupantInfo?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "OccupantInfo",
+                        "printedName": "DriveKitTripAnalysisModule.OccupantInfo",
+                        "usr": "s:26DriveKitTripAnalysisModule12OccupantInfoV"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26DriveKitTripAnalysisModule19PostGenericResponseC12occupantInfoAA08OccupantJ0VSgvg",
+                "mangledName": "$s26DriveKitTripAnalysisModule19PostGenericResponseC12occupantInfoAA08OccupantJ0VSgvg",
                 "moduleName": "DriveKitTripAnalysisModule",
                 "implicit": true,
                 "accessorKind": "get"

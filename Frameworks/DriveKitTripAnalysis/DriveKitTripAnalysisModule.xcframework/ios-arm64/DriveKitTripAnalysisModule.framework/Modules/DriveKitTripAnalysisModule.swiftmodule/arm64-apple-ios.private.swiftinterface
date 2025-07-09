@@ -248,6 +248,10 @@ public class BluetoothDevicesList : DriveKitNetworkingModule.DriveKitModel {
   required public init(json: DriveKitNetworkingModule.SwiftyJSON)
   @objc deinit
 }
+public struct OccupantInfo : DriveKitNetworkingModule.DriveKitModel {
+  public func toJSON() -> [Swift.String : Any]
+  public init(json: DriveKitNetworkingModule.SwiftyJSON)
+}
 @objc public class DKCrashFeedbackConfig : ObjectiveC.NSObject {
   final public let crashVelocityThreshold: Swift.Double
   final public let notification: DriveKitTripAnalysisModule.DKCrashFeedbackNotification
@@ -398,6 +402,9 @@ public class FuelEstimationContext : DriveKitNetworkingModule.DriveKitModel {
     get
   }
   public var speedingStatistics: DriveKitTripAnalysisModule.SpeedingStatistics? {
+    get
+  }
+  public var occupantInfo: DriveKitTripAnalysisModule.OccupantInfo? {
     get
   }
   public var energyEstimation: DriveKitTripAnalysisModule.DKEnergyEstimation? {

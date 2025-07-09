@@ -986,34 +986,6 @@
           },
           {
             "kind": "Function",
-            "name": "enableSandboxMode",
-            "printedName": "enableSandboxMode(enable:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@DriveKitCoreModule@objc(cs)DriveKit(im)enableSandboxModeWithEnable:",
-            "mangledName": "$s18DriveKitCoreModule0aB0C17enableSandboxMode0E0ySb_tF",
-            "moduleName": "DriveKitCoreModule",
-            "objc_name": "enableSandboxModeWithEnable:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "enableLogging",
             "printedName": "enableLogging(showInConsole:)",
             "children": [
@@ -26816,21 +26788,21 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/DriveKit.swift",
       "kind": "BooleanLiteral",
-      "offset": 9099,
+      "offset": 9134,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/DriveKit.swift",
       "kind": "BooleanLiteral",
-      "offset": 9244,
+      "offset": 9279,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/DriveKit.swift",
       "kind": "StringLiteral",
-      "offset": 20688,
+      "offset": 20723,
       "length": 19,
       "value": "\"DKAutoInitEnabled\""
     },

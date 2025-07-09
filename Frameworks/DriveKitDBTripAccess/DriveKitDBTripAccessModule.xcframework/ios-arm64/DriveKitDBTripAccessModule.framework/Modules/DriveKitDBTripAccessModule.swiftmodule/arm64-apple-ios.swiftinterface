@@ -495,6 +495,9 @@ extension DriveKitDBTripAccessModule.DBTripAdvice {
 extension DriveKitDBTripAccessModule.DBTripStatistics {
   public func convertToUnmanagedObject<T>() -> T
 }
+extension DriveKitDBTripAccessModule.DBOccupantInfo {
+  public func convertToUnmanagedObject<T>() -> T
+}
 public struct DKCommunityStatistics : Swift.Codable {
   public var activeDriverNumber: Swift.Int
   public var tripNumber: Swift.Int
@@ -736,6 +739,7 @@ public enum DKDistanceProfile : Swift.String, Swift.Codable {
   final public let transportationMode: DriveKitDBTripAccessModule.TransportationMode
   final public let unscored: Swift.Bool
   final public let vehicleId: Swift.String?
+  final public let occupantInfo: DriveKitDBTripAccessModule.DKOccupantInfo?
   public var advancedEnergyEstimation: [DriveKitDBTripAccessModule.DKAdvancedEnergyEstimation]? {
     get
   }
@@ -799,6 +803,20 @@ public enum DKDistanceProfile : Swift.String, Swift.Codable {
   }
   public var tripStatistics: DriveKitDBTripAccessModule.DKTripStatistics?
   @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class DKOccupantInfo : ObjectiveC.NSObject {
+  final public let role: DriveKitDBTripAccessModule.DKOccupantRole
+  final public let passengerProbability: Swift.Int32
+  @objc deinit
+}
+@objc public enum DKOccupantRole : Swift.Int {
+  case unavailable, driver, passenger, notApplicable
+  public static func fromString(_ roleString: Swift.String?) -> DriveKitDBTripAccessModule.DKOccupantRole
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
 }
 @_hasMissingDesignatedInitializers @objc public class DKAdvancedEnergyEstimation : ObjectiveC.NSObject {
   final public let contextId: Swift.Int32
@@ -1944,6 +1962,28 @@ extension DriveKitDBTripAccessModule.DBManualTrip {
 extension DriveKitDBTripAccessModule.DBManualTrip : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
+@_inheritsConvenienceInitializers @objc(DBOccupantInfo) public class DBOccupantInfo : CoreData.NSManagedObject {
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  @objc deinit
+}
+extension DriveKitDBTripAccessModule.DBOccupantInfo {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<DriveKitDBTripAccessModule.DBOccupantInfo>
+  @objc @NSManaged dynamic public var passengerProbability: Swift.Int32 {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var role: Swift.String? {
+    @objc get
+    @objc set
+  }
+  @objc @NSManaged dynamic public var itinerary: DriveKitDBTripAccessModule.DBTrip? {
+    @objc get
+    @objc set
+  }
+}
+extension DriveKitDBTripAccessModule.DBOccupantInfo : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
+}
 @_inheritsConvenienceInitializers @objc(DBPollutants) public class DBPollutants : CoreData.NSManagedObject {
   @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
@@ -2406,6 +2446,10 @@ extension DriveKitDBTripAccessModule.DBTrip {
     @objc get
     @objc set
   }
+  @objc @NSManaged dynamic public var occupantInfo: DriveKitDBTripAccessModule.DBOccupantInfo? {
+    @objc get
+    @objc set
+  }
   @objc @NSManaged dynamic public var pollutants: DriveKitDBTripAccessModule.DBPollutants? {
     @objc get
     @objc set
@@ -2632,6 +2676,9 @@ extension DriveKitDBTripAccessModule.DKSynthesisType : Swift.RawRepresentable {}
 extension DriveKitDBTripAccessModule.DKDistanceProfile : Swift.Equatable {}
 extension DriveKitDBTripAccessModule.DKDistanceProfile : Swift.Hashable {}
 extension DriveKitDBTripAccessModule.DKDistanceProfile : Swift.RawRepresentable {}
+extension DriveKitDBTripAccessModule.DKOccupantRole : Swift.Equatable {}
+extension DriveKitDBTripAccessModule.DKOccupantRole : Swift.Hashable {}
+extension DriveKitDBTripAccessModule.DKOccupantRole : Swift.RawRepresentable {}
 extension DriveKitDBTripAccessModule.DKContext : Swift.Equatable {}
 extension DriveKitDBTripAccessModule.DKContext : Swift.Hashable {}
 extension DriveKitDBTripAccessModule.DKContext : Swift.RawRepresentable {}

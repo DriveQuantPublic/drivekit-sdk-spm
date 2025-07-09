@@ -482,7 +482,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) DriveKit * _
 - (void)removeAllDriveKitDelegates;
 - (void)registerUserWithUserId:(NSString * _Nonnull)userId;
 - (void)deleteAccountWithInstantDeletion:(BOOL)instantDeletion;
-- (void)enableSandboxModeWithEnable:(BOOL)enable;
 - (void)enableLoggingWithShowInConsole:(BOOL)showInConsole;
 - (void)disableLoggingWithShowInConsole:(BOOL)showInConsole;
 - (BOOL)isLoggingEnabled SWIFT_WARN_UNUSED_RESULT;

@@ -50,7 +50,6 @@ import _SwiftConcurrencyShims
   @objc public func removeAllDriveKitDelegates()
   @objc public func registerUser(userId: Swift.String)
   @objc public func deleteAccount(instantDeletion: Swift.Bool = false)
-  @objc public func enableSandboxMode(enable: Swift.Bool)
   @objc public func enableLogging(showInConsole: Swift.Bool = true)
   @objc public func disableLogging(showInConsole: Swift.Bool = true)
   @objc public func isLoggingEnabled() -> Swift.Bool
