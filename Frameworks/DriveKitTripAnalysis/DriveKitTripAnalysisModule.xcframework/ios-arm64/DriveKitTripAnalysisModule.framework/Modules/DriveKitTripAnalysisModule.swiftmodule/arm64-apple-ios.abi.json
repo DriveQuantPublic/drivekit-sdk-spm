@@ -26563,6 +26563,51 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "useCLMonitor",
+            "printedName": "useCLMonitor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:26DriveKitTripAnalysisModule0cD6ConfigC12useCLMonitorSbvp",
+            "mangledName": "$s26DriveKitTripAnalysisModule0cD6ConfigC12useCLMonitorSbvp",
+            "moduleName": "DriveKitTripAnalysisModule",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "SetterAccess",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26DriveKitTripAnalysisModule0cD6ConfigC12useCLMonitorSbvg",
+                "mangledName": "$s26DriveKitTripAnalysisModule0cD6ConfigC12useCLMonitorSbvg",
+                "moduleName": "DriveKitTripAnalysisModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "Constructor",
             "name": "init",
             "printedName": "init()",
@@ -46377,35 +46422,35 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/autostart\/GeoZoneStartManager.swift",
       "kind": "StringLiteral",
-      "offset": 4951,
+      "offset": 4950,
       "length": 110,
       "value": "\"^(\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/autostart\/GeoZoneStartManager.swift",
       "kind": "StringLiteral",
-      "offset": 5000,
+      "offset": 4999,
       "length": 1,
       "value": "\"|\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/autostart\/GeoZoneStartManager.swift",
       "kind": "StringLiteral",
-      "offset": 5054,
+      "offset": 5053,
       "length": 1,
       "value": "\")[01]$\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/autostart\/GeoZoneStartManager.swift",
       "kind": "StringLiteral",
-      "offset": 5092,
+      "offset": 5091,
       "length": 54,
       "value": "\"^\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/autostart\/GeoZoneStartManager.swift",
       "kind": "StringLiteral",
-      "offset": 5140,
+      "offset": 5139,
       "length": 1,
       "value": "\"[01]$\""
     },
@@ -47439,6 +47484,13 @@
       "value": "true"
     },
     {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripAnalysisConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1585,
+      "length": 5,
+      "value": "false"
+    },
+    {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/recorder\/RecorderStateManager.swift",
       "kind": "IntegerLiteral",
       "offset": 462,
@@ -47770,175 +47822,182 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripAnalysisConstant.swift",
       "kind": "StringLiteral",
-      "offset": 2724,
+      "offset": 2678,
+      "length": 25,
+      "value": "\"drivekit-use-cl-monitor\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripAnalysisConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 2780,
       "length": 10,
       "value": "\"\/v2\/trip\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripAnalysisConstant.swift",
       "kind": "StringLiteral",
-      "offset": 2797,
+      "offset": 2853,
       "length": 34,
       "value": "\"\/v2\/drivekit\/driver\/shareposAuth\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripAnalysisConstant.swift",
       "kind": "StringLiteral",
-      "offset": 2897,
+      "offset": 2953,
       "length": 37,
       "value": "\"\/v2\/drivekit\/driver\/shared\/location\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripAnalysisConstant.swift",
       "kind": "StringLiteral",
-      "offset": 3702,
+      "offset": 3758,
       "length": 34,
       "value": "\"\/v2\/drivekit\/driver\/workingHours\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripAnalysisConstant.swift",
       "kind": "StringLiteral",
-      "offset": 3984,
+      "offset": 4040,
       "length": 41,
       "value": "\"drivekit-trip-analysis-crash-identifier\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripAnalysisConstant.swift",
       "kind": "StringLiteral",
-      "offset": 4196,
+      "offset": 4252,
       "length": 50,
       "value": "\"drivekit-trip-analysis-crash-feedback-identifier\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripAnalysisConstant.swift",
       "kind": "StringLiteral",
-      "offset": 4294,
+      "offset": 4350,
       "length": 38,
       "value": "\"drivekit-trip-analysis-working-hours\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripAnalysisConstant.swift",
       "kind": "StringLiteral",
-      "offset": 4386,
+      "offset": 4442,
       "length": 45,
       "value": "\"drivekit-trip-analysis-working-hours-update\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripAnalysisConstant.swift",
       "kind": "StringLiteral",
-      "offset": 4477,
+      "offset": 4533,
       "length": 44,
       "value": "\"drivekit-trip-analysis-trip-sharing-create\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripAnalysisConstant.swift",
       "kind": "StringLiteral",
-      "offset": 4564,
+      "offset": 4620,
       "length": 41,
       "value": "\"drivekit-trip-analysis-trip-sharing-get\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripAnalysisConstant.swift",
       "kind": "StringLiteral",
-      "offset": 4651,
+      "offset": 4707,
       "length": 44,
       "value": "\"drivekit-trip-analysis-trip-sharing-revoke\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripAnalysisConstant.swift",
       "kind": "StringLiteral",
-      "offset": 4791,
+      "offset": 4847,
       "length": 54,
       "value": "\"drivekit-trip-analysis-crash-notification-identifier\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripAnalysisConstant.swift",
       "kind": "StringLiteral",
-      "offset": 4914,
+      "offset": 4970,
       "length": 63,
       "value": "\"drivekit-trip-analysis-crash-notification-category-identifier\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripAnalysisConstant.swift",
       "kind": "StringLiteral",
-      "offset": 5038,
+      "offset": 5094,
       "length": 9,
       "value": "\"crashId\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripAnalysisConstant.swift",
       "kind": "FloatLiteral",
-      "offset": 5099,
+      "offset": 5155,
       "length": 5,
       "value": "600.0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripAnalysisConstant.swift",
       "kind": "FloatLiteral",
-      "offset": 5153,
+      "offset": 5209,
       "length": 5,
       "value": "600.0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripAnalysisConstant.swift",
       "kind": "FloatLiteral",
-      "offset": 5203,
+      "offset": 5259,
       "length": 4,
       "value": "60.0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripAnalysisConstant.swift",
       "kind": "FloatLiteral",
-      "offset": 5263,
+      "offset": 5319,
       "length": 5,
       "value": "300.0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripAnalysisConstant.swift",
       "kind": "StringLiteral",
-      "offset": 5328,
+      "offset": 5384,
       "length": 22,
       "value": "\"DriveKitTripAnalysis\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripAnalysisConstant.swift",
       "kind": "StringLiteral",
-      "offset": 5379,
+      "offset": 5435,
       "length": 39,
       "value": "\"com.drivequant.drivekit-trip-analysis\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripAnalysisConstant.swift",
       "kind": "StringLiteral",
-      "offset": 5512,
+      "offset": 5568,
       "length": 55,
       "value": "\"drivekit-different-user-id-detected-notification-name\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripAnalysisConstant.swift",
       "kind": "StringLiteral",
-      "offset": 5657,
+      "offset": 5713,
       "length": 17,
       "value": "\"DrivekitGeozone\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripAnalysisConstant.swift",
       "kind": "FloatLiteral",
-      "offset": 5706,
+      "offset": 5762,
       "length": 5,
       "value": "100.0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripAnalysisConstant.swift",
       "kind": "StringLiteral",
-      "offset": 5754,
+      "offset": 5810,
       "length": 16,
       "value": "\"DrivekitBeacon\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripAnalysisConstant.swift",
       "kind": "StringLiteral",
-      "offset": 5817,
+      "offset": 5873,
       "length": 10,
       "value": "\"DKBeacon\""
     },
@@ -48505,42 +48564,70 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/DriveKitTripAnalysis.swift",
       "kind": "BooleanLiteral",
-      "offset": 3808,
+      "offset": 3989,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/DriveKitTripAnalysis.swift",
       "kind": "FloatLiteral",
-      "offset": 4089,
+      "offset": 4270,
       "length": 4,
       "value": "0.08"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/DriveKitTripAnalysis.swift",
       "kind": "BooleanLiteral",
-      "offset": 4126,
+      "offset": 4307,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/DriveKitTripAnalysis.swift",
       "kind": "BooleanLiteral",
-      "offset": 5284,
+      "offset": 5465,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/DriveKitTripAnalysis.swift",
       "kind": "BooleanLiteral",
-      "offset": 5334,
+      "offset": 5515,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/DriveKitTripAnalysis.swift",
+      "kind": "StringLiteral",
+      "offset": 5702,
+      "length": 25,
+      "value": "\"already-using-clmonitor\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/DriveKitTripAnalysis.swift",
+      "kind": "StringLiteral",
+      "offset": 5776,
+      "length": 37,
+      "value": "\"already-using-clmonitor-for-beacons\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/DriveKitTripAnalysis.swift",
+      "kind": "StringLiteral",
+      "offset": 5865,
+      "length": 42,
+      "value": "\"already-not-using-clmonitor-for-geozones\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/DriveKitTripAnalysis.swift",
+      "kind": "StringLiteral",
+      "offset": 5958,
+      "length": 41,
+      "value": "\"already-not-using-clmonitor-for-beacons\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/DriveKitTripAnalysis.swift",
       "kind": "BooleanLiteral",
-      "offset": 22590,
+      "offset": 23978,
       "length": 5,
       "value": "false"
     },

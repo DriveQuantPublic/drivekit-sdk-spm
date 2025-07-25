@@ -603,6 +603,9 @@ public struct SpeedLimitContext : DriveKitNetworkingModule.DriveKitModel {
   public var crashFeedbackConfig: DriveKitTripAnalysisModule.DKCrashFeedbackConfig? {
     get
   }
+  public var useCLMonitor: Swift.Bool {
+    get
+  }
   @objc override dynamic public init()
   @objc deinit
 }

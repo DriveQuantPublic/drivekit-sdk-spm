@@ -26,7 +26,7 @@
 		</data>
 		<key>ios-arm64/DriveKitDBCoachingAccessModule.framework/Info.plist</key>
 		<data>
-		0KLnp/9McOv+tdeBj62tjZzWKLw=
+		E82UUVGMKzsRsRyJNLqFFXRurWk=
 		</data>
 		<key>ios-arm64/DriveKitDBCoachingAccessModule.framework/Modules/DriveKitDBCoachingAccessModule.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitDBCoachingAccessModule.framework/DriveKitDBCoachingAccessModule</key>
 		<data>
-		t5gThvEtWbTL6DR5i3hoYoDr6Ok=
+		7SjXl+phnKSLZNQC9/Tzy9qFnGU=
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitDBCoachingAccessModule.framework/Headers/DriveKitDBCoachingAccessModule-Swift.h</key>
 		<data>
@@ -74,7 +74,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitDBCoachingAccessModule.framework/Info.plist</key>
 		<data>
-		YHSX4FPSpOrdnLPYyVUaJOsLDNs=
+		YENV5jE2jV6wVzrfthDNkCECMqg=
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitDBCoachingAccessModule.framework/Modules/DriveKitDBCoachingAccessModule.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -118,7 +118,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitDBCoachingAccessModule.framework/_CodeSignature/CodeResources</key>
 		<data>
-		IhI4pb3CsCoNMWx622relfHP1+w=
+		dChmYcnCqmMMsHnQbmuchfrfKA0=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -182,11 +182,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			0KLnp/9McOv+tdeBj62tjZzWKLw=
+			E82UUVGMKzsRsRyJNLqFFXRurWk=
 			</data>
 			<key>hash2</key>
 			<data>
-			z78FeL1zN4JW7GudDJWJMwehpliUoJjgT4DWyawWeUw=
+			4qgI+Es/F4ZDEFPEIm3Edd9EfIZj44YAwsA6JDK9A+I=
 			</data>
 		</dict>
 		<key>ios-arm64/DriveKitDBCoachingAccessModule.framework/Modules/DriveKitDBCoachingAccessModule.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -281,11 +281,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			t5gThvEtWbTL6DR5i3hoYoDr6Ok=
+			7SjXl+phnKSLZNQC9/Tzy9qFnGU=
 			</data>
 			<key>hash2</key>
 			<data>
-			TWvPYZSPMcQhDOzcwLchZQT+s8D7CLT6upWIKQ16VFs=
+			qEYqTK6w2+rZINXX00sI+f9gpsr24Z7wpJVID0ptuok=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/DriveKitDBCoachingAccessModule.framework/Headers/DriveKitDBCoachingAccessModule-Swift.h</key>
@@ -314,11 +314,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YHSX4FPSpOrdnLPYyVUaJOsLDNs=
+			YENV5jE2jV6wVzrfthDNkCECMqg=
 			</data>
 			<key>hash2</key>
 			<data>
-			xG9PUeb/V3+LXBdBiB/DhVNTUsCarsBXXbZDfINfInA=
+			FMehFzKUcw7D4KkR+42clanLCS0v+3G/uQKCQHWhTZU=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/DriveKitDBCoachingAccessModule.framework/Modules/DriveKitDBCoachingAccessModule.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -435,11 +435,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IhI4pb3CsCoNMWx622relfHP1+w=
+			dChmYcnCqmMMsHnQbmuchfrfKA0=
 			</data>
 			<key>hash2</key>
 			<data>
-			QRHJ4ix/RL/jnMkn/PnkoB6HQmlaOU3ctCLiWRKSYqs=
+			WrwVRBxxmNCNgcXdxwQM2keYCO69BYwSOigNi8FdkxM=
 			</data>
 		</dict>
 	</dict>
