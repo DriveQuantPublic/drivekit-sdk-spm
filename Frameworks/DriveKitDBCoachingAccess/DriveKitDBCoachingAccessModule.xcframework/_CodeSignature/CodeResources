@@ -26,7 +26,7 @@
 		</data>
 		<key>ios-arm64/DriveKitDBCoachingAccessModule.framework/Info.plist</key>
 		<data>
-		27ZTZGKJo1jTJYNCGzodbYEBLKE=
+		6igqKnO+VQE0f0w4XeHoMGq0U3Q=
 		</data>
 		<key>ios-arm64/DriveKitDBCoachingAccessModule.framework/Modules/DriveKitDBCoachingAccessModule.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitDBCoachingAccessModule.framework/DriveKitDBCoachingAccessModule</key>
 		<data>
-		R9d7LZeqRsXpV+o94lv7eZyhSuY=
+		dm9uajyScFGyJhMHU8hKSxv9IHY=
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitDBCoachingAccessModule.framework/Headers/DriveKitDBCoachingAccessModule-Swift.h</key>
 		<data>
@@ -74,7 +74,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitDBCoachingAccessModule.framework/Info.plist</key>
 		<data>
-		KlSyEOlMKxOYYHK/kgUPbk4DNJ0=
+		+26Jc6orla6Sjkoti/hhhV9Pn44=
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitDBCoachingAccessModule.framework/Modules/DriveKitDBCoachingAccessModule.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -118,7 +118,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitDBCoachingAccessModule.framework/_CodeSignature/CodeResources</key>
 		<data>
-		evvbPUUTTbFXAMuQ1AfSFsO7Yy4=
+		20zjgD8nTmW0B/ZLoNOsGCQkcSU=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -182,11 +182,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			27ZTZGKJo1jTJYNCGzodbYEBLKE=
+			6igqKnO+VQE0f0w4XeHoMGq0U3Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			FxY9MYH694VKHFW08NvRun8TK7vOxQvBQWZyRbVdBXc=
+			cuAe1gia5CSusMNthdj3zYzHES+4zzgUx/5NbHNhc8E=
 			</data>
 		</dict>
 		<key>ios-arm64/DriveKitDBCoachingAccessModule.framework/Modules/DriveKitDBCoachingAccessModule.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -281,11 +281,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			R9d7LZeqRsXpV+o94lv7eZyhSuY=
+			dm9uajyScFGyJhMHU8hKSxv9IHY=
 			</data>
 			<key>hash2</key>
 			<data>
-			s3lT7NJoeryDwAnyW6+yBR7GsZTbkFSRHIpq/5McQLE=
+			qyHlEVgJG5UJpgvGG7je0GDCPcnfnVXlloCVshixzvQ=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/DriveKitDBCoachingAccessModule.framework/Headers/DriveKitDBCoachingAccessModule-Swift.h</key>
@@ -314,11 +314,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			KlSyEOlMKxOYYHK/kgUPbk4DNJ0=
+			+26Jc6orla6Sjkoti/hhhV9Pn44=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZnwZhy4FrPxBXmY8sfeAsEKfo4dtpSUgAwlBL8PbJOo=
+			dwbFrIQOBIr1mYi+WEtBMQDX241MNsPYg2uJCqtpjSo=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/DriveKitDBCoachingAccessModule.framework/Modules/DriveKitDBCoachingAccessModule.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -435,11 +435,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			evvbPUUTTbFXAMuQ1AfSFsO7Yy4=
+			20zjgD8nTmW0B/ZLoNOsGCQkcSU=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ihtsuo2XOXyrU8kkXHf+COx4tdTIEOLBKJaO3HFH8xo=
+			WLIJqDiOnSbzfm55Q4sIdxo6p4ued6j3tS68A0QJ7EU=
 			</data>
 		</dict>
 	</dict>
