@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name DriveKitNetworkingModule
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import Foundation
 import MobileCoreServices
 import Swift
@@ -14,19 +14,33 @@ public enum DKHttpMethod : Swift.String {
   case post
   case put
   case delete
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
 }
 public enum DQNetworking {
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func getRequest(headers: [Swift.String : Swift.String], urlString: Swift.String, completionHandler: @escaping (Swift.Bool, DriveKitNetworkingModule.ResponseData?, [Swift.AnyHashable : Any]?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func postRequest(headers: [Swift.String : Swift.String], urlString: Swift.String, data: [Swift.String : Any], completionHandler: @escaping (Swift.Bool, DriveKitNetworkingModule.ResponseData?, [Swift.AnyHashable : Any]?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func postRequest(headers: [Swift.String : Swift.String], urlString: Swift.String, data: [Any?], completionHandler: @escaping (Swift.Bool, DriveKitNetworkingModule.ResponseData?, [Swift.AnyHashable : Any]?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func putRequest(headers: [Swift.String : Swift.String], urlString: Swift.String, data: [Swift.String : Any], completionHandler: @escaping (Swift.Bool, DriveKitNetworkingModule.ResponseData?, [Swift.AnyHashable : Any]?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func deleteRequest(headers: [Swift.String : Swift.String], urlString: Swift.String, data: [Swift.String : Any]?, completionHandler: @escaping (Swift.Bool, DriveKitNetworkingModule.ResponseData?, [Swift.AnyHashable : Any]?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func arrayToJson<T>(data: [T]) -> [Any?] where T : DriveKitNetworkingModule.DriveKitModel
+  #endif
   public static func jsonToArray<T>(jArray: [DriveKitNetworkingModule.SwiftyJSON]) -> [T] where T : DriveKitNetworkingModule.DriveKitModel
   public static func jsonToObject<T>(json: DriveKitNetworkingModule.SwiftyJSON) -> T where T : DriveKitNetworkingModule.DriveKitModel
   public static func jsonToDoubleArray(_ values: DriveKitNetworkingModule.SwiftyJSON) -> [Swift.Double]
@@ -40,12 +54,16 @@ public enum DQNetworking {
   @objc deinit
 }
 public class DriveKitRequest {
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(method: Swift.String, url: Swift.String, identifier: Swift.String, body: Foundation.Data?, delegate: any DriveKitNetworkingModule.DriveKitRequestDelegate, requestHeaders: [Swift.String : Swift.String])
+  #endif
   public func cancel()
   @objc deinit
 }
 public protocol DriveKitRequestDelegate {
+  #if compiler(>=5.3) && $NonescapableTypes
   func onResponse(identifier: Swift.String, data: Foundation.Data?, response: Foundation.HTTPURLResponse?)
+  #endif
   func onErrorResponse(identifier: Swift.String, error: DriveKitNetworkingModule.DKRequestError, message: Swift.String)
 }
 public enum DKRequestError {
@@ -62,7 +80,9 @@ public protocol DriveKitModel {
   init(json: DriveKitNetworkingModule.SwiftyJSON)
 }
 public class MultipartRequest {
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(url: Swift.String, identifier: Swift.String, parameters: [Swift.String : Swift.String]? = nil, files: [Swift.String : Foundation.URL], delegate: any DriveKitNetworkingModule.DriveKitRequestDelegate, requestHeaders: [Swift.String : Swift.String])
+  #endif
   public func cancel()
   @objc deinit
 }
@@ -80,14 +100,18 @@ public enum Type : Swift.Int {
   case dictionary
   case null
   case unknown
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
 }
 public struct SwiftyJSON {
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(data: Foundation.Data, options opt: Foundation.JSONSerialization.ReadingOptions = .allowFragments, error: Foundation.NSErrorPointer = nil)
+  #endif
   public init(_ object: Any)
   public init(parseJSON jsonString: Swift.String)
   @available(*, deprecated, message: "Use instead `init(parseJSON: )`")
@@ -101,9 +125,11 @@ public struct SwiftyJSON {
   public var type: DriveKitNetworkingModule.`Type` {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var error: Foundation.NSError? {
     get
   }
+  #endif
   @available(*, unavailable, renamed: "null")
   public static var nullJSON: DriveKitNetworkingModule.SwiftyJSON {
     get
@@ -200,13 +226,19 @@ extension DriveKitNetworkingModule.SwiftyJSON : Swift.ExpressibleByNilLiteral {
   public init(nilLiteral: ())
 }
 extension DriveKitNetworkingModule.SwiftyJSON : Swift.RawRepresentable {
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Any)
+  #endif
   public var rawValue: Any {
     get
   }
   public func rawData(options opt: Foundation.JSONSerialization.WritingOptions = JSONSerialization.WritingOptions(rawValue: 0)) throws -> Foundation.Data
+  #if compiler(>=5.3) && $NonescapableTypes
   public func rawString(_ encoding: Swift.String.Encoding = .utf8, options opt: Foundation.JSONSerialization.WritingOptions = .prettyPrinted) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func rawString(_ options: [DriveKitNetworkingModule.writtingOptionsKeys : Any]) -> Swift.String?
+  #endif
   public typealias RawValue = Any
 }
 extension DriveKitNetworkingModule.SwiftyJSON : Swift.CustomStringConvertible, Swift.CustomDebugStringConvertible {
@@ -218,165 +250,207 @@ extension DriveKitNetworkingModule.SwiftyJSON : Swift.CustomStringConvertible, S
   }
 }
 extension DriveKitNetworkingModule.SwiftyJSON {
+  #if compiler(>=5.3) && $NonescapableTypes
   public var array: [DriveKitNetworkingModule.SwiftyJSON]? {
     get
   }
+  #endif
   public var arrayValue: [DriveKitNetworkingModule.SwiftyJSON] {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var arrayObject: [Any]? {
     get
     set
   }
+  #endif
 }
 extension DriveKitNetworkingModule.SwiftyJSON {
+  #if compiler(>=5.3) && $NonescapableTypes
   public var dictionary: [Swift.String : DriveKitNetworkingModule.SwiftyJSON]? {
     get
   }
+  #endif
   public var dictionaryValue: [Swift.String : DriveKitNetworkingModule.SwiftyJSON] {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var dictionaryObject: [Swift.String : Any]? {
     get
     set
   }
+  #endif
 }
 extension DriveKitNetworkingModule.SwiftyJSON {
+  #if compiler(>=5.3) && $NonescapableTypes
   public var bool: Swift.Bool? {
     get
     set
   }
+  #endif
   public var boolValue: Swift.Bool {
     get
     set
   }
 }
 extension DriveKitNetworkingModule.SwiftyJSON {
+  #if compiler(>=5.3) && $NonescapableTypes
   public var string: Swift.String? {
     get
     set
   }
+  #endif
   public var stringValue: Swift.String {
     get
     set
   }
 }
 extension DriveKitNetworkingModule.SwiftyJSON {
+  #if compiler(>=5.3) && $NonescapableTypes
   public var number: Foundation.NSNumber? {
     get
     set
   }
+  #endif
   public var numberValue: Foundation.NSNumber {
     get
     set
   }
 }
 extension DriveKitNetworkingModule.SwiftyJSON {
+  #if compiler(>=5.3) && $NonescapableTypes
   public var null: Foundation.NSNull? {
     get
     set
   }
+  #endif
   public func exists() -> Swift.Bool
 }
 extension DriveKitNetworkingModule.SwiftyJSON {
+  #if compiler(>=5.3) && $NonescapableTypes
   public var url: Foundation.URL? {
     get
     set
   }
+  #endif
 }
 extension DriveKitNetworkingModule.SwiftyJSON {
+  #if compiler(>=5.3) && $NonescapableTypes
   public var double: Swift.Double? {
     get
     set
   }
+  #endif
   public var doubleValue: Swift.Double {
     get
     set
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var float: Swift.Float? {
     get
     set
   }
+  #endif
   public var floatValue: Swift.Float {
     get
     set
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var int: Swift.Int? {
     get
     set
   }
+  #endif
   public var intValue: Swift.Int {
     get
     set
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var uInt: Swift.UInt? {
     get
     set
   }
+  #endif
   public var uIntValue: Swift.UInt {
     get
     set
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var int8: Swift.Int8? {
     get
     set
   }
+  #endif
   public var int8Value: Swift.Int8 {
     get
     set
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var uInt8: Swift.UInt8? {
     get
     set
   }
+  #endif
   public var uInt8Value: Swift.UInt8 {
     get
     set
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var int16: Swift.Int16? {
     get
     set
   }
+  #endif
   public var int16Value: Swift.Int16 {
     get
     set
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var uInt16: Swift.UInt16? {
     get
     set
   }
+  #endif
   public var uInt16Value: Swift.UInt16 {
     get
     set
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var int32: Swift.Int32? {
     get
     set
   }
+  #endif
   public var int32Value: Swift.Int32 {
     get
     set
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var uInt32: Swift.UInt32? {
     get
     set
   }
+  #endif
   public var uInt32Value: Swift.UInt32 {
     get
     set
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var int64: Swift.Int64? {
     get
     set
   }
+  #endif
   public var int64Value: Swift.Int64 {
     get
     set
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var uInt64: Swift.UInt64? {
     get
     set
   }
+  #endif
   public var uInt64Value: Swift.UInt64 {
     get
     set

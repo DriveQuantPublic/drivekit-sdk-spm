@@ -4891,6 +4891,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBChallengeAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -4899,7 +4900,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBChallengeAccessModule"
+        "moduleName": "DriveKitDBChallengeAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -4948,6 +4952,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -4967,6 +4972,9 @@
             "usr": "s:31DriveKitDBChallengeAccessModule0C0C4saveyyF",
             "mangledName": "$s31DriveKitDBChallengeAccessModule0C0C4saveyyF",
             "moduleName": "DriveKitDBChallengeAccessModule",
+            "declAttributes": [
+              "Nonisolated"
+            ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
@@ -4988,6 +4996,7 @@
             "genericSig": "<τ_0_0>",
             "sugared_genericSig": "<T>",
             "declAttributes": [
+              "Nonisolated",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -5051,6 +5060,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -5154,6 +5164,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -5257,6 +5268,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -5352,6 +5364,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -5439,6 +5452,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -5542,6 +5556,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -5637,6 +5652,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -5724,6 +5740,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -5819,6 +5836,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -5898,6 +5916,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -5977,6 +5996,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -6064,6 +6084,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -6159,6 +6180,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -6246,6 +6268,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -6349,6 +6372,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -6452,6 +6476,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -6555,6 +6580,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -6650,6 +6676,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -6737,6 +6764,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -6832,6 +6860,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -6919,6 +6948,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -7020,6 +7050,7 @@
             "objc_name": "addGroupsObject:",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -7051,6 +7082,7 @@
             "objc_name": "removeGroupsObject:",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -7082,6 +7114,7 @@
             "objc_name": "addGroups:",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -7113,6 +7146,7 @@
             "objc_name": "removeGroups:",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -7127,6 +7161,7 @@
         "moduleName": "DriveKitDBChallengeAccessModule",
         "objc_name": "DBChallenge",
         "declAttributes": [
+          "Nonisolated",
           "AccessControl",
           "ObjC"
         ],
@@ -7224,6 +7259,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "DKUnmanagedObject",
             "printedName": "DKUnmanagedObject",
             "usr": "s:18DriveKitCoreModule17DKUnmanagedObjectP",
@@ -7268,6 +7317,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBChallengeAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -7276,7 +7326,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBChallengeAccessModule"
+        "moduleName": "DriveKitDBChallengeAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -7285,6 +7338,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBChallengeAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -7293,7 +7347,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBChallengeAccessModule"
+        "moduleName": "DriveKitDBChallengeAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -7342,6 +7399,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -7361,6 +7419,9 @@
             "usr": "s:31DriveKitDBChallengeAccessModule0C6DetailC4saveyyF",
             "mangledName": "$s31DriveKitDBChallengeAccessModule0C6DetailC4saveyyF",
             "moduleName": "DriveKitDBChallengeAccessModule",
+            "declAttributes": [
+              "Nonisolated"
+            ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
@@ -7382,6 +7443,7 @@
             "genericSig": "<τ_0_0>",
             "sugared_genericSig": "<T>",
             "declAttributes": [
+              "Nonisolated",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -7445,6 +7507,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -7540,6 +7603,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -7619,6 +7683,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -7706,6 +7771,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -7801,6 +7867,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -7880,6 +7947,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -7959,6 +8027,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -8046,6 +8115,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -8149,6 +8219,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -8252,6 +8323,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -8353,6 +8425,7 @@
             "objc_name": "addDriverRankedObject:",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -8384,6 +8457,7 @@
             "objc_name": "removeDriverRankedObject:",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -8415,6 +8489,7 @@
             "objc_name": "addDriverRanked:",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -8446,6 +8521,7 @@
             "objc_name": "removeDriverRanked:",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -8460,6 +8536,7 @@
         "moduleName": "DriveKitDBChallengeAccessModule",
         "objc_name": "DBChallengeDetail",
         "declAttributes": [
+          "Nonisolated",
           "AccessControl",
           "ObjC"
         ],
@@ -8557,6 +8634,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "DKUnmanagedObject",
             "printedName": "DKUnmanagedObject",
             "usr": "s:18DriveKitCoreModule17DKUnmanagedObjectP",
@@ -8593,6 +8684,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBChallengeAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -8601,7 +8693,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBChallengeAccessModule"
+        "moduleName": "DriveKitDBChallengeAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -8610,6 +8705,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBChallengeAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -8618,7 +8714,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBChallengeAccessModule"
+        "moduleName": "DriveKitDBChallengeAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -8667,6 +8766,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -8689,6 +8789,7 @@
             "genericSig": "<τ_0_0>",
             "sugared_genericSig": "<T>",
             "declAttributes": [
+              "Nonisolated",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -8744,6 +8845,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -8823,6 +8925,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -8910,6 +9013,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -9005,6 +9109,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -9084,6 +9189,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -9171,6 +9277,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -9255,6 +9362,7 @@
         "moduleName": "DriveKitDBChallengeAccessModule",
         "objc_name": "DBChallengeDriverRanked",
         "declAttributes": [
+          "Nonisolated",
           "AccessControl",
           "ObjC"
         ],
@@ -9352,6 +9460,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "DKUnmanagedObject",
             "printedName": "DKUnmanagedObject",
             "usr": "s:18DriveKitCoreModule17DKUnmanagedObjectP",
@@ -9388,6 +9510,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBChallengeAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -9396,7 +9519,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBChallengeAccessModule"
+        "moduleName": "DriveKitDBChallengeAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -9405,6 +9531,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBChallengeAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -9413,7 +9540,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBChallengeAccessModule"
+        "moduleName": "DriveKitDBChallengeAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -9462,6 +9592,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -9484,6 +9615,7 @@
             "genericSig": "<τ_0_0>",
             "sugared_genericSig": "<T>",
             "declAttributes": [
+              "Nonisolated",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -9539,6 +9671,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -9618,6 +9751,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -9697,6 +9831,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -9776,6 +9911,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -9855,6 +9991,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -9942,6 +10079,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -10026,6 +10164,7 @@
         "moduleName": "DriveKitDBChallengeAccessModule",
         "objc_name": "DBChallengeDriverStats",
         "declAttributes": [
+          "Nonisolated",
           "AccessControl",
           "ObjC"
         ],
@@ -10123,6 +10262,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "DKUnmanagedObject",
             "printedName": "DKUnmanagedObject",
             "usr": "s:18DriveKitCoreModule17DKUnmanagedObjectP",
@@ -10159,6 +10312,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBChallengeAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -10167,7 +10321,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBChallengeAccessModule"
+        "moduleName": "DriveKitDBChallengeAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -10176,6 +10333,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBChallengeAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -10184,7 +10342,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBChallengeAccessModule"
+        "moduleName": "DriveKitDBChallengeAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -10233,6 +10394,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -10255,6 +10417,7 @@
             "genericSig": "<τ_0_0>",
             "sugared_genericSig": "<T>",
             "declAttributes": [
+              "Nonisolated",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -10318,6 +10481,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -10421,6 +10585,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -10524,6 +10689,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -10608,6 +10774,7 @@
         "moduleName": "DriveKitDBChallengeAccessModule",
         "objc_name": "DBChallengeGroup",
         "declAttributes": [
+          "Nonisolated",
           "AccessControl",
           "ObjC"
         ],
@@ -10705,6 +10872,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "DKUnmanagedObject",
             "printedName": "DKUnmanagedObject",
             "usr": "s:18DriveKitCoreModule17DKUnmanagedObjectP",
@@ -10749,6 +10930,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBChallengeAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -10757,7 +10939,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBChallengeAccessModule"
+        "moduleName": "DriveKitDBChallengeAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -10766,6 +10951,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBChallengeAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -10774,7 +10960,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBChallengeAccessModule"
+        "moduleName": "DriveKitDBChallengeAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -10823,6 +11012,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -10845,6 +11035,7 @@
             "genericSig": "<τ_0_0>",
             "sugared_genericSig": "<T>",
             "declAttributes": [
+              "Nonisolated",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -10900,6 +11091,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -10979,6 +11171,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -11058,6 +11251,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -11137,6 +11331,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -11216,6 +11411,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -11295,6 +11491,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -11374,6 +11571,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -11461,6 +11659,7 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -11545,6 +11744,7 @@
         "moduleName": "DriveKitDBChallengeAccessModule",
         "objc_name": "DBChallengeStats",
         "declAttributes": [
+          "Nonisolated",
           "AccessControl",
           "ObjC"
         ],
@@ -11642,6 +11842,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "DKUnmanagedObject",
             "printedName": "DKUnmanagedObject",
             "usr": "s:18DriveKitCoreModule17DKUnmanagedObjectP",
@@ -11678,6 +11892,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBChallengeAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -11686,7 +11901,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBChallengeAccessModule"
+        "moduleName": "DriveKitDBChallengeAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -11695,6 +11913,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBChallengeAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -11703,7 +11922,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBChallengeAccessModule"
+        "moduleName": "DriveKitDBChallengeAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       }
     ],
     "json_format_version": 8

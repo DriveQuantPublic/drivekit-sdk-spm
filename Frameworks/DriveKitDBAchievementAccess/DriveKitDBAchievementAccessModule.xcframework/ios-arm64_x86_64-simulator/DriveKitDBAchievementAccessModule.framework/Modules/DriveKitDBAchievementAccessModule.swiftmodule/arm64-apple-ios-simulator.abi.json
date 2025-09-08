@@ -5230,6 +5230,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBAchievementAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -5238,7 +5239,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBAchievementAccessModule"
+        "moduleName": "DriveKitDBAchievementAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -5287,6 +5291,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -5309,6 +5314,7 @@
             "genericSig": "<τ_0_0>",
             "sugared_genericSig": "<T>",
             "declAttributes": [
+              "Nonisolated",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -5329,6 +5335,9 @@
             "usr": "s:33DriveKitDBAchievementAccessModule7DBBadgeC4saveyyF",
             "mangledName": "$s33DriveKitDBAchievementAccessModule7DBBadgeC4saveyyF",
             "moduleName": "DriveKitDBAchievementAccessModule",
+            "declAttributes": [
+              "Nonisolated"
+            ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
@@ -5390,6 +5399,7 @@
             "moduleName": "DriveKitDBAchievementAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -5493,6 +5503,7 @@
             "moduleName": "DriveKitDBAchievementAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -5596,6 +5607,7 @@
             "moduleName": "DriveKitDBAchievementAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -5697,6 +5709,7 @@
             "objc_name": "addBadgeCharacteristicsObject:",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -5728,6 +5741,7 @@
             "objc_name": "removeBadgeCharacteristicsObject:",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -5759,6 +5773,7 @@
             "objc_name": "addBadgeCharacteristics:",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -5790,6 +5805,7 @@
             "objc_name": "removeBadgeCharacteristics:",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -5804,6 +5820,7 @@
         "moduleName": "DriveKitDBAchievementAccessModule",
         "objc_name": "DBBadge",
         "declAttributes": [
+          "Nonisolated",
           "AccessControl",
           "ObjC"
         ],
@@ -5901,6 +5918,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "DKUnmanagedObject",
             "printedName": "DKUnmanagedObject",
             "usr": "s:18DriveKitCoreModule17DKUnmanagedObjectP",
@@ -5937,6 +5968,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBAchievementAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -5945,7 +5977,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBAchievementAccessModule"
+        "moduleName": "DriveKitDBAchievementAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -5954,6 +5989,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBAchievementAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -5962,7 +5998,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBAchievementAccessModule"
+        "moduleName": "DriveKitDBAchievementAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -6011,6 +6050,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -6033,6 +6073,7 @@
             "genericSig": "<τ_0_0>",
             "sugared_genericSig": "<T>",
             "declAttributes": [
+              "Nonisolated",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -6096,6 +6137,7 @@
             "moduleName": "DriveKitDBAchievementAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -6199,6 +6241,7 @@
             "moduleName": "DriveKitDBAchievementAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -6302,6 +6345,7 @@
             "moduleName": "DriveKitDBAchievementAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -6405,6 +6449,7 @@
             "moduleName": "DriveKitDBAchievementAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -6500,6 +6545,7 @@
             "moduleName": "DriveKitDBAchievementAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -6587,6 +6633,7 @@
             "moduleName": "DriveKitDBAchievementAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -6690,6 +6737,7 @@
             "moduleName": "DriveKitDBAchievementAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -6785,6 +6833,7 @@
             "moduleName": "DriveKitDBAchievementAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -6864,6 +6913,7 @@
             "moduleName": "DriveKitDBAchievementAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -6951,6 +7001,7 @@
             "moduleName": "DriveKitDBAchievementAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -7035,6 +7086,7 @@
         "moduleName": "DriveKitDBAchievementAccessModule",
         "objc_name": "DBBadgeCharacteristics",
         "declAttributes": [
+          "Nonisolated",
           "AccessControl",
           "ObjC"
         ],
@@ -7132,6 +7184,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "DKUnmanagedObject",
             "printedName": "DKUnmanagedObject",
             "usr": "s:18DriveKitCoreModule17DKUnmanagedObjectP",
@@ -7168,6 +7234,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBAchievementAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -7176,7 +7243,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBAchievementAccessModule"
+        "moduleName": "DriveKitDBAchievementAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -7185,6 +7255,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBAchievementAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -7193,7 +7264,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBAchievementAccessModule"
+        "moduleName": "DriveKitDBAchievementAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -7242,6 +7316,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -7264,6 +7339,7 @@
             "genericSig": "<τ_0_0>",
             "sugared_genericSig": "<T>",
             "declAttributes": [
+              "Nonisolated",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -7319,6 +7395,7 @@
             "moduleName": "DriveKitDBAchievementAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -7406,6 +7483,7 @@
             "moduleName": "DriveKitDBAchievementAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -7501,6 +7579,7 @@
             "moduleName": "DriveKitDBAchievementAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -7580,6 +7659,7 @@
             "moduleName": "DriveKitDBAchievementAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -7667,6 +7747,7 @@
             "moduleName": "DriveKitDBAchievementAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -7770,6 +7851,7 @@
             "moduleName": "DriveKitDBAchievementAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -7854,6 +7936,7 @@
         "moduleName": "DriveKitDBAchievementAccessModule",
         "objc_name": "DBDriverRanked",
         "declAttributes": [
+          "Nonisolated",
           "AccessControl",
           "ObjC"
         ],
@@ -7951,6 +8034,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "DKUnmanagedObject",
             "printedName": "DKUnmanagedObject",
             "usr": "s:18DriveKitCoreModule17DKUnmanagedObjectP",
@@ -7987,6 +8084,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBAchievementAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -7995,7 +8093,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBAchievementAccessModule"
+        "moduleName": "DriveKitDBAchievementAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -8004,6 +8105,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBAchievementAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -8012,7 +8114,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBAchievementAccessModule"
+        "moduleName": "DriveKitDBAchievementAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -8061,6 +8166,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -8080,6 +8186,9 @@
             "usr": "s:33DriveKitDBAchievementAccessModule9DBRankingC4saveyyF",
             "mangledName": "$s33DriveKitDBAchievementAccessModule9DBRankingC4saveyyF",
             "moduleName": "DriveKitDBAchievementAccessModule",
+            "declAttributes": [
+              "Nonisolated"
+            ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
@@ -8101,6 +8210,7 @@
             "genericSig": "<τ_0_0>",
             "sugared_genericSig": "<T>",
             "declAttributes": [
+              "Nonisolated",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -8164,6 +8274,7 @@
             "moduleName": "DriveKitDBAchievementAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -8259,6 +8370,7 @@
             "moduleName": "DriveKitDBAchievementAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -8346,6 +8458,7 @@
             "moduleName": "DriveKitDBAchievementAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -8449,6 +8562,7 @@
             "moduleName": "DriveKitDBAchievementAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -8544,6 +8658,7 @@
             "moduleName": "DriveKitDBAchievementAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -8631,6 +8746,7 @@
             "moduleName": "DriveKitDBAchievementAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -8734,6 +8850,7 @@
             "moduleName": "DriveKitDBAchievementAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -8835,6 +8952,7 @@
             "objc_name": "addDriversRankedObject:",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -8866,6 +8984,7 @@
             "objc_name": "removeDriversRankedObject:",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -8897,6 +9016,7 @@
             "objc_name": "addDriversRanked:",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -8928,6 +9048,7 @@
             "objc_name": "removeDriversRanked:",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -8942,6 +9063,7 @@
         "moduleName": "DriveKitDBAchievementAccessModule",
         "objc_name": "DBRanking",
         "declAttributes": [
+          "Nonisolated",
           "AccessControl",
           "ObjC"
         ],
@@ -9039,6 +9161,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "DKUnmanagedObject",
             "printedName": "DKUnmanagedObject",
             "usr": "s:18DriveKitCoreModule17DKUnmanagedObjectP",
@@ -9075,6 +9211,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBAchievementAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -9083,7 +9220,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBAchievementAccessModule"
+        "moduleName": "DriveKitDBAchievementAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -9092,6 +9232,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBAchievementAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -9100,7 +9241,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBAchievementAccessModule"
+        "moduleName": "DriveKitDBAchievementAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -9149,6 +9293,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -9171,6 +9316,7 @@
             "genericSig": "<τ_0_0>",
             "sugared_genericSig": "<T>",
             "declAttributes": [
+              "Nonisolated",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -9191,6 +9337,9 @@
             "usr": "s:33DriveKitDBAchievementAccessModule8DBStreakC4saveyyF",
             "mangledName": "$s33DriveKitDBAchievementAccessModule8DBStreakC4saveyyF",
             "moduleName": "DriveKitDBAchievementAccessModule",
+            "declAttributes": [
+              "Nonisolated"
+            ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
@@ -9252,6 +9401,7 @@
             "moduleName": "DriveKitDBAchievementAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -9355,6 +9505,7 @@
             "moduleName": "DriveKitDBAchievementAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -9458,6 +9609,7 @@
             "moduleName": "DriveKitDBAchievementAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -9542,6 +9694,7 @@
         "moduleName": "DriveKitDBAchievementAccessModule",
         "objc_name": "DBStreak",
         "declAttributes": [
+          "Nonisolated",
           "AccessControl",
           "ObjC"
         ],
@@ -9639,6 +9792,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "DKUnmanagedObject",
             "printedName": "DKUnmanagedObject",
             "usr": "s:18DriveKitCoreModule17DKUnmanagedObjectP",
@@ -9675,6 +9842,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBAchievementAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -9683,7 +9851,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBAchievementAccessModule"
+        "moduleName": "DriveKitDBAchievementAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -9692,6 +9863,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBAchievementAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -9700,7 +9872,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBAchievementAccessModule"
+        "moduleName": "DriveKitDBAchievementAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -9749,6 +9924,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -9771,6 +9947,7 @@
             "genericSig": "<τ_0_0>",
             "sugared_genericSig": "<T>",
             "declAttributes": [
+              "Nonisolated",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -9826,6 +10003,7 @@
             "moduleName": "DriveKitDBAchievementAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -9905,6 +10083,7 @@
             "moduleName": "DriveKitDBAchievementAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -9992,6 +10171,7 @@
             "moduleName": "DriveKitDBAchievementAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -10095,6 +10275,7 @@
             "moduleName": "DriveKitDBAchievementAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -10190,6 +10371,7 @@
             "moduleName": "DriveKitDBAchievementAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -10258,6 +10440,7 @@
         "moduleName": "DriveKitDBAchievementAccessModule",
         "objc_name": "DBStreakResult",
         "declAttributes": [
+          "Nonisolated",
           "AccessControl",
           "ObjC"
         ],
@@ -10355,6 +10538,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "DKUnmanagedObject",
             "printedName": "DKUnmanagedObject",
             "usr": "s:18DriveKitCoreModule17DKUnmanagedObjectP",
@@ -10391,6 +10588,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBAchievementAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -10399,7 +10597,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBAchievementAccessModule"
+        "moduleName": "DriveKitDBAchievementAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -10408,6 +10609,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBAchievementAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -10416,7 +10618,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBAchievementAccessModule"
+        "moduleName": "DriveKitDBAchievementAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       }
     ],
     "json_format_version": 8

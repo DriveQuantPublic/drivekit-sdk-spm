@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name DriveKitTripSimulatorModule
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import DriveKitCoreModule
 import DriveKitTripSimulatorApiModule
 import Foundation
@@ -22,8 +22,12 @@ public typealias DKTripSimulatorDelegate = DriveKitTripSimulatorApiModule.DKTrip
   }
   @objc public func initialize()
   @objc public func startCrashTrip(_ config: DriveKitTripSimulatorModule.PresetCrashConfiguration)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func startCrashTrip(_ config: DriveKitTripSimulatorApiModule.PresetCrashConfiguration, delegate: (any DriveKitTripSimulatorApiModule.DKTripSimulatorDelegate)? = nil)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func start(_ trip: DriveKitTripSimulatorModule.PresetTrip, crash: DriveKitTripSimulatorModule.PresetCrash = .none, crashTime: Swift.Int = -1, delegate: (any DriveKitTripSimulatorApiModule.DKTripSimulatorDelegate)? = nil)
+  #endif
   @objc public func stop()
   @objc override dynamic public init()
   @objc deinit

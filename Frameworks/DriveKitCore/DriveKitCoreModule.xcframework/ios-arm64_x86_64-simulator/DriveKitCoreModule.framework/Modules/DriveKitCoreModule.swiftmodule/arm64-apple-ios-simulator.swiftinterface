@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name DriveKitCoreModule
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import BackgroundTasks
 import CommonCrypto
 import CoreBluetooth
@@ -21,7 +21,9 @@ import _SwiftConcurrencyShims
   @objc optional func driveKitDidConnect(_ driveKit: DriveKitCoreModule.DriveKit)
   @objc optional func driveKitDidDisconnect(_ driveKit: DriveKitCoreModule.DriveKit)
   @objc optional func driveKit(_ driveKit: DriveKitCoreModule.DriveKit, didReceiveAuthenticationError error: DriveKitCoreModule.RequestError)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc optional func userIdUpdateStatusChanged(status: DriveKitCoreModule.UpdateUserIdStatus, userId: Swift.String?)
+  #endif
   @objc optional func driveKit(_ driveKit: DriveKitCoreModule.DriveKit, accountDeletionCompleted status: DriveKitCoreModule.DeleteAccountStatus)
   @objc optional func driveKit(_ driveKit: DriveKitCoreModule.DriveKit, backgroundFetchStatusChanged status: DriveKitCoreModule.DriveKitBackgroundFetchStatus)
 }
@@ -33,13 +35,19 @@ import _SwiftConcurrencyShims
   @objc public var isInitialized: Swift.Bool {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public var installationId: Swift.String? {
     get
   }
+  #endif
   @objc deinit
   @objc(initialize) public func objc_initialize()
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc(initialize:) public func objc_initialize(delegate: (any DriveKitCoreModule.DriveKitDelegate)?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func initialize(delegate: (any DriveKitCoreModule.DriveKitDelegate)? = nil)
+  #endif
   @objc public func isAutoInitEnabled() -> Swift.Bool
   @objc public func isConfigured() -> Swift.Bool
   @objc public func isUserConnected() -> Swift.Bool
@@ -53,8 +61,12 @@ import _SwiftConcurrencyShims
   @objc public func enableLogging(showInConsole: Swift.Bool = true)
   @objc public func disableLogging(showInConsole: Swift.Bool = true)
   @objc public func isLoggingEnabled() -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getUserInfo(synchronizationType: DriveKitCoreModule.SynchronizationType = .defaultSync, completion: @escaping (DriveKitCoreModule.UserInfoGetStatus, DriveKitCoreModule.UserInfo?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func updateUserInfo(firstname: Swift.String? = nil, lastname: Swift.String? = nil, pseudo: Swift.String? = nil, completion: @escaping (Swift.Bool) -> Swift.Void)
+  #endif
   @objc public func updateUserId(userId: Swift.String)
   public func isTokenValid() -> Swift.Bool
   @objc public func registerNotificationDelegate(_ delegate: any UserNotifications.UNUserNotificationCenterDelegate)
@@ -69,20 +81,28 @@ extension DriveKitCoreModule.DriveKit : DriveKitCoreModule.DriveKitDelegate {
   @objc dynamic public func driveKitDidConnect(_ driveKit: DriveKitCoreModule.DriveKit)
   @objc dynamic public func driveKitDidDisconnect(_ driveKit: DriveKitCoreModule.DriveKit)
   @objc dynamic public func driveKit(_ driveKit: DriveKitCoreModule.DriveKit, accountDeletionCompleted status: DriveKitCoreModule.DeleteAccountStatus)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc dynamic public func userIdUpdateStatusChanged(status: DriveKitCoreModule.UpdateUserIdStatus, userId: Swift.String?)
+  #endif
 }
 public struct DKAddress {
   public let city: Swift.String
   public let address: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(city: Swift.String, address: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func isEmpty(_ value: Swift.String?) -> Swift.Bool
+  #endif
 }
 @objc public enum DKDay : Swift.Int, Swift.Codable {
   case monday = 0, tuesday = 1, wednesday = 2, thursday = 3, friday = 4, saturday = 5, sunday = 6, unknown = -1
   public static func fromResponse(_ response: Swift.String) -> DriveKitCoreModule.DKDay
   public func dayString() -> Swift.String
   public func dayIndex() -> Swift.Int
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -100,7 +120,9 @@ public enum DKCoordinateAccuracy {
 }
 @objc public enum DKPermissionStatus : Swift.Int {
   case valid, invalid, notDetermined, phoneRestricted
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -108,7 +130,9 @@ public enum DKCoordinateAccuracy {
 }
 @objc public enum DKLocationAccuracy : Swift.Int {
   case precise, approximative, unknown
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -117,7 +141,9 @@ public enum DKCoordinateAccuracy {
 public enum TimeStoragePolicy {
   case standard
   case appGroup(Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(appGroupID: Swift.String?)
+  #endif
 }
 public struct TimeStorage {
   public init(storagePolicy: DriveKitCoreModule.TimeStoragePolicy)
@@ -145,9 +171,11 @@ extension Swift.ClosedRange {
 }
 public struct WeakArray<Element> where Element : AnyObject {
   public init(_ elements: [Element] = [])
+  #if compiler(>=5.3) && $NonescapableTypes
   public subscript(index: Swift.Int) -> Element? {
     get
   }
+  #endif
   public mutating func append(_ newElement: Element)
   public mutating func append(_ newElement: DriveKitCoreModule.WeakReference<Element>)
   public mutating func remove(_ element: Element)
@@ -182,7 +210,9 @@ extension DriveKitCoreModule.WeakArray : Swift.Collection {
   case locationSensor
   case bluetoothSensor
   case lowPowerMode
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -199,9 +229,11 @@ extension DriveKitCoreModule.DKTripLocation {
 }
 public struct DKDelegateList<Element> where Element : AnyObject {
   public init(_ delegates: [Element] = [])
+  #if compiler(>=5.3) && $NonescapableTypes
   public subscript(index: Swift.Int) -> Element? {
     get
   }
+  #endif
   public mutating func append(_ delegate: Element)
   public mutating func remove(_ delegate: Element)
 }
@@ -221,7 +253,9 @@ extension DriveKitCoreModule.DKDelegateList : Swift.Collection {
 public protocol DKSensorsListener : AnyObject {
   func sensors() -> Swift.Set<DriveKitCoreModule.DKSensor>
   func sensorsFrequency() -> Swift.Int
+  #if compiler(>=5.3) && $NonescapableTypes
   func onNewSensorsData(accelerometerData: CoreMotion.CMAccelerometerData?, deviceMotion: CoreMotion.CMDeviceMotion?, gyroscopeData: CoreMotion.CMGyroData?, magnetometerData: CoreMotion.CMMagnetometerData?)
+  #endif
 }
 @available(*, deprecated, message: "Use `DKHttpMethod` instead")
 public typealias Method = DriveKitNetworkingModule.DKHttpMethod
@@ -231,7 +265,9 @@ extension DriveKitNetworkingModule.DKHttpMethod {
 }
 public enum DKDiagnosisOperationSource : Swift.String {
   case backgroundFetch, tripEvent, initialize, sensorUpdate, logFileRequested, userLogin, reset, powerStateUpdate, other
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -239,7 +275,9 @@ public enum DKDiagnosisOperationSource : Swift.String {
 }
 @objc public enum SynchronizationType : Swift.Int {
   case defaultSync, cache
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -263,12 +301,16 @@ public struct DKTime : Swift.Codable {
 }
 @frozen public struct AnyDecodable : Swift.Decodable {
   public let value: Any
+  #if compiler(>=5.3) && $NonescapableTypes
   public init<T>(_ value: T?)
+  #endif
 }
 @usableFromInline
 internal protocol _AnyDecodable {
   var value: Any { get }
+  #if compiler(>=5.3) && $NonescapableTypes
   init<T>(_ value: T?)
+  #endif
 }
 extension DriveKitCoreModule.AnyDecodable : DriveKitCoreModule._AnyDecodable {
 }
@@ -325,14 +367,18 @@ public protocol DKSDKDiagnosisDelegate : AnyObject {
   final public let firstname: Swift.String?
   final public let lastname: Swift.String?
   final public let pseudo: Swift.String?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(firstname: Swift.String?, lastname: Swift.String?, pseudo: Swift.String?)
+  #endif
   @objc deinit
   final public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
 @objc public enum DKConnectivityType : Swift.Int {
   case bluetooth, gps
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -351,7 +397,9 @@ public protocol DKSDKDiagnosisDelegate : AnyObject {
   public static let shared: DriveKitCoreModule.DriveKitLog
   public func errorLog(tag: Swift.String, message: Swift.String)
   public func infoLog(tag: Swift.String, message: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func getZippedLogFilesUrl() -> Foundation.URL?
+  #endif
   @objc deinit
 }
 extension Swift.String {
@@ -360,7 +408,9 @@ extension Swift.String {
 @_hasMissingDesignatedInitializers public class DKSDKDiagnosis {
   public static let shared: DriveKitCoreModule.DKSDKDiagnosis
   @objc deinit
+  #if compiler(>=5.3) && $NonescapableTypes
   public func enqueueDiagnosisOperation(source: DriveKitCoreModule.DKDiagnosisOperationSource, shouldForceEventSending: Swift.Bool = false, considerAllEventsAsNew: Swift.Bool = false, completionHandler: ((Swift.Bool) -> Swift.Void)? = nil)
+  #endif
 }
 extension DriveKitCoreModule.DKSDKDiagnosis : DriveKitCoreModule.DKSDKDiagnosisDelegate {
   public func bluetoothStateChanged()
@@ -372,7 +422,9 @@ extension DriveKitCoreModule.DKSDKDiagnosis : DriveKitCoreModule.DriveKitDelegat
 @objc public enum DriveKitBackgroundFetchStatus : Swift.Int {
   case started
   case completed
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -445,32 +497,46 @@ public enum SmartphoneDataUtils {
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class ExecutableQueryOne<T, R> where T : DriveKitCoreModule.DKUnmanagedObject {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func managedObject() -> T?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func execute() -> R?
+  #endif
   @objc deinit
 }
 public struct DriveKitConfig {
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(autoInitEnabled: Swift.Bool, isConfigured: Swift.Bool, isUserConnected: Swift.Bool, userId: Swift.String?, installationId: Swift.String?, isLoggingEnabled: Swift.Bool)
+  #endif
 }
 public struct DKConfigTripAnalysis {
   public init(isAutoStartEnabled: Swift.Bool, stopTimeout: Swift.Int, autoCancelTripMaxSpeed: Swift.Double, isMonitoringPotentialTripStart: Swift.Bool, isBeaconRequired: Swift.Bool, isBeaconAllowedToStartTrip: Swift.Bool, isBluetoothDeviceRequired: Swift.Bool, isCrashDetectionEnabled: Swift.Bool, isSharePositionEnabled: Swift.Bool, vehiclesConfigTakeover: Swift.Bool, beacons: [DriveKitCoreModule.DKConfigBeacon], bluetoothDevices: [DriveKitCoreModule.DKConfigBluetoothDevice])
 }
 public struct DKConfigVehicle {
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(vehiclesLastSync: Foundation.Date?, vehicles: [DriveKitCoreModule.DKConfigVehicleItem])
+  #endif
 }
 public struct DKConfigVehicleItem {
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(vehicleId: Swift.String, detectionMode: DriveKitCoreModule.DKConfigDetectionMode?, beaconIdentifier: DriveKitCoreModule.DKConfigBeacon?, bluetoothDevice: DriveKitCoreModule.DKConfigBluetoothDevice?)
+  #endif
 }
 public enum DKConfigDetectionMode : Swift.Int {
   case gps
   case disabled
   case beacon
   case bluetooth
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(value: Swift.String)
+  #endif
   public var value: Swift.String {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -482,7 +548,9 @@ public struct DKConfigBeacon : Swift.Codable {
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct DKConfigBluetoothDevice : Swift.Codable {
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(macAddress: Swift.String, name: Swift.String? = nil)
+  #endif
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -527,8 +595,12 @@ extension Foundation.ProcessInfo {
   public var baseUrl: Swift.String {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getApiKey() -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getUserId() -> Swift.String?
+  #endif
   @objc override dynamic public init()
   @objc deinit
 }
@@ -544,7 +616,9 @@ extension Foundation.ProcessInfo {
 }
 @frozen public struct AnyCodable : Swift.Codable {
   public let value: Any
+  #if compiler(>=5.3) && $NonescapableTypes
   public init<T>(_ value: T?)
+  #endif
 }
 extension DriveKitCoreModule.AnyCodable : DriveKitCoreModule._AnyEncodable, DriveKitCoreModule._AnyDecodable {
 }
@@ -585,11 +659,21 @@ extension DriveKitCoreModule.AnyCodable : Swift.ExpressibleByDictionaryLiteral {
   public typealias Value = Any
 }
 public enum DKFileUtils {
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func dictionary(forKey key: Swift.String) -> [Swift.String : Any]?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func stringArray(forKey key: Swift.String) -> [Swift.String]?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func json(forKey key: Swift.String) -> DriveKitNetworkingModule.SwiftyJSON?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func string(forKey key: Swift.String) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func data(forKey key: Swift.String) -> Foundation.Data?
+  #endif
   public static func hasData(forKey key: Swift.String) -> Swift.Bool
   public static func save(_ dictionary: [Swift.String : Any], forKey key: Swift.String)
   public static func save(_ stringArray: [Swift.String], forKey key: Swift.String)
@@ -611,12 +695,16 @@ public enum DKSensor {
 }
 @frozen public struct AnyEncodable : Swift.Encodable {
   public let value: Any
+  #if compiler(>=5.3) && $NonescapableTypes
   public init<T>(_ value: T?)
+  #endif
 }
 @usableFromInline
 internal protocol _AnyEncodable {
   var value: Any { get }
+  #if compiler(>=5.3) && $NonescapableTypes
   init<T>(_ value: T?)
+  #endif
 }
 extension DriveKitCoreModule.AnyEncodable : DriveKitCoreModule._AnyEncodable {
 }
@@ -680,7 +768,9 @@ extension Swift.Array where Element : DriveKitCoreModule.DKUnmanagedObject {
 }
 @objc public enum UserInfoGetStatus : Swift.Int {
   case success, cacheDataOnly, failedToSyncUserInfoCacheOnly
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -690,33 +780,43 @@ extension Swift.Array where Element : DriveKitCoreModule.DKUnmanagedObject {
   case success
   case failedToDelete
   case forbidden
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
 }
+#if compiler(>=5.3) && $NonescapableTypes
 extension Swift.Optional {
   public var logOrNil: Swift.String {
     get
   }
 }
+#endif
 @objc public enum DKPeriod : Swift.Int, Swift.Codable {
   case week
   case month
   case year
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
 }
 public protocol RequestDelegate {
+  #if compiler(>=5.3) && $NonescapableTypes
   func onResponse(data: Foundation.Data?)
+  #endif
   func onErrorResponse(httpStatusCode: Swift.Int, errorType: DriveKitCoreModule.RequestError, message: Swift.String)
 }
 extension DriveKitCoreModule.RequestDelegate {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func convertToType<T>(data: Foundation.Data?) -> T? where T : Swift.Decodable, T : Swift.Encodable
+  #endif
 }
 @objc public enum RequestError : Swift.Int {
   case wrongUrl
@@ -727,7 +827,9 @@ extension DriveKitCoreModule.RequestDelegate {
   case clientError
   case limitReached
   case unknownError
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -761,12 +863,16 @@ public class GenericErrorResponse : DriveKitNetworkingModule.DriveKitModel {
   public static let shared: DriveKitCoreModule.NetworkingTaskManager
   public func registerRequestDelegate(identifier: Swift.String, delegate: any DriveKitCoreModule.RequestDelegate)
   public func unregisterRequestDelegate(identifier: Swift.String)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func addRequest<T>(method: DriveKitNetworkingModule.DKHttpMethod, url: Swift.String, identifier: Swift.String, headers: [Swift.String : Swift.String]?, parameters: [Swift.String : Swift.String]?, data: T?, needAuth: Swift.Bool, priority: DriveKitCoreModule.Priority = .low, canSave: Swift.Bool = true) where T : Swift.Decodable, T : Swift.Encodable
+  #endif
   public func removeNetworkTask(identifier: Swift.String)
   @objc deinit
 }
 extension DriveKitCoreModule.NetworkingTaskManager : DriveKitNetworkingModule.DriveKitRequestDelegate {
+  #if compiler(>=5.3) && $NonescapableTypes
   public func onResponse(identifier: Swift.String, data: Foundation.Data?, response: Foundation.HTTPURLResponse?)
+  #endif
   public func onErrorResponse(identifier: Swift.String, error: DriveKitNetworkingModule.DKRequestError, message: Swift.String)
 }
 public enum Priority {
@@ -778,8 +884,12 @@ public enum Priority {
   }
 }
 extension DriveKitNetworkingModule.DQNetworking {
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func postAuthenticatedRequest(headers: [Swift.String : Swift.String] = [:], urlString: Swift.String, data: [Swift.String : Any], completionHandler: @escaping (Swift.Bool, DriveKitNetworkingModule.ResponseData?, [Swift.AnyHashable : Any]?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func postAuthenticatedRequest(headers: [Swift.String : Swift.String] = [:], urlString: Swift.String, data: [Any?], completionHandler: @escaping (Swift.Bool, DriveKitNetworkingModule.ResponseData?, [Swift.AnyHashable : Any]?) -> Swift.Void)
+  #endif
 }
 extension Dispatch.DispatchQueue {
   public static func dispatchAsyncOnMainThread(_ block: @escaping () -> Swift.Void)
@@ -792,7 +902,9 @@ public enum DKScoreType : Swift.String, Swift.Codable, Swift.CaseIterable {
   public var range: Swift.ClosedRange<Swift.Double> {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias AllCases = [DriveKitCoreModule.DKScoreType]
   public typealias RawValue = Swift.String
   nonisolated public static var allCases: [DriveKitCoreModule.DKScoreType] {
@@ -811,7 +923,9 @@ public enum DKScoreType : Swift.String, Swift.Codable, Swift.CaseIterable {
   case speeding
   case driverProfile
   case tripSharing
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias AllCases = [DriveKitCoreModule.AccessType]
   public typealias RawValue = Swift.Int
   nonisolated public static var allCases: [DriveKitCoreModule.AccessType] {
@@ -827,7 +941,9 @@ public enum DKScoreType : Swift.String, Swift.Codable, Swift.CaseIterable {
   case invalidUserId
   case alreadyUsed
   case savedForRepost
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -840,21 +956,33 @@ public struct LoginResponse : Swift.Codable {
 public class ReverseGeocoder {
   public static let defaultTimeout: Swift.Double
   public init()
+  #if compiler(>=5.3) && $NonescapableTypes
   public func getAddress(latitude: Swift.Double, longitude: Swift.Double, timeout: Foundation.TimeInterval = ReverseGeocoder.defaultTimeout, completionHandler: @escaping (DriveKitCoreModule.DKAddress?) -> Swift.Void)
-  public func getAddress(location: CoreLocation.CLLocation, timeout: Foundation.TimeInterval = ReverseGeocoder.defaultTimeout, completionHandler: @escaping (DriveKitCoreModule.DKAddress?) -> Swift.Void)
-  public static func getAddresses(locations: [CoreLocation.CLLocation], timeout: Foundation.TimeInterval = ReverseGeocoder.defaultTimeout, completionHandler: @escaping ([DriveKitCoreModule.DKAddress?]) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func getAddress(location: _LocationEssentials.CLLocation, timeout: Foundation.TimeInterval = ReverseGeocoder.defaultTimeout, completionHandler: @escaping (DriveKitCoreModule.DKAddress?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func getAddresses(locations: [_LocationEssentials.CLLocation], timeout: Foundation.TimeInterval = ReverseGeocoder.defaultTimeout, completionHandler: @escaping ([DriveKitCoreModule.DKAddress?]) -> Swift.Void)
+  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class DKDeviceIdManager {
   public static func getDeviceId() -> Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func getPreviousDeviceId() -> Swift.String?
+  #endif
   public static func deviceSensorsAreReliable() -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func checkBrokenDeviceIds(deviceIds: [Swift.String]?)
+  #endif
   @objc deinit
 }
 @objc public enum DKPermissionType : Swift.Int {
   case activity, bluetooth, location, notifications
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -865,13 +993,19 @@ public class ReverseGeocoder {
 }
 public struct Clock {
   public static var storage: DriveKitCoreModule.TimeStorage
+  #if compiler(>=5.3) && $NonescapableTypes
   public static var timestamp: Foundation.TimeInterval? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static var now: Foundation.Date? {
     get
   }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func sync(from pool: Swift.String = "time.apple.com", samples: Swift.Int = 4, first: ((Foundation.Date, Foundation.TimeInterval) -> Swift.Void)? = nil, completion: ((Foundation.Date?, Foundation.TimeInterval?) -> Swift.Void)? = nil)
+  #endif
   public static func reset()
 }
 public protocol DKRemoteEventListener : AnyObject {
@@ -881,7 +1015,9 @@ public protocol DKRemoteEventListener : AnyObject {
 @objc public enum DKRemoteEvent : Swift.Int, Swift.CaseIterable {
   case logsUpload, vehiclesSync
   public static func processHeaders(_ headers: [Swift.AnyHashable : Any])
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias AllCases = [DriveKitCoreModule.DKRemoteEvent]
   public typealias RawValue = Swift.Int
   nonisolated public static var allCases: [DriveKitCoreModule.DKRemoteEvent] {
@@ -899,13 +1035,21 @@ public protocol DKRemoteEventListener : AnyObject {
 }
 public func dkPreconditionFailure(_ message: Swift.String)
 @_hasMissingDesignatedInitializers public class DriveKitCoreUserDefaults {
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func getPrimitiveType<T>(key: Swift.String) -> T?
+  #endif
   public static func setPrimitiveType<T>(key: Swift.String, value: T)
   public static func setData(key: Swift.String, data: Foundation.Data)
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func getData(key: Swift.String) -> Foundation.Data?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func getObject(key: Swift.String) -> [Swift.String : Any]?
+  #endif
   public static func setObject(key: Swift.String, value: [Swift.String : Any])
+  #if compiler(>=5.3) && $NonescapableTypes
   public static func get<T>(forKey key: Swift.String) -> T? where T : Swift.Decodable, T : Swift.Encodable
+  #endif
   public static func set<T>(_ object: T, forKey key: Swift.String) where T : Swift.Decodable, T : Swift.Encodable
   public static func removeObject(key: Swift.String)
   @objc deinit

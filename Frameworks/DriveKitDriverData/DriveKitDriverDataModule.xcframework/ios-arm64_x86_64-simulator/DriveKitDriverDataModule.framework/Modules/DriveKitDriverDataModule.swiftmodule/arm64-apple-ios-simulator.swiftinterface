@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name DriveKitDriverDataModule
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import CoreData
 import CoreLocation
 import DriveKitCoreModule
@@ -22,7 +22,9 @@ import _SwiftConcurrencyShims
   @available(*, deprecated, message: "You no longer need to call the reset method of any module except the one in DriveKit")
   @objc public func reset()
   public func tripsQuery() -> DriveKitCoreModule.WhereReference<DriveKitDBTripAccessModule.DBTrip, DriveKitDBTripAccessModule.DKTrip>
+  #if compiler(>=5.3) && $NonescapableTypes
   public func executeTripQuery(query: DriveKitCoreModule.ExecutableQueryOne<DriveKitDBTripAccessModule.DBTrip, DriveKitDBTripAccessModule.DKTrip>, type: DriveKitCoreModule.SynchronizationType = .defaultSync, completionHandler: @escaping (DriveKitDriverDataModule.TripSyncStatus, DriveKitDBTripAccessModule.DKTrip?) -> Swift.Void)
+  #endif
   public func executeTripsQuery(query: DriveKitCoreModule.ExecutableQuery<DriveKitDBTripAccessModule.DBTrip, DriveKitDBTripAccessModule.DKTrip>, type: DriveKitCoreModule.SynchronizationType = .defaultSync, completionHandler: @escaping (DriveKitDriverDataModule.TripSyncStatus, [DriveKitDBTripAccessModule.DKTrip]) -> Swift.Void)
   public func getTripsOrderByDateDesc(withTransportationModes transportationModes: [DriveKitDBTripAccessModule.TransportationMode] = [
             .unknown,
@@ -36,13 +38,21 @@ import _SwiftConcurrencyShims
             .moto,
             .truck
         ], type: DriveKitCoreModule.SynchronizationType = .defaultSync, completionHandler: @escaping (DriveKitDriverDataModule.TripSyncStatus, [DriveKitDBTripAccessModule.DKTrip]) -> Swift.Void)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func getTrip(itinId: Swift.String, type: DriveKitCoreModule.SynchronizationType = .cache, completionHandler: @escaping (DriveKitDriverDataModule.TripSyncStatus, DriveKitDBTripAccessModule.DKTrip?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func getRoute(itinId: Swift.String, completionHandler: @escaping (DriveKitDBTripAccessModule.DKRoute?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func getMissingCities(trip: DriveKitDBTripAccessModule.DKTrip, completion: ((_ updated: Swift.Bool) -> Swift.Void)? = nil)
+  #endif
   public func manualTripsQuery() -> DriveKitCoreModule.WhereReference<DriveKitDBTripAccessModule.DBManualTrip, DriveKitDBTripAccessModule.DKManualTrip>
   public func executeManualTripsQuery(query: DriveKitCoreModule.ExecutableQuery<DriveKitDBTripAccessModule.DBManualTrip, DriveKitDBTripAccessModule.DKManualTrip>, type: DriveKitCoreModule.SynchronizationType = .defaultSync, completionHandler: @escaping (DriveKitDriverDataModule.DKManualTripSyncStatus, [DriveKitDBTripAccessModule.DKManualTrip]) -> Swift.Void)
   public func getManualTrips(type: DriveKitCoreModule.SynchronizationType = .defaultSync, orderByDateAsc: Swift.Bool = false, completionHandler: @escaping (DriveKitDriverDataModule.DKManualTripSyncStatus, [DriveKitDBTripAccessModule.DKManualTrip]) -> Swift.Void)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func getManualTrip(tripId: Swift.String) -> DriveKitDBTripAccessModule.DKManualTrip?
+  #endif
   public func deleteManualTrip(tripId: Swift.String, completionHandler: @escaping (DriveKitDriverDataModule.DKManualTripDeleteStatus) -> Swift.Void)
   public func editManualTripEvaluation(tripId: Swift.String, evaluation: DriveKitDriverDataModule.EvaluationRequest, completionHandler: @escaping (DriveKitDriverDataModule.DKManualTripEditStatus) -> Swift.Void)
   public func editAutoTripEvaluation(tripId: Swift.String, evaluation: DriveKitDriverDataModule.EvaluationRequest, completionHandler: @escaping (DriveKitDriverDataModule.DKAutoTripEditStatus) -> Swift.Void)
@@ -50,17 +60,35 @@ import _SwiftConcurrencyShims
   public func editAutoTripManeuver(tripId: Swift.String, maneuver: DriveKitDriverDataModule.ManeuverRequest, completionHandler: @escaping (DriveKitDriverDataModule.DKAutoTripEditStatus) -> Swift.Void)
   public func editManualTripInformation(tripId: Swift.String, information: DriveKitDriverDataModule.InformationRequest, completionHandler: @escaping (DriveKitDriverDataModule.DKManualTripEditStatus) -> Swift.Void)
   public func editManualTripCondition(tripId: Swift.String, condition: DriveKitDriverDataModule.ConditionRequest, completionHandler: @escaping (DriveKitDriverDataModule.DKManualTripEditStatus) -> Swift.Void)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func createManualTrip(manualTrip: DriveKitDriverDataModule.ManualTripRequest, completionHandler: @escaping (DriveKitDriverDataModule.DKManualTripsCreateStatus, Swift.String?) -> Swift.Void)
+  #endif
   public func deleteTrip(itinId: Swift.String, completionHandler: @escaping (Swift.Bool) -> Swift.Void)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func sendTripAdviceFeedback(itinId: Swift.String, adviceId: Swift.String, evaluation: Swift.Int, feedback: Swift.Int?, comment: Swift.String?, completionHandler: @escaping (Swift.Bool) -> Swift.Void)
+  #endif
   public func sendCities(itinId: Swift.String, departureAddress: DriveKitCoreModule.DKAddress, arrivalAddress: DriveKitCoreModule.DKAddress, completionHandler: @escaping (Swift.Bool) -> Swift.Void)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func getSynthesis(type: DriveKitCoreModule.SynchronizationType = .cache, completionHandler: @escaping (DriveKitDriverDataModule.SynthesisSyncStatus, DriveKitDBTripAccessModule.DKSynthesis?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func getDriverTimelines(periods: [DriveKitCoreModule.DKPeriod], ignoreItemsWithoutTripScored: Swift.Bool = false, type: DriveKitCoreModule.SynchronizationType = .defaultSync, completionHandler: @escaping (DriveKitDriverDataModule.TimelineSyncStatus, [DriveKitDBTripAccessModule.DKDriverTimeline]?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func getRawTimelines(periods: [DriveKitCoreModule.DKPeriod], type: DriveKitCoreModule.SynchronizationType, completionHandler: @escaping (DriveKitDriverDataModule.TimelineSyncStatus, [DriveKitDBTripAccessModule.DKRawTimeline]?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func getDriverProfile(type: DriveKitCoreModule.SynchronizationType = .defaultSync, completionHandler: @escaping (DriveKitDBTripAccessModule.DKDriverProfileStatus, DriveKitDBTripAccessModule.DKDriverProfile?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func getCommunityStatistics(type: DriveKitCoreModule.SynchronizationType = .defaultSync, completionHandler: @escaping (DriveKitDriverDataModule.CommunityStatisticsStatus, DriveKitDBTripAccessModule.DKCommunityStatistics?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func updateDriverPassengerMode(itinId: Swift.String, mode: DriveKitDriverDataModule.DKDriverPassengerMode, comment: Swift.String?, completionHandler: @escaping (DriveKitDriverDataModule.DKUpdateDriverPassengerModeStatus) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func declareTransportationMode(itinId: Swift.String, mode: DriveKitDBTripAccessModule.TransportationMode, passenger: Swift.Bool = false, comment: Swift.String? = nil, completionHandler: @escaping (DriveKitDriverDataModule.DKDeclaredTransportationModeStatus) -> Swift.Void)
+  #endif
   @objc deinit
 }
 public enum SynthesisSyncStatus {
@@ -91,7 +119,9 @@ public struct InformationRequest : Swift.Codable {
   public let arrivalLongitude: Swift.Double?
   public let distance: Swift.Double
   public let duration: Swift.Double
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(departureCity: Swift.String, arrivalCity: Swift.String, departureAddress: Swift.String, arrivalAddress: Swift.String, startDate: Foundation.Date, departureLatitude: Swift.Double?, departureLongitude: Swift.Double?, arrivalLatitude: Swift.Double?, arrivalLongitude: Swift.Double?, distance: Swift.Double, duration: Swift.Double)
+  #endif
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -100,7 +130,9 @@ public struct ConditionRequest : Swift.Codable {
   public let weekDay: Swift.Bool?
   public let context: DriveKitDBTripAccessModule.DKContext
   public let weather: DriveKitDBTripAccessModule.DKWeather
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(dayTimeTrip: Swift.Bool?, weekDay: Swift.Bool?, context: DriveKitDBTripAccessModule.DKContext, weather: DriveKitDBTripAccessModule.DKWeather)
+  #endif
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -109,13 +141,17 @@ public struct ManualTripRequest : Swift.Codable {
   public let evaluationData: DriveKitDriverDataModule.EvaluationRequest?
   public let conditionData: DriveKitDriverDataModule.ConditionRequest
   public let informationData: DriveKitDriverDataModule.InformationRequest
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(maneuver: DriveKitDriverDataModule.ManeuverRequest?, evaluation: DriveKitDriverDataModule.EvaluationRequest?, information: DriveKitDriverDataModule.InformationRequest, condition: DriveKitDriverDataModule.ConditionRequest)
+  #endif
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
 @objc public enum DKManualTripsCreateStatus : Swift.Int {
   case success, error, invalidData
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -123,7 +159,9 @@ public struct ManualTripRequest : Swift.Codable {
 }
 @objc public enum DKManualTripEditStatus : Swift.Int {
   case success, error, tripNotFound
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -131,7 +169,9 @@ public struct ManualTripRequest : Swift.Codable {
 }
 @objc public enum DKManualTripDeleteStatus : Swift.Int {
   case success, error, tripNotFound
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -147,7 +187,9 @@ public enum DKManualTripSyncStatus {
 }
 @objc public enum DKAutoTripEditStatus : Swift.Int {
   case success, error, tripNotFound
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -201,7 +243,9 @@ public enum TripSyncStatus {
 public struct EvaluationRequest : Swift.Codable {
   public let comment: Swift.String?
   public let evaluation: Swift.Int?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(comment: Swift.String?, evaluation: Swift.Int?)
+  #endif
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -215,7 +259,9 @@ public struct ManeuverRequest : Swift.Codable {
   public let nbRoundAbouts: Swift.Int?
   public let nbStraightReverseDrivings: Swift.Int?
   public let nbTurns: Swift.Int?
+  #if compiler(>=5.3) && $NonescapableTypes
   public init(nbStraightReverseDrivings: Swift.Int?, nbCurveReverseDrivings: Swift.Int?, nbTurns: Swift.Int?, nbHillStarts: Swift.Int?, nbRoundAbouts: Swift.Int?, nbEmergencyStops: Swift.Int?, nbAngledParkings: Swift.Int?, nbParallelParkings: Swift.Int?, nbBayParkings: Swift.Int?)
+  #endif
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }

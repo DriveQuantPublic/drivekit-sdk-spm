@@ -1219,6 +1219,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBGroupAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -1227,7 +1228,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBGroupAccessModule"
+        "moduleName": "DriveKitDBGroupAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -1276,6 +1280,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -1295,6 +1300,9 @@
             "usr": "s:27DriveKitDBGroupAccessModule0C0C4saveyyF",
             "mangledName": "$s27DriveKitDBGroupAccessModule0C0C4saveyyF",
             "moduleName": "DriveKitDBGroupAccessModule",
+            "declAttributes": [
+              "Nonisolated"
+            ],
             "isFromExtension": true,
             "funcSelfKind": "NonMutating"
           },
@@ -1316,6 +1324,7 @@
             "genericSig": "<τ_0_0>",
             "sugared_genericSig": "<T>",
             "declAttributes": [
+              "Nonisolated",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -1379,6 +1388,7 @@
             "moduleName": "DriveKitDBGroupAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -1482,6 +1492,7 @@
             "moduleName": "DriveKitDBGroupAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -1585,6 +1596,7 @@
             "moduleName": "DriveKitDBGroupAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -1680,6 +1692,7 @@
             "moduleName": "DriveKitDBGroupAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -1767,6 +1780,7 @@
             "moduleName": "DriveKitDBGroupAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -1851,6 +1865,7 @@
         "moduleName": "DriveKitDBGroupAccessModule",
         "objc_name": "DBGroup",
         "declAttributes": [
+          "Nonisolated",
           "AccessControl",
           "ObjC"
         ],
@@ -1948,6 +1963,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "DKUnmanagedObject",
             "printedName": "DKUnmanagedObject",
             "usr": "s:18DriveKitCoreModule17DKUnmanagedObjectP",
@@ -1992,6 +2021,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBGroupAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -2000,7 +2030,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBGroupAccessModule"
+        "moduleName": "DriveKitDBGroupAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -2009,6 +2042,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBGroupAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -2017,7 +2051,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBGroupAccessModule"
+        "moduleName": "DriveKitDBGroupAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       }
     ],
     "json_format_version": 8

@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
 // swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name DriveKitDBChallengeAccessModule
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import CoreData
 import DriveKitCoreModule
 @_exported import DriveKitDBChallengeAccessModule
@@ -28,10 +28,10 @@ import _SwiftConcurrencyShims
   @objc deinit
 }
 extension DriveKitDBChallengeAccessModule.DBChallenge {
-  public func save()
+  nonisolated public func save()
 }
 extension DriveKitDBChallengeAccessModule.DBChallengeDetail {
-  public func save()
+  nonisolated public func save()
 }
 @_hasMissingDesignatedInitializers @objc public class DKChallengeDetail : ObjectiveC.NSObject {
   @objc final public let challengeId: Swift.String
@@ -73,16 +73,16 @@ extension DriveKitDBChallengeAccessModule.DBChallengeDetail {
   @objc deinit
 }
 extension DriveKitDBChallengeAccessModule.DBChallengeDriverRanked : DriveKitCoreModule.DKUnmanagedObject {
-  public func convertToUnmanagedObject<T>() -> T
+  nonisolated public func convertToUnmanagedObject<T>() -> T
 }
 extension DriveKitDBChallengeAccessModule.DBChallengeDriverStats : DriveKitCoreModule.DKUnmanagedObject {
-  public func convertToUnmanagedObject<T>() -> T
+  nonisolated public func convertToUnmanagedObject<T>() -> T
 }
 extension DriveKitDBChallengeAccessModule.DBChallengeStats : DriveKitCoreModule.DKUnmanagedObject {
-  public func convertToUnmanagedObject<T>() -> T
+  nonisolated public func convertToUnmanagedObject<T>() -> T
 }
 extension DriveKitDBChallengeAccessModule.DBChallengeDetail : DriveKitCoreModule.DKUnmanagedObject {
-  public func convertToUnmanagedObject<T>() -> T
+  nonisolated public func convertToUnmanagedObject<T>() -> T
 }
 @_hasMissingDesignatedInitializers @objc public class DKChallenge : ObjectiveC.NSObject {
   @objc final public let id: Swift.String
@@ -117,21 +117,25 @@ extension DriveKitDBChallengeAccessModule.DBChallengeDetail : DriveKitCoreModule
 @objc public enum DKChallengeStatus : Swift.Int {
   case draft, scheduled, pending, finished, archived, undefined
   public static func getEnumFromStatus(status: Swift.String) -> DriveKitDBChallengeAccessModule.DKChallengeStatus
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
 }
 extension DriveKitDBChallengeAccessModule.DBChallenge : DriveKitCoreModule.DKUnmanagedObject {
-  public func convertToUnmanagedObject<T>() -> T
+  nonisolated public func convertToUnmanagedObject<T>() -> T
 }
 extension DriveKitDBChallengeAccessModule.DBChallengeGroup : DriveKitCoreModule.DKUnmanagedObject {
-  public func convertToUnmanagedObject<T>() -> T
+  nonisolated public func convertToUnmanagedObject<T>() -> T
 }
 @objc public enum DKChallengeType : Swift.Int {
   case safety, ecoDriving, distraction, speeding, hardBraking, hardAcceleration, deprecated, unknown
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -142,294 +146,370 @@ extension DriveKitDBChallengeAccessModule.DKChallenge {
     get
   }
 }
-@_inheritsConvenienceInitializers @objc(DBChallenge) public class DBChallenge : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+public typealias DBChallengeCoreDataClassSet = Foundation.NSSet
+@_inheritsConvenienceInitializers @objc(DBChallenge) nonisolated public class DBChallenge : CoreData.NSManagedObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  #endif
   @objc deinit
 }
+public typealias DBChallengeCoreDataPropertiesSet = Foundation.NSSet
 extension DriveKitDBChallengeAccessModule.DBChallenge {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<DriveKitDBChallengeAccessModule.DBChallenge>
-  @objc @NSManaged dynamic public var challengeDescription: Swift.String? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var challengeDescription: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var conditions: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var conditions: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var conditionsDescription: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var conditionsDescription: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var conditionsFilled: Swift.Bool {
+  #endif
+  @objc @NSManaged nonisolated dynamic public var conditionsFilled: Swift.Bool {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var driverConditions: Swift.String? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var driverConditions: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var endDate: Foundation.Date? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var endDate: Foundation.Date? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var iconCode: Swift.Int32 {
+  #endif
+  @objc @NSManaged nonisolated dynamic public var iconCode: Swift.Int32 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var id: Swift.String? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var id: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var isRegistered: Swift.Bool {
+  #endif
+  @objc @NSManaged nonisolated dynamic public var isRegistered: Swift.Bool {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var nbDriverRanked: Swift.Int32 {
+  @objc @NSManaged nonisolated dynamic public var nbDriverRanked: Swift.Int32 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var nbDriverRegistered: Swift.Int32 {
+  @objc @NSManaged nonisolated dynamic public var nbDriverRegistered: Swift.Int32 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var optinText: Swift.String? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var optinText: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var rank: Swift.Int32 {
+  #endif
+  @objc @NSManaged nonisolated dynamic public var rank: Swift.Int32 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var rankKey: Swift.String? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var rankKey: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var rules: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var rules: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var startDate: Foundation.Date? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var startDate: Foundation.Date? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var status: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var status: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var themeCode: Swift.Int32 {
+  #endif
+  @objc @NSManaged nonisolated dynamic public var themeCode: Swift.Int32 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var title: Swift.String? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var title: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var type: Swift.Int32 {
+  #endif
+  @objc @NSManaged nonisolated dynamic public var type: Swift.Int32 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var groups: Foundation.NSSet? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var groups: Foundation.NSSet? {
     @objc get
     @objc set
   }
+  #endif
 }
 extension DriveKitDBChallengeAccessModule.DBChallenge {
-  @objc(addGroupsObject:) @NSManaged dynamic public func addToGroups(_ value: DriveKitDBChallengeAccessModule.DBChallengeGroup)
-  @objc(removeGroupsObject:) @NSManaged dynamic public func removeFromGroups(_ value: DriveKitDBChallengeAccessModule.DBChallengeGroup)
-  @objc(addGroups:) @NSManaged dynamic public func addToGroups(_ values: Foundation.NSSet)
-  @objc(removeGroups:) @NSManaged dynamic public func removeFromGroups(_ values: Foundation.NSSet)
+  @objc(addGroupsObject:) @NSManaged nonisolated dynamic public func addToGroups(_ value: DriveKitDBChallengeAccessModule.DBChallengeGroup)
+  @objc(removeGroupsObject:) @NSManaged nonisolated dynamic public func removeFromGroups(_ value: DriveKitDBChallengeAccessModule.DBChallengeGroup)
+  @objc(addGroups:) @NSManaged nonisolated dynamic public func addToGroups(_ values: Foundation.NSSet)
+  @objc(removeGroups:) @NSManaged nonisolated dynamic public func removeFromGroups(_ values: Foundation.NSSet)
 }
 extension DriveKitDBChallengeAccessModule.DBChallenge : Swift.Identifiable {
   public typealias ID = Swift.String?
 }
-@_inheritsConvenienceInitializers @objc(DBChallengeDetail) public class DBChallengeDetail : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+public typealias DBChallengeDetailCoreDataClassSet = Foundation.NSSet
+@_inheritsConvenienceInitializers @objc(DBChallengeDetail) nonisolated public class DBChallengeDetail : CoreData.NSManagedObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  #endif
   @objc deinit
 }
+public typealias DBChallengeDetailCoreDataPropertiesSet = Foundation.NSSet
 extension DriveKitDBChallengeAccessModule.DBChallengeDetail {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<DriveKitDBChallengeAccessModule.DBChallengeDetail>
-  @objc @NSManaged dynamic public var challengeId: Swift.String? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var challengeId: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var conditionsFilled: Swift.Bool {
+  #endif
+  @objc @NSManaged nonisolated dynamic public var conditionsFilled: Swift.Bool {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var isRegistered: Swift.Bool {
+  @objc @NSManaged nonisolated dynamic public var isRegistered: Swift.Bool {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var itinIds: Foundation.NSArray? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var itinIds: Foundation.NSArray? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var nbDriverRanked: Swift.Int32 {
+  #endif
+  @objc @NSManaged nonisolated dynamic public var nbDriverRanked: Swift.Int32 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var nbDriverRegistered: Swift.Int32 {
+  @objc @NSManaged nonisolated dynamic public var nbDriverRegistered: Swift.Int32 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var userIndex: Swift.Int32 {
+  @objc @NSManaged nonisolated dynamic public var userIndex: Swift.Int32 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var challengeStats: DriveKitDBChallengeAccessModule.DBChallengeStats? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var challengeStats: DriveKitDBChallengeAccessModule.DBChallengeStats? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var driverRanked: Foundation.NSSet? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var driverRanked: Foundation.NSSet? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var driverStats: DriveKitDBChallengeAccessModule.DBChallengeDriverStats? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var driverStats: DriveKitDBChallengeAccessModule.DBChallengeDriverStats? {
     @objc get
     @objc set
   }
+  #endif
 }
 extension DriveKitDBChallengeAccessModule.DBChallengeDetail {
-  @objc(addDriverRankedObject:) @NSManaged dynamic public func addToDriverRanked(_ value: DriveKitDBChallengeAccessModule.DBChallengeDriverRanked)
-  @objc(removeDriverRankedObject:) @NSManaged dynamic public func removeFromDriverRanked(_ value: DriveKitDBChallengeAccessModule.DBChallengeDriverRanked)
-  @objc(addDriverRanked:) @NSManaged dynamic public func addToDriverRanked(_ values: Foundation.NSSet)
-  @objc(removeDriverRanked:) @NSManaged dynamic public func removeFromDriverRanked(_ values: Foundation.NSSet)
+  @objc(addDriverRankedObject:) @NSManaged nonisolated dynamic public func addToDriverRanked(_ value: DriveKitDBChallengeAccessModule.DBChallengeDriverRanked)
+  @objc(removeDriverRankedObject:) @NSManaged nonisolated dynamic public func removeFromDriverRanked(_ value: DriveKitDBChallengeAccessModule.DBChallengeDriverRanked)
+  @objc(addDriverRanked:) @NSManaged nonisolated dynamic public func addToDriverRanked(_ values: Foundation.NSSet)
+  @objc(removeDriverRanked:) @NSManaged nonisolated dynamic public func removeFromDriverRanked(_ values: Foundation.NSSet)
 }
 extension DriveKitDBChallengeAccessModule.DBChallengeDetail : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
-@_inheritsConvenienceInitializers @objc(DBChallengeDriverRanked) public class DBChallengeDriverRanked : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+public typealias DBChallengeDriverRankedCoreDataClassSet = Foundation.NSSet
+@_inheritsConvenienceInitializers @objc(DBChallengeDriverRanked) nonisolated public class DBChallengeDriverRanked : CoreData.NSManagedObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  #endif
   @objc deinit
 }
+public typealias DBChallengeDriverRankedCoreDataPropertiesSet = Foundation.NSSet
 extension DriveKitDBChallengeAccessModule.DBChallengeDriverRanked {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<DriveKitDBChallengeAccessModule.DBChallengeDriverRanked>
-  @objc @NSManaged dynamic public var distance: Swift.Double {
+  @objc @NSManaged nonisolated dynamic public var distance: Swift.Double {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var previousRank: Swift.Int32 {
+  @objc @NSManaged nonisolated dynamic public var previousRank: Swift.Int32 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var pseudo: Swift.String? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var pseudo: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var rank: Swift.Int32 {
+  #endif
+  @objc @NSManaged nonisolated dynamic public var rank: Swift.Int32 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var score: Swift.Double {
+  @objc @NSManaged nonisolated dynamic public var score: Swift.Double {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var challengeDetail: DriveKitDBChallengeAccessModule.DBChallengeDetail? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var challengeDetail: DriveKitDBChallengeAccessModule.DBChallengeDetail? {
     @objc get
     @objc set
   }
+  #endif
 }
 extension DriveKitDBChallengeAccessModule.DBChallengeDriverRanked : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
-@_inheritsConvenienceInitializers @objc(DBChallengeDriverStats) public class DBChallengeDriverStats : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+public typealias DBChallengeDriverStatsCoreDataClassSet = Foundation.NSSet
+@_inheritsConvenienceInitializers @objc(DBChallengeDriverStats) nonisolated public class DBChallengeDriverStats : CoreData.NSManagedObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  #endif
   @objc deinit
 }
+public typealias DBChallengeDriverStatsCoreDataPropertiesSet = Foundation.NSSet
 extension DriveKitDBChallengeAccessModule.DBChallengeDriverStats {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<DriveKitDBChallengeAccessModule.DBChallengeDriverStats>
-  @objc @NSManaged dynamic public var distance: Swift.Double {
+  @objc @NSManaged nonisolated dynamic public var distance: Swift.Double {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var duration: Swift.Double {
+  @objc @NSManaged nonisolated dynamic public var duration: Swift.Double {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var numberTrip: Swift.Int32 {
+  @objc @NSManaged nonisolated dynamic public var numberTrip: Swift.Int32 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var rank: Swift.Int32 {
+  @objc @NSManaged nonisolated dynamic public var rank: Swift.Int32 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var score: Swift.Double {
+  @objc @NSManaged nonisolated dynamic public var score: Swift.Double {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var challnegeDetail: DriveKitDBChallengeAccessModule.DBChallengeDetail? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var challnegeDetail: DriveKitDBChallengeAccessModule.DBChallengeDetail? {
     @objc get
     @objc set
   }
+  #endif
 }
 extension DriveKitDBChallengeAccessModule.DBChallengeDriverStats : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
-@_inheritsConvenienceInitializers @objc(DBChallengeGroup) public class DBChallengeGroup : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+public typealias DBChallengeGroupCoreDataClassSet = Foundation.NSSet
+@_inheritsConvenienceInitializers @objc(DBChallengeGroup) nonisolated public class DBChallengeGroup : CoreData.NSManagedObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  #endif
   @objc deinit
 }
+public typealias DBChallengeGroupCoreDataPropertiesSet = Foundation.NSSet
 extension DriveKitDBChallengeAccessModule.DBChallengeGroup {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<DriveKitDBChallengeAccessModule.DBChallengeGroup>
-  @objc @NSManaged dynamic public var id: Swift.String? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var id: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var label: Swift.String? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var label: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var challenge: DriveKitDBChallengeAccessModule.DBChallenge? {
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var challenge: DriveKitDBChallengeAccessModule.DBChallenge? {
     @objc get
     @objc set
   }
+  #endif
 }
 extension DriveKitDBChallengeAccessModule.DBChallengeGroup : Swift.Identifiable {
   public typealias ID = Swift.String?
 }
-@_inheritsConvenienceInitializers @objc(DBChallengeStats) public class DBChallengeStats : CoreData.NSManagedObject {
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+public typealias DBChallengeStatsCoreDataClassSet = Foundation.NSSet
+@_inheritsConvenienceInitializers @objc(DBChallengeStats) nonisolated public class DBChallengeStats : CoreData.NSManagedObject {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
+  #endif
   @objc deinit
 }
+public typealias DBChallengeStatsCoreDataPropertiesSet = Foundation.NSSet
 extension DriveKitDBChallengeAccessModule.DBChallengeStats {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<DriveKitDBChallengeAccessModule.DBChallengeStats>
-  @objc @NSManaged dynamic public var distance: Swift.Double {
+  @objc @NSManaged nonisolated dynamic public var distance: Swift.Double {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var duration: Swift.Double {
+  @objc @NSManaged nonisolated dynamic public var duration: Swift.Double {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var maxScore: Swift.Double {
+  @objc @NSManaged nonisolated dynamic public var maxScore: Swift.Double {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var minScore: Swift.Double {
+  @objc @NSManaged nonisolated dynamic public var minScore: Swift.Double {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var numberDriver: Swift.Int32 {
+  @objc @NSManaged nonisolated dynamic public var numberDriver: Swift.Int32 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var numberTrip: Swift.Int32 {
+  @objc @NSManaged nonisolated dynamic public var numberTrip: Swift.Int32 {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var score: Swift.Double {
+  @objc @NSManaged nonisolated dynamic public var score: Swift.Double {
     @objc get
     @objc set
   }
-  @objc @NSManaged dynamic public var challengeDetail: DriveKitDBChallengeAccessModule.DBChallengeDetail? {
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var challengeDetail: DriveKitDBChallengeAccessModule.DBChallengeDetail? {
     @objc get
     @objc set
   }
+  #endif
 }
 extension DriveKitDBChallengeAccessModule.DBChallengeStats : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
+public typealias ChallengeFoundationFrameworkSet = Foundation.NSSet
+public typealias ChallengeCoreDataFrameworkManagedObject = CoreData.NSManagedObject
 extension DriveKitDBChallengeAccessModule.DKChallengeStatus : Swift.Equatable {}
 extension DriveKitDBChallengeAccessModule.DKChallengeStatus : Swift.Hashable {}
 extension DriveKitDBChallengeAccessModule.DKChallengeStatus : Swift.RawRepresentable {}

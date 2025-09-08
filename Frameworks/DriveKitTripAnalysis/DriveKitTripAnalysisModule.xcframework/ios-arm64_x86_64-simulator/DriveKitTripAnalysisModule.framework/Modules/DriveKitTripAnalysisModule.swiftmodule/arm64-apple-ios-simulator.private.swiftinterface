@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name DriveKitTripAnalysisModule
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import AVFoundation
 import CallKit
 import CoreLocation
@@ -63,7 +63,9 @@ public class Safety : DriveKitNetworkingModule.DriveKitModel {
   case invalidGpsData = 36
   case invalidTrip = 37
   case accountLimitReached = 38
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -85,7 +87,9 @@ public class Safety : DriveKitNetworkingModule.DriveKitModel {
 @objc public enum DKCrashStatus : Swift.Int, Swift.Codable {
   case unconfirmed
   case confirmed
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -133,7 +137,9 @@ public struct CallEvent : DriveKitNetworkingModule.DriveKitModel {
 }
 @objc public enum DKWorkingHoursSyncStatus : Swift.Int {
   case success, cacheOnly, failed
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -141,7 +147,9 @@ public struct CallEvent : DriveKitNetworkingModule.DriveKitModel {
 }
 @objc public enum DKWorkingHoursUpdateStatus : Swift.Int {
   case success, failed, invalidDayOfWeek, invalidStartOrEndTime, startTimeGreaterThanEndTime, duplicatedDay, invalidDayCount
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -186,14 +194,18 @@ public class AdvancedSafety : DriveKitNetworkingModule.DriveKitModel {
   @objc(error) public var objc_error: Swift.Int {
     @objc get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc(getTripObject) public func getTrip() -> DriveKitDBTripAccessModule.DKTrip?
+  #endif
   public func toResult() -> DriveKitTripAnalysisModule.TripResult
   @objc deinit
 }
 @objc public enum TripResponseStatusType : Swift.Int {
   case tripValid
   case tripError
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -269,7 +281,9 @@ public struct OccupantInfo : DriveKitNetworkingModule.DriveKitModel {
   case silence
   case vibration
   case soundAndVibration
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -309,7 +323,9 @@ public class SafetyEvent : DriveKitNetworkingModule.DriveKitModel {
 @available(*, deprecated, message: "This class will be removed in a future version, at the end of 2025.")
 @objc public enum CancelTrip : Swift.Int {
   case user = 0, highspeed = 1, noSpeed = 2, noBeacon = 3, noBluetoothDevice = 8, missingConfiguration = 4, noGPSData = 5, reset = 6, beaconNoSpeed = 7, bluetoothDeviceNoSpeed = 9
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   @available(*, deprecated, message: "This class will be removed in a future version, at the end of 2025.")
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -328,7 +344,9 @@ public class SafetyEvent : DriveKitNetworkingModule.DriveKitModel {
 }
 @objc public protocol DKTripRecordingCanceledState : DriveKitTripAnalysisModule.DKTripRecordingState {
   @objc var cancelationReason: DriveKitTripAnalysisModule.DKTripCancelationReason { get }
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc var recordingConfirmationDate: Foundation.Date? { get }
+  #endif
 }
 @objc public protocol DKTripRecordingFinishedState : DriveKitTripAnalysisModule.DKTripRecordingState {
   @objc var recordingConfirmationDate: Foundation.Date { get }
@@ -346,7 +364,9 @@ public class SafetyEvent : DriveKitNetworkingModule.DriveKitModel {
   case beaconNoSpeed
   case bluetoothDeviceNoSpeed
   case appKilled
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -498,7 +518,9 @@ public struct SpeedLimitContext : DriveKitNetworkingModule.DriveKitModel {
   case forbidden
   case activeLinkAlreadyExists
   case error
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -511,7 +533,9 @@ public struct SpeedLimitContext : DriveKitNetworkingModule.DriveKitModel {
   case unauthenticated
   case forbidden
   case noActiveLink
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -524,7 +548,9 @@ public struct SpeedLimitContext : DriveKitNetworkingModule.DriveKitModel {
   case unauthenticated
   case forbidden
   case noActiveLink
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -539,7 +565,9 @@ public struct SpeedLimitContext : DriveKitNetworkingModule.DriveKitModel {
   case invalidVehicleCharacteristics = 28
   case invalidVehicleId = 32
   public func getComment() -> Swift.String
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -615,9 +643,11 @@ public enum TripAnalysisConstant {
 }
 public class CircularBuffer<T> {
   final public let size: Swift.Int
+  #if compiler(>=5.3) && $NonescapableTypes
   public var last: T? {
     get
   }
+  #endif
   public var count: Swift.Int {
     get
   }
@@ -648,7 +678,9 @@ public enum CrashFeedbackType : Swift.String, Swift.Codable {
   case noCrash
   case confirmed
   case noFeedback
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -658,7 +690,9 @@ public enum CrashFeedbackSeverity : Swift.String, Swift.Codable {
   case none
   case minor
   case critical
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
+  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -668,7 +702,9 @@ public enum CrashFeedbackSeverity : Swift.String, Swift.Codable {
   case noCrash
   case confirmed
   case noFeedback
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -678,7 +714,9 @@ public enum CrashFeedbackSeverity : Swift.String, Swift.Codable {
   case none
   case minor
   case critical
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -761,7 +799,9 @@ public class BrakeWear : DriveKitNetworkingModule.DriveKitModel {
   case disabled
   case personal
   case business
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -821,7 +861,7 @@ public class TireWear : DriveKitNetworkingModule.DriveKitModel {
   @objc optional func tripRecordingCanceled(state: any DriveKitTripAnalysisModule.DKTripRecordingCanceledState)
   @objc optional func tripRecordingFinished(state: any DriveKitTripAnalysisModule.DKTripRecordingFinishedState)
   @objc optional func beaconDetected()
-  @objc optional func significantLocationChangeDetected(location: CoreLocation.CLLocation)
+  @objc optional func significantLocationChangeDetected(location: _LocationEssentials.CLLocation)
   @objc optional func potentialTripStart(startMode: DriveKitTripAnalysisModule.StartMode)
   @objc optional func sdkStateChanged(state: DriveKitTripAnalysisModule.State)
   @objc optional func tripPoint(tripPoint: DriveKitTripAnalysisModule.TripPoint)
@@ -843,7 +883,9 @@ public class TireWear : DriveKitNetworkingModule.DriveKitModel {
   case geozone = 4
   case bluetooth = 5
   case bluetooth_unknown = 6
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -897,7 +939,9 @@ public class EndTripLocation : DriveKitNetworkingModule.DriveKitModel {
   }
   @objc final public let tripSharing: DriveKitTripAnalysisModule.DKTripSharing
   @objc deinit
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func initialize(tripListener: (any DriveKitTripAnalysisModule.TripListener)? = nil, appLaunchOptions: [UIKit.UIApplication.LaunchOptionsKey : Any]?)
+  #endif
   @objc public func activateLowPowerMode(enable: Swift.Bool)
   @objc public func activateCrashDetection(_ enable: Swift.Bool)
   @objc public func disableCrashFeedback()
@@ -907,8 +951,12 @@ public class EndTripLocation : DriveKitNetworkingModule.DriveKitModel {
   @objc public func setBeaconRequired(required: Swift.Bool)
   @objc public func setBluetoothDeviceRequired(_ required: Swift.Bool)
   @objc public func enableSharePosition(enable: Swift.Bool)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func setVehicleId(id: Swift.String?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func setVehicle(vehicle: DriveKitTripAnalysisModule.TripVehicle?)
+  #endif
   @objc public func setStopTimeOut(timeOut: Swift.Int)
   @objc public func setBeacons(beacons: [DriveKitTripAnalysisModule.BeaconData])
   @objc public func getAllBeacons() -> [DriveKitTripAnalysisModule.BeaconData]
@@ -916,9 +964,15 @@ public class EndTripLocation : DriveKitNetworkingModule.DriveKitModel {
   @objc public func getAllBluetoothDevices() -> [DriveKitTripAnalysisModule.BluetoothData]
   public func setVehiclesConfigTakeover(vehiclesConfigTakeOver: Swift.Bool)
   @objc public func getAvailableBluetoothDevices() -> [DriveKitTripAnalysisModule.BluetoothData]
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func setTripMetadata(_ metadata: [Swift.String : Swift.String]?)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getTripMetadata() -> [Swift.String : Swift.String]?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func updateTripMetadata(key: Swift.String, value: Swift.String?)
+  #endif
   @objc public func deleteTripMetadata(key: Swift.String)
   @objc public func deleteTripMetadata()
   @objc public func addTripListener(_ tripListener: any DriveKitTripAnalysisModule.TripListener)
@@ -927,15 +981,27 @@ public class EndTripLocation : DriveKitNetworkingModule.DriveKitModel {
   @objc public func startTrip()
   @objc public func stopTrip()
   @objc public func cancelTrip()
+  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, deprecated, message: "This method is now deprecated and will be removed in a future version, at the end of 2025. Use `getCurrentTripInfo()?.startMode` instead.")
   public func getCurrentStartMode() -> DriveKitTripAnalysisModule.StartMode?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, deprecated, message: "This method is now deprecated and will be removed in a future version, at the end of 2025. Use `getCurrentTripInfo()?.date` instead.")
   public func getCurrentTripStartDate() -> Foundation.Date?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getCurrentTripInfo() -> (any DriveKitTripAnalysisModule.DKTripInfo)?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, deprecated, message: "This method is now deprecated and will be removed in a future version. Use `getLastTripPointOfCurrentTrip` instead.")
   public func getLastTripPoint() -> DriveKitTripAnalysisModule.TripPoint?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func getLastTripPointOfCurrentTrip() -> DriveKitTripAnalysisModule.TripPoint?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getLastTripLocation() -> (any DriveKitCoreModule.DKTripLocation)?
+  #endif
   @available(*, deprecated, message: "This method is now deprecated and will be removed in a future version, at the end of 2025. Use `getCurrentTripInfo()?.startMode` instead.")
   @objc(getCurrentStartMode) public func objc_getCurrentStartMode() -> Swift.Int
   @objc public func isConfigured() -> Swift.Bool
@@ -949,16 +1015,26 @@ public class EndTripLocation : DriveKitNetworkingModule.DriveKitModel {
   public func tripSyncFinishedWithEndTripLocation(endTripLocation: any DriveKitCoreModule.DKTripLocation)
   @objc public func isTripRunning() -> Swift.Bool
   @objc public func getRecorderState() -> DriveKitTripAnalysisModule.State
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func temporaryDeactivationEndDate() -> Foundation.Date?
+  #endif
   @objc public func temporaryDeactivateSDK(minutes: Swift.Int)
   @objc public func cancelTemporaryDeactivation()
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getWorkingHours(type: DriveKitCoreModule.SynchronizationType = .defaultSync, completion: @escaping (DriveKitTripAnalysisModule.DKWorkingHoursSyncStatus, DriveKitTripAnalysisModule.DKWorkingHours?) -> Swift.Void)
+  #endif
   @objc public func updateWorkingHours(workingHours: DriveKitTripAnalysisModule.DKWorkingHours, completion: @escaping (DriveKitTripAnalysisModule.DKWorkingHoursUpdateStatus) -> Swift.Void)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func getLogbookTripType() -> DriveKitTripAnalysisModule.LogbookType?
+  #endif
   @objc public func sendCrashFeedback(crashInfo: DriveKitTripAnalysisModule.DKCrashInfo, confirmed: DriveKitTripAnalysisModule.DKCrashFeedbackType, severity: DriveKitTripAnalysisModule.DKCrashFeedbackSeverity)
   public func sendCrashFeedback(crashInfo: DriveKitTripAnalysisModule.DKCrashInfo, feedback: DriveKitTripAnalysisModule.CrashFeedbackType, severity: DriveKitTripAnalysisModule.CrashFeedbackSeverity)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func crashFeedbackNotificationOpened(crashId: Swift.String) -> DriveKitTripAnalysisModule.DKCrashInfo?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func noCrashConfirmationOpened(crashId: Swift.String) -> DriveKitTripAnalysisModule.DKCrashInfo?
+  #endif
   @objc public func registerCrashFeedbackDelegate(delegate: any DriveKitTripAnalysisModule.CrashFeedbackDelegate)
   @objc public func unregisterCrashFeedbackDelegate(delegate: any DriveKitTripAnalysisModule.CrashFeedbackDelegate)
   @available(*, deprecated, message: "This method will be removed in a future version, at the end of 2025")
@@ -1005,7 +1081,9 @@ public class Comment : DriveKitNetworkingModule.DriveKitModel {
 }
 @objc public enum State : Swift.Int {
   case inactive, starting, running, stopping, sending
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1013,8 +1091,12 @@ public class Comment : DriveKitNetworkingModule.DriveKitModel {
 }
 @_inheritsConvenienceInitializers @objc public class DKTripSharing : ObjectiveC.NSObject {
   public func isAvailable() -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   public func createLink(durationInSeconds: Swift.Int, completion: @escaping (_ status: DriveKitTripAnalysisModule.DKCreateTripSharingLinkStatus, _ data: (any DriveKitTripAnalysisModule.DKTripSharingLink)?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func getLink(synchronizationType: DriveKitCoreModule.SynchronizationType = .defaultSync, completion: @escaping (_ status: DriveKitTripAnalysisModule.DKGetTripSharingLinkStatus, _ data: (any DriveKitTripAnalysisModule.DKTripSharingLink)?) -> Swift.Void)
+  #endif
   public func revokeLink(completion: @escaping (_ status: DriveKitTripAnalysisModule.DKRevokeTripSharingLinkStatus) -> Swift.Void)
   @objc override dynamic public init()
   @objc deinit
@@ -1034,13 +1116,15 @@ public class DKAdvancedEnergyEstimation : DriveKitNetworkingModule.DriveKitModel
 public class TripSimulator {
   public init()
   public func start()
-  public func sendLocation(_ location: CoreLocation.CLLocation)
+  public func sendLocation(_ location: _LocationEssentials.CLLocation)
   public func stop()
   @objc deinit
 }
 public enum LogbookType : Swift.Int {
   case unknown, pro, perso
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get

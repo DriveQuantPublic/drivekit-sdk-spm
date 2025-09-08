@@ -46537,6 +46537,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -46545,7 +46546,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -46594,6 +46598,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -46616,6 +46621,7 @@
             "genericSig": "<τ_0_0>",
             "sugared_genericSig": "<T>",
             "declAttributes": [
+              "Nonisolated",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -46671,6 +46677,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -46750,6 +46757,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -46829,6 +46837,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -46908,6 +46917,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -46987,6 +46997,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -47066,6 +47077,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -47145,6 +47157,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -47232,6 +47245,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -47316,6 +47330,7 @@
         "moduleName": "DriveKitDBTripAccessModule",
         "objc_name": "DBAdvancedEnergyEstimation",
         "declAttributes": [
+          "Nonisolated",
           "AccessControl",
           "ObjC"
         ],
@@ -47413,6 +47428,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Identifiable",
             "printedName": "Identifiable",
             "children": [
@@ -47442,6 +47471,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -47450,7 +47480,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -47459,6 +47492,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -47467,7 +47501,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -47516,6 +47553,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -47538,6 +47576,7 @@
             "genericSig": "<τ_0_0>",
             "sugared_genericSig": "<T>",
             "declAttributes": [
+              "Nonisolated",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -47593,6 +47632,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -47672,6 +47712,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -47751,6 +47792,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -47830,6 +47872,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -47909,6 +47952,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -47988,6 +48032,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -48067,6 +48112,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -48146,6 +48192,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -48225,6 +48272,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -48304,6 +48352,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -48391,6 +48440,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -48475,6 +48525,7 @@
         "moduleName": "DriveKitDBTripAccessModule",
         "objc_name": "DBBrakeWear",
         "declAttributes": [
+          "Nonisolated",
           "AccessControl",
           "ObjC"
         ],
@@ -48572,6 +48623,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Identifiable",
             "printedName": "Identifiable",
             "children": [
@@ -48601,6 +48666,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -48609,7 +48675,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -48618,6 +48687,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -48626,7 +48696,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -48675,6 +48748,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -48697,6 +48771,7 @@
             "genericSig": "<τ_0_0>",
             "sugared_genericSig": "<T>",
             "declAttributes": [
+              "Nonisolated",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -48760,6 +48835,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -48863,6 +48939,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -48966,6 +49043,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -49069,6 +49147,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -49164,6 +49243,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -49243,6 +49323,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -49322,6 +49403,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -49401,6 +49483,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -49480,6 +49563,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -49559,6 +49643,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -49638,6 +49723,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -49717,6 +49803,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -49796,6 +49883,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -49883,6 +49971,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -49986,6 +50075,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -50070,6 +50160,7 @@
         "moduleName": "DriveKitDBTripAccessModule",
         "objc_name": "DBCall",
         "declAttributes": [
+          "Nonisolated",
           "AccessControl",
           "ObjC"
         ],
@@ -50167,6 +50258,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Identifiable",
             "printedName": "Identifiable",
             "children": [
@@ -50196,6 +50301,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -50204,7 +50310,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -50213,6 +50322,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -50221,7 +50331,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -50270,6 +50383,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -50290,6 +50404,7 @@
             "mangledName": "$s26DriveKitDBTripAccessModule11DBConditionC4saveyyF",
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
+              "Nonisolated",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -50345,6 +50460,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -50424,6 +50540,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -50503,6 +50620,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -50582,6 +50700,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -50669,6 +50788,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -50753,6 +50873,7 @@
         "moduleName": "DriveKitDBTripAccessModule",
         "objc_name": "DBCondition",
         "declAttributes": [
+          "Nonisolated",
           "AccessControl",
           "ObjC"
         ],
@@ -50850,6 +50971,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Identifiable",
             "printedName": "Identifiable",
             "children": [
@@ -50879,6 +51014,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -50887,7 +51023,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -50896,6 +51035,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -50904,7 +51044,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -50953,6 +51096,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -50975,6 +51119,7 @@
             "genericSig": "<τ_0_0>",
             "sugared_genericSig": "<T>",
             "declAttributes": [
+              "Nonisolated",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -51038,6 +51183,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -51133,6 +51279,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -51212,6 +51359,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -51299,6 +51447,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -51383,6 +51532,7 @@
         "moduleName": "DriveKitDBTripAccessModule",
         "objc_name": "DBDeclaredTransportationMode",
         "declAttributes": [
+          "Nonisolated",
           "AccessControl",
           "ObjC"
         ],
@@ -51480,6 +51630,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Identifiable",
             "printedName": "Identifiable",
             "children": [
@@ -51509,6 +51673,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -51517,7 +51682,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -51526,6 +51694,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -51534,7 +51703,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -51583,6 +51755,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -51605,6 +51778,7 @@
             "genericSig": "<τ_0_0>",
             "sugared_genericSig": "<T>",
             "declAttributes": [
+              "Nonisolated",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -51660,6 +51834,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -51739,6 +51914,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -51818,6 +51994,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -51897,6 +52074,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -51976,6 +52154,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -52055,6 +52234,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -52142,6 +52322,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -52245,6 +52426,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -52348,6 +52530,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -52432,6 +52615,7 @@
         "moduleName": "DriveKitDBTripAccessModule",
         "objc_name": "DBDriverDistraction",
         "declAttributes": [
+          "Nonisolated",
           "AccessControl",
           "ObjC"
         ],
@@ -52529,6 +52713,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Identifiable",
             "printedName": "Identifiable",
             "children": [
@@ -52558,6 +52756,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -52566,7 +52765,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -52575,6 +52777,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -52583,7 +52786,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -52632,6 +52838,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -52654,6 +52861,7 @@
             "genericSig": "<τ_0_0>",
             "sugared_genericSig": "<T>",
             "declAttributes": [
+              "Nonisolated",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -52709,6 +52917,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -52788,6 +52997,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -52867,6 +53077,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -52946,6 +53157,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -53025,6 +53237,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -53104,6 +53317,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -53183,6 +53397,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -53262,6 +53477,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -53349,6 +53565,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -53433,6 +53650,7 @@
         "moduleName": "DriveKitDBTripAccessModule",
         "objc_name": "DBEcoDriving",
         "declAttributes": [
+          "Nonisolated",
           "AccessControl",
           "ObjC"
         ],
@@ -53530,6 +53748,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Identifiable",
             "printedName": "Identifiable",
             "children": [
@@ -53559,6 +53791,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -53567,7 +53800,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -53576,6 +53812,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -53584,7 +53821,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -53633,6 +53873,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -53655,6 +53896,7 @@
             "genericSig": "<τ_0_0>",
             "sugared_genericSig": "<T>",
             "declAttributes": [
+              "Nonisolated",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -53710,6 +53952,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -53789,6 +54032,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -53868,6 +54112,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -53947,6 +54192,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -54026,6 +54272,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -54105,6 +54352,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -54184,6 +54432,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -54271,6 +54520,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -54355,6 +54605,7 @@
         "moduleName": "DriveKitDBTripAccessModule",
         "objc_name": "DBEcoDrivingContext",
         "declAttributes": [
+          "Nonisolated",
           "AccessControl",
           "ObjC"
         ],
@@ -54452,6 +54703,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Identifiable",
             "printedName": "Identifiable",
             "children": [
@@ -54481,6 +54746,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -54489,7 +54755,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -54498,6 +54767,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -54506,7 +54776,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -54555,6 +54828,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -54577,6 +54851,7 @@
             "genericSig": "<τ_0_0>",
             "sugared_genericSig": "<T>",
             "declAttributes": [
+              "Nonisolated",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -54632,6 +54907,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -54711,6 +54987,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -54790,6 +55067,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -54869,6 +55147,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -54956,6 +55235,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -55040,6 +55320,7 @@
         "moduleName": "DriveKitDBTripAccessModule",
         "objc_name": "DBEnergyEstimation",
         "declAttributes": [
+          "Nonisolated",
           "AccessControl",
           "ObjC"
         ],
@@ -55137,6 +55418,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Identifiable",
             "printedName": "Identifiable",
             "children": [
@@ -55166,6 +55461,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -55174,7 +55470,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -55183,6 +55482,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -55191,7 +55491,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -55240,6 +55543,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -55260,6 +55564,7 @@
             "mangledName": "$s26DriveKitDBTripAccessModule12DBEvaluationC4saveyyF",
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
+              "Nonisolated",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -55283,6 +55588,7 @@
             "genericSig": "<τ_0_0>",
             "sugared_genericSig": "<T>",
             "declAttributes": [
+              "Nonisolated",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -55346,6 +55652,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -55441,6 +55748,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -55528,6 +55836,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -55612,6 +55921,7 @@
         "moduleName": "DriveKitDBTripAccessModule",
         "objc_name": "DBEvaluation",
         "declAttributes": [
+          "Nonisolated",
           "AccessControl",
           "ObjC"
         ],
@@ -55709,6 +56019,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Identifiable",
             "printedName": "Identifiable",
             "children": [
@@ -55738,6 +56062,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -55746,7 +56071,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -55755,6 +56083,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -55763,7 +56092,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -55812,6 +56144,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -55834,6 +56167,7 @@
             "genericSig": "<τ_0_0>",
             "sugared_genericSig": "<T>",
             "declAttributes": [
+              "Nonisolated",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -55889,6 +56223,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -55968,6 +56303,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -56047,6 +56383,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -56126,6 +56463,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -56205,6 +56543,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -56284,6 +56623,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -56363,6 +56703,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -56442,6 +56783,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -56521,6 +56863,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -56600,6 +56943,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -56679,6 +57023,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -56766,6 +57111,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -56850,6 +57196,7 @@
         "moduleName": "DriveKitDBTripAccessModule",
         "objc_name": "DBFuelEstimation",
         "declAttributes": [
+          "Nonisolated",
           "AccessControl",
           "ObjC"
         ],
@@ -56947,6 +57294,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Identifiable",
             "printedName": "Identifiable",
             "children": [
@@ -56976,6 +57337,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -56984,7 +57346,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -56993,6 +57358,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -57001,7 +57367,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -57050,6 +57419,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -57072,6 +57442,7 @@
             "genericSig": "<τ_0_0>",
             "sugared_genericSig": "<T>",
             "declAttributes": [
+              "Nonisolated",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -57127,6 +57498,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -57206,6 +57578,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -57285,6 +57658,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -57364,6 +57738,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -57443,6 +57818,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -57522,6 +57898,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -57601,6 +57978,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -57688,6 +58066,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -57772,6 +58151,7 @@
         "moduleName": "DriveKitDBTripAccessModule",
         "objc_name": "DBFuelEstimationContext",
         "declAttributes": [
+          "Nonisolated",
           "AccessControl",
           "ObjC"
         ],
@@ -57869,6 +58249,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Identifiable",
             "printedName": "Identifiable",
             "children": [
@@ -57898,6 +58292,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -57906,7 +58301,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -57915,6 +58313,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -57923,7 +58322,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -57972,6 +58374,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -57992,6 +58395,7 @@
             "mangledName": "$s26DriveKitDBTripAccessModule13DBInformationC4saveyyF",
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
+              "Nonisolated",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -58055,6 +58459,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -58158,6 +58563,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -58253,6 +58659,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -58332,6 +58739,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -58419,6 +58827,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -58522,6 +58931,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -58617,6 +59027,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -58696,6 +59107,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -58775,6 +59187,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -58854,6 +59267,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -58941,6 +59355,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -59044,6 +59459,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -59128,6 +59544,7 @@
         "moduleName": "DriveKitDBTripAccessModule",
         "objc_name": "DBInformation",
         "declAttributes": [
+          "Nonisolated",
           "AccessControl",
           "ObjC"
         ],
@@ -59225,6 +59642,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Identifiable",
             "printedName": "Identifiable",
             "children": [
@@ -59254,6 +59685,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -59262,7 +59694,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -59271,6 +59706,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -59279,7 +59715,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -59328,6 +59767,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -59350,6 +59790,7 @@
             "genericSig": "<τ_0_0>",
             "sugared_genericSig": "<T>",
             "declAttributes": [
+              "Nonisolated",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -59405,6 +59846,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -59492,6 +59934,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -59595,6 +60038,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -59679,6 +60123,7 @@
         "moduleName": "DriveKitDBTripAccessModule",
         "objc_name": "DBLogbook",
         "declAttributes": [
+          "Nonisolated",
           "AccessControl",
           "ObjC"
         ],
@@ -59776,6 +60221,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Identifiable",
             "printedName": "Identifiable",
             "children": [
@@ -59805,6 +60264,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -59813,7 +60273,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -59822,6 +60285,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -59830,7 +60294,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -59879,6 +60346,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -59899,6 +60367,7 @@
             "mangledName": "$s26DriveKitDBTripAccessModule10DBManeuverC4saveyyF",
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
+              "Nonisolated",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -59922,6 +60391,7 @@
             "genericSig": "<τ_0_0>",
             "sugared_genericSig": "<T>",
             "declAttributes": [
+              "Nonisolated",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -59977,6 +60447,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -60056,6 +60527,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -60135,6 +60607,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -60214,6 +60687,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -60293,6 +60767,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -60372,6 +60847,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -60451,6 +60927,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -60530,6 +61007,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -60609,6 +61087,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -60696,6 +61175,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -60780,6 +61260,7 @@
         "moduleName": "DriveKitDBTripAccessModule",
         "objc_name": "DBManeuver",
         "declAttributes": [
+          "Nonisolated",
           "AccessControl",
           "ObjC"
         ],
@@ -60877,6 +61358,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Identifiable",
             "printedName": "Identifiable",
             "children": [
@@ -60906,6 +61401,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -60914,7 +61410,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -60923,6 +61422,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -60931,7 +61431,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -60980,6 +61483,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -61000,6 +61504,7 @@
             "mangledName": "$s26DriveKitDBTripAccessModule18DBManualEvaluationC4saveyyF",
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
+              "Nonisolated",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -61063,6 +61568,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -61158,6 +61664,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -61245,6 +61752,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -61329,6 +61837,7 @@
         "moduleName": "DriveKitDBTripAccessModule",
         "objc_name": "DBManualEvaluation",
         "declAttributes": [
+          "Nonisolated",
           "AccessControl",
           "ObjC"
         ],
@@ -61426,6 +61935,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Identifiable",
             "printedName": "Identifiable",
             "children": [
@@ -61455,6 +61978,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -61463,7 +61987,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -61472,6 +61999,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -61480,7 +62008,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -61529,6 +62060,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -61549,6 +62081,7 @@
             "mangledName": "$s26DriveKitDBTripAccessModule16DBManualManeuverC4saveyyF",
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
+              "Nonisolated",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -61604,6 +62137,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -61683,6 +62217,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -61762,6 +62297,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -61841,6 +62377,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -61920,6 +62457,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -61999,6 +62537,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -62078,6 +62617,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -62157,6 +62697,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -62236,6 +62777,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -62323,6 +62865,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -62407,6 +62950,7 @@
         "moduleName": "DriveKitDBTripAccessModule",
         "objc_name": "DBManualManeuver",
         "declAttributes": [
+          "Nonisolated",
           "AccessControl",
           "ObjC"
         ],
@@ -62504,6 +63048,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Identifiable",
             "printedName": "Identifiable",
             "children": [
@@ -62533,6 +63091,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -62541,7 +63100,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -62550,6 +63112,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -62558,7 +63121,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -62607,6 +63173,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -62627,6 +63194,7 @@
             "mangledName": "$s26DriveKitDBTripAccessModule12DBManualTripC4saveyyF",
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
+              "Nonisolated",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -62650,6 +63218,7 @@
             "genericSig": "<τ_0_0>",
             "sugared_genericSig": "<T>",
             "declAttributes": [
+              "Nonisolated",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -62713,6 +63282,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -62816,6 +63386,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -62919,6 +63490,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -63022,6 +63594,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -63125,6 +63698,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -63209,6 +63783,7 @@
         "moduleName": "DriveKitDBTripAccessModule",
         "objc_name": "DBManualTrip",
         "declAttributes": [
+          "Nonisolated",
           "AccessControl",
           "ObjC"
         ],
@@ -63306,6 +63881,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "DKUnmanagedObject",
             "printedName": "DKUnmanagedObject",
             "usr": "s:18DriveKitCoreModule17DKUnmanagedObjectP",
@@ -63342,6 +63931,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -63350,7 +63940,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -63359,6 +63952,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -63367,7 +63961,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -63416,6 +64013,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -63438,6 +64036,7 @@
             "genericSig": "<τ_0_0>",
             "sugared_genericSig": "<T>",
             "declAttributes": [
+              "Nonisolated",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -63493,6 +64092,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -63580,6 +64180,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -63683,6 +64284,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -63767,6 +64369,7 @@
         "moduleName": "DriveKitDBTripAccessModule",
         "objc_name": "DBOccupantInfo",
         "declAttributes": [
+          "Nonisolated",
           "AccessControl",
           "ObjC"
         ],
@@ -63864,6 +64467,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Identifiable",
             "printedName": "Identifiable",
             "children": [
@@ -63893,6 +64510,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -63901,7 +64519,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -63910,6 +64531,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -63918,7 +64540,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -63967,6 +64592,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -63989,6 +64615,7 @@
             "genericSig": "<τ_0_0>",
             "sugared_genericSig": "<T>",
             "declAttributes": [
+              "Nonisolated",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -64044,6 +64671,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -64123,6 +64751,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -64202,6 +64831,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -64281,6 +64911,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -64368,6 +64999,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -64452,6 +65084,7 @@
         "moduleName": "DriveKitDBTripAccessModule",
         "objc_name": "DBPollutants",
         "declAttributes": [
+          "Nonisolated",
           "AccessControl",
           "ObjC"
         ],
@@ -64549,6 +65182,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Identifiable",
             "printedName": "Identifiable",
             "children": [
@@ -64578,6 +65225,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -64586,7 +65234,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -64595,6 +65246,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -64603,7 +65255,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -64652,6 +65307,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -64674,6 +65330,7 @@
             "genericSig": "<τ_0_0>",
             "sugared_genericSig": "<T>",
             "declAttributes": [
+              "Nonisolated",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -64737,6 +65394,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -64840,6 +65498,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -64943,6 +65602,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -65046,6 +65706,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -65149,6 +65810,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -65252,6 +65914,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -65355,6 +66018,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -65458,6 +66122,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -65561,6 +66226,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -65664,6 +66330,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -65748,6 +66415,7 @@
         "moduleName": "DriveKitDBTripAccessModule",
         "objc_name": "DBRoute",
         "declAttributes": [
+          "Nonisolated",
           "AccessControl",
           "ObjC"
         ],
@@ -65845,6 +66513,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "DKUnmanagedObject",
             "printedName": "DKUnmanagedObject",
             "usr": "s:18DriveKitCoreModule17DKUnmanagedObjectP",
@@ -65881,6 +66563,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -65889,7 +66572,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -65898,6 +66584,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -65906,7 +66593,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -65955,6 +66645,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -65977,6 +66668,7 @@
             "genericSig": "<τ_0_0>",
             "sugared_genericSig": "<T>",
             "declAttributes": [
+              "Nonisolated",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -66032,6 +66724,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -66111,6 +66804,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -66190,6 +66884,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -66269,6 +66964,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -66348,6 +67044,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -66427,6 +67124,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -66506,6 +67204,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -66593,6 +67292,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -66677,6 +67377,7 @@
         "moduleName": "DriveKitDBTripAccessModule",
         "objc_name": "DBSafety",
         "declAttributes": [
+          "Nonisolated",
           "AccessControl",
           "ObjC"
         ],
@@ -66774,6 +67475,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Identifiable",
             "printedName": "Identifiable",
             "children": [
@@ -66803,6 +67518,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -66811,7 +67527,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -66820,6 +67539,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -66828,7 +67548,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -66877,6 +67600,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -66899,6 +67623,7 @@
             "genericSig": "<τ_0_0>",
             "sugared_genericSig": "<T>",
             "declAttributes": [
+              "Nonisolated",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -66954,6 +67679,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -67033,6 +67759,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -67112,6 +67839,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -67191,6 +67919,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -67270,6 +67999,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -67349,6 +68079,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -67428,6 +68159,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -67507,6 +68239,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -67586,6 +68319,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -67665,6 +68399,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -67752,6 +68487,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -67836,6 +68572,7 @@
         "moduleName": "DriveKitDBTripAccessModule",
         "objc_name": "DBSafetyContext",
         "declAttributes": [
+          "Nonisolated",
           "AccessControl",
           "ObjC"
         ],
@@ -67933,6 +68670,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Identifiable",
             "printedName": "Identifiable",
             "children": [
@@ -67962,6 +68713,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -67970,7 +68722,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -67979,6 +68734,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -67987,7 +68743,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -68036,6 +68795,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -68058,6 +68818,7 @@
             "genericSig": "<τ_0_0>",
             "sugared_genericSig": "<T>",
             "declAttributes": [
+              "Nonisolated",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -68113,6 +68874,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -68192,6 +68954,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -68271,6 +69034,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -68350,6 +69114,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -68429,6 +69194,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -68508,6 +69274,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -68587,6 +69354,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -68666,6 +69434,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -68745,6 +69514,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -68824,6 +69594,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -68911,6 +69682,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -68995,6 +69767,7 @@
         "moduleName": "DriveKitDBTripAccessModule",
         "objc_name": "DBSafetyEvents",
         "declAttributes": [
+          "Nonisolated",
           "AccessControl",
           "ObjC"
         ],
@@ -69092,6 +69865,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Identifiable",
             "printedName": "Identifiable",
             "children": [
@@ -69121,6 +69908,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -69129,7 +69917,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -69138,6 +69929,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -69146,7 +69938,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -69195,6 +69990,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -69217,6 +70013,7 @@
             "genericSig": "<τ_0_0>",
             "sugared_genericSig": "<T>",
             "declAttributes": [
+              "Nonisolated",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -69272,6 +70069,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -69351,6 +70149,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -69430,6 +70229,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -69509,6 +70309,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -69588,6 +70389,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -69675,6 +70477,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -69759,6 +70562,7 @@
         "moduleName": "DriveKitDBTripAccessModule",
         "objc_name": "DBSpeedingStatistics",
         "declAttributes": [
+          "Nonisolated",
           "AccessControl",
           "ObjC"
         ],
@@ -69856,6 +70660,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Identifiable",
             "printedName": "Identifiable",
             "children": [
@@ -69885,6 +70703,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -69893,7 +70712,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -69902,6 +70724,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -69910,7 +70733,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -69959,6 +70785,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -69981,6 +70808,7 @@
             "genericSig": "<τ_0_0>",
             "sugared_genericSig": "<T>",
             "declAttributes": [
+              "Nonisolated",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -70036,6 +70864,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -70115,6 +70944,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -70194,6 +71024,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -70273,6 +71104,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -70352,6 +71184,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -70431,6 +71264,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -70518,6 +71352,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -70602,6 +71437,7 @@
         "moduleName": "DriveKitDBTripAccessModule",
         "objc_name": "DBSpeedLimitContext",
         "declAttributes": [
+          "Nonisolated",
           "AccessControl",
           "ObjC"
         ],
@@ -70699,6 +71535,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Identifiable",
             "printedName": "Identifiable",
             "children": [
@@ -70728,6 +71578,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -70736,7 +71587,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -70745,6 +71599,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -70753,7 +71608,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -70802,6 +71660,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -70824,6 +71683,7 @@
             "genericSig": "<τ_0_0>",
             "sugared_genericSig": "<T>",
             "declAttributes": [
+              "Nonisolated",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -70879,6 +71739,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -70958,6 +71819,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -71037,6 +71899,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -71116,6 +71979,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -71195,6 +72059,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -71274,6 +72139,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -71353,6 +72219,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -71432,6 +72299,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -71511,6 +72379,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -71590,6 +72459,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -71677,6 +72547,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -71761,6 +72632,7 @@
         "moduleName": "DriveKitDBTripAccessModule",
         "objc_name": "DBTireWear",
         "declAttributes": [
+          "Nonisolated",
           "AccessControl",
           "ObjC"
         ],
@@ -71858,6 +72730,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Identifiable",
             "printedName": "Identifiable",
             "children": [
@@ -71887,6 +72773,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -71895,7 +72782,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -71904,6 +72794,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -71912,7 +72803,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -71961,6 +72855,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -71983,6 +72878,7 @@
             "genericSig": "<τ_0_0>",
             "sugared_genericSig": "<T>",
             "declAttributes": [
+              "Nonisolated",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -72004,6 +72900,7 @@
             "mangledName": "$s26DriveKitDBTripAccessModule0C0C4saveyyF",
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
+              "Nonisolated",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -72067,6 +72964,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -72170,6 +73068,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -72273,6 +73172,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -72376,6 +73276,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -72479,6 +73380,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -72582,6 +73484,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -72685,6 +73588,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -72780,6 +73684,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -72867,6 +73772,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -72962,6 +73868,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -73041,6 +73948,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -73128,6 +74036,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -73231,6 +74140,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -73334,6 +74244,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -73437,6 +74348,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -73540,6 +74452,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -73643,6 +74556,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -73746,6 +74660,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -73849,6 +74764,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -73952,6 +74868,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -74055,6 +74972,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -74158,6 +75076,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -74261,6 +75180,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -74364,6 +75284,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -74467,6 +75388,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -74570,6 +75492,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -74673,6 +75596,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -74776,6 +75700,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -74879,6 +75804,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -74982,6 +75908,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -75085,6 +76012,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -75188,6 +76116,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -75291,6 +76220,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -75394,6 +76324,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -75497,6 +76428,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -75598,6 +76530,7 @@
             "objc_name": "addAdvancedEnergyEstimationObject:",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -75629,6 +76562,7 @@
             "objc_name": "removeAdvancedEnergyEstimationObject:",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -75660,6 +76594,7 @@
             "objc_name": "addAdvancedEnergyEstimation:",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -75691,6 +76626,7 @@
             "objc_name": "removeAdvancedEnergyEstimation:",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -75722,6 +76658,7 @@
             "objc_name": "addCallsObject:",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -75753,6 +76690,7 @@
             "objc_name": "removeCallsObject:",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -75784,6 +76722,7 @@
             "objc_name": "addCalls:",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -75815,6 +76754,7 @@
             "objc_name": "removeCalls:",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -75846,6 +76786,7 @@
             "objc_name": "addEcoDrivingContextsObject:",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -75877,6 +76818,7 @@
             "objc_name": "removeEcoDrivingContextsObject:",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -75908,6 +76850,7 @@
             "objc_name": "addEcoDrivingContexts:",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -75939,6 +76882,7 @@
             "objc_name": "removeEcoDrivingContexts:",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -75970,6 +76914,7 @@
             "objc_name": "addFuelEstimationContextsObject:",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -76001,6 +76946,7 @@
             "objc_name": "removeFuelEstimationContextsObject:",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -76032,6 +76978,7 @@
             "objc_name": "addFuelEstimationContexts:",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -76063,6 +77010,7 @@
             "objc_name": "removeFuelEstimationContexts:",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -76094,6 +77042,7 @@
             "objc_name": "addSafetyContextsObject:",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -76125,6 +77074,7 @@
             "objc_name": "removeSafetyContextsObject:",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -76156,6 +77106,7 @@
             "objc_name": "addSafetyContexts:",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -76187,6 +77138,7 @@
             "objc_name": "removeSafetyContexts:",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -76218,6 +77170,7 @@
             "objc_name": "addSafetyEventsObject:",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -76249,6 +77202,7 @@
             "objc_name": "removeSafetyEventsObject:",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -76280,6 +77234,7 @@
             "objc_name": "addSafetyEvents:",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -76311,6 +77266,7 @@
             "objc_name": "removeSafetyEvents:",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -76342,6 +77298,7 @@
             "objc_name": "addSpeedLimitContextsObject:",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -76373,6 +77330,7 @@
             "objc_name": "removeSpeedLimitContextsObject:",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -76404,6 +77362,7 @@
             "objc_name": "addSpeedLimitContexts:",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -76435,6 +77394,7 @@
             "objc_name": "removeSpeedLimitContexts:",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -76466,6 +77426,7 @@
             "objc_name": "addTripAdvicesObject:",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -76497,6 +77458,7 @@
             "objc_name": "removeTripAdvicesObject:",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -76528,6 +77490,7 @@
             "objc_name": "addTripAdvices:",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -76559,6 +77522,7 @@
             "objc_name": "removeTripAdvices:",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -76573,6 +77537,7 @@
         "moduleName": "DriveKitDBTripAccessModule",
         "objc_name": "DBTrip",
         "declAttributes": [
+          "Nonisolated",
           "AccessControl",
           "ObjC"
         ],
@@ -76670,6 +77635,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "DKUnmanagedObject",
             "printedName": "DKUnmanagedObject",
             "usr": "s:18DriveKitCoreModule17DKUnmanagedObjectP",
@@ -76706,6 +77685,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -76714,7 +77694,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -76723,6 +77706,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -76731,7 +77715,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -76780,6 +77767,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -76802,6 +77790,7 @@
             "genericSig": "<τ_0_0>",
             "sugared_genericSig": "<T>",
             "declAttributes": [
+              "Nonisolated",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -76823,6 +77812,7 @@
             "mangledName": "$s26DriveKitDBTripAccessModule0C6AdviceC4saveyyF",
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
+              "Nonisolated",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -76886,6 +77876,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -76981,6 +77972,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -77060,6 +78052,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -77147,6 +78140,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -77250,6 +78244,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -77353,6 +78348,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -77456,6 +78452,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -77559,6 +78556,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -77662,6 +78660,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -77746,6 +78745,7 @@
         "moduleName": "DriveKitDBTripAccessModule",
         "objc_name": "DBTripAdvice",
         "declAttributes": [
+          "Nonisolated",
           "AccessControl",
           "ObjC"
         ],
@@ -77843,6 +78843,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Identifiable",
             "printedName": "Identifiable",
             "children": [
@@ -77880,6 +78894,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -77888,7 +78903,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -77897,6 +78915,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -77905,7 +78924,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -77954,6 +78976,7 @@
             "declAttributes": [
               "Dynamic",
               "ObjC",
+              "Nonisolated",
               "Override"
             ],
             "init_kind": "Designated"
@@ -77976,6 +78999,7 @@
             "genericSig": "<τ_0_0>",
             "sugared_genericSig": "<T>",
             "declAttributes": [
+              "Nonisolated",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -78031,6 +79055,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -78110,6 +79135,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -78189,6 +79215,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -78268,6 +79295,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -78347,6 +79375,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -78426,6 +79455,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -78505,6 +79535,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -78584,6 +79615,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -78663,6 +79695,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -78742,6 +79775,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -78821,6 +79855,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -78908,6 +79943,7 @@
             "moduleName": "DriveKitDBTripAccessModule",
             "declAttributes": [
               "Dynamic",
+              "Nonisolated",
               "AccessControl",
               "NSManaged",
               "ObjC"
@@ -78992,6 +80028,7 @@
         "moduleName": "DriveKitDBTripAccessModule",
         "objc_name": "DBTripStatistics",
         "declAttributes": [
+          "Nonisolated",
           "AccessControl",
           "ObjC"
         ],
@@ -79089,6 +80126,20 @@
           },
           {
             "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Identifiable",
             "printedName": "Identifiable",
             "children": [
@@ -79118,6 +80169,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -79126,7 +80178,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "Import",
@@ -79135,6 +80190,7 @@
         "declKind": "Import",
         "moduleName": "DriveKitDBTripAccessModule",
         "declAttributes": [
+          "AccessControl",
           "RawDocComment"
         ]
       },
@@ -79143,7 +80199,10 @@
         "name": "CoreData",
         "printedName": "CoreData",
         "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
+        "moduleName": "DriveKitDBTripAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -80006,6 +81065,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Encodable",
             "printedName": "Encodable",
             "usr": "s:SE",
@@ -80024,35 +81090,6 @@
             "printedName": "_HasContiguousBytes",
             "usr": "s:s19_HasContiguousBytesP",
             "mangledName": "$ss19_HasContiguousBytesP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_ObjectiveCBridgeable",
-            "printedName": "_ObjectiveCBridgeable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "_ObjectiveCType",
-                "printedName": "_ObjectiveCType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "NSArray",
-                    "printedName": "Foundation.NSArray",
-                    "usr": "c:objc(cs)NSArray"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:s21_ObjectiveCBridgeableP",
-            "mangledName": "$ss21_ObjectiveCBridgeableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
           },
           {
             "kind": "Conformance",
@@ -80147,6 +81184,35 @@
             ],
             "usr": "s:10Foundation26DecodableWithConfigurationP",
             "mangledName": "$s10Foundation26DecodableWithConfigurationP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_ObjectiveCBridgeable",
+            "printedName": "_ObjectiveCBridgeable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "_ObjectiveCType",
+                "printedName": "_ObjectiveCType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSArray",
+                    "printedName": "Foundation.NSArray",
+                    "usr": "c:objc(cs)NSArray"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:s21_ObjectiveCBridgeableP",
+            "mangledName": "$ss21_ObjectiveCBridgeableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
           }
         ]
       }

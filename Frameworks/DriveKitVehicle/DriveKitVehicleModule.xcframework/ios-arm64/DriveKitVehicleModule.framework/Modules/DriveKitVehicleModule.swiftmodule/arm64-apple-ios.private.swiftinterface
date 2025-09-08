@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name DriveKitVehicleModule
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import CoreData
 import DriveKitBeaconUtilsModule
 import DriveKitCoreModule
@@ -125,7 +125,9 @@ import _SwiftConcurrencyShims
   public var isTruck: Swift.Bool {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias AllCases = [DriveKitVehicleModule.DKVehicleBrand]
   public typealias RawValue = Swift.Int
   nonisolated public static var allCases: [DriveKitVehicleModule.DKVehicleBrand] {
@@ -166,7 +168,9 @@ extension DriveKitVehicleModule.DKVehicleBrand {
   public var isSelectable: Swift.Bool {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias AllCases = [DriveKitVehicleModule.DKVehicleEngineIndex]
   public typealias RawValue = Swift.Int
   nonisolated public static var allCases: [DriveKitVehicleModule.DKVehicleEngineIndex] {
@@ -187,25 +191,49 @@ extension DriveKitVehicleModule.DKVehicleEngineIndex {
   @available(*, deprecated, message: "You no longer need to call the reset method of any module except the one in DriveKit")
   @objc public func reset()
   public func vehiclesQuery() -> DriveKitCoreModule.WhereReference<DriveKitDBVehicleAccessModule.DBVehicle, DriveKitDBVehicleAccessModule.DKVehicle>
+  #if compiler(>=5.3) && $NonescapableTypes
   public func executeVehicleQuery(query: DriveKitCoreModule.ExecutableQueryOne<DriveKitDBVehicleAccessModule.DBVehicle, DriveKitDBVehicleAccessModule.DKVehicle>, type: DriveKitVehicleModule.DKVehicleSynchronizationType = .defaultSync, completionHandler: @escaping (DriveKitVehicleModule.DKVehicleSyncStatus, DriveKitDBVehicleAccessModule.DKVehicle?) -> Swift.Void)
+  #endif
   public func executeVehiclesQuery(query: DriveKitCoreModule.ExecutableQuery<DriveKitDBVehicleAccessModule.DBVehicle, DriveKitDBVehicleAccessModule.DKVehicle>, type: DriveKitVehicleModule.DKVehicleSynchronizationType = .defaultSync, completionHandler: @escaping (DriveKitVehicleModule.DKVehicleSyncStatus, [DriveKitDBVehicleAccessModule.DKVehicle]) -> Swift.Void)
   @objc public func getVehiclesOrderByNameAsc(type: DriveKitVehicleModule.DKVehicleSynchronizationType = .defaultSync, completionHandler: @escaping (DriveKitVehicleModule.DKVehicleSyncStatus, [DriveKitDBVehicleAccessModule.DKVehicle]) -> Swift.Void)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getVehicle(vehicleId: Swift.String, type: DriveKitVehicleModule.DKVehicleSynchronizationType = .cache, completionHandler: @escaping (DriveKitVehicleModule.DKVehicleSyncStatus, DriveKitDBVehicleAccessModule.DKVehicle?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func createCustomVehicle(characteristics: DriveKitVehicleModule.DKVehicleCharacteristics, name: Swift.String? = nil, id: Swift.String, completionHandler: @escaping (DriveKitVehicleModule.DKVehicleManagerStatus, DriveKitDBVehicleAccessModule.DKVehicle?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func createCarVehicle(characteristics: DriveKitVehicleModule.DKCarVehicleCharacteristics, name: Swift.String? = nil, liteConfig: Swift.Bool = false, detectionMode: DriveKitDBVehicleAccessModule.DKDetectionMode = .disabled, completionHandler: @escaping (DriveKitVehicleModule.DKVehicleManagerStatus, DriveKitDBVehicleAccessModule.DKVehicle?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func createTruckVehicle(characteristics: DriveKitVehicleModule.DKTruckVehicleCharacteristics, name: Swift.String? = nil, detectionMode: DriveKitDBVehicleAccessModule.DKDetectionMode = .disabled, completionHandler: @escaping (DriveKitVehicleModule.DKVehicleManagerStatus, DriveKitDBVehicleAccessModule.DKVehicle?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func replaceWithCarVehicle(oldVehicleId: Swift.String, characteristics: DriveKitVehicleModule.DKCarVehicleCharacteristics, name: Swift.String? = nil, liteConfig: Swift.Bool = false, completionHandler: @escaping (DriveKitVehicleModule.DKVehicleReplaceStatus, DriveKitDBVehicleAccessModule.DKVehicle?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func replaceWithTruckVehicle(oldVehicleId: Swift.String, characteristics: DriveKitVehicleModule.DKTruckVehicleCharacteristics, name: Swift.String? = nil, completionHandler: @escaping (DriveKitVehicleModule.DKVehicleReplaceStatus, DriveKitDBVehicleAccessModule.DKVehicle?) -> Swift.Void)
+  #endif
   @objc public func deleteVehicle(vehicleId: Swift.String, completionHandler: @escaping (DriveKitVehicleModule.DKVehicleManagerStatus) -> Swift.Void)
   @objc public func renameVehicle(name: Swift.String, vehicleId: Swift.String, completionHandler: @escaping (DriveKitVehicleModule.DKVehicleManagerStatus) -> Swift.Void)
   @objc public func updateDetectionMode(vehicleId: Swift.String, detectionMode: DriveKitDBVehicleAccessModule.DKDetectionMode, forceGPSVehicleUpdate: Swift.Bool = false, completionHandler: @escaping (DriveKitVehicleModule.DKDetectionModeStatus) -> Swift.Void)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getOdometer(vehicleId: Swift.String, type: DriveKitVehicleModule.DKVehicleSynchronizationType = .defaultSync, completionHandler: @escaping (DriveKitVehicleModule.DKOdometerSyncStatus, DriveKitDBVehicleAccessModule.DKVehicleOdometer?, [DriveKitDBVehicleAccessModule.DKVehicleOdometerHistory]?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func addOdometerHistory(vehicleId: Swift.String, distance: Swift.Double, completionHandler: @escaping (DriveKitVehicleModule.DKOdometerAddHistoryStatus, DriveKitDBVehicleAccessModule.DKVehicleOdometer?, [DriveKitDBVehicleAccessModule.DKVehicleOdometerHistory]?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func updateOdometerHistory(vehicleId: Swift.String, historyId: Swift.String, distance: Swift.Double, completionHandler: @escaping (DriveKitVehicleModule.DKOdometerUpdateHistoryStatus, DriveKitDBVehicleAccessModule.DKVehicleOdometer?, [DriveKitDBVehicleAccessModule.DKVehicleOdometerHistory]?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func deleteOdometerHistory(vehicleId: Swift.String, historyId: Swift.String, completionHandler: @escaping (DriveKitVehicleModule.DKOdometerDeleteHistoryStatus, DriveKitDBVehicleAccessModule.DKVehicleOdometer?, [DriveKitDBVehicleAccessModule.DKVehicleOdometerHistory]?) -> Swift.Void)
+  #endif
   @objc public func addBluetooth(vehicleId: Swift.String, bluetooth: DriveKitDBVehicleAccessModule.DKBluetooth, completionHandler: @escaping (DriveKitVehicleModule.DKVehicleBluetoothStatus) -> Swift.Void)
   @objc public func removeBluetooth(vehicleId: Swift.String, completionHandler: @escaping (DriveKitVehicleModule.DKVehicleBluetoothRemoveStatus) -> Swift.Void)
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getBeacon(uniqueId: Swift.String, completionHandler: @escaping (DriveKitVehicleModule.DKVehicleBeaconInfoStatus, DriveKitBeaconUtilsModule.DKBeacon?) -> Swift.Void)
+  #endif
   @objc public func updateBeaconBatteryLevel(batteryLevel: Swift.Int, beacon: DriveKitBeaconUtilsModule.DKBeacon, completionHandler: @escaping (DriveKitVehicleModule.DKVehicleBeaconBatteryStatus) -> Swift.Void)
   @objc public func addBeacon(vehicleId: Swift.String, beacon: DriveKitBeaconUtilsModule.DKBeacon, completionHandler: @escaping (DriveKitVehicleModule.DKVehicleBeaconStatus) -> Swift.Void)
   @objc public func changeBeacon(vehicleId: Swift.String, oldVehicleId: Swift.String, beacon: DriveKitBeaconUtilsModule.DKBeacon, completionHandler: @escaping (DriveKitVehicleModule.DKVehicleBeaconStatus) -> Swift.Void)
@@ -218,7 +246,9 @@ extension DriveKitVehicleModule.DKVehicleEngineIndex {
   public var value: Swift.String {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias AllCases = [DriveKitVehicleModule.DKTruckType]
   public typealias RawValue = Swift.Int
   nonisolated public static var allCases: [DriveKitVehicleModule.DKTruckType] {
@@ -240,7 +270,9 @@ extension DriveKitVehicleModule.DKVehicleEngineIndex {
 extension DriveKitDBVehicleAccessModule.DKVehicle {
   public func isCar() -> Swift.Bool
   public func isTruck() -> Swift.Bool
+  #if compiler(>=5.3) && $NonescapableTypes
   public func getType() -> DriveKitVehicleModule.DKVehicleType?
+  #endif
 }
 @objc public enum DKVehicleType : Swift.Int, Swift.CaseIterable {
   case car
@@ -248,7 +280,9 @@ extension DriveKitDBVehicleAccessModule.DKVehicle {
   public var value: Swift.String {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias AllCases = [DriveKitVehicleModule.DKVehicleType]
   public typealias RawValue = Swift.Int
   nonisolated public static var allCases: [DriveKitVehicleModule.DKVehicleType] {
@@ -266,7 +300,9 @@ extension DriveKitDBVehicleAccessModule.DKVehicle {
 }
 @objc public enum DKOdometerSyncStatus : Swift.Int {
   case success, cacheDataOnly, failedToSyncOdometerCacheOnly, vehicleNotFound
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -274,7 +310,9 @@ extension DriveKitDBVehicleAccessModule.DKVehicle {
 }
 @objc public enum DKOdometerAddHistoryStatus : Swift.Int {
   case success, error, vehicleNotFound, badDistance
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -282,7 +320,9 @@ extension DriveKitDBVehicleAccessModule.DKVehicle {
 }
 @objc public enum DKOdometerUpdateHistoryStatus : Swift.Int {
   case success, error, vehicleNotFound, historyNotFound, badDistance
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -290,7 +330,9 @@ extension DriveKitDBVehicleAccessModule.DKVehicle {
 }
 @objc public enum DKOdometerDeleteHistoryStatus : Swift.Int {
   case success, error, vehicleNotFound, historyNotFound, lastOdometerError
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -298,7 +340,9 @@ extension DriveKitDBVehicleAccessModule.DKVehicle {
 }
 @objc public enum DKVehicleSyncStatus : Swift.Int {
   case noError, cacheDataOnly, failedToSyncVehiclesCacheOnly, syncAlreadyInProgress
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -306,7 +350,9 @@ extension DriveKitDBVehicleAccessModule.DKVehicle {
 }
 @objc public enum DKVehicleSynchronizationType : Swift.Int {
   case defaultSync, cache
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -314,7 +360,9 @@ extension DriveKitDBVehicleAccessModule.DKVehicle {
 }
 @objc public enum DKVehicleManagerStatus : Swift.Int {
   case success, unknownVehicle, invalidCharacteristics, vehicleIdAlreadyUsed, error, onlyOneGpsVehicleAllowed
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -322,7 +370,9 @@ extension DriveKitDBVehicleAccessModule.DKVehicle {
 }
 @objc public enum DKVehicleReplaceStatus : Swift.Int {
   case success, invalidVehicle, error
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -330,7 +380,9 @@ extension DriveKitDBVehicleAccessModule.DKVehicle {
 }
 @objc public enum DKVehicleBeaconInfoStatus : Swift.Int {
   case success, error, unknownBeacon
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -338,7 +390,9 @@ extension DriveKitDBVehicleAccessModule.DKVehicle {
 }
 @objc public enum DKVehicleBeaconBatteryStatus : Swift.Int {
   case success, error, unknownBeacon, invalidBeacon
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -346,7 +400,9 @@ extension DriveKitDBVehicleAccessModule.DKVehicle {
 }
 @objc public enum DKVehicleBeaconRemoveStatus : Swift.Int {
   case success, error, unknownVehicle
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -354,7 +410,9 @@ extension DriveKitDBVehicleAccessModule.DKVehicle {
 }
 @objc public enum DKVehicleBeaconStatus : Swift.Int {
   case success, error, unknownVehicle, unavailableBeacon
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -362,7 +420,9 @@ extension DriveKitDBVehicleAccessModule.DKVehicle {
 }
 @objc public enum DKVehicleBluetoothStatus : Swift.Int {
   case success, unavailableBluetooth, unknownVehicle, error
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -370,7 +430,9 @@ extension DriveKitDBVehicleAccessModule.DKVehicle {
 }
 @objc public enum DKVehicleBluetoothRemoveStatus : Swift.Int {
   case success, unknownVehicle, error
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -378,7 +440,9 @@ extension DriveKitDBVehicleAccessModule.DKVehicle {
 }
 @objc public enum DKDetectionModeStatus : Swift.Int {
   case success, error, gpsModeAlreadyExists
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -399,10 +463,12 @@ extension DriveKitDBVehicleAccessModule.DKVehicle {
   case twoAxlesTractor = 203
   case threeAxlesTractor = 204
   case fourAxlesTractor = 205
+  #if compiler(>=5.3) && $NonescapableTypes
   @available(*, deprecated, message: "Use getLiteConfigDqIndex(isElectricCar:) instead")
   public var liteConfigDqIndex: Swift.String? {
     get
   }
+  #endif
   public var isCar: Swift.Bool {
     get
   }
@@ -412,8 +478,12 @@ extension DriveKitDBVehicleAccessModule.DKVehicle {
   public var isTruck: Swift.Bool {
     get
   }
+  #if compiler(>=5.3) && $NonescapableTypes
   public func getLiteConfigDqIndex(isElectric: Swift.Bool) -> Swift.String?
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias AllCases = [DriveKitVehicleModule.DKVehicleCategory]
   public typealias RawValue = Swift.Int
   nonisolated public static var allCases: [DriveKitVehicleModule.DKVehicleCategory] {
@@ -429,17 +499,39 @@ extension DriveKitVehicleModule.DKVehicleCategory {
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class DriveKitVehiclePicker : ObjectiveC.NSObject {
   @objc public static let shared: DriveKitVehicleModule.DriveKitVehiclePicker
   public func getTypes() -> [DriveKitVehicleModule.DKVehicleType]
+  #if compiler(>=5.3) && $NonescapableTypes
   public func getCategories(vehicleType: DriveKitVehicleModule.DKVehicleType? = nil) -> [DriveKitVehicleModule.DKVehicleCategory]
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func getEnginesIndex(vehicleType: DriveKitVehicleModule.DKVehicleType? = nil) -> [DriveKitVehicleModule.DKVehicleEngineIndex]
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func getBrands(vehicleType: DriveKitVehicleModule.DKVehicleType? = nil) -> [DriveKitVehicleModule.DKVehicleBrand]
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getCarModels(brand: DriveKitVehicleModule.DKVehicleBrand, engineIndex: DriveKitVehicleModule.DKVehicleEngineIndex, completionHandler: @escaping (Swift.Bool, [Swift.String]?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getTruckModels(truckType: DriveKitVehicleModule.DKTruckType, brand: DriveKitVehicleModule.DKVehicleBrand, completionHandler: @escaping (Swift.Bool, [Swift.String]?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getCarYears(brand: DriveKitVehicleModule.DKVehicleBrand, engineIndex: DriveKitVehicleModule.DKVehicleEngineIndex, model: Swift.String, completionHandler: @escaping (Swift.Bool, [Swift.String]?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getTruckYears(truckType: DriveKitVehicleModule.DKTruckType, brand: DriveKitVehicleModule.DKVehicleBrand, model: Swift.String, completionHandler: @escaping (Swift.Bool, [Swift.String]?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getCarVersions(brand: DriveKitVehicleModule.DKVehicleBrand, engineIndex: DriveKitVehicleModule.DKVehicleEngineIndex, model: Swift.String, year: Swift.String, completionHandler: @escaping (Swift.Bool, [DriveKitVehicleModule.DKVehicleVersion]?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getTruckVersions(truckType: DriveKitVehicleModule.DKTruckType, brand: DriveKitVehicleModule.DKVehicleBrand, model: Swift.String, year: Swift.String, completionHandler: @escaping (Swift.Bool, [DriveKitVehicleModule.DKVehicleVersion]?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getCarCharacteristics(dqIndex: Swift.String, completionHandler: @escaping (Swift.Bool, DriveKitVehicleModule.DKCarVehicleCharacteristics?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getTruckCharacteristics(dqIndex: Swift.String, completionHandler: @escaping (Swift.Bool, DriveKitVehicleModule.DKTruckVehicleCharacteristics?) -> Swift.Void)
+  #endif
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class DKVehicleCharacteristics : ObjectiveC.NSObject {

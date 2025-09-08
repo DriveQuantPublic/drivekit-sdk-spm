@@ -652,7 +652,7 @@
               {
                 "kind": "TypeNominal",
                 "name": "CLLocation",
-                "printedName": "CoreLocation.CLLocation",
+                "printedName": "_LocationEssentials.CLLocation",
                 "usr": "c:objc(cs)CLLocation"
               },
               {

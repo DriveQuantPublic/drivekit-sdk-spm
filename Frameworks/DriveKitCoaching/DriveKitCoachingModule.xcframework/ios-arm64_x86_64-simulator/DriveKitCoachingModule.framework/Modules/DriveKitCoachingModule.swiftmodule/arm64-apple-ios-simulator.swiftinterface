@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name DriveKitCoachingModule
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 @_exported import DriveKitCoachingModule
 import DriveKitCoreModule
 import DriveKitDBCoachingAccessModule
@@ -15,7 +15,9 @@ import _SwiftConcurrencyShims
   case cacheDataOnly
   case failedToSyncMessagesCacheOnly
   case syncAlreadyInProgress
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -26,7 +28,9 @@ import _SwiftConcurrencyShims
   case error
   case invalidMessageId
   case messageNotFound
+  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
+  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -36,13 +40,23 @@ import _SwiftConcurrencyShims
   @objc public static let sdkVersion: Swift.String
   @objc public static let shared: DriveKitCoachingModule.DriveKitCoaching
   @objc public func initialize()
+  #if compiler(>=5.3) && $NonescapableTypes
   public func getMessages(type: DriveKitDBCoachingAccessModule.DKCoachingType? = nil, orderByDateAsc: Swift.Bool = false, syncType: DriveKitCoreModule.SynchronizationType = .defaultSync, completionHandler: @escaping (DriveKitCoachingModule.DKCoachingMessagesStatus, [DriveKitDBCoachingAccessModule.DKCoachingMessage]?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc(getMessagesOrderByDateAsc:syncType:completionHandler:) public func objc_getMessages(orderByDateAsc: Swift.Bool = false, syncType: DriveKitCoreModule.SynchronizationType = .defaultSync, completionHandler: @escaping (DriveKitCoachingModule.DKCoachingMessagesStatus, [DriveKitDBCoachingAccessModule.DKCoachingMessage]?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc(getMessagesWithType:orderByDateAsc:syncType:completionHandler:) public func objc_getMessages(type: DriveKitDBCoachingAccessModule.DKCoachingType, orderByDateAsc: Swift.Bool = false, syncType: DriveKitCoreModule.SynchronizationType = .defaultSync, completionHandler: @escaping (DriveKitCoachingModule.DKCoachingMessagesStatus, [DriveKitDBCoachingAccessModule.DKCoachingMessage]?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   public func markMessageAsRead(messageId: Swift.String, type: DriveKitDBCoachingAccessModule.DKCoachingType? = nil, completionHandler: @escaping (DriveKitCoachingModule.DKCoachingMessageStatus) -> Swift.Void)
+  #endif
   @objc(markMessageAsRead:completionHandler:) public func objc_markMessageAsRead(messageId: Swift.String, completionHandler: @escaping (DriveKitCoachingModule.DKCoachingMessageStatus) -> Swift.Void)
   @objc(markMessageAsRead:type:completionHandler:) public func objc_markMessageAsRead(messageId: Swift.String, type: DriveKitDBCoachingAccessModule.DKCoachingType, completionHandler: @escaping (DriveKitCoachingModule.DKCoachingMessageStatus) -> Swift.Void)
+  #if compiler(>=5.3) && $NonescapableTypes
   public func getUnreadMessagesCount(ofType type: DriveKitDBCoachingAccessModule.DKCoachingType? = nil) -> Swift.Int
+  #endif
   @objc(getUnreadMessagesCount) public func objc_getUnreadMessagesCount() -> Swift.Int
   @objc(getUnreadMessagesCount:) public func objc_getUnreadMessagesCount(ofType type: DriveKitDBCoachingAccessModule.DKCoachingType) -> Swift.Int
   @available(*, deprecated, message: "You no longer need to call the reset method of any module except the one in DriveKit")

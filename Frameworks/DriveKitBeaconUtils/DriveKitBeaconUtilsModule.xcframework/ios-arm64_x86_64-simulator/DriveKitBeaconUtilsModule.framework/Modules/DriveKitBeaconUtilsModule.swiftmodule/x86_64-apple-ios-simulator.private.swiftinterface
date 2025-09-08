@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.1.2 effective-5.10 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)
+// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
 // swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name DriveKitBeaconUtilsModule
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -interface-compiler-version 6.1.2
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
 import CoreBluetooth
 import CoreLocation
 @_exported import DriveKitBeaconUtilsModule
@@ -69,6 +69,8 @@ extension DriveKitBeaconUtilsModule.DKBeaconScanner : CoreBluetooth.CBCentralMan
   @objc final public let proximityUuid: Swift.String
   @objc final public let major: Swift.Int
   @objc final public let minor: Swift.Int
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(uniqueId: Swift.String?, proximityUuid: Swift.String, major: Swift.Int, minor: Swift.Int)
+  #endif
   @objc deinit
 }
