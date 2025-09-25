@@ -9,7 +9,7 @@ import _StringProcessing
 import _SwiftConcurrencyShims
 @objc public enum PresetCrashConfiguration : Swift.Int {
   case unconfirmed0KmH
-  case confirmed10KmH
+  case confirmed40KmH
   case confirmed20KmH
   case confirmed30KmH
   case confirmed30KmHStillDriving

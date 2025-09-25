@@ -98,10 +98,16 @@ public class Safety : DriveKitNetworkingModule.DriveKitModel {
 @_hasMissingDesignatedInitializers public class ItineraryData : DriveKitNetworkingModule.DriveKitModel {
   public var startDate: Swift.String?
   public var endDate: Swift.String?
-  public var departureCity: Swift.String?
-  public var arrivalCity: Swift.String?
   public var departureAddress: Swift.String?
+  public var departureCity: Swift.String?
+  public var departureState: Swift.String?
+  public var departureCountry: Swift.String?
+  public var departurePostalCode: Swift.String?
   public var arrivalAddress: Swift.String?
+  public var arrivalCity: Swift.String?
+  public var arrivalState: Swift.String?
+  public var arrivalCountry: Swift.String?
+  public var arrivalPostalCode: Swift.String?
   public func toJSON() -> [Swift.String : Any]
   required public init(json: DriveKitNetworkingModule.SwiftyJSON)
   @objc deinit
@@ -847,10 +853,10 @@ public class TireWear : DriveKitNetworkingModule.DriveKitModel {
   final public let gpsHeading: [Swift.Double]
   final public let screenLocked: [Swift.Double]
   final public let activityValue: [Swift.Double]
-  final public let roll: [Swift.Int]
-  final public let pitch: [Swift.Int]
-  final public let yaw: [Swift.Int]
-  final public let gyroscopeNormVar: [Swift.Int]
+  final public let roll: [Swift.Int16]
+  final public let pitch: [Swift.Int16]
+  final public let yaw: [Swift.Int16]
+  final public let gyroscopeNormVar: [Swift.Int16]
   convenience required public init(json: DriveKitNetworkingModule.SwiftyJSON)
   public func toJSON() -> [Swift.String : Any]
   @objc deinit

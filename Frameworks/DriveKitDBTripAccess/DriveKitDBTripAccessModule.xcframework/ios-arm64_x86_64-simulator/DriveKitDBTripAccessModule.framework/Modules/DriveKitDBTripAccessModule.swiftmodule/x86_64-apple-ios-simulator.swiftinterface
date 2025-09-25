@@ -797,8 +797,14 @@ public enum DKDistanceProfile : Swift.String, Swift.Codable {
 @_hasMissingDesignatedInitializers @objc public class DKTrip : ObjectiveC.NSObject {
   public var arrivalAddress: Swift.String?
   public var arrivalCity: Swift.String?
+  public var arrivalState: Swift.String?
+  public var arrivalCountry: Swift.String?
+  public var arrivalPostalCode: Swift.String?
   public var departureAddress: Swift.String?
   public var departureCity: Swift.String?
+  public var departureState: Swift.String?
+  public var departureCountry: Swift.String?
+  public var departurePostalCode: Swift.String?
   final public let endDate: Foundation.Date?
   final public let itinId: Swift.String
   final public let metadata: [Swift.String : Swift.String]?
@@ -2721,6 +2727,24 @@ extension DriveKitDBTripAccessModule.DBTrip {
   }
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var arrivalCountry: Swift.String? {
+    @objc get
+    @objc set
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var arrivalPostalCode: Swift.String? {
+    @objc get
+    @objc set
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var arrivalState: Swift.String? {
+    @objc get
+    @objc set
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var departureAddress: Swift.String? {
     @objc get
     @objc set
@@ -2728,6 +2752,24 @@ extension DriveKitDBTripAccessModule.DBTrip {
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var departureCity: Swift.String? {
+    @objc get
+    @objc set
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var departureCountry: Swift.String? {
+    @objc get
+    @objc set
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var departurePostalCode: Swift.String? {
+    @objc get
+    @objc set
+  }
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc @NSManaged nonisolated dynamic public var departureState: Swift.String? {
     @objc get
     @objc set
   }

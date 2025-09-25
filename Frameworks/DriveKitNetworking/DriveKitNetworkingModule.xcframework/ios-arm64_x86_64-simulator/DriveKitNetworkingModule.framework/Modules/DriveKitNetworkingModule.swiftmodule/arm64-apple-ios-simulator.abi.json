@@ -1147,19 +1147,19 @@
           },
           {
             "kind": "Function",
-            "name": "jsonToIntArray",
-            "printedName": "jsonToIntArray(_:)",
+            "name": "jsonToInt16Array",
+            "printedName": "jsonToInt16Array(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Array",
-                "printedName": "[Swift.Int]",
+                "printedName": "[Swift.Int16]",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
+                    "name": "Int16",
+                    "printedName": "Swift.Int16",
+                    "usr": "s:s5Int16V"
                   }
                 ],
                 "usr": "s:Sa"
@@ -1172,8 +1172,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:24DriveKitNetworkingModule12DQNetworkingO14jsonToIntArrayySaySiGAA10SwiftyJSONVFZ",
-            "mangledName": "$s24DriveKitNetworkingModule12DQNetworkingO14jsonToIntArrayySaySiGAA10SwiftyJSONVFZ",
+            "usr": "s:24DriveKitNetworkingModule12DQNetworkingO16jsonToInt16ArrayySays0H0VGAA10SwiftyJSONVFZ",
+            "mangledName": "$s24DriveKitNetworkingModule12DQNetworkingO16jsonToInt16ArrayySays0H0VGAA10SwiftyJSONVFZ",
             "moduleName": "DriveKitNetworkingModule",
             "static": true,
             "declAttributes": [

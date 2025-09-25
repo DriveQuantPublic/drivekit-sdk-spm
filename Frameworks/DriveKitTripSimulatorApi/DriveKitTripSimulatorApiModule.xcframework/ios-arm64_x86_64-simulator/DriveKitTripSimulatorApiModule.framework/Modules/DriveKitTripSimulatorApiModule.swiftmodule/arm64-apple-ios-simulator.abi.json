@@ -52,8 +52,8 @@
           },
           {
             "kind": "Var",
-            "name": "confirmed10KmH",
-            "printedName": "confirmed10KmH",
+            "name": "confirmed40KmH",
+            "printedName": "confirmed40KmH",
             "children": [
               {
                 "kind": "TypeFunc",
@@ -83,8 +83,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "c:@M@DriveKitTripSimulatorApiModule@E@PresetCrashConfiguration@PresetCrashConfigurationConfirmed10KmH",
-            "mangledName": "$s30DriveKitTripSimulatorApiModule24PresetCrashConfigurationO14confirmed10KmHyA2CmF",
+            "usr": "c:@M@DriveKitTripSimulatorApiModule@E@PresetCrashConfiguration@PresetCrashConfigurationConfirmed40KmH",
+            "mangledName": "$s30DriveKitTripSimulatorApiModule24PresetCrashConfigurationO14confirmed40KmHyA2CmF",
             "moduleName": "DriveKitTripSimulatorApiModule",
             "declAttributes": [
               "ObjC"

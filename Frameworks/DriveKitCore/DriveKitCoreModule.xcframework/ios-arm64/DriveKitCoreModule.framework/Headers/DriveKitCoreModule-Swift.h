@@ -480,7 +480,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) DriveKit * _
 - (void)addDriveKitDelegate:(id <DriveKitDelegate> _Nonnull)delegate;
 - (void)removeDriveKitDelegate:(id <DriveKitDelegate> _Nonnull)delegate;
 - (void)removeAllDriveKitDelegates;
-- (void)registerUserWithUserId:(NSString * _Nonnull)userId;
 - (void)deleteAccountWithInstantDeletion:(BOOL)instantDeletion;
 - (void)enableLoggingWithShowInConsole:(BOOL)showInConsole;
 - (void)disableLoggingWithShowInConsole:(BOOL)showInConsole;

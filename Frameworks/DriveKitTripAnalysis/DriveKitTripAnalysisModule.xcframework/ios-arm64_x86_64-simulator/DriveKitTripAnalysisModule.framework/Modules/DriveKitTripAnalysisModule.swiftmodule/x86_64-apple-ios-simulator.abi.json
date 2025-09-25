@@ -3603,6 +3603,116 @@
           },
           {
             "kind": "Var",
+            "name": "departureAddress",
+            "printedName": "departureAddress",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:26DriveKitTripAnalysisModule13ItineraryDataC16departureAddressSSSgvp",
+            "mangledName": "$s26DriveKitTripAnalysisModule13ItineraryDataC16departureAddressSSSgvp",
+            "moduleName": "DriveKitTripAnalysisModule",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26DriveKitTripAnalysisModule13ItineraryDataC16departureAddressSSSgvg",
+                "mangledName": "$s26DriveKitTripAnalysisModule13ItineraryDataC16departureAddressSSSgvg",
+                "moduleName": "DriveKitTripAnalysisModule",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26DriveKitTripAnalysisModule13ItineraryDataC16departureAddressSSSgvs",
+                "mangledName": "$s26DriveKitTripAnalysisModule13ItineraryDataC16departureAddressSSSgvs",
+                "moduleName": "DriveKitTripAnalysisModule",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26DriveKitTripAnalysisModule13ItineraryDataC16departureAddressSSSgvM",
+                "mangledName": "$s26DriveKitTripAnalysisModule13ItineraryDataC16departureAddressSSSgvM",
+                "moduleName": "DriveKitTripAnalysisModule",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "departureCity",
             "printedName": "departureCity",
             "children": [
@@ -3705,6 +3815,446 @@
                 "declKind": "Accessor",
                 "usr": "s:26DriveKitTripAnalysisModule13ItineraryDataC13departureCitySSSgvM",
                 "mangledName": "$s26DriveKitTripAnalysisModule13ItineraryDataC13departureCitySSSgvM",
+                "moduleName": "DriveKitTripAnalysisModule",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "departureState",
+            "printedName": "departureState",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:26DriveKitTripAnalysisModule13ItineraryDataC14departureStateSSSgvp",
+            "mangledName": "$s26DriveKitTripAnalysisModule13ItineraryDataC14departureStateSSSgvp",
+            "moduleName": "DriveKitTripAnalysisModule",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26DriveKitTripAnalysisModule13ItineraryDataC14departureStateSSSgvg",
+                "mangledName": "$s26DriveKitTripAnalysisModule13ItineraryDataC14departureStateSSSgvg",
+                "moduleName": "DriveKitTripAnalysisModule",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26DriveKitTripAnalysisModule13ItineraryDataC14departureStateSSSgvs",
+                "mangledName": "$s26DriveKitTripAnalysisModule13ItineraryDataC14departureStateSSSgvs",
+                "moduleName": "DriveKitTripAnalysisModule",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26DriveKitTripAnalysisModule13ItineraryDataC14departureStateSSSgvM",
+                "mangledName": "$s26DriveKitTripAnalysisModule13ItineraryDataC14departureStateSSSgvM",
+                "moduleName": "DriveKitTripAnalysisModule",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "departureCountry",
+            "printedName": "departureCountry",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:26DriveKitTripAnalysisModule13ItineraryDataC16departureCountrySSSgvp",
+            "mangledName": "$s26DriveKitTripAnalysisModule13ItineraryDataC16departureCountrySSSgvp",
+            "moduleName": "DriveKitTripAnalysisModule",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26DriveKitTripAnalysisModule13ItineraryDataC16departureCountrySSSgvg",
+                "mangledName": "$s26DriveKitTripAnalysisModule13ItineraryDataC16departureCountrySSSgvg",
+                "moduleName": "DriveKitTripAnalysisModule",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26DriveKitTripAnalysisModule13ItineraryDataC16departureCountrySSSgvs",
+                "mangledName": "$s26DriveKitTripAnalysisModule13ItineraryDataC16departureCountrySSSgvs",
+                "moduleName": "DriveKitTripAnalysisModule",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26DriveKitTripAnalysisModule13ItineraryDataC16departureCountrySSSgvM",
+                "mangledName": "$s26DriveKitTripAnalysisModule13ItineraryDataC16departureCountrySSSgvM",
+                "moduleName": "DriveKitTripAnalysisModule",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "departurePostalCode",
+            "printedName": "departurePostalCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:26DriveKitTripAnalysisModule13ItineraryDataC19departurePostalCodeSSSgvp",
+            "mangledName": "$s26DriveKitTripAnalysisModule13ItineraryDataC19departurePostalCodeSSSgvp",
+            "moduleName": "DriveKitTripAnalysisModule",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26DriveKitTripAnalysisModule13ItineraryDataC19departurePostalCodeSSSgvg",
+                "mangledName": "$s26DriveKitTripAnalysisModule13ItineraryDataC19departurePostalCodeSSSgvg",
+                "moduleName": "DriveKitTripAnalysisModule",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26DriveKitTripAnalysisModule13ItineraryDataC19departurePostalCodeSSSgvs",
+                "mangledName": "$s26DriveKitTripAnalysisModule13ItineraryDataC19departurePostalCodeSSSgvs",
+                "moduleName": "DriveKitTripAnalysisModule",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26DriveKitTripAnalysisModule13ItineraryDataC19departurePostalCodeSSSgvM",
+                "mangledName": "$s26DriveKitTripAnalysisModule13ItineraryDataC19departurePostalCodeSSSgvM",
+                "moduleName": "DriveKitTripAnalysisModule",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "arrivalAddress",
+            "printedName": "arrivalAddress",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:26DriveKitTripAnalysisModule13ItineraryDataC14arrivalAddressSSSgvp",
+            "mangledName": "$s26DriveKitTripAnalysisModule13ItineraryDataC14arrivalAddressSSSgvp",
+            "moduleName": "DriveKitTripAnalysisModule",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26DriveKitTripAnalysisModule13ItineraryDataC14arrivalAddressSSSgvg",
+                "mangledName": "$s26DriveKitTripAnalysisModule13ItineraryDataC14arrivalAddressSSSgvg",
+                "moduleName": "DriveKitTripAnalysisModule",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26DriveKitTripAnalysisModule13ItineraryDataC14arrivalAddressSSSgvs",
+                "mangledName": "$s26DriveKitTripAnalysisModule13ItineraryDataC14arrivalAddressSSSgvs",
+                "moduleName": "DriveKitTripAnalysisModule",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26DriveKitTripAnalysisModule13ItineraryDataC14arrivalAddressSSSgvM",
+                "mangledName": "$s26DriveKitTripAnalysisModule13ItineraryDataC14arrivalAddressSSSgvM",
                 "moduleName": "DriveKitTripAnalysisModule",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -3823,8 +4373,8 @@
           },
           {
             "kind": "Var",
-            "name": "departureAddress",
-            "printedName": "departureAddress",
+            "name": "arrivalState",
+            "printedName": "arrivalState",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3842,8 +4392,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:26DriveKitTripAnalysisModule13ItineraryDataC16departureAddressSSSgvp",
-            "mangledName": "$s26DriveKitTripAnalysisModule13ItineraryDataC16departureAddressSSSgvp",
+            "usr": "s:26DriveKitTripAnalysisModule13ItineraryDataC12arrivalStateSSSgvp",
+            "mangledName": "$s26DriveKitTripAnalysisModule13ItineraryDataC12arrivalStateSSSgvp",
             "moduleName": "DriveKitTripAnalysisModule",
             "declAttributes": [
               "HasInitialValue",
@@ -3873,8 +4423,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:26DriveKitTripAnalysisModule13ItineraryDataC16departureAddressSSSgvg",
-                "mangledName": "$s26DriveKitTripAnalysisModule13ItineraryDataC16departureAddressSSSgvg",
+                "usr": "s:26DriveKitTripAnalysisModule13ItineraryDataC12arrivalStateSSSgvg",
+                "mangledName": "$s26DriveKitTripAnalysisModule13ItineraryDataC12arrivalStateSSSgvg",
                 "moduleName": "DriveKitTripAnalysisModule",
                 "implicit": true,
                 "accessorKind": "get"
@@ -3905,8 +4455,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:26DriveKitTripAnalysisModule13ItineraryDataC16departureAddressSSSgvs",
-                "mangledName": "$s26DriveKitTripAnalysisModule13ItineraryDataC16departureAddressSSSgvs",
+                "usr": "s:26DriveKitTripAnalysisModule13ItineraryDataC12arrivalStateSSSgvs",
+                "mangledName": "$s26DriveKitTripAnalysisModule13ItineraryDataC12arrivalStateSSSgvs",
                 "moduleName": "DriveKitTripAnalysisModule",
                 "implicit": true,
                 "accessorKind": "set"
@@ -3923,8 +4473,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:26DriveKitTripAnalysisModule13ItineraryDataC16departureAddressSSSgvM",
-                "mangledName": "$s26DriveKitTripAnalysisModule13ItineraryDataC16departureAddressSSSgvM",
+                "usr": "s:26DriveKitTripAnalysisModule13ItineraryDataC12arrivalStateSSSgvM",
+                "mangledName": "$s26DriveKitTripAnalysisModule13ItineraryDataC12arrivalStateSSSgvM",
                 "moduleName": "DriveKitTripAnalysisModule",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -3933,8 +4483,8 @@
           },
           {
             "kind": "Var",
-            "name": "arrivalAddress",
-            "printedName": "arrivalAddress",
+            "name": "arrivalCountry",
+            "printedName": "arrivalCountry",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -3952,8 +4502,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:26DriveKitTripAnalysisModule13ItineraryDataC14arrivalAddressSSSgvp",
-            "mangledName": "$s26DriveKitTripAnalysisModule13ItineraryDataC14arrivalAddressSSSgvp",
+            "usr": "s:26DriveKitTripAnalysisModule13ItineraryDataC14arrivalCountrySSSgvp",
+            "mangledName": "$s26DriveKitTripAnalysisModule13ItineraryDataC14arrivalCountrySSSgvp",
             "moduleName": "DriveKitTripAnalysisModule",
             "declAttributes": [
               "HasInitialValue",
@@ -3983,8 +4533,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:26DriveKitTripAnalysisModule13ItineraryDataC14arrivalAddressSSSgvg",
-                "mangledName": "$s26DriveKitTripAnalysisModule13ItineraryDataC14arrivalAddressSSSgvg",
+                "usr": "s:26DriveKitTripAnalysisModule13ItineraryDataC14arrivalCountrySSSgvg",
+                "mangledName": "$s26DriveKitTripAnalysisModule13ItineraryDataC14arrivalCountrySSSgvg",
                 "moduleName": "DriveKitTripAnalysisModule",
                 "implicit": true,
                 "accessorKind": "get"
@@ -4015,8 +4565,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:26DriveKitTripAnalysisModule13ItineraryDataC14arrivalAddressSSSgvs",
-                "mangledName": "$s26DriveKitTripAnalysisModule13ItineraryDataC14arrivalAddressSSSgvs",
+                "usr": "s:26DriveKitTripAnalysisModule13ItineraryDataC14arrivalCountrySSSgvs",
+                "mangledName": "$s26DriveKitTripAnalysisModule13ItineraryDataC14arrivalCountrySSSgvs",
                 "moduleName": "DriveKitTripAnalysisModule",
                 "implicit": true,
                 "accessorKind": "set"
@@ -4033,8 +4583,118 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:26DriveKitTripAnalysisModule13ItineraryDataC14arrivalAddressSSSgvM",
-                "mangledName": "$s26DriveKitTripAnalysisModule13ItineraryDataC14arrivalAddressSSSgvM",
+                "usr": "s:26DriveKitTripAnalysisModule13ItineraryDataC14arrivalCountrySSSgvM",
+                "mangledName": "$s26DriveKitTripAnalysisModule13ItineraryDataC14arrivalCountrySSSgvM",
+                "moduleName": "DriveKitTripAnalysisModule",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "arrivalPostalCode",
+            "printedName": "arrivalPostalCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:26DriveKitTripAnalysisModule13ItineraryDataC17arrivalPostalCodeSSSgvp",
+            "mangledName": "$s26DriveKitTripAnalysisModule13ItineraryDataC17arrivalPostalCodeSSSgvp",
+            "moduleName": "DriveKitTripAnalysisModule",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26DriveKitTripAnalysisModule13ItineraryDataC17arrivalPostalCodeSSSgvg",
+                "mangledName": "$s26DriveKitTripAnalysisModule13ItineraryDataC17arrivalPostalCodeSSSgvg",
+                "moduleName": "DriveKitTripAnalysisModule",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26DriveKitTripAnalysisModule13ItineraryDataC17arrivalPostalCodeSSSgvs",
+                "mangledName": "$s26DriveKitTripAnalysisModule13ItineraryDataC17arrivalPostalCodeSSSgvs",
+                "moduleName": "DriveKitTripAnalysisModule",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26DriveKitTripAnalysisModule13ItineraryDataC17arrivalPostalCodeSSSgvM",
+                "mangledName": "$s26DriveKitTripAnalysisModule13ItineraryDataC17arrivalPostalCodeSSSgvM",
                 "moduleName": "DriveKitTripAnalysisModule",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -36349,21 +37009,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Array",
-                "printedName": "[Swift.Int]",
+                "printedName": "[Swift.Int16]",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
+                    "name": "Int16",
+                    "printedName": "Swift.Int16",
+                    "usr": "s:s5Int16V"
                   }
                 ],
                 "usr": "s:Sa"
               }
             ],
             "declKind": "Var",
-            "usr": "s:26DriveKitTripAnalysisModule5RouteC4rollSaySiGvp",
-            "mangledName": "$s26DriveKitTripAnalysisModule5RouteC4rollSaySiGvp",
+            "usr": "s:26DriveKitTripAnalysisModule5RouteC4rollSays5Int16VGvp",
+            "mangledName": "$s26DriveKitTripAnalysisModule5RouteC4rollSays5Int16VGvp",
             "moduleName": "DriveKitTripAnalysisModule",
             "declAttributes": [
               "Final",
@@ -36381,21 +37041,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Array",
-                    "printedName": "[Swift.Int]",
+                    "printedName": "[Swift.Int16]",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
+                        "name": "Int16",
+                        "printedName": "Swift.Int16",
+                        "usr": "s:s5Int16V"
                       }
                     ],
                     "usr": "s:Sa"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:26DriveKitTripAnalysisModule5RouteC4rollSaySiGvg",
-                "mangledName": "$s26DriveKitTripAnalysisModule5RouteC4rollSaySiGvg",
+                "usr": "s:26DriveKitTripAnalysisModule5RouteC4rollSays5Int16VGvg",
+                "mangledName": "$s26DriveKitTripAnalysisModule5RouteC4rollSays5Int16VGvg",
                 "moduleName": "DriveKitTripAnalysisModule",
                 "implicit": true,
                 "declAttributes": [
@@ -36413,21 +37073,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Array",
-                "printedName": "[Swift.Int]",
+                "printedName": "[Swift.Int16]",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
+                    "name": "Int16",
+                    "printedName": "Swift.Int16",
+                    "usr": "s:s5Int16V"
                   }
                 ],
                 "usr": "s:Sa"
               }
             ],
             "declKind": "Var",
-            "usr": "s:26DriveKitTripAnalysisModule5RouteC5pitchSaySiGvp",
-            "mangledName": "$s26DriveKitTripAnalysisModule5RouteC5pitchSaySiGvp",
+            "usr": "s:26DriveKitTripAnalysisModule5RouteC5pitchSays5Int16VGvp",
+            "mangledName": "$s26DriveKitTripAnalysisModule5RouteC5pitchSays5Int16VGvp",
             "moduleName": "DriveKitTripAnalysisModule",
             "declAttributes": [
               "Final",
@@ -36445,21 +37105,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Array",
-                    "printedName": "[Swift.Int]",
+                    "printedName": "[Swift.Int16]",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
+                        "name": "Int16",
+                        "printedName": "Swift.Int16",
+                        "usr": "s:s5Int16V"
                       }
                     ],
                     "usr": "s:Sa"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:26DriveKitTripAnalysisModule5RouteC5pitchSaySiGvg",
-                "mangledName": "$s26DriveKitTripAnalysisModule5RouteC5pitchSaySiGvg",
+                "usr": "s:26DriveKitTripAnalysisModule5RouteC5pitchSays5Int16VGvg",
+                "mangledName": "$s26DriveKitTripAnalysisModule5RouteC5pitchSays5Int16VGvg",
                 "moduleName": "DriveKitTripAnalysisModule",
                 "implicit": true,
                 "declAttributes": [
@@ -36477,21 +37137,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Array",
-                "printedName": "[Swift.Int]",
+                "printedName": "[Swift.Int16]",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
+                    "name": "Int16",
+                    "printedName": "Swift.Int16",
+                    "usr": "s:s5Int16V"
                   }
                 ],
                 "usr": "s:Sa"
               }
             ],
             "declKind": "Var",
-            "usr": "s:26DriveKitTripAnalysisModule5RouteC3yawSaySiGvp",
-            "mangledName": "$s26DriveKitTripAnalysisModule5RouteC3yawSaySiGvp",
+            "usr": "s:26DriveKitTripAnalysisModule5RouteC3yawSays5Int16VGvp",
+            "mangledName": "$s26DriveKitTripAnalysisModule5RouteC3yawSays5Int16VGvp",
             "moduleName": "DriveKitTripAnalysisModule",
             "declAttributes": [
               "Final",
@@ -36509,21 +37169,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Array",
-                    "printedName": "[Swift.Int]",
+                    "printedName": "[Swift.Int16]",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
+                        "name": "Int16",
+                        "printedName": "Swift.Int16",
+                        "usr": "s:s5Int16V"
                       }
                     ],
                     "usr": "s:Sa"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:26DriveKitTripAnalysisModule5RouteC3yawSaySiGvg",
-                "mangledName": "$s26DriveKitTripAnalysisModule5RouteC3yawSaySiGvg",
+                "usr": "s:26DriveKitTripAnalysisModule5RouteC3yawSays5Int16VGvg",
+                "mangledName": "$s26DriveKitTripAnalysisModule5RouteC3yawSays5Int16VGvg",
                 "moduleName": "DriveKitTripAnalysisModule",
                 "implicit": true,
                 "declAttributes": [
@@ -36541,21 +37201,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Array",
-                "printedName": "[Swift.Int]",
+                "printedName": "[Swift.Int16]",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
+                    "name": "Int16",
+                    "printedName": "Swift.Int16",
+                    "usr": "s:s5Int16V"
                   }
                 ],
                 "usr": "s:Sa"
               }
             ],
             "declKind": "Var",
-            "usr": "s:26DriveKitTripAnalysisModule5RouteC16gyroscopeNormVarSaySiGvp",
-            "mangledName": "$s26DriveKitTripAnalysisModule5RouteC16gyroscopeNormVarSaySiGvp",
+            "usr": "s:26DriveKitTripAnalysisModule5RouteC16gyroscopeNormVarSays5Int16VGvp",
+            "mangledName": "$s26DriveKitTripAnalysisModule5RouteC16gyroscopeNormVarSays5Int16VGvp",
             "moduleName": "DriveKitTripAnalysisModule",
             "declAttributes": [
               "Final",
@@ -36573,21 +37233,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Array",
-                    "printedName": "[Swift.Int]",
+                    "printedName": "[Swift.Int16]",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
+                        "name": "Int16",
+                        "printedName": "Swift.Int16",
+                        "usr": "s:s5Int16V"
                       }
                     ],
                     "usr": "s:Sa"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:26DriveKitTripAnalysisModule5RouteC16gyroscopeNormVarSaySiGvg",
-                "mangledName": "$s26DriveKitTripAnalysisModule5RouteC16gyroscopeNormVarSaySiGvg",
+                "usr": "s:26DriveKitTripAnalysisModule5RouteC16gyroscopeNormVarSays5Int16VGvg",
+                "mangledName": "$s26DriveKitTripAnalysisModule5RouteC16gyroscopeNormVarSays5Int16VGvg",
                 "moduleName": "DriveKitTripAnalysisModule",
                 "implicit": true,
                 "declAttributes": [
@@ -47010,56 +47670,56 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/recorder\/RecordedData.swift",
       "kind": "Array",
-      "offset": 594,
+      "offset": 596,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/recorder\/RecordedData.swift",
       "kind": "Array",
-      "offset": 620,
+      "offset": 624,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/recorder\/RecordedData.swift",
       "kind": "Array",
-      "offset": 644,
+      "offset": 650,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/recorder\/RecordedData.swift",
       "kind": "Array",
-      "offset": 681,
+      "offset": 689,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/recorder\/RecordedData.swift",
       "kind": "IntegerLiteral",
-      "offset": 712,
+      "offset": 720,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/recorder\/RecordedData.swift",
       "kind": "IntegerLiteral",
-      "offset": 742,
+      "offset": 750,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/recorder\/RecordedData.swift",
       "kind": "IntegerLiteral",
-      "offset": 771,
+      "offset": 779,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/recorder\/RecordedData.swift",
       "kind": "IntegerLiteral",
-      "offset": 933,
+      "offset": 941,
       "length": 1,
       "value": "0"
     },
@@ -48032,70 +48692,70 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/CrashDetection\/service\/CrashFeedbackManager.swift",
       "kind": "StringLiteral",
-      "offset": 21415,
+      "offset": 21398,
       "length": 10,
       "value": "\"NO_CRASH\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/CrashDetection\/service\/CrashFeedbackManager.swift",
       "kind": "StringLiteral",
-      "offset": 21447,
+      "offset": 21430,
       "length": 17,
       "value": "\"CRASH_CONFIRMED\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/CrashDetection\/service\/CrashFeedbackManager.swift",
       "kind": "StringLiteral",
-      "offset": 21487,
+      "offset": 21470,
       "length": 13,
       "value": "\"NO_FEEDBACK\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/CrashDetection\/service\/CrashFeedbackManager.swift",
       "kind": "StringLiteral",
-      "offset": 21820,
+      "offset": 21803,
       "length": 6,
       "value": "\"NONE\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/CrashDetection\/service\/CrashFeedbackManager.swift",
       "kind": "StringLiteral",
-      "offset": 21844,
+      "offset": 21827,
       "length": 7,
       "value": "\"MINOR\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/CrashDetection\/service\/CrashFeedbackManager.swift",
       "kind": "StringLiteral",
-      "offset": 21872,
+      "offset": 21855,
       "length": 10,
       "value": "\"CRITICAL\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/CrashDetection\/service\/CrashFeedbackManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 22193,
+      "offset": 22176,
       "length": 9,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/CrashDetection\/service\/CrashFeedbackManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 22212,
+      "offset": 22195,
       "length": 10,
       "value": "2"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/CrashDetection\/service\/CrashFeedbackManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 22542,
+      "offset": 22525,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/CrashDetection\/service\/CrashFeedbackManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 22557,
+      "offset": 22540,
       "length": 8,
       "value": "2"
     },

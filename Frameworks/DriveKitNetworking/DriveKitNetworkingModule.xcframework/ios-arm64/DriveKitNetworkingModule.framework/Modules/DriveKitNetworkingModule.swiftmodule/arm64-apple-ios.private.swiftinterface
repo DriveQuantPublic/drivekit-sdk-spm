@@ -44,7 +44,7 @@ public enum DQNetworking {
   public static func jsonToArray<T>(jArray: [DriveKitNetworkingModule.SwiftyJSON]) -> [T] where T : DriveKitNetworkingModule.DriveKitModel
   public static func jsonToObject<T>(json: DriveKitNetworkingModule.SwiftyJSON) -> T where T : DriveKitNetworkingModule.DriveKitModel
   public static func jsonToDoubleArray(_ values: DriveKitNetworkingModule.SwiftyJSON) -> [Swift.Double]
-  public static func jsonToIntArray(_ values: DriveKitNetworkingModule.SwiftyJSON) -> [Swift.Int]
+  public static func jsonToInt16Array(_ values: DriveKitNetworkingModule.SwiftyJSON) -> [Swift.Int16]
 }
 @_hasMissingDesignatedInitializers public class ResponseData {
   public var statusCode: Swift.Int

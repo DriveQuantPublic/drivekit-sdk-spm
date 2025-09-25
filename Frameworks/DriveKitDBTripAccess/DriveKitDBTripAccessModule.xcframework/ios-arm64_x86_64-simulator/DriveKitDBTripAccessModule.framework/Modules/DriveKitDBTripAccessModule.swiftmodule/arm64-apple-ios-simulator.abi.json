@@ -26606,6 +26606,336 @@
           },
           {
             "kind": "Var",
+            "name": "arrivalState",
+            "printedName": "arrivalState",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:26DriveKitDBTripAccessModule6DKTripC12arrivalStateSSSgvp",
+            "mangledName": "$s26DriveKitDBTripAccessModule6DKTripC12arrivalStateSSSgvp",
+            "moduleName": "DriveKitDBTripAccessModule",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26DriveKitDBTripAccessModule6DKTripC12arrivalStateSSSgvg",
+                "mangledName": "$s26DriveKitDBTripAccessModule6DKTripC12arrivalStateSSSgvg",
+                "moduleName": "DriveKitDBTripAccessModule",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26DriveKitDBTripAccessModule6DKTripC12arrivalStateSSSgvs",
+                "mangledName": "$s26DriveKitDBTripAccessModule6DKTripC12arrivalStateSSSgvs",
+                "moduleName": "DriveKitDBTripAccessModule",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26DriveKitDBTripAccessModule6DKTripC12arrivalStateSSSgvM",
+                "mangledName": "$s26DriveKitDBTripAccessModule6DKTripC12arrivalStateSSSgvM",
+                "moduleName": "DriveKitDBTripAccessModule",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "arrivalCountry",
+            "printedName": "arrivalCountry",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:26DriveKitDBTripAccessModule6DKTripC14arrivalCountrySSSgvp",
+            "mangledName": "$s26DriveKitDBTripAccessModule6DKTripC14arrivalCountrySSSgvp",
+            "moduleName": "DriveKitDBTripAccessModule",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26DriveKitDBTripAccessModule6DKTripC14arrivalCountrySSSgvg",
+                "mangledName": "$s26DriveKitDBTripAccessModule6DKTripC14arrivalCountrySSSgvg",
+                "moduleName": "DriveKitDBTripAccessModule",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26DriveKitDBTripAccessModule6DKTripC14arrivalCountrySSSgvs",
+                "mangledName": "$s26DriveKitDBTripAccessModule6DKTripC14arrivalCountrySSSgvs",
+                "moduleName": "DriveKitDBTripAccessModule",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26DriveKitDBTripAccessModule6DKTripC14arrivalCountrySSSgvM",
+                "mangledName": "$s26DriveKitDBTripAccessModule6DKTripC14arrivalCountrySSSgvM",
+                "moduleName": "DriveKitDBTripAccessModule",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "arrivalPostalCode",
+            "printedName": "arrivalPostalCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:26DriveKitDBTripAccessModule6DKTripC17arrivalPostalCodeSSSgvp",
+            "mangledName": "$s26DriveKitDBTripAccessModule6DKTripC17arrivalPostalCodeSSSgvp",
+            "moduleName": "DriveKitDBTripAccessModule",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26DriveKitDBTripAccessModule6DKTripC17arrivalPostalCodeSSSgvg",
+                "mangledName": "$s26DriveKitDBTripAccessModule6DKTripC17arrivalPostalCodeSSSgvg",
+                "moduleName": "DriveKitDBTripAccessModule",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26DriveKitDBTripAccessModule6DKTripC17arrivalPostalCodeSSSgvs",
+                "mangledName": "$s26DriveKitDBTripAccessModule6DKTripC17arrivalPostalCodeSSSgvs",
+                "moduleName": "DriveKitDBTripAccessModule",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26DriveKitDBTripAccessModule6DKTripC17arrivalPostalCodeSSSgvM",
+                "mangledName": "$s26DriveKitDBTripAccessModule6DKTripC17arrivalPostalCodeSSSgvM",
+                "moduleName": "DriveKitDBTripAccessModule",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "departureAddress",
             "printedName": "departureAddress",
             "children": [
@@ -26818,6 +27148,336 @@
                 "declKind": "Accessor",
                 "usr": "s:26DriveKitDBTripAccessModule6DKTripC13departureCitySSSgvM",
                 "mangledName": "$s26DriveKitDBTripAccessModule6DKTripC13departureCitySSSgvM",
+                "moduleName": "DriveKitDBTripAccessModule",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "departureState",
+            "printedName": "departureState",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:26DriveKitDBTripAccessModule6DKTripC14departureStateSSSgvp",
+            "mangledName": "$s26DriveKitDBTripAccessModule6DKTripC14departureStateSSSgvp",
+            "moduleName": "DriveKitDBTripAccessModule",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26DriveKitDBTripAccessModule6DKTripC14departureStateSSSgvg",
+                "mangledName": "$s26DriveKitDBTripAccessModule6DKTripC14departureStateSSSgvg",
+                "moduleName": "DriveKitDBTripAccessModule",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26DriveKitDBTripAccessModule6DKTripC14departureStateSSSgvs",
+                "mangledName": "$s26DriveKitDBTripAccessModule6DKTripC14departureStateSSSgvs",
+                "moduleName": "DriveKitDBTripAccessModule",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26DriveKitDBTripAccessModule6DKTripC14departureStateSSSgvM",
+                "mangledName": "$s26DriveKitDBTripAccessModule6DKTripC14departureStateSSSgvM",
+                "moduleName": "DriveKitDBTripAccessModule",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "departureCountry",
+            "printedName": "departureCountry",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:26DriveKitDBTripAccessModule6DKTripC16departureCountrySSSgvp",
+            "mangledName": "$s26DriveKitDBTripAccessModule6DKTripC16departureCountrySSSgvp",
+            "moduleName": "DriveKitDBTripAccessModule",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26DriveKitDBTripAccessModule6DKTripC16departureCountrySSSgvg",
+                "mangledName": "$s26DriveKitDBTripAccessModule6DKTripC16departureCountrySSSgvg",
+                "moduleName": "DriveKitDBTripAccessModule",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26DriveKitDBTripAccessModule6DKTripC16departureCountrySSSgvs",
+                "mangledName": "$s26DriveKitDBTripAccessModule6DKTripC16departureCountrySSSgvs",
+                "moduleName": "DriveKitDBTripAccessModule",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26DriveKitDBTripAccessModule6DKTripC16departureCountrySSSgvM",
+                "mangledName": "$s26DriveKitDBTripAccessModule6DKTripC16departureCountrySSSgvM",
+                "moduleName": "DriveKitDBTripAccessModule",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "departurePostalCode",
+            "printedName": "departurePostalCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:26DriveKitDBTripAccessModule6DKTripC19departurePostalCodeSSSgvp",
+            "mangledName": "$s26DriveKitDBTripAccessModule6DKTripC19departurePostalCodeSSSgvp",
+            "moduleName": "DriveKitDBTripAccessModule",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26DriveKitDBTripAccessModule6DKTripC19departurePostalCodeSSSgvg",
+                "mangledName": "$s26DriveKitDBTripAccessModule6DKTripC19departurePostalCodeSSSgvg",
+                "moduleName": "DriveKitDBTripAccessModule",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26DriveKitDBTripAccessModule6DKTripC19departurePostalCodeSSSgvs",
+                "mangledName": "$s26DriveKitDBTripAccessModule6DKTripC19departurePostalCodeSSSgvs",
+                "moduleName": "DriveKitDBTripAccessModule",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:26DriveKitDBTripAccessModule6DKTripC19departurePostalCodeSSSgvM",
+                "mangledName": "$s26DriveKitDBTripAccessModule6DKTripC19departurePostalCodeSSSgvM",
                 "moduleName": "DriveKitDBTripAccessModule",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -73148,6 +73808,318 @@
           },
           {
             "kind": "Var",
+            "name": "arrivalCountry",
+            "printedName": "arrivalCountry",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@DriveKitDBTripAccessModule@objc(cs)DBTrip(py)arrivalCountry",
+            "mangledName": "$s26DriveKitDBTripAccessModule0C0C14arrivalCountrySSSgvp",
+            "moduleName": "DriveKitDBTripAccessModule",
+            "declAttributes": [
+              "Dynamic",
+              "Nonisolated",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@DriveKitDBTripAccessModule@objc(cs)DBTrip(im)arrivalCountry",
+                "mangledName": "$s26DriveKitDBTripAccessModule0C0C14arrivalCountrySSSgvg",
+                "moduleName": "DriveKitDBTripAccessModule",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@DriveKitDBTripAccessModule@objc(cs)DBTrip(im)setArrivalCountry:",
+                "mangledName": "$s26DriveKitDBTripAccessModule0C0C14arrivalCountrySSSgvs",
+                "moduleName": "DriveKitDBTripAccessModule",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "arrivalPostalCode",
+            "printedName": "arrivalPostalCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@DriveKitDBTripAccessModule@objc(cs)DBTrip(py)arrivalPostalCode",
+            "mangledName": "$s26DriveKitDBTripAccessModule0C0C17arrivalPostalCodeSSSgvp",
+            "moduleName": "DriveKitDBTripAccessModule",
+            "declAttributes": [
+              "Dynamic",
+              "Nonisolated",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@DriveKitDBTripAccessModule@objc(cs)DBTrip(im)arrivalPostalCode",
+                "mangledName": "$s26DriveKitDBTripAccessModule0C0C17arrivalPostalCodeSSSgvg",
+                "moduleName": "DriveKitDBTripAccessModule",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@DriveKitDBTripAccessModule@objc(cs)DBTrip(im)setArrivalPostalCode:",
+                "mangledName": "$s26DriveKitDBTripAccessModule0C0C17arrivalPostalCodeSSSgvs",
+                "moduleName": "DriveKitDBTripAccessModule",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "arrivalState",
+            "printedName": "arrivalState",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@DriveKitDBTripAccessModule@objc(cs)DBTrip(py)arrivalState",
+            "mangledName": "$s26DriveKitDBTripAccessModule0C0C12arrivalStateSSSgvp",
+            "moduleName": "DriveKitDBTripAccessModule",
+            "declAttributes": [
+              "Dynamic",
+              "Nonisolated",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@DriveKitDBTripAccessModule@objc(cs)DBTrip(im)arrivalState",
+                "mangledName": "$s26DriveKitDBTripAccessModule0C0C12arrivalStateSSSgvg",
+                "moduleName": "DriveKitDBTripAccessModule",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@DriveKitDBTripAccessModule@objc(cs)DBTrip(im)setArrivalState:",
+                "mangledName": "$s26DriveKitDBTripAccessModule0C0C12arrivalStateSSSgvs",
+                "moduleName": "DriveKitDBTripAccessModule",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "departureAddress",
             "printedName": "departureAddress",
             "children": [
@@ -73343,6 +74315,318 @@
                 "declKind": "Accessor",
                 "usr": "c:@CM@DriveKitDBTripAccessModule@objc(cs)DBTrip(im)setDepartureCity:",
                 "mangledName": "$s26DriveKitDBTripAccessModule0C0C13departureCitySSSgvs",
+                "moduleName": "DriveKitDBTripAccessModule",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "departureCountry",
+            "printedName": "departureCountry",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@DriveKitDBTripAccessModule@objc(cs)DBTrip(py)departureCountry",
+            "mangledName": "$s26DriveKitDBTripAccessModule0C0C16departureCountrySSSgvp",
+            "moduleName": "DriveKitDBTripAccessModule",
+            "declAttributes": [
+              "Dynamic",
+              "Nonisolated",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@DriveKitDBTripAccessModule@objc(cs)DBTrip(im)departureCountry",
+                "mangledName": "$s26DriveKitDBTripAccessModule0C0C16departureCountrySSSgvg",
+                "moduleName": "DriveKitDBTripAccessModule",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@DriveKitDBTripAccessModule@objc(cs)DBTrip(im)setDepartureCountry:",
+                "mangledName": "$s26DriveKitDBTripAccessModule0C0C16departureCountrySSSgvs",
+                "moduleName": "DriveKitDBTripAccessModule",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "departurePostalCode",
+            "printedName": "departurePostalCode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@DriveKitDBTripAccessModule@objc(cs)DBTrip(py)departurePostalCode",
+            "mangledName": "$s26DriveKitDBTripAccessModule0C0C19departurePostalCodeSSSgvp",
+            "moduleName": "DriveKitDBTripAccessModule",
+            "declAttributes": [
+              "Dynamic",
+              "Nonisolated",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@DriveKitDBTripAccessModule@objc(cs)DBTrip(im)departurePostalCode",
+                "mangledName": "$s26DriveKitDBTripAccessModule0C0C19departurePostalCodeSSSgvg",
+                "moduleName": "DriveKitDBTripAccessModule",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@DriveKitDBTripAccessModule@objc(cs)DBTrip(im)setDeparturePostalCode:",
+                "mangledName": "$s26DriveKitDBTripAccessModule0C0C19departurePostalCodeSSSgvs",
+                "moduleName": "DriveKitDBTripAccessModule",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "set"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "departureState",
+            "printedName": "departureState",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@CM@DriveKitDBTripAccessModule@objc(cs)DBTrip(py)departureState",
+            "mangledName": "$s26DriveKitDBTripAccessModule0C0C14departureStateSSSgvp",
+            "moduleName": "DriveKitDBTripAccessModule",
+            "declAttributes": [
+              "Dynamic",
+              "Nonisolated",
+              "AccessControl",
+              "NSManaged",
+              "ObjC"
+            ],
+            "isFromExtension": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@DriveKitDBTripAccessModule@objc(cs)DBTrip(im)departureState",
+                "mangledName": "$s26DriveKitDBTripAccessModule0C0C14departureStateSSSgvg",
+                "moduleName": "DriveKitDBTripAccessModule",
+                "implicit": true,
+                "declAttributes": [
+                  "Dynamic",
+                  "ObjC"
+                ],
+                "isFromExtension": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@CM@DriveKitDBTripAccessModule@objc(cs)DBTrip(im)setDepartureState:",
+                "mangledName": "$s26DriveKitDBTripAccessModule0C0C14departureStateSSSgvs",
                 "moduleName": "DriveKitDBTripAccessModule",
                 "implicit": true,
                 "declAttributes": [
@@ -81664,21 +82948,21 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-db-trip-access\/Model\/DKTrip.swift",
       "kind": "IntegerLiteral",
-      "offset": 9959,
+      "offset": 10693,
       "length": 6,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-db-trip-access\/Model\/DKTrip.swift",
       "kind": "IntegerLiteral",
-      "offset": 9967,
+      "offset": 10701,
       "length": 9,
       "value": "2"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-db-trip-access\/Model\/DKTrip.swift",
       "kind": "IntegerLiteral",
-      "offset": 9978,
+      "offset": 10712,
       "length": 13,
       "value": "3"
     },

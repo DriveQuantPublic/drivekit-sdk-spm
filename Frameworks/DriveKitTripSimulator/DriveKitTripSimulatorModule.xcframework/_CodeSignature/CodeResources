@@ -6,7 +6,7 @@
 	<dict>
 		<key>ios-arm64/DriveKitTripSimulatorModule.framework/DriveKitTripSimulatorModule</key>
 		<data>
-		izI8O21eKUItwgrdU1ly5HzxsIA=
+		55m4jxLfDlO3hIuGM1R+fMsy9ro=
 		</data>
 		<key>ios-arm64/DriveKitTripSimulatorModule.framework/Headers/DriveKitTripSimulatorModule-Swift.h</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>ios-arm64/DriveKitTripSimulatorModule.framework/Info.plist</key>
 		<data>
-		sVz6XR11oCvcgBcG2trM/xduKIU=
+		/6Q2Lf3WsKUkzZFjucM/CV93WJ0=
 		</data>
 		<key>ios-arm64/DriveKitTripSimulatorModule.framework/Modules/DriveKitTripSimulatorModule.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -78,19 +78,19 @@
 		</data>
 		<key>ios-arm64/DriveKitTripSimulatorModule.framework/tripWithCrash.json</key>
 		<data>
-		xCUhw/sqTON94OtOT5ODoC0f9uw=
+		pqKsacIx9VdOmICZpovM8JsbmWU=
 		</data>
 		<key>ios-arm64/DriveKitTripSimulatorModule.framework/tripWithCrashStillDriving.json</key>
 		<data>
-		PZ/QFk5pQBgmXVidUKizIuPcsUA=
+		ZObvSjJrvko75GXluPptRtHETVg=
 		</data>
 		<key>ios-arm64/DriveKitTripSimulatorModule.framework/trip_with_crash_movements.json</key>
 		<data>
-		7q5EHv5QSyqsNc9/dt85Fz5osEw=
+		z1/NPx6yrhCNDm2NcbW6yBeiURg=
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitTripSimulatorModule.framework/DriveKitTripSimulatorModule</key>
 		<data>
-		kDCvrve3/9I6ysysmCw1vI4GYT4=
+		id2BCnErRapLI7hK7E9RgxHdS4U=
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitTripSimulatorModule.framework/Headers/DriveKitTripSimulatorModule-Swift.h</key>
 		<data>
@@ -102,7 +102,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitTripSimulatorModule.framework/Info.plist</key>
 		<data>
-		wW9hVy0NJXkhmfvy5lqGgShmJEk=
+		uuRerDNvU3BYJliHncRzFLUfu8A=
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitTripSimulatorModule.framework/Modules/DriveKitTripSimulatorModule.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -146,7 +146,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitTripSimulatorModule.framework/_CodeSignature/CodeResources</key>
 		<data>
-		VrOzpWwLZOqiobwdXU0qFPR09QU=
+		oqs/U9yFM8F/MUsSxKLW53/TVzQ=
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitTripSimulatorModule.framework/boatTrip.json</key>
 		<data>
@@ -182,15 +182,15 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitTripSimulatorModule.framework/tripWithCrash.json</key>
 		<data>
-		xCUhw/sqTON94OtOT5ODoC0f9uw=
+		pqKsacIx9VdOmICZpovM8JsbmWU=
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitTripSimulatorModule.framework/tripWithCrashStillDriving.json</key>
 		<data>
-		PZ/QFk5pQBgmXVidUKizIuPcsUA=
+		ZObvSjJrvko75GXluPptRtHETVg=
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitTripSimulatorModule.framework/trip_with_crash_movements.json</key>
 		<data>
-		7q5EHv5QSyqsNc9/dt85Fz5osEw=
+		z1/NPx6yrhCNDm2NcbW6yBeiURg=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -199,11 +199,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			izI8O21eKUItwgrdU1ly5HzxsIA=
+			55m4jxLfDlO3hIuGM1R+fMsy9ro=
 			</data>
 			<key>hash2</key>
 			<data>
-			c0HHIOqa+aS0vpsA77nY89EEFel4wGayjret7svNJgg=
+			KCv7P9Svm7/gwRFknh0z5aMIPn56bwwp0uTDa0Ae/Pw=
 			</data>
 		</dict>
 		<key>ios-arm64/DriveKitTripSimulatorModule.framework/Headers/DriveKitTripSimulatorModule-Swift.h</key>
@@ -232,11 +232,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			sVz6XR11oCvcgBcG2trM/xduKIU=
+			/6Q2Lf3WsKUkzZFjucM/CV93WJ0=
 			</data>
 			<key>hash2</key>
 			<data>
-			ftXE+AX2dzyXHZ1HhyaQk/0eSE3FqwTV9VNeqdGalXc=
+			7boeYhUNSVMY3vbrfR/EiQnJZUqzgEEuzY+QJp4LYPQ=
 			</data>
 		</dict>
 		<key>ios-arm64/DriveKitTripSimulatorModule.framework/Modules/DriveKitTripSimulatorModule.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -397,44 +397,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xCUhw/sqTON94OtOT5ODoC0f9uw=
+			pqKsacIx9VdOmICZpovM8JsbmWU=
 			</data>
 			<key>hash2</key>
 			<data>
-			96+w5YmSGCH2xl5ilogs235AJyNohOxK2VuxfBYoQtY=
+			R0NVY3zpRWhlpB+mrNl7G7QsIE8FTwJJKLqvviq6Kb8=
 			</data>
 		</dict>
 		<key>ios-arm64/DriveKitTripSimulatorModule.framework/tripWithCrashStillDriving.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PZ/QFk5pQBgmXVidUKizIuPcsUA=
+			ZObvSjJrvko75GXluPptRtHETVg=
 			</data>
 			<key>hash2</key>
 			<data>
-			c6DAtHAy5l8CIxkL6Nw11NDZsSqLWd+VcyS08A2ENRE=
+			6fYzmvA8MsK6YyCO4c3GCqiazbH7DsVKR/Tin2fKfzk=
 			</data>
 		</dict>
 		<key>ios-arm64/DriveKitTripSimulatorModule.framework/trip_with_crash_movements.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7q5EHv5QSyqsNc9/dt85Fz5osEw=
+			z1/NPx6yrhCNDm2NcbW6yBeiURg=
 			</data>
 			<key>hash2</key>
 			<data>
-			eotNqIZwogB/9fzUM7K1M/NckGDFn+rHd3yJcmAI+XA=
+			8aRf2fEZk0S4zwtuiyhBLjhkdsw6g3uPLB6FYoYi3zM=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/DriveKitTripSimulatorModule.framework/DriveKitTripSimulatorModule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			kDCvrve3/9I6ysysmCw1vI4GYT4=
+			id2BCnErRapLI7hK7E9RgxHdS4U=
 			</data>
 			<key>hash2</key>
 			<data>
-			qKAN0aW6AfOtFhO9p0Qzl5jGo60yjxL9hvcX/ntqzSs=
+			abCEGI29YzJIPHKxjtSJLeTud5DhaeymDmij7qzjOkE=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/DriveKitTripSimulatorModule.framework/Headers/DriveKitTripSimulatorModule-Swift.h</key>
@@ -463,11 +463,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wW9hVy0NJXkhmfvy5lqGgShmJEk=
+			uuRerDNvU3BYJliHncRzFLUfu8A=
 			</data>
 			<key>hash2</key>
 			<data>
-			NOuRJiPMbs7YP+Jte//7d8r/6cSa5xT+gZDv84fsW6w=
+			O63PrOskdJ2lBUdbcIyXKJLpCMYeaHZeaYFiUuXlrQA=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/DriveKitTripSimulatorModule.framework/Modules/DriveKitTripSimulatorModule.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -584,11 +584,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			VrOzpWwLZOqiobwdXU0qFPR09QU=
+			oqs/U9yFM8F/MUsSxKLW53/TVzQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			sfsmGG45qUXFhjoR0aqSrzwmDUG2zrb0crJWexHRFG4=
+			IiYJyWIobT5dMxhkcKO91l3mUMrJlbHhUZJoD9RrTIc=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/DriveKitTripSimulatorModule.framework/boatTrip.json</key>
@@ -683,33 +683,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xCUhw/sqTON94OtOT5ODoC0f9uw=
+			pqKsacIx9VdOmICZpovM8JsbmWU=
 			</data>
 			<key>hash2</key>
 			<data>
-			96+w5YmSGCH2xl5ilogs235AJyNohOxK2VuxfBYoQtY=
+			R0NVY3zpRWhlpB+mrNl7G7QsIE8FTwJJKLqvviq6Kb8=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/DriveKitTripSimulatorModule.framework/tripWithCrashStillDriving.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			PZ/QFk5pQBgmXVidUKizIuPcsUA=
+			ZObvSjJrvko75GXluPptRtHETVg=
 			</data>
 			<key>hash2</key>
 			<data>
-			c6DAtHAy5l8CIxkL6Nw11NDZsSqLWd+VcyS08A2ENRE=
+			6fYzmvA8MsK6YyCO4c3GCqiazbH7DsVKR/Tin2fKfzk=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/DriveKitTripSimulatorModule.framework/trip_with_crash_movements.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			7q5EHv5QSyqsNc9/dt85Fz5osEw=
+			z1/NPx6yrhCNDm2NcbW6yBeiURg=
 			</data>
 			<key>hash2</key>
 			<data>
-			eotNqIZwogB/9fzUM7K1M/NckGDFn+rHd3yJcmAI+XA=
+			8aRf2fEZk0S4zwtuiyhBLjhkdsw6g3uPLB6FYoYi3zM=
 			</data>
 		</dict>
 	</dict>

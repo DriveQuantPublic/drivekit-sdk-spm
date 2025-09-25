@@ -809,8 +809,14 @@ SWIFT_CLASS_NAMED("DBTrip")
 @interface DBTrip (SWIFT_EXTENSION(DriveKitDBTripAccessModule))
 @property (nonatomic, copy) NSString * _Nullable arrivalAddress;
 @property (nonatomic, copy) NSString * _Nullable arrivalCity;
+@property (nonatomic, copy) NSString * _Nullable arrivalCountry;
+@property (nonatomic, copy) NSString * _Nullable arrivalPostalCode;
+@property (nonatomic, copy) NSString * _Nullable arrivalState;
 @property (nonatomic, copy) NSString * _Nullable departureAddress;
 @property (nonatomic, copy) NSString * _Nullable departureCity;
+@property (nonatomic, copy) NSString * _Nullable departureCountry;
+@property (nonatomic, copy) NSString * _Nullable departurePostalCode;
+@property (nonatomic, copy) NSString * _Nullable departureState;
 @property (nonatomic, copy) NSDate * _Nullable endDate;
 @property (nonatomic, copy) NSString * _Nullable itinId;
 @property (nonatomic, strong) NSDictionary * _Nullable metadata;

@@ -316,7 +316,7 @@ typedef SWIFT_ENUM(NSInteger, PresetCrash, open) {
 
 typedef SWIFT_ENUM(NSInteger, PresetCrashConfiguration, open) {
   PresetCrashConfigurationUnconfirmed0KmH = 0,
-  PresetCrashConfigurationConfirmed10KmH = 1,
+  PresetCrashConfigurationConfirmed40KmH = 1,
   PresetCrashConfigurationConfirmed20KmH = 2,
   PresetCrashConfigurationConfirmed30KmH = 3,
   PresetCrashConfigurationConfirmed30KmHStillDriving = 4,
@@ -661,7 +661,7 @@ typedef SWIFT_ENUM(NSInteger, PresetCrash, open) {
 
 typedef SWIFT_ENUM(NSInteger, PresetCrashConfiguration, open) {
   PresetCrashConfigurationUnconfirmed0KmH = 0,
-  PresetCrashConfigurationConfirmed10KmH = 1,
+  PresetCrashConfigurationConfirmed40KmH = 1,
   PresetCrashConfigurationConfirmed20KmH = 2,
   PresetCrashConfigurationConfirmed30KmH = 3,
   PresetCrashConfigurationConfirmed30KmHStillDriving = 4,

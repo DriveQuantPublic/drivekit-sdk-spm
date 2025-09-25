@@ -56,7 +56,6 @@ import _SwiftConcurrencyShims
   @objc public func addDriveKitDelegate(_ delegate: any DriveKitCoreModule.DriveKitDelegate)
   @objc public func removeDriveKitDelegate(_ delegate: any DriveKitCoreModule.DriveKitDelegate)
   @objc public func removeAllDriveKitDelegates()
-  @objc public func registerUser(userId: Swift.String)
   @objc public func deleteAccount(instantDeletion: Swift.Bool = false)
   @objc public func enableLogging(showInConsole: Swift.Bool = true)
   @objc public func disableLogging(showInConsole: Swift.Bool = true)
@@ -86,10 +85,13 @@ extension DriveKitCoreModule.DriveKit : DriveKitCoreModule.DriveKitDelegate {
   #endif
 }
 public struct DKAddress {
-  public let city: Swift.String
   public let address: Swift.String?
+  public let city: Swift.String
+  public let state: Swift.String
+  public let country: Swift.String
+  public let postalCode: Swift.String
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(city: Swift.String, address: Swift.String?)
+  public init(address: Swift.String?, city: Swift.String, state: Swift.String, country: Swift.String, postalCode: Swift.String)
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   public static func isEmpty(_ value: Swift.String?) -> Swift.Bool

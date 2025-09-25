@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		wW9hVy0NJXkhmfvy5lqGgShmJEk=
+		uuRerDNvU3BYJliHncRzFLUfu8A=
 		</data>
 		<key>Modules/DriveKitTripSimulatorModule.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/DriveKitTripSimulatorModule.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		io8lK2qv9Si8TZp+NahSsYJ0M4c=
+		CaX/pE4LjQEPBV9KVOz7GLDUHB4=
 		</data>
 		<key>Modules/DriveKitTripSimulatorModule.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/DriveKitTripSimulatorModule.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		DfMC3W10pXr0uIfEvhfwFVFFwDI=
+		oV5gA358094sN6y7KmLYc0+orGg=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -98,15 +98,15 @@
 		</data>
 		<key>tripWithCrash.json</key>
 		<data>
-		xCUhw/sqTON94OtOT5ODoC0f9uw=
+		pqKsacIx9VdOmICZpovM8JsbmWU=
 		</data>
 		<key>tripWithCrashStillDriving.json</key>
 		<data>
-		PZ/QFk5pQBgmXVidUKizIuPcsUA=
+		ZObvSjJrvko75GXluPptRtHETVg=
 		</data>
 		<key>trip_with_crash_movements.json</key>
 		<data>
-		7q5EHv5QSyqsNc9/dt85Fz5osEw=
+		z1/NPx6yrhCNDm2NcbW6yBeiURg=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -157,7 +157,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			g7F4vp/b8X+TXeoL39iYobHDGzszO3wQDsxEITgMxfI=
+			SIrXflvzxtk6+qznUnvUZd8pFT1C42voc9fYpzGqC2A=
 			</data>
 		</dict>
 		<key>Modules/DriveKitTripSimulatorModule.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -192,7 +192,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			YBzdctUptiGlS5kOwTHx7g1dOmgwK1j8Exz30PnqUQg=
+			nBCoC2fELQHpq2a75bPpCyMVT+fDp0m0/vz8Wz90ctI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -269,21 +269,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			96+w5YmSGCH2xl5ilogs235AJyNohOxK2VuxfBYoQtY=
+			R0NVY3zpRWhlpB+mrNl7G7QsIE8FTwJJKLqvviq6Kb8=
 			</data>
 		</dict>
 		<key>tripWithCrashStillDriving.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			c6DAtHAy5l8CIxkL6Nw11NDZsSqLWd+VcyS08A2ENRE=
+			6fYzmvA8MsK6YyCO4c3GCqiazbH7DsVKR/Tin2fKfzk=
 			</data>
 		</dict>
 		<key>trip_with_crash_movements.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eotNqIZwogB/9fzUM7K1M/NckGDFn+rHd3yJcmAI+XA=
+			8aRf2fEZk0S4zwtuiyhBLjhkdsw6g3uPLB6FYoYi3zM=
 			</data>
 		</dict>
 	</dict>
