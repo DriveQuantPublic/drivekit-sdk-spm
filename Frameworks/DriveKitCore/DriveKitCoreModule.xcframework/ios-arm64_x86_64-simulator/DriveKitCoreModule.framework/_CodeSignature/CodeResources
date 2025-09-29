@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		LiXhiUmNjf2XwDI3UucqJG/t+3s=
+		KHhJRb4O72vzGi4FRbSq/WaLs1s=
 		</data>
 		<key>Modules/DriveKitCoreModule.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		ilnhajuj9ju3r6c44EWFvKHxtq0=
+		O36QCRR+Z/2f4fP7hcKyXW1IrRQ=
 		</data>
 		<key>Modules/DriveKitCoreModule.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/DriveKitCoreModule.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		HOZJ8gmCwlQ+8Ex55g90Yd4S6cU=
+		AhG5ULdTBV+FOx7xbDxEbG5fA+A=
 		</data>
 		<key>Modules/DriveKitCoreModule.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		ilnhajuj9ju3r6c44EWFvKHxtq0=
+		O36QCRR+Z/2f4fP7hcKyXW1IrRQ=
 		</data>
 		<key>Modules/DriveKitCoreModule.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/DriveKitCoreModule.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ivsAxrl1zLSled64Duuqgbdyv2k=
+		QYZlDucHeMAHoz19V0cRB3zdriA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -85,7 +85,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			M3+9Q/3h2p92i+Bi0y91BoQ5KCmXPGWB6hLKz/thdLg=
+			3t7wRfF25fQS6fJD+pQan4JSOd6AcNBrDVbRrP4tdc8=
 			</data>
 		</dict>
 		<key>Modules/DriveKitCoreModule.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -113,14 +113,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BgatXGNYN5veP8gZw0uhAAn5nIIYgDPIh9YVbOcWkVQ=
+			qmx6G68tMQ7joM86hXPOVcjXwztRAPnDdllQ/FgaVrk=
 			</data>
 		</dict>
 		<key>Modules/DriveKitCoreModule.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			M3+9Q/3h2p92i+Bi0y91BoQ5KCmXPGWB6hLKz/thdLg=
+			3t7wRfF25fQS6fJD+pQan4JSOd6AcNBrDVbRrP4tdc8=
 			</data>
 		</dict>
 		<key>Modules/DriveKitCoreModule.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -148,7 +148,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HSQ05DK3Ke01aI78Dlr73kfKjdBKNlDSVJwH9Ht2NKo=
+			98Q6HJwk6kpdDUGSUpzt6G44B09Hcy5pcCS3bbnQtjo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
