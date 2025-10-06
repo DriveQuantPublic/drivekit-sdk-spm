@@ -18,7 +18,7 @@
 		</data>
 		<key>ios-arm64/DriveKitTripSimulatorModule.framework/Info.plist</key>
 		<data>
-		u5UwqJDgW48MEKkDftviSJBlZwk=
+		Zi+Lbeo5avt9472wmO8S96CHVPY=
 		</data>
 		<key>ios-arm64/DriveKitTripSimulatorModule.framework/Modules/DriveKitTripSimulatorModule.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -90,7 +90,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitTripSimulatorModule.framework/DriveKitTripSimulatorModule</key>
 		<data>
-		cFEVH6cLqtfoaOYliIH+LgfvQ8w=
+		M+Ly9DbLnRUtQ3gDaAaLnWqxtm0=
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitTripSimulatorModule.framework/Headers/DriveKitTripSimulatorModule-Swift.h</key>
 		<data>
@@ -102,7 +102,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitTripSimulatorModule.framework/Info.plist</key>
 		<data>
-		QSbwTyX27lRZ+U60y0cgqOEL4N4=
+		g53p4y/zcwMFr10gBIqjZL9HUAM=
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitTripSimulatorModule.framework/Modules/DriveKitTripSimulatorModule.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -146,7 +146,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitTripSimulatorModule.framework/_CodeSignature/CodeResources</key>
 		<data>
-		Q4TcA7+/3EUQjWJEm4AnW9ZnNvQ=
+		/zjfKhjurUsACHkriAzPyZx8aSs=
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitTripSimulatorModule.framework/boatTrip.json</key>
 		<data>
@@ -232,11 +232,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			u5UwqJDgW48MEKkDftviSJBlZwk=
+			Zi+Lbeo5avt9472wmO8S96CHVPY=
 			</data>
 			<key>hash2</key>
 			<data>
-			afzwdZkFwSTh+CGB5EEVmS5txv7ddetpz7TVevQrHuU=
+			beeObD18vwIxjpAuD5X8USkOky6nJnZc9mPsCCwSIYg=
 			</data>
 		</dict>
 		<key>ios-arm64/DriveKitTripSimulatorModule.framework/Modules/DriveKitTripSimulatorModule.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -430,11 +430,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cFEVH6cLqtfoaOYliIH+LgfvQ8w=
+			M+Ly9DbLnRUtQ3gDaAaLnWqxtm0=
 			</data>
 			<key>hash2</key>
 			<data>
-			i9zwv3FjamKDNH8Afo7mWxWn+ucdeAgQz5fewWjm3Dk=
+			lFqwIIYJgcotulTtd86Rr4LNpfGkWUmXvKgjoQ/dv44=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/DriveKitTripSimulatorModule.framework/Headers/DriveKitTripSimulatorModule-Swift.h</key>
@@ -463,11 +463,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QSbwTyX27lRZ+U60y0cgqOEL4N4=
+			g53p4y/zcwMFr10gBIqjZL9HUAM=
 			</data>
 			<key>hash2</key>
 			<data>
-			kfLfFF74tBrY7AmoUBpjArzZtyhdMxoLIQRidxGB0R4=
+			4eD/nO1eZ37OStZ40k/YqrVZFNwbe3FNJ/R36CDYBGk=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/DriveKitTripSimulatorModule.framework/Modules/DriveKitTripSimulatorModule.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -584,11 +584,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Q4TcA7+/3EUQjWJEm4AnW9ZnNvQ=
+			/zjfKhjurUsACHkriAzPyZx8aSs=
 			</data>
 			<key>hash2</key>
 			<data>
-			UaM0GK6dA9w5CAYlXgZyhGkutK2OF/FIAN8/+fZaCdw=
+			YTvkhNSqt8fHbtFA3SJFv24h7hsr/Zsve4IVET/GAX0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/DriveKitTripSimulatorModule.framework/boatTrip.json</key>

@@ -18,7 +18,7 @@
 		</data>
 		<key>ios-arm64/DriveKitDriverDataModule.framework/Info.plist</key>
 		<data>
-		bVdAOQKPRH3nt+46x64pe79NNNU=
+		KR9GfVxVMcWm4rC+fUzpIvPvofY=
 		</data>
 		<key>ios-arm64/DriveKitDriverDataModule.framework/Modules/DriveKitDriverDataModule.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitDriverDataModule.framework/DriveKitDriverDataModule</key>
 		<data>
-		fbGGKKcmpWXww4xvDKAva2WICWA=
+		XDw4V1+mTYQDiJtskbFDGTXYigw=
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitDriverDataModule.framework/Headers/DriveKitDriverDataModule-Swift.h</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitDriverDataModule.framework/Info.plist</key>
 		<data>
-		mxb6QYFcRkrMZhkCCl0lfgqQKF8=
+		ngJTTVk/JfQ0lnalXquBhJ+UnKY=
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitDriverDataModule.framework/Modules/DriveKitDriverDataModule.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -102,7 +102,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitDriverDataModule.framework/_CodeSignature/CodeResources</key>
 		<data>
-		3JdiLJ5MyRn4Rm3BmCdqmf7Wz5o=
+		taWZo9UeJX8wkFZNSUG1J3KavFw=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -144,11 +144,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			bVdAOQKPRH3nt+46x64pe79NNNU=
+			KR9GfVxVMcWm4rC+fUzpIvPvofY=
 			</data>
 			<key>hash2</key>
 			<data>
-			5l9hdGDKZud4ommnuV65c/dY7yZam55H3BwWC4fNZDs=
+			a5bydD7+Y+p4YwwfTZ5p7k83Yi2/Wqrhaye4DzNfsck=
 			</data>
 		</dict>
 		<key>ios-arm64/DriveKitDriverDataModule.framework/Modules/DriveKitDriverDataModule.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -221,11 +221,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			fbGGKKcmpWXww4xvDKAva2WICWA=
+			XDw4V1+mTYQDiJtskbFDGTXYigw=
 			</data>
 			<key>hash2</key>
 			<data>
-			AAdxRncfSzg/TT5HwzzxRntvvdH31GGt8UjckK9bgv8=
+			giKlm1P114km+sdnSGp4lN/eJMNNb0cafb/6OGFMGE8=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/DriveKitDriverDataModule.framework/Headers/DriveKitDriverDataModule-Swift.h</key>
@@ -254,11 +254,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mxb6QYFcRkrMZhkCCl0lfgqQKF8=
+			ngJTTVk/JfQ0lnalXquBhJ+UnKY=
 			</data>
 			<key>hash2</key>
 			<data>
-			CzkpaYdwaMR8D6TlC5ASIGMg9oYqzjMpcyR+lXqYQ0A=
+			X8M/cdUG7xh6VokoxAIwjCnqpUEnhGrKeiSFzBMBgHQ=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/DriveKitDriverDataModule.framework/Modules/DriveKitDriverDataModule.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -375,11 +375,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			3JdiLJ5MyRn4Rm3BmCdqmf7Wz5o=
+			taWZo9UeJX8wkFZNSUG1J3KavFw=
 			</data>
 			<key>hash2</key>
 			<data>
-			O3hvYscfoz8XWR89r+mBmk3v6gFwsmi2pGYXKU8o1g0=
+			OzD+BjV7U21+NPyb3aNPLpC8Nx2ByIJknfCAfwkxdKo=
 			</data>
 		</dict>
 	</dict>
