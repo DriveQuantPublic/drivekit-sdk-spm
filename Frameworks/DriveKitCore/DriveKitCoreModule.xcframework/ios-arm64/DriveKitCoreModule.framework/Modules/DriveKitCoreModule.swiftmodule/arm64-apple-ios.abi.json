@@ -27755,14 +27755,14 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/logs\/DriveKitLog.swift",
       "kind": "StringLiteral",
-      "offset": 15224,
+      "offset": 15072,
       "length": 7,
       "value": "\"ERROR\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/logs\/DriveKitLog.swift",
       "kind": "StringLiteral",
-      "offset": 15248,
+      "offset": 15096,
       "length": 6,
       "value": "\"INFO\""
     },
@@ -27832,7 +27832,7 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/sdkDiagnosis\/DKSDKDiagnosis.swift",
       "kind": "IntegerLiteral",
-      "offset": 11483,
+      "offset": 11825,
       "length": 9,
       "value": "1"
     },
