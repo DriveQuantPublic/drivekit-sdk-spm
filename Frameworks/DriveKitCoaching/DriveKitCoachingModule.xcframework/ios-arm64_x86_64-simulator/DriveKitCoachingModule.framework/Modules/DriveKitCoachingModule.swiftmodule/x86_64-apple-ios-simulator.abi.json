@@ -1563,22 +1563,15 @@
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-coaching\/DriveKitCoachingConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 502,
-      "length": 30,
-      "value": "\"\/v2\/drivekit\/driver\/messages\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/drivekit-coaching\/DriveKitCoachingConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 739,
+      "offset": 783,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-coaching\/DriveKitCoachingConstants.swift",
       "kind": "StringLiteral",
-      "offset": 837,
+      "offset": 881,
       "length": 33,
       "value": "\"drivekit-coaching-messages-sync\""
     },

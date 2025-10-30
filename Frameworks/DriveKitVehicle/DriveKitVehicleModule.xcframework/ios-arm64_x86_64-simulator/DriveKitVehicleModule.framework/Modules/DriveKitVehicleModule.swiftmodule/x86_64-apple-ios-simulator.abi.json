@@ -124,6 +124,47 @@
           },
           {
             "kind": "Var",
+            "name": "aiways",
+            "printedName": "aiways",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitVehicleModule.DKVehicleBrand.Type) -> DriveKitVehicleModule.DKVehicleBrand",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKVehicleBrand",
+                    "printedName": "DriveKitVehicleModule.DKVehicleBrand",
+                    "usr": "c:@M@DriveKitVehicleModule@E@DKVehicleBrand"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DriveKitVehicleModule.DKVehicleBrand.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKVehicleBrand",
+                        "printedName": "DriveKitVehicleModule.DKVehicleBrand",
+                        "usr": "c:@M@DriveKitVehicleModule@E@DKVehicleBrand"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@DriveKitVehicleModule@E@DKVehicleBrand@DKVehicleBrandAiways",
+            "mangledName": "$s21DriveKitVehicleModule14DKVehicleBrandO6aiwaysyA2CmF",
+            "moduleName": "DriveKitVehicleModule",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 1
+          },
+          {
+            "kind": "Var",
             "name": "alpha_romeo",
             "printedName": "alpha_romeo",
             "children": [
@@ -161,7 +202,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 1
+            "fixedbinaryorder": 2
           },
           {
             "kind": "Var",
@@ -202,7 +243,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 2
+            "fixedbinaryorder": 3
           },
           {
             "kind": "Var",
@@ -243,7 +284,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 3
+            "fixedbinaryorder": 4
           },
           {
             "kind": "Var",
@@ -284,7 +325,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 4
+            "fixedbinaryorder": 5
           },
           {
             "kind": "Var",
@@ -325,7 +366,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 5
+            "fixedbinaryorder": 6
           },
           {
             "kind": "Var",
@@ -366,7 +407,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 6
+            "fixedbinaryorder": 7
           },
           {
             "kind": "Var",
@@ -407,7 +448,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 7
+            "fixedbinaryorder": 8
           },
           {
             "kind": "Var",
@@ -448,7 +489,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 8
+            "fixedbinaryorder": 9
           },
           {
             "kind": "Var",
@@ -489,7 +530,48 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 9
+            "fixedbinaryorder": 10
+          },
+          {
+            "kind": "Var",
+            "name": "byd",
+            "printedName": "byd",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitVehicleModule.DKVehicleBrand.Type) -> DriveKitVehicleModule.DKVehicleBrand",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKVehicleBrand",
+                    "printedName": "DriveKitVehicleModule.DKVehicleBrand",
+                    "usr": "c:@M@DriveKitVehicleModule@E@DKVehicleBrand"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DriveKitVehicleModule.DKVehicleBrand.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKVehicleBrand",
+                        "printedName": "DriveKitVehicleModule.DKVehicleBrand",
+                        "usr": "c:@M@DriveKitVehicleModule@E@DKVehicleBrand"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@DriveKitVehicleModule@E@DKVehicleBrand@DKVehicleBrandByd",
+            "mangledName": "$s21DriveKitVehicleModule14DKVehicleBrandO3bydyA2CmF",
+            "moduleName": "DriveKitVehicleModule",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 11
           },
           {
             "kind": "Var",
@@ -530,7 +612,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 10
+            "fixedbinaryorder": 12
           },
           {
             "kind": "Var",
@@ -571,7 +653,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 11
+            "fixedbinaryorder": 13
           },
           {
             "kind": "Var",
@@ -612,7 +694,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 12
+            "fixedbinaryorder": 14
           },
           {
             "kind": "Var",
@@ -653,7 +735,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 13
+            "fixedbinaryorder": 15
           },
           {
             "kind": "Var",
@@ -694,7 +776,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 14
+            "fixedbinaryorder": 16
           },
           {
             "kind": "Var",
@@ -735,7 +817,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 15
+            "fixedbinaryorder": 17
           },
           {
             "kind": "Var",
@@ -776,7 +858,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 16
+            "fixedbinaryorder": 18
           },
           {
             "kind": "Var",
@@ -817,7 +899,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 17
+            "fixedbinaryorder": 19
           },
           {
             "kind": "Var",
@@ -858,7 +940,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 18
+            "fixedbinaryorder": 20
           },
           {
             "kind": "Var",
@@ -899,7 +981,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 19
+            "fixedbinaryorder": 21
           },
           {
             "kind": "Var",
@@ -940,7 +1022,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 20
+            "fixedbinaryorder": 22
           },
           {
             "kind": "Var",
@@ -981,7 +1063,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 21
+            "fixedbinaryorder": 23
           },
           {
             "kind": "Var",
@@ -1022,7 +1104,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 22
+            "fixedbinaryorder": 24
           },
           {
             "kind": "Var",
@@ -1063,7 +1145,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 23
+            "fixedbinaryorder": 25
           },
           {
             "kind": "Var",
@@ -1104,7 +1186,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 24
+            "fixedbinaryorder": 26
           },
           {
             "kind": "Var",
@@ -1145,7 +1227,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 25
+            "fixedbinaryorder": 27
           },
           {
             "kind": "Var",
@@ -1186,7 +1268,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 26
+            "fixedbinaryorder": 28
           },
           {
             "kind": "Var",
@@ -1227,7 +1309,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 27
+            "fixedbinaryorder": 29
           },
           {
             "kind": "Var",
@@ -1268,7 +1350,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 28
+            "fixedbinaryorder": 30
           },
           {
             "kind": "Var",
@@ -1309,7 +1391,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 29
+            "fixedbinaryorder": 31
           },
           {
             "kind": "Var",
@@ -1350,7 +1432,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 30
+            "fixedbinaryorder": 32
           },
           {
             "kind": "Var",
@@ -1391,7 +1473,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 31
+            "fixedbinaryorder": 33
           },
           {
             "kind": "Var",
@@ -1432,7 +1514,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 32
+            "fixedbinaryorder": 34
           },
           {
             "kind": "Var",
@@ -1473,7 +1555,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 33
+            "fixedbinaryorder": 35
           },
           {
             "kind": "Var",
@@ -1514,7 +1596,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 34
+            "fixedbinaryorder": 36
           },
           {
             "kind": "Var",
@@ -1555,7 +1637,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 35
+            "fixedbinaryorder": 37
           },
           {
             "kind": "Var",
@@ -1596,7 +1678,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 36
+            "fixedbinaryorder": 38
           },
           {
             "kind": "Var",
@@ -1637,7 +1719,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 37
+            "fixedbinaryorder": 39
           },
           {
             "kind": "Var",
@@ -1678,7 +1760,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 38
+            "fixedbinaryorder": 40
           },
           {
             "kind": "Var",
@@ -1719,7 +1801,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 39
+            "fixedbinaryorder": 41
           },
           {
             "kind": "Var",
@@ -1760,7 +1842,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 40
+            "fixedbinaryorder": 42
           },
           {
             "kind": "Var",
@@ -1801,7 +1883,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 41
+            "fixedbinaryorder": 43
           },
           {
             "kind": "Var",
@@ -1842,7 +1924,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 42
+            "fixedbinaryorder": 44
           },
           {
             "kind": "Var",
@@ -1883,7 +1965,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 43
+            "fixedbinaryorder": 45
           },
           {
             "kind": "Var",
@@ -1924,7 +2006,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 44
+            "fixedbinaryorder": 46
           },
           {
             "kind": "Var",
@@ -1965,7 +2047,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 45
+            "fixedbinaryorder": 47
           },
           {
             "kind": "Var",
@@ -2006,7 +2088,48 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 46
+            "fixedbinaryorder": 48
+          },
+          {
+            "kind": "Var",
+            "name": "leapmotor",
+            "printedName": "leapmotor",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitVehicleModule.DKVehicleBrand.Type) -> DriveKitVehicleModule.DKVehicleBrand",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKVehicleBrand",
+                    "printedName": "DriveKitVehicleModule.DKVehicleBrand",
+                    "usr": "c:@M@DriveKitVehicleModule@E@DKVehicleBrand"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DriveKitVehicleModule.DKVehicleBrand.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKVehicleBrand",
+                        "printedName": "DriveKitVehicleModule.DKVehicleBrand",
+                        "usr": "c:@M@DriveKitVehicleModule@E@DKVehicleBrand"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@DriveKitVehicleModule@E@DKVehicleBrand@DKVehicleBrandLeapmotor",
+            "mangledName": "$s21DriveKitVehicleModule14DKVehicleBrandO9leapmotoryA2CmF",
+            "moduleName": "DriveKitVehicleModule",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 49
           },
           {
             "kind": "Var",
@@ -2047,7 +2170,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 47
+            "fixedbinaryorder": 50
           },
           {
             "kind": "Var",
@@ -2088,7 +2211,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 48
+            "fixedbinaryorder": 51
           },
           {
             "kind": "Var",
@@ -2129,7 +2252,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 49
+            "fixedbinaryorder": 52
           },
           {
             "kind": "Var",
@@ -2170,7 +2293,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 50
+            "fixedbinaryorder": 53
           },
           {
             "kind": "Var",
@@ -2211,7 +2334,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 51
+            "fixedbinaryorder": 54
           },
           {
             "kind": "Var",
@@ -2252,7 +2375,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 52
+            "fixedbinaryorder": 55
           },
           {
             "kind": "Var",
@@ -2293,7 +2416,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 53
+            "fixedbinaryorder": 56
           },
           {
             "kind": "Var",
@@ -2334,7 +2457,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 54
+            "fixedbinaryorder": 57
           },
           {
             "kind": "Var",
@@ -2375,7 +2498,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 55
+            "fixedbinaryorder": 58
           },
           {
             "kind": "Var",
@@ -2416,7 +2539,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 56
+            "fixedbinaryorder": 59
           },
           {
             "kind": "Var",
@@ -2457,7 +2580,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 57
+            "fixedbinaryorder": 60
           },
           {
             "kind": "Var",
@@ -2498,7 +2621,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 58
+            "fixedbinaryorder": 61
           },
           {
             "kind": "Var",
@@ -2539,7 +2662,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 59
+            "fixedbinaryorder": 62
           },
           {
             "kind": "Var",
@@ -2580,7 +2703,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 60
+            "fixedbinaryorder": 63
           },
           {
             "kind": "Var",
@@ -2621,7 +2744,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 61
+            "fixedbinaryorder": 64
           },
           {
             "kind": "Var",
@@ -2662,7 +2785,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 62
+            "fixedbinaryorder": 65
           },
           {
             "kind": "Var",
@@ -2703,7 +2826,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 63
+            "fixedbinaryorder": 66
           },
           {
             "kind": "Var",
@@ -2744,7 +2867,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 64
+            "fixedbinaryorder": 67
           },
           {
             "kind": "Var",
@@ -2785,7 +2908,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 65
+            "fixedbinaryorder": 68
           },
           {
             "kind": "Var",
@@ -2826,7 +2949,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 66
+            "fixedbinaryorder": 69
           },
           {
             "kind": "Var",
@@ -2867,7 +2990,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 67
+            "fixedbinaryorder": 70
           },
           {
             "kind": "Var",
@@ -2908,7 +3031,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 68
+            "fixedbinaryorder": 71
           },
           {
             "kind": "Var",
@@ -2949,7 +3072,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 69
+            "fixedbinaryorder": 72
           },
           {
             "kind": "Var",
@@ -2990,7 +3113,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 70
+            "fixedbinaryorder": 73
           },
           {
             "kind": "Var",
@@ -3031,7 +3154,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 71
+            "fixedbinaryorder": 74
           },
           {
             "kind": "Var",
@@ -3072,7 +3195,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 72
+            "fixedbinaryorder": 75
           },
           {
             "kind": "Var",
@@ -3113,7 +3236,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 73
+            "fixedbinaryorder": 76
           },
           {
             "kind": "Var",
@@ -3154,7 +3277,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 74
+            "fixedbinaryorder": 77
           },
           {
             "kind": "Var",
@@ -3195,7 +3318,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 75
+            "fixedbinaryorder": 78
           },
           {
             "kind": "Var",
@@ -3236,7 +3359,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 76
+            "fixedbinaryorder": 79
           },
           {
             "kind": "Var",
@@ -3277,7 +3400,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 77
+            "fixedbinaryorder": 80
           },
           {
             "kind": "Var",
@@ -3318,7 +3441,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 78
+            "fixedbinaryorder": 81
           },
           {
             "kind": "Var",
@@ -3359,7 +3482,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 79
+            "fixedbinaryorder": 82
           },
           {
             "kind": "Var",
@@ -3400,7 +3523,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 80
+            "fixedbinaryorder": 83
           },
           {
             "kind": "Var",
@@ -3441,7 +3564,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 81
+            "fixedbinaryorder": 84
           },
           {
             "kind": "Var",
@@ -3482,7 +3605,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 82
+            "fixedbinaryorder": 85
           },
           {
             "kind": "Var",
@@ -3523,7 +3646,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 83
+            "fixedbinaryorder": 86
           },
           {
             "kind": "Var",
@@ -3564,7 +3687,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 84
+            "fixedbinaryorder": 87
           },
           {
             "kind": "Var",
@@ -3605,7 +3728,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 85
+            "fixedbinaryorder": 88
           },
           {
             "kind": "Var",
@@ -3646,7 +3769,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 86
+            "fixedbinaryorder": 89
           },
           {
             "kind": "Var",
@@ -3687,7 +3810,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 87
+            "fixedbinaryorder": 90
           },
           {
             "kind": "Var",
@@ -3728,7 +3851,48 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 88
+            "fixedbinaryorder": 91
+          },
+          {
+            "kind": "Var",
+            "name": "triumph",
+            "printedName": "triumph",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitVehicleModule.DKVehicleBrand.Type) -> DriveKitVehicleModule.DKVehicleBrand",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKVehicleBrand",
+                    "printedName": "DriveKitVehicleModule.DKVehicleBrand",
+                    "usr": "c:@M@DriveKitVehicleModule@E@DKVehicleBrand"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DriveKitVehicleModule.DKVehicleBrand.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKVehicleBrand",
+                        "printedName": "DriveKitVehicleModule.DKVehicleBrand",
+                        "usr": "c:@M@DriveKitVehicleModule@E@DKVehicleBrand"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@DriveKitVehicleModule@E@DKVehicleBrand@DKVehicleBrandTriumph",
+            "mangledName": "$s21DriveKitVehicleModule14DKVehicleBrandO7triumphyA2CmF",
+            "moduleName": "DriveKitVehicleModule",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 92
           },
           {
             "kind": "Var",
@@ -3769,7 +3933,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 89
+            "fixedbinaryorder": 93
           },
           {
             "kind": "Var",
@@ -3810,7 +3974,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 90
+            "fixedbinaryorder": 94
           },
           {
             "kind": "Var",
@@ -3851,7 +4015,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 91
+            "fixedbinaryorder": 95
           },
           {
             "kind": "Var",
@@ -3892,7 +4056,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 92
+            "fixedbinaryorder": 96
           },
           {
             "kind": "Var",
@@ -3933,7 +4097,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 93
+            "fixedbinaryorder": 97
           },
           {
             "kind": "Var",
@@ -3974,7 +4138,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 94
+            "fixedbinaryorder": 98
           },
           {
             "kind": "Var",
@@ -4015,7 +4179,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 95
+            "fixedbinaryorder": 99
           },
           {
             "kind": "Var",
@@ -4056,7 +4220,48 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 96
+            "fixedbinaryorder": 100
+          },
+          {
+            "kind": "Var",
+            "name": "xpeng",
+            "printedName": "xpeng",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitVehicleModule.DKVehicleBrand.Type) -> DriveKitVehicleModule.DKVehicleBrand",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKVehicleBrand",
+                    "printedName": "DriveKitVehicleModule.DKVehicleBrand",
+                    "usr": "c:@M@DriveKitVehicleModule@E@DKVehicleBrand"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DriveKitVehicleModule.DKVehicleBrand.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKVehicleBrand",
+                        "printedName": "DriveKitVehicleModule.DKVehicleBrand",
+                        "usr": "c:@M@DriveKitVehicleModule@E@DKVehicleBrand"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "c:@M@DriveKitVehicleModule@E@DKVehicleBrand@DKVehicleBrandXpeng",
+            "mangledName": "$s21DriveKitVehicleModule14DKVehicleBrandO5xpengyA2CmF",
+            "moduleName": "DriveKitVehicleModule",
+            "declAttributes": [
+              "ObjC"
+            ],
+            "fixedbinaryorder": 101
           },
           {
             "kind": "Var",
@@ -18679,14 +18884,14 @@
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
       "offset": 276,
-      "length": 11,
+      "length": 6,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 297,
-      "length": 6,
+      "offset": 292,
+      "length": 11,
       "value": "2"
     },
     {
@@ -18700,469 +18905,469 @@
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
       "offset": 329,
-      "length": 12,
+      "length": 6,
       "value": "4"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 351,
-      "length": 4,
+      "offset": 345,
+      "length": 12,
       "value": "5"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 365,
-      "length": 7,
+      "offset": 367,
+      "length": 4,
       "value": "6"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 382,
-      "length": 3,
+      "offset": 381,
+      "length": 7,
       "value": "7"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 395,
-      "length": 7,
+      "offset": 398,
+      "length": 3,
       "value": "8"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 412,
+      "offset": 411,
       "length": 7,
       "value": "9"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 429,
-      "length": 8,
+      "offset": 428,
+      "length": 7,
       "value": "10"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 447,
-      "length": 8,
+      "offset": 445,
+      "length": 3,
       "value": "11"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 465,
-      "length": 9,
+      "offset": 458,
+      "length": 8,
       "value": "12"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 484,
+      "offset": 476,
       "length": 8,
       "value": "13"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 502,
-      "length": 7,
+      "offset": 494,
+      "length": 9,
       "value": "14"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 519,
-      "length": 5,
+      "offset": 513,
+      "length": 8,
       "value": "15"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 534,
-      "length": 5,
+      "offset": 531,
+      "length": 7,
       "value": "16"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 549,
-      "length": 6,
+      "offset": 548,
+      "length": 5,
       "value": "17"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 565,
-      "length": 9,
+      "offset": 563,
+      "length": 5,
       "value": "18"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 584,
-      "length": 8,
+      "offset": 578,
+      "length": 6,
       "value": "19"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 602,
+      "offset": 594,
       "length": 9,
       "value": "20"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 621,
-      "length": 5,
+      "offset": 613,
+      "length": 8,
       "value": "21"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 636,
-      "length": 11,
+      "offset": 631,
+      "length": 9,
       "value": "22"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 657,
-      "length": 2,
+      "offset": 650,
+      "length": 5,
       "value": "23"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 669,
-      "length": 15,
+      "offset": 665,
+      "length": 11,
       "value": "24"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 694,
-      "length": 7,
+      "offset": 686,
+      "length": 2,
       "value": "25"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 711,
-      "length": 4,
+      "offset": 698,
+      "length": 15,
       "value": "26"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 725,
-      "length": 6,
+      "offset": 723,
+      "length": 7,
       "value": "27"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 741,
+      "offset": 740,
       "length": 4,
       "value": "28"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 755,
-      "length": 7,
+      "offset": 754,
+      "length": 6,
       "value": "29"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 772,
-      "length": 7,
+      "offset": 770,
+      "length": 4,
       "value": "30"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 789,
-      "length": 5,
+      "offset": 784,
+      "length": 7,
       "value": "31"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 804,
-      "length": 6,
+      "offset": 801,
+      "length": 7,
       "value": "32"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 820,
-      "length": 7,
+      "offset": 818,
+      "length": 5,
       "value": "33"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 837,
-      "length": 8,
+      "offset": 833,
+      "length": 6,
       "value": "34"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 855,
-      "length": 5,
+      "offset": 849,
+      "length": 7,
       "value": "35"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 870,
-      "length": 5,
+      "offset": 866,
+      "length": 8,
       "value": "36"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 885,
-      "length": 11,
+      "offset": 884,
+      "length": 5,
       "value": "37"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 906,
-      "length": 6,
+      "offset": 899,
+      "length": 5,
       "value": "38"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 922,
-      "length": 4,
+      "offset": 914,
+      "length": 11,
       "value": "39"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 936,
-      "length": 3,
+      "offset": 935,
+      "length": 6,
       "value": "40"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 949,
-      "length": 3,
+      "offset": 951,
+      "length": 4,
       "value": "41"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 962,
-      "length": 4,
+      "offset": 965,
+      "length": 3,
       "value": "42"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 976,
-      "length": 11,
+      "offset": 978,
+      "length": 3,
       "value": "43"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 997,
-      "length": 6,
+      "offset": 991,
+      "length": 4,
       "value": "44"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 1013,
-      "length": 10,
+      "offset": 1005,
+      "length": 11,
       "value": "45"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 1033,
-      "length": 3,
+      "offset": 1026,
+      "length": 6,
       "value": "46"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 1046,
-      "length": 5,
+      "offset": 1042,
+      "length": 10,
       "value": "47"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 1061,
-      "length": 5,
+      "offset": 1062,
+      "length": 3,
       "value": "48"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 1076,
-      "length": 8,
+      "offset": 1075,
+      "length": 9,
       "value": "49"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
       "offset": 1094,
-      "length": 3,
+      "length": 5,
       "value": "50"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 1107,
-      "length": 9,
+      "offset": 1109,
+      "length": 5,
       "value": "51"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 1126,
+      "offset": 1124,
       "length": 8,
       "value": "52"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 1144,
-      "length": 5,
+      "offset": 1142,
+      "length": 3,
       "value": "53"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 1159,
-      "length": 7,
+      "offset": 1155,
+      "length": 9,
       "value": "54"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 1176,
-      "length": 5,
+      "offset": 1174,
+      "length": 8,
       "value": "55"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 1191,
-      "length": 7,
+      "offset": 1192,
+      "length": 5,
       "value": "56"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 1208,
-      "length": 4,
+      "offset": 1207,
+      "length": 7,
       "value": "57"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 1222,
-      "length": 8,
+      "offset": 1224,
+      "length": 5,
       "value": "58"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 1240,
-      "length": 12,
+      "offset": 1239,
+      "length": 7,
       "value": "59"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 1262,
-      "length": 14,
+      "offset": 1256,
+      "length": 4,
       "value": "60"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 1286,
-      "length": 2,
+      "offset": 1270,
+      "length": 8,
       "value": "61"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 1298,
+      "offset": 1288,
       "length": 12,
       "value": "62"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 1320,
-      "length": 4,
+      "offset": 1310,
+      "length": 14,
       "value": "63"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
       "offset": 1334,
-      "length": 10,
+      "length": 2,
       "value": "64"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 1354,
-      "length": 6,
+      "offset": 1346,
+      "length": 12,
       "value": "65"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 1370,
-      "length": 6,
+      "offset": 1368,
+      "length": 4,
       "value": "66"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 1386,
-      "length": 4,
+      "offset": 1382,
+      "length": 10,
       "value": "67"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 1400,
-      "length": 7,
+      "offset": 1402,
+      "length": 6,
       "value": "68"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 1417,
-      "length": 3,
+      "offset": 1418,
+      "length": 6,
       "value": "69"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 1430,
-      "length": 8,
+      "offset": 1434,
+      "length": 4,
       "value": "70"
     },
     {
@@ -19176,176 +19381,211 @@
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
       "offset": 1465,
-      "length": 7,
+      "length": 3,
       "value": "72"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 1482,
-      "length": 13,
+      "offset": 1478,
+      "length": 8,
       "value": "73"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 1505,
-      "length": 11,
+      "offset": 1496,
+      "length": 7,
       "value": "74"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 1526,
-      "length": 5,
+      "offset": 1513,
+      "length": 7,
       "value": "75"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 1541,
-      "length": 4,
+      "offset": 1530,
+      "length": 13,
       "value": "76"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 1555,
-      "length": 7,
+      "offset": 1553,
+      "length": 11,
       "value": "77"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 1572,
-      "length": 12,
+      "offset": 1574,
+      "length": 5,
       "value": "78"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 1594,
+      "offset": 1589,
       "length": 4,
       "value": "79"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 1608,
-      "length": 5,
+      "offset": 1603,
+      "length": 7,
       "value": "80"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 1623,
-      "length": 5,
+      "offset": 1620,
+      "length": 12,
       "value": "81"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 1638,
-      "length": 5,
+      "offset": 1642,
+      "length": 4,
       "value": "82"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 1653,
+      "offset": 1656,
       "length": 5,
       "value": "83"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 1668,
-      "length": 9,
+      "offset": 1671,
+      "length": 5,
       "value": "84"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 1687,
-      "length": 6,
+      "offset": 1686,
+      "length": 5,
       "value": "85"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 1703,
-      "length": 6,
+      "offset": 1701,
+      "length": 5,
       "value": "86"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 1719,
-      "length": 5,
+      "offset": 1716,
+      "length": 9,
       "value": "87"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 1734,
+      "offset": 1735,
       "length": 6,
       "value": "88"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 1750,
-      "length": 3,
+      "offset": 1751,
+      "length": 6,
       "value": "89"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 1763,
-      "length": 7,
+      "offset": 1767,
+      "length": 5,
       "value": "90"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 1780,
-      "length": 7,
+      "offset": 1782,
+      "length": 6,
       "value": "91"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 1797,
-      "length": 10,
+      "offset": 1798,
+      "length": 7,
       "value": "92"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 1817,
-      "length": 5,
+      "offset": 1815,
+      "length": 3,
       "value": "93"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 1832,
-      "length": 11,
+      "offset": 1828,
+      "length": 7,
       "value": "94"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 1853,
-      "length": 9,
+      "offset": 1845,
+      "length": 7,
       "value": "95"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
       "kind": "IntegerLiteral",
-      "offset": 1872,
-      "length": 8,
+      "offset": 1862,
+      "length": 10,
       "value": "96"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1882,
+      "length": 5,
+      "value": "97"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1897,
+      "length": 11,
+      "value": "98"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1918,
+      "length": 9,
+      "value": "99"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1937,
+      "length": 8,
+      "value": "100"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleBrand.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1955,
+      "length": 5,
+      "value": "101"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKVehicleEngineIndex.swift",
@@ -19476,107 +19716,9 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehicleConstants.swift",
       "kind": "StringLiteral",
-      "offset": 524,
-      "length": 25,
-      "value": "\"\/v2\/drivekit\/driver\/car\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehicleConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 601,
-      "length": 19,
-      "value": "\"\/drivequant\/model\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehicleConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 671,
-      "length": 18,
-      "value": "\"\/drivequant\/year\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehicleConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 743,
-      "length": 21,
-      "value": "\"\/drivequant\/version\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehicleConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 973,
-      "length": 27,
-      "value": "\"\/v2\/drivekit\/driver\/truck\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehicleConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 1056,
-      "length": 19,
-      "value": "\"\/drivequant\/model\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehicleConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 1130,
-      "length": 18,
-      "value": "\"\/drivequant\/year\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehicleConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 1206,
-      "length": 21,
-      "value": "\"\/drivequant\/version\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehicleConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 3148,
-      "length": 21,
-      "value": "\"\/v2\/drivekit\/driver\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehicleConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 3224,
-      "length": 20,
-      "value": "\"\/vehicle?version=2\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehicleConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 3305,
-      "length": 17,
-      "value": "\"\/custom\/vehicle\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehicleConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 3375,
-      "length": 11,
-      "value": "\"\/vehicles\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehicleConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 3902,
+      "offset": 4166,
       "length": 26,
       "value": "\"drivekit-vehicle-synd-id\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehicleConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 6688,
-      "length": 44,
-      "value": "\"\/v2\/drivekit\/driver\/vehicles\/detectionMode\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehicleConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 8099,
-      "length": 42,
-      "value": "\"\/v2\/drivekit\/driver\/beacons\/batteryLevel\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehiclePicker\/Enums\/DKTruckType.swift",

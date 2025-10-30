@@ -1548,13 +1548,6 @@
       "value": "\"drivekit-groups-sync-identifier\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/drivekit-group\/DriveKitGroupConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 712,
-      "length": 21,
-      "value": "\"\/v2\/drivekit\/groups\""
-    },
-    {
       "filePath": "\/Users\/vagrant\/git\/drivekit-group\/Groups\/GroupSynchronizationRequestDelegate.swift",
       "kind": "IntegerLiteral",
       "offset": 2165,

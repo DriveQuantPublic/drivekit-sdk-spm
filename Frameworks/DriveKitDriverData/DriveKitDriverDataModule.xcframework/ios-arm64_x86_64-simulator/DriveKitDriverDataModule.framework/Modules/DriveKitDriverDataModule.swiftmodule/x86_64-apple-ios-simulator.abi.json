@@ -8915,55 +8915,6 @@
       "offset": 3329,
       "length": 35,
       "value": "\"driverdata-lastUpdate-manualTrips\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/drivekit-driverdata\/drivekit-driverdata\/DriverDataConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 3442,
-      "length": 27,
-      "value": "\"\/v2\/drivekit\/driver\/trips\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/drivekit-driverdata\/drivekit-driverdata\/DriverDataConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 3529,
-      "length": 36,
-      "value": "\"\/v2\/drivekit\/driver\/trips\/%@\/route\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/drivekit-driverdata\/drivekit-driverdata\/DriverDataConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 4121,
-      "length": 31,
-      "value": "\"\/v2\/drivekit\/driver\/synthesis\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/drivekit-driverdata\/drivekit-driverdata\/DriverDataConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 4215,
-      "length": 30,
-      "value": "\"\/v2\/drivekit\/driver\/timeline\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/drivekit-driverdata\/drivekit-driverdata\/DriverDataConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 4313,
-      "length": 29,
-      "value": "\"\/v2\/drivekit\/driver\/profile\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/drivekit-driverdata\/drivekit-driverdata\/DriverDataConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 4416,
-      "length": 35,
-      "value": "\"\/v2\/drivekit\/community\/statistics\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/drivekit-driverdata\/drivekit-driverdata\/DriverDataConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 5037,
-      "length": 33,
-      "value": "\"\/v2\/drivekit\/driver\/manualtrips\""
     }
   ]
 }

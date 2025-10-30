@@ -2558,49 +2558,21 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-driver-achievement\/DriveKitDriverAchievementConstants.swift",
       "kind": "StringLiteral",
-      "offset": 893,
-      "length": 35,
-      "value": "\"\/v2\/drivekit\/driver\/games\/streaks\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/drivekit-driver-achievement\/DriveKitDriverAchievementConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 992,
-      "length": 41,
-      "value": "\"\/v2\/drivekit\/driver\/achievements\/badges\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/drivekit-driver-achievement\/DriveKitDriverAchievementConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 1066,
-      "length": 62,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/drivekit-driver-achievement\/DriveKitDriverAchievementConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 1100,
-      "length": 1,
-      "value": "\"\/v2\/drivekit\/driver\/ranking\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/drivekit-driver-achievement\/DriveKitDriverAchievementConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 1166,
+      "offset": 1232,
       "length": 38,
       "value": "\"drivekit-achievement-badgeStatistics\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-driver-achievement\/DriveKitDriverAchievementConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1237,
+      "offset": 1303,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-driver-achievement\/DriveKitDriverAchievementConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1269,
+      "offset": 1335,
       "length": 1,
       "value": "2"
     }

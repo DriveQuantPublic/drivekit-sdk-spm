@@ -2053,13 +2053,6 @@
       "value": "\"challenges-sync-last-update\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/drivekit-challenge\/DriveKitChallengeConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 1052,
-      "length": 32,
-      "value": "\"\/v2\/drivekit\/driver\/challenges\""
-    },
-    {
       "filePath": "\/Users\/vagrant\/git\/drivekit-challenge\/ChallengeDetails\/ChallengeDetailSyncStatus.swift",
       "kind": "IntegerLiteral",
       "offset": 287,

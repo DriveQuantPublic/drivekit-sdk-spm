@@ -14,11 +14,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		w32RhXdUPg0x/6J5L7IuvPsZ7Ho=
+		cqWL76SV6eQYgxsAHrtLQyb+iT0=
 		</data>
 		<key>Modules/DriveKitTripAnalysisModule.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		+KAV9/l4vIwvK0Ktgt2jKOx+kDc=
+		/O+AEJM4ea068FU0jEgc2Expdmg=
 		</data>
 		<key>Modules/DriveKitTripAnalysisModule.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>Modules/DriveKitTripAnalysisModule.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		NfNrgrvLddyY2bDeKvfb52o3f1g=
+		rTlsCL7zbckOCr5Zk6K9vXoyg7w=
 		</data>
 		<key>Modules/DriveKitTripAnalysisModule.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		+KAV9/l4vIwvK0Ktgt2jKOx+kDc=
+		/O+AEJM4ea068FU0jEgc2Expdmg=
 		</data>
 		<key>Modules/DriveKitTripAnalysisModule.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/DriveKitTripAnalysisModule.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		JqgjYZK9btIzTb9nrWsVsSf5lzQ=
+		s+v1lr+YbsP+/vgs7D4cJ25Q2mI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -89,7 +89,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			8EtZfA1l4J9swGSIKPXlsKCIJLJWci4wVqn09J2UUhQ=
+			KFKburPJJynS+4tocHuFFPfzJhVTj9aYrhdivHCh/Sc=
 			</data>
 		</dict>
 		<key>Modules/DriveKitTripAnalysisModule.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -117,14 +117,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/soTXcopXaInGTi8g2XOkTJLXBlhCahm2j+xR3YeLrw=
+			jiZOFOg3fvNpM6cnNvCfPOOLu2Vui0BSHMLto/Gjq7o=
 			</data>
 		</dict>
 		<key>Modules/DriveKitTripAnalysisModule.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8EtZfA1l4J9swGSIKPXlsKCIJLJWci4wVqn09J2UUhQ=
+			KFKburPJJynS+4tocHuFFPfzJhVTj9aYrhdivHCh/Sc=
 			</data>
 		</dict>
 		<key>Modules/DriveKitTripAnalysisModule.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -152,7 +152,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/44yPo0kS7rJ74y/ySgCd1wWcPGdNCXOvluAMs40reM=
+			ajbtWVWKT/2FrakPdGVR19BJMFArS4T1p29jFK7AlHo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

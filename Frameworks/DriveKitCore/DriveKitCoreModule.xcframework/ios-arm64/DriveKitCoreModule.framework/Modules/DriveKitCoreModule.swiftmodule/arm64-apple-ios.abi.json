@@ -13444,7 +13444,8 @@
               "HasInitialValue",
               "HasStorage",
               "SetterAccess",
-              "AccessControl"
+              "AccessControl",
+              "RawDocComment"
             ],
             "hasStorage": true,
             "accessors": [
@@ -13486,12 +13487,8 @@
             "mangledName": "$s18DriveKitCoreModule12GlobalConfigC7baseUrlSSvp",
             "moduleName": "DriveKitCoreModule",
             "declAttributes": [
-              "HasInitialValue",
-              "HasStorage",
-              "SetterAccess",
               "AccessControl"
             ],
-            "hasStorage": true,
             "accessors": [
               {
                 "kind": "Accessor",
@@ -13509,7 +13506,6 @@
                 "usr": "s:18DriveKitCoreModule12GlobalConfigC7baseUrlSSvg",
                 "mangledName": "$s18DriveKitCoreModule12GlobalConfigC7baseUrlSSvg",
                 "moduleName": "DriveKitCoreModule",
-                "implicit": true,
                 "accessorKind": "get"
               }
             ]
@@ -28063,16 +28059,9 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/config\/GlobalConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 349,
+      "offset": 498,
       "length": 5,
       "value": "false"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/config\/GlobalConfig.swift",
-      "kind": "StringLiteral",
-      "offset": 401,
-      "length": 32,
-      "value": "\"https:\/\/service.drivequant.com\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/sensors\/DKSensorsManager.swift",
@@ -28812,273 +28801,217 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/config\/DriveKitCoreConstants.swift",
       "kind": "StringLiteral",
-      "offset": 468,
+      "offset": 470,
+      "length": 18,
+      "value": "\"drivekit-sandbox\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/config\/DriveKitCoreConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 512,
       "length": 16,
       "value": "\"drivekit-token\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/config\/DriveKitCoreConstants.swift",
       "kind": "StringLiteral",
-      "offset": 515,
+      "offset": 559,
       "length": 24,
       "value": "\"drivekit-refresh-token\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/config\/DriveKitCoreConstants.swift",
       "kind": "StringLiteral",
-      "offset": 570,
+      "offset": 614,
       "length": 25,
       "value": "\"drive-kit-network-tasks\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/config\/DriveKitCoreConstants.swift",
       "kind": "StringLiteral",
-      "offset": 630,
+      "offset": 674,
       "length": 28,
       "value": "\"drivekit-authorized-access\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/config\/DriveKitCoreConstants.swift",
       "kind": "StringLiteral",
-      "offset": 699,
+      "offset": 743,
       "length": 35,
       "value": "\"drivekit-get-user-info-identifier\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/config\/DriveKitCoreConstants.swift",
       "kind": "StringLiteral",
-      "offset": 777,
+      "offset": 821,
       "length": 38,
       "value": "\"drivekit-update-user-info-identifier\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/config\/DriveKitCoreConstants.swift",
       "kind": "StringLiteral",
-      "offset": 842,
+      "offset": 886,
       "length": 19,
       "value": "\"drivekit-userinfo\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/config\/DriveKitCoreConstants.swift",
       "kind": "StringLiteral",
-      "offset": 902,
+      "offset": 946,
       "length": 36,
       "value": "\"drivekit-update-user-id-identifier\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/config\/DriveKitCoreConstants.swift",
       "kind": "StringLiteral",
-      "offset": 980,
+      "offset": 1024,
       "length": 36,
       "value": "\"drivekit-delete-account-identifier\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/config\/DriveKitCoreConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1060,
+      "offset": 1104,
       "length": 35,
       "value": "\"drivekit-scores-levels-identifier\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/config\/DriveKitCoreConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1136,
+      "offset": 1180,
       "length": 36,
       "value": "\"drivekit-scores-levels-last-update\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/config\/DriveKitCoreConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1203,
+      "offset": 1247,
       "length": 24,
       "value": "\"drivekit-scores-levels\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/config\/DriveKitCoreConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1268,
+      "offset": 1312,
       "length": 20,
       "value": "\"drivekit-diagnosis\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/config\/DriveKitCoreConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1329,
+      "offset": 1373,
       "length": 32,
       "value": "\"drivekit-diagnosis-last-update\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/config\/DriveKitCoreConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1400,
+      "offset": 1444,
       "length": 22,
       "value": "\"drivekit-driver-logs\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/config\/DriveKitCoreConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1525,
+      "offset": 1569,
       "length": 11,
       "value": "\"dk-device\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/config\/DriveKitCoreConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1580,
+      "offset": 1624,
       "length": 20,
       "value": "\"creation-timestamp\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/config\/DriveKitCoreConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1637,
+      "offset": 1681,
       "length": 17,
       "value": "\"device-model-os\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/config\/DriveKitCoreConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1696,
+      "offset": 1740,
       "length": 25,
       "value": "\"device-sensors-reliable\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/config\/DriveKitCoreConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1764,
+      "offset": 1808,
       "length": 20,
       "value": "\"previous-device-id\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/config\/DriveKitCoreConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1820,
+      "offset": 1864,
       "length": 3,
       "value": "\"\/\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/config\/DriveKitCoreConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1899,
-      "length": 25,
-      "value": "\"\/v2\/drivekit\/auth\/login\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/config\/DriveKitCoreConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 1986,
-      "length": 27,
-      "value": "\"\/v2\/drivekit\/auth\/refresh\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/config\/DriveKitCoreConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 2084,
-      "length": 21,
-      "value": "\"\/v2\/drivekit\/access\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/config\/DriveKitCoreConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 2168,
-      "length": 27,
-      "value": "\"\/v2\/drivekit\/driver\/names\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/config\/DriveKitCoreConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 2262,
-      "length": 28,
-      "value": "\"\/v2\/drivekit\/driver\/userid\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/config\/DriveKitCoreConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 2358,
-      "length": 29,
-      "value": "\"\/v2\/drivekit\/driver\/account\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/config\/DriveKitCoreConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 2454,
-      "length": 28,
-      "value": "\"\/v2\/drivekit\/scores\/levels\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/config\/DriveKitCoreConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 2549,
-      "length": 42,
-      "value": "\"\/v2\/drivekit\/driver\/smartphone\/diagnosis\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/config\/DriveKitCoreConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 2656,
-      "length": 26,
-      "value": "\"\/v2\/drivekit\/driver\/logs\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/config\/DriveKitCoreConstants.swift",
-      "kind": "StringLiteral",
-      "offset": 2780,
+      "offset": 3022,
       "length": 38,
       "value": "\"com.drivequant.diagnosis.app.refresh\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/config\/DriveKitCoreConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2852,
+      "offset": 3094,
       "length": 43,
       "value": "\"com.drivequant.sdkdiagnosis.cached.events\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/config\/DriveKitCoreConstants.swift",
       "kind": "StringLiteral",
-      "offset": 2941,
+      "offset": 3183,
       "length": 53,
       "value": "\"com.drivequant.sdkdiagnosis.last.device.state.check\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/config\/DriveKitCoreConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3032,
+      "offset": 3274,
       "length": 43,
       "value": "\"com.drivequant.sdkdiagnosis.last.shutdown\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/config\/DriveKitCoreConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3111,
+      "offset": 3353,
       "length": 41,
       "value": "\"com.drivequant.sdkdiagnosis.last.reboot\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/config\/DriveKitCoreConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3189,
+      "offset": 3431,
       "length": 42,
       "value": "\"com.drivequant.sdkdiagnosis.last.install\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/config\/DriveKitCoreConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3270,
+      "offset": 3512,
       "length": 44,
       "value": "\"com.drivequant.sdkdiagnosis.last.uninstall\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/config\/DriveKitCoreConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3357,
+      "offset": 3599,
       "length": 50,
       "value": "\"com.drivequant.sdkdiagnosis.last.app.state.check\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/config\/DriveKitCoreConstants.swift",
       "kind": "StringLiteral",
-      "offset": 3501,
+      "offset": 3743,
       "length": 55,
       "value": "\"drivekit-different-user-id-detected-notification-name\""
     },
