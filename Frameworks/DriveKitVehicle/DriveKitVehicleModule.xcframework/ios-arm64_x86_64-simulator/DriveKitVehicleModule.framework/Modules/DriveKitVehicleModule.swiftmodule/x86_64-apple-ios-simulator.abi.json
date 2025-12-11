@@ -7323,6 +7323,42 @@
           },
           {
             "kind": "Function",
+            "name": "getVehicleLocation",
+            "printedName": "getVehicleLocation(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any DriveKitCoreModule.DKTripLocation)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKTripLocation",
+                    "printedName": "any DriveKitCoreModule.DKTripLocation",
+                    "usr": "c:@M@DriveKitCoreModule@objc(pl)DKTripLocation"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@DriveKitVehicleModule@objc(cs)DriveKitVehicle(im)getVehicleLocation:",
+            "mangledName": "$s21DriveKitVehicleModule0abC0C03getC8Locationy0ab4CoreD006DKTripF0_pSgSSF",
+            "moduleName": "DriveKitVehicleModule",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "addBluetooth",
             "printedName": "addBluetooth(vehicleId:bluetooth:completionHandler:)",
             "children": [
@@ -19695,7 +19731,7 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehicle.swift",
       "kind": "BooleanLiteral",
-      "offset": 27216,
+      "offset": 28237,
       "length": 4,
       "value": "true"
     },

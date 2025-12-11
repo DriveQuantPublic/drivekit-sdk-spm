@@ -12955,8 +12955,8 @@
           },
           {
             "kind": "Function",
-            "name": "tripSyncFinishedWithEndTripLocation",
-            "printedName": "tripSyncFinishedWithEndTripLocation(endTripLocation:)",
+            "name": "tripSyncFinishedWithEndTripLocations",
+            "printedName": "tripSyncFinishedWithEndTripLocations(endTripLocations:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -12965,14 +12965,28 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "DKTripLocation",
-                "printedName": "any DriveKitCoreModule.DKTripLocation",
-                "usr": "c:@M@DriveKitCoreModule@objc(pl)DKTripLocation"
+                "name": "Dictionary",
+                "printedName": "[DriveKitCoreModule.DKTransportationMeans : any DriveKitCoreModule.DKTripLocation]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKTransportationMeans",
+                    "printedName": "DriveKitCoreModule.DKTransportationMeans",
+                    "usr": "s:18DriveKitCoreModule21DKTransportationMeansO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKTripLocation",
+                    "printedName": "any DriveKitCoreModule.DKTripLocation",
+                    "usr": "c:@M@DriveKitCoreModule@objc(pl)DKTripLocation"
+                  }
+                ],
+                "usr": "s:SD"
               }
             ],
             "declKind": "Func",
-            "usr": "s:18DriveKitCoreModule014DKTripAnalysisD0P35tripSyncFinishedWithEndTripLocation03endlM0yAA0eM0_p_tF",
-            "mangledName": "$s18DriveKitCoreModule014DKTripAnalysisD0P35tripSyncFinishedWithEndTripLocation03endlM0yAA0eM0_p_tF",
+            "usr": "s:18DriveKitCoreModule014DKTripAnalysisD0P36tripSyncFinishedWithEndTripLocations03endlM0ySDyAA21DKTransportationMeansOAA0E8Location_pG_tF",
+            "mangledName": "$s18DriveKitCoreModule014DKTripAnalysisD0P36tripSyncFinishedWithEndTripLocations03endlM0ySDyAA21DKTransportationMeansOAA0E8Location_pG_tF",
             "moduleName": "DriveKitCoreModule",
             "genericSig": "<τ_0_0 where τ_0_0 : DriveKitCoreModule.DKTripAnalysisModule>",
             "sugared_genericSig": "<Self where Self : DriveKitCoreModule.DKTripAnalysisModule>",
@@ -16466,6 +16480,311 @@
         "moduleName": "DriveKitCoreModule",
         "declAttributes": [
           "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DKTransportationMeans",
+        "printedName": "DKTransportationMeans",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "unknownVehicle",
+            "printedName": "unknownVehicle",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitCoreModule.DKTransportationMeans.Type) -> DriveKitCoreModule.DKTransportationMeans",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKTransportationMeans",
+                    "printedName": "DriveKitCoreModule.DKTransportationMeans",
+                    "usr": "s:18DriveKitCoreModule21DKTransportationMeansO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DriveKitCoreModule.DKTransportationMeans.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKTransportationMeans",
+                        "printedName": "DriveKitCoreModule.DKTransportationMeans",
+                        "usr": "s:18DriveKitCoreModule21DKTransportationMeansO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18DriveKitCoreModule21DKTransportationMeansO14unknownVehicleyA2CmF",
+            "mangledName": "$s18DriveKitCoreModule21DKTransportationMeansO14unknownVehicleyA2CmF",
+            "moduleName": "DriveKitCoreModule"
+          },
+          {
+            "kind": "Var",
+            "name": "vehicle",
+            "printedName": "vehicle",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitCoreModule.DKTransportationMeans.Type) -> (Swift.String) -> DriveKitCoreModule.DKTransportationMeans",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> DriveKitCoreModule.DKTransportationMeans",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKTransportationMeans",
+                        "printedName": "DriveKitCoreModule.DKTransportationMeans",
+                        "usr": "s:18DriveKitCoreModule21DKTransportationMeansO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DriveKitCoreModule.DKTransportationMeans.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKTransportationMeans",
+                        "printedName": "DriveKitCoreModule.DKTransportationMeans",
+                        "usr": "s:18DriveKitCoreModule21DKTransportationMeansO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18DriveKitCoreModule21DKTransportationMeansO7vehicleyACSScACmF",
+            "mangledName": "$s18DriveKitCoreModule21DKTransportationMeansO7vehicleyACSScACmF",
+            "moduleName": "DriveKitCoreModule"
+          },
+          {
+            "kind": "Var",
+            "name": "other",
+            "printedName": "other",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitCoreModule.DKTransportationMeans.Type) -> DriveKitCoreModule.DKTransportationMeans",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKTransportationMeans",
+                    "printedName": "DriveKitCoreModule.DKTransportationMeans",
+                    "usr": "s:18DriveKitCoreModule21DKTransportationMeansO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DriveKitCoreModule.DKTransportationMeans.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKTransportationMeans",
+                        "printedName": "DriveKitCoreModule.DKTransportationMeans",
+                        "usr": "s:18DriveKitCoreModule21DKTransportationMeansO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18DriveKitCoreModule21DKTransportationMeansO5otheryA2CmF",
+            "mangledName": "$s18DriveKitCoreModule21DKTransportationMeansO5otheryA2CmF",
+            "moduleName": "DriveKitCoreModule"
+          },
+          {
+            "kind": "Var",
+            "name": "key",
+            "printedName": "key",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18DriveKitCoreModule21DKTransportationMeansO3keySSvp",
+            "mangledName": "$s18DriveKitCoreModule21DKTransportationMeansO3keySSvp",
+            "moduleName": "DriveKitCoreModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18DriveKitCoreModule21DKTransportationMeansO3keySSvg",
+                "mangledName": "$s18DriveKitCoreModule21DKTransportationMeansO3keySSvg",
+                "moduleName": "DriveKitCoreModule",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18DriveKitCoreModule21DKTransportationMeansO9hashValueSivp",
+            "mangledName": "$s18DriveKitCoreModule21DKTransportationMeansO9hashValueSivp",
+            "moduleName": "DriveKitCoreModule",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18DriveKitCoreModule21DKTransportationMeansO9hashValueSivg",
+                "mangledName": "$s18DriveKitCoreModule21DKTransportationMeansO9hashValueSivg",
+                "moduleName": "DriveKitCoreModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18DriveKitCoreModule21DKTransportationMeansO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s18DriveKitCoreModule21DKTransportationMeansO4hash4intoys6HasherVz_tF",
+            "moduleName": "DriveKitCoreModule",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DKTransportationMeans",
+                "printedName": "DriveKitCoreModule.DKTransportationMeans",
+                "usr": "s:18DriveKitCoreModule21DKTransportationMeansO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DKTransportationMeans",
+                "printedName": "DriveKitCoreModule.DKTransportationMeans",
+                "usr": "s:18DriveKitCoreModule21DKTransportationMeansO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18DriveKitCoreModule21DKTransportationMeansO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s18DriveKitCoreModule21DKTransportationMeansO2eeoiySbAC_ACtFZ",
+            "moduleName": "DriveKitCoreModule",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:18DriveKitCoreModule21DKTransportationMeansO",
+        "mangledName": "$s18DriveKitCoreModule21DKTransportationMeansO",
+        "moduleName": "DriveKitCoreModule",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          }
         ]
       },
       {
@@ -28216,6 +28535,27 @@
       "offset": 203,
       "length": 3,
       "value": "8.0"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/common\/DKTransportationMeans.swift",
+      "kind": "StringLiteral",
+      "offset": 331,
+      "length": 16,
+      "value": "\"unknownVehicle\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/common\/DKTransportationMeans.swift",
+      "kind": "StringLiteral",
+      "offset": 382,
+      "length": 7,
+      "value": "\"other\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/common\/DKTransportationMeans.swift",
+      "kind": "StringLiteral",
+      "offset": 432,
+      "length": 5,
+      "value": "\"DK\/\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/installationId\/InstallationIdManager.swift",

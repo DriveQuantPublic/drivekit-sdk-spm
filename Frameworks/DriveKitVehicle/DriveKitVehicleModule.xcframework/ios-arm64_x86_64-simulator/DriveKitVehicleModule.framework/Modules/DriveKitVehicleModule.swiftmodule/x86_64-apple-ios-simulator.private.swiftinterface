@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
 // swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name DriveKitVehicleModule
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
 import CoreData
 import DriveKitBeaconUtilsModule
 import DriveKitCoreModule
@@ -233,6 +233,9 @@ extension DriveKitVehicleModule.DKVehicleEngineIndex {
   #endif
   #if compiler(>=5.3) && $NonescapableTypes
   @objc public func deleteOdometerHistory(vehicleId: Swift.String, historyId: Swift.String, completionHandler: @escaping (DriveKitVehicleModule.DKOdometerDeleteHistoryStatus, DriveKitDBVehicleAccessModule.DKVehicleOdometer?, [DriveKitDBVehicleAccessModule.DKVehicleOdometerHistory]?) -> Swift.Void)
+  #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func getVehicleLocation(_ vehicleId: Swift.String) -> (any DriveKitCoreModule.DKTripLocation)?
   #endif
   @objc public func addBluetooth(vehicleId: Swift.String, bluetooth: DriveKitDBVehicleAccessModule.DKBluetooth, completionHandler: @escaping (DriveKitVehicleModule.DKVehicleBluetoothStatus) -> Swift.Void)
   @objc public func removeBluetooth(vehicleId: Swift.String, completionHandler: @escaping (DriveKitVehicleModule.DKVehicleBluetoothRemoveStatus) -> Swift.Void)

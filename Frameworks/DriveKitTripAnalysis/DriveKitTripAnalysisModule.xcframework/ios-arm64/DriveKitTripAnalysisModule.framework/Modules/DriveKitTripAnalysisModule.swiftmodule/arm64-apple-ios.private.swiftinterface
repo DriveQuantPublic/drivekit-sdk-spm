@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name DriveKitTripAnalysisModule
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
 import AVFoundation
 import CallKit
 import CoreLocation
@@ -1008,6 +1008,9 @@ public class EndTripLocation : DriveKitNetworkingModule.DriveKitModel {
   #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getLastTripLocation() -> (any DriveKitCoreModule.DKTripLocation)?
   #endif
+  #if compiler(>=5.3) && $NonescapableTypes
+  @objc public func getLastVehicleTripLocation() -> (any DriveKitCoreModule.DKTripLocation)?
+  #endif
   @available(*, deprecated, message: "This method is now deprecated and will be removed in a future version, at the end of 2025. Use `getCurrentTripInfo()?.startMode` instead.")
   @objc(getCurrentStartMode) public func objc_getCurrentStartMode() -> Swift.Int
   @objc public func isConfigured() -> Swift.Bool
@@ -1018,7 +1021,7 @@ public class EndTripLocation : DriveKitNetworkingModule.DriveKitModel {
   public var bluetoothUsage: DriveKitCoreModule.DKBluetoothUsage {
     get
   }
-  public func tripSyncFinishedWithEndTripLocation(endTripLocation: any DriveKitCoreModule.DKTripLocation)
+  public func tripSyncFinishedWithEndTripLocations(endTripLocations: [DriveKitCoreModule.DKTransportationMeans : any DriveKitCoreModule.DKTripLocation])
   @objc public func isTripRunning() -> Swift.Bool
   @objc public func getRecorderState() -> DriveKitTripAnalysisModule.State
   #if compiler(>=5.3) && $NonescapableTypes

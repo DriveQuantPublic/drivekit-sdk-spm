@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2 effective-5.10 (swiftlang-6.2.0.19.9 clang-1700.3.19.1)
+// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
 // swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name DriveKitCoreModule
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
 import BackgroundTasks
 import CommonCrypto
 import CoreBluetooth
@@ -564,7 +564,7 @@ public struct DKConfigBluetoothDevice : Swift.Codable {
 public protocol DKTripAnalysisModule {
   func checkTripToRepost()
   var bluetoothUsage: DriveKitCoreModule.DKBluetoothUsage { get }
-  func tripSyncFinishedWithEndTripLocation(endTripLocation: any DriveKitCoreModule.DKTripLocation)
+  func tripSyncFinishedWithEndTripLocations(endTripLocations: [DriveKitCoreModule.DKTransportationMeans : any DriveKitCoreModule.DKTripLocation])
   func getConfig() -> DriveKitCoreModule.DKConfigTripAnalysis
 }
 public enum DKBluetoothUsage {
@@ -775,6 +775,19 @@ extension Swift.Array where Element : DriveKitCoreModule.DKUnmanagedObject {
   #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum DKTransportationMeans : Swift.Hashable {
+  case unknownVehicle
+  case vehicle(_: Swift.String)
+  case other
+  public var key: Swift.String {
+    get
+  }
+  public static func == (a: DriveKitCoreModule.DKTransportationMeans, b: DriveKitCoreModule.DKTransportationMeans) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
     get
   }
 }
