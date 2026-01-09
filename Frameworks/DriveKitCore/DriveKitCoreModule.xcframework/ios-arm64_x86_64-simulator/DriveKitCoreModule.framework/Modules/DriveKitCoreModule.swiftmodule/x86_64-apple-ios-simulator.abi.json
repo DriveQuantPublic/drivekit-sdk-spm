@@ -3219,6 +3219,267 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "DKSendTrigger",
+        "printedName": "DKSendTrigger",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "headerKey",
+            "printedName": "headerKey",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18DriveKitCoreModule13DKSendTriggerO9headerKeySSvpZ",
+            "mangledName": "$s18DriveKitCoreModule13DKSendTriggerO9headerKeySSvpZ",
+            "moduleName": "DriveKitCoreModule",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18DriveKitCoreModule13DKSendTriggerO9headerKeySSvgZ",
+                "mangledName": "$s18DriveKitCoreModule13DKSendTriggerO9headerKeySSvgZ",
+                "moduleName": "DriveKitCoreModule",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "immediate",
+            "printedName": "immediate",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitCoreModule.DKSendTrigger.Type) -> DriveKitCoreModule.DKSendTrigger",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKSendTrigger",
+                    "printedName": "DriveKitCoreModule.DKSendTrigger",
+                    "usr": "s:18DriveKitCoreModule13DKSendTriggerO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DriveKitCoreModule.DKSendTrigger.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKSendTrigger",
+                        "printedName": "DriveKitCoreModule.DKSendTrigger",
+                        "usr": "s:18DriveKitCoreModule13DKSendTriggerO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18DriveKitCoreModule13DKSendTriggerO9immediateyA2CmF",
+            "mangledName": "$s18DriveKitCoreModule13DKSendTriggerO9immediateyA2CmF",
+            "moduleName": "DriveKitCoreModule"
+          },
+          {
+            "kind": "Var",
+            "name": "delayed",
+            "printedName": "delayed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitCoreModule.DKSendTrigger.Type) -> DriveKitCoreModule.DKSendTrigger",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKSendTrigger",
+                    "printedName": "DriveKitCoreModule.DKSendTrigger",
+                    "usr": "s:18DriveKitCoreModule13DKSendTriggerO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DriveKitCoreModule.DKSendTrigger.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKSendTrigger",
+                        "printedName": "DriveKitCoreModule.DKSendTrigger",
+                        "usr": "s:18DriveKitCoreModule13DKSendTriggerO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:18DriveKitCoreModule13DKSendTriggerO7delayedyA2CmF",
+            "mangledName": "$s18DriveKitCoreModule13DKSendTriggerO7delayedyA2CmF",
+            "moduleName": "DriveKitCoreModule"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "DriveKitCoreModule.DKSendTrigger?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKSendTrigger",
+                    "printedName": "DriveKitCoreModule.DKSendTrigger",
+                    "usr": "s:18DriveKitCoreModule13DKSendTriggerO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:18DriveKitCoreModule13DKSendTriggerO8rawValueACSgSS_tcfc",
+            "mangledName": "$s18DriveKitCoreModule13DKSendTriggerO8rawValueACSgSS_tcfc",
+            "moduleName": "DriveKitCoreModule",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18DriveKitCoreModule13DKSendTriggerO8rawValueSSvp",
+            "mangledName": "$s18DriveKitCoreModule13DKSendTriggerO8rawValueSSvp",
+            "moduleName": "DriveKitCoreModule",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18DriveKitCoreModule13DKSendTriggerO8rawValueSSvg",
+                "mangledName": "$s18DriveKitCoreModule13DKSendTriggerO8rawValueSSvg",
+                "moduleName": "DriveKitCoreModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:18DriveKitCoreModule13DKSendTriggerO",
+        "mangledName": "$s18DriveKitCoreModule13DKSendTriggerO",
+        "moduleName": "DriveKitCoreModule",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "enumRawTypeName": "String",
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -27669,6 +27930,20 @@
       "value": "3"
     },
     {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/DKSendTrigger.swift",
+      "kind": "StringLiteral",
+      "offset": 277,
+      "length": 11,
+      "value": "\"IMMEDIATE\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/DKSendTrigger.swift",
+      "kind": "StringLiteral",
+      "offset": 308,
+      "length": 9,
+      "value": "\"DELAYED\""
+    },
+    {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/permissions\/DKLocationAccuracy.swift",
       "kind": "IntegerLiteral",
       "offset": 242,
@@ -28714,168 +28989,168 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 6934,
+      "offset": 7294,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7009,
+      "offset": 7369,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "StringLiteral",
-      "offset": 7135,
+      "offset": 7495,
       "length": 15,
       "value": "\"Unknown error\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7204,
+      "offset": 7564,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7211,
+      "offset": 7571,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7389,
+      "offset": 7749,
       "length": 3,
       "value": "401"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7459,
+      "offset": 7819,
       "length": 3,
       "value": "403"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7523,
+      "offset": 7883,
       "length": 3,
       "value": "429"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7626,
+      "offset": 7986,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7633,
+      "offset": 7993,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7724,
+      "offset": 8084,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 7731,
+      "offset": 8091,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "StringLiteral",
-      "offset": 7929,
+      "offset": 8289,
       "length": 107,
       "value": "\"Error response received for network task with identifier \""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "StringLiteral",
-      "offset": 8000,
+      "offset": 8360,
       "length": 3,
       "value": "\" and http status code \""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "StringLiteral",
-      "offset": 8035,
+      "offset": 8395,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 9344,
+      "offset": 9704,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 9351,
+      "offset": 9711,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "StringLiteral",
-      "offset": 9435,
+      "offset": 9795,
       "length": 66,
       "value": "\"Response received for network task with identifier \""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "StringLiteral",
-      "offset": 9500,
+      "offset": 9860,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "StringLiteral",
-      "offset": 9817,
+      "offset": 10177,
       "length": 107,
       "value": "\"Error response received for network task with identifier \""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "StringLiteral",
-      "offset": 9888,
+      "offset": 10248,
       "length": 3,
       "value": "\" and http status code \""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "StringLiteral",
-      "offset": 9923,
+      "offset": 10283,
       "length": 1,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "Dictionary",
-      "offset": 12647,
+      "offset": 13273,
       "length": 3,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/NetworkingTaskManager.swift",
       "kind": "Dictionary",
-      "offset": 13076,
+      "offset": 13702,
       "length": 3,
       "value": "[]"
     },
@@ -29046,6 +29321,13 @@
       "offset": 456,
       "length": 18,
       "value": "\"x-dk-sdk-version\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/networking\/DKHeader.swift",
+      "kind": "StringLiteral",
+      "offset": 498,
+      "length": 19,
+      "value": "\"x-dk-send-trigger\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/NTP\/TimeFreeze.swift",

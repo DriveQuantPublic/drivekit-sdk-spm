@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.1 effective-5.10 (swiftlang-6.2.1.4.8 clang-1700.4.4.1)
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name DriveKitCoreModule
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.1
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
 import BackgroundTasks
 import CommonCrypto
 import CoreBluetooth
@@ -127,6 +127,18 @@ public enum DKCoordinateAccuracy {
   #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
+    get
+  }
+}
+public enum DKSendTrigger : Swift.String {
+  public static let headerKey: Swift.String
+  case immediate
+  case delayed
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.String)
+  #endif
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
     get
   }
 }
@@ -1077,6 +1089,9 @@ extension DriveKitCoreModule.DKCoordinateAccuracy : Swift.Hashable {}
 extension DriveKitCoreModule.DKPermissionStatus : Swift.Equatable {}
 extension DriveKitCoreModule.DKPermissionStatus : Swift.Hashable {}
 extension DriveKitCoreModule.DKPermissionStatus : Swift.RawRepresentable {}
+extension DriveKitCoreModule.DKSendTrigger : Swift.Equatable {}
+extension DriveKitCoreModule.DKSendTrigger : Swift.Hashable {}
+extension DriveKitCoreModule.DKSendTrigger : Swift.RawRepresentable {}
 extension DriveKitCoreModule.DKLocationAccuracy : Swift.Equatable {}
 extension DriveKitCoreModule.DKLocationAccuracy : Swift.Hashable {}
 extension DriveKitCoreModule.DKLocationAccuracy : Swift.RawRepresentable {}
