@@ -10,8 +10,8 @@ import CoreLocation
 import CoreMotion
 import DriveKitNetworkingModule
 import Foundation
+import Network
 import Swift
-import SystemConfiguration
 import UIKit
 import UserNotifications
 import _Concurrency
@@ -277,6 +277,16 @@ extension DriveKitNetworkingModule.DKHttpMethod {
   @available(*, deprecated, message: "Use `DKHttpMethod.rawValue` instead")
   public func stringMethod() -> Swift.String
 }
+public enum DKNetworkTaskFlag : Swift.Codable, Swift.Hashable {
+  case retryOnServerError(Swift.Bool)
+  public static func == (a: DriveKitCoreModule.DKNetworkTaskFlag, b: DriveKitCoreModule.DKNetworkTaskFlag) -> Swift.Bool
+  public func encode(to encoder: any Swift.Encoder) throws
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+  public init(from decoder: any Swift.Decoder) throws
+}
 public enum DKDiagnosisOperationSource : Swift.String {
   case backgroundFetch, tripEvent, initialize, sensorUpdate, logFileRequested, userLogin, reset, powerStateUpdate, other
   #if compiler(>=5.3) && $NonescapableTypes
@@ -354,7 +364,7 @@ extension DriveKitCoreModule.AnyDecodable : Swift.CustomDebugStringConvertible {
   @objc public func getNotificationPermissionStatus(completion: @escaping (DriveKitCoreModule.DKPermissionStatus) -> Swift.Void)
   @objc public func getLocationPermissionStatus() -> DriveKitCoreModule.DKPermissionStatus
   @objc public func getLocationAccuracy() -> DriveKitCoreModule.DKLocationAccuracy
-  @objc public func isNetworkReachable() -> Swift.Bool
+  @objc public func isNetworkReachable(timeout: Foundation.TimeInterval = 0.1) -> Swift.Bool
   @objc public func requestPermission(_ permissionType: DriveKitCoreModule.DKPermissionType)
   @objc public func requestNotificationPermission()
   @objc public func isActivityValid() -> Swift.Bool
@@ -444,9 +454,14 @@ extension DriveKitCoreModule.DKSDKDiagnosis : DriveKitCoreModule.DriveKitDelegat
     get
   }
 }
-@_inheritsConvenienceInitializers @objc public class DKReachability : ObjectiveC.NSObject {
-  @objc public class func isConnectedToNetwork() -> Swift.Bool
-  @objc override dynamic public init()
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class DKReachability : ObjectiveC.NSObject {
+  @objc public static let shared: DriveKitCoreModule.DKReachability
+  final public func initialize()
+  final public func reset()
+  @available(*, deprecated, message: "Use instead `isConnectedToNetwork(_ completion: @escaping (Bool) -> Void)`")
+  @objc public static func isConnectedToNetwork() -> Swift.Bool
+  @objc public static func isConnectedToNetwork(_ completion: @escaping (Swift.Bool) -> Swift.Void)
+  final public func onNextConnection(taskId: Swift.String, callbackQoS: Dispatch.DispatchQoS.QoSClass = .unspecified, _ callback: @escaping () -> Swift.Void)
   @objc deinit
 }
 public enum SmartphoneDataUtils {
@@ -891,7 +906,7 @@ public class GenericErrorResponse : DriveKitNetworkingModule.DriveKitModel {
   public func registerRequestDelegate(identifier: Swift.String, delegate: any DriveKitCoreModule.RequestDelegate)
   public func unregisterRequestDelegate(identifier: Swift.String)
   #if compiler(>=5.3) && $NonescapableTypes
-  public func addRequest<T>(method: DriveKitNetworkingModule.DKHttpMethod, url: Swift.String, identifier: Swift.String, headers: [Swift.String : Swift.String]?, parameters: [Swift.String : Swift.String]?, data: T?, needAuth: Swift.Bool, priority: DriveKitCoreModule.Priority = .low, canSave: Swift.Bool = true) where T : Swift.Decodable, T : Swift.Encodable
+  public func addRequest<T>(method: DriveKitNetworkingModule.DKHttpMethod, url: Swift.String, identifier: Swift.String, headers: [Swift.String : Swift.String]?, parameters: [Swift.String : Swift.String]?, data: T?, needAuth: Swift.Bool, priority: DriveKitCoreModule.Priority = .low, canSave: Swift.Bool = true, flags: Swift.Set<DriveKitCoreModule.DKNetworkTaskFlag> = []) where T : Swift.Decodable, T : Swift.Encodable
   #endif
   public func removeNetworkTask(identifier: Swift.String)
   @objc deinit

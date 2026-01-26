@@ -283,6 +283,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 @import CoreBluetooth;
 @import CoreLocation;
+@import Foundation;
 @import ObjectiveC;
 #endif
 
@@ -380,7 +381,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) DKDiagnosisH
 - (void)getNotificationPermissionStatusWithCompletion:(void (^ _Nonnull)(enum DKPermissionStatus))completion;
 - (enum DKPermissionStatus)getLocationPermissionStatus SWIFT_WARN_UNUSED_RESULT;
 - (enum DKLocationAccuracy)getLocationAccuracy SWIFT_WARN_UNUSED_RESULT;
-- (BOOL)isNetworkReachable SWIFT_WARN_UNUSED_RESULT;
+- (BOOL)isNetworkReachableWithTimeout:(NSTimeInterval)timeout SWIFT_WARN_UNUSED_RESULT;
 - (void)requestPermission:(enum DKPermissionType)permissionType;
 - (void)requestNotificationPermission;
 - (BOOL)isActivityValid SWIFT_WARN_UNUSED_RESULT;
@@ -429,8 +430,12 @@ typedef SWIFT_ENUM(NSInteger, DKPermissionType, open) {
 
 SWIFT_CLASS("_TtC18DriveKitCoreModule14DKReachability")
 @interface DKReachability : NSObject
-+ (BOOL)isConnectedToNetwork SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) DKReachability * _Nonnull shared;)
++ (DKReachability * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
++ (BOOL)isConnectedToNetwork SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("Use instead `isConnectedToNetwork(_ completion: @escaping (Bool) -> Void)`");
++ (void)isConnectedToNetwork:(void (^ _Nonnull)(BOOL))completion;
 @end
 
 typedef SWIFT_ENUM(NSInteger, DKRemoteEvent, open) {
