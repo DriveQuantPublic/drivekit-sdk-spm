@@ -625,7 +625,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) DriveKitVehi
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (void)initialize;
-- (void)reset SWIFT_DEPRECATED_MSG("You no longer need to call the reset method of any module except the one in DriveKit");
 - (void)getVehiclesOrderByNameAscWithType:(enum DKVehicleSynchronizationType)type completionHandler:(void (^ _Nonnull)(enum DKVehicleSyncStatus, NSArray<DKVehicle *> * _Nonnull))completionHandler;
 - (void)getVehicleWithVehicleId:(NSString * _Nonnull)vehicleId type:(enum DKVehicleSynchronizationType)type completionHandler:(void (^ _Nonnull)(enum DKVehicleSyncStatus, DKVehicle * _Nullable))completionHandler;
 - (void)createCustomVehicleWithCharacteristics:(DKVehicleCharacteristics * _Nonnull)characteristics name:(NSString * _Nullable)name id:(NSString * _Nonnull)id completionHandler:(void (^ _Nonnull)(enum DKVehicleManagerStatus, DKVehicle * _Nullable))completionHandler;

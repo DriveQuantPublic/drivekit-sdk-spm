@@ -335,7 +335,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) DriveKitDriv
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 - (void)initialize;
-- (void)reset SWIFT_DEPRECATED_MSG("You no longer need to call the reset method of any module except the one in DriveKit");
 @end
 
 #endif

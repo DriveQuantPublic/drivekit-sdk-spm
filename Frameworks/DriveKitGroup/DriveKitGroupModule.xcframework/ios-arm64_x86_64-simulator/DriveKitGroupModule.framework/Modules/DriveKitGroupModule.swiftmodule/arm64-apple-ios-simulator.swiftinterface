@@ -31,8 +31,6 @@ import _SwiftConcurrencyShims
   #endif
   @objc public func joinGroup(groupId: Swift.String, completionHandler: @escaping (DriveKitGroupModule.DKJoinGroupStatus) -> Swift.Void)
   @objc public func leaveGroup(groupId: Swift.String, completionHandler: @escaping (DriveKitGroupModule.DKLeaveGroupStatus) -> Swift.Void)
-  @available(*, deprecated, message: "You no longer need to call the reset method of any module except the one in DriveKit")
-  @objc public func reset()
 }
 @objc public enum DKGroupsSyncStatus : Swift.Int {
   case success, failedToSyncGroupsCacheOnly, cacheDataOnly, syncAlreadyInProgress

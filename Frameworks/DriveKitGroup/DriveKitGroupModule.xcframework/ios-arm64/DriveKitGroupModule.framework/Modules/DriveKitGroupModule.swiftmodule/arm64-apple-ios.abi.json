@@ -648,29 +648,6 @@
               "ObjC"
             ],
             "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "reset",
-            "printedName": "reset()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@DriveKitGroupModule@objc(cs)DriveKitGroup(im)reset",
-            "mangledName": "$s19DriveKitGroupModule0abC0C5resetyyF",
-            "moduleName": "DriveKitGroupModule",
-            "deprecated": true,
-            "declAttributes": [
-              "AccessControl",
-              "ObjC",
-              "Available"
-            ],
-            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",

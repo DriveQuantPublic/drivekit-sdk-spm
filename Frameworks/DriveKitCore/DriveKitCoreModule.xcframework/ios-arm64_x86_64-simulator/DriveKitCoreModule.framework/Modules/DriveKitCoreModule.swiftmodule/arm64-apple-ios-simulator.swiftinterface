@@ -271,12 +271,6 @@ public protocol DKSensorsListener : AnyObject {
   func onNewSensorsData(accelerometerData: CoreMotion.CMAccelerometerData?, deviceMotion: CoreMotion.CMDeviceMotion?, gyroscopeData: CoreMotion.CMGyroData?, magnetometerData: CoreMotion.CMMagnetometerData?)
   #endif
 }
-@available(*, deprecated, message: "Use `DKHttpMethod` instead")
-public typealias Method = DriveKitNetworkingModule.DKHttpMethod
-extension DriveKitNetworkingModule.DKHttpMethod {
-  @available(*, deprecated, message: "Use `DKHttpMethod.rawValue` instead")
-  public func stringMethod() -> Swift.String
-}
 public enum DKNetworkTaskFlag : Swift.Codable, Swift.Hashable {
   case retryOnServerError(Swift.Bool)
   public static func == (a: DriveKitCoreModule.DKNetworkTaskFlag, b: DriveKitCoreModule.DKNetworkTaskFlag) -> Swift.Bool

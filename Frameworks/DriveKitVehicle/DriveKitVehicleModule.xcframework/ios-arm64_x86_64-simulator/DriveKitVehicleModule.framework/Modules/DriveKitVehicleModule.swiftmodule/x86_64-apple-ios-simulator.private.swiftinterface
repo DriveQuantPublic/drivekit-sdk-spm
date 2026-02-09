@@ -193,8 +193,6 @@ extension DriveKitVehicleModule.DKVehicleEngineIndex {
   @objc public static let sdkVersion: Swift.String
   @objc public static let shared: DriveKitVehicleModule.DriveKitVehicle
   @objc public func initialize()
-  @available(*, deprecated, message: "You no longer need to call the reset method of any module except the one in DriveKit")
-  @objc public func reset()
   public func vehiclesQuery() -> DriveKitCoreModule.WhereReference<DriveKitDBVehicleAccessModule.DBVehicle, DriveKitDBVehicleAccessModule.DKVehicle>
   #if compiler(>=5.3) && $NonescapableTypes
   public func executeVehicleQuery(query: DriveKitCoreModule.ExecutableQueryOne<DriveKitDBVehicleAccessModule.DBVehicle, DriveKitDBVehicleAccessModule.DKVehicle>, type: DriveKitVehicleModule.DKVehicleSynchronizationType = .defaultSync, completionHandler: @escaping (DriveKitVehicleModule.DKVehicleSyncStatus, DriveKitDBVehicleAccessModule.DKVehicle?) -> Swift.Void)
@@ -471,12 +469,6 @@ extension DriveKitDBVehicleAccessModule.DKVehicle {
   case twoAxlesTractor = 203
   case threeAxlesTractor = 204
   case fourAxlesTractor = 205
-  #if compiler(>=5.3) && $NonescapableTypes
-  @available(*, deprecated, message: "Use getLiteConfigDqIndex(isElectricCar:) instead")
-  public var liteConfigDqIndex: Swift.String? {
-    get
-  }
-  #endif
   public var isCar: Swift.Bool {
     get
   }

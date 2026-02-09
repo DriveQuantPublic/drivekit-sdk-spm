@@ -339,7 +339,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) DriveKitDriv
 - (void)getBadgesWithType:(enum SynchronizationType)type completionHandler:(void (^ _Nonnull)(enum BadgeSyncStatus, NSArray<DKBadge *> * _Nonnull, NSInteger))completionHandler;
 - (DKBadgeStatistics * _Nonnull)getBadgeStatistics SWIFT_WARN_UNUSED_RESULT;
 - (void)getRankingWithRankingType:(enum DKRankingType)rankingType rankingPeriod:(enum DKRankingPeriod)rankingPeriod rankingDepth:(NSInteger)rankingDepth groupName:(NSString * _Nullable)groupName type:(enum SynchronizationType)type completionHandler:(void (^ _Nonnull)(enum RankingSyncStatus, DKRanking * _Nullable))completionHandler;
-- (void)reset SWIFT_DEPRECATED_MSG("You no longer need to call the reset method of any module except the one in DriveKit");
 @end
 
 typedef SWIFT_ENUM(NSInteger, RankingSyncStatus, open) {

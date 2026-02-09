@@ -44,6 +44,16 @@
       },
       {
         "kind": "Import",
+        "name": "DriveKitNetworkingModule",
+        "printedName": "DriveKitNetworkingModule",
+        "declKind": "Import",
+        "moduleName": "DriveKitTripSimulatorModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",

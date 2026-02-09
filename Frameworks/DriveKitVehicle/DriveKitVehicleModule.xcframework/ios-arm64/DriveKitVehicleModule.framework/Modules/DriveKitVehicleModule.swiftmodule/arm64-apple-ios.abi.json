@@ -5951,29 +5951,6 @@
           },
           {
             "kind": "Function",
-            "name": "reset",
-            "printedName": "reset()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@DriveKitVehicleModule@objc(cs)DriveKitVehicle(im)reset",
-            "mangledName": "$s21DriveKitVehicleModule0abC0C5resetyyF",
-            "moduleName": "DriveKitVehicleModule",
-            "deprecated": true,
-            "declAttributes": [
-              "AccessControl",
-              "ObjC",
-              "Available"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "vehiclesQuery",
             "printedName": "vehiclesQuery()",
             "children": [
@@ -14887,64 +14864,6 @@
           },
           {
             "kind": "Var",
-            "name": "liteConfigDqIndex",
-            "printedName": "liteConfigDqIndex",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:21DriveKitVehicleModule17DKVehicleCategoryO17liteConfigDqIndexSSSgvp",
-            "mangledName": "$s21DriveKitVehicleModule17DKVehicleCategoryO17liteConfigDqIndexSSSgvp",
-            "moduleName": "DriveKitVehicleModule",
-            "deprecated": true,
-            "declAttributes": [
-              "AccessControl",
-              "Available"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Optional",
-                    "printedName": "Swift.String?",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "String",
-                        "printedName": "Swift.String",
-                        "usr": "s:SS"
-                      }
-                    ],
-                    "usr": "s:Sq"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:21DriveKitVehicleModule17DKVehicleCategoryO17liteConfigDqIndexSSSgvg",
-                "mangledName": "$s21DriveKitVehicleModule17DKVehicleCategoryO17liteConfigDqIndexSSSgvg",
-                "moduleName": "DriveKitVehicleModule",
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
             "name": "isCar",
             "printedName": "isCar",
             "children": [
@@ -19710,28 +19629,28 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehicle.swift",
       "kind": "BooleanLiteral",
-      "offset": 6545,
+      "offset": 6365,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehicle.swift",
       "kind": "BooleanLiteral",
-      "offset": 8915,
+      "offset": 8735,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehicle.swift",
       "kind": "BooleanLiteral",
-      "offset": 12789,
+      "offset": 12609,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehicle.swift",
       "kind": "BooleanLiteral",
-      "offset": 28237,
+      "offset": 28057,
       "length": 4,
       "value": "true"
     },

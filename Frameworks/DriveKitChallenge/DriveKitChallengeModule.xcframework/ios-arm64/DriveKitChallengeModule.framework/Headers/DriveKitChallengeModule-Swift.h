@@ -341,7 +341,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) DriveKitChal
 - (void)getChallengeWithChallengeId:(NSString * _Nonnull)challengeId type:(enum SynchronizationType)type completionHandler:(void (^ _Nonnull)(enum ChallengesSyncStatus, DKChallenge * _Nullable))completionHandler;
 - (void)addListenerWithListener:(id <DriveKitChallengeListener> _Nonnull)listener;
 - (void)removeListenerWithListener:(id <DriveKitChallengeListener> _Nonnull)listener;
-- (void)reset SWIFT_DEPRECATED_MSG("You no longer need to call the reset method of any module except the one in DriveKit");
 @end
 
 SWIFT_PROTOCOL("_TtP23DriveKitChallengeModule25DriveKitChallengeListener_")

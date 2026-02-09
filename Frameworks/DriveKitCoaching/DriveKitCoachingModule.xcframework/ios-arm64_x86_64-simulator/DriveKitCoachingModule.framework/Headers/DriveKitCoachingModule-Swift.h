@@ -338,7 +338,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) DriveKitCoac
 - (void)markMessageAsRead:(NSString * _Nonnull)messageId type:(enum DKCoachingType)type completionHandler:(void (^ _Nonnull)(enum DKCoachingMessageStatus))completionHandler;
 - (NSInteger)getUnreadMessagesCount SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)getUnreadMessagesCount:(enum DKCoachingType)type SWIFT_WARN_UNUSED_RESULT;
-- (void)reset SWIFT_DEPRECATED_MSG("You no longer need to call the reset method of any module except the one in DriveKit");
 @end
 
 #endif
@@ -689,7 +688,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) DriveKitCoac
 - (void)markMessageAsRead:(NSString * _Nonnull)messageId type:(enum DKCoachingType)type completionHandler:(void (^ _Nonnull)(enum DKCoachingMessageStatus))completionHandler;
 - (NSInteger)getUnreadMessagesCount SWIFT_WARN_UNUSED_RESULT;
 - (NSInteger)getUnreadMessagesCount:(enum DKCoachingType)type SWIFT_WARN_UNUSED_RESULT;
-- (void)reset SWIFT_DEPRECATED_MSG("You no longer need to call the reset method of any module except the one in DriveKit");
 @end
 
 #endif

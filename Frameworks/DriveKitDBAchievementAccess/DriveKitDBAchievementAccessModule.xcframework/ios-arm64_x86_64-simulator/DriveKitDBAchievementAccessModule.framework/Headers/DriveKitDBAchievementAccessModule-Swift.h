@@ -484,10 +484,9 @@ SWIFT_CLASS("_TtC33DriveKitDBAchievementAccessModule9DKRanking")
 @end
 
 typedef SWIFT_ENUM(NSInteger, DKRankingPeriod, open) {
-  DKRankingPeriodLegacy = 0,
-  DKRankingPeriodWeekly = 1,
-  DKRankingPeriodMonthly = 2,
-  DKRankingPeriodAllTime = 3,
+  DKRankingPeriodWeekly = 0,
+  DKRankingPeriodMonthly = 1,
+  DKRankingPeriodAllTime = 2,
 };
 
 typedef SWIFT_ENUM(NSInteger, DKRankingType, open) {
@@ -1023,10 +1022,9 @@ SWIFT_CLASS("_TtC33DriveKitDBAchievementAccessModule9DKRanking")
 @end
 
 typedef SWIFT_ENUM(NSInteger, DKRankingPeriod, open) {
-  DKRankingPeriodLegacy = 0,
-  DKRankingPeriodWeekly = 1,
-  DKRankingPeriodMonthly = 2,
-  DKRankingPeriodAllTime = 3,
+  DKRankingPeriodWeekly = 0,
+  DKRankingPeriodMonthly = 1,
+  DKRankingPeriodAllTime = 2,
 };
 
 typedef SWIFT_ENUM(NSInteger, DKRankingType, open) {

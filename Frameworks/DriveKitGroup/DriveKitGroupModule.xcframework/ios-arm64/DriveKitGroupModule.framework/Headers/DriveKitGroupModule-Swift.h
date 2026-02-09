@@ -342,7 +342,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) DriveKitGrou
 - (void)getGroupsWithGroupType:(enum DKGroupType)groupType synchronizationType:(enum SynchronizationType)synchronizationType completionHandler:(void (^ _Nonnull)(enum DKGroupsSyncStatus, NSArray<DKGroup *> * _Nullable))completionHandler;
 - (void)joinGroupWithGroupId:(NSString * _Nonnull)groupId completionHandler:(void (^ _Nonnull)(enum DKJoinGroupStatus))completionHandler;
 - (void)leaveGroupWithGroupId:(NSString * _Nonnull)groupId completionHandler:(void (^ _Nonnull)(enum DKLeaveGroupStatus))completionHandler;
-- (void)reset SWIFT_DEPRECATED_MSG("You no longer need to call the reset method of any module except the one in DriveKit");
 @end
 
 #endif

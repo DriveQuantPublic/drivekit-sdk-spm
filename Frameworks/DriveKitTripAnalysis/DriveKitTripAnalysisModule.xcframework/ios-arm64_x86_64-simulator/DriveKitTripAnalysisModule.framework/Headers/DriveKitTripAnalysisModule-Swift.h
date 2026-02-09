@@ -326,19 +326,6 @@ SWIFT_CLASS("_TtC26DriveKitTripAnalysisModule13BluetoothData")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-typedef SWIFT_ENUM(NSInteger, CancelTrip, open) {
-  CancelTripUser = 0,
-  CancelTripHighspeed = 1,
-  CancelTripNoSpeed = 2,
-  CancelTripNoBeacon = 3,
-  CancelTripNoBluetoothDevice = 8,
-  CancelTripMissingConfiguration = 4,
-  CancelTripNoGPSData = 5,
-  CancelTripReset = 6,
-  CancelTripBeaconNoSpeed = 7,
-  CancelTripBluetoothDeviceNoSpeed = 9,
-};
-
 SWIFT_PROTOCOL("_TtP26DriveKitTripAnalysisModule21CrashFeedbackDelegate_")
 @protocol CrashFeedbackDelegate
 - (void)didUpdateProgressWithRemainingSeconds:(NSTimeInterval)remainingSeconds totalSeconds:(NSTimeInterval)totalSeconds;
@@ -528,8 +515,6 @@ typedef SWIFT_ENUM(NSInteger, DKWorkingHoursUpdateStatus, open) {
 @class TripVehicle;
 @protocol DKTripLocation;
 enum State : NSInteger;
-@class PostGenericResponse;
-@class TripResponseStatus;
 SWIFT_CLASS("_TtC26DriveKitTripAnalysisModule20DriveKitTripAnalysis")
 @interface DriveKitTripAnalysis : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull sdkVersion;)
@@ -578,7 +563,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) DriveKitTrip
 - (id <DKTripInfo> _Nullable)getCurrentTripInfo SWIFT_WARN_UNUSED_RESULT;
 - (id <DKTripLocation> _Nullable)getLastTripLocation SWIFT_WARN_UNUSED_RESULT;
 - (id <DKTripLocation> _Nullable)getLastVehicleTripLocation SWIFT_WARN_UNUSED_RESULT;
-- (NSInteger)getCurrentStartMode SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("This method is now deprecated and will be removed in a future version, at the end of 2025. Use `getCurrentTripInfo()?.startMode` instead.");
 - (BOOL)isConfigured SWIFT_WARN_UNUSED_RESULT;
 - (void)checkTripToRepost;
 - (void)checkTripToRepost:(BOOL)fromBackground;
@@ -594,8 +578,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) DriveKitTrip
 - (DKCrashInfo * _Nullable)noCrashConfirmationOpenedWithCrashId:(NSString * _Nonnull)crashId SWIFT_WARN_UNUSED_RESULT;
 - (void)registerCrashFeedbackDelegateWithDelegate:(id <CrashFeedbackDelegate> _Nonnull)delegate;
 - (void)unregisterCrashFeedbackDelegateWithDelegate:(id <CrashFeedbackDelegate> _Nonnull)delegate;
-- (TripResponseStatus * _Nonnull)getTripResponseStatus:(PostGenericResponse * _Nonnull)tripResponse SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("This method will be removed in a future version, at the end of 2025");
-- (void)reset SWIFT_DEPRECATED_MSG("You no longer need to call the reset method of any module except the one in DriveKit");
 @end
 
 @class DriveKit;
@@ -605,7 +587,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) DriveKitTrip
 
 @class CLLocation;
 @class TripPoint;
-@class PostGeneric;
+@class TripResponseStatus;
 SWIFT_PROTOCOL("_TtP26DriveKitTripAnalysisModule12TripListener_")
 @protocol TripListener
 @optional
@@ -622,30 +604,11 @@ SWIFT_PROTOCOL("_TtP26DriveKitTripAnalysisModule12TripListener_")
 - (void)tripSavedForRepost;
 - (void)crashDetectedWithCrashInfo:(DKCrashInfo * _Nonnull)crashInfo;
 - (void)crashFeedbackSentWithCrashInfo:(DKCrashInfo * _Nonnull)crashInfo feedbackType:(enum DKCrashFeedbackType)feedbackType severity:(enum DKCrashFeedbackSeverity)severity;
-- (void)tripStartedWithStartMode:(enum StartMode)startMode SWIFT_DEPRECATED_MSG("This method will be removed in a future version, at the end of 2025. It is replaced by `tripRecordingConfirmed(state: TripRecordingConfirmedState)`.");
-- (void)tripFinishedWithPost:(PostGeneric * _Nonnull)post response:(PostGenericResponse * _Nonnull)response SWIFT_DEPRECATED_MSG("This method will be removed in a future version, at the end of 2025. It is replaced by `tripFinished(responseStatus: TripResponseStatus)`.");
-- (void)tripCancelledWithCancelTrip:(enum CancelTrip)cancelTrip SWIFT_DEPRECATED_MSG("This method will be removed in a future version, at the end of 2025. It is replaced by `tripRecordingCanceled(state: TripRecordingCanceledState)`.");
 @end
 
 @interface DriveKitTripAnalysis (SWIFT_EXTENSION(DriveKitTripAnalysisModule)) <TripListener>
-- (void)tripStartedWithStartMode:(enum StartMode)startMode;
 - (void)tripFinishedWithResponseStatus:(TripResponseStatus * _Nonnull)responseStatus;
 - (void)potentialTripStartWithStartMode:(enum StartMode)startMode;
-@end
-
-SWIFT_CLASS("_TtC26DriveKitTripAnalysisModule11PostGeneric") SWIFT_DEPRECATED_MSG("This class will be removed in a future version, at the end of 2025.")
-@interface PostGeneric : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-SWIFT_CLASS("_TtC26DriveKitTripAnalysisModule19PostGenericResponse") SWIFT_DEPRECATED_MSG("This class will be removed in a future version, at the end of 2025.")
-@interface PostGenericResponse : NSObject
-@property (nonatomic, readonly) BOOL status;
-@property (nonatomic, copy) NSString * _Nullable itinId;
-@property (nonatomic, copy) NSString * _Nonnull endDate;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 typedef SWIFT_ENUM(NSInteger, StartMode, open) {
@@ -1088,19 +1051,6 @@ SWIFT_CLASS("_TtC26DriveKitTripAnalysisModule13BluetoothData")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-typedef SWIFT_ENUM(NSInteger, CancelTrip, open) {
-  CancelTripUser = 0,
-  CancelTripHighspeed = 1,
-  CancelTripNoSpeed = 2,
-  CancelTripNoBeacon = 3,
-  CancelTripNoBluetoothDevice = 8,
-  CancelTripMissingConfiguration = 4,
-  CancelTripNoGPSData = 5,
-  CancelTripReset = 6,
-  CancelTripBeaconNoSpeed = 7,
-  CancelTripBluetoothDeviceNoSpeed = 9,
-};
-
 SWIFT_PROTOCOL("_TtP26DriveKitTripAnalysisModule21CrashFeedbackDelegate_")
 @protocol CrashFeedbackDelegate
 - (void)didUpdateProgressWithRemainingSeconds:(NSTimeInterval)remainingSeconds totalSeconds:(NSTimeInterval)totalSeconds;
@@ -1290,8 +1240,6 @@ typedef SWIFT_ENUM(NSInteger, DKWorkingHoursUpdateStatus, open) {
 @class TripVehicle;
 @protocol DKTripLocation;
 enum State : NSInteger;
-@class PostGenericResponse;
-@class TripResponseStatus;
 SWIFT_CLASS("_TtC26DriveKitTripAnalysisModule20DriveKitTripAnalysis")
 @interface DriveKitTripAnalysis : NSObject
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _Nonnull sdkVersion;)
@@ -1340,7 +1288,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) DriveKitTrip
 - (id <DKTripInfo> _Nullable)getCurrentTripInfo SWIFT_WARN_UNUSED_RESULT;
 - (id <DKTripLocation> _Nullable)getLastTripLocation SWIFT_WARN_UNUSED_RESULT;
 - (id <DKTripLocation> _Nullable)getLastVehicleTripLocation SWIFT_WARN_UNUSED_RESULT;
-- (NSInteger)getCurrentStartMode SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("This method is now deprecated and will be removed in a future version, at the end of 2025. Use `getCurrentTripInfo()?.startMode` instead.");
 - (BOOL)isConfigured SWIFT_WARN_UNUSED_RESULT;
 - (void)checkTripToRepost;
 - (void)checkTripToRepost:(BOOL)fromBackground;
@@ -1356,8 +1303,6 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) DriveKitTrip
 - (DKCrashInfo * _Nullable)noCrashConfirmationOpenedWithCrashId:(NSString * _Nonnull)crashId SWIFT_WARN_UNUSED_RESULT;
 - (void)registerCrashFeedbackDelegateWithDelegate:(id <CrashFeedbackDelegate> _Nonnull)delegate;
 - (void)unregisterCrashFeedbackDelegateWithDelegate:(id <CrashFeedbackDelegate> _Nonnull)delegate;
-- (TripResponseStatus * _Nonnull)getTripResponseStatus:(PostGenericResponse * _Nonnull)tripResponse SWIFT_WARN_UNUSED_RESULT SWIFT_DEPRECATED_MSG("This method will be removed in a future version, at the end of 2025");
-- (void)reset SWIFT_DEPRECATED_MSG("You no longer need to call the reset method of any module except the one in DriveKit");
 @end
 
 @class DriveKit;
@@ -1367,7 +1312,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) DriveKitTrip
 
 @class CLLocation;
 @class TripPoint;
-@class PostGeneric;
+@class TripResponseStatus;
 SWIFT_PROTOCOL("_TtP26DriveKitTripAnalysisModule12TripListener_")
 @protocol TripListener
 @optional
@@ -1384,30 +1329,11 @@ SWIFT_PROTOCOL("_TtP26DriveKitTripAnalysisModule12TripListener_")
 - (void)tripSavedForRepost;
 - (void)crashDetectedWithCrashInfo:(DKCrashInfo * _Nonnull)crashInfo;
 - (void)crashFeedbackSentWithCrashInfo:(DKCrashInfo * _Nonnull)crashInfo feedbackType:(enum DKCrashFeedbackType)feedbackType severity:(enum DKCrashFeedbackSeverity)severity;
-- (void)tripStartedWithStartMode:(enum StartMode)startMode SWIFT_DEPRECATED_MSG("This method will be removed in a future version, at the end of 2025. It is replaced by `tripRecordingConfirmed(state: TripRecordingConfirmedState)`.");
-- (void)tripFinishedWithPost:(PostGeneric * _Nonnull)post response:(PostGenericResponse * _Nonnull)response SWIFT_DEPRECATED_MSG("This method will be removed in a future version, at the end of 2025. It is replaced by `tripFinished(responseStatus: TripResponseStatus)`.");
-- (void)tripCancelledWithCancelTrip:(enum CancelTrip)cancelTrip SWIFT_DEPRECATED_MSG("This method will be removed in a future version, at the end of 2025. It is replaced by `tripRecordingCanceled(state: TripRecordingCanceledState)`.");
 @end
 
 @interface DriveKitTripAnalysis (SWIFT_EXTENSION(DriveKitTripAnalysisModule)) <TripListener>
-- (void)tripStartedWithStartMode:(enum StartMode)startMode;
 - (void)tripFinishedWithResponseStatus:(TripResponseStatus * _Nonnull)responseStatus;
 - (void)potentialTripStartWithStartMode:(enum StartMode)startMode;
-@end
-
-SWIFT_CLASS("_TtC26DriveKitTripAnalysisModule11PostGeneric") SWIFT_DEPRECATED_MSG("This class will be removed in a future version, at the end of 2025.")
-@interface PostGeneric : NSObject
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-SWIFT_CLASS("_TtC26DriveKitTripAnalysisModule19PostGenericResponse") SWIFT_DEPRECATED_MSG("This class will be removed in a future version, at the end of 2025.")
-@interface PostGenericResponse : NSObject
-@property (nonatomic, readonly) BOOL status;
-@property (nonatomic, copy) NSString * _Nullable itinId;
-@property (nonatomic, copy) NSString * _Nonnull endDate;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 typedef SWIFT_ENUM(NSInteger, StartMode, open) {

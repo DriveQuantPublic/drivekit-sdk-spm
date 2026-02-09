@@ -1389,29 +1389,6 @@
               "ObjC"
             ],
             "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "reset",
-            "printedName": "reset()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@DriveKitCoachingModule@objc(cs)DriveKitCoaching(im)reset",
-            "mangledName": "$s22DriveKitCoachingModule0abC0C5resetyyF",
-            "moduleName": "DriveKitCoachingModule",
-            "deprecated": true,
-            "declAttributes": [
-              "AccessControl",
-              "ObjC",
-              "Available"
-            ],
-            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",

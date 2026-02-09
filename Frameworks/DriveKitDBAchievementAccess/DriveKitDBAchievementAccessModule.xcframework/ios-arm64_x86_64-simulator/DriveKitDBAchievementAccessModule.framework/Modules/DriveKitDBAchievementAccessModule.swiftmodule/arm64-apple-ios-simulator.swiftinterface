@@ -178,8 +178,6 @@ extension DriveKitDBAchievementAccessModule.DBRanking {
 }
 @objc public enum DKRankingPeriod : Swift.Int, Swift.CaseIterable {
   public static var allCases: [DriveKitDBAchievementAccessModule.DKRankingPeriod]
-  @available(*, deprecated, message: "Removed in future versions")
-  case legacy
   case weekly, monthly, allTime
   public func stringValue() -> Swift.String
   #if compiler(>=5.3) && $NonescapableTypes

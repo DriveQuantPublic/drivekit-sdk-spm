@@ -75,44 +75,6 @@ extension DriveKitDBTripAccessModule.DKScoreStatistics {
     get
   }
 }
-@available(*, deprecated, message: "Please use DKTrip instead of Trip")
-public typealias Trip = DriveKitDBTripAccessModule.DKTrip
-@available(*, deprecated, message: "Please use DKEcoDriving instead of EcoDriving")
-public typealias EcoDriving = DriveKitDBTripAccessModule.DKEcoDriving
-@available(*, deprecated, message: "Please use DKEvaluation instead of Evaluation")
-public typealias Evaluation = DriveKitDBTripAccessModule.DKEvaluation
-@available(*, deprecated, message: "Please use DKFuelEstimation instead of FuelEstimation")
-public typealias FuelEstimation = DriveKitDBTripAccessModule.DKFuelEstimation
-@available(*, deprecated, message: "Please use DKFuelEstimationContext instead of FuelEstimationContext")
-public typealias FuelEstimationContext = DriveKitDBTripAccessModule.DKFuelEstimationContext
-@available(*, deprecated, message: "Please use DKLogbook instead of Logbook")
-public typealias Logbook = DriveKitDBTripAccessModule.DKLogbook
-@available(*, deprecated, message: "Please use DKManeuver instead of Maneuver")
-public typealias Maneuver = DriveKitDBTripAccessModule.DKManeuver
-@available(*, deprecated, message: "Please use DKPollutants instead of Pollutants")
-public typealias Pollutants = DriveKitDBTripAccessModule.DKPollutants
-@available(*, deprecated, message: "Please use DKSafety instead of Safety")
-public typealias Safety = DriveKitDBTripAccessModule.DKSafety
-@available(*, deprecated, message: "Please use DKSafetyContext instead of SafetyContext")
-public typealias SafetyContext = DriveKitDBTripAccessModule.DKSafetyContext
-@available(*, deprecated, message: "Please use DKSafetyEvents instead of SafetyEvents")
-public typealias SafetyEvents = DriveKitDBTripAccessModule.DKSafetyEvents
-@available(*, deprecated, message: "Please use DKTireWear instead of TireWear")
-public typealias TireWear = DriveKitDBTripAccessModule.DKTireWear
-@available(*, deprecated, message: "Please use DKTripStatistics instead of TripStatistics")
-public typealias TripStatistics = DriveKitDBTripAccessModule.DKTripStatistics
-@available(*, deprecated, message: "Please use DKTripAdvice instead of TripAdvice")
-public typealias TripAdvice = DriveKitDBTripAccessModule.DKTripAdvice
-@available(*, deprecated, message: "Please use DKBrakeWear instead of BrakeWear")
-public typealias BrakeWear = DriveKitDBTripAccessModule.DKBrakeWear
-@available(*, deprecated, message: "Please use DKCall instead of Call")
-public typealias Call = DriveKitDBTripAccessModule.DKCall
-@available(*, deprecated, message: "Please use DKDeclaredTransportationMode instead of DeclaredTransportationMode")
-public typealias DeclaredTransportationMode = DriveKitDBTripAccessModule.DKDeclaredTransportationMode
-@available(*, deprecated, message: "Please use DKDriverDistraction instead of DriverDistraction")
-public typealias DriverDistraction = DriveKitDBTripAccessModule.DKDriverDistraction
-@available(*, deprecated, message: "Please use DKEcoDrivingContext instead of EcoDrivingContext")
-public typealias EcoDrivingContext = DriveKitDBTripAccessModule.DKEcoDrivingContext
 public struct DKRawTimeline : Swift.Codable {
   public var period: DriveKitCoreModule.DKPeriod
   public var allContext: DriveKitDBTripAccessModule.DKRawTimeline.AllContextItem
@@ -1181,8 +1143,6 @@ public enum DKDistanceProfile : Swift.String, Swift.Codable {
   final public let speedingTime: [Swift.Int]?
   @objc deinit
 }
-@available(*, deprecated, message: "Please use DKRoute instead of Route")
-public typealias Route = DriveKitDBTripAccessModule.DKRoute
 @objc public class DKManualTrip : ObjectiveC.NSObject {
   @objc final public let tripId: Swift.String
   @objc final public let maneuver: DriveKitDBTripAccessModule.DKManeuverData

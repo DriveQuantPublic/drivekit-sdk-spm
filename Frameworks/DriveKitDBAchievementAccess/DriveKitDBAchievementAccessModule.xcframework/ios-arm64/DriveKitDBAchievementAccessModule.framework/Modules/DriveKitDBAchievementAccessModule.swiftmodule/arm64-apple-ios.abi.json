@@ -4873,49 +4873,6 @@
           },
           {
             "kind": "Var",
-            "name": "legacy",
-            "printedName": "legacy",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(DriveKitDBAchievementAccessModule.DKRankingPeriod.Type) -> DriveKitDBAchievementAccessModule.DKRankingPeriod",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "DKRankingPeriod",
-                    "printedName": "DriveKitDBAchievementAccessModule.DKRankingPeriod",
-                    "usr": "c:@M@DriveKitDBAchievementAccessModule@E@DKRankingPeriod"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "DriveKitDBAchievementAccessModule.DKRankingPeriod.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "DKRankingPeriod",
-                        "printedName": "DriveKitDBAchievementAccessModule.DKRankingPeriod",
-                        "usr": "c:@M@DriveKitDBAchievementAccessModule@E@DKRankingPeriod"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "c:@M@DriveKitDBAchievementAccessModule@E@DKRankingPeriod@DKRankingPeriodLegacy",
-            "mangledName": "$s33DriveKitDBAchievementAccessModule15DKRankingPeriodO6legacyyA2CmF",
-            "moduleName": "DriveKitDBAchievementAccessModule",
-            "deprecated": true,
-            "declAttributes": [
-              "Available",
-              "ObjC"
-            ],
-            "fixedbinaryorder": 0
-          },
-          {
-            "kind": "Var",
             "name": "weekly",
             "printedName": "weekly",
             "children": [
@@ -4953,7 +4910,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 1
+            "fixedbinaryorder": 0
           },
           {
             "kind": "Var",
@@ -4994,7 +4951,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 2
+            "fixedbinaryorder": 1
           },
           {
             "kind": "Var",
@@ -5035,7 +4992,7 @@
             "declAttributes": [
               "ObjC"
             ],
-            "fixedbinaryorder": 3
+            "fixedbinaryorder": 2
           },
           {
             "kind": "Function",
@@ -10791,23 +10748,16 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-db-achievement-access\/model\/DKRanking.swift",
       "kind": "IntegerLiteral",
-      "offset": 3087,
-      "length": 6,
+      "offset": 3010,
+      "length": 7,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-db-achievement-access\/model\/DKRanking.swift",
       "kind": "IntegerLiteral",
-      "offset": 3095,
+      "offset": 3019,
       "length": 7,
       "value": "2"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/drivekit-db-achievement-access\/model\/DKRanking.swift",
-      "kind": "IntegerLiteral",
-      "offset": 3104,
-      "length": 7,
-      "value": "3"
     }
   ]
 }

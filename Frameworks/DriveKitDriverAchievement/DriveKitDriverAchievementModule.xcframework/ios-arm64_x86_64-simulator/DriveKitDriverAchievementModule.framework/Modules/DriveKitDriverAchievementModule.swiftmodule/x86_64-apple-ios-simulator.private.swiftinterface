@@ -65,8 +65,6 @@ import _SwiftConcurrencyShims
   #if compiler(>=5.3) && $NonescapableTypes
   @objc public func getRanking(rankingType: DriveKitDBAchievementAccessModule.DKRankingType, rankingPeriod: DriveKitDBAchievementAccessModule.DKRankingPeriod = .weekly, rankingDepth: Swift.Int = 5, groupName: Swift.String? = nil, type: DriveKitCoreModule.SynchronizationType = .defaultSync, completionHandler: @escaping (DriveKitDriverAchievementModule.RankingSyncStatus, DriveKitDBAchievementAccessModule.DKRanking?) -> Swift.Void)
   #endif
-  @available(*, deprecated, message: "You no longer need to call the reset method of any module except the one in DriveKit")
-  @objc public func reset()
   @objc deinit
 }
 extension DriveKitDriverAchievementModule.RankingSyncStatus : Swift.Equatable {}

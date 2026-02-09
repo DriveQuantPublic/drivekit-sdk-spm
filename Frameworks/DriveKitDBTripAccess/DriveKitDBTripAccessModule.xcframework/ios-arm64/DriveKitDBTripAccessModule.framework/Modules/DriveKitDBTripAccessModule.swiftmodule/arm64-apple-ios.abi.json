@@ -1735,23 +1735,6 @@
         "moduleName": "DriveKitDBTripAccessModule"
       },
       {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "DriveKitCoreModule",
-        "printedName": "DriveKitCoreModule",
-        "declKind": "Import",
-        "moduleName": "DriveKitDBTripAccessModule"
-      },
-      {
         "kind": "TypeDecl",
         "name": "DKRawTimeline",
         "printedName": "DKRawTimeline",

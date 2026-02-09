@@ -208,29 +208,6 @@
           },
           {
             "kind": "Function",
-            "name": "reset",
-            "printedName": "reset()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@DriveKitDriverDataModule@objc(cs)DriveKitDriverData(im)reset",
-            "mangledName": "$s24DriveKitDriverDataModule0abcD0C5resetyyF",
-            "moduleName": "DriveKitDriverDataModule",
-            "deprecated": true,
-            "declAttributes": [
-              "AccessControl",
-              "ObjC",
-              "Available"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "tripsQuery",
             "printedName": "tripsQuery()",
             "children": [
@@ -8702,21 +8679,21 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-driverdata\/drivekit-driverdata\/DriveKitDriverData.swift",
       "kind": "BooleanLiteral",
-      "offset": 19655,
+      "offset": 19475,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-driverdata\/drivekit-driverdata\/DriveKitDriverData.swift",
       "kind": "BooleanLiteral",
-      "offset": 30773,
+      "offset": 30593,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-driverdata\/drivekit-driverdata\/DriveKitDriverData.swift",
       "kind": "BooleanLiteral",
-      "offset": 36030,
+      "offset": 35850,
       "length": 5,
       "value": "false"
     },
