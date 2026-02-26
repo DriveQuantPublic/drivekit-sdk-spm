@@ -596,6 +596,7 @@ SWIFT_PROTOCOL("_TtP26DriveKitTripAnalysisModule12TripListener_")
 - (void)tripRecordingCanceledWithState:(id <DKTripRecordingCanceledState> _Nonnull)state;
 - (void)tripRecordingFinishedWithState:(id <DKTripRecordingFinishedState> _Nonnull)state;
 - (void)beaconDetected;
+- (void)beaconConfirmedWithBeacon:(BeaconData * _Nonnull)beacon;
 - (void)significantLocationChangeDetectedWithLocation:(CLLocation * _Nonnull)location;
 - (void)potentialTripStartWithStartMode:(enum StartMode)startMode;
 - (void)sdkStateChangedWithState:(enum State)state;
@@ -1321,6 +1322,7 @@ SWIFT_PROTOCOL("_TtP26DriveKitTripAnalysisModule12TripListener_")
 - (void)tripRecordingCanceledWithState:(id <DKTripRecordingCanceledState> _Nonnull)state;
 - (void)tripRecordingFinishedWithState:(id <DKTripRecordingFinishedState> _Nonnull)state;
 - (void)beaconDetected;
+- (void)beaconConfirmedWithBeacon:(BeaconData * _Nonnull)beacon;
 - (void)significantLocationChangeDetectedWithLocation:(CLLocation * _Nonnull)location;
 - (void)potentialTripStartWithStartMode:(enum StartMode)startMode;
 - (void)sdkStateChangedWithState:(enum State)state;

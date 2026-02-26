@@ -575,6 +575,7 @@ public enum CrashFeedbackSeverity : Swift.String, Swift.Codable {
   @objc optional func tripRecordingCanceled(state: any DriveKitTripAnalysisModule.DKTripRecordingCanceledState)
   @objc optional func tripRecordingFinished(state: any DriveKitTripAnalysisModule.DKTripRecordingFinishedState)
   @objc optional func beaconDetected()
+  @objc optional func beaconConfirmed(beacon: DriveKitTripAnalysisModule.BeaconData)
   @objc optional func significantLocationChangeDetected(location: _LocationEssentials.CLLocation)
   @objc optional func potentialTripStart(startMode: DriveKitTripAnalysisModule.StartMode)
   @objc optional func sdkStateChanged(state: DriveKitTripAnalysisModule.State)

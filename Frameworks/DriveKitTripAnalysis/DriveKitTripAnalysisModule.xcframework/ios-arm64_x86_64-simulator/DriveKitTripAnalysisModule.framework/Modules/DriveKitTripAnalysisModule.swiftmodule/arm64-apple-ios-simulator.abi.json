@@ -20808,6 +20808,38 @@
           },
           {
             "kind": "Function",
+            "name": "beaconConfirmed",
+            "printedName": "beaconConfirmed(beacon:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "BeaconData",
+                "printedName": "DriveKitTripAnalysisModule.BeaconData",
+                "usr": "c:@M@DriveKitTripAnalysisModule@objc(cs)BeaconData"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@DriveKitTripAnalysisModule@objc(pl)TripListener(im)beaconConfirmedWithBeacon:",
+            "mangledName": "$s26DriveKitTripAnalysisModule0C8ListenerP15beaconConfirmed0G0yAA10BeaconDataC_tF",
+            "moduleName": "DriveKitTripAnalysisModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : DriveKitTripAnalysisModule.TripListener>",
+            "sugared_genericSig": "<Self where Self : DriveKitTripAnalysisModule.TripListener>",
+            "protocolReq": true,
+            "objc_name": "beaconConfirmedWithBeacon:",
+            "declAttributes": [
+              "Optional",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "significantLocationChangeDetected",
             "printedName": "significantLocationChangeDetected(location:)",
             "children": [
@@ -28074,7 +28106,7 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/recorder\/RecorderStateManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 23133,
+      "offset": 23361,
       "length": 1,
       "value": "0"
     },
@@ -29033,42 +29065,42 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripListener.swift",
       "kind": "IntegerLiteral",
-      "offset": 1269,
+      "offset": 1329,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripListener.swift",
       "kind": "IntegerLiteral",
-      "offset": 1289,
+      "offset": 1349,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripListener.swift",
       "kind": "IntegerLiteral",
-      "offset": 1309,
+      "offset": 1369,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripListener.swift",
       "kind": "IntegerLiteral",
-      "offset": 1330,
+      "offset": 1390,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripListener.swift",
       "kind": "IntegerLiteral",
-      "offset": 1353,
+      "offset": 1413,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripListener.swift",
       "kind": "IntegerLiteral",
-      "offset": 1384,
+      "offset": 1444,
       "length": 1,
       "value": "6"
     },
@@ -29327,7 +29359,7 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripListenerProxy.swift",
       "kind": "Array",
-      "offset": 430,
+      "offset": 460,
       "length": 2,
       "value": "[]"
     },
