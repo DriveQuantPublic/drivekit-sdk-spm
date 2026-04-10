@@ -60,6 +60,16 @@ let package = Package(
             ]
         ),
         .target(
+            name: "DriveKitRegionMonitoringUtilsWrapper",
+            dependencies: [
+                .target(name: "DriveKitRegionMonitoringUtils"),
+                .target(name: "DriveKitCoreWrapper"),
+            ],
+            linkerSettings: [
+                .linkedFramework("CoreLocation"),
+            ]
+        ),
+        .target(
             name: "DriveKitChallengeWrapper",
             dependencies: [
                 .target(name: "DriveKitChallenge"),
@@ -242,6 +252,10 @@ let package = Package(
         .binaryTarget(
             name: "DriveKitBeaconUtils",
             path: "Frameworks/DriveKitBeaconUtils/DriveKitBeaconUtilsModule.xcframework"
+        ),
+        .binaryTarget(
+            name: "DriveKitRegionMonitoringUtils",
+            path: "Frameworks/DriveKitRegionMonitoringUtils/DriveKitRegionMonitoringUtilsModule.xcframework"
         ),
         .binaryTarget(
             name: "DriveKitChallenge",
