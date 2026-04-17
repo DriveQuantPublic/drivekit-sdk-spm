@@ -203,6 +203,7 @@ let package = Package(
                 .target(name: "DriveKitDBTripAccessWrapper"),
                 .target(name: "DriveKitDBVehicleAccessWrapper"),
                 .target(name: "DriveKitBeaconUtilsWrapper"),
+                .target(name: "DriveKitRegionMonitoringUtilsWrapper"),
             ],
             linkerSettings: [
                 .linkedFramework("CoreLocation"),
