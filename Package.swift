@@ -356,7 +356,7 @@ let package = Package(
         ),
         .binaryTarget(
             name: "DriveKitStolenVehicleLocator",
-            path: "Frameworks/DriveKitStolenVehicleLocatorModule.xcframework"
+            path: "Frameworks/DriveKitStolenVehicleLocator/DriveKitStolenVehicleLocatorModule.xcframework"
         ),
         .binaryTarget(
             name: "DriveKitVehicle",
