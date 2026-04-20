@@ -1,0 +1,1992 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "DriveKitRegionMonitoringUtilsModule",
+    "printedName": "DriveKitRegionMonitoringUtilsModule",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DriveKitRegionMonitoringUtilsModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "DriveKitRegionMonitoringUtilsModule"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DKBeaconScanConfiguration",
+        "printedName": "DKBeaconScanConfiguration",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "scanMode",
+            "printedName": "scanMode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DKScanMode",
+                "printedName": "DriveKitRegionMonitoringUtilsModule.DKScanMode",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule10DKScanModeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:35DriveKitRegionMonitoringUtilsModule25DKBeaconScanConfigurationC8scanModeAA06DKScanK0Ovp",
+            "mangledName": "$s35DriveKitRegionMonitoringUtilsModule25DKBeaconScanConfigurationC8scanModeAA06DKScanK0Ovp",
+            "moduleName": "DriveKitRegionMonitoringUtilsModule",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKScanMode",
+                    "printedName": "DriveKitRegionMonitoringUtilsModule.DKScanMode",
+                    "usr": "s:35DriveKitRegionMonitoringUtilsModule10DKScanModeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule25DKBeaconScanConfigurationC8scanModeAA06DKScanK0Ovg",
+                "mangledName": "$s35DriveKitRegionMonitoringUtilsModule25DKBeaconScanConfigurationC8scanModeAA06DKScanK0Ovg",
+                "moduleName": "DriveKitRegionMonitoringUtilsModule",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "duration",
+            "printedName": "duration",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Double?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:35DriveKitRegionMonitoringUtilsModule25DKBeaconScanConfigurationC8durationSdSgvp",
+            "mangledName": "$s35DriveKitRegionMonitoringUtilsModule25DKBeaconScanConfigurationC8durationSdSgvp",
+            "moduleName": "DriveKitRegionMonitoringUtilsModule",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Double?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule25DKBeaconScanConfigurationC8durationSdSgvg",
+                "mangledName": "$s35DriveKitRegionMonitoringUtilsModule25DKBeaconScanConfigurationC8durationSdSgvg",
+                "moduleName": "DriveKitRegionMonitoringUtilsModule",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "beaconConfiguration",
+            "printedName": "beaconConfiguration",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DKBeaconConfiguration",
+                "printedName": "DriveKitRegionMonitoringUtilsModule.DKBeaconConfiguration",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule21DKBeaconConfigurationC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:35DriveKitRegionMonitoringUtilsModule25DKBeaconScanConfigurationC06beaconI0AA0gI0Cvp",
+            "mangledName": "$s35DriveKitRegionMonitoringUtilsModule25DKBeaconScanConfigurationC06beaconI0AA0gI0Cvp",
+            "moduleName": "DriveKitRegionMonitoringUtilsModule",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKBeaconConfiguration",
+                    "printedName": "DriveKitRegionMonitoringUtilsModule.DKBeaconConfiguration",
+                    "usr": "s:35DriveKitRegionMonitoringUtilsModule21DKBeaconConfigurationC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule25DKBeaconScanConfigurationC06beaconI0AA0gI0Cvg",
+                "mangledName": "$s35DriveKitRegionMonitoringUtilsModule25DKBeaconScanConfigurationC06beaconI0AA0gI0Cvg",
+                "moduleName": "DriveKitRegionMonitoringUtilsModule",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any DriveKitRegionMonitoringUtilsModule.DKBeaconScanResultsDelegate)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:35DriveKitRegionMonitoringUtilsModule25DKBeaconScanConfigurationC8delegateAA0gH15ResultsDelegate_pSgvp",
+            "mangledName": "$s35DriveKitRegionMonitoringUtilsModule25DKBeaconScanConfigurationC8delegateAA0gH15ResultsDelegate_pSgvp",
+            "moduleName": "DriveKitRegionMonitoringUtilsModule",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any DriveKitRegionMonitoringUtilsModule.DKBeaconScanResultsDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKBeaconScanResultsDelegate",
+                        "printedName": "any DriveKitRegionMonitoringUtilsModule.DKBeaconScanResultsDelegate",
+                        "usr": "s:35DriveKitRegionMonitoringUtilsModule27DKBeaconScanResultsDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule25DKBeaconScanConfigurationC8delegateAA0gH15ResultsDelegate_pSgvg",
+                "mangledName": "$s35DriveKitRegionMonitoringUtilsModule25DKBeaconScanConfigurationC8delegateAA0gH15ResultsDelegate_pSgvg",
+                "moduleName": "DriveKitRegionMonitoringUtilsModule",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any DriveKitRegionMonitoringUtilsModule.DKBeaconScanResultsDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKBeaconScanResultsDelegate",
+                        "printedName": "any DriveKitRegionMonitoringUtilsModule.DKBeaconScanResultsDelegate",
+                        "usr": "s:35DriveKitRegionMonitoringUtilsModule27DKBeaconScanResultsDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule25DKBeaconScanConfigurationC8delegateAA0gH15ResultsDelegate_pSgvs",
+                "mangledName": "$s35DriveKitRegionMonitoringUtilsModule25DKBeaconScanConfigurationC8delegateAA0gH15ResultsDelegate_pSgvs",
+                "moduleName": "DriveKitRegionMonitoringUtilsModule",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule25DKBeaconScanConfigurationC8delegateAA0gH15ResultsDelegate_pSgvM",
+                "mangledName": "$s35DriveKitRegionMonitoringUtilsModule25DKBeaconScanConfigurationC8delegateAA0gH15ResultsDelegate_pSgvM",
+                "moduleName": "DriveKitRegionMonitoringUtilsModule",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(scanMode:beaconConfiguration:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DKBeaconScanConfiguration",
+                "printedName": "DriveKitRegionMonitoringUtilsModule.DKBeaconScanConfiguration",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule25DKBeaconScanConfigurationC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DKScanMode",
+                "printedName": "DriveKitRegionMonitoringUtilsModule.DKScanMode",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule10DKScanModeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DKBeaconConfiguration",
+                "printedName": "DriveKitRegionMonitoringUtilsModule.DKBeaconConfiguration",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule21DKBeaconConfigurationC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DKBeaconScanResultsDelegate",
+                "printedName": "any DriveKitRegionMonitoringUtilsModule.DKBeaconScanResultsDelegate",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule27DKBeaconScanResultsDelegateP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:35DriveKitRegionMonitoringUtilsModule25DKBeaconScanConfigurationC8scanMode06beaconI08delegateAcA06DKScanK0O_AA0gI0CAA0gH15ResultsDelegate_ptcfc",
+            "mangledName": "$s35DriveKitRegionMonitoringUtilsModule25DKBeaconScanConfigurationC8scanMode06beaconI08delegateAcA06DKScanK0O_AA0gI0CAA0gH15ResultsDelegate_ptcfc",
+            "moduleName": "DriveKitRegionMonitoringUtilsModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(scanMode:beaconConfiguration:delegate:duration:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DKBeaconScanConfiguration",
+                "printedName": "DriveKitRegionMonitoringUtilsModule.DKBeaconScanConfiguration",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule25DKBeaconScanConfigurationC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DKScanMode",
+                "printedName": "DriveKitRegionMonitoringUtilsModule.DKScanMode",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule10DKScanModeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DKBeaconConfiguration",
+                "printedName": "DriveKitRegionMonitoringUtilsModule.DKBeaconConfiguration",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule21DKBeaconConfigurationC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DKBeaconScanResultsDelegate",
+                "printedName": "any DriveKitRegionMonitoringUtilsModule.DKBeaconScanResultsDelegate",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule27DKBeaconScanResultsDelegateP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:35DriveKitRegionMonitoringUtilsModule25DKBeaconScanConfigurationC8scanMode06beaconI08delegate8durationAcA06DKScanK0O_AA0gI0CAA0gH15ResultsDelegate_pSdtcfc",
+            "mangledName": "$s35DriveKitRegionMonitoringUtilsModule25DKBeaconScanConfigurationC8scanMode06beaconI08delegate8durationAcA06DKScanK0O_AA0gI0CAA0gH15ResultsDelegate_pSdtcfc",
+            "moduleName": "DriveKitRegionMonitoringUtilsModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:35DriveKitRegionMonitoringUtilsModule25DKBeaconScanConfigurationC",
+        "mangledName": "$s35DriveKitRegionMonitoringUtilsModule25DKBeaconScanConfigurationC",
+        "moduleName": "DriveKitRegionMonitoringUtilsModule",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DKScanMode",
+        "printedName": "DKScanMode",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "monitoring",
+            "printedName": "monitoring",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitRegionMonitoringUtilsModule.DKScanMode.Type) -> DriveKitRegionMonitoringUtilsModule.DKScanMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKScanMode",
+                    "printedName": "DriveKitRegionMonitoringUtilsModule.DKScanMode",
+                    "usr": "s:35DriveKitRegionMonitoringUtilsModule10DKScanModeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DriveKitRegionMonitoringUtilsModule.DKScanMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKScanMode",
+                        "printedName": "DriveKitRegionMonitoringUtilsModule.DKScanMode",
+                        "usr": "s:35DriveKitRegionMonitoringUtilsModule10DKScanModeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:35DriveKitRegionMonitoringUtilsModule10DKScanModeO10monitoringyA2CmF",
+            "mangledName": "$s35DriveKitRegionMonitoringUtilsModule10DKScanModeO10monitoringyA2CmF",
+            "moduleName": "DriveKitRegionMonitoringUtilsModule"
+          },
+          {
+            "kind": "Var",
+            "name": "ranging",
+            "printedName": "ranging",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitRegionMonitoringUtilsModule.DKScanMode.Type) -> DriveKitRegionMonitoringUtilsModule.DKScanMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKScanMode",
+                    "printedName": "DriveKitRegionMonitoringUtilsModule.DKScanMode",
+                    "usr": "s:35DriveKitRegionMonitoringUtilsModule10DKScanModeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DriveKitRegionMonitoringUtilsModule.DKScanMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKScanMode",
+                        "printedName": "DriveKitRegionMonitoringUtilsModule.DKScanMode",
+                        "usr": "s:35DriveKitRegionMonitoringUtilsModule10DKScanModeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:35DriveKitRegionMonitoringUtilsModule10DKScanModeO7rangingyA2CmF",
+            "mangledName": "$s35DriveKitRegionMonitoringUtilsModule10DKScanModeO7rangingyA2CmF",
+            "moduleName": "DriveKitRegionMonitoringUtilsModule"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DKScanMode",
+                "printedName": "DriveKitRegionMonitoringUtilsModule.DKScanMode",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule10DKScanModeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DKScanMode",
+                "printedName": "DriveKitRegionMonitoringUtilsModule.DKScanMode",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule10DKScanModeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:35DriveKitRegionMonitoringUtilsModule10DKScanModeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s35DriveKitRegionMonitoringUtilsModule10DKScanModeO2eeoiySbAC_ACtFZ",
+            "moduleName": "DriveKitRegionMonitoringUtilsModule",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:35DriveKitRegionMonitoringUtilsModule10DKScanModeO9hashValueSivp",
+            "mangledName": "$s35DriveKitRegionMonitoringUtilsModule10DKScanModeO9hashValueSivp",
+            "moduleName": "DriveKitRegionMonitoringUtilsModule",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule10DKScanModeO9hashValueSivg",
+                "mangledName": "$s35DriveKitRegionMonitoringUtilsModule10DKScanModeO9hashValueSivg",
+                "moduleName": "DriveKitRegionMonitoringUtilsModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:35DriveKitRegionMonitoringUtilsModule10DKScanModeO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s35DriveKitRegionMonitoringUtilsModule10DKScanModeO4hash4intoys6HasherVz_tF",
+            "moduleName": "DriveKitRegionMonitoringUtilsModule",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:35DriveKitRegionMonitoringUtilsModule10DKScanModeO",
+        "mangledName": "$s35DriveKitRegionMonitoringUtilsModule10DKScanModeO",
+        "moduleName": "DriveKitRegionMonitoringUtilsModule",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DKBeaconConfiguration",
+        "printedName": "DKBeaconConfiguration",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "uuid",
+            "printedName": "uuid",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:35DriveKitRegionMonitoringUtilsModule21DKBeaconConfigurationC4uuidSSvp",
+            "mangledName": "$s35DriveKitRegionMonitoringUtilsModule21DKBeaconConfigurationC4uuidSSvp",
+            "moduleName": "DriveKitRegionMonitoringUtilsModule",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule21DKBeaconConfigurationC4uuidSSvg",
+                "mangledName": "$s35DriveKitRegionMonitoringUtilsModule21DKBeaconConfigurationC4uuidSSvg",
+                "moduleName": "DriveKitRegionMonitoringUtilsModule",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "major",
+            "printedName": "major",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:35DriveKitRegionMonitoringUtilsModule21DKBeaconConfigurationC5majorSiSgvp",
+            "mangledName": "$s35DriveKitRegionMonitoringUtilsModule21DKBeaconConfigurationC5majorSiSgvp",
+            "moduleName": "DriveKitRegionMonitoringUtilsModule",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule21DKBeaconConfigurationC5majorSiSgvg",
+                "mangledName": "$s35DriveKitRegionMonitoringUtilsModule21DKBeaconConfigurationC5majorSiSgvg",
+                "moduleName": "DriveKitRegionMonitoringUtilsModule",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "minor",
+            "printedName": "minor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:35DriveKitRegionMonitoringUtilsModule21DKBeaconConfigurationC5minorSiSgvp",
+            "mangledName": "$s35DriveKitRegionMonitoringUtilsModule21DKBeaconConfigurationC5minorSiSgvp",
+            "moduleName": "DriveKitRegionMonitoringUtilsModule",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule21DKBeaconConfigurationC5minorSiSgvg",
+                "mangledName": "$s35DriveKitRegionMonitoringUtilsModule21DKBeaconConfigurationC5minorSiSgvg",
+                "moduleName": "DriveKitRegionMonitoringUtilsModule",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "uuidOnly",
+            "printedName": "uuidOnly",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:35DriveKitRegionMonitoringUtilsModule21DKBeaconConfigurationC8uuidOnlySbvp",
+            "mangledName": "$s35DriveKitRegionMonitoringUtilsModule21DKBeaconConfigurationC8uuidOnlySbvp",
+            "moduleName": "DriveKitRegionMonitoringUtilsModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule21DKBeaconConfigurationC8uuidOnlySbvg",
+                "mangledName": "$s35DriveKitRegionMonitoringUtilsModule21DKBeaconConfigurationC8uuidOnlySbvg",
+                "moduleName": "DriveKitRegionMonitoringUtilsModule",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(uuid:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DKBeaconConfiguration",
+                "printedName": "DriveKitRegionMonitoringUtilsModule.DKBeaconConfiguration",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule21DKBeaconConfigurationC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:35DriveKitRegionMonitoringUtilsModule21DKBeaconConfigurationC4uuidACSS_tcfc",
+            "mangledName": "$s35DriveKitRegionMonitoringUtilsModule21DKBeaconConfigurationC4uuidACSS_tcfc",
+            "moduleName": "DriveKitRegionMonitoringUtilsModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(uuid:major:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DKBeaconConfiguration",
+                "printedName": "DriveKitRegionMonitoringUtilsModule.DKBeaconConfiguration",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule21DKBeaconConfigurationC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:35DriveKitRegionMonitoringUtilsModule21DKBeaconConfigurationC4uuid5majorACSS_Sitcfc",
+            "mangledName": "$s35DriveKitRegionMonitoringUtilsModule21DKBeaconConfigurationC4uuid5majorACSS_Sitcfc",
+            "moduleName": "DriveKitRegionMonitoringUtilsModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(uuid:major:minor:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DKBeaconConfiguration",
+                "printedName": "DriveKitRegionMonitoringUtilsModule.DKBeaconConfiguration",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule21DKBeaconConfigurationC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:35DriveKitRegionMonitoringUtilsModule21DKBeaconConfigurationC4uuid5major5minorACSS_S2itcfc",
+            "mangledName": "$s35DriveKitRegionMonitoringUtilsModule21DKBeaconConfigurationC4uuid5major5minorACSS_S2itcfc",
+            "moduleName": "DriveKitRegionMonitoringUtilsModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:35DriveKitRegionMonitoringUtilsModule21DKBeaconConfigurationC",
+        "mangledName": "$s35DriveKitRegionMonitoringUtilsModule21DKBeaconConfigurationC",
+        "moduleName": "DriveKitRegionMonitoringUtilsModule",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DKBeaconScanResultsDelegate",
+        "printedName": "DKBeaconScanResultsDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "beaconDetected",
+            "printedName": "beaconDetected(beaconScanResults:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DKBeaconScanResults",
+                "printedName": "DriveKitRegionMonitoringUtilsModule.DKBeaconScanResults",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule19DKBeaconScanResultsC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:35DriveKitRegionMonitoringUtilsModule27DKBeaconScanResultsDelegateP14beaconDetected0khI0yAA0ghI0C_tF",
+            "mangledName": "$s35DriveKitRegionMonitoringUtilsModule27DKBeaconScanResultsDelegateP14beaconDetected0khI0yAA0ghI0C_tF",
+            "moduleName": "DriveKitRegionMonitoringUtilsModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : DriveKitRegionMonitoringUtilsModule.DKBeaconScanResultsDelegate>",
+            "sugared_genericSig": "<Self where Self : DriveKitRegionMonitoringUtilsModule.DKBeaconScanResultsDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:35DriveKitRegionMonitoringUtilsModule27DKBeaconScanResultsDelegateP",
+        "mangledName": "$s35DriveKitRegionMonitoringUtilsModule27DKBeaconScanResultsDelegateP",
+        "moduleName": "DriveKitRegionMonitoringUtilsModule",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DKBeaconScanResults",
+        "printedName": "DKBeaconScanResults",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "uuid",
+            "printedName": "uuid",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:35DriveKitRegionMonitoringUtilsModule19DKBeaconScanResultsC4uuidSSvp",
+            "mangledName": "$s35DriveKitRegionMonitoringUtilsModule19DKBeaconScanResultsC4uuidSSvp",
+            "moduleName": "DriveKitRegionMonitoringUtilsModule",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule19DKBeaconScanResultsC4uuidSSvg",
+                "mangledName": "$s35DriveKitRegionMonitoringUtilsModule19DKBeaconScanResultsC4uuidSSvg",
+                "moduleName": "DriveKitRegionMonitoringUtilsModule",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "major",
+            "printedName": "major",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:35DriveKitRegionMonitoringUtilsModule19DKBeaconScanResultsC5majorSiSgvp",
+            "mangledName": "$s35DriveKitRegionMonitoringUtilsModule19DKBeaconScanResultsC5majorSiSgvp",
+            "moduleName": "DriveKitRegionMonitoringUtilsModule",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule19DKBeaconScanResultsC5majorSiSgvg",
+                "mangledName": "$s35DriveKitRegionMonitoringUtilsModule19DKBeaconScanResultsC5majorSiSgvg",
+                "moduleName": "DriveKitRegionMonitoringUtilsModule",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "minor",
+            "printedName": "minor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:35DriveKitRegionMonitoringUtilsModule19DKBeaconScanResultsC5minorSiSgvp",
+            "mangledName": "$s35DriveKitRegionMonitoringUtilsModule19DKBeaconScanResultsC5minorSiSgvp",
+            "moduleName": "DriveKitRegionMonitoringUtilsModule",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule19DKBeaconScanResultsC5minorSiSgvg",
+                "mangledName": "$s35DriveKitRegionMonitoringUtilsModule19DKBeaconScanResultsC5minorSiSgvg",
+                "moduleName": "DriveKitRegionMonitoringUtilsModule",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "rssi",
+            "printedName": "rssi",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:35DriveKitRegionMonitoringUtilsModule19DKBeaconScanResultsC4rssiSiSgvp",
+            "mangledName": "$s35DriveKitRegionMonitoringUtilsModule19DKBeaconScanResultsC4rssiSiSgvp",
+            "moduleName": "DriveKitRegionMonitoringUtilsModule",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule19DKBeaconScanResultsC4rssiSiSgvg",
+                "mangledName": "$s35DriveKitRegionMonitoringUtilsModule19DKBeaconScanResultsC4rssiSiSgvg",
+                "moduleName": "DriveKitRegionMonitoringUtilsModule",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "detectedAt",
+            "printedName": "detectedAt",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:35DriveKitRegionMonitoringUtilsModule19DKBeaconScanResultsC10detectedAt10Foundation4DateVvp",
+            "mangledName": "$s35DriveKitRegionMonitoringUtilsModule19DKBeaconScanResultsC10detectedAt10Foundation4DateVvp",
+            "moduleName": "DriveKitRegionMonitoringUtilsModule",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule19DKBeaconScanResultsC10detectedAt10Foundation4DateVvg",
+                "mangledName": "$s35DriveKitRegionMonitoringUtilsModule19DKBeaconScanResultsC10detectedAt10Foundation4DateVvg",
+                "moduleName": "DriveKitRegionMonitoringUtilsModule",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "scanMode",
+            "printedName": "scanMode",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DKScanMode",
+                "printedName": "DriveKitRegionMonitoringUtilsModule.DKScanMode",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule10DKScanModeO"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:35DriveKitRegionMonitoringUtilsModule19DKBeaconScanResultsC8scanModeAA06DKScanK0Ovp",
+            "mangledName": "$s35DriveKitRegionMonitoringUtilsModule19DKBeaconScanResultsC8scanModeAA06DKScanK0Ovp",
+            "moduleName": "DriveKitRegionMonitoringUtilsModule",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKScanMode",
+                    "printedName": "DriveKitRegionMonitoringUtilsModule.DKScanMode",
+                    "usr": "s:35DriveKitRegionMonitoringUtilsModule10DKScanModeO"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule19DKBeaconScanResultsC8scanModeAA06DKScanK0Ovg",
+                "mangledName": "$s35DriveKitRegionMonitoringUtilsModule19DKBeaconScanResultsC8scanModeAA06DKScanK0Ovg",
+                "moduleName": "DriveKitRegionMonitoringUtilsModule",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(beacon:scanMode:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DKBeaconScanResults",
+                "printedName": "DriveKitRegionMonitoringUtilsModule.DKBeaconScanResults",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule19DKBeaconScanResultsC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CLBeacon",
+                "printedName": "CoreLocation.CLBeacon",
+                "usr": "c:objc(cs)CLBeacon"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DKScanMode",
+                "printedName": "DriveKitRegionMonitoringUtilsModule.DKScanMode",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule10DKScanModeO"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:35DriveKitRegionMonitoringUtilsModule19DKBeaconScanResultsC6beacon8scanModeACSo8CLBeaconC_AA06DKScanL0Otcfc",
+            "mangledName": "$s35DriveKitRegionMonitoringUtilsModule19DKBeaconScanResultsC6beacon8scanModeACSo8CLBeaconC_AA06DKScanL0Otcfc",
+            "moduleName": "DriveKitRegionMonitoringUtilsModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(uuid:major:minor:detectedAt:scanMode:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DKBeaconScanResults",
+                "printedName": "DriveKitRegionMonitoringUtilsModule.DKBeaconScanResults",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule19DKBeaconScanResultsC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Int?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DKScanMode",
+                "printedName": "DriveKitRegionMonitoringUtilsModule.DKScanMode",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule10DKScanModeO"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:35DriveKitRegionMonitoringUtilsModule19DKBeaconScanResultsC4uuid5major5minor10detectedAt8scanModeACSS_SiSgAI10Foundation4DateVAA06DKScanP0Otcfc",
+            "mangledName": "$s35DriveKitRegionMonitoringUtilsModule19DKBeaconScanResultsC4uuid5major5minor10detectedAt8scanModeACSS_SiSgAI10Foundation4DateVAA06DKScanP0Otcfc",
+            "moduleName": "DriveKitRegionMonitoringUtilsModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(uuid:detectedAt:scanMode:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DKBeaconScanResults",
+                "printedName": "DriveKitRegionMonitoringUtilsModule.DKBeaconScanResults",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule19DKBeaconScanResultsC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DKScanMode",
+                "printedName": "DriveKitRegionMonitoringUtilsModule.DKScanMode",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule10DKScanModeO"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:35DriveKitRegionMonitoringUtilsModule19DKBeaconScanResultsC4uuid10detectedAt8scanModeACSS_10Foundation4DateVAA06DKScanN0Otcfc",
+            "mangledName": "$s35DriveKitRegionMonitoringUtilsModule19DKBeaconScanResultsC4uuid10detectedAt8scanModeACSS_10Foundation4DateVAA06DKScanN0Otcfc",
+            "moduleName": "DriveKitRegionMonitoringUtilsModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:35DriveKitRegionMonitoringUtilsModule19DKBeaconScanResultsC",
+        "mangledName": "$s35DriveKitRegionMonitoringUtilsModule19DKBeaconScanResultsC",
+        "moduleName": "DriveKitRegionMonitoringUtilsModule",
+        "declAttributes": [
+          "Final",
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "DriveKitCoreModule",
+        "printedName": "DriveKitCoreModule",
+        "declKind": "Import",
+        "moduleName": "DriveKitRegionMonitoringUtilsModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "DriveKitRegionMonitoringUtilsModule"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DriveKitRegionMonitoringUtilsModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "DriveKitRegionMonitoringUtilsModule"
+      },
+      {
+        "kind": "Import",
+        "name": "DriveKitCoreModule",
+        "printedName": "DriveKitCoreModule",
+        "declKind": "Import",
+        "moduleName": "DriveKitRegionMonitoringUtilsModule"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DriveKitRegionMonitoringUtilsModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "DriveKitCoreModule",
+        "printedName": "DriveKitCoreModule",
+        "declKind": "Import",
+        "moduleName": "DriveKitRegionMonitoringUtilsModule"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DKRegionMonitoringManager",
+        "printedName": "DKRegionMonitoringManager",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DKRegionMonitoringManager",
+                "printedName": "DriveKitRegionMonitoringUtilsModule.DKRegionMonitoringManager",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule08DKRegionD7ManagerC"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:35DriveKitRegionMonitoringUtilsModule08DKRegionD7ManagerC6sharedACvpZ",
+            "mangledName": "$s35DriveKitRegionMonitoringUtilsModule08DKRegionD7ManagerC6sharedACvpZ",
+            "moduleName": "DriveKitRegionMonitoringUtilsModule",
+            "static": true,
+            "declAttributes": [
+              "Final",
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKRegionMonitoringManager",
+                    "printedName": "DriveKitRegionMonitoringUtilsModule.DKRegionMonitoringManager",
+                    "usr": "s:35DriveKitRegionMonitoringUtilsModule08DKRegionD7ManagerC"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule08DKRegionD7ManagerC6sharedACvgZ",
+                "mangledName": "$s35DriveKitRegionMonitoringUtilsModule08DKRegionD7ManagerC6sharedACvgZ",
+                "moduleName": "DriveKitRegionMonitoringUtilsModule",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "registerDelegate",
+            "printedName": "registerDelegate(identifier:beaconScanConfiguration:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DKBeaconScanConfiguration",
+                "printedName": "DriveKitRegionMonitoringUtilsModule.DKBeaconScanConfiguration",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule25DKBeaconScanConfigurationC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:35DriveKitRegionMonitoringUtilsModule08DKRegionD7ManagerC16registerDelegate10identifier23beaconScanConfigurationySS_AA08DKBeaconmN0CtYaF",
+            "mangledName": "$s35DriveKitRegionMonitoringUtilsModule08DKRegionD7ManagerC16registerDelegate10identifier23beaconScanConfigurationySS_AA08DKBeaconmN0CtYaF",
+            "moduleName": "DriveKitRegionMonitoringUtilsModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "unregisterDelegate",
+            "printedName": "unregisterDelegate(identifier:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:35DriveKitRegionMonitoringUtilsModule08DKRegionD7ManagerC18unregisterDelegate10identifierySS_tYaF",
+            "mangledName": "$s35DriveKitRegionMonitoringUtilsModule08DKRegionD7ManagerC18unregisterDelegate10identifierySS_tYaF",
+            "moduleName": "DriveKitRegionMonitoringUtilsModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "reset",
+            "printedName": "reset()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:35DriveKitRegionMonitoringUtilsModule08DKRegionD7ManagerC5resetyyF",
+            "mangledName": "$s35DriveKitRegionMonitoringUtilsModule08DKRegionD7ManagerC5resetyyF",
+            "moduleName": "DriveKitRegionMonitoringUtilsModule",
+            "declAttributes": [
+              "AccessControl",
+              "Nonisolated"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "unownedExecutor",
+            "printedName": "unownedExecutor",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "UnownedSerialExecutor",
+                "printedName": "_Concurrency.UnownedSerialExecutor",
+                "usr": "s:Sce"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:35DriveKitRegionMonitoringUtilsModule08DKRegionD7ManagerC15unownedExecutorScevp",
+            "mangledName": "$s35DriveKitRegionMonitoringUtilsModule08DKRegionD7ManagerC15unownedExecutorScevp",
+            "moduleName": "DriveKitRegionMonitoringUtilsModule",
+            "implicit": true,
+            "intro_Macosx": "10.15",
+            "intro_iOS": "17.0",
+            "intro_tvOS": "13.0",
+            "intro_watchOS": "6.0",
+            "declAttributes": [
+              "Available",
+              "Available",
+              "Available",
+              "Available",
+              "Final",
+              "Nonisolated",
+              "Semantics"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "UnownedSerialExecutor",
+                    "printedName": "_Concurrency.UnownedSerialExecutor",
+                    "usr": "s:Sce"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule08DKRegionD7ManagerC15unownedExecutorScevg",
+                "mangledName": "$s35DriveKitRegionMonitoringUtilsModule08DKRegionD7ManagerC15unownedExecutorScevg",
+                "moduleName": "DriveKitRegionMonitoringUtilsModule",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:35DriveKitRegionMonitoringUtilsModule08DKRegionD7ManagerC",
+        "mangledName": "$s35DriveKitRegionMonitoringUtilsModule08DKRegionD7ManagerC",
+        "moduleName": "DriveKitRegionMonitoringUtilsModule",
+        "intro_iOS": "17.0",
+        "declAttributes": [
+          "AccessControl",
+          "Available"
+        ],
+        "hasMissingDesignatedInitializers": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Actor",
+            "printedName": "Actor",
+            "usr": "s:ScA",
+            "mangledName": "$sScA"
+          },
+          {
+            "kind": "Conformance",
+            "name": "DKRegionMonitoringModule",
+            "printedName": "DKRegionMonitoringModule",
+            "usr": "s:18DriveKitCoreModule018DKRegionMonitoringD0P",
+            "mangledName": "$s18DriveKitCoreModule018DKRegionMonitoringD0P"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DriveKitRegionMonitoringUtilsModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "DriveKitRegionMonitoringUtilsModule"
+      },
+      {
+        "kind": "Import",
+        "name": "DriveKitCoreModule",
+        "printedName": "DriveKitCoreModule",
+        "declKind": "Import",
+        "moduleName": "DriveKitRegionMonitoringUtilsModule"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "RegionMonitoringUtilsConstant",
+        "printedName": "RegionMonitoringUtilsConstant",
+        "declKind": "Enum",
+        "usr": "s:35DriveKitRegionMonitoringUtilsModule0cdE8ConstantO",
+        "mangledName": "$s35DriveKitRegionMonitoringUtilsModule0cdE8ConstantO",
+        "moduleName": "DriveKitRegionMonitoringUtilsModule",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-region-monitoring-utils\/MonitoringService.swift",
+      "kind": "Array",
+      "offset": 504,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-region-monitoring-utils\/MonitoringService.swift",
+      "kind": "Array",
+      "offset": 550,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-region-monitoring-utils\/MonitoringService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 594,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-region-monitoring-utils\/MonitoringService.swift",
+      "kind": "Array",
+      "offset": 644,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-region-monitoring-utils\/MonitoringService.swift",
+      "kind": "BooleanLiteral",
+      "offset": 686,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-region-monitoring-utils\/DKRegionMonitoringManager.swift",
+      "kind": "IntegerLiteral",
+      "offset": 422,
+      "length": 2,
+      "value": "20"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-region-monitoring-utils\/DKRegionMonitoringManager.swift",
+      "kind": "Dictionary",
+      "offset": 685,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-region-monitoring-utils\/DKRegionMonitoringManager.swift",
+      "kind": "Dictionary",
+      "offset": 751,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-region-monitoring-utils\/RangingService.swift",
+      "kind": "Array",
+      "offset": 384,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-region-monitoring-utils\/RegionMonitoringUtilsConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 237,
+      "length": 25,
+      "value": "\"Region Monitoring Utils\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-region-monitoring-utils\/RegionMonitoringUtilsConstant.swift",
+      "kind": "StringLiteral",
+      "offset": 304,
+      "length": 17,
+      "value": "\"DKBeaconMonitor\""
+    }
+  ]
+}

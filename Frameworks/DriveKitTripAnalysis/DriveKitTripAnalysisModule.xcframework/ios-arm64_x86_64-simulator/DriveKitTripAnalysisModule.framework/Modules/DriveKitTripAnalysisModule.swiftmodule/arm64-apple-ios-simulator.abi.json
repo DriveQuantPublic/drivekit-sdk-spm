@@ -2666,6 +2666,13 @@
       },
       {
         "kind": "Import",
+        "name": "DriveKitRegionMonitoringUtilsModule",
+        "printedName": "DriveKitRegionMonitoringUtilsModule",
+        "declKind": "Import",
+        "moduleName": "DriveKitTripAnalysisModule"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -3487,6 +3494,13 @@
         "kind": "Import",
         "name": "DriveKitNetworkingModule",
         "printedName": "DriveKitNetworkingModule",
+        "declKind": "Import",
+        "moduleName": "DriveKitTripAnalysisModule"
+      },
+      {
+        "kind": "Import",
+        "name": "DriveKitRegionMonitoringUtilsModule",
+        "printedName": "DriveKitRegionMonitoringUtilsModule",
         "declKind": "Import",
         "moduleName": "DriveKitTripAnalysisModule"
       },
@@ -14408,6 +14422,13 @@
       },
       {
         "kind": "Import",
+        "name": "DriveKitLocationUtilsModule",
+        "printedName": "DriveKitLocationUtilsModule",
+        "declKind": "Import",
+        "moduleName": "DriveKitTripAnalysisModule"
+      },
+      {
+        "kind": "Import",
         "name": "CoreLocation",
         "printedName": "CoreLocation",
         "declKind": "Import",
@@ -14417,6 +14438,13 @@
         "kind": "Import",
         "name": "CoreMotion",
         "printedName": "CoreMotion",
+        "declKind": "Import",
+        "moduleName": "DriveKitTripAnalysisModule"
+      },
+      {
+        "kind": "Import",
+        "name": "DriveKitRegionMonitoringUtilsModule",
+        "printedName": "DriveKitRegionMonitoringUtilsModule",
         "declKind": "Import",
         "moduleName": "DriveKitTripAnalysisModule"
       },
@@ -22157,6 +22185,13 @@
       },
       {
         "kind": "Import",
+        "name": "DriveKitLocationUtilsModule",
+        "printedName": "DriveKitLocationUtilsModule",
+        "declKind": "Import",
+        "moduleName": "DriveKitTripAnalysisModule"
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -25794,147 +25829,6 @@
       },
       {
         "kind": "Import",
-        "name": "CoreLocation",
-        "printedName": "CoreLocation",
-        "declKind": "Import",
-        "moduleName": "DriveKitTripAnalysisModule"
-      },
-      {
-        "kind": "Import",
-        "name": "DriveKitCoreModule",
-        "printedName": "DriveKitCoreModule",
-        "declKind": "Import",
-        "moduleName": "DriveKitTripAnalysisModule"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "TripSimulator",
-        "printedName": "TripSimulator",
-        "children": [
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "TripSimulator",
-                "printedName": "DriveKitTripAnalysisModule.TripSimulator",
-                "usr": "s:26DriveKitTripAnalysisModule0C9SimulatorC"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:26DriveKitTripAnalysisModule0C9SimulatorCACycfc",
-            "mangledName": "$s26DriveKitTripAnalysisModule0C9SimulatorCACycfc",
-            "moduleName": "DriveKitTripAnalysisModule",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "start",
-            "printedName": "start()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:26DriveKitTripAnalysisModule0C9SimulatorC5startyyF",
-            "mangledName": "$s26DriveKitTripAnalysisModule0C9SimulatorC5startyyF",
-            "moduleName": "DriveKitTripAnalysisModule",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "sendLocation",
-            "printedName": "sendLocation(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CLLocation",
-                "printedName": "_LocationEssentials.CLLocation",
-                "usr": "c:objc(cs)CLLocation"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:26DriveKitTripAnalysisModule0C9SimulatorC12sendLocationyySo10CLLocationCF",
-            "mangledName": "$s26DriveKitTripAnalysisModule0C9SimulatorC12sendLocationyySo10CLLocationCF",
-            "moduleName": "DriveKitTripAnalysisModule",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "stop",
-            "printedName": "stop()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:26DriveKitTripAnalysisModule0C9SimulatorC4stopyyF",
-            "mangledName": "$s26DriveKitTripAnalysisModule0C9SimulatorC4stopyyF",
-            "moduleName": "DriveKitTripAnalysisModule",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "s:26DriveKitTripAnalysisModule0C9SimulatorC",
-        "mangledName": "$s26DriveKitTripAnalysisModule0C9SimulatorC",
-        "moduleName": "DriveKitTripAnalysisModule",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "DriveKitTripAnalysisModule",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "DriveKitCoreModule",
         "printedName": "DriveKitCoreModule",
         "declKind": "Import",
@@ -26245,6 +26139,13 @@
         "kind": "Import",
         "name": "DriveKitCoreModule",
         "printedName": "DriveKitCoreModule",
+        "declKind": "Import",
+        "moduleName": "DriveKitTripAnalysisModule"
+      },
+      {
+        "kind": "Import",
+        "name": "DriveKitLocationUtilsModule",
+        "printedName": "DriveKitLocationUtilsModule",
         "declKind": "Import",
         "moduleName": "DriveKitTripAnalysisModule"
       },
@@ -26650,56 +26551,56 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/recorder\/StartingState.swift",
       "kind": "IntegerLiteral",
-      "offset": 351,
+      "offset": 394,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/recorder\/StartingState.swift",
       "kind": "IntegerLiteral",
-      "offset": 391,
+      "offset": 434,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/recorder\/StartingState.swift",
       "kind": "FloatLiteral",
-      "offset": 429,
+      "offset": 472,
       "length": 4,
       "value": "15.0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/recorder\/StartingState.swift",
       "kind": "IntegerLiteral",
-      "offset": 468,
+      "offset": 511,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/recorder\/StartingState.swift",
       "kind": "BooleanLiteral",
-      "offset": 531,
+      "offset": 574,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/recorder\/StartingState.swift",
       "kind": "BooleanLiteral",
-      "offset": 569,
+      "offset": 612,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/recorder\/StartingState.swift",
       "kind": "IntegerLiteral",
-      "offset": 601,
+      "offset": 644,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/recorder\/StartingState.swift",
       "kind": "Array",
-      "offset": 756,
+      "offset": 799,
       "length": 2,
       "value": "[]"
     },
@@ -26846,21 +26747,21 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/LocationService.swift",
       "kind": "Array",
-      "offset": 518,
+      "offset": 472,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/LocationService.swift",
       "kind": "BooleanLiteral",
-      "offset": 561,
+      "offset": 515,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/LocationService.swift",
       "kind": "StringLiteral",
-      "offset": 667,
+      "offset": 621,
       "length": 60,
       "value": "\"com.drivequant.drivekit-tripAnalysis.locationService.queue\""
     },
@@ -28043,70 +27944,77 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/recorder\/RecorderStateManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 462,
+      "offset": 540,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/recorder\/RecorderStateManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 515,
+      "offset": 593,
       "length": 2,
       "value": "60"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/recorder\/RecorderStateManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 563,
+      "offset": 641,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/recorder\/RecorderStateManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 601,
+      "offset": 679,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/recorder\/RecorderStateManager.swift",
+      "kind": "StringLiteral",
+      "offset": 923,
+      "length": 22,
+      "value": "\"RecorderStateManager\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/recorder\/RecorderStateManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1093,
+      "offset": 1251,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/recorder\/RecorderStateManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1551,
+      "offset": 1709,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/recorder\/RecorderStateManager.swift",
       "kind": "Array",
-      "offset": 1608,
+      "offset": 1766,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/recorder\/RecorderStateManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 1646,
+      "offset": 1804,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/recorder\/RecorderStateManager.swift",
       "kind": "StringLiteral",
-      "offset": 2018,
+      "offset": 2176,
       "length": 40,
       "value": "\"com.drivequant.drivekit.starting.queue\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/recorder\/RecorderStateManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 23361,
+      "offset": 23828,
       "length": 1,
       "value": "0"
     },
@@ -29107,70 +29015,70 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/DriveKitTripAnalysis.swift",
       "kind": "BooleanLiteral",
-      "offset": 3989,
+      "offset": 4024,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/DriveKitTripAnalysis.swift",
       "kind": "FloatLiteral",
-      "offset": 4270,
+      "offset": 4305,
       "length": 4,
       "value": "0.08"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/DriveKitTripAnalysis.swift",
       "kind": "BooleanLiteral",
-      "offset": 4307,
+      "offset": 4342,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/DriveKitTripAnalysis.swift",
       "kind": "BooleanLiteral",
-      "offset": 5465,
+      "offset": 5500,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/DriveKitTripAnalysis.swift",
       "kind": "BooleanLiteral",
-      "offset": 5515,
+      "offset": 5550,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/DriveKitTripAnalysis.swift",
       "kind": "StringLiteral",
-      "offset": 5702,
+      "offset": 5737,
       "length": 25,
       "value": "\"already-using-clmonitor\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/DriveKitTripAnalysis.swift",
       "kind": "StringLiteral",
-      "offset": 5776,
+      "offset": 5811,
       "length": 37,
       "value": "\"already-using-clmonitor-for-beacons\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/DriveKitTripAnalysis.swift",
       "kind": "StringLiteral",
-      "offset": 5865,
+      "offset": 5900,
       "length": 42,
       "value": "\"already-not-using-clmonitor-for-geozones\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/DriveKitTripAnalysis.swift",
       "kind": "StringLiteral",
-      "offset": 5958,
+      "offset": 5993,
       "length": 41,
       "value": "\"already-not-using-clmonitor-for-beacons\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/DriveKitTripAnalysis.swift",
       "kind": "BooleanLiteral",
-      "offset": 23270,
+      "offset": 23816,
       "length": 5,
       "value": "false"
     },
@@ -29456,8 +29364,15 @@
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/autostart\/AutoModeManager.swift",
+      "kind": "StringLiteral",
+      "offset": 382,
+      "length": 17,
+      "value": "\"AutoModeManager\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/autostart\/AutoModeManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 392,
+      "offset": 438,
       "length": 5,
       "value": "false"
     },

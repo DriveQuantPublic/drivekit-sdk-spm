@@ -1,0 +1,73 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature StrictConcurrency -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name DriveKitRegionMonitoringUtilsModule
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+import CoreLocation
+import DriveKitCoreModule
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public class DKBeaconScanConfiguration {
+  final public let scanMode: DriveKitRegionMonitoringUtilsModule.DKScanMode
+  final public let duration: Swift.Double?
+  final public let beaconConfiguration: DriveKitRegionMonitoringUtilsModule.DKBeaconConfiguration
+  weak public var delegate: (any DriveKitRegionMonitoringUtilsModule.DKBeaconScanResultsDelegate)?
+  public init(scanMode: DriveKitRegionMonitoringUtilsModule.DKScanMode, beaconConfiguration: DriveKitRegionMonitoringUtilsModule.DKBeaconConfiguration, delegate: any DriveKitRegionMonitoringUtilsModule.DKBeaconScanResultsDelegate)
+  public init(scanMode: DriveKitRegionMonitoringUtilsModule.DKScanMode, beaconConfiguration: DriveKitRegionMonitoringUtilsModule.DKBeaconConfiguration, delegate: any DriveKitRegionMonitoringUtilsModule.DKBeaconScanResultsDelegate, duration: Swift.Double)
+  @objc deinit
+}
+public enum DKScanMode : Swift.Sendable {
+  case monitoring, ranging
+  public static func == (a: DriveKitRegionMonitoringUtilsModule.DKScanMode, b: DriveKitRegionMonitoringUtilsModule.DKScanMode) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public class DKBeaconConfiguration {
+  final public let uuid: Swift.String
+  final public let major: Swift.Int?
+  final public let minor: Swift.Int?
+  public var uuidOnly: Swift.Bool {
+    get
+  }
+  public init(uuid: Swift.String)
+  public init(uuid: Swift.String, major: Swift.Int)
+  public init(uuid: Swift.String, major: Swift.Int, minor: Swift.Int)
+  @objc deinit
+}
+public protocol DKBeaconScanResultsDelegate : AnyObject {
+  func beaconDetected(beaconScanResults: DriveKitRegionMonitoringUtilsModule.DKBeaconScanResults)
+}
+final public class DKBeaconScanResults : Swift.Sendable {
+  final public let uuid: Swift.String
+  final public let major: Swift.Int?
+  final public let minor: Swift.Int?
+  final public let rssi: Swift.Int?
+  final public let detectedAt: Foundation.Date
+  final public let scanMode: DriveKitRegionMonitoringUtilsModule.DKScanMode
+  public init(beacon: CoreLocation.CLBeacon, scanMode: DriveKitRegionMonitoringUtilsModule.DKScanMode)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init(uuid: Swift.String, major: Swift.Int?, minor: Swift.Int?, detectedAt: Foundation.Date, scanMode: DriveKitRegionMonitoringUtilsModule.DKScanMode)
+  #endif
+  public init(uuid: Swift.String, detectedAt: Foundation.Date, scanMode: DriveKitRegionMonitoringUtilsModule.DKScanMode)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @available(iOS 17.0, *)
+public actor DKRegionMonitoringManager : DriveKitCoreModule.DKRegionMonitoringModule {
+  public static let shared: DriveKitRegionMonitoringUtilsModule.DKRegionMonitoringManager
+  public func registerDelegate(identifier: Swift.String, beaconScanConfiguration: DriveKitRegionMonitoringUtilsModule.DKBeaconScanConfiguration) async
+  public func unregisterDelegate(identifier: Swift.String) async
+  nonisolated public func reset()
+  @objc deinit
+  @available(iOS 17.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
+  @_semantics("defaultActor") nonisolated final public var unownedExecutor: _Concurrency.UnownedSerialExecutor {
+    get
+  }
+}
+public enum RegionMonitoringUtilsConstant {
+}
+extension DriveKitRegionMonitoringUtilsModule.DKScanMode : Swift.Equatable {}
+extension DriveKitRegionMonitoringUtilsModule.DKScanMode : Swift.Hashable {}

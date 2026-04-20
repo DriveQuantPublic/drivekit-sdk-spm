@@ -580,6 +580,7 @@ public struct DKConfigBluetoothDevice : Swift.Codable {
 @_hasMissingDesignatedInitializers public class DKModuleManager {
   public var tripAnalysis: (any DriveKitCoreModule.DKTripAnalysisModule)?
   public var vehicle: (any DriveKitCoreModule.DKVehicleModule)?
+  public var regionMonitoringManager: (any DriveKitCoreModule.DKRegionMonitoringModule)?
   @objc deinit
 }
 public protocol DKTripAnalysisModule {
@@ -599,6 +600,9 @@ public enum DKBluetoothUsage {
 public protocol DKVehicleModule {
   func syncVehicles(_ completionHandler: @escaping (Swift.Bool) -> Swift.Void)
   func getConfig() -> DriveKitCoreModule.DKConfigVehicle
+}
+public protocol DKRegionMonitoringModule {
+  func reset()
 }
 extension UIKit.UIDevice {
   @_Concurrency.MainActor @preconcurrency public var modelIdentifier: Swift.String {

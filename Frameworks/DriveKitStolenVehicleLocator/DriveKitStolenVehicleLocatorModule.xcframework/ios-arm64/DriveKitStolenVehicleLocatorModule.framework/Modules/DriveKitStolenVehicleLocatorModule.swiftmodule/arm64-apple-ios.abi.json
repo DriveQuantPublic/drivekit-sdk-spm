@@ -1,0 +1,2314 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "DriveKitStolenVehicleLocatorModule",
+    "printedName": "DriveKitStolenVehicleLocatorModule",
+    "children": [
+      {
+        "kind": "TypeDecl",
+        "name": "DKRemoveUuidResult",
+        "printedName": "DKRemoveUuidResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "success",
+            "printedName": "success",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitStolenVehicleLocatorModule.DKRemoveUuidResult.Type) -> DriveKitStolenVehicleLocatorModule.DKRemoveUuidResult",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKRemoveUuidResult",
+                    "printedName": "DriveKitStolenVehicleLocatorModule.DKRemoveUuidResult",
+                    "usr": "s:34DriveKitStolenVehicleLocatorModule18DKRemoveUuidResultO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DriveKitStolenVehicleLocatorModule.DKRemoveUuidResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKRemoveUuidResult",
+                        "printedName": "DriveKitStolenVehicleLocatorModule.DKRemoveUuidResult",
+                        "usr": "s:34DriveKitStolenVehicleLocatorModule18DKRemoveUuidResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:34DriveKitStolenVehicleLocatorModule18DKRemoveUuidResultO7successyA2CmF",
+            "mangledName": "$s34DriveKitStolenVehicleLocatorModule18DKRemoveUuidResultO7successyA2CmF",
+            "moduleName": "DriveKitStolenVehicleLocatorModule"
+          },
+          {
+            "kind": "Var",
+            "name": "error",
+            "printedName": "error",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitStolenVehicleLocatorModule.DKRemoveUuidResult.Type) -> (DriveKitStolenVehicleLocatorModule.DKRemoveUuidErrorType) -> DriveKitStolenVehicleLocatorModule.DKRemoveUuidResult",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(DriveKitStolenVehicleLocatorModule.DKRemoveUuidErrorType) -> DriveKitStolenVehicleLocatorModule.DKRemoveUuidResult",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKRemoveUuidResult",
+                        "printedName": "DriveKitStolenVehicleLocatorModule.DKRemoveUuidResult",
+                        "usr": "s:34DriveKitStolenVehicleLocatorModule18DKRemoveUuidResultO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKRemoveUuidErrorType",
+                        "printedName": "DriveKitStolenVehicleLocatorModule.DKRemoveUuidErrorType",
+                        "usr": "s:34DriveKitStolenVehicleLocatorModule21DKRemoveUuidErrorTypeO"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DriveKitStolenVehicleLocatorModule.DKRemoveUuidResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKRemoveUuidResult",
+                        "printedName": "DriveKitStolenVehicleLocatorModule.DKRemoveUuidResult",
+                        "usr": "s:34DriveKitStolenVehicleLocatorModule18DKRemoveUuidResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:34DriveKitStolenVehicleLocatorModule18DKRemoveUuidResultO5erroryAcA0gH9ErrorTypeOcACmF",
+            "mangledName": "$s34DriveKitStolenVehicleLocatorModule18DKRemoveUuidResultO5erroryAcA0gH9ErrorTypeOcACmF",
+            "moduleName": "DriveKitStolenVehicleLocatorModule"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:34DriveKitStolenVehicleLocatorModule18DKRemoveUuidResultO",
+        "mangledName": "$s34DriveKitStolenVehicleLocatorModule18DKRemoveUuidResultO",
+        "moduleName": "DriveKitStolenVehicleLocatorModule",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DKRemoveUuidErrorType",
+        "printedName": "DKRemoveUuidErrorType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "driveKitNotInitialized",
+            "printedName": "driveKitNotInitialized",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitStolenVehicleLocatorModule.DKRemoveUuidErrorType.Type) -> DriveKitStolenVehicleLocatorModule.DKRemoveUuidErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKRemoveUuidErrorType",
+                    "printedName": "DriveKitStolenVehicleLocatorModule.DKRemoveUuidErrorType",
+                    "usr": "s:34DriveKitStolenVehicleLocatorModule21DKRemoveUuidErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DriveKitStolenVehicleLocatorModule.DKRemoveUuidErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKRemoveUuidErrorType",
+                        "printedName": "DriveKitStolenVehicleLocatorModule.DKRemoveUuidErrorType",
+                        "usr": "s:34DriveKitStolenVehicleLocatorModule21DKRemoveUuidErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:34DriveKitStolenVehicleLocatorModule21DKRemoveUuidErrorTypeO05driveB14NotInitializedyA2CmF",
+            "mangledName": "$s34DriveKitStolenVehicleLocatorModule21DKRemoveUuidErrorTypeO05driveB14NotInitializedyA2CmF",
+            "moduleName": "DriveKitStolenVehicleLocatorModule"
+          },
+          {
+            "kind": "Var",
+            "name": "invalidUuidFormat",
+            "printedName": "invalidUuidFormat",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitStolenVehicleLocatorModule.DKRemoveUuidErrorType.Type) -> DriveKitStolenVehicleLocatorModule.DKRemoveUuidErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKRemoveUuidErrorType",
+                    "printedName": "DriveKitStolenVehicleLocatorModule.DKRemoveUuidErrorType",
+                    "usr": "s:34DriveKitStolenVehicleLocatorModule21DKRemoveUuidErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DriveKitStolenVehicleLocatorModule.DKRemoveUuidErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKRemoveUuidErrorType",
+                        "printedName": "DriveKitStolenVehicleLocatorModule.DKRemoveUuidErrorType",
+                        "usr": "s:34DriveKitStolenVehicleLocatorModule21DKRemoveUuidErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:34DriveKitStolenVehicleLocatorModule21DKRemoveUuidErrorTypeO07invalidH6FormatyA2CmF",
+            "mangledName": "$s34DriveKitStolenVehicleLocatorModule21DKRemoveUuidErrorTypeO07invalidH6FormatyA2CmF",
+            "moduleName": "DriveKitStolenVehicleLocatorModule"
+          },
+          {
+            "kind": "Var",
+            "name": "uuidNotFound",
+            "printedName": "uuidNotFound",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitStolenVehicleLocatorModule.DKRemoveUuidErrorType.Type) -> DriveKitStolenVehicleLocatorModule.DKRemoveUuidErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKRemoveUuidErrorType",
+                    "printedName": "DriveKitStolenVehicleLocatorModule.DKRemoveUuidErrorType",
+                    "usr": "s:34DriveKitStolenVehicleLocatorModule21DKRemoveUuidErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DriveKitStolenVehicleLocatorModule.DKRemoveUuidErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKRemoveUuidErrorType",
+                        "printedName": "DriveKitStolenVehicleLocatorModule.DKRemoveUuidErrorType",
+                        "usr": "s:34DriveKitStolenVehicleLocatorModule21DKRemoveUuidErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:34DriveKitStolenVehicleLocatorModule21DKRemoveUuidErrorTypeO12uuidNotFoundyA2CmF",
+            "mangledName": "$s34DriveKitStolenVehicleLocatorModule21DKRemoveUuidErrorTypeO12uuidNotFoundyA2CmF",
+            "moduleName": "DriveKitStolenVehicleLocatorModule"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DKRemoveUuidErrorType",
+                "printedName": "DriveKitStolenVehicleLocatorModule.DKRemoveUuidErrorType",
+                "usr": "s:34DriveKitStolenVehicleLocatorModule21DKRemoveUuidErrorTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DKRemoveUuidErrorType",
+                "printedName": "DriveKitStolenVehicleLocatorModule.DKRemoveUuidErrorType",
+                "usr": "s:34DriveKitStolenVehicleLocatorModule21DKRemoveUuidErrorTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:34DriveKitStolenVehicleLocatorModule21DKRemoveUuidErrorTypeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s34DriveKitStolenVehicleLocatorModule21DKRemoveUuidErrorTypeO2eeoiySbAC_ACtFZ",
+            "moduleName": "DriveKitStolenVehicleLocatorModule",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:34DriveKitStolenVehicleLocatorModule21DKRemoveUuidErrorTypeO9hashValueSivp",
+            "mangledName": "$s34DriveKitStolenVehicleLocatorModule21DKRemoveUuidErrorTypeO9hashValueSivp",
+            "moduleName": "DriveKitStolenVehicleLocatorModule",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:34DriveKitStolenVehicleLocatorModule21DKRemoveUuidErrorTypeO9hashValueSivg",
+                "mangledName": "$s34DriveKitStolenVehicleLocatorModule21DKRemoveUuidErrorTypeO9hashValueSivg",
+                "moduleName": "DriveKitStolenVehicleLocatorModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:34DriveKitStolenVehicleLocatorModule21DKRemoveUuidErrorTypeO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s34DriveKitStolenVehicleLocatorModule21DKRemoveUuidErrorTypeO4hash4intoys6HasherVz_tF",
+            "moduleName": "DriveKitStolenVehicleLocatorModule",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:34DriveKitStolenVehicleLocatorModule21DKRemoveUuidErrorTypeO",
+        "mangledName": "$s34DriveKitStolenVehicleLocatorModule21DKRemoveUuidErrorTypeO",
+        "moduleName": "DriveKitStolenVehicleLocatorModule",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DKStopScanResult",
+        "printedName": "DKStopScanResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "success",
+            "printedName": "success",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitStolenVehicleLocatorModule.DKStopScanResult.Type) -> DriveKitStolenVehicleLocatorModule.DKStopScanResult",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKStopScanResult",
+                    "printedName": "DriveKitStolenVehicleLocatorModule.DKStopScanResult",
+                    "usr": "s:34DriveKitStolenVehicleLocatorModule16DKStopScanResultO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DriveKitStolenVehicleLocatorModule.DKStopScanResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKStopScanResult",
+                        "printedName": "DriveKitStolenVehicleLocatorModule.DKStopScanResult",
+                        "usr": "s:34DriveKitStolenVehicleLocatorModule16DKStopScanResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:34DriveKitStolenVehicleLocatorModule16DKStopScanResultO7successyA2CmF",
+            "mangledName": "$s34DriveKitStolenVehicleLocatorModule16DKStopScanResultO7successyA2CmF",
+            "moduleName": "DriveKitStolenVehicleLocatorModule"
+          },
+          {
+            "kind": "Var",
+            "name": "error",
+            "printedName": "error",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitStolenVehicleLocatorModule.DKStopScanResult.Type) -> (DriveKitStolenVehicleLocatorModule.DKStopScanErrorType) -> DriveKitStolenVehicleLocatorModule.DKStopScanResult",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(DriveKitStolenVehicleLocatorModule.DKStopScanErrorType) -> DriveKitStolenVehicleLocatorModule.DKStopScanResult",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKStopScanResult",
+                        "printedName": "DriveKitStolenVehicleLocatorModule.DKStopScanResult",
+                        "usr": "s:34DriveKitStolenVehicleLocatorModule16DKStopScanResultO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKStopScanErrorType",
+                        "printedName": "DriveKitStolenVehicleLocatorModule.DKStopScanErrorType",
+                        "usr": "s:34DriveKitStolenVehicleLocatorModule19DKStopScanErrorTypeO"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DriveKitStolenVehicleLocatorModule.DKStopScanResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKStopScanResult",
+                        "printedName": "DriveKitStolenVehicleLocatorModule.DKStopScanResult",
+                        "usr": "s:34DriveKitStolenVehicleLocatorModule16DKStopScanResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:34DriveKitStolenVehicleLocatorModule16DKStopScanResultO5erroryAcA0gH9ErrorTypeOcACmF",
+            "mangledName": "$s34DriveKitStolenVehicleLocatorModule16DKStopScanResultO5erroryAcA0gH9ErrorTypeOcACmF",
+            "moduleName": "DriveKitStolenVehicleLocatorModule"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:34DriveKitStolenVehicleLocatorModule16DKStopScanResultO",
+        "mangledName": "$s34DriveKitStolenVehicleLocatorModule16DKStopScanResultO",
+        "moduleName": "DriveKitStolenVehicleLocatorModule",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DKStopScanErrorType",
+        "printedName": "DKStopScanErrorType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "driveKitNotInitialized",
+            "printedName": "driveKitNotInitialized",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitStolenVehicleLocatorModule.DKStopScanErrorType.Type) -> DriveKitStolenVehicleLocatorModule.DKStopScanErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKStopScanErrorType",
+                    "printedName": "DriveKitStolenVehicleLocatorModule.DKStopScanErrorType",
+                    "usr": "s:34DriveKitStolenVehicleLocatorModule19DKStopScanErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DriveKitStolenVehicleLocatorModule.DKStopScanErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKStopScanErrorType",
+                        "printedName": "DriveKitStolenVehicleLocatorModule.DKStopScanErrorType",
+                        "usr": "s:34DriveKitStolenVehicleLocatorModule19DKStopScanErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:34DriveKitStolenVehicleLocatorModule19DKStopScanErrorTypeO05driveB14NotInitializedyA2CmF",
+            "mangledName": "$s34DriveKitStolenVehicleLocatorModule19DKStopScanErrorTypeO05driveB14NotInitializedyA2CmF",
+            "moduleName": "DriveKitStolenVehicleLocatorModule"
+          },
+          {
+            "kind": "Var",
+            "name": "userNotConnected",
+            "printedName": "userNotConnected",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitStolenVehicleLocatorModule.DKStopScanErrorType.Type) -> DriveKitStolenVehicleLocatorModule.DKStopScanErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKStopScanErrorType",
+                    "printedName": "DriveKitStolenVehicleLocatorModule.DKStopScanErrorType",
+                    "usr": "s:34DriveKitStolenVehicleLocatorModule19DKStopScanErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DriveKitStolenVehicleLocatorModule.DKStopScanErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKStopScanErrorType",
+                        "printedName": "DriveKitStolenVehicleLocatorModule.DKStopScanErrorType",
+                        "usr": "s:34DriveKitStolenVehicleLocatorModule19DKStopScanErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:34DriveKitStolenVehicleLocatorModule19DKStopScanErrorTypeO16userNotConnectedyA2CmF",
+            "mangledName": "$s34DriveKitStolenVehicleLocatorModule19DKStopScanErrorTypeO16userNotConnectedyA2CmF",
+            "moduleName": "DriveKitStolenVehicleLocatorModule"
+          },
+          {
+            "kind": "Var",
+            "name": "scanAlreadyStopped",
+            "printedName": "scanAlreadyStopped",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitStolenVehicleLocatorModule.DKStopScanErrorType.Type) -> DriveKitStolenVehicleLocatorModule.DKStopScanErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKStopScanErrorType",
+                    "printedName": "DriveKitStolenVehicleLocatorModule.DKStopScanErrorType",
+                    "usr": "s:34DriveKitStolenVehicleLocatorModule19DKStopScanErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DriveKitStolenVehicleLocatorModule.DKStopScanErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKStopScanErrorType",
+                        "printedName": "DriveKitStolenVehicleLocatorModule.DKStopScanErrorType",
+                        "usr": "s:34DriveKitStolenVehicleLocatorModule19DKStopScanErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:34DriveKitStolenVehicleLocatorModule19DKStopScanErrorTypeO18scanAlreadyStoppedyA2CmF",
+            "mangledName": "$s34DriveKitStolenVehicleLocatorModule19DKStopScanErrorTypeO18scanAlreadyStoppedyA2CmF",
+            "moduleName": "DriveKitStolenVehicleLocatorModule"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DKStopScanErrorType",
+                "printedName": "DriveKitStolenVehicleLocatorModule.DKStopScanErrorType",
+                "usr": "s:34DriveKitStolenVehicleLocatorModule19DKStopScanErrorTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DKStopScanErrorType",
+                "printedName": "DriveKitStolenVehicleLocatorModule.DKStopScanErrorType",
+                "usr": "s:34DriveKitStolenVehicleLocatorModule19DKStopScanErrorTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:34DriveKitStolenVehicleLocatorModule19DKStopScanErrorTypeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s34DriveKitStolenVehicleLocatorModule19DKStopScanErrorTypeO2eeoiySbAC_ACtFZ",
+            "moduleName": "DriveKitStolenVehicleLocatorModule",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:34DriveKitStolenVehicleLocatorModule19DKStopScanErrorTypeO9hashValueSivp",
+            "mangledName": "$s34DriveKitStolenVehicleLocatorModule19DKStopScanErrorTypeO9hashValueSivp",
+            "moduleName": "DriveKitStolenVehicleLocatorModule",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:34DriveKitStolenVehicleLocatorModule19DKStopScanErrorTypeO9hashValueSivg",
+                "mangledName": "$s34DriveKitStolenVehicleLocatorModule19DKStopScanErrorTypeO9hashValueSivg",
+                "moduleName": "DriveKitStolenVehicleLocatorModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:34DriveKitStolenVehicleLocatorModule19DKStopScanErrorTypeO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s34DriveKitStolenVehicleLocatorModule19DKStopScanErrorTypeO4hash4intoys6HasherVz_tF",
+            "moduleName": "DriveKitStolenVehicleLocatorModule",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:34DriveKitStolenVehicleLocatorModule19DKStopScanErrorTypeO",
+        "mangledName": "$s34DriveKitStolenVehicleLocatorModule19DKStopScanErrorTypeO",
+        "moduleName": "DriveKitStolenVehicleLocatorModule",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DKStartScanResult",
+        "printedName": "DKStartScanResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "success",
+            "printedName": "success",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitStolenVehicleLocatorModule.DKStartScanResult.Type) -> DriveKitStolenVehicleLocatorModule.DKStartScanResult",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKStartScanResult",
+                    "printedName": "DriveKitStolenVehicleLocatorModule.DKStartScanResult",
+                    "usr": "s:34DriveKitStolenVehicleLocatorModule17DKStartScanResultO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DriveKitStolenVehicleLocatorModule.DKStartScanResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKStartScanResult",
+                        "printedName": "DriveKitStolenVehicleLocatorModule.DKStartScanResult",
+                        "usr": "s:34DriveKitStolenVehicleLocatorModule17DKStartScanResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:34DriveKitStolenVehicleLocatorModule17DKStartScanResultO7successyA2CmF",
+            "mangledName": "$s34DriveKitStolenVehicleLocatorModule17DKStartScanResultO7successyA2CmF",
+            "moduleName": "DriveKitStolenVehicleLocatorModule"
+          },
+          {
+            "kind": "Var",
+            "name": "error",
+            "printedName": "error",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitStolenVehicleLocatorModule.DKStartScanResult.Type) -> (DriveKitStolenVehicleLocatorModule.DKAddUuidErrorType) -> DriveKitStolenVehicleLocatorModule.DKStartScanResult",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(DriveKitStolenVehicleLocatorModule.DKAddUuidErrorType) -> DriveKitStolenVehicleLocatorModule.DKStartScanResult",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKStartScanResult",
+                        "printedName": "DriveKitStolenVehicleLocatorModule.DKStartScanResult",
+                        "usr": "s:34DriveKitStolenVehicleLocatorModule17DKStartScanResultO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKAddUuidErrorType",
+                        "printedName": "DriveKitStolenVehicleLocatorModule.DKAddUuidErrorType",
+                        "usr": "s:34DriveKitStolenVehicleLocatorModule18DKAddUuidErrorTypeO"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DriveKitStolenVehicleLocatorModule.DKStartScanResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKStartScanResult",
+                        "printedName": "DriveKitStolenVehicleLocatorModule.DKStartScanResult",
+                        "usr": "s:34DriveKitStolenVehicleLocatorModule17DKStartScanResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:34DriveKitStolenVehicleLocatorModule17DKStartScanResultO5erroryAcA18DKAddUuidErrorTypeOcACmF",
+            "mangledName": "$s34DriveKitStolenVehicleLocatorModule17DKStartScanResultO5erroryAcA18DKAddUuidErrorTypeOcACmF",
+            "moduleName": "DriveKitStolenVehicleLocatorModule"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:34DriveKitStolenVehicleLocatorModule17DKStartScanResultO",
+        "mangledName": "$s34DriveKitStolenVehicleLocatorModule17DKStartScanResultO",
+        "moduleName": "DriveKitStolenVehicleLocatorModule",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DKStartScanErrorType",
+        "printedName": "DKStartScanErrorType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "driveKitNotInitialized",
+            "printedName": "driveKitNotInitialized",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitStolenVehicleLocatorModule.DKStartScanErrorType.Type) -> DriveKitStolenVehicleLocatorModule.DKStartScanErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKStartScanErrorType",
+                    "printedName": "DriveKitStolenVehicleLocatorModule.DKStartScanErrorType",
+                    "usr": "s:34DriveKitStolenVehicleLocatorModule20DKStartScanErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DriveKitStolenVehicleLocatorModule.DKStartScanErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKStartScanErrorType",
+                        "printedName": "DriveKitStolenVehicleLocatorModule.DKStartScanErrorType",
+                        "usr": "s:34DriveKitStolenVehicleLocatorModule20DKStartScanErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:34DriveKitStolenVehicleLocatorModule20DKStartScanErrorTypeO05driveB14NotInitializedyA2CmF",
+            "mangledName": "$s34DriveKitStolenVehicleLocatorModule20DKStartScanErrorTypeO05driveB14NotInitializedyA2CmF",
+            "moduleName": "DriveKitStolenVehicleLocatorModule"
+          },
+          {
+            "kind": "Var",
+            "name": "userNotConnected",
+            "printedName": "userNotConnected",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitStolenVehicleLocatorModule.DKStartScanErrorType.Type) -> DriveKitStolenVehicleLocatorModule.DKStartScanErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKStartScanErrorType",
+                    "printedName": "DriveKitStolenVehicleLocatorModule.DKStartScanErrorType",
+                    "usr": "s:34DriveKitStolenVehicleLocatorModule20DKStartScanErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DriveKitStolenVehicleLocatorModule.DKStartScanErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKStartScanErrorType",
+                        "printedName": "DriveKitStolenVehicleLocatorModule.DKStartScanErrorType",
+                        "usr": "s:34DriveKitStolenVehicleLocatorModule20DKStartScanErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:34DriveKitStolenVehicleLocatorModule20DKStartScanErrorTypeO16userNotConnectedyA2CmF",
+            "mangledName": "$s34DriveKitStolenVehicleLocatorModule20DKStartScanErrorTypeO16userNotConnectedyA2CmF",
+            "moduleName": "DriveKitStolenVehicleLocatorModule"
+          },
+          {
+            "kind": "Var",
+            "name": "emptyUUidList",
+            "printedName": "emptyUUidList",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitStolenVehicleLocatorModule.DKStartScanErrorType.Type) -> DriveKitStolenVehicleLocatorModule.DKStartScanErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKStartScanErrorType",
+                    "printedName": "DriveKitStolenVehicleLocatorModule.DKStartScanErrorType",
+                    "usr": "s:34DriveKitStolenVehicleLocatorModule20DKStartScanErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DriveKitStolenVehicleLocatorModule.DKStartScanErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKStartScanErrorType",
+                        "printedName": "DriveKitStolenVehicleLocatorModule.DKStartScanErrorType",
+                        "usr": "s:34DriveKitStolenVehicleLocatorModule20DKStartScanErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:34DriveKitStolenVehicleLocatorModule20DKStartScanErrorTypeO13emptyUUidListyA2CmF",
+            "mangledName": "$s34DriveKitStolenVehicleLocatorModule20DKStartScanErrorTypeO13emptyUUidListyA2CmF",
+            "moduleName": "DriveKitStolenVehicleLocatorModule"
+          },
+          {
+            "kind": "Var",
+            "name": "scanAlreadyStarted",
+            "printedName": "scanAlreadyStarted",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitStolenVehicleLocatorModule.DKStartScanErrorType.Type) -> DriveKitStolenVehicleLocatorModule.DKStartScanErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKStartScanErrorType",
+                    "printedName": "DriveKitStolenVehicleLocatorModule.DKStartScanErrorType",
+                    "usr": "s:34DriveKitStolenVehicleLocatorModule20DKStartScanErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DriveKitStolenVehicleLocatorModule.DKStartScanErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKStartScanErrorType",
+                        "printedName": "DriveKitStolenVehicleLocatorModule.DKStartScanErrorType",
+                        "usr": "s:34DriveKitStolenVehicleLocatorModule20DKStartScanErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:34DriveKitStolenVehicleLocatorModule20DKStartScanErrorTypeO18scanAlreadyStartedyA2CmF",
+            "mangledName": "$s34DriveKitStolenVehicleLocatorModule20DKStartScanErrorTypeO18scanAlreadyStartedyA2CmF",
+            "moduleName": "DriveKitStolenVehicleLocatorModule"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DKStartScanErrorType",
+                "printedName": "DriveKitStolenVehicleLocatorModule.DKStartScanErrorType",
+                "usr": "s:34DriveKitStolenVehicleLocatorModule20DKStartScanErrorTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DKStartScanErrorType",
+                "printedName": "DriveKitStolenVehicleLocatorModule.DKStartScanErrorType",
+                "usr": "s:34DriveKitStolenVehicleLocatorModule20DKStartScanErrorTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:34DriveKitStolenVehicleLocatorModule20DKStartScanErrorTypeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s34DriveKitStolenVehicleLocatorModule20DKStartScanErrorTypeO2eeoiySbAC_ACtFZ",
+            "moduleName": "DriveKitStolenVehicleLocatorModule",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:34DriveKitStolenVehicleLocatorModule20DKStartScanErrorTypeO9hashValueSivp",
+            "mangledName": "$s34DriveKitStolenVehicleLocatorModule20DKStartScanErrorTypeO9hashValueSivp",
+            "moduleName": "DriveKitStolenVehicleLocatorModule",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:34DriveKitStolenVehicleLocatorModule20DKStartScanErrorTypeO9hashValueSivg",
+                "mangledName": "$s34DriveKitStolenVehicleLocatorModule20DKStartScanErrorTypeO9hashValueSivg",
+                "moduleName": "DriveKitStolenVehicleLocatorModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:34DriveKitStolenVehicleLocatorModule20DKStartScanErrorTypeO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s34DriveKitStolenVehicleLocatorModule20DKStartScanErrorTypeO4hash4intoys6HasherVz_tF",
+            "moduleName": "DriveKitStolenVehicleLocatorModule",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:34DriveKitStolenVehicleLocatorModule20DKStartScanErrorTypeO",
+        "mangledName": "$s34DriveKitStolenVehicleLocatorModule20DKStartScanErrorTypeO",
+        "moduleName": "DriveKitStolenVehicleLocatorModule",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DKGetUuidListResult",
+        "printedName": "DKGetUuidListResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "success",
+            "printedName": "success",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitStolenVehicleLocatorModule.DKGetUuidListResult.Type) -> ([Swift.String]) -> DriveKitStolenVehicleLocatorModule.DKGetUuidListResult",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "([Swift.String]) -> DriveKitStolenVehicleLocatorModule.DKGetUuidListResult",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKGetUuidListResult",
+                        "printedName": "DriveKitStolenVehicleLocatorModule.DKGetUuidListResult",
+                        "usr": "s:34DriveKitStolenVehicleLocatorModule19DKGetUuidListResultO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.String]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "String",
+                            "printedName": "Swift.String",
+                            "usr": "s:SS"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DriveKitStolenVehicleLocatorModule.DKGetUuidListResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKGetUuidListResult",
+                        "printedName": "DriveKitStolenVehicleLocatorModule.DKGetUuidListResult",
+                        "usr": "s:34DriveKitStolenVehicleLocatorModule19DKGetUuidListResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:34DriveKitStolenVehicleLocatorModule19DKGetUuidListResultO7successyACSaySSGcACmF",
+            "mangledName": "$s34DriveKitStolenVehicleLocatorModule19DKGetUuidListResultO7successyACSaySSGcACmF",
+            "moduleName": "DriveKitStolenVehicleLocatorModule"
+          },
+          {
+            "kind": "Var",
+            "name": "error",
+            "printedName": "error",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitStolenVehicleLocatorModule.DKGetUuidListResult.Type) -> (DriveKitStolenVehicleLocatorModule.DKGetUuidListErrorType) -> DriveKitStolenVehicleLocatorModule.DKGetUuidListResult",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(DriveKitStolenVehicleLocatorModule.DKGetUuidListErrorType) -> DriveKitStolenVehicleLocatorModule.DKGetUuidListResult",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKGetUuidListResult",
+                        "printedName": "DriveKitStolenVehicleLocatorModule.DKGetUuidListResult",
+                        "usr": "s:34DriveKitStolenVehicleLocatorModule19DKGetUuidListResultO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKGetUuidListErrorType",
+                        "printedName": "DriveKitStolenVehicleLocatorModule.DKGetUuidListErrorType",
+                        "usr": "s:34DriveKitStolenVehicleLocatorModule22DKGetUuidListErrorTypeO"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DriveKitStolenVehicleLocatorModule.DKGetUuidListResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKGetUuidListResult",
+                        "printedName": "DriveKitStolenVehicleLocatorModule.DKGetUuidListResult",
+                        "usr": "s:34DriveKitStolenVehicleLocatorModule19DKGetUuidListResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:34DriveKitStolenVehicleLocatorModule19DKGetUuidListResultO5erroryAcA0ghI9ErrorTypeOcACmF",
+            "mangledName": "$s34DriveKitStolenVehicleLocatorModule19DKGetUuidListResultO5erroryAcA0ghI9ErrorTypeOcACmF",
+            "moduleName": "DriveKitStolenVehicleLocatorModule"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:34DriveKitStolenVehicleLocatorModule19DKGetUuidListResultO",
+        "mangledName": "$s34DriveKitStolenVehicleLocatorModule19DKGetUuidListResultO",
+        "moduleName": "DriveKitStolenVehicleLocatorModule",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DKGetUuidListErrorType",
+        "printedName": "DKGetUuidListErrorType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "driveKitNotInitialized",
+            "printedName": "driveKitNotInitialized",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitStolenVehicleLocatorModule.DKGetUuidListErrorType.Type) -> DriveKitStolenVehicleLocatorModule.DKGetUuidListErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKGetUuidListErrorType",
+                    "printedName": "DriveKitStolenVehicleLocatorModule.DKGetUuidListErrorType",
+                    "usr": "s:34DriveKitStolenVehicleLocatorModule22DKGetUuidListErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DriveKitStolenVehicleLocatorModule.DKGetUuidListErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKGetUuidListErrorType",
+                        "printedName": "DriveKitStolenVehicleLocatorModule.DKGetUuidListErrorType",
+                        "usr": "s:34DriveKitStolenVehicleLocatorModule22DKGetUuidListErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:34DriveKitStolenVehicleLocatorModule22DKGetUuidListErrorTypeO05driveB14NotInitializedyA2CmF",
+            "mangledName": "$s34DriveKitStolenVehicleLocatorModule22DKGetUuidListErrorTypeO05driveB14NotInitializedyA2CmF",
+            "moduleName": "DriveKitStolenVehicleLocatorModule"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DKGetUuidListErrorType",
+                "printedName": "DriveKitStolenVehicleLocatorModule.DKGetUuidListErrorType",
+                "usr": "s:34DriveKitStolenVehicleLocatorModule22DKGetUuidListErrorTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DKGetUuidListErrorType",
+                "printedName": "DriveKitStolenVehicleLocatorModule.DKGetUuidListErrorType",
+                "usr": "s:34DriveKitStolenVehicleLocatorModule22DKGetUuidListErrorTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:34DriveKitStolenVehicleLocatorModule22DKGetUuidListErrorTypeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s34DriveKitStolenVehicleLocatorModule22DKGetUuidListErrorTypeO2eeoiySbAC_ACtFZ",
+            "moduleName": "DriveKitStolenVehicleLocatorModule",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:34DriveKitStolenVehicleLocatorModule22DKGetUuidListErrorTypeO9hashValueSivp",
+            "mangledName": "$s34DriveKitStolenVehicleLocatorModule22DKGetUuidListErrorTypeO9hashValueSivp",
+            "moduleName": "DriveKitStolenVehicleLocatorModule",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:34DriveKitStolenVehicleLocatorModule22DKGetUuidListErrorTypeO9hashValueSivg",
+                "mangledName": "$s34DriveKitStolenVehicleLocatorModule22DKGetUuidListErrorTypeO9hashValueSivg",
+                "moduleName": "DriveKitStolenVehicleLocatorModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:34DriveKitStolenVehicleLocatorModule22DKGetUuidListErrorTypeO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s34DriveKitStolenVehicleLocatorModule22DKGetUuidListErrorTypeO4hash4intoys6HasherVz_tF",
+            "moduleName": "DriveKitStolenVehicleLocatorModule",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:34DriveKitStolenVehicleLocatorModule22DKGetUuidListErrorTypeO",
+        "mangledName": "$s34DriveKitStolenVehicleLocatorModule22DKGetUuidListErrorTypeO",
+        "moduleName": "DriveKitStolenVehicleLocatorModule",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DKAddUuidResult",
+        "printedName": "DKAddUuidResult",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "success",
+            "printedName": "success",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitStolenVehicleLocatorModule.DKAddUuidResult.Type) -> DriveKitStolenVehicleLocatorModule.DKAddUuidResult",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKAddUuidResult",
+                    "printedName": "DriveKitStolenVehicleLocatorModule.DKAddUuidResult",
+                    "usr": "s:34DriveKitStolenVehicleLocatorModule15DKAddUuidResultO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DriveKitStolenVehicleLocatorModule.DKAddUuidResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKAddUuidResult",
+                        "printedName": "DriveKitStolenVehicleLocatorModule.DKAddUuidResult",
+                        "usr": "s:34DriveKitStolenVehicleLocatorModule15DKAddUuidResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:34DriveKitStolenVehicleLocatorModule15DKAddUuidResultO7successyA2CmF",
+            "mangledName": "$s34DriveKitStolenVehicleLocatorModule15DKAddUuidResultO7successyA2CmF",
+            "moduleName": "DriveKitStolenVehicleLocatorModule"
+          },
+          {
+            "kind": "Var",
+            "name": "error",
+            "printedName": "error",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitStolenVehicleLocatorModule.DKAddUuidResult.Type) -> (DriveKitStolenVehicleLocatorModule.DKAddUuidErrorType) -> DriveKitStolenVehicleLocatorModule.DKAddUuidResult",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(DriveKitStolenVehicleLocatorModule.DKAddUuidErrorType) -> DriveKitStolenVehicleLocatorModule.DKAddUuidResult",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKAddUuidResult",
+                        "printedName": "DriveKitStolenVehicleLocatorModule.DKAddUuidResult",
+                        "usr": "s:34DriveKitStolenVehicleLocatorModule15DKAddUuidResultO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKAddUuidErrorType",
+                        "printedName": "DriveKitStolenVehicleLocatorModule.DKAddUuidErrorType",
+                        "usr": "s:34DriveKitStolenVehicleLocatorModule18DKAddUuidErrorTypeO"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DriveKitStolenVehicleLocatorModule.DKAddUuidResult.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKAddUuidResult",
+                        "printedName": "DriveKitStolenVehicleLocatorModule.DKAddUuidResult",
+                        "usr": "s:34DriveKitStolenVehicleLocatorModule15DKAddUuidResultO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:34DriveKitStolenVehicleLocatorModule15DKAddUuidResultO5erroryAcA0gH9ErrorTypeOcACmF",
+            "mangledName": "$s34DriveKitStolenVehicleLocatorModule15DKAddUuidResultO5erroryAcA0gH9ErrorTypeOcACmF",
+            "moduleName": "DriveKitStolenVehicleLocatorModule"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:34DriveKitStolenVehicleLocatorModule15DKAddUuidResultO",
+        "mangledName": "$s34DriveKitStolenVehicleLocatorModule15DKAddUuidResultO",
+        "moduleName": "DriveKitStolenVehicleLocatorModule",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DKAddUuidErrorType",
+        "printedName": "DKAddUuidErrorType",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "driveKitNotInitialized",
+            "printedName": "driveKitNotInitialized",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitStolenVehicleLocatorModule.DKAddUuidErrorType.Type) -> DriveKitStolenVehicleLocatorModule.DKAddUuidErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKAddUuidErrorType",
+                    "printedName": "DriveKitStolenVehicleLocatorModule.DKAddUuidErrorType",
+                    "usr": "s:34DriveKitStolenVehicleLocatorModule18DKAddUuidErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DriveKitStolenVehicleLocatorModule.DKAddUuidErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKAddUuidErrorType",
+                        "printedName": "DriveKitStolenVehicleLocatorModule.DKAddUuidErrorType",
+                        "usr": "s:34DriveKitStolenVehicleLocatorModule18DKAddUuidErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:34DriveKitStolenVehicleLocatorModule18DKAddUuidErrorTypeO05driveB14NotInitializedyA2CmF",
+            "mangledName": "$s34DriveKitStolenVehicleLocatorModule18DKAddUuidErrorTypeO05driveB14NotInitializedyA2CmF",
+            "moduleName": "DriveKitStolenVehicleLocatorModule"
+          },
+          {
+            "kind": "Var",
+            "name": "invalidUuidFormat",
+            "printedName": "invalidUuidFormat",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitStolenVehicleLocatorModule.DKAddUuidErrorType.Type) -> DriveKitStolenVehicleLocatorModule.DKAddUuidErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKAddUuidErrorType",
+                    "printedName": "DriveKitStolenVehicleLocatorModule.DKAddUuidErrorType",
+                    "usr": "s:34DriveKitStolenVehicleLocatorModule18DKAddUuidErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DriveKitStolenVehicleLocatorModule.DKAddUuidErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKAddUuidErrorType",
+                        "printedName": "DriveKitStolenVehicleLocatorModule.DKAddUuidErrorType",
+                        "usr": "s:34DriveKitStolenVehicleLocatorModule18DKAddUuidErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:34DriveKitStolenVehicleLocatorModule18DKAddUuidErrorTypeO07invalidH6FormatyA2CmF",
+            "mangledName": "$s34DriveKitStolenVehicleLocatorModule18DKAddUuidErrorTypeO07invalidH6FormatyA2CmF",
+            "moduleName": "DriveKitStolenVehicleLocatorModule"
+          },
+          {
+            "kind": "Var",
+            "name": "uuidAlreadyAdded",
+            "printedName": "uuidAlreadyAdded",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitStolenVehicleLocatorModule.DKAddUuidErrorType.Type) -> DriveKitStolenVehicleLocatorModule.DKAddUuidErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKAddUuidErrorType",
+                    "printedName": "DriveKitStolenVehicleLocatorModule.DKAddUuidErrorType",
+                    "usr": "s:34DriveKitStolenVehicleLocatorModule18DKAddUuidErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DriveKitStolenVehicleLocatorModule.DKAddUuidErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKAddUuidErrorType",
+                        "printedName": "DriveKitStolenVehicleLocatorModule.DKAddUuidErrorType",
+                        "usr": "s:34DriveKitStolenVehicleLocatorModule18DKAddUuidErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:34DriveKitStolenVehicleLocatorModule18DKAddUuidErrorTypeO16uuidAlreadyAddedyA2CmF",
+            "mangledName": "$s34DriveKitStolenVehicleLocatorModule18DKAddUuidErrorTypeO16uuidAlreadyAddedyA2CmF",
+            "moduleName": "DriveKitStolenVehicleLocatorModule"
+          },
+          {
+            "kind": "Var",
+            "name": "totalUuidLimitReached",
+            "printedName": "totalUuidLimitReached",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitStolenVehicleLocatorModule.DKAddUuidErrorType.Type) -> DriveKitStolenVehicleLocatorModule.DKAddUuidErrorType",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKAddUuidErrorType",
+                    "printedName": "DriveKitStolenVehicleLocatorModule.DKAddUuidErrorType",
+                    "usr": "s:34DriveKitStolenVehicleLocatorModule18DKAddUuidErrorTypeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DriveKitStolenVehicleLocatorModule.DKAddUuidErrorType.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKAddUuidErrorType",
+                        "printedName": "DriveKitStolenVehicleLocatorModule.DKAddUuidErrorType",
+                        "usr": "s:34DriveKitStolenVehicleLocatorModule18DKAddUuidErrorTypeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:34DriveKitStolenVehicleLocatorModule18DKAddUuidErrorTypeO05totalH12LimitReachedyA2CmF",
+            "mangledName": "$s34DriveKitStolenVehicleLocatorModule18DKAddUuidErrorTypeO05totalH12LimitReachedyA2CmF",
+            "moduleName": "DriveKitStolenVehicleLocatorModule"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DKAddUuidErrorType",
+                "printedName": "DriveKitStolenVehicleLocatorModule.DKAddUuidErrorType",
+                "usr": "s:34DriveKitStolenVehicleLocatorModule18DKAddUuidErrorTypeO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DKAddUuidErrorType",
+                "printedName": "DriveKitStolenVehicleLocatorModule.DKAddUuidErrorType",
+                "usr": "s:34DriveKitStolenVehicleLocatorModule18DKAddUuidErrorTypeO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:34DriveKitStolenVehicleLocatorModule18DKAddUuidErrorTypeO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s34DriveKitStolenVehicleLocatorModule18DKAddUuidErrorTypeO2eeoiySbAC_ACtFZ",
+            "moduleName": "DriveKitStolenVehicleLocatorModule",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:34DriveKitStolenVehicleLocatorModule18DKAddUuidErrorTypeO9hashValueSivp",
+            "mangledName": "$s34DriveKitStolenVehicleLocatorModule18DKAddUuidErrorTypeO9hashValueSivp",
+            "moduleName": "DriveKitStolenVehicleLocatorModule",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:34DriveKitStolenVehicleLocatorModule18DKAddUuidErrorTypeO9hashValueSivg",
+                "mangledName": "$s34DriveKitStolenVehicleLocatorModule18DKAddUuidErrorTypeO9hashValueSivg",
+                "moduleName": "DriveKitStolenVehicleLocatorModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:34DriveKitStolenVehicleLocatorModule18DKAddUuidErrorTypeO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s34DriveKitStolenVehicleLocatorModule18DKAddUuidErrorTypeO4hash4intoys6HasherVz_tF",
+            "moduleName": "DriveKitStolenVehicleLocatorModule",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:34DriveKitStolenVehicleLocatorModule18DKAddUuidErrorTypeO",
+        "mangledName": "$s34DriveKitStolenVehicleLocatorModule18DKAddUuidErrorTypeO",
+        "moduleName": "DriveKitStolenVehicleLocatorModule",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DriveKitStolenVehicleLocatorModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "DriveKitCoreModule",
+        "printedName": "DriveKitCoreModule",
+        "declKind": "Import",
+        "moduleName": "DriveKitStolenVehicleLocatorModule"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DriveKitStolenVehicleLocator",
+        "printedName": "DriveKitStolenVehicleLocator",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "sdkVersion",
+            "printedName": "sdkVersion",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:34DriveKitStolenVehicleLocatorModule0abcdE0C10sdkVersionSSvpZ",
+            "mangledName": "$s34DriveKitStolenVehicleLocatorModule0abcdE0C10sdkVersionSSvpZ",
+            "moduleName": "DriveKitStolenVehicleLocatorModule",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:34DriveKitStolenVehicleLocatorModule0abcdE0C10sdkVersionSSvgZ",
+                "mangledName": "$s34DriveKitStolenVehicleLocatorModule0abcdE0C10sdkVersionSSvgZ",
+                "moduleName": "DriveKitStolenVehicleLocatorModule",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "shared",
+            "printedName": "shared",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DriveKitStolenVehicleLocator",
+                "printedName": "DriveKitStolenVehicleLocatorModule.DriveKitStolenVehicleLocator",
+                "usr": "c:@M@DriveKitStolenVehicleLocatorModule@objc(cs)DriveKitStolenVehicleLocator"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@DriveKitStolenVehicleLocatorModule@objc(cs)DriveKitStolenVehicleLocator(cpy)shared",
+            "mangledName": "$s34DriveKitStolenVehicleLocatorModule0abcdE0C6sharedACvpZ",
+            "moduleName": "DriveKitStolenVehicleLocatorModule",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DriveKitStolenVehicleLocator",
+                    "printedName": "DriveKitStolenVehicleLocatorModule.DriveKitStolenVehicleLocator",
+                    "usr": "c:@M@DriveKitStolenVehicleLocatorModule@objc(cs)DriveKitStolenVehicleLocator"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@DriveKitStolenVehicleLocatorModule@objc(cs)DriveKitStolenVehicleLocator(cm)shared",
+                "mangledName": "$s34DriveKitStolenVehicleLocatorModule0abcdE0C6sharedACvgZ",
+                "moduleName": "DriveKitStolenVehicleLocatorModule",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "initialize",
+            "printedName": "initialize()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:34DriveKitStolenVehicleLocatorModule0abcdE0C10initializeyyF",
+            "mangledName": "$s34DriveKitStolenVehicleLocatorModule0abcdE0C10initializeyyF",
+            "moduleName": "DriveKitStolenVehicleLocatorModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "addUuid",
+            "printedName": "addUuid(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitStolenVehicleLocatorModule.DKAddUuidResult) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKAddUuidResult",
+                    "printedName": "DriveKitStolenVehicleLocatorModule.DKAddUuidResult",
+                    "usr": "s:34DriveKitStolenVehicleLocatorModule15DKAddUuidResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:34DriveKitStolenVehicleLocatorModule0abcdE0C7addUuid_10completionySS_yAA05DKAddH6ResultOctF",
+            "mangledName": "$s34DriveKitStolenVehicleLocatorModule0abcdE0C7addUuid_10completionySS_yAA05DKAddH6ResultOctF",
+            "moduleName": "DriveKitStolenVehicleLocatorModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeUuid",
+            "printedName": "removeUuid(_:completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitStolenVehicleLocatorModule.DKRemoveUuidResult) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKRemoveUuidResult",
+                    "printedName": "DriveKitStolenVehicleLocatorModule.DKRemoveUuidResult",
+                    "usr": "s:34DriveKitStolenVehicleLocatorModule18DKRemoveUuidResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:34DriveKitStolenVehicleLocatorModule0abcdE0C10removeUuid_10completionySS_yAA08DKRemoveH6ResultOctF",
+            "mangledName": "$s34DriveKitStolenVehicleLocatorModule0abcdE0C10removeUuid_10completionySS_yAA08DKRemoveH6ResultOctF",
+            "moduleName": "DriveKitStolenVehicleLocatorModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getUuids",
+            "printedName": "getUuids(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitStolenVehicleLocatorModule.DKGetUuidListResult) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKGetUuidListResult",
+                    "printedName": "DriveKitStolenVehicleLocatorModule.DKGetUuidListResult",
+                    "usr": "s:34DriveKitStolenVehicleLocatorModule19DKGetUuidListResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:34DriveKitStolenVehicleLocatorModule0abcdE0C8getUuids10completionyyAA19DKGetUuidListResultOc_tF",
+            "mangledName": "$s34DriveKitStolenVehicleLocatorModule0abcdE0C8getUuids10completionyyAA19DKGetUuidListResultOc_tF",
+            "moduleName": "DriveKitStolenVehicleLocatorModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startScan",
+            "printedName": "startScan(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitStolenVehicleLocatorModule.DKStartScanResult) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKStartScanResult",
+                    "printedName": "DriveKitStolenVehicleLocatorModule.DKStartScanResult",
+                    "usr": "s:34DriveKitStolenVehicleLocatorModule17DKStartScanResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:34DriveKitStolenVehicleLocatorModule0abcdE0C9startScan10completionyyAA07DKStartH6ResultOc_tF",
+            "mangledName": "$s34DriveKitStolenVehicleLocatorModule0abcdE0C9startScan10completionyyAA07DKStartH6ResultOc_tF",
+            "moduleName": "DriveKitStolenVehicleLocatorModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stopScan",
+            "printedName": "stopScan(completion:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitStolenVehicleLocatorModule.DKStopScanResult) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKStopScanResult",
+                    "printedName": "DriveKitStolenVehicleLocatorModule.DKStopScanResult",
+                    "usr": "s:34DriveKitStolenVehicleLocatorModule16DKStopScanResultO"
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:34DriveKitStolenVehicleLocatorModule0abcdE0C8stopScan10completionyyAA06DKStopH6ResultOc_tF",
+            "mangledName": "$s34DriveKitStolenVehicleLocatorModule0abcdE0C8stopScan10completionyyAA06DKStopH6ResultOc_tF",
+            "moduleName": "DriveKitStolenVehicleLocatorModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@DriveKitStolenVehicleLocatorModule@objc(cs)DriveKitStolenVehicleLocator",
+        "mangledName": "$s34DriveKitStolenVehicleLocatorModule0abcdE0C",
+        "moduleName": "DriveKitStolenVehicleLocatorModule",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-stolen-vehicle-locator\/DriveKitStolenVehicleLocatorConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 263,
+      "length": 33,
+      "value": "\"DriveKit Stolen Vehicle Locator\""
+    }
+  ]
+}

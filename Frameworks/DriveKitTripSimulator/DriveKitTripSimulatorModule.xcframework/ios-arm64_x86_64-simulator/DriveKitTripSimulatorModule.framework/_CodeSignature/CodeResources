@@ -14,15 +14,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		mF6vs2zJGEyY075NpHx90s2kDNM=
+		UrZbT7BpXxVKXWLDr4IS5gwSOWU=
 		</data>
 		<key>Modules/DriveKitTripSimulatorModule.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		hHpLIY8J6XBq4VB4YbvxcYhIN90=
+		EwCg2fHHPgTEWl2FZxYNmb97PTw=
 		</data>
 		<key>Modules/DriveKitTripSimulatorModule.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		fqWSXzc73NJbaGqnJ9UIOaEx4qE=
+		farTgiQtt9OICl6syfzeH45Qkxg=
 		</data>
 		<key>Modules/DriveKitTripSimulatorModule.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/DriveKitTripSimulatorModule.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		fqWSXzc73NJbaGqnJ9UIOaEx4qE=
+		farTgiQtt9OICl6syfzeH45Qkxg=
 		</data>
 		<key>Modules/DriveKitTripSimulatorModule.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		uJdD0c6KeorjVWc2Qc8yfzD8JLY=
+		LnVLCsN0xTfWpLh0GFhJJ+Q9Wno=
 		</data>
 		<key>Modules/DriveKitTripSimulatorModule.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		hHpLIY8J6XBq4VB4YbvxcYhIN90=
+		EwCg2fHHPgTEWl2FZxYNmb97PTw=
 		</data>
 		<key>Modules/DriveKitTripSimulatorModule.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		GyQFt2FbvQm9Dbf1XilKPh4On7E=
+		PlTeBli87E/vuHp5TtsrxKxM9qg=
 		</data>
 		<key>Modules/DriveKitTripSimulatorModule.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/DriveKitTripSimulatorModule.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		GyQFt2FbvQm9Dbf1XilKPh4On7E=
+		PlTeBli87E/vuHp5TtsrxKxM9qg=
 		</data>
 		<key>Modules/DriveKitTripSimulatorModule.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		xw6EBILbm6nGOwN9ty/q2qq9kOg=
+		ixINybauwGAx3HVA4GSNqj9OngI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -129,14 +129,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+ppV3NxbSzAYPTDsHoaLxbxcH5pAuOyKawN5Z0Bj39Y=
+			kNd9YPQRzIe9c4ks9jUB511d9RsUdclx8XuZ27GEjvg=
 			</data>
 		</dict>
 		<key>Modules/DriveKitTripSimulatorModule.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Uu5ieyMPEMhhmVjdXWLokoW1WZZj/4Hbw0NOwW+LsA0=
+			AcoGah/JpdQ8Y+Fhd7UGDDEPjfDTRoRE9lZiq2dauSI=
 			</data>
 		</dict>
 		<key>Modules/DriveKitTripSimulatorModule.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -150,28 +150,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Uu5ieyMPEMhhmVjdXWLokoW1WZZj/4Hbw0NOwW+LsA0=
+			AcoGah/JpdQ8Y+Fhd7UGDDEPjfDTRoRE9lZiq2dauSI=
 			</data>
 		</dict>
 		<key>Modules/DriveKitTripSimulatorModule.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0arTVAsuKHRNFl3fysGOMaQvMQ4OVyaYE9iIcV5zeLQ=
+			xoz2d3bp5rKr8jXFp1w7vDfHR3hOoRm1xCs11zqyR5E=
 			</data>
 		</dict>
 		<key>Modules/DriveKitTripSimulatorModule.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+ppV3NxbSzAYPTDsHoaLxbxcH5pAuOyKawN5Z0Bj39Y=
+			kNd9YPQRzIe9c4ks9jUB511d9RsUdclx8XuZ27GEjvg=
 			</data>
 		</dict>
 		<key>Modules/DriveKitTripSimulatorModule.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			vN2nVjZuNpnC+XAfvUjCGVc5AUQ/R/R81wlj1zephfY=
+			WL7m7d6mGakqYITcfU0Mrw0HWkJfiap82A5IgIFjPy8=
 			</data>
 		</dict>
 		<key>Modules/DriveKitTripSimulatorModule.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -185,14 +185,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vN2nVjZuNpnC+XAfvUjCGVc5AUQ/R/R81wlj1zephfY=
+			WL7m7d6mGakqYITcfU0Mrw0HWkJfiap82A5IgIFjPy8=
 			</data>
 		</dict>
 		<key>Modules/DriveKitTripSimulatorModule.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Q4soSZKrVo3wwjXnav5WdqQeBBwAJU6hWBLvMaJ9J2Q=
+			O5+CX1o+fhA0/HUcbH4/sghS8hviHTl7zuG3zxCmxqE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

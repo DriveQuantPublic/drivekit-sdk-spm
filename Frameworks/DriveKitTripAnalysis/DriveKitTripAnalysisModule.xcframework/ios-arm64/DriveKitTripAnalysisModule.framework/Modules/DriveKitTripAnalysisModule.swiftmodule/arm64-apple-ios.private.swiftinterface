@@ -10,7 +10,9 @@ import DriveKitBeaconUtilsModule
 import DriveKitCoreModule
 import DriveKitDBTripAccessModule
 import DriveKitDBVehicleAccessModule
+import DriveKitLocationUtilsModule
 import DriveKitNetworkingModule
+import DriveKitRegionMonitoringUtilsModule
 import Foundation
 import Swift
 import UIKit
@@ -761,13 +763,6 @@ extension DriveKitTripAnalysisModule.DriveKitTripAnalysis : DriveKitTripAnalysis
   #endif
   public func revokeLink(completion: @escaping (_ status: DriveKitTripAnalysisModule.DKRevokeTripSharingLinkStatus) -> Swift.Void)
   @objc override dynamic public init()
-  @objc deinit
-}
-public class TripSimulator {
-  public init()
-  public func start()
-  public func sendLocation(_ location: _LocationEssentials.CLLocation)
-  public func stop()
   @objc deinit
 }
 public enum LogbookType : Swift.Int {

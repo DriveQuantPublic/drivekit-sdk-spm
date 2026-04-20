@@ -1,0 +1,4 @@
+framework module DriveKitStolenVehicleLocatorModule {
+  header "DriveKitStolenVehicleLocatorModule-Swift.h"
+  requires objc
+}

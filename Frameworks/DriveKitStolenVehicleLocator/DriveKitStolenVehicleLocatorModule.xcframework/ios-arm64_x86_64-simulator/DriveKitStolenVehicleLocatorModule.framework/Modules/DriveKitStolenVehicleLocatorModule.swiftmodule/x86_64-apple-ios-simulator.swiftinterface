@@ -1,0 +1,86 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name DriveKitStolenVehicleLocatorModule
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+import DriveKitCoreModule
+import Foundation
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public enum DKRemoveUuidResult {
+  case success, error(DriveKitStolenVehicleLocatorModule.DKRemoveUuidErrorType)
+}
+public enum DKRemoveUuidErrorType {
+  case driveKitNotInitialized, invalidUuidFormat, uuidNotFound
+  public static func == (a: DriveKitStolenVehicleLocatorModule.DKRemoveUuidErrorType, b: DriveKitStolenVehicleLocatorModule.DKRemoveUuidErrorType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum DKStopScanResult {
+  case success, error(DriveKitStolenVehicleLocatorModule.DKStopScanErrorType)
+}
+public enum DKStopScanErrorType {
+  case driveKitNotInitialized, userNotConnected, scanAlreadyStopped
+  public static func == (a: DriveKitStolenVehicleLocatorModule.DKStopScanErrorType, b: DriveKitStolenVehicleLocatorModule.DKStopScanErrorType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum DKStartScanResult {
+  case success, error(DriveKitStolenVehicleLocatorModule.DKAddUuidErrorType)
+}
+public enum DKStartScanErrorType {
+  case driveKitNotInitialized, userNotConnected, emptyUUidList, scanAlreadyStarted
+  public static func == (a: DriveKitStolenVehicleLocatorModule.DKStartScanErrorType, b: DriveKitStolenVehicleLocatorModule.DKStartScanErrorType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum DKGetUuidListResult {
+  case success([Swift.String]), error(DriveKitStolenVehicleLocatorModule.DKGetUuidListErrorType)
+}
+public enum DKGetUuidListErrorType {
+  case driveKitNotInitialized
+  public static func == (a: DriveKitStolenVehicleLocatorModule.DKGetUuidListErrorType, b: DriveKitStolenVehicleLocatorModule.DKGetUuidListErrorType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum DKAddUuidResult {
+  case success, error(DriveKitStolenVehicleLocatorModule.DKAddUuidErrorType)
+}
+public enum DKAddUuidErrorType {
+  case driveKitNotInitialized, invalidUuidFormat, uuidAlreadyAdded, totalUuidLimitReached
+  public static func == (a: DriveKitStolenVehicleLocatorModule.DKAddUuidErrorType, b: DriveKitStolenVehicleLocatorModule.DKAddUuidErrorType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class DriveKitStolenVehicleLocator : ObjectiveC.NSObject {
+  public static let sdkVersion: Swift.String
+  @objc public static let shared: DriveKitStolenVehicleLocatorModule.DriveKitStolenVehicleLocator
+  public func initialize()
+  public func addUuid(_ uuid: Swift.String, completion: @escaping (_ result: DriveKitStolenVehicleLocatorModule.DKAddUuidResult) -> Swift.Void)
+  public func removeUuid(_ uuid: Swift.String, completion: @escaping (_ result: DriveKitStolenVehicleLocatorModule.DKRemoveUuidResult) -> Swift.Void)
+  public func getUuids(completion: @escaping (_ result: DriveKitStolenVehicleLocatorModule.DKGetUuidListResult) -> Swift.Void)
+  public func startScan(completion: @escaping (_ result: DriveKitStolenVehicleLocatorModule.DKStartScanResult) -> Swift.Void)
+  public func stopScan(completion: @escaping (_ result: DriveKitStolenVehicleLocatorModule.DKStopScanResult) -> Swift.Void)
+  @objc deinit
+}
+extension DriveKitStolenVehicleLocatorModule.DKRemoveUuidErrorType : Swift.Equatable {}
+extension DriveKitStolenVehicleLocatorModule.DKRemoveUuidErrorType : Swift.Hashable {}
+extension DriveKitStolenVehicleLocatorModule.DKStopScanErrorType : Swift.Equatable {}
+extension DriveKitStolenVehicleLocatorModule.DKStopScanErrorType : Swift.Hashable {}
+extension DriveKitStolenVehicleLocatorModule.DKStartScanErrorType : Swift.Equatable {}
+extension DriveKitStolenVehicleLocatorModule.DKStartScanErrorType : Swift.Hashable {}
+extension DriveKitStolenVehicleLocatorModule.DKGetUuidListErrorType : Swift.Equatable {}
+extension DriveKitStolenVehicleLocatorModule.DKGetUuidListErrorType : Swift.Hashable {}
+extension DriveKitStolenVehicleLocatorModule.DKAddUuidErrorType : Swift.Equatable {}
+extension DriveKitStolenVehicleLocatorModule.DKAddUuidErrorType : Swift.Hashable {}
