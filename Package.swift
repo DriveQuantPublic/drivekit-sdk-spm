@@ -47,12 +47,36 @@ let package = Package(
             name: "DriveKitGroup",
             targets: ["DriveKitGroupWrapper"]
         ),
+        .library(
+            name: "DriveKitStolenVehicleLocator",
+            targets: ["DriveKitStolenVehicleLocatorWrapper"]
+        ),
     ],
     targets: [
         .target(
             name: "DriveKitBeaconUtilsWrapper",
             dependencies: [
                 .target(name: "DriveKitBeaconUtils"),
+                .target(name: "DriveKitCoreWrapper"),
+            ],
+            linkerSettings: [
+                .linkedFramework("CoreLocation"),
+            ]
+        ),
+        .target(
+            name: "DriveKitRegionMonitoringUtilsWrapper",
+            dependencies: [
+                .target(name: "DriveKitRegionMonitoringUtils"),
+                .target(name: "DriveKitCoreWrapper"),
+            ],
+            linkerSettings: [
+                .linkedFramework("CoreLocation"),
+            ]
+        ),
+        .target(
+            name: "DriveKitLocationUtilsWrapper",
+            dependencies: [
+                .target(name: "DriveKitLocationUtils"),
                 .target(name: "DriveKitCoreWrapper"),
             ],
             linkerSettings: [
@@ -193,6 +217,8 @@ let package = Package(
                 .target(name: "DriveKitDBTripAccessWrapper"),
                 .target(name: "DriveKitDBVehicleAccessWrapper"),
                 .target(name: "DriveKitBeaconUtilsWrapper"),
+                .target(name: "DriveKitRegionMonitoringUtilsWrapper"),
+                .target(name: "DriveKitLocationUtilsWrapper"),
             ],
             linkerSettings: [
                 .linkedFramework("CoreLocation"),
@@ -239,9 +265,26 @@ let package = Package(
                 .linkedFramework("CoreData"),
             ]
         ),
+        .target(
+            name: "DriveKitStolenVehicleLocatorWrapper",
+            dependencies: [
+                .target(name: "DriveKitStolenVehicleLocator"),
+                .target(name: "DriveKitCoreWrapper"),
+                .target(name: "DriveKitRegionMonitoringUtilsWrapper"),
+                .target(name: "DriveKitLocationUtilsWrapper"),
+            ]
+        ),
         .binaryTarget(
             name: "DriveKitBeaconUtils",
             path: "Frameworks/DriveKitBeaconUtils/DriveKitBeaconUtilsModule.xcframework"
+        ),
+        .binaryTarget(
+            name: "DriveKitRegionMonitoringUtils",
+            path: "Frameworks/DriveKitRegionMonitoringUtils/DriveKitRegionMonitoringUtilsModule.xcframework"
+        ),
+        .binaryTarget(
+            name: "DriveKitLocationUtils",
+            path: "Frameworks/DriveKitLocationUtils/DriveKitLocationUtilsModule.xcframework"
         ),
         .binaryTarget(
             name: "DriveKitChallenge",
@@ -310,6 +353,10 @@ let package = Package(
         .binaryTarget(
             name: "DriveKitTripSimulatorNoop",
             path: "Frameworks/DriveKitTripSimulatorNoop/DriveKitTripSimulatorModule.xcframework"
+        ),
+        .binaryTarget(
+            name: "DriveKitStolenVehicleLocator",
+            path: "Frameworks/DriveKitStolenVehicleLocatorModule.xcframework"
         ),
         .binaryTarget(
             name: "DriveKitVehicle",
