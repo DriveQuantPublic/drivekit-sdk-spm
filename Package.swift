@@ -272,6 +272,7 @@ let package = Package(
                 .target(name: "DriveKitCoreWrapper"),
                 .target(name: "DriveKitRegionMonitoringUtilsWrapper"),
                 .target(name: "DriveKitLocationUtilsWrapper"),
+                .target(name: "DriveKitDBVehicleAccessWrapper"),
             ]
         ),
         .binaryTarget(
