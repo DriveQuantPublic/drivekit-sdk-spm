@@ -308,15 +308,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__OBJC__)
 
 @class NSString;
-SWIFT_CLASS("_TtC26DriveKitTripAnalysisModule10BeaconData")
-@interface BeaconData : NSObject
-- (nonnull instancetype)initWithProximityUuid:(NSString * _Nonnull)proximityUuid major:(NSInteger)major minor:(NSInteger)minor OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithProximityUuid:(NSString * _Nonnull)proximityUuid major:(NSInteger)major OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithProximityUuid:(NSString * _Nonnull)proximityUuid OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
 SWIFT_CLASS("_TtC26DriveKitTripAnalysisModule13BluetoothData")
 @interface BluetoothData : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nonnull name;
@@ -513,6 +504,7 @@ typedef SWIFT_ENUM(NSInteger, DKWorkingHoursUpdateStatus, open) {
 @class TripAnalysisConfig;
 @protocol TripListener;
 @class TripVehicle;
+@class BeaconData;
 @protocol DKTripLocation;
 enum State : NSInteger;
 SWIFT_CLASS("_TtC26DriveKitTripAnalysisModule20DriveKitTripAnalysis")
@@ -1034,15 +1026,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if defined(__OBJC__)
 
 @class NSString;
-SWIFT_CLASS("_TtC26DriveKitTripAnalysisModule10BeaconData")
-@interface BeaconData : NSObject
-- (nonnull instancetype)initWithProximityUuid:(NSString * _Nonnull)proximityUuid major:(NSInteger)major minor:(NSInteger)minor OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithProximityUuid:(NSString * _Nonnull)proximityUuid major:(NSInteger)major OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)initWithProximityUuid:(NSString * _Nonnull)proximityUuid OBJC_DESIGNATED_INITIALIZER;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
 SWIFT_CLASS("_TtC26DriveKitTripAnalysisModule13BluetoothData")
 @interface BluetoothData : NSObject
 @property (nonatomic, readonly, copy) NSString * _Nonnull name;
@@ -1239,6 +1222,7 @@ typedef SWIFT_ENUM(NSInteger, DKWorkingHoursUpdateStatus, open) {
 @class TripAnalysisConfig;
 @protocol TripListener;
 @class TripVehicle;
+@class BeaconData;
 @protocol DKTripLocation;
 enum State : NSInteger;
 SWIFT_CLASS("_TtC26DriveKitTripAnalysisModule20DriveKitTripAnalysis")

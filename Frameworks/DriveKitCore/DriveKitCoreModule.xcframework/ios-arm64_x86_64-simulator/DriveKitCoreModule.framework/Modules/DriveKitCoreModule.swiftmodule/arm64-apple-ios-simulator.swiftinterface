@@ -166,6 +166,11 @@ extension Swift.Double {
   public func coerceIn(minValue: Swift.Double, maxValue: Swift.Double) -> Swift.Double
   public func reduceAccuracy(decimalNumber: Swift.Int) -> Foundation.Decimal
 }
+extension Foundation.Decimal {
+  public var doubleValue: Swift.Double {
+    get
+  }
+}
 extension Swift.Array {
   public func elements(fromOffsets indexSet: Foundation.IndexSet) -> Swift.Array<Element>
 }
@@ -487,6 +492,17 @@ public enum SmartphoneDataUtils {
     get
   }
 }
+@objc public class BeaconData : ObjectiveC.NSObject {
+  final public let proximityUuid: Swift.String
+  final public let major: Swift.Int
+  final public let minor: Swift.Int
+  @objc public init(proximityUuid: Swift.String, major: Swift.Int, minor: Swift.Int)
+  @objc public init(proximityUuid: Swift.String, major: Swift.Int)
+  @objc public init(proximityUuid: Swift.String)
+  required public init(json: DriveKitNetworkingModule.SwiftyJSON)
+  public func toJSON() -> [Swift.String : Any]
+  @objc deinit
+}
 @_hasMissingDesignatedInitializers public class WhereReference<T, R> where T : DriveKitCoreModule.DKUnmanagedObject {
   public init(request: CoreData.NSFetchRequest<T>, viewContext: CoreData.NSManagedObjectContext)
   public func noFilter() -> DriveKitCoreModule.Query<T, R>
@@ -577,10 +593,14 @@ public struct DKConfigBluetoothDevice : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
+public struct DKConfigStolenVehicleLocator {
+  public init(scanEnabled: Swift.Bool, uuids: [Swift.String])
+}
 @_hasMissingDesignatedInitializers public class DKModuleManager {
   public var tripAnalysis: (any DriveKitCoreModule.DKTripAnalysisModule)?
   public var vehicle: (any DriveKitCoreModule.DKVehicleModule)?
   public var regionMonitoringManager: (any DriveKitCoreModule.DKRegionMonitoringModule)?
+  public var stolenVehicleLocator: (any DriveKitCoreModule.DKStolenVehicleLocatorModule)?
   @objc deinit
 }
 public protocol DKTripAnalysisModule {
@@ -588,6 +608,7 @@ public protocol DKTripAnalysisModule {
   var bluetoothUsage: DriveKitCoreModule.DKBluetoothUsage { get }
   func tripSyncFinishedWithEndTripLocations(endTripLocations: [DriveKitCoreModule.DKTransportationMeans : any DriveKitCoreModule.DKTripLocation])
   func getConfig() -> DriveKitCoreModule.DKConfigTripAnalysis
+  func isTripRunning() -> Swift.Bool
 }
 public enum DKBluetoothUsage {
   case none, configured, required
@@ -603,6 +624,12 @@ public protocol DKVehicleModule {
 }
 public protocol DKRegionMonitoringModule {
   func reset()
+}
+public protocol DKStolenVehicleLocatorModule {
+  func startPerformanceMode()
+  func stopPerformanceMode()
+  func beaconsToIgnoreUpdate(beacons: [DriveKitCoreModule.BeaconData])
+  func getConfig() -> DriveKitCoreModule.DKConfigStolenVehicleLocator
 }
 extension UIKit.UIDevice {
   @_Concurrency.MainActor @preconcurrency public var modelIdentifier: Swift.String {

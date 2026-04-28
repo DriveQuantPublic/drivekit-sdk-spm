@@ -24,7 +24,9 @@ extension Foundation.ProcessInfo {
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class DKLocationManager : ObjectiveC.NSObject {
   @objc public static let shared: DriveKitLocationUtilsModule.DKLocationManager
   public func lateSetup()
-  public func getCurrentLocation(completionHandler: @escaping (_LocationEssentials.CLLocation) -> Swift.Void)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func getCurrentLocation(completionHandler: @escaping (_LocationEssentials.CLLocation?, (any Swift.Error)?) -> Swift.Void)
+  #endif
   public func requestLocationUpdates(identifier: Swift.String, locationConfiguration: DriveKitLocationUtilsModule.DKLocationConfiguration)
   public func stopLocationUpdates(identifier: Swift.String)
   @objc deinit
