@@ -323,6 +323,16 @@ typedef SWIFT_ENUM(NSInteger, AccessType, open) {
   AccessTypeTripSharing = 7,
 };
 
+@class NSString;
+SWIFT_CLASS("_TtC18DriveKitCoreModule10BeaconData")
+@interface BeaconData : NSObject
+- (nonnull instancetype)initWithProximityUuid:(NSString * _Nonnull)proximityUuid major:(NSInteger)major minor:(NSInteger)minor OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithProximityUuid:(NSString * _Nonnull)proximityUuid major:(NSInteger)major OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithProximityUuid:(NSString * _Nonnull)proximityUuid OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 typedef SWIFT_ENUM(NSInteger, DKConnectivityType, open) {
   DKConnectivityTypeBluetooth = 0,
   DKConnectivityTypeGps = 1,
@@ -458,7 +468,6 @@ typedef SWIFT_ENUM(NSInteger, DeleteAccountStatus, open) {
   DeleteAccountStatusForbidden = 2,
 };
 
-@class NSString;
 @class GlobalConfig;
 @protocol DriveKitDelegate;
 enum SynchronizationType : NSInteger;

@@ -3492,6 +3492,13 @@
       },
       {
         "kind": "Import",
+        "name": "DriveKitCoreModule",
+        "printedName": "DriveKitCoreModule",
+        "declKind": "Import",
+        "moduleName": "DriveKitTripAnalysisModule"
+      },
+      {
+        "kind": "Import",
         "name": "DriveKitNetworkingModule",
         "printedName": "DriveKitNetworkingModule",
         "declKind": "Import",
@@ -3503,435 +3510,6 @@
         "printedName": "DriveKitRegionMonitoringUtilsModule",
         "declKind": "Import",
         "moduleName": "DriveKitTripAnalysisModule"
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "BeaconData",
-        "printedName": "BeaconData",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "proximityUuid",
-            "printedName": "proximityUuid",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:26DriveKitTripAnalysisModule10BeaconDataC13proximityUuidSSvp",
-            "mangledName": "$s26DriveKitTripAnalysisModule10BeaconDataC13proximityUuidSSvp",
-            "moduleName": "DriveKitTripAnalysisModule",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:26DriveKitTripAnalysisModule10BeaconDataC13proximityUuidSSvg",
-                "mangledName": "$s26DriveKitTripAnalysisModule10BeaconDataC13proximityUuidSSvg",
-                "moduleName": "DriveKitTripAnalysisModule",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "major",
-            "printedName": "major",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:26DriveKitTripAnalysisModule10BeaconDataC5majorSivp",
-            "mangledName": "$s26DriveKitTripAnalysisModule10BeaconDataC5majorSivp",
-            "moduleName": "DriveKitTripAnalysisModule",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:26DriveKitTripAnalysisModule10BeaconDataC5majorSivg",
-                "mangledName": "$s26DriveKitTripAnalysisModule10BeaconDataC5majorSivg",
-                "moduleName": "DriveKitTripAnalysisModule",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "minor",
-            "printedName": "minor",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:26DriveKitTripAnalysisModule10BeaconDataC5minorSivp",
-            "mangledName": "$s26DriveKitTripAnalysisModule10BeaconDataC5minorSivp",
-            "moduleName": "DriveKitTripAnalysisModule",
-            "declAttributes": [
-              "Final",
-              "HasStorage",
-              "AccessControl"
-            ],
-            "isLet": true,
-            "hasStorage": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:26DriveKitTripAnalysisModule10BeaconDataC5minorSivg",
-                "mangledName": "$s26DriveKitTripAnalysisModule10BeaconDataC5minorSivg",
-                "moduleName": "DriveKitTripAnalysisModule",
-                "implicit": true,
-                "declAttributes": [
-                  "Final"
-                ],
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(proximityUuid:major:minor:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "BeaconData",
-                "printedName": "DriveKitTripAnalysisModule.BeaconData",
-                "usr": "c:@M@DriveKitTripAnalysisModule@objc(cs)BeaconData"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@DriveKitTripAnalysisModule@objc(cs)BeaconData(im)initWithProximityUuid:major:minor:",
-            "mangledName": "$s26DriveKitTripAnalysisModule10BeaconDataC13proximityUuid5major5minorACSS_S2itcfc",
-            "moduleName": "DriveKitTripAnalysisModule",
-            "objc_name": "initWithProximityUuid:major:minor:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(proximityUuid:major:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "BeaconData",
-                "printedName": "DriveKitTripAnalysisModule.BeaconData",
-                "usr": "c:@M@DriveKitTripAnalysisModule@objc(cs)BeaconData"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@DriveKitTripAnalysisModule@objc(cs)BeaconData(im)initWithProximityUuid:major:",
-            "mangledName": "$s26DriveKitTripAnalysisModule10BeaconDataC13proximityUuid5majorACSS_Sitcfc",
-            "moduleName": "DriveKitTripAnalysisModule",
-            "objc_name": "initWithProximityUuid:major:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(proximityUuid:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "BeaconData",
-                "printedName": "DriveKitTripAnalysisModule.BeaconData",
-                "usr": "c:@M@DriveKitTripAnalysisModule@objc(cs)BeaconData"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@DriveKitTripAnalysisModule@objc(cs)BeaconData(im)initWithProximityUuid:",
-            "mangledName": "$s26DriveKitTripAnalysisModule10BeaconDataC13proximityUuidACSS_tcfc",
-            "moduleName": "DriveKitTripAnalysisModule",
-            "objc_name": "initWithProximityUuid:",
-            "declAttributes": [
-              "AccessControl",
-              "ObjC"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(json:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "BeaconData",
-                "printedName": "DriveKitTripAnalysisModule.BeaconData",
-                "usr": "c:@M@DriveKitTripAnalysisModule@objc(cs)BeaconData"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "SwiftyJSON",
-                "printedName": "DriveKitNetworkingModule.SwiftyJSON",
-                "usr": "s:24DriveKitNetworkingModule10SwiftyJSONV"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:26DriveKitTripAnalysisModule10BeaconDataC4jsonAC0ab10NetworkingE010SwiftyJSONV_tcfc",
-            "mangledName": "$s26DriveKitTripAnalysisModule10BeaconDataC4jsonAC0ab10NetworkingE010SwiftyJSONV_tcfc",
-            "moduleName": "DriveKitTripAnalysisModule",
-            "declAttributes": [
-              "AccessControl",
-              "Required"
-            ],
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Function",
-            "name": "toJSON",
-            "printedName": "toJSON()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[Swift.String : Any]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "ProtocolComposition",
-                    "printedName": "Any"
-                  }
-                ],
-                "usr": "s:SD"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:26DriveKitTripAnalysisModule10BeaconDataC6toJSONSDySSypGyF",
-            "mangledName": "$s26DriveKitTripAnalysisModule10BeaconDataC6toJSONSDySSypGyF",
-            "moduleName": "DriveKitTripAnalysisModule",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "BeaconData",
-                "printedName": "DriveKitTripAnalysisModule.BeaconData",
-                "usr": "c:@M@DriveKitTripAnalysisModule@objc(cs)BeaconData"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@DriveKitTripAnalysisModule@objc(cs)BeaconData(im)init",
-            "mangledName": "$s26DriveKitTripAnalysisModule10BeaconDataCACycfc",
-            "moduleName": "DriveKitTripAnalysisModule",
-            "overriding": true,
-            "implicit": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override"
-            ],
-            "init_kind": "Designated"
-          }
-        ],
-        "declKind": "Class",
-        "usr": "c:@M@DriveKitTripAnalysisModule@objc(cs)BeaconData",
-        "mangledName": "$s26DriveKitTripAnalysisModule10BeaconDataC",
-        "moduleName": "DriveKitTripAnalysisModule",
-        "declAttributes": [
-          "AccessControl",
-          "ObjC"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "hasMissingDesignatedInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "DriveKitModel",
-            "printedName": "DriveKitModel",
-            "usr": "s:24DriveKitNetworkingModule0aB5ModelP",
-            "mangledName": "$s24DriveKitNetworkingModule0aB5ModelP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          }
-        ]
       },
       {
         "kind": "Import",
@@ -5056,6 +4634,13 @@
         "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "DriveKitTripAnalysisModule"
+      },
+      {
+        "kind": "Import",
+        "name": "DriveKitCoreModule",
+        "printedName": "DriveKitCoreModule",
         "declKind": "Import",
         "moduleName": "DriveKitTripAnalysisModule"
       },
@@ -7166,6 +6751,13 @@
       },
       {
         "kind": "Import",
+        "name": "DriveKitCoreModule",
+        "printedName": "DriveKitCoreModule",
+        "declKind": "Import",
+        "moduleName": "DriveKitTripAnalysisModule"
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -8350,6 +7942,13 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "DriveKitCoreModule",
+        "printedName": "DriveKitCoreModule",
+        "declKind": "Import",
+        "moduleName": "DriveKitTripAnalysisModule"
       },
       {
         "kind": "Import",
@@ -10284,6 +9883,13 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "DriveKitCoreModule",
+        "printedName": "DriveKitCoreModule",
+        "declKind": "Import",
+        "moduleName": "DriveKitTripAnalysisModule"
       },
       {
         "kind": "Import",
@@ -13585,21 +13191,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Array",
-                "printedName": "[DriveKitTripAnalysisModule.BeaconData]",
+                "printedName": "[DriveKitCoreModule.BeaconData]",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "BeaconData",
-                    "printedName": "DriveKitTripAnalysisModule.BeaconData",
-                    "usr": "c:@M@DriveKitTripAnalysisModule@objc(cs)BeaconData"
+                    "printedName": "DriveKitCoreModule.BeaconData",
+                    "usr": "c:@M@DriveKitCoreModule@objc(cs)BeaconData"
                   }
                 ],
                 "usr": "s:Sa"
               }
             ],
             "declKind": "Var",
-            "usr": "s:26DriveKitTripAnalysisModule0cD6ConfigC7beaconsSayAA10BeaconDataCGvp",
-            "mangledName": "$s26DriveKitTripAnalysisModule0cD6ConfigC7beaconsSayAA10BeaconDataCGvp",
+            "usr": "s:26DriveKitTripAnalysisModule0cD6ConfigC7beaconsSay0ab4CoreE010BeaconDataCGvp",
+            "mangledName": "$s26DriveKitTripAnalysisModule0cD6ConfigC7beaconsSay0ab4CoreE010BeaconDataCGvp",
             "moduleName": "DriveKitTripAnalysisModule",
             "declAttributes": [
               "HasInitialValue",
@@ -13617,21 +13223,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Array",
-                    "printedName": "[DriveKitTripAnalysisModule.BeaconData]",
+                    "printedName": "[DriveKitCoreModule.BeaconData]",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "BeaconData",
-                        "printedName": "DriveKitTripAnalysisModule.BeaconData",
-                        "usr": "c:@M@DriveKitTripAnalysisModule@objc(cs)BeaconData"
+                        "printedName": "DriveKitCoreModule.BeaconData",
+                        "usr": "c:@M@DriveKitCoreModule@objc(cs)BeaconData"
                       }
                     ],
                     "usr": "s:Sa"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:26DriveKitTripAnalysisModule0cD6ConfigC7beaconsSayAA10BeaconDataCGvg",
-                "mangledName": "$s26DriveKitTripAnalysisModule0cD6ConfigC7beaconsSayAA10BeaconDataCGvg",
+                "usr": "s:26DriveKitTripAnalysisModule0cD6ConfigC7beaconsSay0ab4CoreE010BeaconDataCGvg",
+                "mangledName": "$s26DriveKitTripAnalysisModule0cD6ConfigC7beaconsSay0ab4CoreE010BeaconDataCGvg",
                 "moduleName": "DriveKitTripAnalysisModule",
                 "implicit": true,
                 "accessorKind": "get"
@@ -13646,21 +13252,21 @@
               {
                 "kind": "TypeNominal",
                 "name": "Array",
-                "printedName": "[DriveKitTripAnalysisModule.BeaconData]",
+                "printedName": "[DriveKitCoreModule.BeaconData]",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "BeaconData",
-                    "printedName": "DriveKitTripAnalysisModule.BeaconData",
-                    "usr": "c:@M@DriveKitTripAnalysisModule@objc(cs)BeaconData"
+                    "printedName": "DriveKitCoreModule.BeaconData",
+                    "usr": "c:@M@DriveKitCoreModule@objc(cs)BeaconData"
                   }
                 ],
                 "usr": "s:Sa"
               }
             ],
             "declKind": "Var",
-            "usr": "s:26DriveKitTripAnalysisModule0cD6ConfigC15beaconsVehiclesSayAA10BeaconDataCGvp",
-            "mangledName": "$s26DriveKitTripAnalysisModule0cD6ConfigC15beaconsVehiclesSayAA10BeaconDataCGvp",
+            "usr": "s:26DriveKitTripAnalysisModule0cD6ConfigC15beaconsVehiclesSay0ab4CoreE010BeaconDataCGvp",
+            "mangledName": "$s26DriveKitTripAnalysisModule0cD6ConfigC15beaconsVehiclesSay0ab4CoreE010BeaconDataCGvp",
             "moduleName": "DriveKitTripAnalysisModule",
             "declAttributes": [
               "HasInitialValue",
@@ -13678,21 +13284,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Array",
-                    "printedName": "[DriveKitTripAnalysisModule.BeaconData]",
+                    "printedName": "[DriveKitCoreModule.BeaconData]",
                     "children": [
                       {
                         "kind": "TypeNominal",
                         "name": "BeaconData",
-                        "printedName": "DriveKitTripAnalysisModule.BeaconData",
-                        "usr": "c:@M@DriveKitTripAnalysisModule@objc(cs)BeaconData"
+                        "printedName": "DriveKitCoreModule.BeaconData",
+                        "usr": "c:@M@DriveKitCoreModule@objc(cs)BeaconData"
                       }
                     ],
                     "usr": "s:Sa"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:26DriveKitTripAnalysisModule0cD6ConfigC15beaconsVehiclesSayAA10BeaconDataCGvg",
-                "mangledName": "$s26DriveKitTripAnalysisModule0cD6ConfigC15beaconsVehiclesSayAA10BeaconDataCGvg",
+                "usr": "s:26DriveKitTripAnalysisModule0cD6ConfigC15beaconsVehiclesSay0ab4CoreE010BeaconDataCGvg",
+                "mangledName": "$s26DriveKitTripAnalysisModule0cD6ConfigC15beaconsVehiclesSay0ab4CoreE010BeaconDataCGvg",
                 "moduleName": "DriveKitTripAnalysisModule",
                 "implicit": true,
                 "accessorKind": "get"
@@ -20677,6 +20283,13 @@
         "moduleName": "DriveKitTripAnalysisModule"
       },
       {
+        "kind": "Import",
+        "name": "DriveKitCoreModule",
+        "printedName": "DriveKitCoreModule",
+        "declKind": "Import",
+        "moduleName": "DriveKitTripAnalysisModule"
+      },
+      {
         "kind": "TypeDecl",
         "name": "TripListener",
         "printedName": "TripListener",
@@ -20847,13 +20460,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "BeaconData",
-                "printedName": "DriveKitTripAnalysisModule.BeaconData",
-                "usr": "c:@M@DriveKitTripAnalysisModule@objc(cs)BeaconData"
+                "printedName": "DriveKitCoreModule.BeaconData",
+                "usr": "c:@M@DriveKitCoreModule@objc(cs)BeaconData"
               }
             ],
             "declKind": "Func",
             "usr": "c:@M@DriveKitTripAnalysisModule@objc(pl)TripListener(im)beaconConfirmedWithBeacon:",
-            "mangledName": "$s26DriveKitTripAnalysisModule0C8ListenerP15beaconConfirmed0G0yAA10BeaconDataC_tF",
+            "mangledName": "$s26DriveKitTripAnalysisModule0C8ListenerP15beaconConfirmed0G0y0ab4CoreE010BeaconDataC_tF",
             "moduleName": "DriveKitTripAnalysisModule",
             "genericSig": "<τ_0_0 where τ_0_0 : DriveKitTripAnalysisModule.TripListener>",
             "sugared_genericSig": "<Self where Self : DriveKitTripAnalysisModule.TripListener>",
@@ -23258,13 +22871,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Array",
-                "printedName": "[DriveKitTripAnalysisModule.BeaconData]",
+                "printedName": "[DriveKitCoreModule.BeaconData]",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "BeaconData",
-                    "printedName": "DriveKitTripAnalysisModule.BeaconData",
-                    "usr": "c:@M@DriveKitTripAnalysisModule@objc(cs)BeaconData"
+                    "printedName": "DriveKitCoreModule.BeaconData",
+                    "usr": "c:@M@DriveKitCoreModule@objc(cs)BeaconData"
                   }
                 ],
                 "usr": "s:Sa"
@@ -23272,7 +22885,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@M@DriveKitTripAnalysisModule@objc(cs)DriveKitTripAnalysis(im)setBeaconsWithBeacons:",
-            "mangledName": "$s26DriveKitTripAnalysisModule0abcD0C10setBeacons7beaconsySayAA10BeaconDataCG_tF",
+            "mangledName": "$s26DriveKitTripAnalysisModule0abcD0C10setBeacons7beaconsySay0ab4CoreE010BeaconDataCG_tF",
             "moduleName": "DriveKitTripAnalysisModule",
             "objc_name": "setBeaconsWithBeacons:",
             "declAttributes": [
@@ -23289,13 +22902,13 @@
               {
                 "kind": "TypeNominal",
                 "name": "Array",
-                "printedName": "[DriveKitTripAnalysisModule.BeaconData]",
+                "printedName": "[DriveKitCoreModule.BeaconData]",
                 "children": [
                   {
                     "kind": "TypeNominal",
                     "name": "BeaconData",
-                    "printedName": "DriveKitTripAnalysisModule.BeaconData",
-                    "usr": "c:@M@DriveKitTripAnalysisModule@objc(cs)BeaconData"
+                    "printedName": "DriveKitCoreModule.BeaconData",
+                    "usr": "c:@M@DriveKitCoreModule@objc(cs)BeaconData"
                   }
                 ],
                 "usr": "s:Sa"
@@ -23303,7 +22916,7 @@
             ],
             "declKind": "Func",
             "usr": "c:@M@DriveKitTripAnalysisModule@objc(cs)DriveKitTripAnalysis(im)getAllBeacons",
-            "mangledName": "$s26DriveKitTripAnalysisModule0abcD0C13getAllBeaconsSayAA10BeaconDataCGyF",
+            "mangledName": "$s26DriveKitTripAnalysisModule0abcD0C13getAllBeaconsSay0ab4CoreE010BeaconDataCGyF",
             "moduleName": "DriveKitTripAnalysisModule",
             "declAttributes": [
               "AccessControl",
@@ -26165,6 +25778,95 @@
         "printedName": "DriveKitNetworkingModule",
         "declKind": "Import",
         "moduleName": "DriveKitTripAnalysisModule"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "BeaconData",
+        "printedName": "BeaconData",
+        "declKind": "Class",
+        "usr": "c:@M@DriveKitCoreModule@objc(cs)BeaconData",
+        "mangledName": "$s18DriveKitCoreModule10BeaconDataC",
+        "moduleName": "DriveKitCoreModule",
+        "declAttributes": [
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "DriveKitModel",
+            "printedName": "DriveKitModel",
+            "usr": "s:24DriveKitNetworkingModule0aB5ModelP",
+            "mangledName": "$s24DriveKitNetworkingModule0aB5ModelP"
+          }
+        ]
       }
     ],
     "json_format_version": 8
@@ -26915,7 +26617,7 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/entity\/BeaconsList.swift",
       "kind": "Array",
-      "offset": 280,
+      "offset": 306,
       "length": 2,
       "value": "[]"
     },
@@ -27307,35 +27009,35 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/recorder\/BeaconRecordedData.swift",
       "kind": "IntegerLiteral",
-      "offset": 255,
+      "offset": 281,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/recorder\/BeaconRecordedData.swift",
       "kind": "IntegerLiteral",
-      "offset": 287,
+      "offset": 313,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/recorder\/BeaconRecordedData.swift",
       "kind": "BooleanLiteral",
-      "offset": 422,
+      "offset": 448,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/recorder\/BeaconRecordedData.swift",
       "kind": "IntegerLiteral",
-      "offset": 455,
+      "offset": 481,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/recorder\/BeaconRecordedData.swift",
       "kind": "BooleanLiteral",
-      "offset": 479,
+      "offset": 505,
       "length": 5,
       "value": "false"
     },
@@ -27860,84 +27562,84 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripAnalysisConfig.swift",
       "kind": "Array",
-      "offset": 802,
+      "offset": 935,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripAnalysisConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 913,
+      "offset": 1046,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripAnalysisConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 969,
+      "offset": 1102,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripAnalysisConfig.swift",
       "kind": "Array",
-      "offset": 1039,
+      "offset": 1172,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripAnalysisConfig.swift",
       "kind": "Array",
-      "offset": 1115,
+      "offset": 1248,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripAnalysisConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1178,
+      "offset": 1311,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripAnalysisConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1232,
+      "offset": 1365,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripAnalysisConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1294,
+      "offset": 1427,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripAnalysisConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1346,
+      "offset": 1479,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripAnalysisConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1400,
+      "offset": 1533,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripAnalysisConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1457,
+      "offset": 1590,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripAnalysisConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1585,
+      "offset": 1718,
       "length": 5,
       "value": "false"
     },
@@ -28973,42 +28675,42 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripListener.swift",
       "kind": "IntegerLiteral",
-      "offset": 1329,
+      "offset": 1355,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripListener.swift",
       "kind": "IntegerLiteral",
-      "offset": 1349,
+      "offset": 1375,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripListener.swift",
       "kind": "IntegerLiteral",
-      "offset": 1369,
+      "offset": 1395,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripListener.swift",
       "kind": "IntegerLiteral",
-      "offset": 1390,
+      "offset": 1416,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripListener.swift",
       "kind": "IntegerLiteral",
-      "offset": 1413,
+      "offset": 1439,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripListener.swift",
       "kind": "IntegerLiteral",
-      "offset": 1444,
+      "offset": 1470,
       "length": 1,
       "value": "6"
     },

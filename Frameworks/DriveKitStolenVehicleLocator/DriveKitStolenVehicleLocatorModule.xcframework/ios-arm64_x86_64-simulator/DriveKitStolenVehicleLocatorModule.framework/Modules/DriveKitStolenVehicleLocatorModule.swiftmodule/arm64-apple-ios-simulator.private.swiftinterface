@@ -2,9 +2,16 @@
 // swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
 // swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name DriveKitStolenVehicleLocatorModule
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+import CoreLocation
+import DriveKitBeaconUtilsModule
 import DriveKitCoreModule
+import DriveKitDBVehicleAccessModule
+import DriveKitLocationUtilsModule
+import DriveKitNetworkingModule
+import DriveKitRegionMonitoringUtilsModule
 import Foundation
 import Swift
+import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
@@ -19,6 +26,21 @@ public enum DKRemoveUuidErrorType {
     get
   }
 }
+extension DriveKitRegionMonitoringUtilsModule.DKBeaconScanResults : @retroactive Swift.Equatable {
+  public static func == (lhs: DriveKitRegionMonitoringUtilsModule.DKBeaconScanResults, rhs: DriveKitRegionMonitoringUtilsModule.DKBeaconScanResults) -> Swift.Bool
+}
+extension DriveKitRegionMonitoringUtilsModule.DKBeaconScanResults : @retroactive Swift.Hashable {
+  final public func hash(into hasher: inout Swift.Hasher)
+  final public var hashValue: Swift.Int {
+    get
+  }
+}
+extension DriveKitRegionMonitoringUtilsModule.DKBeaconScanResults : @retroactive Swift.Encodable {
+  final public func encode(to encoder: any Swift.Encoder) throws
+}
+extension DriveKitRegionMonitoringUtilsModule.DKBeaconScanResults : @retroactive Swift.Decodable {
+  convenience public init(from decoder: any Swift.Decoder) throws
+}
 public enum DKStopScanResult {
   case success, error(DriveKitStolenVehicleLocatorModule.DKStopScanErrorType)
 }
@@ -31,15 +53,18 @@ public enum DKStopScanErrorType {
   }
 }
 public enum DKStartScanResult {
-  case success, error(DriveKitStolenVehicleLocatorModule.DKAddUuidErrorType)
+  case success, error(DriveKitStolenVehicleLocatorModule.DKStartScanErrorType)
 }
 public enum DKStartScanErrorType {
-  case driveKitNotInitialized, userNotConnected, emptyUUidList, scanAlreadyStarted
+  case driveKitNotInitialized, userNotConnected, emptyUuidList, scanAlreadyStarted
   public static func == (a: DriveKitStolenVehicleLocatorModule.DKStartScanErrorType, b: DriveKitStolenVehicleLocatorModule.DKStartScanErrorType) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
+}
+extension Swift.Array where Element : DriveKitCoreModule.BeaconData {
+  public func containsBeacon(_ beacon: DriveKitCoreModule.BeaconData) -> Swift.Bool
 }
 public enum DKGetUuidListResult {
   case success([Swift.String]), error(DriveKitStolenVehicleLocatorModule.DKGetUuidListErrorType)
@@ -73,6 +98,15 @@ public enum DKAddUuidErrorType {
   public func startScan(completion: @escaping (_ result: DriveKitStolenVehicleLocatorModule.DKStartScanResult) -> Swift.Void)
   public func stopScan(completion: @escaping (_ result: DriveKitStolenVehicleLocatorModule.DKStopScanResult) -> Swift.Void)
   @objc deinit
+}
+extension DriveKitStolenVehicleLocatorModule.DriveKitStolenVehicleLocator : DriveKitCoreModule.DKStolenVehicleLocatorModule {
+  public func startPerformanceMode()
+  public func stopPerformanceMode()
+  public func beaconsToIgnoreUpdate(beacons: [DriveKitCoreModule.BeaconData])
+  public func getConfig() -> DriveKitCoreModule.DKConfigStolenVehicleLocator
+}
+extension DriveKitStolenVehicleLocatorModule.DriveKitStolenVehicleLocator : DriveKitDBVehicleAccessModule.DKVehicleUpdatedDelegate {
+  public func onVehicleUpdated()
 }
 extension DriveKitStolenVehicleLocatorModule.DKRemoveUuidErrorType : Swift.Equatable {}
 extension DriveKitStolenVehicleLocatorModule.DKRemoveUuidErrorType : Swift.Hashable {}
