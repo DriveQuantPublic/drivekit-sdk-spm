@@ -299,7 +299,7 @@
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(_LocationEssentials.CLLocation?, (any Swift.Error)?) -> ()",
+                "printedName": "(_LocationEssentials.CLLocation) -> ()",
                 "children": [
                   {
                     "kind": "TypeNominal",
@@ -308,45 +308,16 @@
                   },
                   {
                     "kind": "TypeNominal",
-                    "name": "Tuple",
-                    "printedName": "(_LocationEssentials.CLLocation?, (any Swift.Error)?)",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "_LocationEssentials.CLLocation?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "CLLocation",
-                            "printedName": "_LocationEssentials.CLLocation",
-                            "usr": "c:objc(cs)CLLocation"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "(any Swift.Error)?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Error",
-                            "printedName": "any Swift.Error",
-                            "usr": "s:s5ErrorP"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ]
+                    "name": "CLLocation",
+                    "printedName": "_LocationEssentials.CLLocation",
+                    "usr": "c:objc(cs)CLLocation"
                   }
                 ]
               }
             ],
             "declKind": "Func",
-            "usr": "s:27DriveKitLocationUtilsModule17DKLocationManagerC010getCurrentC017completionHandleryySo10CLLocationCSg_s5Error_pSgtc_tF",
-            "mangledName": "$s27DriveKitLocationUtilsModule17DKLocationManagerC010getCurrentC017completionHandleryySo10CLLocationCSg_s5Error_pSgtc_tF",
+            "usr": "s:27DriveKitLocationUtilsModule17DKLocationManagerC010getCurrentC017completionHandleryySo10CLLocationCc_tF",
+            "mangledName": "$s27DriveKitLocationUtilsModule17DKLocationManagerC010getCurrentC017completionHandleryySo10CLLocationCc_tF",
             "moduleName": "DriveKitLocationUtilsModule",
             "declAttributes": [
               "AccessControl"
@@ -1338,35 +1309,35 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-location-utils\/DriveKitLocationUtils.swift",
       "kind": "Array",
-      "offset": 607,
+      "offset": 598,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-location-utils\/DriveKitLocationUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 830,
+      "offset": 821,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-location-utils\/DriveKitLocationUtils.swift",
       "kind": "BooleanLiteral",
-      "offset": 893,
+      "offset": 884,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-location-utils\/DriveKitLocationUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 9502,
+      "offset": 9293,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-location-utils\/DriveKitLocationUtils.swift",
       "kind": "IntegerLiteral",
-      "offset": 9558,
+      "offset": 9349,
       "length": 2,
       "value": "15"
     }

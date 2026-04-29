@@ -104,7 +104,16 @@ public class EcoDrivingContext : DriveKitNetworkingModule.DriveKitModel {
     get
   }
 }
-extension DriveKitCoreModule.BeaconData : @retroactive DriveKitNetworkingModule.DriveKitModel {
+@_hasMissingDesignatedInitializers @objc public class BeaconData : ObjectiveC.NSObject, DriveKitNetworkingModule.DriveKitModel {
+  final public let proximityUuid: Swift.String
+  final public let major: Swift.Int
+  final public let minor: Swift.Int
+  @objc public init(proximityUuid: Swift.String, major: Swift.Int, minor: Swift.Int)
+  @objc public init(proximityUuid: Swift.String, major: Swift.Int)
+  @objc public init(proximityUuid: Swift.String)
+  required public init(json: DriveKitNetworkingModule.SwiftyJSON)
+  public func toJSON() -> [Swift.String : Any]
+  @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class TripResponseStatus : ObjectiveC.NSObject {
   @objc final public let status: DriveKitTripAnalysisModule.TripResponseStatusType
@@ -365,10 +374,10 @@ public struct SpeedLimitContext : DriveKitNetworkingModule.DriveKitModel {
   public var vehicleId: Swift.String? {
     get
   }
-  public var beacons: [DriveKitCoreModule.BeaconData] {
+  public var beacons: [DriveKitTripAnalysisModule.BeaconData] {
     get
   }
-  public var beaconsVehicles: [DriveKitCoreModule.BeaconData] {
+  public var beaconsVehicles: [DriveKitTripAnalysisModule.BeaconData] {
     get
   }
   public var autostart: Swift.Bool {
@@ -568,7 +577,7 @@ public enum CrashFeedbackSeverity : Swift.String, Swift.Codable {
   @objc optional func tripRecordingCanceled(state: any DriveKitTripAnalysisModule.DKTripRecordingCanceledState)
   @objc optional func tripRecordingFinished(state: any DriveKitTripAnalysisModule.DKTripRecordingFinishedState)
   @objc optional func beaconDetected()
-  @objc optional func beaconConfirmed(beacon: DriveKitCoreModule.BeaconData)
+  @objc optional func beaconConfirmed(beacon: DriveKitTripAnalysisModule.BeaconData)
   @objc optional func significantLocationChangeDetected(location: _LocationEssentials.CLLocation)
   @objc optional func potentialTripStart(startMode: DriveKitTripAnalysisModule.StartMode)
   @objc optional func sdkStateChanged(state: DriveKitTripAnalysisModule.State)
@@ -652,8 +661,8 @@ public enum CrashFeedbackSeverity : Swift.String, Swift.Codable {
   @objc public func setVehicle(vehicle: DriveKitTripAnalysisModule.TripVehicle?)
   #endif
   @objc public func setStopTimeOut(timeOut: Swift.Int)
-  @objc public func setBeacons(beacons: [DriveKitCoreModule.BeaconData])
-  @objc public func getAllBeacons() -> [DriveKitCoreModule.BeaconData]
+  @objc public func setBeacons(beacons: [DriveKitTripAnalysisModule.BeaconData])
+  @objc public func getAllBeacons() -> [DriveKitTripAnalysisModule.BeaconData]
   @objc public func setBluetoothDevices(bluetoothDevices: [DriveKitTripAnalysisModule.BluetoothData])
   @objc public func getAllBluetoothDevices() -> [DriveKitTripAnalysisModule.BluetoothData]
   public func setVehiclesConfigTakeover(vehiclesConfigTakeOver: Swift.Bool)
