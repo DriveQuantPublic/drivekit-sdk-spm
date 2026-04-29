@@ -18,7 +18,7 @@
 		</data>
 		<key>ios-arm64/DriveKitBeaconUtilsModule.framework/Info.plist</key>
 		<data>
-		CokRxK7wbd6BR62xsqPa/AmsxAM=
+		827zFRvHXsAqZ+57+J7A+yFviFo=
 		</data>
 		<key>ios-arm64/DriveKitBeaconUtilsModule.framework/Modules/DriveKitBeaconUtilsModule.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitBeaconUtilsModule.framework/DriveKitBeaconUtilsModule</key>
 		<data>
-		Z4yFRhIxrN4rVZTnvG7LM1m1c8Y=
+		YUcNjqgXIUHNCzJKGEKnvpF/HIk=
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitBeaconUtilsModule.framework/Headers/DriveKitBeaconUtilsModule-Swift.h</key>
 		<data>
@@ -58,7 +58,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitBeaconUtilsModule.framework/Info.plist</key>
 		<data>
-		nCkh6F5+i6T/jEJQjz7cKKyJhRY=
+		mlL+o/5A2GZWo1Gpm2fe4iNA1o8=
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitBeaconUtilsModule.framework/Modules/DriveKitBeaconUtilsModule.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -102,7 +102,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitBeaconUtilsModule.framework/_CodeSignature/CodeResources</key>
 		<data>
-		gBEOlgv3di137N7uK64RZ3S2L24=
+		i5uTXroRUikhqOXkXeKpz9I4Eb0=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -144,11 +144,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			CokRxK7wbd6BR62xsqPa/AmsxAM=
+			827zFRvHXsAqZ+57+J7A+yFviFo=
 			</data>
 			<key>hash2</key>
 			<data>
-			gu/1+TTpgmA2jzbnZF4bqQfuJ+fjbw2mIxfF5IlnwFE=
+			4rR6BGxUMp6f1ha9o66RgevkiAWcxepHEWzkGq8UPok=
 			</data>
 		</dict>
 		<key>ios-arm64/DriveKitBeaconUtilsModule.framework/Modules/DriveKitBeaconUtilsModule.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -221,11 +221,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Z4yFRhIxrN4rVZTnvG7LM1m1c8Y=
+			YUcNjqgXIUHNCzJKGEKnvpF/HIk=
 			</data>
 			<key>hash2</key>
 			<data>
-			Ek9K+ok1KdQ9B3opaWqEbleajoUiWnQXeC4/S32Lwko=
+			5NpzQQPmtsLETQf2vbgoQRsMBcyaWJKiMeEcBiUYhsE=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/DriveKitBeaconUtilsModule.framework/Headers/DriveKitBeaconUtilsModule-Swift.h</key>
@@ -254,11 +254,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			nCkh6F5+i6T/jEJQjz7cKKyJhRY=
+			mlL+o/5A2GZWo1Gpm2fe4iNA1o8=
 			</data>
 			<key>hash2</key>
 			<data>
-			oMbIF0oU4DHxVxFXNElvkumEP2T0oTSwA7+1BxuL5tA=
+			8LNdSlkLGKH2ByUcwhDwkRYLbRlY18l/AimyliDionw=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/DriveKitBeaconUtilsModule.framework/Modules/DriveKitBeaconUtilsModule.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -375,11 +375,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gBEOlgv3di137N7uK64RZ3S2L24=
+			i5uTXroRUikhqOXkXeKpz9I4Eb0=
 			</data>
 			<key>hash2</key>
 			<data>
-			zzOzHh12JpY95fxI8ccN6HtAoICZl+Jir7nbpne4ePM=
+			vZ5yrv+2nmWqz9w7k2bexcvX4dy7V4pcoeuUqSxWK2A=
 			</data>
 		</dict>
 	</dict>
