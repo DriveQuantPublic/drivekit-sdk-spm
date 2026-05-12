@@ -9,8 +9,6 @@ import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-public enum LocationUtilsConstant {
-}
 public class LocationSimulator {
   public init()
   public func start()
@@ -18,15 +16,9 @@ public class LocationSimulator {
   public func stop()
   @objc deinit
 }
-extension Foundation.ProcessInfo {
-  public static func isRunningUnitTest() -> Swift.Bool
-}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class DKLocationManager : ObjectiveC.NSObject {
   @objc public static let shared: DriveKitLocationUtilsModule.DKLocationManager
   public func lateSetup()
-  #if compiler(>=5.3) && $NonescapableTypes
-  public func getCurrentLocation(completionHandler: @escaping (_LocationEssentials.CLLocation?, (any Swift.Error)?) -> Swift.Void)
-  #endif
   public func requestLocationUpdates(identifier: Swift.String, locationConfiguration: DriveKitLocationUtilsModule.DKLocationConfiguration)
   public func stopLocationUpdates(identifier: Swift.String)
   @objc deinit
@@ -38,12 +30,12 @@ extension DriveKitLocationUtilsModule.DKLocationManager : CoreLocation.CLLocatio
 }
 @objc public class DKLocationConfiguration : ObjectiveC.NSObject {
   #if compiler(>=5.3) && $NonescapableTypes
-  public init(locationMode: DriveKitLocationUtilsModule.DKLocationMode, listener: (any DriveKitLocationUtilsModule.DKLocationDelegate)?)
+  public init(locationMode: DriveKitLocationUtilsModule.DKLocationMode, listener: (any DriveKitLocationUtilsModule.DKLocationDelegate)?, expirationDate: Foundation.Date? = nil)
   #endif
   @objc deinit
 }
 public enum DKLocationMode : Swift.Comparable {
-  case opportunistic, significantChange, lowFrequencyUpdates, continuous
+  case opportunistic, significantChange, lowFrequencyUpdates, continuous, currentLocation
   public static func < (a: DriveKitLocationUtilsModule.DKLocationMode, b: DriveKitLocationUtilsModule.DKLocationMode) -> Swift.Bool
   public static func == (a: DriveKitLocationUtilsModule.DKLocationMode, b: DriveKitLocationUtilsModule.DKLocationMode) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)

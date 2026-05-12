@@ -41,23 +41,23 @@ extension DriveKitRegionMonitoringUtilsModule.DKBeaconScanResults : @retroactive
 extension DriveKitRegionMonitoringUtilsModule.DKBeaconScanResults : @retroactive Swift.Decodable {
   convenience public init(from decoder: any Swift.Decoder) throws
 }
-public enum DKStopScanResult {
-  case success, error(DriveKitStolenVehicleLocatorModule.DKStopScanErrorType)
+public enum DKDisableScanResult {
+  case success, error(DriveKitStolenVehicleLocatorModule.DKDisableScanErrorType)
 }
-public enum DKStopScanErrorType {
-  case driveKitNotInitialized, userNotConnected, scanAlreadyStopped
-  public static func == (a: DriveKitStolenVehicleLocatorModule.DKStopScanErrorType, b: DriveKitStolenVehicleLocatorModule.DKStopScanErrorType) -> Swift.Bool
+public enum DKDisableScanErrorType {
+  case driveKitNotInitialized, userNotConnected, scanAlreadyDisabled
+  public static func == (a: DriveKitStolenVehicleLocatorModule.DKDisableScanErrorType, b: DriveKitStolenVehicleLocatorModule.DKDisableScanErrorType) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
 }
-public enum DKStartScanResult {
-  case success, error(DriveKitStolenVehicleLocatorModule.DKStartScanErrorType)
+public enum DKEnableScanResult {
+  case success, error(DriveKitStolenVehicleLocatorModule.DKEnableScanErrorType)
 }
-public enum DKStartScanErrorType {
-  case driveKitNotInitialized, userNotConnected, emptyUuidList, scanAlreadyStarted
-  public static func == (a: DriveKitStolenVehicleLocatorModule.DKStartScanErrorType, b: DriveKitStolenVehicleLocatorModule.DKStartScanErrorType) -> Swift.Bool
+public enum DKEnableScanErrorType {
+  case driveKitNotInitialized, userNotConnected, scanAlreadyEnabled
+  public static func == (a: DriveKitStolenVehicleLocatorModule.DKEnableScanErrorType, b: DriveKitStolenVehicleLocatorModule.DKEnableScanErrorType) -> Swift.Bool
   public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
@@ -95,8 +95,8 @@ public enum DKAddUuidErrorType {
   public func addUuid(_ uuid: Swift.String, completion: @escaping (_ result: DriveKitStolenVehicleLocatorModule.DKAddUuidResult) -> Swift.Void)
   public func removeUuid(_ uuid: Swift.String, completion: @escaping (_ result: DriveKitStolenVehicleLocatorModule.DKRemoveUuidResult) -> Swift.Void)
   public func getUuids(completion: @escaping (_ result: DriveKitStolenVehicleLocatorModule.DKGetUuidListResult) -> Swift.Void)
-  public func startScan(completion: @escaping (_ result: DriveKitStolenVehicleLocatorModule.DKStartScanResult) -> Swift.Void)
-  public func stopScan(completion: @escaping (_ result: DriveKitStolenVehicleLocatorModule.DKStopScanResult) -> Swift.Void)
+  public func enableScan(completion: @escaping (_ result: DriveKitStolenVehicleLocatorModule.DKEnableScanResult) -> Swift.Void)
+  public func disableScan(completion: @escaping (_ result: DriveKitStolenVehicleLocatorModule.DKDisableScanResult) -> Swift.Void)
   @objc deinit
 }
 extension DriveKitStolenVehicleLocatorModule.DriveKitStolenVehicleLocator : DriveKitCoreModule.DKStolenVehicleLocatorModule {
@@ -110,10 +110,10 @@ extension DriveKitStolenVehicleLocatorModule.DriveKitStolenVehicleLocator : Driv
 }
 extension DriveKitStolenVehicleLocatorModule.DKRemoveUuidErrorType : Swift.Equatable {}
 extension DriveKitStolenVehicleLocatorModule.DKRemoveUuidErrorType : Swift.Hashable {}
-extension DriveKitStolenVehicleLocatorModule.DKStopScanErrorType : Swift.Equatable {}
-extension DriveKitStolenVehicleLocatorModule.DKStopScanErrorType : Swift.Hashable {}
-extension DriveKitStolenVehicleLocatorModule.DKStartScanErrorType : Swift.Equatable {}
-extension DriveKitStolenVehicleLocatorModule.DKStartScanErrorType : Swift.Hashable {}
+extension DriveKitStolenVehicleLocatorModule.DKDisableScanErrorType : Swift.Equatable {}
+extension DriveKitStolenVehicleLocatorModule.DKDisableScanErrorType : Swift.Hashable {}
+extension DriveKitStolenVehicleLocatorModule.DKEnableScanErrorType : Swift.Equatable {}
+extension DriveKitStolenVehicleLocatorModule.DKEnableScanErrorType : Swift.Hashable {}
 extension DriveKitStolenVehicleLocatorModule.DKGetUuidListErrorType : Swift.Equatable {}
 extension DriveKitStolenVehicleLocatorModule.DKGetUuidListErrorType : Swift.Hashable {}
 extension DriveKitStolenVehicleLocatorModule.DKAddUuidErrorType : Swift.Equatable {}
