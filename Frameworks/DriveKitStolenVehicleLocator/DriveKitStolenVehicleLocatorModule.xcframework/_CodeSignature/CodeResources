@@ -6,7 +6,7 @@
 	<dict>
 		<key>ios-arm64/DriveKitStolenVehicleLocatorModule.framework/DriveKitStolenVehicleLocatorModule</key>
 		<data>
-		e5ILLhUqICKmNy58dKqiI+4qwlE=
+		7cxCKXtaVzaIR/NPRJ+ucRaG6es=
 		</data>
 		<key>ios-arm64/DriveKitStolenVehicleLocatorModule.framework/Headers/DriveKitStolenVehicleLocatorModule-Swift.h</key>
 		<data>
@@ -14,7 +14,7 @@
 		</data>
 		<key>ios-arm64/DriveKitStolenVehicleLocatorModule.framework/Info.plist</key>
 		<data>
-		xU5aCutZeEgakJUdy9e60Iw1MEw=
+		6gUBz9c4GAx8XqKq+mUBg/pP7p4=
 		</data>
 		<key>ios-arm64/DriveKitStolenVehicleLocatorModule.framework/Modules/DriveKitStolenVehicleLocatorModule.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitStolenVehicleLocatorModule.framework/DriveKitStolenVehicleLocatorModule</key>
 		<data>
-		4D+p5fJTM1lzz2cfCzchi10KNFQ=
+		ZfpWEi0+uZO10VcbDlV+hp7oa58=
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitStolenVehicleLocatorModule.framework/Headers/DriveKitStolenVehicleLocatorModule-Swift.h</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitStolenVehicleLocatorModule.framework/Info.plist</key>
 		<data>
-		wET1FyT/E6JU9GJeYTxmEYEq+24=
+		uWnL5e1yrNFIiFCA/Id46Lt57GY=
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitStolenVehicleLocatorModule.framework/Modules/DriveKitStolenVehicleLocatorModule.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitStolenVehicleLocatorModule.framework/_CodeSignature/CodeResources</key>
 		<data>
-		Dy7E9hUuayh2pABRm1M2lvdG97A=
+		P87hI1AinDOJDQtRtWjMJhLQhOo=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -103,11 +103,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			e5ILLhUqICKmNy58dKqiI+4qwlE=
+			7cxCKXtaVzaIR/NPRJ+ucRaG6es=
 			</data>
 			<key>hash2</key>
 			<data>
-			nMiS+8BdwoSMzjB84EckGTfCRDYOZMCqNGaJUKj18qY=
+			ThbopbKy4ZYijyji4pSlaPVVfjexxAk/7JYO6YHuNN4=
 			</data>
 		</dict>
 		<key>ios-arm64/DriveKitStolenVehicleLocatorModule.framework/Headers/DriveKitStolenVehicleLocatorModule-Swift.h</key>
@@ -125,11 +125,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			xU5aCutZeEgakJUdy9e60Iw1MEw=
+			6gUBz9c4GAx8XqKq+mUBg/pP7p4=
 			</data>
 			<key>hash2</key>
 			<data>
-			+JrytrHbyg+bFpnzTweCqDH/DDSTyNYVbJ3NJFI+38A=
+			ssTvynDOivL21PC0bHE+CEmoRXTmUnpV4roPCyWfaEs=
 			</data>
 		</dict>
 		<key>ios-arm64/DriveKitStolenVehicleLocatorModule.framework/Modules/DriveKitStolenVehicleLocatorModule.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -202,11 +202,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			4D+p5fJTM1lzz2cfCzchi10KNFQ=
+			ZfpWEi0+uZO10VcbDlV+hp7oa58=
 			</data>
 			<key>hash2</key>
 			<data>
-			VH+BnxTmd5TRQFi5FTmLLt1feCZ1N5wpV8VVejQQLio=
+			g6OjC3tN79K0jOlfpvimssrqhmAdR3r0T0Uw2Lf3Big=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/DriveKitStolenVehicleLocatorModule.framework/Headers/DriveKitStolenVehicleLocatorModule-Swift.h</key>
@@ -224,11 +224,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wET1FyT/E6JU9GJeYTxmEYEq+24=
+			uWnL5e1yrNFIiFCA/Id46Lt57GY=
 			</data>
 			<key>hash2</key>
 			<data>
-			YILvxuI7fjOl7I0IuI7u60ZUPOup3cnjqKxYJghNPGs=
+			LLDWvFlpDszKpFLJVG9+AB45W7kbrW52N6zvRPW8U78=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/DriveKitStolenVehicleLocatorModule.framework/Modules/DriveKitStolenVehicleLocatorModule.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -345,11 +345,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			Dy7E9hUuayh2pABRm1M2lvdG97A=
+			P87hI1AinDOJDQtRtWjMJhLQhOo=
 			</data>
 			<key>hash2</key>
 			<data>
-			bL4RBgas53P22nwokfqI6pxirlhTYQicxd+25UJVUDM=
+			yHZhgWiEg2N57+yKgRX8ZYqpyrktN700XfE/JyQmSdA=
 			</data>
 		</dict>
 	</dict>

@@ -157,6 +157,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DriveKitLocationUtilsModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "CoreLocation",
         "printedName": "CoreLocation",
         "declKind": "Import",
@@ -1148,37 +1158,44 @@
       "value": "\"DriveKit Location Utils\""
     },
     {
-      "filePath": "\/Users\/vagrant\/git\/drivekit-location-utils\/DKLocationManager.swift",
+      "filePath": "\/Users\/vagrant\/git\/drivekit-location-utils\/LocationConfigurationStore.swift",
       "kind": "Dictionary",
-      "offset": 469,
+      "offset": 315,
       "length": 3,
       "value": "[]"
     },
     {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-location-utils\/LocationConfigurationStore.swift",
+      "kind": "StringLiteral",
+      "offset": 369,
+      "length": 33,
+      "value": "\"LocationConfigurationAcessQueue\""
+    },
+    {
       "filePath": "\/Users\/vagrant\/git\/drivekit-location-utils\/DKLocationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 747,
+      "offset": 731,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-location-utils\/DKLocationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 810,
+      "offset": 794,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-location-utils\/DKLocationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 11379,
+      "offset": 11430,
       "length": 2,
       "value": "10"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-location-utils\/DKLocationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 11435,
+      "offset": 11486,
       "length": 2,
       "value": "15"
     }
