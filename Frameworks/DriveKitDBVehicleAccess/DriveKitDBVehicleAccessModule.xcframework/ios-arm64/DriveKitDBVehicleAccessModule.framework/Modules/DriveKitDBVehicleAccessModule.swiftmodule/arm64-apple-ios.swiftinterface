@@ -32,6 +32,35 @@ extension DriveKitDBVehicleAccessModule.DBBluetooth : DriveKitCoreModule.DKUnman
 extension DriveKitDBVehicleAccessModule.DBOdometerHistory : DriveKitCoreModule.DKUnmanagedObject {
   nonisolated public func convertToUnmanagedObject<T>() -> T
 }
+extension DriveKitCoreModule.DKPeriod {
+  public func getKey(for vehicleId: Swift.String) -> Swift.String
+}
+public struct DKVehicleTimeline : Swift.Codable {
+  public let period: DriveKitCoreModule.DKPeriod
+  public let allContext: [DriveKitDBVehicleAccessModule.DKVehicleTimeline.DKContextItem]
+  public let roadContexts: [DriveKitCoreModule.DKRoadContext : [DriveKitDBVehicleAccessModule.DKVehicleTimeline.DKContextItem]]
+  public init(rawTimeline: DriveKitDBVehicleAccessModule.DKRawVehicleTimeline)
+  public init(period: DriveKitCoreModule.DKPeriod, allContext: [DriveKitDBVehicleAccessModule.DKVehicleTimeline.DKContextItem], roadContexts: [DriveKitCoreModule.DKRoadContext : [DriveKitDBVehicleAccessModule.DKVehicleTimeline.DKContextItem]])
+  public struct DKContextItem : Swift.Codable {
+    public let date: Foundation.Date
+    public let numberTrip: Swift.Int
+    public let distance: Swift.Double
+    public let duration: Swift.Int
+    public let fuelVolume: Swift.Double
+    public let fuelConsumption: Swift.Double
+    public let co2: Swift.Double
+    public let co2Opti: Swift.Double
+    public let energyKWh: Swift.Double
+    public let energyKWhOpti: Swift.Double
+    public let energyConsumption: Swift.Double
+    public let energyConsumptionOpti: Swift.Double
+    public init(date: Foundation.Date, numberTrip: Swift.Int, distance: Swift.Double, duration: Swift.Int, fuelVolume: Swift.Double, fuelConsumption: Swift.Double, co2: Swift.Double, co2Opti: Swift.Double, energyKWh: Swift.Double, energyKWhOpti: Swift.Double, energyConsumption: Swift.Double, energyConsumptionOpti: Swift.Double)
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
+}
 @_hasMissingDesignatedInitializers @objc public class DKVehicle : ObjectiveC.NSObject {
   @objc final public let vehicleId: Swift.String
   @objc final public let name: Swift.String?
@@ -67,6 +96,49 @@ extension DriveKitDBVehicleAccessModule.DBOdometerHistory : DriveKitCoreModule.D
 }
 extension DriveKitDBVehicleAccessModule.DBVehicle : DriveKitCoreModule.DKUnmanagedObject {
   nonisolated public func convertToUnmanagedObject<T>() -> T
+}
+public struct DKRawVehicleTimeline : Swift.Codable {
+  public var period: DriveKitCoreModule.DKPeriod
+  public var allContext: DriveKitDBVehicleAccessModule.DKRawVehicleTimeline.AllContextItem
+  public var roadContexts: [DriveKitDBVehicleAccessModule.DKRawVehicleTimeline.RoadContextItem]
+  public init(period: DriveKitCoreModule.DKPeriod, allContext: DriveKitDBVehicleAccessModule.DKRawVehicleTimeline.AllContextItem, roadContexts: [DriveKitDBVehicleAccessModule.DKRawVehicleTimeline.RoadContextItem])
+  public struct AllContextItem : Swift.Codable {
+    public let date: [Foundation.Date]
+    public let numberTrip: [Swift.Int]
+    public let distance: [Swift.Double]
+    public let duration: [Swift.Int]
+    public let fuelVolume: [Swift.Double]
+    public let fuelConsumption: [Swift.Double]
+    public let co2: [Swift.Double]
+    public let co2Opti: [Swift.Double]
+    public let energyKWh: [Swift.Double]
+    public let energyKWhOpti: [Swift.Double]
+    public let energyConsumption: [Swift.Double]
+    public let energyConsumptionOpti: [Swift.Double]
+    public init(date: [Foundation.Date], numberTrip: [Swift.Int], distance: [Swift.Double], duration: [Swift.Int], fuelVolume: [Swift.Double], fuelConsumption: [Swift.Double], co2: [Swift.Double], co2Opti: [Swift.Double], energyKWh: [Swift.Double], energyKWhOpti: [Swift.Double], energyConsumption: [Swift.Double], energyConsumptionOpti: [Swift.Double])
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public struct RoadContextItem : Swift.Codable {
+    public let type: DriveKitCoreModule.DKRoadContext
+    public let date: [Foundation.Date]
+    public let numberTrip: [Swift.Int]
+    public let distance: [Swift.Double]
+    public let duration: [Swift.Int]
+    public let fuelVolume: [Swift.Double]
+    public let fuelConsumption: [Swift.Double]
+    public let co2: [Swift.Double]
+    public let co2Opti: [Swift.Double]
+    public let energyKWh: [Swift.Double]
+    public let energyKWhOpti: [Swift.Double]
+    public let energyConsumption: [Swift.Double]
+    public let energyConsumptionOpti: [Swift.Double]
+    public init(type: DriveKitCoreModule.DKRoadContext, date: [Foundation.Date], numberTrip: [Swift.Int], distance: [Swift.Double], duration: [Swift.Int], fuelVolume: [Swift.Double], fuelConsumption: [Swift.Double], co2: [Swift.Double], co2Opti: [Swift.Double], energyKWh: [Swift.Double], energyKWhOpti: [Swift.Double], energyConsumption: [Swift.Double], energyConsumptionOpti: [Swift.Double])
+    public func encode(to encoder: any Swift.Encoder) throws
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public func encode(to encoder: any Swift.Encoder) throws
+  public init(from decoder: any Swift.Decoder) throws
 }
 @_hasMissingDesignatedInitializers @objc public class DKVehicleOdometer : ObjectiveC.NSObject {
   @objc final public let analyzedDistance: Swift.Double
@@ -108,6 +180,9 @@ public protocol DKVehicleUpdatedDelegate {
   public func registerVehicleUpdatedDelegate(identifier: Swift.String, delegate: any DriveKitDBVehicleAccessModule.DKVehicleUpdatedDelegate)
   public func unregisterVehicleUpdatedDelegate(identifier: Swift.String)
   public func notifyOnVehicleUpdate()
+  public func getRawTimelines(periods: [DriveKitCoreModule.DKPeriod], vehicleId: Swift.String) -> [DriveKitDBVehicleAccessModule.DKRawVehicleTimeline]
+  public func saveRawTimeline(_ timeline: DriveKitDBVehicleAccessModule.DKRawVehicleTimeline, vehicleId: Swift.String)
+  public func deleteRawTimelines(_ vehicleId: Swift.String)
   @objc deinit
 }
 extension DriveKitDBVehicleAccessModule.DBVehicle {

@@ -145,6 +145,14 @@ import _SwiftConcurrencyShims
 extension DriveKitVehicleModule.DKVehicleBrand {
   public init(value: Swift.String)
 }
+public enum TimelineSyncStatus {
+  case success, cacheDataOnly, drivekitNotInitialized, userNotConnected, vehicleNotFound, timelineNotFound, failedToSyncTimelineCacheOnly
+  public static func == (a: DriveKitVehicleModule.TimelineSyncStatus, b: DriveKitVehicleModule.TimelineSyncStatus) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
 @objc public enum DKVehicleEngineIndex : Swift.Int, Swift.CaseIterable {
   case gasoline = 1
   case diesel = 2
@@ -244,6 +252,9 @@ extension DriveKitVehicleModule.DKVehicleEngineIndex {
   @objc public func addBeacon(vehicleId: Swift.String, beacon: DriveKitBeaconUtilsModule.DKBeacon, completionHandler: @escaping (DriveKitVehicleModule.DKVehicleBeaconStatus) -> Swift.Void)
   @objc public func changeBeacon(vehicleId: Swift.String, oldVehicleId: Swift.String, beacon: DriveKitBeaconUtilsModule.DKBeacon, completionHandler: @escaping (DriveKitVehicleModule.DKVehicleBeaconStatus) -> Swift.Void)
   @objc public func removeBeacon(vehicleId: Swift.String, completionHandler: @escaping (DriveKitVehicleModule.DKVehicleBeaconRemoveStatus) -> Swift.Void)
+  #if compiler(>=5.3) && $NonescapableTypes
+  public func getTimeline(vehicleId: Swift.String, periods: [DriveKitCoreModule.DKPeriod], type: DriveKitCoreModule.SynchronizationType = .defaultSync, completionHandler: @escaping (DriveKitVehicleModule.TimelineSyncStatus, [DriveKitDBVehicleAccessModule.DKVehicleTimeline]?) -> Swift.Void)
+  #endif
   public func syncVehicles(_ completionHandler: @escaping (Swift.Bool) -> Swift.Void)
   @objc deinit
 }
@@ -570,6 +581,8 @@ extension DriveKitVehicleModule.DKVehicleCategory {
 extension DriveKitVehicleModule.DKVehicleBrand : Swift.Equatable {}
 extension DriveKitVehicleModule.DKVehicleBrand : Swift.Hashable {}
 extension DriveKitVehicleModule.DKVehicleBrand : Swift.RawRepresentable {}
+extension DriveKitVehicleModule.TimelineSyncStatus : Swift.Equatable {}
+extension DriveKitVehicleModule.TimelineSyncStatus : Swift.Hashable {}
 extension DriveKitVehicleModule.DKVehicleEngineIndex : Swift.Equatable {}
 extension DriveKitVehicleModule.DKVehicleEngineIndex : Swift.Hashable {}
 extension DriveKitVehicleModule.DKVehicleEngineIndex : Swift.RawRepresentable {}

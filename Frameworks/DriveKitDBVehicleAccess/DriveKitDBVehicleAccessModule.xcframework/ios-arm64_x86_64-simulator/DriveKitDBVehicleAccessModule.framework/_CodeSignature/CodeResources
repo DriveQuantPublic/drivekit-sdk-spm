@@ -10,15 +10,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		SN8/Rx1WI3LXNkqiGzjAGW9wqvY=
+		swf8snwFgmlvkN85U4HS4UftnHs=
 		</data>
 		<key>Modules/DriveKitDBVehicleAccessModule.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		DikZy3htPXhPMdiHDQy9O+XLjVI=
+		/BmkvlrD/Tw2XU3JJQss3ifFXS0=
 		</data>
 		<key>Modules/DriveKitDBVehicleAccessModule.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		IIkHnj19O6mHIik05/qaPm5l1Iw=
+		FWD7x2uf1hLb0DWIUmcOT40GwHw=
 		</data>
 		<key>Modules/DriveKitDBVehicleAccessModule.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -26,19 +26,19 @@
 		</data>
 		<key>Modules/DriveKitDBVehicleAccessModule.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		IIkHnj19O6mHIik05/qaPm5l1Iw=
+		FWD7x2uf1hLb0DWIUmcOT40GwHw=
 		</data>
 		<key>Modules/DriveKitDBVehicleAccessModule.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		O0dzERjptd6XKTO/eAU4RWXvkgI=
+		Gms4ysHcnqXXffR1bnk6RckB5fA=
 		</data>
 		<key>Modules/DriveKitDBVehicleAccessModule.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		DikZy3htPXhPMdiHDQy9O+XLjVI=
+		/BmkvlrD/Tw2XU3JJQss3ifFXS0=
 		</data>
 		<key>Modules/DriveKitDBVehicleAccessModule.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Cnr5DtapCZvsSwERz6mJhr88VpE=
+		xXjSbO5HPnOOcLDF/g8z0oZQRRY=
 		</data>
 		<key>Modules/DriveKitDBVehicleAccessModule.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/DriveKitDBVehicleAccessModule.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Cnr5DtapCZvsSwERz6mJhr88VpE=
+		xXjSbO5HPnOOcLDF/g8z0oZQRRY=
 		</data>
 		<key>Modules/DriveKitDBVehicleAccessModule.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		buGrvuLMzj14u/oPaTia4TPCIO8=
+		pVmTF+ngNXpWc43v6S2Guz2i/6M=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -90,14 +90,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			k5Jin5SNE5W24N1r1NZ6BoBdC7b+hR1DFuStKMHO/yg=
+			g8w2lhwpMMb8qWv98N/SRHUImO/WbK79GEqW0qlnHI8=
 			</data>
 		</dict>
 		<key>Modules/DriveKitDBVehicleAccessModule.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IwLbNhHK/uGBHFAU4eUln7IgQdCRCrSM/KOlVWMdw5Q=
+			KiABJYo37rPooYL21jBtYEI0vL/RWIeEQGZwd1wdlsA=
 			</data>
 		</dict>
 		<key>Modules/DriveKitDBVehicleAccessModule.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -111,28 +111,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IwLbNhHK/uGBHFAU4eUln7IgQdCRCrSM/KOlVWMdw5Q=
+			KiABJYo37rPooYL21jBtYEI0vL/RWIeEQGZwd1wdlsA=
 			</data>
 		</dict>
 		<key>Modules/DriveKitDBVehicleAccessModule.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			MAkCbv9uSsjGAkZx8qoSDqWdx5n/jYo84TtsPDg8VKQ=
+			HS2vNl2XV4H2CiToMBOJVzbghEjiWFjqUQi5Be/7KP4=
 			</data>
 		</dict>
 		<key>Modules/DriveKitDBVehicleAccessModule.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			k5Jin5SNE5W24N1r1NZ6BoBdC7b+hR1DFuStKMHO/yg=
+			g8w2lhwpMMb8qWv98N/SRHUImO/WbK79GEqW0qlnHI8=
 			</data>
 		</dict>
 		<key>Modules/DriveKitDBVehicleAccessModule.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lkz3FkhKXp+e0oE4Sl8VDciovIuCzwjYaU10bn6QWIk=
+			40IEh6+befUkGqtOtQj1vwQXy0wMLeRl4kgIEoEkiVA=
 			</data>
 		</dict>
 		<key>Modules/DriveKitDBVehicleAccessModule.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -146,14 +146,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lkz3FkhKXp+e0oE4Sl8VDciovIuCzwjYaU10bn6QWIk=
+			40IEh6+befUkGqtOtQj1vwQXy0wMLeRl4kgIEoEkiVA=
 			</data>
 		</dict>
 		<key>Modules/DriveKitDBVehicleAccessModule.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Utr74sTuWRb3nkkYxhLd+NdR3CnA2IHbCZC63wCGyC8=
+			yPGus33zYvL4VCfNmomBKbszJSFOodTT9vEUAW3t5xc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

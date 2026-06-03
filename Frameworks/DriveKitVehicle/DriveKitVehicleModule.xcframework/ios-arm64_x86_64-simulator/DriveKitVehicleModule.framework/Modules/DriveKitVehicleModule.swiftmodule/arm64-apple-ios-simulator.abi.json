@@ -77,6 +77,37 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "DriveKitCoreModule",
+        "printedName": "DriveKitCoreModule",
+        "declKind": "Import",
+        "moduleName": "DriveKitVehicleModule"
+      },
+      {
+        "kind": "Import",
+        "name": "DriveKitDBVehicleAccessModule",
+        "printedName": "DriveKitDBVehicleAccessModule",
+        "declKind": "Import",
+        "moduleName": "DriveKitVehicleModule"
+      },
+      {
+        "kind": "Import",
+        "name": "DriveKitNetworkingModule",
+        "printedName": "DriveKitNetworkingModule",
+        "declKind": "Import",
+        "moduleName": "DriveKitVehicleModule"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DriveKitVehicleModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "DKVehicleBrand",
         "printedName": "DKVehicleBrand",
@@ -4769,6 +4800,415 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "TimelineSyncStatus",
+        "printedName": "TimelineSyncStatus",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "success",
+            "printedName": "success",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitVehicleModule.TimelineSyncStatus.Type) -> DriveKitVehicleModule.TimelineSyncStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TimelineSyncStatus",
+                    "printedName": "DriveKitVehicleModule.TimelineSyncStatus",
+                    "usr": "s:21DriveKitVehicleModule18TimelineSyncStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DriveKitVehicleModule.TimelineSyncStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TimelineSyncStatus",
+                        "printedName": "DriveKitVehicleModule.TimelineSyncStatus",
+                        "usr": "s:21DriveKitVehicleModule18TimelineSyncStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:21DriveKitVehicleModule18TimelineSyncStatusO7successyA2CmF",
+            "mangledName": "$s21DriveKitVehicleModule18TimelineSyncStatusO7successyA2CmF",
+            "moduleName": "DriveKitVehicleModule"
+          },
+          {
+            "kind": "Var",
+            "name": "cacheDataOnly",
+            "printedName": "cacheDataOnly",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitVehicleModule.TimelineSyncStatus.Type) -> DriveKitVehicleModule.TimelineSyncStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TimelineSyncStatus",
+                    "printedName": "DriveKitVehicleModule.TimelineSyncStatus",
+                    "usr": "s:21DriveKitVehicleModule18TimelineSyncStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DriveKitVehicleModule.TimelineSyncStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TimelineSyncStatus",
+                        "printedName": "DriveKitVehicleModule.TimelineSyncStatus",
+                        "usr": "s:21DriveKitVehicleModule18TimelineSyncStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:21DriveKitVehicleModule18TimelineSyncStatusO13cacheDataOnlyyA2CmF",
+            "mangledName": "$s21DriveKitVehicleModule18TimelineSyncStatusO13cacheDataOnlyyA2CmF",
+            "moduleName": "DriveKitVehicleModule"
+          },
+          {
+            "kind": "Var",
+            "name": "drivekitNotInitialized",
+            "printedName": "drivekitNotInitialized",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitVehicleModule.TimelineSyncStatus.Type) -> DriveKitVehicleModule.TimelineSyncStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TimelineSyncStatus",
+                    "printedName": "DriveKitVehicleModule.TimelineSyncStatus",
+                    "usr": "s:21DriveKitVehicleModule18TimelineSyncStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DriveKitVehicleModule.TimelineSyncStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TimelineSyncStatus",
+                        "printedName": "DriveKitVehicleModule.TimelineSyncStatus",
+                        "usr": "s:21DriveKitVehicleModule18TimelineSyncStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:21DriveKitVehicleModule18TimelineSyncStatusO22drivekitNotInitializedyA2CmF",
+            "mangledName": "$s21DriveKitVehicleModule18TimelineSyncStatusO22drivekitNotInitializedyA2CmF",
+            "moduleName": "DriveKitVehicleModule"
+          },
+          {
+            "kind": "Var",
+            "name": "userNotConnected",
+            "printedName": "userNotConnected",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitVehicleModule.TimelineSyncStatus.Type) -> DriveKitVehicleModule.TimelineSyncStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TimelineSyncStatus",
+                    "printedName": "DriveKitVehicleModule.TimelineSyncStatus",
+                    "usr": "s:21DriveKitVehicleModule18TimelineSyncStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DriveKitVehicleModule.TimelineSyncStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TimelineSyncStatus",
+                        "printedName": "DriveKitVehicleModule.TimelineSyncStatus",
+                        "usr": "s:21DriveKitVehicleModule18TimelineSyncStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:21DriveKitVehicleModule18TimelineSyncStatusO16userNotConnectedyA2CmF",
+            "mangledName": "$s21DriveKitVehicleModule18TimelineSyncStatusO16userNotConnectedyA2CmF",
+            "moduleName": "DriveKitVehicleModule"
+          },
+          {
+            "kind": "Var",
+            "name": "vehicleNotFound",
+            "printedName": "vehicleNotFound",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitVehicleModule.TimelineSyncStatus.Type) -> DriveKitVehicleModule.TimelineSyncStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TimelineSyncStatus",
+                    "printedName": "DriveKitVehicleModule.TimelineSyncStatus",
+                    "usr": "s:21DriveKitVehicleModule18TimelineSyncStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DriveKitVehicleModule.TimelineSyncStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TimelineSyncStatus",
+                        "printedName": "DriveKitVehicleModule.TimelineSyncStatus",
+                        "usr": "s:21DriveKitVehicleModule18TimelineSyncStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:21DriveKitVehicleModule18TimelineSyncStatusO15vehicleNotFoundyA2CmF",
+            "mangledName": "$s21DriveKitVehicleModule18TimelineSyncStatusO15vehicleNotFoundyA2CmF",
+            "moduleName": "DriveKitVehicleModule"
+          },
+          {
+            "kind": "Var",
+            "name": "timelineNotFound",
+            "printedName": "timelineNotFound",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitVehicleModule.TimelineSyncStatus.Type) -> DriveKitVehicleModule.TimelineSyncStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TimelineSyncStatus",
+                    "printedName": "DriveKitVehicleModule.TimelineSyncStatus",
+                    "usr": "s:21DriveKitVehicleModule18TimelineSyncStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DriveKitVehicleModule.TimelineSyncStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TimelineSyncStatus",
+                        "printedName": "DriveKitVehicleModule.TimelineSyncStatus",
+                        "usr": "s:21DriveKitVehicleModule18TimelineSyncStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:21DriveKitVehicleModule18TimelineSyncStatusO16timelineNotFoundyA2CmF",
+            "mangledName": "$s21DriveKitVehicleModule18TimelineSyncStatusO16timelineNotFoundyA2CmF",
+            "moduleName": "DriveKitVehicleModule"
+          },
+          {
+            "kind": "Var",
+            "name": "failedToSyncTimelineCacheOnly",
+            "printedName": "failedToSyncTimelineCacheOnly",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitVehicleModule.TimelineSyncStatus.Type) -> DriveKitVehicleModule.TimelineSyncStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TimelineSyncStatus",
+                    "printedName": "DriveKitVehicleModule.TimelineSyncStatus",
+                    "usr": "s:21DriveKitVehicleModule18TimelineSyncStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "DriveKitVehicleModule.TimelineSyncStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TimelineSyncStatus",
+                        "printedName": "DriveKitVehicleModule.TimelineSyncStatus",
+                        "usr": "s:21DriveKitVehicleModule18TimelineSyncStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:21DriveKitVehicleModule18TimelineSyncStatusO08failedTofE9CacheOnlyyA2CmF",
+            "mangledName": "$s21DriveKitVehicleModule18TimelineSyncStatusO08failedTofE9CacheOnlyyA2CmF",
+            "moduleName": "DriveKitVehicleModule"
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TimelineSyncStatus",
+                "printedName": "DriveKitVehicleModule.TimelineSyncStatus",
+                "usr": "s:21DriveKitVehicleModule18TimelineSyncStatusO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "TimelineSyncStatus",
+                "printedName": "DriveKitVehicleModule.TimelineSyncStatus",
+                "usr": "s:21DriveKitVehicleModule18TimelineSyncStatusO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21DriveKitVehicleModule18TimelineSyncStatusO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s21DriveKitVehicleModule18TimelineSyncStatusO2eeoiySbAC_ACtFZ",
+            "moduleName": "DriveKitVehicleModule",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:21DriveKitVehicleModule18TimelineSyncStatusO9hashValueSivp",
+            "mangledName": "$s21DriveKitVehicleModule18TimelineSyncStatusO9hashValueSivp",
+            "moduleName": "DriveKitVehicleModule",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:21DriveKitVehicleModule18TimelineSyncStatusO9hashValueSivg",
+                "mangledName": "$s21DriveKitVehicleModule18TimelineSyncStatusO9hashValueSivg",
+                "moduleName": "DriveKitVehicleModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21DriveKitVehicleModule18TimelineSyncStatusO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s21DriveKitVehicleModule18TimelineSyncStatusO4hash4intoys6HasherVz_tF",
+            "moduleName": "DriveKitVehicleModule",
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:21DriveKitVehicleModule18TimelineSyncStatusO",
+        "mangledName": "$s21DriveKitVehicleModule18TimelineSyncStatusO",
+        "moduleName": "DriveKitVehicleModule",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DriveKitVehicleModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "DKVehicleEngineIndex",
         "printedName": "DKVehicleEngineIndex",
         "children": [
@@ -7709,6 +8149,100 @@
           },
           {
             "kind": "Function",
+            "name": "getTimeline",
+            "printedName": "getTimeline(vehicleId:periods:type:completionHandler:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[DriveKitCoreModule.DKPeriod]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKPeriod",
+                    "printedName": "DriveKitCoreModule.DKPeriod",
+                    "usr": "c:@M@DriveKitCoreModule@E@DKPeriod"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "SynchronizationType",
+                "printedName": "DriveKitCoreModule.SynchronizationType",
+                "hasDefaultArg": true,
+                "usr": "c:@M@DriveKitCoreModule@E@SynchronizationType"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(DriveKitVehicleModule.TimelineSyncStatus, [DriveKitDBVehicleAccessModule.DKVehicleTimeline]?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(DriveKitVehicleModule.TimelineSyncStatus, [DriveKitDBVehicleAccessModule.DKVehicleTimeline]?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TimelineSyncStatus",
+                        "printedName": "DriveKitVehicleModule.TimelineSyncStatus",
+                        "usr": "s:21DriveKitVehicleModule18TimelineSyncStatusO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "[DriveKitDBVehicleAccessModule.DKVehicleTimeline]?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Array",
+                            "printedName": "[DriveKitDBVehicleAccessModule.DKVehicleTimeline]",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "DKVehicleTimeline",
+                                "printedName": "DriveKitDBVehicleAccessModule.DKVehicleTimeline",
+                                "usr": "s:29DriveKitDBVehicleAccessModule17DKVehicleTimelineV"
+                              }
+                            ],
+                            "usr": "s:Sa"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:21DriveKitVehicleModule0abC0C11getTimeline9vehicleId7periods4type17completionHandlerySS_Say0ab4CoreD08DKPeriodOGAI19SynchronizationTypeOyAA0F10SyncStatusO_Say0ab15DBVehicleAccessD009DKVehicleF0VGSgtctF",
+            "mangledName": "$s21DriveKitVehicleModule0abC0C11getTimeline9vehicleId7periods4type17completionHandlerySS_Say0ab4CoreD08DKPeriodOGAI19SynchronizationTypeOyAA0F10SyncStatusO_Say0ab15DBVehicleAccessD009DKVehicleF0VGSgtctF",
+            "moduleName": "DriveKitVehicleModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "syncVehicles",
             "printedName": "syncVehicles(_:)",
             "children": [
@@ -8469,6 +9003,23 @@
         "kind": "Import",
         "name": "DriveKitDBVehicleAccessModule",
         "printedName": "DriveKitDBVehicleAccessModule",
+        "declKind": "Import",
+        "moduleName": "DriveKitVehicleModule"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DriveKitVehicleModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "DriveKitCoreModule",
+        "printedName": "DriveKitCoreModule",
         "declKind": "Import",
         "moduleName": "DriveKitVehicleModule"
       },
@@ -15306,6 +15857,23 @@
       },
       {
         "kind": "Import",
+        "name": "DriveKitCoreModule",
+        "printedName": "DriveKitCoreModule",
+        "declKind": "Import",
+        "moduleName": "DriveKitVehicleModule"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DriveKitVehicleModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -16332,6 +16900,30 @@
         "kind": "Import",
         "name": "DriveKitCoreModule",
         "printedName": "DriveKitCoreModule",
+        "declKind": "Import",
+        "moduleName": "DriveKitVehicleModule"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DriveKitVehicleModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "DriveKitCoreModule",
+        "printedName": "DriveKitCoreModule",
+        "declKind": "Import",
+        "moduleName": "DriveKitVehicleModule"
+      },
+      {
+        "kind": "Import",
+        "name": "DriveKitDBVehicleAccessModule",
+        "printedName": "DriveKitDBVehicleAccessModule",
         "declKind": "Import",
         "moduleName": "DriveKitVehicleModule"
       },
@@ -19629,28 +20221,28 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehicle.swift",
       "kind": "BooleanLiteral",
-      "offset": 6365,
+      "offset": 6357,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehicle.swift",
       "kind": "BooleanLiteral",
-      "offset": 8735,
+      "offset": 8727,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehicle.swift",
       "kind": "BooleanLiteral",
-      "offset": 12609,
+      "offset": 12601,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehicle.swift",
       "kind": "BooleanLiteral",
-      "offset": 28057,
+      "offset": 30998,
       "length": 4,
       "value": "true"
     },

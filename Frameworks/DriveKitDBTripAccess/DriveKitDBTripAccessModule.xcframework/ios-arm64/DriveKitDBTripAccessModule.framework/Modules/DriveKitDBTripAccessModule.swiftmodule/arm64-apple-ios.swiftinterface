@@ -25,20 +25,6 @@ extension DriveKitDBTripAccessModule.DKDriverTimeline {
   public func driverScoreSynthesis(for scoreType: DriveKitCoreModule.DKScoreType, at date: Foundation.Date) -> DriveKitDBTripAccessModule.DKScoreSynthesis?
   #endif
 }
-@objc public enum DKRoadContext : Swift.Int, Swift.Codable {
-  case trafficJam
-  case heavyUrbanTraffic
-  case city
-  case suburban
-  case expressways
-  #if compiler(>=5.3) && $NonescapableTypes
-  public init?(rawValue: Swift.Int)
-  #endif
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
 public enum DKDriverProfileStatus {
   case success, failedToSyncDriverProfileCacheOnly, noDriverProfileYet, forbiddenAccess
   public static func == (a: DriveKitDBTripAccessModule.DKDriverProfileStatus, b: DriveKitDBTripAccessModule.DKDriverProfileStatus) -> Swift.Bool
@@ -119,7 +105,7 @@ public struct DKRawTimeline : Swift.Codable {
     public init(from decoder: any Swift.Decoder) throws
   }
   public struct RoadContextItem : Swift.Codable {
-    public let type: DriveKitDBTripAccessModule.DKRoadContext
+    public let type: DriveKitCoreModule.DKRoadContext
     public let date: [Foundation.Date]
     public let numberTripTotal: [Swift.Int]
     public let numberTripScored: [Swift.Int]
@@ -136,7 +122,7 @@ public struct DKRawTimeline : Swift.Codable {
     public let efficiencyAcceleration: [Swift.Double]
     public let efficiencyBrake: [Swift.Double]
     public let efficiencySpeedMaintain: [Swift.Double]
-    public init(type: DriveKitDBTripAccessModule.DKRoadContext, date: [Foundation.Date], numberTripTotal: [Swift.Int], numberTripScored: [Swift.Int], distance: [Swift.Double], duration: [Swift.Int], efficiency: [Swift.Double], safety: [Swift.Double], acceleration: [Swift.Int], braking: [Swift.Int], adherence: [Swift.Int], co2Mass: [Swift.Double], fuelVolume: [Swift.Double], fuelSaving: [Swift.Double], efficiencyAcceleration: [Swift.Double], efficiencyBrake: [Swift.Double], efficiencySpeedMaintain: [Swift.Double])
+    public init(type: DriveKitCoreModule.DKRoadContext, date: [Foundation.Date], numberTripTotal: [Swift.Int], numberTripScored: [Swift.Int], distance: [Swift.Double], duration: [Swift.Int], efficiency: [Swift.Double], safety: [Swift.Double], acceleration: [Swift.Int], braking: [Swift.Int], adherence: [Swift.Int], co2Mass: [Swift.Double], fuelVolume: [Swift.Double], fuelSaving: [Swift.Double], efficiencyAcceleration: [Swift.Double], efficiencyBrake: [Swift.Double], efficiencySpeedMaintain: [Swift.Double])
     public func encode(to encoder: any Swift.Encoder) throws
     public init(from decoder: any Swift.Decoder) throws
   }
@@ -194,8 +180,8 @@ public struct DKCommonTrip : Swift.Codable {
   public var tripNumber: Swift.Int
   public var distanceMean: Swift.Int
   public var durationMean: Swift.Int
-  public var roadContext: DriveKitDBTripAccessModule.DKRoadContext
-  public init(type: DriveKitDBTripAccessModule.DKCommonTripType, tripNumber: Swift.Int, distanceMean: Swift.Int, durationMean: Swift.Int, roadContext: DriveKitDBTripAccessModule.DKRoadContext)
+  public var roadContext: DriveKitCoreModule.DKRoadContext
+  public init(type: DriveKitDBTripAccessModule.DKCommonTripType, tripNumber: Swift.Int, distanceMean: Swift.Int, durationMean: Swift.Int, roadContext: DriveKitCoreModule.DKRoadContext)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -247,111 +233,6 @@ public struct DKScoreSynthesis {
   public init(scoreType: DriveKitCoreModule.DKScoreType, scoreValue: Swift.Double? = nil, previousScoreValue: Swift.Double? = nil, evolutionTrend: DriveKitDBTripAccessModule.DKScoreEvolutionTrend? = nil)
   #endif
 }
-public func zip<A, B, C>(_ a: A, _ b: B, _ c: C) -> DriveKitDBTripAccessModule.Zip3Sequence<A, B, C> where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence
-public func zip<A, B, C, D>(_ a: A, _ b: B, _ c: C, _ d: D) -> DriveKitDBTripAccessModule.Zip4Sequence<A, B, C, D> where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence
-public func zip<A, B, C, D, E>(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E) -> DriveKitDBTripAccessModule.Zip5Sequence<A, B, C, D, E> where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence
-public func zip<A, B, C, D, E, F>(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E, _ f: F) -> DriveKitDBTripAccessModule.Zip6Sequence<A, B, C, D, E, F> where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence
-public func zip<A, B, C, D, E, F, G>(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E, _ f: F, _ g: G) -> DriveKitDBTripAccessModule.Zip7Sequence<A, B, C, D, E, F, G> where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence, G : Swift.Sequence
-public func zip<A, B, C, D, E, F, G, H>(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E, _ f: F, _ g: G, _ h: H) -> DriveKitDBTripAccessModule.Zip8Sequence<A, B, C, D, E, F, G, H> where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence, G : Swift.Sequence, H : Swift.Sequence
-public func zip<A, B, C, D, E, F, G, H, I>(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E, _ f: F, _ g: G, _ h: H, _ i: I) -> DriveKitDBTripAccessModule.Zip9Sequence<A, B, C, D, E, F, G, H, I> where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence, G : Swift.Sequence, H : Swift.Sequence, I : Swift.Sequence
-public func zip<A, B, C, D, E, F, G, H, I, J>(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E, _ f: F, _ g: G, _ h: H, _ i: I, _ j: J) -> DriveKitDBTripAccessModule.Zip10Sequence<A, B, C, D, E, F, G, H, I, J> where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence, G : Swift.Sequence, H : Swift.Sequence, I : Swift.Sequence, J : Swift.Sequence
-public struct Zip3Sequence<A, B, C> : Swift.Sequence where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence {
-  public init(_ a: A, _ b: B, _ c: C)
-  public struct Iterator : Swift.IteratorProtocol {
-    public typealias Element = (A.Element, B.Element, C.Element)
-    #if compiler(>=5.3) && $NonescapableTypes
-    public mutating func next() -> DriveKitDBTripAccessModule.Zip3Sequence<A, B, C>.Iterator.Element?
-    #endif
-  }
-  public func makeIterator() -> DriveKitDBTripAccessModule.Zip3Sequence<A, B, C>.Iterator
-  public typealias Element = DriveKitDBTripAccessModule.Zip3Sequence<A, B, C>.Iterator.Element
-}
-public func zip<A, B, C>(with f: @escaping (A.Element, B.Element) -> C) -> (A, B) -> [C] where A : Swift.Sequence, B : Swift.Sequence
-public func zip<A, B, C, D>(with f: @escaping (A.Element, B.Element, C.Element) -> D) -> (A, B, C) -> [D] where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence
-public func zip<A, B, C, D, E>(with f: @escaping (A.Element, B.Element, C.Element, D.Element) -> E) -> (A, B, C, D) -> [E] where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence
-public func zip<A, B, C, D, E, F>(with f: @escaping (A.Element, B.Element, C.Element, D.Element, E.Element) -> F) -> (A, B, C, D, E) -> [F] where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence
-public func zip<A, B, C, D, E, F, G>(with f: @escaping (A.Element, B.Element, C.Element, D.Element, E.Element, F.Element) -> G) -> (A, B, C, D, E, F) -> [G] where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence
-public func zip<A, B, C, D, E, F, G, H>(with f: @escaping (A.Element, B.Element, C.Element, D.Element, E.Element, F.Element, G.Element) -> H) -> (A, B, C, D, E, F, G) -> [H] where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence, G : Swift.Sequence
-public func zip<A, B, C, D, E, F, G, H, I>(with f: @escaping (A.Element, B.Element, C.Element, D.Element, E.Element, F.Element, G.Element, H.Element) -> I) -> (A, B, C, D, E, F, G, H) -> [I] where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence, G : Swift.Sequence, H : Swift.Sequence
-public func zip<A, B, C, D, E, F, G, H, I, J>(with f: @escaping (A.Element, B.Element, C.Element, D.Element, E.Element, F.Element, G.Element, H.Element, I.Element) -> J) -> (A, B, C, D, E, F, G, H, I) -> [J] where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence, G : Swift.Sequence, H : Swift.Sequence, I : Swift.Sequence
-public func zip<A, B, C, D, E, F, G, H, I, J, K>(with f: @escaping (A.Element, B.Element, C.Element, D.Element, E.Element, F.Element, G.Element, H.Element, I.Element, J.Element) -> K) -> (A, B, C, D, E, F, G, H, I, J) -> [K] where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence, G : Swift.Sequence, H : Swift.Sequence, I : Swift.Sequence, J : Swift.Sequence
-public struct Zip4Sequence<A, B, C, D> : Swift.Sequence where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence {
-  public init(_ a: A, _ b: B, _ c: C, _ d: D)
-  public struct Iterator : Swift.IteratorProtocol {
-    public typealias Element = (A.Element, B.Element, C.Element, D.Element)
-    #if compiler(>=5.3) && $NonescapableTypes
-    public mutating func next() -> DriveKitDBTripAccessModule.Zip4Sequence<A, B, C, D>.Iterator.Element?
-    #endif
-  }
-  public func makeIterator() -> DriveKitDBTripAccessModule.Zip4Sequence<A, B, C, D>.Iterator
-  public typealias Element = DriveKitDBTripAccessModule.Zip4Sequence<A, B, C, D>.Iterator.Element
-}
-public struct Zip5Sequence<A, B, C, D, E> : Swift.Sequence where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence {
-  public init(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E)
-  public struct Iterator : Swift.IteratorProtocol {
-    public typealias Element = (A.Element, B.Element, C.Element, D.Element, E.Element)
-    #if compiler(>=5.3) && $NonescapableTypes
-    public mutating func next() -> DriveKitDBTripAccessModule.Zip5Sequence<A, B, C, D, E>.Iterator.Element?
-    #endif
-  }
-  public func makeIterator() -> DriveKitDBTripAccessModule.Zip5Sequence<A, B, C, D, E>.Iterator
-  public typealias Element = DriveKitDBTripAccessModule.Zip5Sequence<A, B, C, D, E>.Iterator.Element
-}
-public struct Zip6Sequence<A, B, C, D, E, F> : Swift.Sequence where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence {
-  public init(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E, _ f: F)
-  public struct Iterator : Swift.IteratorProtocol {
-    public typealias Element = (A.Element, B.Element, C.Element, D.Element, E.Element, F.Element)
-    #if compiler(>=5.3) && $NonescapableTypes
-    public mutating func next() -> DriveKitDBTripAccessModule.Zip6Sequence<A, B, C, D, E, F>.Iterator.Element?
-    #endif
-  }
-  public func makeIterator() -> DriveKitDBTripAccessModule.Zip6Sequence<A, B, C, D, E, F>.Iterator
-  public typealias Element = DriveKitDBTripAccessModule.Zip6Sequence<A, B, C, D, E, F>.Iterator.Element
-}
-public struct Zip7Sequence<A, B, C, D, E, F, G> : Swift.Sequence where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence, G : Swift.Sequence {
-  public init(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E, _ f: F, _ g: G)
-  public struct Iterator : Swift.IteratorProtocol {
-    public typealias Element = (A.Element, B.Element, C.Element, D.Element, E.Element, F.Element, G.Element)
-    #if compiler(>=5.3) && $NonescapableTypes
-    public mutating func next() -> DriveKitDBTripAccessModule.Zip7Sequence<A, B, C, D, E, F, G>.Iterator.Element?
-    #endif
-  }
-  public func makeIterator() -> DriveKitDBTripAccessModule.Zip7Sequence<A, B, C, D, E, F, G>.Iterator
-  public typealias Element = DriveKitDBTripAccessModule.Zip7Sequence<A, B, C, D, E, F, G>.Iterator.Element
-}
-public struct Zip8Sequence<A, B, C, D, E, F, G, H> : Swift.Sequence where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence, G : Swift.Sequence, H : Swift.Sequence {
-  public init(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E, _ f: F, _ g: G, _ h: H)
-  public struct Iterator : Swift.IteratorProtocol {
-    public typealias Element = (A.Element, B.Element, C.Element, D.Element, E.Element, F.Element, G.Element, H.Element)
-    #if compiler(>=5.3) && $NonescapableTypes
-    public mutating func next() -> DriveKitDBTripAccessModule.Zip8Sequence<A, B, C, D, E, F, G, H>.Iterator.Element?
-    #endif
-  }
-  public func makeIterator() -> DriveKitDBTripAccessModule.Zip8Sequence<A, B, C, D, E, F, G, H>.Iterator
-  public typealias Element = DriveKitDBTripAccessModule.Zip8Sequence<A, B, C, D, E, F, G, H>.Iterator.Element
-}
-public struct Zip9Sequence<A, B, C, D, E, F, G, H, I> : Swift.Sequence where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence, G : Swift.Sequence, H : Swift.Sequence, I : Swift.Sequence {
-  public init(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E, _ f: F, _ g: G, _ h: H, _ i: I)
-  public struct Iterator : Swift.IteratorProtocol {
-    public typealias Element = (A.Element, B.Element, C.Element, D.Element, E.Element, F.Element, G.Element, H.Element, I.Element)
-    #if compiler(>=5.3) && $NonescapableTypes
-    public mutating func next() -> DriveKitDBTripAccessModule.Zip9Sequence<A, B, C, D, E, F, G, H, I>.Iterator.Element?
-    #endif
-  }
-  public func makeIterator() -> DriveKitDBTripAccessModule.Zip9Sequence<A, B, C, D, E, F, G, H, I>.Iterator
-  public typealias Element = DriveKitDBTripAccessModule.Zip9Sequence<A, B, C, D, E, F, G, H, I>.Iterator.Element
-}
-public struct Zip10Sequence<A, B, C, D, E, F, G, H, I, J> : Swift.Sequence where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence, G : Swift.Sequence, H : Swift.Sequence, I : Swift.Sequence, J : Swift.Sequence {
-  public init(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E, _ f: F, _ g: G, _ h: H, _ i: I, _ j: J)
-  public struct Iterator : Swift.IteratorProtocol {
-    public typealias Element = (A.Element, B.Element, C.Element, D.Element, E.Element, F.Element, G.Element, H.Element, I.Element, J.Element)
-    #if compiler(>=5.3) && $NonescapableTypes
-    public mutating func next() -> DriveKitDBTripAccessModule.Zip10Sequence<A, B, C, D, E, F, G, H, I, J>.Iterator.Element?
-    #endif
-  }
-  public func makeIterator() -> DriveKitDBTripAccessModule.Zip10Sequence<A, B, C, D, E, F, G, H, I, J>.Iterator
-  public typealias Element = DriveKitDBTripAccessModule.Zip10Sequence<A, B, C, D, E, F, G, H, I, J>.Iterator.Element
-}
 @objc public enum DKWeather : Swift.Int, Swift.Codable {
   case unknown = 0
   case sun = 1
@@ -372,16 +253,16 @@ public struct DKDriverProfile : Swift.Codable {
   public var distance: DriveKitDBTripAccessModule.DKDistanceProfile
   public var activity: DriveKitDBTripAccessModule.DKActivityProfile
   public var regularity: DriveKitDBTripAccessModule.DKRegularityProfile
-  public var mainRoadContext: DriveKitDBTripAccessModule.DKRoadContext
+  public var mainRoadContext: DriveKitCoreModule.DKRoadContext
   public var mobility: DriveKitDBTripAccessModule.DKMobilityProfile
   public var statistics: DriveKitDBTripAccessModule.DKDriverStatistics
   public var weekRegularity: DriveKitDBTripAccessModule.DKDriverRegularity
   public var monthRegularity: DriveKitDBTripAccessModule.DKDriverRegularity
   public var distanceEstimation: DriveKitDBTripAccessModule.DKDriverDistanceEstimation
-  public var roadContextInfoByRoadContext: [DriveKitDBTripAccessModule.DKRoadContext : DriveKitDBTripAccessModule.DKRoadContextInfo]
+  public var roadContextInfoByRoadContext: [DriveKitCoreModule.DKRoadContext : DriveKitDBTripAccessModule.DKRoadContextInfo]
   public var commonTripByType: [DriveKitDBTripAccessModule.DKCommonTripType : DriveKitDBTripAccessModule.DKCommonTrip]
   public var mobilityAreaRadiusByType: [DriveKitDBTripAccessModule.DKMobilityAreaType : Swift.Int]
-  public init(distance: DriveKitDBTripAccessModule.DKDistanceProfile, activity: DriveKitDBTripAccessModule.DKActivityProfile, regularity: DriveKitDBTripAccessModule.DKRegularityProfile, mainRoadContext: DriveKitDBTripAccessModule.DKRoadContext, mobility: DriveKitDBTripAccessModule.DKMobilityProfile, statistics: DriveKitDBTripAccessModule.DKDriverStatistics, weekRegularity: DriveKitDBTripAccessModule.DKDriverRegularity, monthRegularity: DriveKitDBTripAccessModule.DKDriverRegularity, distanceEstimation: DriveKitDBTripAccessModule.DKDriverDistanceEstimation, roadContextInfoByRoadContext: [DriveKitDBTripAccessModule.DKRoadContext : DriveKitDBTripAccessModule.DKRoadContextInfo], commonTripByType: [DriveKitDBTripAccessModule.DKCommonTripType : DriveKitDBTripAccessModule.DKCommonTrip], mobilityAreaRadiusByType: [DriveKitDBTripAccessModule.DKMobilityAreaType : Swift.Int])
+  public init(distance: DriveKitDBTripAccessModule.DKDistanceProfile, activity: DriveKitDBTripAccessModule.DKActivityProfile, regularity: DriveKitDBTripAccessModule.DKRegularityProfile, mainRoadContext: DriveKitCoreModule.DKRoadContext, mobility: DriveKitDBTripAccessModule.DKMobilityProfile, statistics: DriveKitDBTripAccessModule.DKDriverStatistics, weekRegularity: DriveKitDBTripAccessModule.DKDriverRegularity, monthRegularity: DriveKitDBTripAccessModule.DKDriverRegularity, distanceEstimation: DriveKitDBTripAccessModule.DKDriverDistanceEstimation, roadContextInfoByRoadContext: [DriveKitCoreModule.DKRoadContext : DriveKitDBTripAccessModule.DKRoadContextInfo], commonTripByType: [DriveKitDBTripAccessModule.DKCommonTripType : DriveKitDBTripAccessModule.DKCommonTrip], mobilityAreaRadiusByType: [DriveKitDBTripAccessModule.DKMobilityAreaType : Swift.Int])
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -531,12 +412,12 @@ public struct DKSynthesis : Swift.Codable {
     public init(from decoder: any Swift.Decoder) throws
   }
   public struct ScoresRoadContext : Swift.Codable {
-    public let roadContext: DriveKitDBTripAccessModule.DKRoadContext
+    public let roadContext: DriveKitCoreModule.DKRoadContext
     public let distance: Swift.Double
     public let duration: Swift.Double
     public let efficiencyScore: Swift.Double
     public let safetyScore: Swift.Double
-    public init(roadContext: DriveKitDBTripAccessModule.DKRoadContext, distance: Swift.Double, duration: Swift.Double, efficiencyScore: Swift.Double, safetyScore: Swift.Double)
+    public init(roadContext: DriveKitCoreModule.DKRoadContext, distance: Swift.Double, duration: Swift.Double, efficiencyScore: Swift.Double, safetyScore: Swift.Double)
     public func encode(to encoder: any Swift.Encoder) throws
     public init(from decoder: any Swift.Decoder) throws
   }
@@ -567,20 +448,20 @@ public enum DKDrivingCategory : Swift.Int, Swift.Codable {
   }
 }
 public struct DKRoadContextInfo : Swift.Codable {
-  public var roadContext: DriveKitDBTripAccessModule.DKRoadContext
+  public var roadContext: DriveKitCoreModule.DKRoadContext
   public var distancePercentage: Swift.Double
   public var durationPercentage: Swift.Double
   public var consumedEnergyPercentage: Swift.Double
-  public init(roadContext: DriveKitDBTripAccessModule.DKRoadContext, distancePercentage: Swift.Double, durationPercentage: Swift.Double, consumedEnergyPercentage: Swift.Double)
+  public init(roadContext: DriveKitCoreModule.DKRoadContext, distancePercentage: Swift.Double, durationPercentage: Swift.Double, consumedEnergyPercentage: Swift.Double)
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
 public struct DKDriverTimeline : Swift.Codable {
   public let period: DriveKitCoreModule.DKPeriod
   public let allContext: [DriveKitDBTripAccessModule.DKDriverTimeline.DKAllContextItem]
-  public let roadContexts: [DriveKitDBTripAccessModule.DKRoadContext : [DriveKitDBTripAccessModule.DKDriverTimeline.DKRoadContextItem]]
+  public let roadContexts: [DriveKitCoreModule.DKRoadContext : [DriveKitDBTripAccessModule.DKDriverTimeline.DKRoadContextItem]]
   public init(rawTimeline: DriveKitDBTripAccessModule.DKRawTimeline)
-  public init(period: DriveKitCoreModule.DKPeriod, allContext: [DriveKitDBTripAccessModule.DKDriverTimeline.DKAllContextItem], roadContexts: [DriveKitDBTripAccessModule.DKRoadContext : [DriveKitDBTripAccessModule.DKDriverTimeline.DKRoadContextItem]])
+  public init(period: DriveKitCoreModule.DKPeriod, allContext: [DriveKitDBTripAccessModule.DKDriverTimeline.DKAllContextItem], roadContexts: [DriveKitCoreModule.DKRoadContext : [DriveKitDBTripAccessModule.DKDriverTimeline.DKRoadContextItem]])
   public struct DKSafety : Swift.Codable {
     public let score: Swift.Double
     public let acceleration: Swift.Int
@@ -654,7 +535,7 @@ public struct DKDriverTimeline : Swift.Codable {
     public init(from decoder: any Swift.Decoder) throws
   }
   public struct DKRoadContextItem : Swift.Codable {
-    public let type: DriveKitDBTripAccessModule.DKRoadContext
+    public let type: DriveKitCoreModule.DKRoadContext
     public let date: Foundation.Date
     public let numberTripTotal: Swift.Int
     public let numberTripScored: Swift.Int
@@ -663,7 +544,7 @@ public struct DKDriverTimeline : Swift.Codable {
     public var ecoDriving: DriveKitDBTripAccessModule.DKDriverTimeline.DKEcoDriving?
     public var safety: DriveKitDBTripAccessModule.DKDriverTimeline.DKSafety?
     #if compiler(>=5.3) && $NonescapableTypes
-    public init(type: DriveKitDBTripAccessModule.DKRoadContext, date: Foundation.Date, numberTripTotal: Swift.Int, numberTripScored: Swift.Int, distance: Swift.Double, duration: Swift.Int, ecoDriving: DriveKitDBTripAccessModule.DKDriverTimeline.DKEcoDriving?, safety: DriveKitDBTripAccessModule.DKDriverTimeline.DKSafety?)
+    public init(type: DriveKitCoreModule.DKRoadContext, date: Foundation.Date, numberTripTotal: Swift.Int, numberTripScored: Swift.Int, distance: Swift.Double, duration: Swift.Int, ecoDriving: DriveKitDBTripAccessModule.DKDriverTimeline.DKEcoDriving?, safety: DriveKitDBTripAccessModule.DKDriverTimeline.DKSafety?)
     #endif
     public func encode(to encoder: any Swift.Encoder) throws
     public init(from decoder: any Swift.Decoder) throws
@@ -3099,9 +2980,6 @@ public typealias TripDriverDataCoreDataFrameworkManagedObject = CoreData.NSManag
 extension DriveKitDBTripAccessModule.DKMobilityAreaType : Swift.Equatable {}
 extension DriveKitDBTripAccessModule.DKMobilityAreaType : Swift.Hashable {}
 extension DriveKitDBTripAccessModule.DKMobilityAreaType : Swift.RawRepresentable {}
-extension DriveKitDBTripAccessModule.DKRoadContext : Swift.Equatable {}
-extension DriveKitDBTripAccessModule.DKRoadContext : Swift.Hashable {}
-extension DriveKitDBTripAccessModule.DKRoadContext : Swift.RawRepresentable {}
 extension DriveKitDBTripAccessModule.DKDriverProfileStatus : Swift.Equatable {}
 extension DriveKitDBTripAccessModule.DKDriverProfileStatus : Swift.Hashable {}
 extension DriveKitDBTripAccessModule.DKActivityProfile : Swift.Equatable {}

@@ -768,6 +768,1146 @@
       },
       {
         "kind": "Import",
+        "name": "DriveKitCoreModule",
+        "printedName": "DriveKitCoreModule",
+        "declKind": "Import",
+        "moduleName": "DriveKitDBVehicleAccessModule"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DriveKitDBVehicleAccessModule"
+      },
+      {
+        "kind": "Import",
+        "name": "DriveKitCoreModule",
+        "printedName": "DriveKitCoreModule",
+        "declKind": "Import",
+        "moduleName": "DriveKitDBVehicleAccessModule"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DKVehicleTimeline",
+        "printedName": "DKVehicleTimeline",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "period",
+            "printedName": "period",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DKPeriod",
+                "printedName": "DriveKitCoreModule.DKPeriod",
+                "usr": "c:@M@DriveKitCoreModule@E@DKPeriod"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:29DriveKitDBVehicleAccessModule17DKVehicleTimelineV6period0ab4CoreE08DKPeriodOvp",
+            "mangledName": "$s29DriveKitDBVehicleAccessModule17DKVehicleTimelineV6period0ab4CoreE08DKPeriodOvp",
+            "moduleName": "DriveKitDBVehicleAccessModule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKPeriod",
+                    "printedName": "DriveKitCoreModule.DKPeriod",
+                    "usr": "c:@M@DriveKitCoreModule@E@DKPeriod"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:29DriveKitDBVehicleAccessModule17DKVehicleTimelineV6period0ab4CoreE08DKPeriodOvg",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule17DKVehicleTimelineV6period0ab4CoreE08DKPeriodOvg",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "allContext",
+            "printedName": "allContext",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[DriveKitDBVehicleAccessModule.DKVehicleTimeline.DKContextItem]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKContextItem",
+                    "printedName": "DriveKitDBVehicleAccessModule.DKVehicleTimeline.DKContextItem",
+                    "usr": "s:29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:29DriveKitDBVehicleAccessModule17DKVehicleTimelineV10allContextSayAC13DKContextItemVGvp",
+            "mangledName": "$s29DriveKitDBVehicleAccessModule17DKVehicleTimelineV10allContextSayAC13DKContextItemVGvp",
+            "moduleName": "DriveKitDBVehicleAccessModule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[DriveKitDBVehicleAccessModule.DKVehicleTimeline.DKContextItem]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKContextItem",
+                        "printedName": "DriveKitDBVehicleAccessModule.DKVehicleTimeline.DKContextItem",
+                        "usr": "s:29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:29DriveKitDBVehicleAccessModule17DKVehicleTimelineV10allContextSayAC13DKContextItemVGvg",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule17DKVehicleTimelineV10allContextSayAC13DKContextItemVGvg",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "roadContexts",
+            "printedName": "roadContexts",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[DriveKitCoreModule.DKRoadContext : [DriveKitDBVehicleAccessModule.DKVehicleTimeline.DKContextItem]]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKRoadContext",
+                    "printedName": "DriveKitCoreModule.DKRoadContext",
+                    "usr": "c:@M@DriveKitCoreModule@E@DKRoadContext"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[DriveKitDBVehicleAccessModule.DKVehicleTimeline.DKContextItem]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKContextItem",
+                        "printedName": "DriveKitDBVehicleAccessModule.DKVehicleTimeline.DKContextItem",
+                        "usr": "s:29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:29DriveKitDBVehicleAccessModule17DKVehicleTimelineV12roadContextsSDy0ab4CoreE013DKRoadContextOSayAC13DKContextItemVGGvp",
+            "mangledName": "$s29DriveKitDBVehicleAccessModule17DKVehicleTimelineV12roadContextsSDy0ab4CoreE013DKRoadContextOSayAC13DKContextItemVGGvp",
+            "moduleName": "DriveKitDBVehicleAccessModule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[DriveKitCoreModule.DKRoadContext : [DriveKitDBVehicleAccessModule.DKVehicleTimeline.DKContextItem]]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKRoadContext",
+                        "printedName": "DriveKitCoreModule.DKRoadContext",
+                        "usr": "c:@M@DriveKitCoreModule@E@DKRoadContext"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[DriveKitDBVehicleAccessModule.DKVehicleTimeline.DKContextItem]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "DKContextItem",
+                            "printedName": "DriveKitDBVehicleAccessModule.DKVehicleTimeline.DKContextItem",
+                            "usr": "s:29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:29DriveKitDBVehicleAccessModule17DKVehicleTimelineV12roadContextsSDy0ab4CoreE013DKRoadContextOSayAC13DKContextItemVGGvg",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule17DKVehicleTimelineV12roadContextsSDy0ab4CoreE013DKRoadContextOSayAC13DKContextItemVGGvg",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawTimeline:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DKVehicleTimeline",
+                "printedName": "DriveKitDBVehicleAccessModule.DKVehicleTimeline",
+                "usr": "s:29DriveKitDBVehicleAccessModule17DKVehicleTimelineV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DKRawVehicleTimeline",
+                "printedName": "DriveKitDBVehicleAccessModule.DKRawVehicleTimeline",
+                "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:29DriveKitDBVehicleAccessModule17DKVehicleTimelineV03rawG0AcA012DKRawVehicleG0V_tcfc",
+            "mangledName": "$s29DriveKitDBVehicleAccessModule17DKVehicleTimelineV03rawG0AcA012DKRawVehicleG0V_tcfc",
+            "moduleName": "DriveKitDBVehicleAccessModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(period:allContext:roadContexts:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DKVehicleTimeline",
+                "printedName": "DriveKitDBVehicleAccessModule.DKVehicleTimeline",
+                "usr": "s:29DriveKitDBVehicleAccessModule17DKVehicleTimelineV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DKPeriod",
+                "printedName": "DriveKitCoreModule.DKPeriod",
+                "usr": "c:@M@DriveKitCoreModule@E@DKPeriod"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[DriveKitDBVehicleAccessModule.DKVehicleTimeline.DKContextItem]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKContextItem",
+                    "printedName": "DriveKitDBVehicleAccessModule.DKVehicleTimeline.DKContextItem",
+                    "usr": "s:29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[DriveKitCoreModule.DKRoadContext : [DriveKitDBVehicleAccessModule.DKVehicleTimeline.DKContextItem]]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKRoadContext",
+                    "printedName": "DriveKitCoreModule.DKRoadContext",
+                    "usr": "c:@M@DriveKitCoreModule@E@DKRoadContext"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[DriveKitDBVehicleAccessModule.DKVehicleTimeline.DKContextItem]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKContextItem",
+                        "printedName": "DriveKitDBVehicleAccessModule.DKVehicleTimeline.DKContextItem",
+                        "usr": "s:29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:29DriveKitDBVehicleAccessModule17DKVehicleTimelineV6period10allContext12roadContextsAC0ab4CoreE08DKPeriodO_SayAC13DKContextItemVGSDyAG06DKRoadJ0OALGtcfc",
+            "mangledName": "$s29DriveKitDBVehicleAccessModule17DKVehicleTimelineV6period10allContext12roadContextsAC0ab4CoreE08DKPeriodO_SayAC13DKContextItemVGSDyAG06DKRoadJ0OALGtcfc",
+            "moduleName": "DriveKitDBVehicleAccessModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "DKContextItem",
+            "printedName": "DKContextItem",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "date",
+                "printedName": "date",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV4date10Foundation4DateVvp",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV4date10Foundation4DateVvp",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Date",
+                        "printedName": "Foundation.Date",
+                        "usr": "s:10Foundation4DateV"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV4date10Foundation4DateVvg",
+                    "mangledName": "$s29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV4date10Foundation4DateVvg",
+                    "moduleName": "DriveKitDBVehicleAccessModule",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "numberTrip",
+                "printedName": "numberTrip",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV10numberTripSivp",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV10numberTripSivp",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV10numberTripSivg",
+                    "mangledName": "$s29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV10numberTripSivg",
+                    "moduleName": "DriveKitDBVehicleAccessModule",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "distance",
+                "printedName": "distance",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV8distanceSdvp",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV8distanceSdvp",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV8distanceSdvg",
+                    "mangledName": "$s29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV8distanceSdvg",
+                    "moduleName": "DriveKitDBVehicleAccessModule",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "duration",
+                "printedName": "duration",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV8durationSivp",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV8durationSivp",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV8durationSivg",
+                    "mangledName": "$s29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV8durationSivg",
+                    "moduleName": "DriveKitDBVehicleAccessModule",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "fuelVolume",
+                "printedName": "fuelVolume",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV10fuelVolumeSdvp",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV10fuelVolumeSdvp",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV10fuelVolumeSdvg",
+                    "mangledName": "$s29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV10fuelVolumeSdvg",
+                    "moduleName": "DriveKitDBVehicleAccessModule",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "fuelConsumption",
+                "printedName": "fuelConsumption",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV15fuelConsumptionSdvp",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV15fuelConsumptionSdvp",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV15fuelConsumptionSdvg",
+                    "mangledName": "$s29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV15fuelConsumptionSdvg",
+                    "moduleName": "DriveKitDBVehicleAccessModule",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "co2",
+                "printedName": "co2",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV3co2Sdvp",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV3co2Sdvp",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV3co2Sdvg",
+                    "mangledName": "$s29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV3co2Sdvg",
+                    "moduleName": "DriveKitDBVehicleAccessModule",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "co2Opti",
+                "printedName": "co2Opti",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV7co2OptiSdvp",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV7co2OptiSdvp",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV7co2OptiSdvg",
+                    "mangledName": "$s29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV7co2OptiSdvg",
+                    "moduleName": "DriveKitDBVehicleAccessModule",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "energyKWh",
+                "printedName": "energyKWh",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV9energyKWhSdvp",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV9energyKWhSdvp",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV9energyKWhSdvg",
+                    "mangledName": "$s29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV9energyKWhSdvg",
+                    "moduleName": "DriveKitDBVehicleAccessModule",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "energyKWhOpti",
+                "printedName": "energyKWhOpti",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV13energyKWhOptiSdvp",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV13energyKWhOptiSdvp",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV13energyKWhOptiSdvg",
+                    "mangledName": "$s29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV13energyKWhOptiSdvg",
+                    "moduleName": "DriveKitDBVehicleAccessModule",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "energyConsumption",
+                "printedName": "energyConsumption",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV17energyConsumptionSdvp",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV17energyConsumptionSdvp",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV17energyConsumptionSdvg",
+                    "mangledName": "$s29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV17energyConsumptionSdvg",
+                    "moduleName": "DriveKitDBVehicleAccessModule",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "energyConsumptionOpti",
+                "printedName": "energyConsumptionOpti",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV21energyConsumptionOptiSdvp",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV21energyConsumptionOptiSdvp",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV21energyConsumptionOptiSdvg",
+                    "mangledName": "$s29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV21energyConsumptionOptiSdvg",
+                    "moduleName": "DriveKitDBVehicleAccessModule",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(date:numberTrip:distance:duration:fuelVolume:fuelConsumption:co2:co2Opti:energyKWh:energyKWhOpti:energyConsumption:energyConsumptionOpti:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKContextItem",
+                    "printedName": "DriveKitDBVehicleAccessModule.DKVehicleTimeline.DKContextItem",
+                    "usr": "s:29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV4date10numberTrip8distance8duration10fuelVolume0O11Consumption3co20R4Opti9energyKWh0tuS00tQ00tqS0AE10Foundation4DateV_SiSdSiS8dtcfc",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV4date10numberTrip8distance8duration10fuelVolume0O11Consumption3co20R4Opti9energyKWh0tuS00tQ00tqS0AE10Foundation4DateV_SiSdSiS8dtcfc",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "declAttributes": [
+                  "AccessControl",
+                  "RawDocComment"
+                ],
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(from:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKContextItem",
+                    "printedName": "DriveKitDBVehicleAccessModule.DKVehicleTimeline.DKContextItem",
+                    "usr": "s:29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Decoder",
+                    "printedName": "any Swift.Decoder",
+                    "usr": "s:s7DecoderP"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV4fromAEs7Decoder_p_tKcfc",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV4fromAEs7Decoder_p_tKcfc",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "implicit": true,
+                "throwing": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Function",
+                "name": "encode",
+                "printedName": "encode(to:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Encoder",
+                    "printedName": "any Swift.Encoder",
+                    "usr": "s:s7EncoderP"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV6encode2toys7Encoder_p_tKF",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV6encode2toys7Encoder_p_tKF",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "implicit": true,
+                "throwing": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV",
+            "mangledName": "$s29DriveKitDBVehicleAccessModule17DKVehicleTimelineV13DKContextItemV",
+            "moduleName": "DriveKitDBVehicleAccessModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Decodable",
+                "printedName": "Decodable",
+                "usr": "s:Se",
+                "mangledName": "$sSe"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Encodable",
+                "printedName": "Encodable",
+                "usr": "s:SE",
+                "mangledName": "$sSE"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DKVehicleTimeline",
+                "printedName": "DriveKitDBVehicleAccessModule.DKVehicleTimeline",
+                "usr": "s:29DriveKitDBVehicleAccessModule17DKVehicleTimelineV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:29DriveKitDBVehicleAccessModule17DKVehicleTimelineV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s29DriveKitDBVehicleAccessModule17DKVehicleTimelineV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "DriveKitDBVehicleAccessModule",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:29DriveKitDBVehicleAccessModule17DKVehicleTimelineV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s29DriveKitDBVehicleAccessModule17DKVehicleTimelineV6encode2toys7Encoder_p_tKF",
+            "moduleName": "DriveKitDBVehicleAccessModule",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:29DriveKitDBVehicleAccessModule17DKVehicleTimelineV",
+        "mangledName": "$s29DriveKitDBVehicleAccessModule17DKVehicleTimelineV",
+        "moduleName": "DriveKitDBVehicleAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DriveKitDBVehicleAccessModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "DriveKitBeaconUtilsModule",
         "printedName": "DriveKitBeaconUtilsModule",
         "declKind": "Import",
@@ -2730,6 +3870,2502 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "DKRawVehicleTimeline",
+        "printedName": "DKRawVehicleTimeline",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "period",
+            "printedName": "period",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DKPeriod",
+                "printedName": "DriveKitCoreModule.DKPeriod",
+                "usr": "c:@M@DriveKitCoreModule@E@DKPeriod"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV6period0ab4CoreE08DKPeriodOvp",
+            "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV6period0ab4CoreE08DKPeriodOvp",
+            "moduleName": "DriveKitDBVehicleAccessModule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKPeriod",
+                    "printedName": "DriveKitCoreModule.DKPeriod",
+                    "usr": "c:@M@DriveKitCoreModule@E@DKPeriod"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV6period0ab4CoreE08DKPeriodOvg",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV6period0ab4CoreE08DKPeriodOvg",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKPeriod",
+                    "printedName": "DriveKitCoreModule.DKPeriod",
+                    "usr": "c:@M@DriveKitCoreModule@E@DKPeriod"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV6period0ab4CoreE08DKPeriodOvs",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV6period0ab4CoreE08DKPeriodOvs",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV6period0ab4CoreE08DKPeriodOvM",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV6period0ab4CoreE08DKPeriodOvM",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "allContext",
+            "printedName": "allContext",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AllContextItem",
+                "printedName": "DriveKitDBVehicleAccessModule.DKRawVehicleTimeline.AllContextItem",
+                "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV10allContextAC03AllJ4ItemVvp",
+            "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV10allContextAC03AllJ4ItemVvp",
+            "moduleName": "DriveKitDBVehicleAccessModule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AllContextItem",
+                    "printedName": "DriveKitDBVehicleAccessModule.DKRawVehicleTimeline.AllContextItem",
+                    "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV10allContextAC03AllJ4ItemVvg",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV10allContextAC03AllJ4ItemVvg",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AllContextItem",
+                    "printedName": "DriveKitDBVehicleAccessModule.DKRawVehicleTimeline.AllContextItem",
+                    "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV10allContextAC03AllJ4ItemVvs",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV10allContextAC03AllJ4ItemVvs",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV10allContextAC03AllJ4ItemVvM",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV10allContextAC03AllJ4ItemVvM",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "roadContexts",
+            "printedName": "roadContexts",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[DriveKitDBVehicleAccessModule.DKRawVehicleTimeline.RoadContextItem]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoadContextItem",
+                    "printedName": "DriveKitDBVehicleAccessModule.DKRawVehicleTimeline.RoadContextItem",
+                    "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV12roadContextsSayAC15RoadContextItemVGvp",
+            "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV12roadContextsSayAC15RoadContextItemVGvp",
+            "moduleName": "DriveKitDBVehicleAccessModule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[DriveKitDBVehicleAccessModule.DKRawVehicleTimeline.RoadContextItem]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoadContextItem",
+                        "printedName": "DriveKitDBVehicleAccessModule.DKRawVehicleTimeline.RoadContextItem",
+                        "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV12roadContextsSayAC15RoadContextItemVGvg",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV12roadContextsSayAC15RoadContextItemVGvg",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[DriveKitDBVehicleAccessModule.DKRawVehicleTimeline.RoadContextItem]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "RoadContextItem",
+                        "printedName": "DriveKitDBVehicleAccessModule.DKRawVehicleTimeline.RoadContextItem",
+                        "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV12roadContextsSayAC15RoadContextItemVGvs",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV12roadContextsSayAC15RoadContextItemVGvs",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV12roadContextsSayAC15RoadContextItemVGvM",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV12roadContextsSayAC15RoadContextItemVGvM",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(period:allContext:roadContexts:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DKRawVehicleTimeline",
+                "printedName": "DriveKitDBVehicleAccessModule.DKRawVehicleTimeline",
+                "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DKPeriod",
+                "printedName": "DriveKitCoreModule.DKPeriod",
+                "usr": "c:@M@DriveKitCoreModule@E@DKPeriod"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "AllContextItem",
+                "printedName": "DriveKitDBVehicleAccessModule.DKRawVehicleTimeline.AllContextItem",
+                "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[DriveKitDBVehicleAccessModule.DKRawVehicleTimeline.RoadContextItem]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoadContextItem",
+                    "printedName": "DriveKitDBVehicleAccessModule.DKRawVehicleTimeline.RoadContextItem",
+                    "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV6period10allContext12roadContextsAC0ab4CoreE08DKPeriodO_AC03AllK4ItemVSayAC04RoadkQ0VGtcfc",
+            "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV6period10allContext12roadContextsAC0ab4CoreE08DKPeriodO_AC03AllK4ItemVSayAC04RoadkQ0VGtcfc",
+            "moduleName": "DriveKitDBVehicleAccessModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "AllContextItem",
+            "printedName": "AllContextItem",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "date",
+                "printedName": "date",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Foundation.Date]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Date",
+                        "printedName": "Foundation.Date",
+                        "usr": "s:10Foundation4DateV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV4dateSay10Foundation4DateVGvp",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV4dateSay10Foundation4DateVGvp",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Foundation.Date]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Date",
+                            "printedName": "Foundation.Date",
+                            "usr": "s:10Foundation4DateV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV4dateSay10Foundation4DateVGvg",
+                    "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV4dateSay10Foundation4DateVGvg",
+                    "moduleName": "DriveKitDBVehicleAccessModule",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "numberTrip",
+                "printedName": "numberTrip",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV10numberTripSaySiGvp",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV10numberTripSaySiGvp",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.Int]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV10numberTripSaySiGvg",
+                    "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV10numberTripSaySiGvg",
+                    "moduleName": "DriveKitDBVehicleAccessModule",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "distance",
+                "printedName": "distance",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Double]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV8distanceSaySdGvp",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV8distanceSaySdGvp",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.Double]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Double",
+                            "printedName": "Swift.Double",
+                            "usr": "s:Sd"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV8distanceSaySdGvg",
+                    "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV8distanceSaySdGvg",
+                    "moduleName": "DriveKitDBVehicleAccessModule",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "duration",
+                "printedName": "duration",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV8durationSaySiGvp",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV8durationSaySiGvp",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.Int]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV8durationSaySiGvg",
+                    "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV8durationSaySiGvg",
+                    "moduleName": "DriveKitDBVehicleAccessModule",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "fuelVolume",
+                "printedName": "fuelVolume",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Double]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV10fuelVolumeSaySdGvp",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV10fuelVolumeSaySdGvp",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.Double]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Double",
+                            "printedName": "Swift.Double",
+                            "usr": "s:Sd"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV10fuelVolumeSaySdGvg",
+                    "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV10fuelVolumeSaySdGvg",
+                    "moduleName": "DriveKitDBVehicleAccessModule",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "fuelConsumption",
+                "printedName": "fuelConsumption",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Double]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV15fuelConsumptionSaySdGvp",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV15fuelConsumptionSaySdGvp",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.Double]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Double",
+                            "printedName": "Swift.Double",
+                            "usr": "s:Sd"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV15fuelConsumptionSaySdGvg",
+                    "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV15fuelConsumptionSaySdGvg",
+                    "moduleName": "DriveKitDBVehicleAccessModule",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "co2",
+                "printedName": "co2",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Double]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV3co2SaySdGvp",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV3co2SaySdGvp",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.Double]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Double",
+                            "printedName": "Swift.Double",
+                            "usr": "s:Sd"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV3co2SaySdGvg",
+                    "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV3co2SaySdGvg",
+                    "moduleName": "DriveKitDBVehicleAccessModule",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "co2Opti",
+                "printedName": "co2Opti",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Double]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV7co2OptiSaySdGvp",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV7co2OptiSaySdGvp",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.Double]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Double",
+                            "printedName": "Swift.Double",
+                            "usr": "s:Sd"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV7co2OptiSaySdGvg",
+                    "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV7co2OptiSaySdGvg",
+                    "moduleName": "DriveKitDBVehicleAccessModule",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "energyKWh",
+                "printedName": "energyKWh",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Double]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV9energyKWhSaySdGvp",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV9energyKWhSaySdGvp",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.Double]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Double",
+                            "printedName": "Swift.Double",
+                            "usr": "s:Sd"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV9energyKWhSaySdGvg",
+                    "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV9energyKWhSaySdGvg",
+                    "moduleName": "DriveKitDBVehicleAccessModule",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "energyKWhOpti",
+                "printedName": "energyKWhOpti",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Double]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV13energyKWhOptiSaySdGvp",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV13energyKWhOptiSaySdGvp",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.Double]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Double",
+                            "printedName": "Swift.Double",
+                            "usr": "s:Sd"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV13energyKWhOptiSaySdGvg",
+                    "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV13energyKWhOptiSaySdGvg",
+                    "moduleName": "DriveKitDBVehicleAccessModule",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "energyConsumption",
+                "printedName": "energyConsumption",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Double]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV17energyConsumptionSaySdGvp",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV17energyConsumptionSaySdGvp",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.Double]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Double",
+                            "printedName": "Swift.Double",
+                            "usr": "s:Sd"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV17energyConsumptionSaySdGvg",
+                    "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV17energyConsumptionSaySdGvg",
+                    "moduleName": "DriveKitDBVehicleAccessModule",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "energyConsumptionOpti",
+                "printedName": "energyConsumptionOpti",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Double]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV21energyConsumptionOptiSaySdGvp",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV21energyConsumptionOptiSaySdGvp",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.Double]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Double",
+                            "printedName": "Swift.Double",
+                            "usr": "s:Sd"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV21energyConsumptionOptiSaySdGvg",
+                    "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV21energyConsumptionOptiSaySdGvg",
+                    "moduleName": "DriveKitDBVehicleAccessModule",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(date:numberTrip:distance:duration:fuelVolume:fuelConsumption:co2:co2Opti:energyKWh:energyKWhOpti:energyConsumption:energyConsumptionOpti:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AllContextItem",
+                    "printedName": "DriveKitDBVehicleAccessModule.DKRawVehicleTimeline.AllContextItem",
+                    "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Foundation.Date]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Date",
+                        "printedName": "Foundation.Date",
+                        "usr": "s:10Foundation4DateV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Double]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Double]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Double]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Double]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Double]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Double]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Double]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Double]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Double]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV4date10numberTrip8distance8duration10fuelVolume0Q11Consumption3co20T4Opti9energyKWh0vwU00vS00vsU0AESay10Foundation4DateVG_SaySiGSaySdGAv8Wtcfc",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV4date10numberTrip8distance8duration10fuelVolume0Q11Consumption3co20T4Opti9energyKWh0vwU00vS00vsU0AESay10Foundation4DateVG_SaySiGSaySdGAv8Wtcfc",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(from:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AllContextItem",
+                    "printedName": "DriveKitDBVehicleAccessModule.DKRawVehicleTimeline.AllContextItem",
+                    "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Decoder",
+                    "printedName": "any Swift.Decoder",
+                    "usr": "s:s7DecoderP"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV4fromAEs7Decoder_p_tKcfc",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV4fromAEs7Decoder_p_tKcfc",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "implicit": true,
+                "throwing": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Function",
+                "name": "encode",
+                "printedName": "encode(to:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Encoder",
+                    "printedName": "any Swift.Encoder",
+                    "usr": "s:s7EncoderP"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV6encode2toys7Encoder_p_tKF",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV6encode2toys7Encoder_p_tKF",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "implicit": true,
+                "throwing": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV",
+            "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV14AllContextItemV",
+            "moduleName": "DriveKitDBVehicleAccessModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Decodable",
+                "printedName": "Decodable",
+                "usr": "s:Se",
+                "mangledName": "$sSe"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Encodable",
+                "printedName": "Encodable",
+                "usr": "s:SE",
+                "mangledName": "$sSE"
+              }
+            ]
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "RoadContextItem",
+            "printedName": "RoadContextItem",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "type",
+                "printedName": "type",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKRoadContext",
+                    "printedName": "DriveKitCoreModule.DKRoadContext",
+                    "usr": "c:@M@DriveKitCoreModule@E@DKRoadContext"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV4type0ab4CoreE006DKRoadJ0Ovp",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV4type0ab4CoreE006DKRoadJ0Ovp",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKRoadContext",
+                        "printedName": "DriveKitCoreModule.DKRoadContext",
+                        "usr": "c:@M@DriveKitCoreModule@E@DKRoadContext"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV4type0ab4CoreE006DKRoadJ0Ovg",
+                    "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV4type0ab4CoreE006DKRoadJ0Ovg",
+                    "moduleName": "DriveKitDBVehicleAccessModule",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "date",
+                "printedName": "date",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Foundation.Date]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Date",
+                        "printedName": "Foundation.Date",
+                        "usr": "s:10Foundation4DateV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV4dateSay10Foundation4DateVGvp",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV4dateSay10Foundation4DateVGvp",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Foundation.Date]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Date",
+                            "printedName": "Foundation.Date",
+                            "usr": "s:10Foundation4DateV"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV4dateSay10Foundation4DateVGvg",
+                    "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV4dateSay10Foundation4DateVGvg",
+                    "moduleName": "DriveKitDBVehicleAccessModule",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "numberTrip",
+                "printedName": "numberTrip",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV10numberTripSaySiGvp",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV10numberTripSaySiGvp",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.Int]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV10numberTripSaySiGvg",
+                    "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV10numberTripSaySiGvg",
+                    "moduleName": "DriveKitDBVehicleAccessModule",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "distance",
+                "printedName": "distance",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Double]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV8distanceSaySdGvp",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV8distanceSaySdGvp",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.Double]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Double",
+                            "printedName": "Swift.Double",
+                            "usr": "s:Sd"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV8distanceSaySdGvg",
+                    "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV8distanceSaySdGvg",
+                    "moduleName": "DriveKitDBVehicleAccessModule",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "duration",
+                "printedName": "duration",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV8durationSaySiGvp",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV8durationSaySiGvp",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.Int]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV8durationSaySiGvg",
+                    "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV8durationSaySiGvg",
+                    "moduleName": "DriveKitDBVehicleAccessModule",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "fuelVolume",
+                "printedName": "fuelVolume",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Double]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV10fuelVolumeSaySdGvp",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV10fuelVolumeSaySdGvp",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.Double]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Double",
+                            "printedName": "Swift.Double",
+                            "usr": "s:Sd"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV10fuelVolumeSaySdGvg",
+                    "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV10fuelVolumeSaySdGvg",
+                    "moduleName": "DriveKitDBVehicleAccessModule",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "fuelConsumption",
+                "printedName": "fuelConsumption",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Double]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV15fuelConsumptionSaySdGvp",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV15fuelConsumptionSaySdGvp",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.Double]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Double",
+                            "printedName": "Swift.Double",
+                            "usr": "s:Sd"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV15fuelConsumptionSaySdGvg",
+                    "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV15fuelConsumptionSaySdGvg",
+                    "moduleName": "DriveKitDBVehicleAccessModule",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "co2",
+                "printedName": "co2",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Double]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV3co2SaySdGvp",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV3co2SaySdGvp",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.Double]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Double",
+                            "printedName": "Swift.Double",
+                            "usr": "s:Sd"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV3co2SaySdGvg",
+                    "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV3co2SaySdGvg",
+                    "moduleName": "DriveKitDBVehicleAccessModule",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "co2Opti",
+                "printedName": "co2Opti",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Double]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV7co2OptiSaySdGvp",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV7co2OptiSaySdGvp",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.Double]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Double",
+                            "printedName": "Swift.Double",
+                            "usr": "s:Sd"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV7co2OptiSaySdGvg",
+                    "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV7co2OptiSaySdGvg",
+                    "moduleName": "DriveKitDBVehicleAccessModule",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "energyKWh",
+                "printedName": "energyKWh",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Double]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV9energyKWhSaySdGvp",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV9energyKWhSaySdGvp",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.Double]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Double",
+                            "printedName": "Swift.Double",
+                            "usr": "s:Sd"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV9energyKWhSaySdGvg",
+                    "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV9energyKWhSaySdGvg",
+                    "moduleName": "DriveKitDBVehicleAccessModule",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "energyKWhOpti",
+                "printedName": "energyKWhOpti",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Double]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV13energyKWhOptiSaySdGvp",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV13energyKWhOptiSaySdGvp",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.Double]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Double",
+                            "printedName": "Swift.Double",
+                            "usr": "s:Sd"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV13energyKWhOptiSaySdGvg",
+                    "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV13energyKWhOptiSaySdGvg",
+                    "moduleName": "DriveKitDBVehicleAccessModule",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "energyConsumption",
+                "printedName": "energyConsumption",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Double]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV17energyConsumptionSaySdGvp",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV17energyConsumptionSaySdGvp",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.Double]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Double",
+                            "printedName": "Swift.Double",
+                            "usr": "s:Sd"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV17energyConsumptionSaySdGvg",
+                    "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV17energyConsumptionSaySdGvg",
+                    "moduleName": "DriveKitDBVehicleAccessModule",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "energyConsumptionOpti",
+                "printedName": "energyConsumptionOpti",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Double]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV21energyConsumptionOptiSaySdGvp",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV21energyConsumptionOptiSaySdGvp",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Array",
+                        "printedName": "[Swift.Double]",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Double",
+                            "printedName": "Swift.Double",
+                            "usr": "s:Sd"
+                          }
+                        ],
+                        "usr": "s:Sa"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV21energyConsumptionOptiSaySdGvg",
+                    "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV21energyConsumptionOptiSaySdGvg",
+                    "moduleName": "DriveKitDBVehicleAccessModule",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(type:date:numberTrip:distance:duration:fuelVolume:fuelConsumption:co2:co2Opti:energyKWh:energyKWhOpti:energyConsumption:energyConsumptionOpti:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoadContextItem",
+                    "printedName": "DriveKitDBVehicleAccessModule.DKRawVehicleTimeline.RoadContextItem",
+                    "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKRoadContext",
+                    "printedName": "DriveKitCoreModule.DKRoadContext",
+                    "usr": "c:@M@DriveKitCoreModule@E@DKRoadContext"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Foundation.Date]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Date",
+                        "printedName": "Foundation.Date",
+                        "usr": "s:10Foundation4DateV"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Double]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Int]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Double]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Double]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Double]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Double]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Double]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Double]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Double]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Array",
+                    "printedName": "[Swift.Double]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Double",
+                        "printedName": "Swift.Double",
+                        "usr": "s:Sd"
+                      }
+                    ],
+                    "usr": "s:Sa"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV4type4date10numberTrip8distance8duration10fuelVolume0R11Consumption3co20U4Opti9energyKWh0wxV00wT00wtV0AE0ab4CoreE006DKRoadJ0O_Say10Foundation4DateVGSaySiGSaySdGAZA_A_A_A_A_A_A_A_tcfc",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV4type4date10numberTrip8distance8duration10fuelVolume0R11Consumption3co20U4Opti9energyKWh0wxV00wT00wtV0AE0ab4CoreE006DKRoadJ0O_Say10Foundation4DateVGSaySiGSaySdGAZA_A_A_A_A_A_A_A_tcfc",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(from:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RoadContextItem",
+                    "printedName": "DriveKitDBVehicleAccessModule.DKRawVehicleTimeline.RoadContextItem",
+                    "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Decoder",
+                    "printedName": "any Swift.Decoder",
+                    "usr": "s:s7DecoderP"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV4fromAEs7Decoder_p_tKcfc",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV4fromAEs7Decoder_p_tKcfc",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "implicit": true,
+                "throwing": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Function",
+                "name": "encode",
+                "printedName": "encode(to:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Encoder",
+                    "printedName": "any Swift.Encoder",
+                    "usr": "s:s7EncoderP"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV6encode2toys7Encoder_p_tKF",
+                "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV6encode2toys7Encoder_p_tKF",
+                "moduleName": "DriveKitDBVehicleAccessModule",
+                "implicit": true,
+                "throwing": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV",
+            "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV15RoadContextItemV",
+            "moduleName": "DriveKitDBVehicleAccessModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Decodable",
+                "printedName": "Decodable",
+                "usr": "s:Se",
+                "mangledName": "$sSe"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Encodable",
+                "printedName": "Encodable",
+                "usr": "s:SE",
+                "mangledName": "$sSE"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(from:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DKRawVehicleTimeline",
+                "printedName": "DriveKitDBVehicleAccessModule.DKRawVehicleTimeline",
+                "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Decoder",
+                "printedName": "any Swift.Decoder",
+                "usr": "s:s7DecoderP"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV4fromACs7Decoder_p_tKcfc",
+            "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV4fromACs7Decoder_p_tKcfc",
+            "moduleName": "DriveKitDBVehicleAccessModule",
+            "implicit": true,
+            "throwing": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "encode",
+            "printedName": "encode(to:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Encoder",
+                "printedName": "any Swift.Encoder",
+                "usr": "s:s7EncoderP"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV6encode2toys7Encoder_p_tKF",
+            "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV6encode2toys7Encoder_p_tKF",
+            "moduleName": "DriveKitDBVehicleAccessModule",
+            "implicit": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV",
+        "mangledName": "$s29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV",
+        "moduleName": "DriveKitDBVehicleAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DriveKitDBVehicleAccessModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "DriveKitCoreModule",
+        "printedName": "DriveKitCoreModule",
+        "declKind": "Import",
+        "moduleName": "DriveKitDBVehicleAccessModule"
+      },
+      {
+        "kind": "TypeDecl",
         "name": "DKVehicleOdometer",
         "printedName": "DKVehicleOdometer",
         "children": [
@@ -3907,6 +7543,113 @@
             "declKind": "Func",
             "usr": "s:29DriveKitDBVehicleAccessModule0abcD0C21notifyOnVehicleUpdateyyF",
             "mangledName": "$s29DriveKitDBVehicleAccessModule0abcD0C21notifyOnVehicleUpdateyyF",
+            "moduleName": "DriveKitDBVehicleAccessModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getRawTimelines",
+            "printedName": "getRawTimelines(periods:vehicleId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[DriveKitDBVehicleAccessModule.DKRawVehicleTimeline]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKRawVehicleTimeline",
+                    "printedName": "DriveKitDBVehicleAccessModule.DKRawVehicleTimeline",
+                    "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[DriveKitCoreModule.DKPeriod]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKPeriod",
+                    "printedName": "DriveKitCoreModule.DKPeriod",
+                    "usr": "c:@M@DriveKitCoreModule@E@DKPeriod"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:29DriveKitDBVehicleAccessModule0abcD0C15getRawTimelines7periods9vehicleIdSayAA20DKRawVehicleTimelineVGSay0ab4CoreE08DKPeriodOG_SStF",
+            "mangledName": "$s29DriveKitDBVehicleAccessModule0abcD0C15getRawTimelines7periods9vehicleIdSayAA20DKRawVehicleTimelineVGSay0ab4CoreE08DKPeriodOG_SStF",
+            "moduleName": "DriveKitDBVehicleAccessModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "saveRawTimeline",
+            "printedName": "saveRawTimeline(_:vehicleId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DKRawVehicleTimeline",
+                "printedName": "DriveKitDBVehicleAccessModule.DKRawVehicleTimeline",
+                "usr": "s:29DriveKitDBVehicleAccessModule20DKRawVehicleTimelineV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:29DriveKitDBVehicleAccessModule0abcD0C15saveRawTimeline_9vehicleIdyAA012DKRawVehicleH0V_SStF",
+            "mangledName": "$s29DriveKitDBVehicleAccessModule0abcD0C15saveRawTimeline_9vehicleIdyAA012DKRawVehicleH0V_SStF",
+            "moduleName": "DriveKitDBVehicleAccessModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "deleteRawTimelines",
+            "printedName": "deleteRawTimelines(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:29DriveKitDBVehicleAccessModule0abcD0C18deleteRawTimelinesyySSF",
+            "mangledName": "$s29DriveKitDBVehicleAccessModule0abcD0C18deleteRawTimelinesyySSF",
             "moduleName": "DriveKitDBVehicleAccessModule",
             "declAttributes": [
               "AccessControl"
@@ -11703,6 +15446,113 @@
         "declAttributes": [
           "AccessControl"
         ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DKPeriod",
+        "printedName": "DKPeriod",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "getKey",
+            "printedName": "getKey(for:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18DriveKitCoreModule8DKPeriodO0ab15DBVehicleAccessD0E6getKey3forS2S_tF",
+            "mangledName": "$s18DriveKitCoreModule8DKPeriodO0ab15DBVehicleAccessD0E6getKey3forS2S_tF",
+            "moduleName": "DriveKitDBVehicleAccessModule",
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "c:@M@DriveKitCoreModule@E@DKPeriod",
+        "mangledName": "$s18DriveKitCoreModule8DKPeriodO",
+        "moduleName": "DriveKitCoreModule",
+        "declAttributes": [
+          "ObjC"
+        ],
+        "enumRawTypeName": "Int",
+        "isExternal": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Decodable",
+            "printedName": "Decodable",
+            "usr": "s:Se",
+            "mangledName": "$sSe"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Encodable",
+            "printedName": "Encodable",
+            "usr": "s:SE",
+            "mangledName": "$sSE"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
       }
     ],
     "json_format_version": 8
@@ -11714,6 +15564,27 @@
       "offset": 273,
       "length": 28,
       "value": "\"DriveKit DB Vehicle Access\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-db-vehicle-access\/DBVehicleAccessConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 336,
+      "length": 33,
+      "value": "\"db-vehicle-access-timeline-week\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-db-vehicle-access\/DBVehicleAccessConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 404,
+      "length": 34,
+      "value": "\"db-vehicle-access-timeline-month\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-db-vehicle-access\/DBVehicleAccessConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 472,
+      "length": 33,
+      "value": "\"db-vehicle-access-timeline-year\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-db-vehicle-access\/DriveKitDBVehicleAccess.swift",
@@ -11774,21 +15645,21 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-db-vehicle-access\/DriveKitDBVehicleAccess.swift",
       "kind": "BooleanLiteral",
-      "offset": 3082,
+      "offset": 3192,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-db-vehicle-access\/DriveKitDBVehicleAccess.swift",
       "kind": "BooleanLiteral",
-      "offset": 4773,
+      "offset": 4934,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-db-vehicle-access\/DriveKitDBVehicleAccess.swift",
       "kind": "BooleanLiteral",
-      "offset": 6215,
+      "offset": 7839,
       "length": 5,
       "value": "false"
     },

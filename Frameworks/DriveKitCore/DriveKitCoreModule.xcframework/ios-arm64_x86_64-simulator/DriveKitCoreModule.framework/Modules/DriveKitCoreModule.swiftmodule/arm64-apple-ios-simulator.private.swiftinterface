@@ -407,6 +407,20 @@ public protocol DKSDKDiagnosisDelegate : AnyObject {
     get
   }
 }
+@objc public enum DKRoadContext : Swift.Int, Swift.Codable {
+  case trafficJam
+  case heavyUrbanTraffic
+  case city
+  case suburban
+  case expressways
+  #if compiler(>=5.3) && $NonescapableTypes
+  public init?(rawValue: Swift.Int)
+  #endif
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
 @_hasMissingDesignatedInitializers public class DriveKitLog {
   public var isLoggingEnabled: Swift.Bool {
     get
@@ -424,6 +438,153 @@ public protocol DKSDKDiagnosisDelegate : AnyObject {
   public func getZippedLogFilesUrl() -> Foundation.URL?
   #endif
   @objc deinit
+}
+public func zip<A, B, C>(_ a: A, _ b: B, _ c: C) -> DriveKitCoreModule.Zip3Sequence<A, B, C> where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence
+public func zip<A, B, C, D>(_ a: A, _ b: B, _ c: C, _ d: D) -> DriveKitCoreModule.Zip4Sequence<A, B, C, D> where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence
+public func zip<A, B, C, D, E>(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E) -> DriveKitCoreModule.Zip5Sequence<A, B, C, D, E> where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence
+public func zip<A, B, C, D, E, F>(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E, _ f: F) -> DriveKitCoreModule.Zip6Sequence<A, B, C, D, E, F> where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence
+public func zip<A, B, C, D, E, F, G>(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E, _ f: F, _ g: G) -> DriveKitCoreModule.Zip7Sequence<A, B, C, D, E, F, G> where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence, G : Swift.Sequence
+public func zip<A, B, C, D, E, F, G, H>(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E, _ f: F, _ g: G, _ h: H) -> DriveKitCoreModule.Zip8Sequence<A, B, C, D, E, F, G, H> where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence, G : Swift.Sequence, H : Swift.Sequence
+public func zip<A, B, C, D, E, F, G, H, I>(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E, _ f: F, _ g: G, _ h: H, _ i: I) -> DriveKitCoreModule.Zip9Sequence<A, B, C, D, E, F, G, H, I> where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence, G : Swift.Sequence, H : Swift.Sequence, I : Swift.Sequence
+public func zip<A, B, C, D, E, F, G, H, I, J>(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E, _ f: F, _ g: G, _ h: H, _ i: I, _ j: J) -> DriveKitCoreModule.Zip10Sequence<A, B, C, D, E, F, G, H, I, J> where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence, G : Swift.Sequence, H : Swift.Sequence, I : Swift.Sequence, J : Swift.Sequence
+public func zip<A, B, C, D, E, F, G, H, I, J, K>(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E, _ f: F, _ g: G, _ h: H, _ i: I, _ j: J, _ k: K) -> DriveKitCoreModule.Zip11Sequence<A, B, C, D, E, F, G, H, I, J, K> where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence, G : Swift.Sequence, H : Swift.Sequence, I : Swift.Sequence, J : Swift.Sequence, K : Swift.Sequence
+public func zip<A, B, C, D, E, F, G, H, I, J, K, L>(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E, _ f: F, _ g: G, _ h: H, _ i: I, _ j: J, _ k: K, _ l: L) -> DriveKitCoreModule.Zip12Sequence<A, B, C, D, E, F, G, H, I, J, K, L> where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence, G : Swift.Sequence, H : Swift.Sequence, I : Swift.Sequence, J : Swift.Sequence, K : Swift.Sequence, L : Swift.Sequence
+public func zip<A, B, C, D, E, F, G, H, I, J, K, L, M>(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E, _ f: F, _ g: G, _ h: H, _ i: I, _ j: J, _ k: K, _ l: L, _ m: M) -> DriveKitCoreModule.Zip13Sequence<A, B, C, D, E, F, G, H, I, J, K, L, M> where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence, G : Swift.Sequence, H : Swift.Sequence, I : Swift.Sequence, J : Swift.Sequence, K : Swift.Sequence, L : Swift.Sequence, M : Swift.Sequence
+public struct Zip3Sequence<A, B, C> : Swift.Sequence where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence {
+  public init(_ a: A, _ b: B, _ c: C)
+  public struct Iterator : Swift.IteratorProtocol {
+    public typealias Element = (A.Element, B.Element, C.Element)
+    #if compiler(>=5.3) && $NonescapableTypes
+    public mutating func next() -> DriveKitCoreModule.Zip3Sequence<A, B, C>.Iterator.Element?
+    #endif
+  }
+  public func makeIterator() -> DriveKitCoreModule.Zip3Sequence<A, B, C>.Iterator
+  public typealias Element = DriveKitCoreModule.Zip3Sequence<A, B, C>.Iterator.Element
+}
+public func zip<A, B, C>(with f: @escaping (A.Element, B.Element) -> C) -> (A, B) -> [C] where A : Swift.Sequence, B : Swift.Sequence
+public func zip<A, B, C, D>(with f: @escaping (A.Element, B.Element, C.Element) -> D) -> (A, B, C) -> [D] where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence
+public func zip<A, B, C, D, E>(with f: @escaping (A.Element, B.Element, C.Element, D.Element) -> E) -> (A, B, C, D) -> [E] where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence
+public func zip<A, B, C, D, E, F>(with f: @escaping (A.Element, B.Element, C.Element, D.Element, E.Element) -> F) -> (A, B, C, D, E) -> [F] where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence
+public func zip<A, B, C, D, E, F, G>(with f: @escaping (A.Element, B.Element, C.Element, D.Element, E.Element, F.Element) -> G) -> (A, B, C, D, E, F) -> [G] where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence
+public func zip<A, B, C, D, E, F, G, H>(with f: @escaping (A.Element, B.Element, C.Element, D.Element, E.Element, F.Element, G.Element) -> H) -> (A, B, C, D, E, F, G) -> [H] where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence, G : Swift.Sequence
+public func zip<A, B, C, D, E, F, G, H, I>(with f: @escaping (A.Element, B.Element, C.Element, D.Element, E.Element, F.Element, G.Element, H.Element) -> I) -> (A, B, C, D, E, F, G, H) -> [I] where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence, G : Swift.Sequence, H : Swift.Sequence
+public func zip<A, B, C, D, E, F, G, H, I, J>(with f: @escaping (A.Element, B.Element, C.Element, D.Element, E.Element, F.Element, G.Element, H.Element, I.Element) -> J) -> (A, B, C, D, E, F, G, H, I) -> [J] where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence, G : Swift.Sequence, H : Swift.Sequence, I : Swift.Sequence
+public func zip<A, B, C, D, E, F, G, H, I, J, K>(with f: @escaping (A.Element, B.Element, C.Element, D.Element, E.Element, F.Element, G.Element, H.Element, I.Element, J.Element) -> K) -> (A, B, C, D, E, F, G, H, I, J) -> [K] where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence, G : Swift.Sequence, H : Swift.Sequence, I : Swift.Sequence, J : Swift.Sequence
+public func zip<A, B, C, D, E, F, G, H, I, J, K, L>(with f: @escaping (A.Element, B.Element, C.Element, D.Element, E.Element, F.Element, G.Element, H.Element, I.Element, J.Element, K.Element) -> L) -> (A, B, C, D, E, F, G, H, I, J, K) -> [L] where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence, G : Swift.Sequence, H : Swift.Sequence, I : Swift.Sequence, J : Swift.Sequence, K : Swift.Sequence
+public func zip<A, B, C, D, E, F, G, H, I, J, K, L, M>(with f: @escaping (A.Element, B.Element, C.Element, D.Element, E.Element, F.Element, G.Element, H.Element, I.Element, J.Element, K.Element, L.Element) -> M) -> (A, B, C, D, E, F, G, H, I, J, K, L) -> [M] where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence, G : Swift.Sequence, H : Swift.Sequence, I : Swift.Sequence, J : Swift.Sequence, K : Swift.Sequence, L : Swift.Sequence
+public func zip<A, B, C, D, E, F, G, H, I, J, K, L, M, N>(with f: @escaping (A.Element, B.Element, C.Element, D.Element, E.Element, F.Element, G.Element, H.Element, I.Element, J.Element, K.Element, L.Element, M.Element) -> N) -> (A, B, C, D, E, F, G, H, I, J, K, L, M) -> [N] where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence, G : Swift.Sequence, H : Swift.Sequence, I : Swift.Sequence, J : Swift.Sequence, K : Swift.Sequence, L : Swift.Sequence, M : Swift.Sequence
+public struct Zip4Sequence<A, B, C, D> : Swift.Sequence where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence {
+  public init(_ a: A, _ b: B, _ c: C, _ d: D)
+  public struct Iterator : Swift.IteratorProtocol {
+    public typealias Element = (A.Element, B.Element, C.Element, D.Element)
+    #if compiler(>=5.3) && $NonescapableTypes
+    public mutating func next() -> DriveKitCoreModule.Zip4Sequence<A, B, C, D>.Iterator.Element?
+    #endif
+  }
+  public func makeIterator() -> DriveKitCoreModule.Zip4Sequence<A, B, C, D>.Iterator
+  public typealias Element = DriveKitCoreModule.Zip4Sequence<A, B, C, D>.Iterator.Element
+}
+public struct Zip5Sequence<A, B, C, D, E> : Swift.Sequence where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence {
+  public init(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E)
+  public struct Iterator : Swift.IteratorProtocol {
+    public typealias Element = (A.Element, B.Element, C.Element, D.Element, E.Element)
+    #if compiler(>=5.3) && $NonescapableTypes
+    public mutating func next() -> DriveKitCoreModule.Zip5Sequence<A, B, C, D, E>.Iterator.Element?
+    #endif
+  }
+  public func makeIterator() -> DriveKitCoreModule.Zip5Sequence<A, B, C, D, E>.Iterator
+  public typealias Element = DriveKitCoreModule.Zip5Sequence<A, B, C, D, E>.Iterator.Element
+}
+public struct Zip6Sequence<A, B, C, D, E, F> : Swift.Sequence where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence {
+  public init(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E, _ f: F)
+  public struct Iterator : Swift.IteratorProtocol {
+    public typealias Element = (A.Element, B.Element, C.Element, D.Element, E.Element, F.Element)
+    #if compiler(>=5.3) && $NonescapableTypes
+    public mutating func next() -> DriveKitCoreModule.Zip6Sequence<A, B, C, D, E, F>.Iterator.Element?
+    #endif
+  }
+  public func makeIterator() -> DriveKitCoreModule.Zip6Sequence<A, B, C, D, E, F>.Iterator
+  public typealias Element = DriveKitCoreModule.Zip6Sequence<A, B, C, D, E, F>.Iterator.Element
+}
+public struct Zip7Sequence<A, B, C, D, E, F, G> : Swift.Sequence where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence, G : Swift.Sequence {
+  public init(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E, _ f: F, _ g: G)
+  public struct Iterator : Swift.IteratorProtocol {
+    public typealias Element = (A.Element, B.Element, C.Element, D.Element, E.Element, F.Element, G.Element)
+    #if compiler(>=5.3) && $NonescapableTypes
+    public mutating func next() -> DriveKitCoreModule.Zip7Sequence<A, B, C, D, E, F, G>.Iterator.Element?
+    #endif
+  }
+  public func makeIterator() -> DriveKitCoreModule.Zip7Sequence<A, B, C, D, E, F, G>.Iterator
+  public typealias Element = DriveKitCoreModule.Zip7Sequence<A, B, C, D, E, F, G>.Iterator.Element
+}
+public struct Zip8Sequence<A, B, C, D, E, F, G, H> : Swift.Sequence where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence, G : Swift.Sequence, H : Swift.Sequence {
+  public init(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E, _ f: F, _ g: G, _ h: H)
+  public struct Iterator : Swift.IteratorProtocol {
+    public typealias Element = (A.Element, B.Element, C.Element, D.Element, E.Element, F.Element, G.Element, H.Element)
+    #if compiler(>=5.3) && $NonescapableTypes
+    public mutating func next() -> DriveKitCoreModule.Zip8Sequence<A, B, C, D, E, F, G, H>.Iterator.Element?
+    #endif
+  }
+  public func makeIterator() -> DriveKitCoreModule.Zip8Sequence<A, B, C, D, E, F, G, H>.Iterator
+  public typealias Element = DriveKitCoreModule.Zip8Sequence<A, B, C, D, E, F, G, H>.Iterator.Element
+}
+public struct Zip9Sequence<A, B, C, D, E, F, G, H, I> : Swift.Sequence where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence, G : Swift.Sequence, H : Swift.Sequence, I : Swift.Sequence {
+  public init(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E, _ f: F, _ g: G, _ h: H, _ i: I)
+  public struct Iterator : Swift.IteratorProtocol {
+    public typealias Element = (A.Element, B.Element, C.Element, D.Element, E.Element, F.Element, G.Element, H.Element, I.Element)
+    #if compiler(>=5.3) && $NonescapableTypes
+    public mutating func next() -> DriveKitCoreModule.Zip9Sequence<A, B, C, D, E, F, G, H, I>.Iterator.Element?
+    #endif
+  }
+  public func makeIterator() -> DriveKitCoreModule.Zip9Sequence<A, B, C, D, E, F, G, H, I>.Iterator
+  public typealias Element = DriveKitCoreModule.Zip9Sequence<A, B, C, D, E, F, G, H, I>.Iterator.Element
+}
+public struct Zip10Sequence<A, B, C, D, E, F, G, H, I, J> : Swift.Sequence where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence, G : Swift.Sequence, H : Swift.Sequence, I : Swift.Sequence, J : Swift.Sequence {
+  public init(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E, _ f: F, _ g: G, _ h: H, _ i: I, _ j: J)
+  public struct Iterator : Swift.IteratorProtocol {
+    public typealias Element = (A.Element, B.Element, C.Element, D.Element, E.Element, F.Element, G.Element, H.Element, I.Element, J.Element)
+    #if compiler(>=5.3) && $NonescapableTypes
+    public mutating func next() -> DriveKitCoreModule.Zip10Sequence<A, B, C, D, E, F, G, H, I, J>.Iterator.Element?
+    #endif
+  }
+  public func makeIterator() -> DriveKitCoreModule.Zip10Sequence<A, B, C, D, E, F, G, H, I, J>.Iterator
+  public typealias Element = DriveKitCoreModule.Zip10Sequence<A, B, C, D, E, F, G, H, I, J>.Iterator.Element
+}
+public struct Zip11Sequence<S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11> : Swift.Sequence where S1 : Swift.Sequence, S2 : Swift.Sequence, S3 : Swift.Sequence, S4 : Swift.Sequence, S5 : Swift.Sequence, S6 : Swift.Sequence, S7 : Swift.Sequence, S8 : Swift.Sequence, S9 : Swift.Sequence, S10 : Swift.Sequence, S11 : Swift.Sequence {
+  public typealias Element = (S1.Element, S2.Element, S3.Element, S4.Element, S5.Element, S6.Element, S7.Element, S8.Element, S9.Element, S10.Element, S11.Element)
+  public init(_ s1: S1, _ s2: S2, _ s3: S3, _ s4: S4, _ s5: S5, _ s6: S6, _ s7: S7, _ s8: S8, _ s9: S9, _ s10: S10, _ s11: S11)
+  public func makeIterator() -> DriveKitCoreModule.Zip11Sequence<S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11>.Iterator
+  public struct Iterator : Swift.IteratorProtocol {
+    public init(_ i1: S1.Iterator, _ i2: S2.Iterator, _ i3: S3.Iterator, _ i4: S4.Iterator, _ i5: S5.Iterator, _ i6: S6.Iterator, _ i7: S7.Iterator, _ i8: S8.Iterator, _ i9: S9.Iterator, _ i10: S10.Iterator, _ i11: S11.Iterator)
+    #if compiler(>=5.3) && $NonescapableTypes
+    public mutating func next() -> DriveKitCoreModule.Zip11Sequence<S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11>.Element?
+    #endif
+    public typealias Element = DriveKitCoreModule.Zip11Sequence<S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11>.Element
+  }
+}
+public struct Zip12Sequence<S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12> : Swift.Sequence where S1 : Swift.Sequence, S2 : Swift.Sequence, S3 : Swift.Sequence, S4 : Swift.Sequence, S5 : Swift.Sequence, S6 : Swift.Sequence, S7 : Swift.Sequence, S8 : Swift.Sequence, S9 : Swift.Sequence, S10 : Swift.Sequence, S11 : Swift.Sequence, S12 : Swift.Sequence {
+  public typealias Element = (S1.Element, S2.Element, S3.Element, S4.Element, S5.Element, S6.Element, S7.Element, S8.Element, S9.Element, S10.Element, S11.Element, S12.Element)
+  public init(_ s1: S1, _ s2: S2, _ s3: S3, _ s4: S4, _ s5: S5, _ s6: S6, _ s7: S7, _ s8: S8, _ s9: S9, _ s10: S10, _ s11: S11, _ s12: S12)
+  public func makeIterator() -> DriveKitCoreModule.Zip12Sequence<S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12>.Iterator
+  public struct Iterator : Swift.IteratorProtocol {
+    public init(_ i1: S1.Iterator, _ i2: S2.Iterator, _ i3: S3.Iterator, _ i4: S4.Iterator, _ i5: S5.Iterator, _ i6: S6.Iterator, _ i7: S7.Iterator, _ i8: S8.Iterator, _ i9: S9.Iterator, _ i10: S10.Iterator, _ i11: S11.Iterator, _ i12: S12.Iterator)
+    #if compiler(>=5.3) && $NonescapableTypes
+    public mutating func next() -> DriveKitCoreModule.Zip12Sequence<S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12>.Element?
+    #endif
+    public typealias Element = DriveKitCoreModule.Zip12Sequence<S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12>.Element
+  }
+}
+public struct Zip13Sequence<S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13> : Swift.Sequence where S1 : Swift.Sequence, S2 : Swift.Sequence, S3 : Swift.Sequence, S4 : Swift.Sequence, S5 : Swift.Sequence, S6 : Swift.Sequence, S7 : Swift.Sequence, S8 : Swift.Sequence, S9 : Swift.Sequence, S10 : Swift.Sequence, S11 : Swift.Sequence, S12 : Swift.Sequence, S13 : Swift.Sequence {
+  public typealias Element = (S1.Element, S2.Element, S3.Element, S4.Element, S5.Element, S6.Element, S7.Element, S8.Element, S9.Element, S10.Element, S11.Element, S12.Element, S13.Element)
+  public init(_ s1: S1, _ s2: S2, _ s3: S3, _ s4: S4, _ s5: S5, _ s6: S6, _ s7: S7, _ s8: S8, _ s9: S9, _ s10: S10, _ s11: S11, _ s12: S12, _ s13: S13)
+  public func makeIterator() -> DriveKitCoreModule.Zip13Sequence<S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13>.Iterator
+  public struct Iterator : Swift.IteratorProtocol {
+    public init(_ i1: S1.Iterator, _ i2: S2.Iterator, _ i3: S3.Iterator, _ i4: S4.Iterator, _ i5: S5.Iterator, _ i6: S6.Iterator, _ i7: S7.Iterator, _ i8: S8.Iterator, _ i9: S9.Iterator, _ i10: S10.Iterator, _ i11: S11.Iterator, _ i12: S12.Iterator, _ i13: S13.Iterator)
+    #if compiler(>=5.3) && $NonescapableTypes
+    public mutating func next() -> DriveKitCoreModule.Zip13Sequence<S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13>.Element?
+    #endif
+    public typealias Element = DriveKitCoreModule.Zip13Sequence<S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13>.Element
+  }
 }
 extension Swift.String {
   public func sha256() -> Swift.String
@@ -1147,6 +1308,9 @@ extension DriveKitCoreModule.SynchronizationType : Swift.RawRepresentable {}
 extension DriveKitCoreModule.DKConnectivityType : Swift.Equatable {}
 extension DriveKitCoreModule.DKConnectivityType : Swift.Hashable {}
 extension DriveKitCoreModule.DKConnectivityType : Swift.RawRepresentable {}
+extension DriveKitCoreModule.DKRoadContext : Swift.Equatable {}
+extension DriveKitCoreModule.DKRoadContext : Swift.Hashable {}
+extension DriveKitCoreModule.DKRoadContext : Swift.RawRepresentable {}
 extension DriveKitCoreModule.DriveKitBackgroundFetchStatus : Swift.Equatable {}
 extension DriveKitCoreModule.DriveKitBackgroundFetchStatus : Swift.Hashable {}
 extension DriveKitCoreModule.DriveKitBackgroundFetchStatus : Swift.RawRepresentable {}

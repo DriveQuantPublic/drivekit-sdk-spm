@@ -453,6 +453,14 @@ typedef SWIFT_ENUM(NSInteger, DKRemoteEvent, open) {
   DKRemoteEventVehiclesSync = 1,
 };
 
+typedef SWIFT_ENUM(NSInteger, DKRoadContext, open) {
+  DKRoadContextTrafficJam = 0,
+  DKRoadContextHeavyUrbanTraffic = 1,
+  DKRoadContextCity = 2,
+  DKRoadContextSuburban = 3,
+  DKRoadContextExpressways = 4,
+};
+
 @class NSDate;
 SWIFT_PROTOCOL("_TtP18DriveKitCoreModule14DKTripLocation_")
 @protocol DKTripLocation

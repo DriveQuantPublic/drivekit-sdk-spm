@@ -1060,14 +1060,6 @@ SWIFT_CLASS("_TtC26DriveKitDBTripAccessModule12DKPollutants")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-typedef SWIFT_ENUM(NSInteger, DKRoadContext, open) {
-  DKRoadContextTrafficJam = 0,
-  DKRoadContextHeavyUrbanTraffic = 1,
-  DKRoadContextCity = 2,
-  DKRoadContextSuburban = 3,
-  DKRoadContextExpressways = 4,
-};
-
 SWIFT_CLASS("_TtC26DriveKitDBTripAccessModule7DKRoute")
 @interface DKRoute : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;

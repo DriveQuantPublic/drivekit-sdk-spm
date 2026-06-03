@@ -2184,8 +2184,8 @@
       },
       {
         "kind": "Import",
-        "name": "DriveKitDBTripAccessModule",
-        "printedName": "DriveKitDBTripAccessModule",
+        "name": "DriveKitCoreModule",
+        "printedName": "DriveKitCoreModule",
         "declKind": "Import",
         "moduleName": "DriveKitDriverDataModule"
       },
@@ -7194,6 +7194,13 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "DriveKitCoreModule",
+        "printedName": "DriveKitCoreModule",
+        "declKind": "Import",
+        "moduleName": "DriveKitDriverDataModule"
       },
       {
         "kind": "Import",
