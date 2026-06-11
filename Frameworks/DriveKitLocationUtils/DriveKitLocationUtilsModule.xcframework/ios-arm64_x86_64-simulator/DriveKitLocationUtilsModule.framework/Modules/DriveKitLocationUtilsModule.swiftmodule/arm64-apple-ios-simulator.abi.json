@@ -1190,14 +1190,7 @@
       "kind": "IntegerLiteral",
       "offset": 11729,
       "length": 2,
-      "value": "10"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/drivekit-location-utils\/DKLocationManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 11785,
-      "length": 2,
-      "value": "15"
+      "value": "30"
     }
   ]
 }

@@ -2815,8 +2815,8 @@
         "children": [
           {
             "kind": "Function",
-            "name": "containsBeacon",
-            "printedName": "containsBeacon(_:)",
+            "name": "containsMajorMinor",
+            "printedName": "containsMajorMinor(of:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -2832,8 +2832,8 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:Sa34DriveKitStolenVehicleLocatorModule0ab4CoreF010BeaconDataCRbzlE08containsH0ySbADF",
-            "mangledName": "$sSa34DriveKitStolenVehicleLocatorModule0ab4CoreF010BeaconDataCRbzlE08containsH0ySbADF",
+            "usr": "s:Sa34DriveKitStolenVehicleLocatorModule0ab4CoreF010BeaconDataCRbzlE18containsMajorMinor2ofSbAD_tF",
+            "mangledName": "$sSa34DriveKitStolenVehicleLocatorModule0ab4CoreF010BeaconDataCRbzlE18containsMajorMinor2ofSbAD_tF",
             "moduleName": "DriveKitStolenVehicleLocatorModule",
             "genericSig": "<τ_0_0 where τ_0_0 : DriveKitCoreModule.BeaconData>",
             "sugared_genericSig": "<Element where Element : DriveKitCoreModule.BeaconData>",
@@ -3632,7 +3632,7 @@
       "kind": "IntegerLiteral",
       "offset": 1643,
       "length": 6,
-      "value": "10800"
+      "value": "21600"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-stolen-vehicle-locator\/DriveKitStolenVehicleLocator.swift",

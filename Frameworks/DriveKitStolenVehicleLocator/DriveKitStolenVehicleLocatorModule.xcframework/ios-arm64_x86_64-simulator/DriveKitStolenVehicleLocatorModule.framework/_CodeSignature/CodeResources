@@ -10,15 +10,15 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		U0qCHH4BxmXK7TD4aGcmf85rkjg=
+		80d8udhm0eYqzji+TROOJkfU6+w=
 		</data>
 		<key>Modules/DriveKitStolenVehicleLocatorModule.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		rE84n8D3hqJsNGe9Ay+MTnYhUS8=
+		ucQYCJ4pq5wnXKh7yIh/BD9Dw6E=
 		</data>
 		<key>Modules/DriveKitStolenVehicleLocatorModule.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		ZuWbVd83TUC+Qzef4b1C2d2ZAZ4=
+		tI9hu/JMXoCi7xThebLitcgbelw=
 		</data>
 		<key>Modules/DriveKitStolenVehicleLocatorModule.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -26,19 +26,19 @@
 		</data>
 		<key>Modules/DriveKitStolenVehicleLocatorModule.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		ZuWbVd83TUC+Qzef4b1C2d2ZAZ4=
+		tI9hu/JMXoCi7xThebLitcgbelw=
 		</data>
 		<key>Modules/DriveKitStolenVehicleLocatorModule.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		ea+/exyNeW3qoK4bEtWjYdDSrh4=
+		khhpelN6eOrpcioha24vM5ur8Ms=
 		</data>
 		<key>Modules/DriveKitStolenVehicleLocatorModule.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		rE84n8D3hqJsNGe9Ay+MTnYhUS8=
+		ucQYCJ4pq5wnXKh7yIh/BD9Dw6E=
 		</data>
 		<key>Modules/DriveKitStolenVehicleLocatorModule.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		HRkhSudE/BEK0aSnrzrEgq6g+q4=
+		kfjKSPcjT7/z0vri59LjCqbolDc=
 		</data>
 		<key>Modules/DriveKitStolenVehicleLocatorModule.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -46,11 +46,11 @@
 		</data>
 		<key>Modules/DriveKitStolenVehicleLocatorModule.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		HRkhSudE/BEK0aSnrzrEgq6g+q4=
+		kfjKSPcjT7/z0vri59LjCqbolDc=
 		</data>
 		<key>Modules/DriveKitStolenVehicleLocatorModule.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		3tWCLT9wOOnyg5ubRWxCU0g0Nwk=
+		DQ661mrY3DN3T2PUm6PK7UR5bys=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -74,14 +74,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			dtcXp951N23pgPpmU0AoWU404Tkn0w+YrYLTMTWw5Ww=
+			EHOA7QWQCWrsA0T8JzpMw+8XkXu1qV5cuu61cHiVKaA=
 			</data>
 		</dict>
 		<key>Modules/DriveKitStolenVehicleLocatorModule.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BgQ+TVojlX4qt4D3OmUICc51bJ3o5vVq2tTofdE/VgM=
+			7vlETPtUl9pob7Zd8aWsXe9mst98BWrziyGNHIep2eI=
 			</data>
 		</dict>
 		<key>Modules/DriveKitStolenVehicleLocatorModule.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -95,28 +95,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			BgQ+TVojlX4qt4D3OmUICc51bJ3o5vVq2tTofdE/VgM=
+			7vlETPtUl9pob7Zd8aWsXe9mst98BWrziyGNHIep2eI=
 			</data>
 		</dict>
 		<key>Modules/DriveKitStolenVehicleLocatorModule.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zpv5mC+AoyxogXLcEUJiFVXvMFj7JPoS4v5+KIr1ieo=
+			WgD2N11hnCei5KEMTmezVBvlNp5YlyZ+ifJNU97EmDM=
 			</data>
 		</dict>
 		<key>Modules/DriveKitStolenVehicleLocatorModule.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			dtcXp951N23pgPpmU0AoWU404Tkn0w+YrYLTMTWw5Ww=
+			EHOA7QWQCWrsA0T8JzpMw+8XkXu1qV5cuu61cHiVKaA=
 			</data>
 		</dict>
 		<key>Modules/DriveKitStolenVehicleLocatorModule.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OhN90iyPOIwnj+FJT97lYuWHhddI6N2y4ipa4/6uR3g=
+			AuLgzz11BBheQ+JwfvYb88S2RbEFbeM3O/2S00PCGsU=
 			</data>
 		</dict>
 		<key>Modules/DriveKitStolenVehicleLocatorModule.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -130,14 +130,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			OhN90iyPOIwnj+FJT97lYuWHhddI6N2y4ipa4/6uR3g=
+			AuLgzz11BBheQ+JwfvYb88S2RbEFbeM3O/2S00PCGsU=
 			</data>
 		</dict>
 		<key>Modules/DriveKitStolenVehicleLocatorModule.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			CzHJlvT7aQ1j/en+azWjPVhVDEUwUPtCw+D5D9eqNjQ=
+			qHDQJ6F68FBccrFMpK34ZcC3buCl7TjWJEH3AeNSIuA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

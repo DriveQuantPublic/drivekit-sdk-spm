@@ -64,7 +64,7 @@ public enum DKEnableScanErrorType {
   }
 }
 extension Swift.Array where Element : DriveKitCoreModule.BeaconData {
-  public func containsBeacon(_ beacon: DriveKitCoreModule.BeaconData) -> Swift.Bool
+  public func containsMajorMinor(of beacon: DriveKitCoreModule.BeaconData) -> Swift.Bool
 }
 public enum DKGetUuidListResult {
   case success([Swift.String]), error(DriveKitStolenVehicleLocatorModule.DKGetUuidListErrorType)
