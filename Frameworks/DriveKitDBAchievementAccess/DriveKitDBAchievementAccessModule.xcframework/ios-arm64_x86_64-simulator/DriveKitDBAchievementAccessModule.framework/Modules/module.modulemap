@@ -1,4 +1,3 @@
 framework module DriveKitDBAchievementAccessModule {
   header "DriveKitDBAchievementAccessModule-Swift.h"
-  requires objc
 }

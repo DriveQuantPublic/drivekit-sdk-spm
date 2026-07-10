@@ -7,5 +7,4 @@ framework module DriveKitDBGroupAccessModule {
 
 module DriveKitDBGroupAccessModule.Swift {
   header "DriveKitDBGroupAccessModule-Swift.h"
-  requires objc
 }

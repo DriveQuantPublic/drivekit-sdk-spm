@@ -7,5 +7,4 @@ framework module DriveKitCoachingModule {
 
 module DriveKitCoachingModule.Swift {
   header "DriveKitCoachingModule-Swift.h"
-  requires objc
 }

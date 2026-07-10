@@ -7,5 +7,4 @@ framework module DriveKitDBCoachingAccessModule {
 
 module DriveKitDBCoachingAccessModule.Swift {
   header "DriveKitDBCoachingAccessModule-Swift.h"
-  requires objc
 }

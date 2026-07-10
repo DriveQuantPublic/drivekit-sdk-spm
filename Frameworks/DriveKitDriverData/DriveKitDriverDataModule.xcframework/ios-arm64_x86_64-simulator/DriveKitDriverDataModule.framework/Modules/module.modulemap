@@ -1,4 +1,3 @@
 framework module DriveKitDriverDataModule {
   header "DriveKitDriverDataModule-Swift.h"
-  requires objc
 }

@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
-// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name DriveKitDBVehicleAccessModule
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name DriveKitDBVehicleAccessModule
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
 import CoreData
 import DriveKitBeaconUtilsModule
 import DriveKitCoreModule
@@ -166,12 +166,8 @@ public protocol DKVehicleUpdatedDelegate {
   public func reset()
   public func vehiclesQuery() -> DriveKitCoreModule.WhereReference<DriveKitDBVehicleAccessModule.DBVehicle, DriveKitDBVehicleAccessModule.DKVehicle>
   public func delete(vehicleId: Swift.String, notify: Swift.Bool = false)
-  #if compiler(>=5.3) && $NonescapableTypes
   public func findManaged(vehicleId: Swift.String) -> DriveKitDBVehicleAccessModule.DBVehicle?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func find(vehicleId: Swift.String) -> DriveKitDBVehicleAccessModule.DKVehicle?
-  #endif
   public func findVehiclesByDetectionMode(detectionMode: Swift.String) -> DriveKitCoreModule.ExecutableQuery<DriveKitDBVehicleAccessModule.DBVehicle, DriveKitDBVehicleAccessModule.DKVehicle>
   public func findVehiclesOrderByNameAsc() -> DriveKitCoreModule.ExecutableQuery<DriveKitDBVehicleAccessModule.DBVehicle, DriveKitDBVehicleAccessModule.DKVehicle>
   public func findVehicles() -> DriveKitCoreModule.ExecutableQuery<DriveKitDBVehicleAccessModule.DBVehicle, DriveKitDBVehicleAccessModule.DKVehicle>
@@ -196,35 +192,27 @@ extension DriveKitDBVehicleAccessModule.DBVehicle {
   public var value: Swift.String {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
   }
 }
 extension DriveKitDBVehicleAccessModule.DKDetectionMode {
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(value: Swift.String)
-  #endif
 }
 public typealias DBBeaconCoreDataClassSet = Foundation.NSSet
 @_inheritsConvenienceInitializers @objc(DBBeacon) nonisolated public class DBBeacon : CoreData.NSManagedObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 public typealias DBBeaconCoreDataPropertiesSet = Foundation.NSSet
 extension DriveKitDBVehicleAccessModule.DBBeacon {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<DriveKitDBVehicleAccessModule.DBBeacon>
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var code: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
   @objc @NSManaged nonisolated dynamic public var major: Swift.Int32 {
     @objc get
     @objc set
@@ -233,91 +221,69 @@ extension DriveKitDBVehicleAccessModule.DBBeacon {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var proximityUuid: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var vehicle: DriveKitDBVehicleAccessModule.DBVehicle? {
     @objc get
     @objc set
   }
-  #endif
 }
 extension DriveKitDBVehicleAccessModule.DBBeacon : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
 public typealias DBBluetoothCoreDataClassSet = Foundation.NSSet
 @_inheritsConvenienceInitializers @objc(DBBluetooth) nonisolated public class DBBluetooth : CoreData.NSManagedObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 public typealias DBBluetoothCoreDataPropertiesSet = Foundation.NSSet
 extension DriveKitDBVehicleAccessModule.DBBluetooth {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<DriveKitDBVehicleAccessModule.DBBluetooth>
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var macAddress: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var name: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var vehicle: DriveKitDBVehicleAccessModule.DBVehicle? {
     @objc get
     @objc set
   }
-  #endif
 }
 extension DriveKitDBVehicleAccessModule.DBBluetooth : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
 public typealias DBExtraDataCoreDataClassSet = Foundation.NSSet
 @_inheritsConvenienceInitializers @objc(DBExtraData) nonisolated public class DBExtraData : CoreData.NSManagedObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 public typealias DBExtraDataCoreDataPropertiesSet = Foundation.NSSet
 extension DriveKitDBVehicleAccessModule.DBExtraData {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<DriveKitDBVehicleAccessModule.DBExtraData>
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var key: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var value: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var vehicle: DriveKitDBVehicleAccessModule.DBVehicle? {
     @objc get
     @objc set
   }
-  #endif
 }
 extension DriveKitDBVehicleAccessModule.DBExtraData : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
 public typealias DBOdometerCoreDataClassSet = Foundation.NSSet
 @_inheritsConvenienceInitializers @objc(DBOdometer) nonisolated public class DBOdometer : CoreData.NSManagedObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 public typealias DBOdometerCoreDataPropertiesSet = Foundation.NSSet
@@ -347,31 +313,25 @@ extension DriveKitDBVehicleAccessModule.DBOdometer {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var updateDate: Foundation.Date? {
     @objc get
     @objc set
   }
-  #endif
   @objc @NSManaged nonisolated dynamic public var yearAnalyzedDistance: Swift.Double {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var vehicle: DriveKitDBVehicleAccessModule.DBVehicle? {
     @objc get
     @objc set
   }
-  #endif
 }
 extension DriveKitDBVehicleAccessModule.DBOdometer : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
 public typealias DBOdometerHistoryCoreDataClassSet = Foundation.NSSet
 @_inheritsConvenienceInitializers @objc(DBOdometerHistory) nonisolated public class DBOdometerHistory : CoreData.NSManagedObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 public typealias DBOdometerHistoryCoreDataPropertiesSet = Foundation.NSSet
@@ -397,31 +357,25 @@ extension DriveKitDBVehicleAccessModule.DBOdometerHistory {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var updateDate: Foundation.Date? {
     @objc get
     @objc set
   }
-  #endif
   @objc @NSManaged nonisolated dynamic public var yearAnalyzedDistance: Swift.Double {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var vehicle: DriveKitDBVehicleAccessModule.DBVehicle? {
     @objc get
     @objc set
   }
-  #endif
 }
 extension DriveKitDBVehicleAccessModule.DBOdometerHistory : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
 public typealias DBVehicleCoreDataClassSet = Foundation.NSSet
 @_inheritsConvenienceInitializers @objc(DBVehicle) nonisolated public class DBVehicle : CoreData.NSManagedObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 public typealias DBVehicleCoreDataPropertiesSet = Foundation.NSSet
@@ -431,28 +385,22 @@ extension DriveKitDBVehicleAccessModule.DBVehicle {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var brand: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
   @objc @NSManaged nonisolated dynamic public var consumption: Swift.Double {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var detectionMode: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var dqIndex: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
   @objc @NSManaged nonisolated dynamic public var driveWheels: Swift.Int32 {
     @objc get
     @objc set
@@ -469,12 +417,10 @@ extension DriveKitDBVehicleAccessModule.DBVehicle {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var frontTireSize: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
   @objc @NSManaged nonisolated dynamic public var gearboxIndex: Swift.Int32 {
     @objc get
     @objc set
@@ -495,18 +441,14 @@ extension DriveKitDBVehicleAccessModule.DBVehicle {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var model: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var name: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
   @objc @NSManaged nonisolated dynamic public var power: Swift.Double {
     @objc get
     @objc set
@@ -515,68 +457,50 @@ extension DriveKitDBVehicleAccessModule.DBVehicle {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var rearTireSize: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
   @objc @NSManaged nonisolated dynamic public var typeIndex: Swift.Int32 {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var vehicleId: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var version: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
   @objc @NSManaged nonisolated dynamic public var width: Swift.Double {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var year: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var beacon: DriveKitDBVehicleAccessModule.DBBeacon? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var bluetooth: DriveKitDBVehicleAccessModule.DBBluetooth? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var extraData: Foundation.NSSet? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var odometer: DriveKitDBVehicleAccessModule.DBOdometer? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var odometerHistories: Foundation.NSSet? {
     @objc get
     @objc set
   }
-  #endif
 }
 extension DriveKitDBVehicleAccessModule.DBVehicle {
   @objc(addExtraDataObject:) @NSManaged nonisolated dynamic public func addToExtraData(_ value: DriveKitDBVehicleAccessModule.DBExtraData)

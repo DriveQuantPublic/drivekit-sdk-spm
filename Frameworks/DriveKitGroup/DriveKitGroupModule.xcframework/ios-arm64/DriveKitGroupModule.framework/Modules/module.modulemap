@@ -1,4 +1,3 @@
 framework module DriveKitGroupModule {
   header "DriveKitGroupModule-Swift.h"
-  requires objc
 }

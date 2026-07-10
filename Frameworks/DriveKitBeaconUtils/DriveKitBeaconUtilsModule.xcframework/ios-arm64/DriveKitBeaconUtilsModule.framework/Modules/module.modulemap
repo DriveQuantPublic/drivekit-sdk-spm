@@ -7,5 +7,4 @@ framework module DriveKitBeaconUtilsModule {
 
 module DriveKitBeaconUtilsModule.Swift {
   header "DriveKitBeaconUtilsModule-Swift.h"
-  requires objc
 }

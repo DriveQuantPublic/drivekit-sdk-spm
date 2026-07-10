@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
-// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name DriveKitDBGroupAccessModule
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
+// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name DriveKitDBGroupAccessModule
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
 import CoreData
 import DriveKitCoreModule
 @_exported import DriveKitDBGroupAccessModule
@@ -36,16 +36,12 @@ extension DriveKitDBGroupAccessModule.DriveKitDBGroupAccess {
   @objc final public let groupDescription: Swift.String?
   @objc final public let creationDate: Foundation.Date
   @objc final public let joined: Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(id: Swift.String, label: Swift.String, description: Swift.String? = nil, creationDate: Foundation.Date, joined: Swift.Bool)
-  #endif
   @objc deinit
 }
 @objc public enum DKGroupType : Swift.Int {
   case all, joined, notJoined
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -56,42 +52,32 @@ extension DriveKitDBGroupAccessModule.DBGroup : DriveKitCoreModule.DKUnmanagedOb
 }
 public typealias DBGroupCoreDataClassSet = Foundation.NSSet
 @_inheritsConvenienceInitializers @objc(DBGroup) nonisolated public class DBGroup : CoreData.NSManagedObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 public typealias DBGroupCoreDataPropertiesSet = Foundation.NSSet
 extension DriveKitDBGroupAccessModule.DBGroup {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<DriveKitDBGroupAccessModule.DBGroup>
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var creationDate: Foundation.Date? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var groupDescription: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var id: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
   @objc @NSManaged nonisolated dynamic public var joined: Swift.Bool {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var label: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
 }
 extension DriveKitDBGroupAccessModule.DBGroup : Swift.Identifiable {
   public typealias ID = Swift.String?

@@ -7,5 +7,4 @@ framework module DriveKitChallengeModule {
 
 module DriveKitChallengeModule.Swift {
   header "DriveKitChallengeModule-Swift.h"
-  requires objc
 }

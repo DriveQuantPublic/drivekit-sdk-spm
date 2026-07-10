@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
-// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name DriveKitDBAchievementAccessModule
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
+// swift-module-flags: -target arm64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name DriveKitDBAchievementAccessModule
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
 import CoreData
 import DriveKitCoreModule
 import Foundation
@@ -26,9 +26,7 @@ import _SwiftConcurrencyShims
 }
 @objc public enum DKStreakTheme : Swift.Int {
   case phoneDistraction, safety, adherence, brake, acceleration, speedLimits, call
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -63,9 +61,7 @@ public class StreakResult {
   @objc final public let category: DriveKitDBAchievementAccessModule.DKBadgeCategory
   public init(theme: Swift.String, badgeCharacteristics: [DriveKitDBAchievementAccessModule.DKBadgeCharacteristics], category: DriveKitDBAchievementAccessModule.DKBadgeCategory)
   @objc public func encode(with aCoder: Foundation.NSCoder)
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc required public init?(coder aDecoder: Foundation.NSCoder)
-  #endif
   @objc deinit
 }
 @objc public class DKBadgeCharacteristics : ObjectiveC.NSObject, Foundation.NSCoding {
@@ -80,9 +76,7 @@ public class StreakResult {
   @objc final public let threshold: Swift.Int
   public init(level: DriveKitDBAchievementAccessModule.DKLevel, name: Swift.String, icon: Swift.String, defaultIcon: Swift.String, descriptionValue: Swift.String, progress: Swift.String, progressValue: Swift.Double, congrats: Swift.String, threshold: Swift.Int)
   @objc public func encode(with aCoder: Foundation.NSCoder)
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc required public init?(coder aDecoder: Foundation.NSCoder)
-  #endif
   @objc deinit
 }
 @objc public enum DKBadgeCategory : Swift.Int {
@@ -90,9 +84,7 @@ public class StreakResult {
   public var categoryString: Swift.String {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -100,9 +92,7 @@ public class StreakResult {
 }
 @objc public enum DKLevel : Swift.Int {
   case bronze, silver, gold
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -143,11 +133,9 @@ extension DriveKitDBAchievementAccessModule.DBRanking {
   @objc final public let rankingPeriod: DriveKitDBAchievementAccessModule.DKRankingPeriod
   @objc final public let userPosition: Swift.Int
   final public let userPreviousPosition: Swift.Int?
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc(userPreviousPosition) public var objcUserPreviousPosition: Foundation.NSNumber? {
     @objc get
   }
-  #endif
   @objc final public let nbDriverRanked: Swift.Int
   @objc final public let driversRanked: [DriveKitDBAchievementAccessModule.DKDriverRanked]
   @objc final public let groupName: Swift.String?
@@ -164,9 +152,7 @@ extension DriveKitDBAchievementAccessModule.DBRanking {
 @objc public enum DKRankingType : Swift.Int, Swift.CaseIterable {
   case safety, ecoDriving, distraction, speeding
   public func stringValue() -> Swift.String
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias AllCases = [DriveKitDBAchievementAccessModule.DKRankingType]
   public typealias RawValue = Swift.Int
   nonisolated public static var allCases: [DriveKitDBAchievementAccessModule.DKRankingType] {
@@ -180,9 +166,7 @@ extension DriveKitDBAchievementAccessModule.DBRanking {
   public static var allCases: [DriveKitDBAchievementAccessModule.DKRankingPeriod]
   case weekly, monthly, allTime
   public func stringValue() -> Swift.String
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias AllCases = [DriveKitDBAchievementAccessModule.DKRankingPeriod]
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
@@ -197,32 +181,24 @@ extension DriveKitDBAchievementAccessModule.DBDriverRanked : DriveKitCoreModule.
 }
 public typealias DBBadgeCoreDataClassSet = Foundation.NSSet
 @_inheritsConvenienceInitializers @objc(DBBadge) nonisolated public class DBBadge : CoreData.NSManagedObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 public typealias DBBadgeCoreDataPropertiesSet = Foundation.NSSet
 extension DriveKitDBAchievementAccessModule.DBBadge {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<DriveKitDBAchievementAccessModule.DBBadge>
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var category: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var theme: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var badgeCharacteristics: Foundation.NSSet? {
     @objc get
     @objc set
   }
-  #endif
 }
 extension DriveKitDBAchievementAccessModule.DBBadge {
   @objc(addBadgeCharacteristicsObject:) @NSManaged nonisolated dynamic public func addToBadgeCharacteristics(_ value: DriveKitDBAchievementAccessModule.DBBadgeCharacteristics)
@@ -235,54 +211,40 @@ extension DriveKitDBAchievementAccessModule.DBBadge : Swift.Identifiable {
 }
 public typealias DBBadgeCharacteristicsCoreDataClassSet = Foundation.NSSet
 @_inheritsConvenienceInitializers @objc(DBBadgeCharacteristics) nonisolated public class DBBadgeCharacteristics : CoreData.NSManagedObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 public typealias DBBadgeCharacteristicsCoreDataPropertiesSet = Foundation.NSSet
 extension DriveKitDBAchievementAccessModule.DBBadgeCharacteristics {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<DriveKitDBAchievementAccessModule.DBBadgeCharacteristics>
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var congrats: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var defaultIcon: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var descriptionValue: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var icon: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
   @objc @NSManaged nonisolated dynamic public var level: Swift.Int32 {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var name: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var progress: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
   @objc @NSManaged nonisolated dynamic public var progressValue: Swift.Double {
     @objc get
     @objc set
@@ -291,21 +253,17 @@ extension DriveKitDBAchievementAccessModule.DBBadgeCharacteristics {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var badge: DriveKitDBAchievementAccessModule.DBBadge? {
     @objc get
     @objc set
   }
-  #endif
 }
 extension DriveKitDBAchievementAccessModule.DBBadgeCharacteristics : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
 public typealias DBDriverRankedCoreDataClassSet = Foundation.NSSet
 @_inheritsConvenienceInitializers @objc(DBDriverRanked) nonisolated public class DBDriverRanked : CoreData.NSManagedObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 public typealias DBDriverRankedCoreDataPropertiesSet = Foundation.NSSet
@@ -315,12 +273,10 @@ extension DriveKitDBAchievementAccessModule.DBDriverRanked {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var nickname: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
   @objc @NSManaged nonisolated dynamic public var rank: Swift.Int32 {
     @objc get
     @objc set
@@ -329,70 +285,54 @@ extension DriveKitDBAchievementAccessModule.DBDriverRanked {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var userId: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var ranking: DriveKitDBAchievementAccessModule.DBRanking? {
     @objc get
     @objc set
   }
-  #endif
 }
 extension DriveKitDBAchievementAccessModule.DBDriverRanked : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
 public typealias DBRankingCoreDataClassSet = Foundation.NSSet
 @_inheritsConvenienceInitializers @objc(DBRanking) nonisolated public class DBRanking : CoreData.NSManagedObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 public typealias DBRankingCoreDataPropertiesSet = Foundation.NSSet
 extension DriveKitDBAchievementAccessModule.DBRanking {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<DriveKitDBAchievementAccessModule.DBRanking>
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var groupName: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
   @objc @NSManaged nonisolated dynamic public var nbDriversRanked: Swift.Int32 {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var rankingPeriod: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var rankingType: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
   @objc @NSManaged nonisolated dynamic public var userPosition: Swift.Int32 {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var userPreviousPosition: Foundation.NSNumber? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var driversRanked: Foundation.NSSet? {
     @objc get
     @objc set
   }
-  #endif
 }
 extension DriveKitDBAchievementAccessModule.DBRanking {
   @objc(addDriversRankedObject:) @NSManaged nonisolated dynamic public func addToDriversRanked(_ value: DriveKitDBAchievementAccessModule.DBDriverRanked)
@@ -405,41 +345,31 @@ extension DriveKitDBAchievementAccessModule.DBRanking : Swift.Identifiable {
 }
 public typealias DBStreakCoreDataClassSet = Foundation.NSSet
 @_inheritsConvenienceInitializers @objc(DBStreak) nonisolated public class DBStreak : CoreData.NSManagedObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 public typealias DBStreakCoreDataPropertiesSet = Foundation.NSSet
 extension DriveKitDBAchievementAccessModule.DBStreak {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<DriveKitDBAchievementAccessModule.DBStreak>
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var theme: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var best: DriveKitDBAchievementAccessModule.DBStreakResult? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var current: DriveKitDBAchievementAccessModule.DBStreakResult? {
     @objc get
     @objc set
   }
-  #endif
 }
 extension DriveKitDBAchievementAccessModule.DBStreak : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
 public typealias DBStreakResultCoreDataClassSet = Foundation.NSSet
 @_inheritsConvenienceInitializers @objc(DBStreakResult) nonisolated public class DBStreakResult : CoreData.NSManagedObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 public typealias DBStreakResultCoreDataPropertiesSet = Foundation.NSSet
@@ -453,18 +383,14 @@ extension DriveKitDBAchievementAccessModule.DBStreakResult {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var endDate: Foundation.Date? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var startDate: Foundation.Date? {
     @objc get
     @objc set
   }
-  #endif
   @objc @NSManaged nonisolated dynamic public var tripNumber: Swift.Int32 {
     @objc get
     @objc set

@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
-// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name DriveKitDBTripAccessModule
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name DriveKitDBTripAccessModule
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
 import CoreData
 import DriveKitCoreModule
 import Foundation
@@ -12,18 +12,14 @@ import _SwiftConcurrencyShims
 public enum DKMobilityAreaType : Swift.String, Swift.Codable {
   case percentile50Th
   case percentile90Th
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
 }
 extension DriveKitDBTripAccessModule.DKDriverTimeline {
-  #if compiler(>=5.3) && $NonescapableTypes
   public func driverScoreSynthesis(for scoreType: DriveKitCoreModule.DKScoreType, at date: Foundation.Date) -> DriveKitDBTripAccessModule.DKScoreSynthesis?
-  #endif
 }
 public enum DKDriverProfileStatus {
   case success, failedToSyncDriverProfileCacheOnly, noDriverProfileYet, forbiddenAccess
@@ -167,9 +163,7 @@ public enum DKActivityProfile : Swift.String, Swift.Codable {
   case low
   case medium
   case high
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -192,9 +186,7 @@ public enum DKMobilityProfile : Swift.String, Swift.Codable {
   case large
   case wide
   case vast
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -204,9 +196,7 @@ public enum DKDriverDistanceEstimationConfidence : Swift.String, Swift.Codable {
   case low
   case medium
   case high
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -229,9 +219,7 @@ public struct DKScoreSynthesis {
   public var scoreValue: Swift.Double?
   public var previousScoreValue: Swift.Double?
   public var evolutionTrend: DriveKitDBTripAccessModule.DKScoreEvolutionTrend?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(scoreType: DriveKitCoreModule.DKScoreType, scoreValue: Swift.Double? = nil, previousScoreValue: Swift.Double? = nil, evolutionTrend: DriveKitDBTripAccessModule.DKScoreEvolutionTrend? = nil)
-  #endif
 }
 @objc public enum DKWeather : Swift.Int, Swift.Codable {
   case unknown = 0
@@ -241,9 +229,7 @@ public struct DKScoreSynthesis {
   case rain = 4
   case snow = 5
   case ice = 6
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -269,9 +255,7 @@ public struct DKDriverProfile : Swift.Codable {
 public enum DKCommonTripType : Swift.String, Swift.Codable {
   case mostFrequent
   case unknown
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -381,9 +365,7 @@ public struct DKCommunityStatistics : Swift.Codable {
   public var distance: Swift.Double
   public var duration: Swift.Int
   public init(activeDriverNumber: Swift.Int, tripNumber: Swift.Int, distance: Swift.Double, duration: Swift.Int, safety: DriveKitDBTripAccessModule.DKScoreStatistics, ecoDriving: DriveKitDBTripAccessModule.DKScoreStatistics, distraction: DriveKitDBTripAccessModule.DKScoreStatistics, speeding: DriveKitDBTripAccessModule.DKScoreStatistics)
-  #if compiler(>=5.3) && $NonescapableTypes
   public func scoreStatistics(for scoreType: DriveKitCoreModule.DKScoreType) -> DriveKitDBTripAccessModule.DKScoreStatistics?
-  #endif
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -439,9 +421,7 @@ public enum DKDrivingCategory : Swift.Int, Swift.Codable {
   case from10To50Km
   case from50To100Km
   case moreThan100Km
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -528,9 +508,7 @@ public struct DKDriverTimeline : Swift.Codable {
     public var phoneDistraction: DriveKitDBTripAccessModule.DKDriverTimeline.DKDistraction?
     public var speeding: DriveKitDBTripAccessModule.DKDriverTimeline.DKSpeeding?
     public var drivingConditions: DriveKitDBTripAccessModule.DKDriverTimeline.DKDrivingConditions?
-    #if compiler(>=5.3) && $NonescapableTypes
     public init(date: Foundation.Date, numberTripTotal: Swift.Int, numberTripScored: Swift.Int, distance: Swift.Double, duration: Swift.Int, safety: DriveKitDBTripAccessModule.DKDriverTimeline.DKSafety?, ecoDriving: DriveKitDBTripAccessModule.DKDriverTimeline.DKEcoDriving?, phoneDistraction: DriveKitDBTripAccessModule.DKDriverTimeline.DKDistraction?, speeding: DriveKitDBTripAccessModule.DKDriverTimeline.DKSpeeding?, drivingConditions: DriveKitDBTripAccessModule.DKDriverTimeline.DKDrivingConditions?)
-    #endif
     public func encode(to encoder: any Swift.Encoder) throws
     public init(from decoder: any Swift.Decoder) throws
   }
@@ -543,9 +521,7 @@ public struct DKDriverTimeline : Swift.Codable {
     public let duration: Swift.Int
     public var ecoDriving: DriveKitDBTripAccessModule.DKDriverTimeline.DKEcoDriving?
     public var safety: DriveKitDBTripAccessModule.DKDriverTimeline.DKSafety?
-    #if compiler(>=5.3) && $NonescapableTypes
     public init(type: DriveKitCoreModule.DKRoadContext, date: Foundation.Date, numberTripTotal: Swift.Int, numberTripScored: Swift.Int, distance: Swift.Double, duration: Swift.Int, ecoDriving: DriveKitDBTripAccessModule.DKDriverTimeline.DKEcoDriving?, safety: DriveKitDBTripAccessModule.DKDriverTimeline.DKSafety?)
-    #endif
     public func encode(to encoder: any Swift.Encoder) throws
     public init(from decoder: any Swift.Decoder) throws
   }
@@ -557,57 +533,35 @@ public protocol DatedContextItem {
 }
 public protocol SafetyEcoDrivingContextItem : DriveKitDBTripAccessModule.DatedContextItem {
   var numberTripScored: Swift.Int { get }
-  #if compiler(>=5.3) && $NonescapableTypes
   var ecoDriving: DriveKitDBTripAccessModule.DKDriverTimeline.DKEcoDriving? { get set }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   var safety: DriveKitDBTripAccessModule.DKDriverTimeline.DKSafety? { get set }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   func score(for scoreType: DriveKitCoreModule.DKScoreType) -> Swift.Double?
-  #endif
   func hasValue(for scoreType: DriveKitCoreModule.DKScoreType) -> Swift.Bool
 }
 public protocol ContextItem : DriveKitDBTripAccessModule.SafetyEcoDrivingContextItem {
-  #if compiler(>=5.3) && $NonescapableTypes
   var phoneDistraction: DriveKitDBTripAccessModule.DKDriverTimeline.DKDistraction? { get set }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   var speeding: DriveKitDBTripAccessModule.DKDriverTimeline.DKSpeeding? { get set }
-  #endif
 }
 extension DriveKitDBTripAccessModule.SafetyEcoDrivingContextItem {
   public func hasValue(for scoreType: DriveKitCoreModule.DKScoreType) -> Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
   public func score(for scoreType: DriveKitCoreModule.DKScoreType) -> Swift.Double?
-  #endif
 }
 extension DriveKitDBTripAccessModule.ContextItem {
-  #if compiler(>=5.3) && $NonescapableTypes
   public func score(for scoreType: DriveKitCoreModule.DKScoreType) -> Swift.Double?
-  #endif
 }
 extension DriveKitDBTripAccessModule.DKDriverTimeline.DKAllContextItem : DriveKitDBTripAccessModule.ContextItem {
 }
 extension DriveKitDBTripAccessModule.DKDriverTimeline.DKRoadContextItem : DriveKitDBTripAccessModule.SafetyEcoDrivingContextItem {
 }
 extension Swift.Array where Element : DriveKitDBTripAccessModule.DatedContextItem {
-  #if compiler(>=5.3) && $NonescapableTypes
   public subscript(date date: Foundation.Date) -> Element? {
     get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func index(of date: Foundation.Date) -> Swift.Array<Element>.Index?
-  #endif
 }
 extension Swift.Array where Element : DriveKitDBTripAccessModule.SafetyEcoDrivingContextItem {
-  #if compiler(>=5.3) && $NonescapableTypes
   public func previousValidItem(from date: Foundation.Date, scoreType: DriveKitCoreModule.DKScoreType? = nil) -> Element?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func nextValidItem(from date: Foundation.Date, scoreType: DriveKitCoreModule.DKScoreType? = nil) -> Element?
-  #endif
 }
 @objc public enum DKSynthesisType : Swift.Int, Swift.Codable {
   case distance
@@ -615,9 +569,7 @@ extension Swift.Array where Element : DriveKitDBTripAccessModule.SafetyEcoDrivin
   case phoneDistraction
   case safety
   case speeding
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -629,9 +581,7 @@ public enum DKDistanceProfile : Swift.String, Swift.Codable {
   case medium
   case long
   case veryLong
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -657,107 +607,67 @@ public enum DKDistanceProfile : Swift.String, Swift.Codable {
   final public let unscored: Swift.Bool
   final public let vehicleId: Swift.String?
   final public let occupantInfo: DriveKitDBTripAccessModule.DKOccupantInfo?
-  #if compiler(>=5.3) && $NonescapableTypes
   public var advancedEnergyEstimation: [DriveKitDBTripAccessModule.DKAdvancedEnergyEstimation]? {
     get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public var brakeWear: DriveKitDBTripAccessModule.DKBrakeWear? {
     get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public var calls: [DriveKitDBTripAccessModule.DKCall]? {
     get
   }
-  #endif
   public var declaredTransportationMode: DriveKitDBTripAccessModule.DKDeclaredTransportationMode?
-  #if compiler(>=5.3) && $NonescapableTypes
   public var driverDistraction: DriveKitDBTripAccessModule.DKDriverDistraction? {
     get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public var ecoDriving: DriveKitDBTripAccessModule.DKEcoDriving? {
     get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public var ecoDrivingContexts: [DriveKitDBTripAccessModule.DKEcoDrivingContext]? {
     get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public var energyEstimation: DriveKitDBTripAccessModule.DKEnergyEstimation? {
     get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public var evaluation: DriveKitDBTripAccessModule.DKEvaluation? {
     get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public var fuelEstimation: DriveKitDBTripAccessModule.DKFuelEstimation? {
     get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public var fuelEstimationContexts: [DriveKitDBTripAccessModule.DKFuelEstimationContext]? {
     get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public var logbook: DriveKitDBTripAccessModule.DKLogbook? {
     get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public var maneuver: DriveKitDBTripAccessModule.DKManeuver? {
     get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public var pollutants: DriveKitDBTripAccessModule.DKPollutants? {
     get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public var safety: DriveKitDBTripAccessModule.DKSafety? {
     get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public var safetyContexts: [DriveKitDBTripAccessModule.DKSafetyContext]? {
     get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public var safetyEvents: [DriveKitDBTripAccessModule.DKSafetyEvents]? {
     get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public var speedingStatistics: DriveKitDBTripAccessModule.DKSpeedingStatistics? {
     get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public var speedLimitContexts: [DriveKitDBTripAccessModule.DKSpeedLimitContext]? {
     get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public var tireWear: DriveKitDBTripAccessModule.DKTireWear? {
     get
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public var tripAdvices: [DriveKitDBTripAccessModule.DKTripAdvice]? {
     get
   }
-  #endif
   public var tripStatistics: DriveKitDBTripAccessModule.DKTripStatistics?
   @objc deinit
 }
@@ -768,12 +678,8 @@ public enum DKDistanceProfile : Swift.String, Swift.Codable {
 }
 @objc public enum DKOccupantRole : Swift.Int {
   case unavailable, driver, passenger, notApplicable
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func fromString(_ roleString: Swift.String?) -> DriveKitDBTripAccessModule.DKOccupantRole
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -923,9 +829,7 @@ public enum DKDistanceProfile : Swift.String, Swift.Codable {
 @objc public class DKEvaluation : ObjectiveC.NSObject {
   final public let comment: Swift.String?
   final public let evaluation: Swift.Int32
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(comment: Swift.String?, evaluation: Swift.Int32)
-  #endif
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class DKFuelEstimation : ObjectiveC.NSObject {
@@ -1052,9 +956,7 @@ extension DriveKitDBTripAccessModule.DBManualTrip : DriveKitCoreModule.DKUnmanag
 @objc public class DKEvaluationData : ObjectiveC.NSObject {
   @objc final public let evaluation: Swift.Int
   @objc final public let comment: Swift.String?
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc public init(evaluation: Swift.Int, comment: Swift.String?)
-  #endif
   @objc deinit
 }
 @objc public class DKInformationData : ObjectiveC.NSObject {
@@ -1086,9 +988,7 @@ extension DriveKitDBTripAccessModule.DBManualTrip : DriveKitCoreModule.DKUnmanag
   case urban = 2
   case extraUrban = 3
   case expressWay = 4
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -1101,18 +1001,14 @@ extension DriveKitDBTripAccessModule.DBManualTrip : DriveKitCoreModule.DKUnmanag
   public func tripsQuery() -> DriveKitCoreModule.WhereReference<DriveKitDBTripAccessModule.DBTrip, DriveKitDBTripAccessModule.DKTrip>
   public func manualTripsQuery() -> DriveKitCoreModule.WhereReference<DriveKitDBTripAccessModule.DBManualTrip, DriveKitDBTripAccessModule.DKManualTrip>
   public func routeQuery() -> DriveKitCoreModule.WhereReference<DriveKitDBTripAccessModule.DBRoute, DriveKitDBTripAccessModule.DKRoute>
-  #if compiler(>=5.3) && $NonescapableTypes
   public func getSynthesis() -> DriveKitDBTripAccessModule.DKSynthesis?
-  #endif
   public func saveSynthesis(_ synthesis: DriveKitDBTripAccessModule.DKSynthesis)
   public func deleteSynthesis()
   public func getRawTimelines(periods: [DriveKitCoreModule.DKPeriod]) -> [DriveKitDBTripAccessModule.DKRawTimeline]
   public func saveRawTimeline(_ timeline: DriveKitDBTripAccessModule.DKRawTimeline)
   public func deleteRawTimelines()
   public func saveDriverProfile(_ driverProfile: DriveKitDBTripAccessModule.DKDriverProfile)
-  #if compiler(>=5.3) && $NonescapableTypes
   public func getDriverProfile() -> DriveKitDBTripAccessModule.DKDriverProfile?
-  #endif
   public func deleteDriverProfile()
   public func saveCommunityStatistics(_ stats: DriveKitDBTripAccessModule.DKCommunityStatistics)
   public func getCommunityStatistics() -> DriveKitDBTripAccessModule.DKCommunityStatistics
@@ -1121,27 +1017,17 @@ extension DriveKitDBTripAccessModule.DBManualTrip : DriveKitCoreModule.DKUnmanag
   public func delete(itinId: Swift.String)
   public func deleteManualTrip(tripId: Swift.String)
   public func deleteTrips(itinIds: [Swift.String])
-  #if compiler(>=5.3) && $NonescapableTypes
   public func getDBAdvice(itinId: Swift.String, adviceId: Swift.String) -> DriveKitDBTripAccessModule.DBTripAdvice?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func getAdvice(itinId: Swift.String, adviceId: Swift.String) -> DriveKitDBTripAccessModule.DKTripAdvice?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func findDBTrip(itinId: Swift.String) -> DriveKitDBTripAccessModule.DBTrip?
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func find(itinId: Swift.String) -> DriveKitDBTripAccessModule.DKTrip?
-  #endif
   public func findTrips(itinIds: [Swift.String]) -> [DriveKitDBTripAccessModule.DKTrip]
   public func insertRoute(route: DriveKitDBTripAccessModule.DBRoute, itinId: Swift.String)
   public func createTrip(itinId: Swift.String, block: (CoreData.NSManagedObjectContext) -> Swift.Void)
   public func createRoute(block: (CoreData.NSManagedObjectContext) -> Swift.Void)
   public func update(block: (CoreData.NSManagedObjectContext) -> Swift.Void)
   public func createManualTrip(tripId: Swift.String, block: (CoreData.NSManagedObjectContext) -> Swift.Void)
-  #if compiler(>=5.3) && $NonescapableTypes
   public func findManualTrip(tripId: Swift.String) -> DriveKitDBTripAccessModule.DBManualTrip?
-  #endif
   public func executeInViewContext(block: (CoreData.NSManagedObjectContext) -> Swift.Void)
   @objc deinit
 }
@@ -1182,9 +1068,7 @@ public enum TransportationMode : Swift.Int, Swift.CaseIterable {
   case idle
   case other
   public func isAlternative() -> Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias AllCases = [DriveKitDBTripAccessModule.TransportationMode]
   public typealias RawValue = Swift.Int
   nonisolated public static var allCases: [DriveKitDBTripAccessModule.TransportationMode] {
@@ -1197,9 +1081,7 @@ public enum TransportationMode : Swift.Int, Swift.CaseIterable {
 public enum DKRegularityProfile : Swift.String, Swift.Codable {
   case regular
   case intermittent
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
@@ -1207,9 +1089,7 @@ public enum DKRegularityProfile : Swift.String, Swift.Codable {
 }
 public typealias DBAdvancedEnergyEstimationCoreDataClassSet = Foundation.NSSet
 @_inheritsConvenienceInitializers @objc(DBAdvancedEnergyEstimation) nonisolated public class DBAdvancedEnergyEstimation : CoreData.NSManagedObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 public typealias DBAdvancedEnergyEstimationCoreDataPropertiesSet = Foundation.NSSet
@@ -1243,21 +1123,17 @@ extension DriveKitDBTripAccessModule.DBAdvancedEnergyEstimation {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var itinerary: DriveKitDBTripAccessModule.DBTrip? {
     @objc get
     @objc set
   }
-  #endif
 }
 extension DriveKitDBTripAccessModule.DBAdvancedEnergyEstimation : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
 public typealias DBBrakeWearCoreDataClassSet = Foundation.NSSet
 @_inheritsConvenienceInitializers @objc(DBBrakeWear) nonisolated public class DBBrakeWear : CoreData.NSManagedObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 public typealias DBBrakeWearCoreDataPropertiesSet = Foundation.NSSet
@@ -1303,50 +1179,38 @@ extension DriveKitDBTripAccessModule.DBBrakeWear {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var itinerary: DriveKitDBTripAccessModule.DBTrip? {
     @objc get
     @objc set
   }
-  #endif
 }
 extension DriveKitDBTripAccessModule.DBBrakeWear : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
 public typealias DBCallCoreDataClassSet = Foundation.NSSet
 @_inheritsConvenienceInitializers @objc(DBCall) nonisolated public class DBCall : CoreData.NSManagedObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 public typealias DBCallCoreDataPropertiesSet = Foundation.NSSet
 extension DriveKitDBTripAccessModule.DBCall {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<DriveKitDBTripAccessModule.DBCall>
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var audioInput: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var audioName: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var audioOutput: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var audioSystemValue: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
   @objc @NSManaged nonisolated dynamic public var bluetoothClass: Swift.Int32 {
     @objc get
     @objc set
@@ -1383,27 +1247,21 @@ extension DriveKitDBTripAccessModule.DBCall {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var typeValue: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var itinerary: DriveKitDBTripAccessModule.DBTrip? {
     @objc get
     @objc set
   }
-  #endif
 }
 extension DriveKitDBTripAccessModule.DBCall : Swift.Identifiable {
   public typealias ID = Swift.Int32
 }
 public typealias DBConditionCoreDataClassSet = Foundation.NSSet
 @_inheritsConvenienceInitializers @objc(DBCondition) nonisolated public class DBCondition : CoreData.NSManagedObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 public typealias DBConditionCoreDataPropertiesSet = Foundation.NSSet
@@ -1425,32 +1283,26 @@ extension DriveKitDBTripAccessModule.DBCondition {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var trip: DriveKitDBTripAccessModule.DBManualTrip? {
     @objc get
     @objc set
   }
-  #endif
 }
 extension DriveKitDBTripAccessModule.DBCondition : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
 public typealias DBDeclaredTransportationModeCoreDataClassSet = Foundation.NSSet
 @_inheritsConvenienceInitializers @objc(DBDeclaredTransportationMode) nonisolated public class DBDeclaredTransportationMode : CoreData.NSManagedObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 public typealias DBDeclaredTransportationModeCoreDataPropertiesSet = Foundation.NSSet
 extension DriveKitDBTripAccessModule.DBDeclaredTransportationMode {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<DriveKitDBTripAccessModule.DBDeclaredTransportationMode>
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var comment: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
   @objc @NSManaged nonisolated dynamic public var passenger: Swift.Bool {
     @objc get
     @objc set
@@ -1459,21 +1311,17 @@ extension DriveKitDBTripAccessModule.DBDeclaredTransportationMode {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var trip: DriveKitDBTripAccessModule.DBTrip? {
     @objc get
     @objc set
   }
-  #endif
 }
 extension DriveKitDBTripAccessModule.DBDeclaredTransportationMode : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
 public typealias DBDriverDistractionCoreDataClassSet = Foundation.NSSet
 @_inheritsConvenienceInitializers @objc(DBDriverDistraction) nonisolated public class DBDriverDistraction : CoreData.NSManagedObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 public typealias DBDriverDistractionCoreDataPropertiesSet = Foundation.NSSet
@@ -1503,33 +1351,25 @@ extension DriveKitDBTripAccessModule.DBDriverDistraction {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var scoreCallNumber: Foundation.NSNumber? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var scoreUnlockNumber: Foundation.NSNumber? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var itinerary: DriveKitDBTripAccessModule.DBTrip? {
     @objc get
     @objc set
   }
-  #endif
 }
 extension DriveKitDBTripAccessModule.DBDriverDistraction : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
 public typealias DBEcoDrivingCoreDataClassSet = Foundation.NSSet
 @_inheritsConvenienceInitializers @objc(DBEcoDriving) nonisolated public class DBEcoDriving : CoreData.NSManagedObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 public typealias DBEcoDrivingCoreDataPropertiesSet = Foundation.NSSet
@@ -1567,21 +1407,17 @@ extension DriveKitDBTripAccessModule.DBEcoDriving {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var itinerary: DriveKitDBTripAccessModule.DBTrip? {
     @objc get
     @objc set
   }
-  #endif
 }
 extension DriveKitDBTripAccessModule.DBEcoDriving : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
 public typealias DBEcoDrivingContextCoreDataClassSet = Foundation.NSSet
 @_inheritsConvenienceInitializers @objc(DBEcoDrivingContext) nonisolated public class DBEcoDrivingContext : CoreData.NSManagedObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 public typealias DBEcoDrivingContextCoreDataPropertiesSet = Foundation.NSSet
@@ -1615,21 +1451,17 @@ extension DriveKitDBTripAccessModule.DBEcoDrivingContext {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var itinerary: DriveKitDBTripAccessModule.DBTrip? {
     @objc get
     @objc set
   }
-  #endif
 }
 extension DriveKitDBTripAccessModule.DBEcoDrivingContext : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
 public typealias DBEnergyEstimationCoreDataClassSet = Foundation.NSSet
 @_inheritsConvenienceInitializers @objc(DBEnergyEstimation) nonisolated public class DBEnergyEstimation : CoreData.NSManagedObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 public typealias DBEnergyEstimationCoreDataPropertiesSet = Foundation.NSSet
@@ -1651,51 +1483,41 @@ extension DriveKitDBTripAccessModule.DBEnergyEstimation {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var itinerary: DriveKitDBTripAccessModule.DBTrip? {
     @objc get
     @objc set
   }
-  #endif
 }
 extension DriveKitDBTripAccessModule.DBEnergyEstimation : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
 public typealias DBEvaluationCoreDataClassSet = Foundation.NSSet
 @_inheritsConvenienceInitializers @objc(DBEvaluation) nonisolated public class DBEvaluation : CoreData.NSManagedObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 public typealias DBEvaluationCoreDataPropertiesSet = Foundation.NSSet
 extension DriveKitDBTripAccessModule.DBEvaluation {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<DriveKitDBTripAccessModule.DBEvaluation>
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var comment: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
   @objc @NSManaged nonisolated dynamic public var evaluation: Swift.Int32 {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var itinerary: DriveKitDBTripAccessModule.DBTrip? {
     @objc get
     @objc set
   }
-  #endif
 }
 extension DriveKitDBTripAccessModule.DBEvaluation : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
 public typealias DBFuelEstimationCoreDataClassSet = Foundation.NSSet
 @_inheritsConvenienceInitializers @objc(DBFuelEstimation) nonisolated public class DBFuelEstimation : CoreData.NSManagedObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 public typealias DBFuelEstimationCoreDataPropertiesSet = Foundation.NSSet
@@ -1745,21 +1567,17 @@ extension DriveKitDBTripAccessModule.DBFuelEstimation {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var itinerary: DriveKitDBTripAccessModule.DBTrip? {
     @objc get
     @objc set
   }
-  #endif
 }
 extension DriveKitDBTripAccessModule.DBFuelEstimation : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
 public typealias DBFuelEstimationContextCoreDataClassSet = Foundation.NSSet
 @_inheritsConvenienceInitializers @objc(DBFuelEstimationContext) nonisolated public class DBFuelEstimationContext : CoreData.NSManagedObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 public typealias DBFuelEstimationContextCoreDataPropertiesSet = Foundation.NSSet
@@ -1793,38 +1611,30 @@ extension DriveKitDBTripAccessModule.DBFuelEstimationContext {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var itinerary: DriveKitDBTripAccessModule.DBTrip? {
     @objc get
     @objc set
   }
-  #endif
 }
 extension DriveKitDBTripAccessModule.DBFuelEstimationContext : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
 public typealias DBInformationCoreDataClassSet = Foundation.NSSet
 @_inheritsConvenienceInitializers @objc(DBInformation) nonisolated public class DBInformation : CoreData.NSManagedObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 public typealias DBInformationCoreDataPropertiesSet = Foundation.NSSet
 extension DriveKitDBTripAccessModule.DBInformation {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<DriveKitDBTripAccessModule.DBInformation>
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var arrivalAddress: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var arrivalCity: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
   @objc @NSManaged nonisolated dynamic public var arrivalLatitude: Swift.Double {
     @objc get
     @objc set
@@ -1833,18 +1643,14 @@ extension DriveKitDBTripAccessModule.DBInformation {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var departureAddress: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var departureCity: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
   @objc @NSManaged nonisolated dynamic public var departureLatitude: Swift.Double {
     @objc get
     @objc set
@@ -1861,27 +1667,21 @@ extension DriveKitDBTripAccessModule.DBInformation {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var startDate: Foundation.Date? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var trip: DriveKitDBTripAccessModule.DBManualTrip? {
     @objc get
     @objc set
   }
-  #endif
 }
 extension DriveKitDBTripAccessModule.DBInformation : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
 public typealias DBLogbookCoreDataClassSet = Foundation.NSSet
 @_inheritsConvenienceInitializers @objc(DBLogbook) nonisolated public class DBLogbook : CoreData.NSManagedObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 public typealias DBLogbookCoreDataPropertiesSet = Foundation.NSSet
@@ -1891,27 +1691,21 @@ extension DriveKitDBTripAccessModule.DBLogbook {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var updateDate: Foundation.Date? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var itinerary: DriveKitDBTripAccessModule.DBTrip? {
     @objc get
     @objc set
   }
-  #endif
 }
 extension DriveKitDBTripAccessModule.DBLogbook : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
 public typealias DBManeuverCoreDataClassSet = Foundation.NSSet
 @_inheritsConvenienceInitializers @objc(DBManeuver) nonisolated public class DBManeuver : CoreData.NSManagedObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 public typealias DBManeuverCoreDataPropertiesSet = Foundation.NSSet
@@ -1953,51 +1747,41 @@ extension DriveKitDBTripAccessModule.DBManeuver {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var itinerary: DriveKitDBTripAccessModule.DBTrip? {
     @objc get
     @objc set
   }
-  #endif
 }
 extension DriveKitDBTripAccessModule.DBManeuver : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
 public typealias DBManualEvaluationCoreDataClassSet = Foundation.NSSet
 @_inheritsConvenienceInitializers @objc(DBManualEvaluation) nonisolated public class DBManualEvaluation : CoreData.NSManagedObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 public typealias DBManualEvaluationCoreDataPropertiesSet = Foundation.NSSet
 extension DriveKitDBTripAccessModule.DBManualEvaluation {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<DriveKitDBTripAccessModule.DBManualEvaluation>
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var comment: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
   @objc @NSManaged nonisolated dynamic public var evaluation: Swift.Int32 {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var trip: DriveKitDBTripAccessModule.DBManualTrip? {
     @objc get
     @objc set
   }
-  #endif
 }
 extension DriveKitDBTripAccessModule.DBManualEvaluation : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
 public typealias DBManualManeuverCoreDataClassSet = Foundation.NSSet
 @_inheritsConvenienceInitializers @objc(DBManualManeuver) nonisolated public class DBManualManeuver : CoreData.NSManagedObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 public typealias DBManualManeuverCoreDataPropertiesSet = Foundation.NSSet
@@ -2039,65 +1823,49 @@ extension DriveKitDBTripAccessModule.DBManualManeuver {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var trip: DriveKitDBTripAccessModule.DBManualTrip? {
     @objc get
     @objc set
   }
-  #endif
 }
 extension DriveKitDBTripAccessModule.DBManualManeuver : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
 public typealias DBManualTripCoreDataClassSet = Foundation.NSSet
 @_inheritsConvenienceInitializers @objc(DBManualTrip) nonisolated public class DBManualTrip : CoreData.NSManagedObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 public typealias DBManualTripCoreDataPropertiesSet = Foundation.NSSet
 extension DriveKitDBTripAccessModule.DBManualTrip {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<DriveKitDBTripAccessModule.DBManualTrip>
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var tripId: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var condition: DriveKitDBTripAccessModule.DBCondition? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var evaluation: DriveKitDBTripAccessModule.DBManualEvaluation? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var information: DriveKitDBTripAccessModule.DBInformation? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var maneuver: DriveKitDBTripAccessModule.DBManualManeuver? {
     @objc get
     @objc set
   }
-  #endif
 }
 extension DriveKitDBTripAccessModule.DBManualTrip : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
 public typealias DBOccupantInfoCoreDataClassSet = Foundation.NSSet
 @_inheritsConvenienceInitializers @objc(DBOccupantInfo) nonisolated public class DBOccupantInfo : CoreData.NSManagedObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 public typealias DBOccupantInfoCoreDataPropertiesSet = Foundation.NSSet
@@ -2107,27 +1875,21 @@ extension DriveKitDBTripAccessModule.DBOccupantInfo {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var role: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var itinerary: DriveKitDBTripAccessModule.DBTrip? {
     @objc get
     @objc set
   }
-  #endif
 }
 extension DriveKitDBTripAccessModule.DBOccupantInfo : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
 public typealias DBPollutantsCoreDataClassSet = Foundation.NSSet
 @_inheritsConvenienceInitializers @objc(DBPollutants) nonisolated public class DBPollutants : CoreData.NSManagedObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 public typealias DBPollutantsCoreDataPropertiesSet = Foundation.NSSet
@@ -2149,95 +1911,69 @@ extension DriveKitDBTripAccessModule.DBPollutants {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var itinerary: DriveKitDBTripAccessModule.DBTrip? {
     @objc get
     @objc set
   }
-  #endif
 }
 extension DriveKitDBTripAccessModule.DBPollutants : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
 public typealias DBRouteCoreDataClassSet = Foundation.NSSet
 @_inheritsConvenienceInitializers @objc(DBRoute) nonisolated public class DBRoute : CoreData.NSManagedObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 public typealias DBRouteCoreDataPropertiesSet = Foundation.NSSet
 extension DriveKitDBTripAccessModule.DBRoute {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<DriveKitDBTripAccessModule.DBRoute>
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var callIndex: Foundation.NSArray? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var callTime: Foundation.NSArray? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var itinId: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var latitude: Foundation.NSArray? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var longitude: Foundation.NSArray? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var screenLockedIndex: Foundation.NSArray? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var screenLockedTime: Foundation.NSArray? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var screenStatus: Foundation.NSArray? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var speedingIndex: Foundation.NSArray? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var speedingTime: Foundation.NSArray? {
     @objc get
     @objc set
   }
-  #endif
 }
 extension DriveKitDBTripAccessModule.DBRoute : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
 public typealias DBSafetyCoreDataClassSet = Foundation.NSSet
 @_inheritsConvenienceInitializers @objc(DBSafety) nonisolated public class DBSafety : CoreData.NSManagedObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 public typealias DBSafetyCoreDataPropertiesSet = Foundation.NSSet
@@ -2271,21 +2007,17 @@ extension DriveKitDBTripAccessModule.DBSafety {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var itinerary: DriveKitDBTripAccessModule.DBTrip? {
     @objc get
     @objc set
   }
-  #endif
 }
 extension DriveKitDBTripAccessModule.DBSafety : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
 public typealias DBSafetyContextCoreDataClassSet = Foundation.NSSet
 @_inheritsConvenienceInitializers @objc(DBSafetyContext) nonisolated public class DBSafetyContext : CoreData.NSManagedObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 public typealias DBSafetyContextCoreDataPropertiesSet = Foundation.NSSet
@@ -2331,21 +2063,17 @@ extension DriveKitDBTripAccessModule.DBSafetyContext {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var itinerary: DriveKitDBTripAccessModule.DBTrip? {
     @objc get
     @objc set
   }
-  #endif
 }
 extension DriveKitDBTripAccessModule.DBSafetyContext : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
 public typealias DBSafetyEventsCoreDataClassSet = Foundation.NSSet
 @_inheritsConvenienceInitializers @objc(DBSafetyEvents) nonisolated public class DBSafetyEvents : CoreData.NSManagedObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 public typealias DBSafetyEventsCoreDataPropertiesSet = Foundation.NSSet
@@ -2391,21 +2119,17 @@ extension DriveKitDBTripAccessModule.DBSafetyEvents {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var itinerary: DriveKitDBTripAccessModule.DBTrip? {
     @objc get
     @objc set
   }
-  #endif
 }
 extension DriveKitDBTripAccessModule.DBSafetyEvents : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
 public typealias DBSpeedingStatisticsCoreDataClassSet = Foundation.NSSet
 @_inheritsConvenienceInitializers @objc(DBSpeedingStatistics) nonisolated public class DBSpeedingStatistics : CoreData.NSManagedObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 public typealias DBSpeedingStatisticsCoreDataPropertiesSet = Foundation.NSSet
@@ -2431,21 +2155,17 @@ extension DriveKitDBTripAccessModule.DBSpeedingStatistics {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var itinerary: DriveKitDBTripAccessModule.DBTrip? {
     @objc get
     @objc set
   }
-  #endif
 }
 extension DriveKitDBTripAccessModule.DBSpeedingStatistics : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
 public typealias DBSpeedLimitContextCoreDataClassSet = Foundation.NSSet
 @_inheritsConvenienceInitializers @objc(DBSpeedLimitContext) nonisolated public class DBSpeedLimitContext : CoreData.NSManagedObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 public typealias DBSpeedLimitContextCoreDataPropertiesSet = Foundation.NSSet
@@ -2475,21 +2195,17 @@ extension DriveKitDBTripAccessModule.DBSpeedLimitContext {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var itinerary: DriveKitDBTripAccessModule.DBTrip? {
     @objc get
     @objc set
   }
-  #endif
 }
 extension DriveKitDBTripAccessModule.DBSpeedLimitContext : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
 public typealias DBTireWearCoreDataClassSet = Foundation.NSSet
 @_inheritsConvenienceInitializers @objc(DBTireWear) nonisolated public class DBTireWear : CoreData.NSManagedObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 public typealias DBTireWearCoreDataPropertiesSet = Foundation.NSSet
@@ -2535,114 +2251,82 @@ extension DriveKitDBTripAccessModule.DBTireWear {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var itinerary: DriveKitDBTripAccessModule.DBTrip? {
     @objc get
     @objc set
   }
-  #endif
 }
 extension DriveKitDBTripAccessModule.DBTireWear : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
 }
 public typealias DBTripCoreDataClassSet = Foundation.NSSet
 @_inheritsConvenienceInitializers @objc(DBTrip) nonisolated public class DBTrip : CoreData.NSManagedObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 public typealias DBTripCoreDataPropertiesSet = Foundation.NSSet
 extension DriveKitDBTripAccessModule.DBTrip {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<DriveKitDBTripAccessModule.DBTrip>
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var arrivalAddress: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var arrivalCity: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var arrivalCountry: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var arrivalPostalCode: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var arrivalState: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var departureAddress: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var departureCity: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var departureCountry: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var departurePostalCode: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var departureState: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var endDate: Foundation.Date? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var itinId: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var metadata: Foundation.NSDictionary? {
     @objc get
     @objc set
   }
-  #endif
   @objc @NSManaged nonisolated dynamic public var safetyEventsSynced: Swift.Bool {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var startDate: Foundation.Date? {
     @objc get
     @objc set
   }
-  #endif
   @objc @NSManaged nonisolated dynamic public var transportationMode: Swift.Int32 {
     @objc get
     @objc set
@@ -2651,150 +2335,102 @@ extension DriveKitDBTripAccessModule.DBTrip {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var vehicleId: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var advancedEnergyEstimation: Foundation.NSSet? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var brakeWear: DriveKitDBTripAccessModule.DBBrakeWear? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var calls: Foundation.NSSet? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var declaredTransportationMode: DriveKitDBTripAccessModule.DBDeclaredTransportationMode? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var driverDistraction: DriveKitDBTripAccessModule.DBDriverDistraction? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var ecoDriving: DriveKitDBTripAccessModule.DBEcoDriving? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var ecoDrivingContexts: Foundation.NSSet? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var energyEstimation: DriveKitDBTripAccessModule.DBEnergyEstimation? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var evaluation: DriveKitDBTripAccessModule.DBEvaluation? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var fuelEstimation: DriveKitDBTripAccessModule.DBFuelEstimation? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var fuelEstimationContexts: Foundation.NSSet? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var logbook: DriveKitDBTripAccessModule.DBLogbook? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var maneuver: DriveKitDBTripAccessModule.DBManeuver? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var occupantInfo: DriveKitDBTripAccessModule.DBOccupantInfo? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var pollutants: DriveKitDBTripAccessModule.DBPollutants? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var safety: DriveKitDBTripAccessModule.DBSafety? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var safetyContexts: Foundation.NSSet? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var safetyEvents: Foundation.NSSet? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var speedingStatistics: DriveKitDBTripAccessModule.DBSpeedingStatistics? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var speedLimitContexts: Foundation.NSSet? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var tireWear: DriveKitDBTripAccessModule.DBTireWear? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var tripAdvices: Foundation.NSSet? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var tripStatistics: DriveKitDBTripAccessModule.DBTripStatistics? {
     @objc get
     @objc set
   }
-  #endif
 }
 extension DriveKitDBTripAccessModule.DBTrip {
   @objc(addAdvancedEnergyEstimationObject:) @NSManaged nonisolated dynamic public func addToAdvancedEnergyEstimation(_ value: DriveKitDBTripAccessModule.DBAdvancedEnergyEstimation)
@@ -2849,20 +2485,16 @@ extension DriveKitDBTripAccessModule.DBTrip : Swift.Identifiable {
 }
 public typealias DBTripAdviceCoreDataClassSet = Foundation.NSSet
 @_inheritsConvenienceInitializers @objc(DBTripAdvice) nonisolated public class DBTripAdvice : CoreData.NSManagedObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 public typealias DBTripAdviceCoreDataPropertiesSet = Foundation.NSSet
 extension DriveKitDBTripAccessModule.DBTripAdvice {
   @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<DriveKitDBTripAccessModule.DBTripAdvice>
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var comment: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
   @objc @NSManaged nonisolated dynamic public var evaluation: Swift.Int32 {
     @objc get
     @objc set
@@ -2871,51 +2503,37 @@ extension DriveKitDBTripAccessModule.DBTripAdvice {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var id: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var message: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var messageId: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var theme: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var title: Swift.String? {
     @objc get
     @objc set
   }
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var itinerary: DriveKitDBTripAccessModule.DBTrip? {
     @objc get
     @objc set
   }
-  #endif
 }
 extension DriveKitDBTripAccessModule.DBTripAdvice : Swift.Identifiable {
   public typealias ID = Swift.String?
 }
 public typealias DBTripStatisticsCoreDataClassSet = Foundation.NSSet
 @_inheritsConvenienceInitializers @objc(DBTripStatistics) nonisolated public class DBTripStatistics : CoreData.NSManagedObject {
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  #endif
   @objc deinit
 }
 public typealias DBTripStatisticsCoreDataPropertiesSet = Foundation.NSSet
@@ -2965,12 +2583,10 @@ extension DriveKitDBTripAccessModule.DBTripStatistics {
     @objc get
     @objc set
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   @objc @NSManaged nonisolated dynamic public var itinerary: DriveKitDBTripAccessModule.DBTrip? {
     @objc get
     @objc set
   }
-  #endif
 }
 extension DriveKitDBTripAccessModule.DBTripStatistics : Swift.Identifiable {
   public typealias ID = Swift.ObjectIdentifier
