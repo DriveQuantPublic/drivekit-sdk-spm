@@ -10,7 +10,7 @@
 		</data>
 		<key>ios-arm64/DriveKitLocationUtilsModule.framework/Info.plist</key>
 		<data>
-		H90YQBqTZdbNukFtLX5HS6X91kE=
+		bJrnVHV30b1Cg1MZTSLnhbscMaE=
 		</data>
 		<key>ios-arm64/DriveKitLocationUtilsModule.framework/Modules/DriveKitLocationUtilsModule.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitLocationUtilsModule.framework/DriveKitLocationUtilsModule</key>
 		<data>
-		+QSGrs39XtoOLW9h6xx9aT26vzE=
+		MtBXYNsHFterkMS/kjeqg6dSCp0=
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitLocationUtilsModule.framework/Info.plist</key>
 		<data>
-		J9KTBmpM4pWMslQFQjv+3KFJIR8=
+		25/iJjZ9dNiIRzVGCs9vzSpKEFM=
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitLocationUtilsModule.framework/Modules/DriveKitLocationUtilsModule.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitLocationUtilsModule.framework/_CodeSignature/CodeResources</key>
 		<data>
-		zB2DpAwuUfkTnRMAgaXyA3d+D0M=
+		yG75A2Gbtvu9cVJ1ZEBip2/6C7I=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -94,7 +94,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			w4+R7UQ4/Ksgtd+JBko6RZiNkO1PmwUq39/xaOZgsek=
+			T61cJZKQ+x0AZjUnP8E8admvevS/G3ZrPQ7SzsEhcMk=
 			</data>
 		</dict>
 		<key>ios-arm64/DriveKitLocationUtilsModule.framework/Modules/DriveKitLocationUtilsModule.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -136,14 +136,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			h4zCJxHBKg1EnIvVVvhIdLd/pbMG4iVH3he6BXPkRRY=
+			fyOp9pYLiHqb2rv+RGC01RIyeTMTkR226VjI7Z8+g6Y=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/DriveKitLocationUtilsModule.framework/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kCQmlAzXqY4ru36XcKK4NFi/OjKmOBdx07qWm0Ob6P0=
+			FwFfeIedLk1BZVRRKKoPIrxmIxLtdRz5cQlG4EGKgWs=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/DriveKitLocationUtilsModule.framework/Modules/DriveKitLocationUtilsModule.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -213,7 +213,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			XUffo2fmDyij6SHdOUMjYY0TMaPG5tGnQki2hTlKlD8=
+			dK7mvc18zlPhuvM2+akn8kMtQl3Gbb1/Sryf7Bohly8=
 			</data>
 		</dict>
 	</dict>
