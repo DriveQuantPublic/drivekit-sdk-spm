@@ -21941,27 +21941,27 @@
           },
           {
             "kind": "Var",
-            "name": "regionMonitoringManager",
-            "printedName": "regionMonitoringManager",
+            "name": "locationUtils",
+            "printedName": "locationUtils",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Optional",
-                "printedName": "(any DriveKitCoreModule.DKRegionMonitoringModule)?",
+                "printedName": "(any DriveKitCoreModule.DKBaseModule)?",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "DKRegionMonitoringModule",
-                    "printedName": "any DriveKitCoreModule.DKRegionMonitoringModule",
-                    "usr": "s:18DriveKitCoreModule018DKRegionMonitoringD0P"
+                    "name": "DKBaseModule",
+                    "printedName": "any DriveKitCoreModule.DKBaseModule",
+                    "usr": "s:18DriveKitCoreModule06DKBaseD0P"
                   }
                 ],
                 "usr": "s:Sq"
               }
             ],
             "declKind": "Var",
-            "usr": "s:18DriveKitCoreModule15DKModuleManagerC016regionMonitoringF0AA08DKRegionhD0_pSgvp",
-            "mangledName": "$s18DriveKitCoreModule15DKModuleManagerC016regionMonitoringF0AA08DKRegionhD0_pSgvp",
+            "usr": "s:18DriveKitCoreModule15DKModuleManagerC13locationUtilsAA06DKBaseD0_pSgvp",
+            "mangledName": "$s18DriveKitCoreModule15DKModuleManagerC13locationUtilsAA06DKBaseD0_pSgvp",
             "moduleName": "DriveKitCoreModule",
             "declAttributes": [
               "HasInitialValue",
@@ -21978,21 +21978,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "(any DriveKitCoreModule.DKRegionMonitoringModule)?",
+                    "printedName": "(any DriveKitCoreModule.DKBaseModule)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "DKRegionMonitoringModule",
-                        "printedName": "any DriveKitCoreModule.DKRegionMonitoringModule",
-                        "usr": "s:18DriveKitCoreModule018DKRegionMonitoringD0P"
+                        "name": "DKBaseModule",
+                        "printedName": "any DriveKitCoreModule.DKBaseModule",
+                        "usr": "s:18DriveKitCoreModule06DKBaseD0P"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18DriveKitCoreModule15DKModuleManagerC016regionMonitoringF0AA08DKRegionhD0_pSgvg",
-                "mangledName": "$s18DriveKitCoreModule15DKModuleManagerC016regionMonitoringF0AA08DKRegionhD0_pSgvg",
+                "usr": "s:18DriveKitCoreModule15DKModuleManagerC13locationUtilsAA06DKBaseD0_pSgvg",
+                "mangledName": "$s18DriveKitCoreModule15DKModuleManagerC13locationUtilsAA06DKBaseD0_pSgvg",
                 "moduleName": "DriveKitCoreModule",
                 "implicit": true,
                 "accessorKind": "get"
@@ -22010,21 +22010,21 @@
                   {
                     "kind": "TypeNominal",
                     "name": "Optional",
-                    "printedName": "(any DriveKitCoreModule.DKRegionMonitoringModule)?",
+                    "printedName": "(any DriveKitCoreModule.DKBaseModule)?",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "DKRegionMonitoringModule",
-                        "printedName": "any DriveKitCoreModule.DKRegionMonitoringModule",
-                        "usr": "s:18DriveKitCoreModule018DKRegionMonitoringD0P"
+                        "name": "DKBaseModule",
+                        "printedName": "any DriveKitCoreModule.DKBaseModule",
+                        "usr": "s:18DriveKitCoreModule06DKBaseD0P"
                       }
                     ],
                     "usr": "s:Sq"
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18DriveKitCoreModule15DKModuleManagerC016regionMonitoringF0AA08DKRegionhD0_pSgvs",
-                "mangledName": "$s18DriveKitCoreModule15DKModuleManagerC016regionMonitoringF0AA08DKRegionhD0_pSgvs",
+                "usr": "s:18DriveKitCoreModule15DKModuleManagerC13locationUtilsAA06DKBaseD0_pSgvs",
+                "mangledName": "$s18DriveKitCoreModule15DKModuleManagerC13locationUtilsAA06DKBaseD0_pSgvs",
                 "moduleName": "DriveKitCoreModule",
                 "implicit": true,
                 "accessorKind": "set"
@@ -22041,8 +22041,778 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:18DriveKitCoreModule15DKModuleManagerC016regionMonitoringF0AA08DKRegionhD0_pSgvM",
-                "mangledName": "$s18DriveKitCoreModule15DKModuleManagerC016regionMonitoringF0AA08DKRegionhD0_pSgvM",
+                "usr": "s:18DriveKitCoreModule15DKModuleManagerC13locationUtilsAA06DKBaseD0_pSgvM",
+                "mangledName": "$s18DriveKitCoreModule15DKModuleManagerC13locationUtilsAA06DKBaseD0_pSgvM",
+                "moduleName": "DriveKitCoreModule",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "driverData",
+            "printedName": "driverData",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any DriveKitCoreModule.DKBaseModule)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKBaseModule",
+                    "printedName": "any DriveKitCoreModule.DKBaseModule",
+                    "usr": "s:18DriveKitCoreModule06DKBaseD0P"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18DriveKitCoreModule15DKModuleManagerC10driverDataAA06DKBaseD0_pSgvp",
+            "mangledName": "$s18DriveKitCoreModule15DKModuleManagerC10driverDataAA06DKBaseD0_pSgvp",
+            "moduleName": "DriveKitCoreModule",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any DriveKitCoreModule.DKBaseModule)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKBaseModule",
+                        "printedName": "any DriveKitCoreModule.DKBaseModule",
+                        "usr": "s:18DriveKitCoreModule06DKBaseD0P"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18DriveKitCoreModule15DKModuleManagerC10driverDataAA06DKBaseD0_pSgvg",
+                "mangledName": "$s18DriveKitCoreModule15DKModuleManagerC10driverDataAA06DKBaseD0_pSgvg",
+                "moduleName": "DriveKitCoreModule",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any DriveKitCoreModule.DKBaseModule)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKBaseModule",
+                        "printedName": "any DriveKitCoreModule.DKBaseModule",
+                        "usr": "s:18DriveKitCoreModule06DKBaseD0P"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18DriveKitCoreModule15DKModuleManagerC10driverDataAA06DKBaseD0_pSgvs",
+                "mangledName": "$s18DriveKitCoreModule15DKModuleManagerC10driverDataAA06DKBaseD0_pSgvs",
+                "moduleName": "DriveKitCoreModule",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18DriveKitCoreModule15DKModuleManagerC10driverDataAA06DKBaseD0_pSgvM",
+                "mangledName": "$s18DriveKitCoreModule15DKModuleManagerC10driverDataAA06DKBaseD0_pSgvM",
+                "moduleName": "DriveKitCoreModule",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "driverAchievement",
+            "printedName": "driverAchievement",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any DriveKitCoreModule.DKBaseModule)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKBaseModule",
+                    "printedName": "any DriveKitCoreModule.DKBaseModule",
+                    "usr": "s:18DriveKitCoreModule06DKBaseD0P"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18DriveKitCoreModule15DKModuleManagerC17driverAchievementAA06DKBaseD0_pSgvp",
+            "mangledName": "$s18DriveKitCoreModule15DKModuleManagerC17driverAchievementAA06DKBaseD0_pSgvp",
+            "moduleName": "DriveKitCoreModule",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any DriveKitCoreModule.DKBaseModule)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKBaseModule",
+                        "printedName": "any DriveKitCoreModule.DKBaseModule",
+                        "usr": "s:18DriveKitCoreModule06DKBaseD0P"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18DriveKitCoreModule15DKModuleManagerC17driverAchievementAA06DKBaseD0_pSgvg",
+                "mangledName": "$s18DriveKitCoreModule15DKModuleManagerC17driverAchievementAA06DKBaseD0_pSgvg",
+                "moduleName": "DriveKitCoreModule",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any DriveKitCoreModule.DKBaseModule)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKBaseModule",
+                        "printedName": "any DriveKitCoreModule.DKBaseModule",
+                        "usr": "s:18DriveKitCoreModule06DKBaseD0P"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18DriveKitCoreModule15DKModuleManagerC17driverAchievementAA06DKBaseD0_pSgvs",
+                "mangledName": "$s18DriveKitCoreModule15DKModuleManagerC17driverAchievementAA06DKBaseD0_pSgvs",
+                "moduleName": "DriveKitCoreModule",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18DriveKitCoreModule15DKModuleManagerC17driverAchievementAA06DKBaseD0_pSgvM",
+                "mangledName": "$s18DriveKitCoreModule15DKModuleManagerC17driverAchievementAA06DKBaseD0_pSgvM",
+                "moduleName": "DriveKitCoreModule",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "challenge",
+            "printedName": "challenge",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any DriveKitCoreModule.DKBaseModule)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKBaseModule",
+                    "printedName": "any DriveKitCoreModule.DKBaseModule",
+                    "usr": "s:18DriveKitCoreModule06DKBaseD0P"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18DriveKitCoreModule15DKModuleManagerC9challengeAA06DKBaseD0_pSgvp",
+            "mangledName": "$s18DriveKitCoreModule15DKModuleManagerC9challengeAA06DKBaseD0_pSgvp",
+            "moduleName": "DriveKitCoreModule",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any DriveKitCoreModule.DKBaseModule)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKBaseModule",
+                        "printedName": "any DriveKitCoreModule.DKBaseModule",
+                        "usr": "s:18DriveKitCoreModule06DKBaseD0P"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18DriveKitCoreModule15DKModuleManagerC9challengeAA06DKBaseD0_pSgvg",
+                "mangledName": "$s18DriveKitCoreModule15DKModuleManagerC9challengeAA06DKBaseD0_pSgvg",
+                "moduleName": "DriveKitCoreModule",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any DriveKitCoreModule.DKBaseModule)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKBaseModule",
+                        "printedName": "any DriveKitCoreModule.DKBaseModule",
+                        "usr": "s:18DriveKitCoreModule06DKBaseD0P"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18DriveKitCoreModule15DKModuleManagerC9challengeAA06DKBaseD0_pSgvs",
+                "mangledName": "$s18DriveKitCoreModule15DKModuleManagerC9challengeAA06DKBaseD0_pSgvs",
+                "moduleName": "DriveKitCoreModule",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18DriveKitCoreModule15DKModuleManagerC9challengeAA06DKBaseD0_pSgvM",
+                "mangledName": "$s18DriveKitCoreModule15DKModuleManagerC9challengeAA06DKBaseD0_pSgvM",
+                "moduleName": "DriveKitCoreModule",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "coaching",
+            "printedName": "coaching",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any DriveKitCoreModule.DKBaseModule)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKBaseModule",
+                    "printedName": "any DriveKitCoreModule.DKBaseModule",
+                    "usr": "s:18DriveKitCoreModule06DKBaseD0P"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18DriveKitCoreModule15DKModuleManagerC8coachingAA06DKBaseD0_pSgvp",
+            "mangledName": "$s18DriveKitCoreModule15DKModuleManagerC8coachingAA06DKBaseD0_pSgvp",
+            "moduleName": "DriveKitCoreModule",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any DriveKitCoreModule.DKBaseModule)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKBaseModule",
+                        "printedName": "any DriveKitCoreModule.DKBaseModule",
+                        "usr": "s:18DriveKitCoreModule06DKBaseD0P"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18DriveKitCoreModule15DKModuleManagerC8coachingAA06DKBaseD0_pSgvg",
+                "mangledName": "$s18DriveKitCoreModule15DKModuleManagerC8coachingAA06DKBaseD0_pSgvg",
+                "moduleName": "DriveKitCoreModule",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any DriveKitCoreModule.DKBaseModule)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKBaseModule",
+                        "printedName": "any DriveKitCoreModule.DKBaseModule",
+                        "usr": "s:18DriveKitCoreModule06DKBaseD0P"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18DriveKitCoreModule15DKModuleManagerC8coachingAA06DKBaseD0_pSgvs",
+                "mangledName": "$s18DriveKitCoreModule15DKModuleManagerC8coachingAA06DKBaseD0_pSgvs",
+                "moduleName": "DriveKitCoreModule",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18DriveKitCoreModule15DKModuleManagerC8coachingAA06DKBaseD0_pSgvM",
+                "mangledName": "$s18DriveKitCoreModule15DKModuleManagerC8coachingAA06DKBaseD0_pSgvM",
+                "moduleName": "DriveKitCoreModule",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "group",
+            "printedName": "group",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any DriveKitCoreModule.DKBaseModule)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKBaseModule",
+                    "printedName": "any DriveKitCoreModule.DKBaseModule",
+                    "usr": "s:18DriveKitCoreModule06DKBaseD0P"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18DriveKitCoreModule15DKModuleManagerC5groupAA06DKBaseD0_pSgvp",
+            "mangledName": "$s18DriveKitCoreModule15DKModuleManagerC5groupAA06DKBaseD0_pSgvp",
+            "moduleName": "DriveKitCoreModule",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any DriveKitCoreModule.DKBaseModule)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKBaseModule",
+                        "printedName": "any DriveKitCoreModule.DKBaseModule",
+                        "usr": "s:18DriveKitCoreModule06DKBaseD0P"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18DriveKitCoreModule15DKModuleManagerC5groupAA06DKBaseD0_pSgvg",
+                "mangledName": "$s18DriveKitCoreModule15DKModuleManagerC5groupAA06DKBaseD0_pSgvg",
+                "moduleName": "DriveKitCoreModule",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any DriveKitCoreModule.DKBaseModule)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKBaseModule",
+                        "printedName": "any DriveKitCoreModule.DKBaseModule",
+                        "usr": "s:18DriveKitCoreModule06DKBaseD0P"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18DriveKitCoreModule15DKModuleManagerC5groupAA06DKBaseD0_pSgvs",
+                "mangledName": "$s18DriveKitCoreModule15DKModuleManagerC5groupAA06DKBaseD0_pSgvs",
+                "moduleName": "DriveKitCoreModule",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18DriveKitCoreModule15DKModuleManagerC5groupAA06DKBaseD0_pSgvM",
+                "mangledName": "$s18DriveKitCoreModule15DKModuleManagerC5groupAA06DKBaseD0_pSgvM",
+                "moduleName": "DriveKitCoreModule",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "tripSimulator",
+            "printedName": "tripSimulator",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any DriveKitCoreModule.DKBaseModule)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKBaseModule",
+                    "printedName": "any DriveKitCoreModule.DKBaseModule",
+                    "usr": "s:18DriveKitCoreModule06DKBaseD0P"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18DriveKitCoreModule15DKModuleManagerC13tripSimulatorAA06DKBaseD0_pSgvp",
+            "mangledName": "$s18DriveKitCoreModule15DKModuleManagerC13tripSimulatorAA06DKBaseD0_pSgvp",
+            "moduleName": "DriveKitCoreModule",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any DriveKitCoreModule.DKBaseModule)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKBaseModule",
+                        "printedName": "any DriveKitCoreModule.DKBaseModule",
+                        "usr": "s:18DriveKitCoreModule06DKBaseD0P"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18DriveKitCoreModule15DKModuleManagerC13tripSimulatorAA06DKBaseD0_pSgvg",
+                "mangledName": "$s18DriveKitCoreModule15DKModuleManagerC13tripSimulatorAA06DKBaseD0_pSgvg",
+                "moduleName": "DriveKitCoreModule",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any DriveKitCoreModule.DKBaseModule)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKBaseModule",
+                        "printedName": "any DriveKitCoreModule.DKBaseModule",
+                        "usr": "s:18DriveKitCoreModule06DKBaseD0P"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18DriveKitCoreModule15DKModuleManagerC13tripSimulatorAA06DKBaseD0_pSgvs",
+                "mangledName": "$s18DriveKitCoreModule15DKModuleManagerC13tripSimulatorAA06DKBaseD0_pSgvs",
+                "moduleName": "DriveKitCoreModule",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18DriveKitCoreModule15DKModuleManagerC13tripSimulatorAA06DKBaseD0_pSgvM",
+                "mangledName": "$s18DriveKitCoreModule15DKModuleManagerC13tripSimulatorAA06DKBaseD0_pSgvM",
+                "moduleName": "DriveKitCoreModule",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "regionMonitoringManager",
+            "printedName": "regionMonitoringManager",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any DriveKitCoreModule.DKBaseModule)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKBaseModule",
+                    "printedName": "any DriveKitCoreModule.DKBaseModule",
+                    "usr": "s:18DriveKitCoreModule06DKBaseD0P"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:18DriveKitCoreModule15DKModuleManagerC016regionMonitoringF0AA06DKBaseD0_pSgvp",
+            "mangledName": "$s18DriveKitCoreModule15DKModuleManagerC016regionMonitoringF0AA06DKBaseD0_pSgvp",
+            "moduleName": "DriveKitCoreModule",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any DriveKitCoreModule.DKBaseModule)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKBaseModule",
+                        "printedName": "any DriveKitCoreModule.DKBaseModule",
+                        "usr": "s:18DriveKitCoreModule06DKBaseD0P"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18DriveKitCoreModule15DKModuleManagerC016regionMonitoringF0AA06DKBaseD0_pSgvg",
+                "mangledName": "$s18DriveKitCoreModule15DKModuleManagerC016regionMonitoringF0AA06DKBaseD0_pSgvg",
+                "moduleName": "DriveKitCoreModule",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any DriveKitCoreModule.DKBaseModule)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKBaseModule",
+                        "printedName": "any DriveKitCoreModule.DKBaseModule",
+                        "usr": "s:18DriveKitCoreModule06DKBaseD0P"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18DriveKitCoreModule15DKModuleManagerC016regionMonitoringF0AA06DKBaseD0_pSgvs",
+                "mangledName": "$s18DriveKitCoreModule15DKModuleManagerC016regionMonitoringF0AA06DKBaseD0_pSgvs",
+                "moduleName": "DriveKitCoreModule",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:18DriveKitCoreModule15DKModuleManagerC016regionMonitoringF0AA06DKBaseD0_pSgvM",
+                "mangledName": "$s18DriveKitCoreModule15DKModuleManagerC016regionMonitoringF0AA06DKBaseD0_pSgvM",
                 "moduleName": "DriveKitCoreModule",
                 "implicit": true,
                 "accessorKind": "_modify"
@@ -22182,6 +22952,78 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DKBaseModule",
+        "printedName": "DKBaseModule",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "reset",
+            "printedName": "reset()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18DriveKitCoreModule06DKBaseD0P5resetyyF",
+            "mangledName": "$s18DriveKitCoreModule06DKBaseD0P5resetyyF",
+            "moduleName": "DriveKitCoreModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : DriveKitCoreModule.DKBaseModule>",
+            "sugared_genericSig": "<Self where Self : DriveKitCoreModule.DKBaseModule>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clearSessionData",
+            "printedName": "clearSessionData()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:18DriveKitCoreModule06DKBaseD0P16clearSessionDatayyF",
+            "mangledName": "$s18DriveKitCoreModule06DKBaseD0P16clearSessionDatayyF",
+            "moduleName": "DriveKitCoreModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : DriveKitCoreModule.DKBaseModule>",
+            "sugared_genericSig": "<Self where Self : DriveKitCoreModule.DKBaseModule>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:18DriveKitCoreModule06DKBaseD0P",
+        "mangledName": "$s18DriveKitCoreModule06DKBaseD0P",
+        "moduleName": "DriveKitCoreModule",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
           }
         ]
       },
@@ -22343,6 +23185,8 @@
         "usr": "s:18DriveKitCoreModule014DKTripAnalysisD0P",
         "mangledName": "$s18DriveKitCoreModule014DKTripAnalysisD0P",
         "moduleName": "DriveKitCoreModule",
+        "genericSig": "<τ_0_0 : DriveKitCoreModule.DKBaseModule>",
+        "sugared_genericSig": "<Self : DriveKitCoreModule.DKBaseModule>",
         "declAttributes": [
           "AccessControl"
         ],
@@ -22360,6 +23204,13 @@
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
             "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "DKBaseModule",
+            "printedName": "DKBaseModule",
+            "usr": "s:18DriveKitCoreModule06DKBaseD0P",
+            "mangledName": "$s18DriveKitCoreModule06DKBaseD0P"
           }
         ]
       },
@@ -22685,6 +23536,8 @@
         "usr": "s:18DriveKitCoreModule09DKVehicleD0P",
         "mangledName": "$s18DriveKitCoreModule09DKVehicleD0P",
         "moduleName": "DriveKitCoreModule",
+        "genericSig": "<τ_0_0 : DriveKitCoreModule.DKBaseModule>",
+        "sugared_genericSig": "<Self : DriveKitCoreModule.DKBaseModule>",
         "declAttributes": [
           "AccessControl"
         ],
@@ -22702,57 +23555,13 @@
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
             "mangledName": "$ss8CopyableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "DKRegionMonitoringModule",
-        "printedName": "DKRegionMonitoringModule",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "reset",
-            "printedName": "reset()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:18DriveKitCoreModule018DKRegionMonitoringD0P5resetyyF",
-            "mangledName": "$s18DriveKitCoreModule018DKRegionMonitoringD0P5resetyyF",
-            "moduleName": "DriveKitCoreModule",
-            "genericSig": "<τ_0_0 where τ_0_0 : DriveKitCoreModule.DKRegionMonitoringModule>",
-            "sugared_genericSig": "<Self where Self : DriveKitCoreModule.DKRegionMonitoringModule>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "s:18DriveKitCoreModule018DKRegionMonitoringD0P",
-        "mangledName": "$s18DriveKitCoreModule018DKRegionMonitoringD0P",
-        "moduleName": "DriveKitCoreModule",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
           },
           {
             "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
+            "name": "DKBaseModule",
+            "printedName": "DKBaseModule",
+            "usr": "s:18DriveKitCoreModule06DKBaseD0P",
+            "mangledName": "$s18DriveKitCoreModule06DKBaseD0P"
           }
         ]
       },
@@ -22865,6 +23674,8 @@
         "usr": "s:18DriveKitCoreModule022DKStolenVehicleLocatorD0P",
         "mangledName": "$s18DriveKitCoreModule022DKStolenVehicleLocatorD0P",
         "moduleName": "DriveKitCoreModule",
+        "genericSig": "<τ_0_0 : DriveKitCoreModule.DKBaseModule>",
+        "sugared_genericSig": "<Self : DriveKitCoreModule.DKBaseModule>",
         "declAttributes": [
           "AccessControl"
         ],
@@ -22882,6 +23693,13 @@
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
             "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "DKBaseModule",
+            "printedName": "DKBaseModule",
+            "usr": "s:18DriveKitCoreModule06DKBaseD0P",
+            "mangledName": "$s18DriveKitCoreModule06DKBaseD0P"
           }
         ]
       },
@@ -23928,16 +24746,6 @@
             "usr": "s:SE",
             "mangledName": "$sSE"
           }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "DriveKitCoreModule",
-        "declAttributes": [
-          "RawDocComment"
         ]
       },
       {
@@ -37179,14 +37987,14 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/DriveKit.swift",
       "kind": "BooleanLiteral",
-      "offset": 12422,
+      "offset": 11788,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/DriveKit.swift",
       "kind": "StringLiteral",
-      "offset": 21617,
+      "offset": 20370,
       "length": 19,
       "value": "\"DKAutoInitEnabled\""
     },

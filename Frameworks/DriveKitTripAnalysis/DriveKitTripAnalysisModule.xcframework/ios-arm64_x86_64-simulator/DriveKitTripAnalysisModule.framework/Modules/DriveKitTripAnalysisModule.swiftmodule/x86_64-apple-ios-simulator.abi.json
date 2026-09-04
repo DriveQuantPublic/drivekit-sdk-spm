@@ -1804,30 +1804,6 @@
       },
       {
         "kind": "Import",
-        "name": "CoreLocation",
-        "printedName": "CoreLocation",
-        "declKind": "Import",
-        "moduleName": "DriveKitTripAnalysisModule"
-      },
-      {
-        "kind": "Import",
-        "name": "DriveKitCoreModule",
-        "printedName": "DriveKitCoreModule",
-        "declKind": "Import",
-        "moduleName": "DriveKitTripAnalysisModule"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "DriveKitTripAnalysisModule",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "DriveKitCoreModule",
         "printedName": "DriveKitCoreModule",
         "declKind": "Import",
@@ -4615,16 +4591,6 @@
       },
       {
         "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "DriveKitTripAnalysisModule",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "DriveKitNetworkingModule",
         "printedName": "DriveKitNetworkingModule",
         "declKind": "Import",
@@ -6688,6 +6654,13 @@
         "kind": "Import",
         "name": "DriveKitCoreModule",
         "printedName": "DriveKitCoreModule",
+        "declKind": "Import",
+        "moduleName": "DriveKitTripAnalysisModule"
+      },
+      {
+        "kind": "Import",
+        "name": "DriveKitRegionMonitoringUtilsModule",
+        "printedName": "DriveKitRegionMonitoringUtilsModule",
         "declKind": "Import",
         "moduleName": "DriveKitTripAnalysisModule"
       },
@@ -13850,8 +13823,8 @@
           },
           {
             "kind": "Var",
-            "name": "useCLMonitor",
-            "printedName": "useCLMonitor",
+            "name": "useRMU",
+            "printedName": "useRMU",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -13861,8 +13834,8 @@
               }
             ],
             "declKind": "Var",
-            "usr": "s:26DriveKitTripAnalysisModule0cD6ConfigC12useCLMonitorSbvp",
-            "mangledName": "$s26DriveKitTripAnalysisModule0cD6ConfigC12useCLMonitorSbvp",
+            "usr": "s:26DriveKitTripAnalysisModule0cD6ConfigC6useRMUSbvp",
+            "mangledName": "$s26DriveKitTripAnalysisModule0cD6ConfigC6useRMUSbvp",
             "moduleName": "DriveKitTripAnalysisModule",
             "declAttributes": [
               "HasInitialValue",
@@ -13885,8 +13858,8 @@
                   }
                 ],
                 "declKind": "Accessor",
-                "usr": "s:26DriveKitTripAnalysisModule0cD6ConfigC12useCLMonitorSbvg",
-                "mangledName": "$s26DriveKitTripAnalysisModule0cD6ConfigC12useCLMonitorSbvg",
+                "usr": "s:26DriveKitTripAnalysisModule0cD6ConfigC6useRMUSbvg",
+                "mangledName": "$s26DriveKitTripAnalysisModule0cD6ConfigC6useRMUSbvg",
                 "moduleName": "DriveKitTripAnalysisModule",
                 "implicit": true,
                 "accessorKind": "get"
@@ -20110,30 +20083,6 @@
       },
       {
         "kind": "Import",
-        "name": "CoreLocation",
-        "printedName": "CoreLocation",
-        "declKind": "Import",
-        "moduleName": "DriveKitTripAnalysisModule"
-      },
-      {
-        "kind": "Import",
-        "name": "DriveKitCoreModule",
-        "printedName": "DriveKitCoreModule",
-        "declKind": "Import",
-        "moduleName": "DriveKitTripAnalysisModule"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "DriveKitTripAnalysisModule",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
         "name": "DriveKitNetworkingModule",
         "printedName": "DriveKitNetworkingModule",
         "declKind": "Import",
@@ -20228,6 +20177,13 @@
         "kind": "Import",
         "name": "DriveKitCoreModule",
         "printedName": "DriveKitCoreModule",
+        "declKind": "Import",
+        "moduleName": "DriveKitTripAnalysisModule"
+      },
+      {
+        "kind": "Import",
+        "name": "DriveKitRegionMonitoringUtilsModule",
+        "printedName": "DriveKitRegionMonitoringUtilsModule",
         "declKind": "Import",
         "moduleName": "DriveKitTripAnalysisModule"
       },
@@ -21822,27 +21778,6 @@
         "name": "DriveKitTripAnalysis",
         "printedName": "DriveKitTripAnalysis",
         "children": [
-          {
-            "kind": "Function",
-            "name": "getConfig",
-            "printedName": "getConfig()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "DKConfigTripAnalysis",
-                "printedName": "DriveKitCoreModule.DKConfigTripAnalysis",
-                "usr": "s:18DriveKitCoreModule20DKConfigTripAnalysisV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:26DriveKitTripAnalysisModule0abcD0C9getConfig0ab4CoreE008DKConfigcD0VyF",
-            "mangledName": "$s26DriveKitTripAnalysisModule0abcD0C9getConfig0ab4CoreE008DKConfigcD0VyF",
-            "moduleName": "DriveKitTripAnalysisModule",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
           {
             "kind": "Var",
             "name": "sdkVersion",
@@ -23607,86 +23542,6 @@
             "funcSelfKind": "NonMutating"
           },
           {
-            "kind": "Var",
-            "name": "bluetoothUsage",
-            "printedName": "bluetoothUsage",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "DKBluetoothUsage",
-                "printedName": "DriveKitCoreModule.DKBluetoothUsage",
-                "usr": "s:18DriveKitCoreModule16DKBluetoothUsageO"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:26DriveKitTripAnalysisModule0abcD0C14bluetoothUsage0ab4CoreE0011DKBluetoothG0Ovp",
-            "mangledName": "$s26DriveKitTripAnalysisModule0abcD0C14bluetoothUsage0ab4CoreE0011DKBluetoothG0Ovp",
-            "moduleName": "DriveKitTripAnalysisModule",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "DKBluetoothUsage",
-                    "printedName": "DriveKitCoreModule.DKBluetoothUsage",
-                    "usr": "s:18DriveKitCoreModule16DKBluetoothUsageO"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:26DriveKitTripAnalysisModule0abcD0C14bluetoothUsage0ab4CoreE0011DKBluetoothG0Ovg",
-                "mangledName": "$s26DriveKitTripAnalysisModule0abcD0C14bluetoothUsage0ab4CoreE0011DKBluetoothG0Ovg",
-                "moduleName": "DriveKitTripAnalysisModule",
-                "accessorKind": "get"
-              }
-            ]
-          },
-          {
-            "kind": "Function",
-            "name": "tripSyncFinishedWithEndTripLocations",
-            "printedName": "tripSyncFinishedWithEndTripLocations(endTripLocations:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Dictionary",
-                "printedName": "[DriveKitCoreModule.DKTransportationMeans : any DriveKitCoreModule.DKTripLocation]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "DKTransportationMeans",
-                    "printedName": "DriveKitCoreModule.DKTransportationMeans",
-                    "usr": "s:18DriveKitCoreModule21DKTransportationMeansO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "DKTripLocation",
-                    "printedName": "any DriveKitCoreModule.DKTripLocation",
-                    "usr": "c:@M@DriveKitCoreModule@objc(pl)DKTripLocation"
-                  }
-                ],
-                "usr": "s:SD"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:26DriveKitTripAnalysisModule0abcD0C023tripSyncFinishedWithEndC9Locations03endcK0ySDy0ab4CoreE021DKTransportationMeansOAF14DKTripLocation_pG_tF",
-            "mangledName": "$s26DriveKitTripAnalysisModule0abcD0C023tripSyncFinishedWithEndC9Locations03endcK0ySDy0ab4CoreE021DKTransportationMeansOAF14DKTripLocation_pG_tF",
-            "moduleName": "DriveKitTripAnalysisModule",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
             "kind": "Function",
             "name": "isTripRunning",
             "printedName": "isTripRunning()",
@@ -24192,8 +24047,8 @@
           },
           {
             "kind": "Function",
-            "name": "tripStarted",
-            "printedName": "tripStarted(startMode:)",
+            "name": "tripRecordingConfirmed",
+            "printedName": "tripRecordingConfirmed(state:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -24202,16 +24057,19 @@
               },
               {
                 "kind": "TypeNominal",
-                "name": "StartMode",
-                "printedName": "DriveKitTripAnalysisModule.StartMode",
-                "usr": "c:@M@DriveKitTripAnalysisModule@E@StartMode"
+                "name": "DKTripRecordingConfirmedState",
+                "printedName": "any DriveKitTripAnalysisModule.DKTripRecordingConfirmedState",
+                "usr": "c:@M@DriveKitTripAnalysisModule@objc(pl)DKTripRecordingConfirmedState"
               }
             ],
             "declKind": "Func",
-            "usr": "s:26DriveKitTripAnalysisModule0abcD0C11tripStarted9startModeyAA05StartI0O_tF",
-            "mangledName": "$s26DriveKitTripAnalysisModule0abcD0C11tripStarted9startModeyAA05StartI0O_tF",
+            "usr": "c:@CM@DriveKitTripAnalysisModule@objc(cs)DriveKitTripAnalysis(im)tripRecordingConfirmedWithState:",
+            "mangledName": "$s26DriveKitTripAnalysisModule0abcD0C22tripRecordingConfirmed5stateyAA06DKTripgH5State_p_tF",
             "moduleName": "DriveKitTripAnalysisModule",
+            "objc_name": "tripRecordingConfirmedWithState:",
             "declAttributes": [
+              "Dynamic",
+              "ObjC",
               "AccessControl"
             ],
             "isFromExtension": true,
@@ -24295,10 +24153,10 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "DKTripAnalysisModule",
-            "printedName": "DKTripAnalysisModule",
-            "usr": "s:18DriveKitCoreModule014DKTripAnalysisD0P",
-            "mangledName": "$s18DriveKitCoreModule014DKTripAnalysisD0P"
+            "name": "TripListener",
+            "printedName": "TripListener",
+            "usr": "c:@M@DriveKitTripAnalysisModule@objc(pl)TripListener",
+            "mangledName": "$s26DriveKitTripAnalysisModule0C8ListenerP"
           },
           {
             "kind": "Conformance",
@@ -24306,13 +24164,6 @@
             "printedName": "DriveKitDelegate",
             "usr": "c:@M@DriveKitCoreModule@objc(pl)DriveKitDelegate",
             "mangledName": "$s18DriveKitCoreModule0aB8DelegateP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "TripListener",
-            "printedName": "TripListener",
-            "usr": "c:@M@DriveKitTripAnalysisModule@objc(pl)TripListener",
-            "mangledName": "$s26DriveKitTripAnalysisModule0C8ListenerP"
           },
           {
             "kind": "Conformance",
@@ -26554,56 +26405,63 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/autostart\/GeoZoneStartManager.swift",
       "kind": "StringLiteral",
-      "offset": 415,
-      "length": 9,
-      "value": "\"geozone\""
+      "offset": 458,
+      "length": 15,
+      "value": "\"DK-TA-geozone\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/autostart\/GeoZoneStartManager.swift",
       "kind": "StringLiteral",
-      "offset": 481,
-      "length": 16,
-      "value": "\"geozoneVisited\""
+      "offset": 530,
+      "length": 22,
+      "value": "\"DK-TA-geozoneVisited\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/autostart\/GeoZoneStartManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 856,
+      "offset": 911,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/autostart\/GeoZoneStartManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1876,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/autostart\/GeoZoneStartManager.swift",
       "kind": "StringLiteral",
-      "offset": 4950,
+      "offset": 7460,
       "length": 110,
       "value": "\"^(\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/autostart\/GeoZoneStartManager.swift",
       "kind": "StringLiteral",
-      "offset": 4999,
+      "offset": 7509,
       "length": 1,
       "value": "\"|\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/autostart\/GeoZoneStartManager.swift",
       "kind": "StringLiteral",
-      "offset": 5053,
+      "offset": 7563,
       "length": 1,
       "value": "\")[01]$\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/autostart\/GeoZoneStartManager.swift",
       "kind": "StringLiteral",
-      "offset": 5091,
+      "offset": 7601,
       "length": 54,
       "value": "\"^\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/autostart\/GeoZoneStartManager.swift",
       "kind": "StringLiteral",
-      "offset": 5139,
+      "offset": 7649,
       "length": 1,
       "value": "\"[01]$\""
     },
@@ -27639,7 +27497,7 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripAnalysisConfig.swift",
       "kind": "BooleanLiteral",
-      "offset": 1718,
+      "offset": 1712,
       "length": 5,
       "value": "false"
     },
@@ -28143,21 +28001,21 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripAnalysisConstant.swift",
       "kind": "IntegerLiteral",
-      "offset": 6653,
+      "offset": 6431,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripAnalysisConstant.swift",
       "kind": "IntegerLiteral",
-      "offset": 6698,
+      "offset": 6476,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripAnalysisConstant.swift",
       "kind": "IntegerLiteral",
-      "offset": 6739,
+      "offset": 6517,
       "length": 1,
       "value": "2"
     },
@@ -28661,21 +28519,28 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/autostart\/BeaconStartManager.swift",
       "kind": "Array",
-      "offset": 403,
-      "length": 2,
-      "value": "[]"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/autostart\/BeaconStartManager.swift",
-      "kind": "Array",
       "offset": 446,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/autostart\/BeaconStartManager.swift",
+      "kind": "Array",
+      "offset": 489,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/autostart\/BeaconStartManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 626,
+      "offset": 669,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/autostart\/BeaconStartManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2219,
       "length": 4,
       "value": "true"
     },
@@ -28738,70 +28603,70 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/DriveKitTripAnalysis.swift",
       "kind": "BooleanLiteral",
-      "offset": 4024,
+      "offset": 4007,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/DriveKitTripAnalysis.swift",
       "kind": "FloatLiteral",
-      "offset": 4305,
+      "offset": 4354,
       "length": 4,
       "value": "0.08"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/DriveKitTripAnalysis.swift",
       "kind": "BooleanLiteral",
-      "offset": 4342,
+      "offset": 4391,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/DriveKitTripAnalysis.swift",
       "kind": "BooleanLiteral",
-      "offset": 5500,
+      "offset": 5549,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/DriveKitTripAnalysis.swift",
       "kind": "BooleanLiteral",
-      "offset": 5550,
+      "offset": 5599,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/DriveKitTripAnalysis.swift",
       "kind": "StringLiteral",
-      "offset": 5737,
+      "offset": 5786,
       "length": 25,
       "value": "\"already-using-clmonitor\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/DriveKitTripAnalysis.swift",
       "kind": "StringLiteral",
-      "offset": 5811,
+      "offset": 5860,
       "length": 37,
       "value": "\"already-using-clmonitor-for-beacons\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/DriveKitTripAnalysis.swift",
       "kind": "StringLiteral",
-      "offset": 5900,
+      "offset": 5949,
       "length": 42,
       "value": "\"already-not-using-clmonitor-for-geozones\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/DriveKitTripAnalysis.swift",
       "kind": "StringLiteral",
-      "offset": 5993,
+      "offset": 6042,
       "length": 41,
       "value": "\"already-not-using-clmonitor-for-beacons\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/DriveKitTripAnalysis.swift",
       "kind": "BooleanLiteral",
-      "offset": 23869,
+      "offset": 23605,
       "length": 5,
       "value": "false"
     },

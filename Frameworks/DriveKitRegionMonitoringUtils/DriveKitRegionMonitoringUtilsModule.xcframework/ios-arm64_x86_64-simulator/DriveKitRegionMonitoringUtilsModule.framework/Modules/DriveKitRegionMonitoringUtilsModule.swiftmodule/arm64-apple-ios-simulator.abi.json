@@ -1509,6 +1509,34 @@
               "AccessControl"
             ],
             "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "matchUuid",
+            "printedName": "matchUuid(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:35DriveKitRegionMonitoringUtilsModule19DKBeaconScanResultsC9matchUuidySbSSF",
+            "mangledName": "$s35DriveKitRegionMonitoringUtilsModule19DKBeaconScanResultsC9matchUuidySbSSF",
+            "moduleName": "DriveKitRegionMonitoringUtilsModule",
+            "declAttributes": [
+              "Final",
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -1569,6 +1597,620 @@
       },
       {
         "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "DriveKitRegionMonitoringUtilsModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DKGeozoneExitConfiguration",
+        "printedName": "DKGeozoneExitConfiguration",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "geozoneConfiguration",
+            "printedName": "geozoneConfiguration",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DKGeozoneConfiguration",
+                "printedName": "DriveKitRegionMonitoringUtilsModule.DKGeozoneConfiguration",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule22DKGeozoneConfigurationV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:35DriveKitRegionMonitoringUtilsModule26DKGeozoneExitConfigurationC07geozoneI0AA0gI0Vvp",
+            "mangledName": "$s35DriveKitRegionMonitoringUtilsModule26DKGeozoneExitConfigurationC07geozoneI0AA0gI0Vvp",
+            "moduleName": "DriveKitRegionMonitoringUtilsModule",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKGeozoneConfiguration",
+                    "printedName": "DriveKitRegionMonitoringUtilsModule.DKGeozoneConfiguration",
+                    "usr": "s:35DriveKitRegionMonitoringUtilsModule22DKGeozoneConfigurationV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule26DKGeozoneExitConfigurationC07geozoneI0AA0gI0Vvg",
+                "mangledName": "$s35DriveKitRegionMonitoringUtilsModule26DKGeozoneExitConfigurationC07geozoneI0AA0gI0Vvg",
+                "moduleName": "DriveKitRegionMonitoringUtilsModule",
+                "implicit": true,
+                "declAttributes": [
+                  "Final"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "delegate",
+            "printedName": "delegate",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "WeakStorage",
+                "printedName": "(any DriveKitRegionMonitoringUtilsModule.DKGeozoneExitResultsDelegate)?"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:35DriveKitRegionMonitoringUtilsModule26DKGeozoneExitConfigurationC8delegateAA0gH15ResultsDelegate_pSgvp",
+            "mangledName": "$s35DriveKitRegionMonitoringUtilsModule26DKGeozoneExitConfigurationC8delegateAA0gH15ResultsDelegate_pSgvp",
+            "moduleName": "DriveKitRegionMonitoringUtilsModule",
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "ReferenceOwnership",
+              "AccessControl"
+            ],
+            "ownership": 1,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any DriveKitRegionMonitoringUtilsModule.DKGeozoneExitResultsDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKGeozoneExitResultsDelegate",
+                        "printedName": "any DriveKitRegionMonitoringUtilsModule.DKGeozoneExitResultsDelegate",
+                        "usr": "s:35DriveKitRegionMonitoringUtilsModule28DKGeozoneExitResultsDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule26DKGeozoneExitConfigurationC8delegateAA0gH15ResultsDelegate_pSgvg",
+                "mangledName": "$s35DriveKitRegionMonitoringUtilsModule26DKGeozoneExitConfigurationC8delegateAA0gH15ResultsDelegate_pSgvg",
+                "moduleName": "DriveKitRegionMonitoringUtilsModule",
+                "implicit": true,
+                "accessorKind": "get"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Set",
+                "printedName": "Set()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "(any DriveKitRegionMonitoringUtilsModule.DKGeozoneExitResultsDelegate)?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DKGeozoneExitResultsDelegate",
+                        "printedName": "any DriveKitRegionMonitoringUtilsModule.DKGeozoneExitResultsDelegate",
+                        "usr": "s:35DriveKitRegionMonitoringUtilsModule28DKGeozoneExitResultsDelegateP"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule26DKGeozoneExitConfigurationC8delegateAA0gH15ResultsDelegate_pSgvs",
+                "mangledName": "$s35DriveKitRegionMonitoringUtilsModule26DKGeozoneExitConfigurationC8delegateAA0gH15ResultsDelegate_pSgvs",
+                "moduleName": "DriveKitRegionMonitoringUtilsModule",
+                "implicit": true,
+                "accessorKind": "set"
+              },
+              {
+                "kind": "Accessor",
+                "name": "Modify",
+                "printedName": "Modify()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule26DKGeozoneExitConfigurationC8delegateAA0gH15ResultsDelegate_pSgvM",
+                "mangledName": "$s35DriveKitRegionMonitoringUtilsModule26DKGeozoneExitConfigurationC8delegateAA0gH15ResultsDelegate_pSgvM",
+                "moduleName": "DriveKitRegionMonitoringUtilsModule",
+                "implicit": true,
+                "accessorKind": "_modify"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(geozoneConfiguration:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DKGeozoneExitConfiguration",
+                "printedName": "DriveKitRegionMonitoringUtilsModule.DKGeozoneExitConfiguration",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule26DKGeozoneExitConfigurationC"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DKGeozoneConfiguration",
+                "printedName": "DriveKitRegionMonitoringUtilsModule.DKGeozoneConfiguration",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule22DKGeozoneConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any DriveKitRegionMonitoringUtilsModule.DKGeozoneExitResultsDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DKGeozoneExitResultsDelegate",
+                    "printedName": "any DriveKitRegionMonitoringUtilsModule.DKGeozoneExitResultsDelegate",
+                    "usr": "s:35DriveKitRegionMonitoringUtilsModule28DKGeozoneExitResultsDelegateP"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:35DriveKitRegionMonitoringUtilsModule26DKGeozoneExitConfigurationC07geozoneI08delegateAcA0gI0V_AA0gH15ResultsDelegate_pSgtcfc",
+            "mangledName": "$s35DriveKitRegionMonitoringUtilsModule26DKGeozoneExitConfigurationC07geozoneI08delegateAcA0gI0V_AA0gH15ResultsDelegate_pSgtcfc",
+            "moduleName": "DriveKitRegionMonitoringUtilsModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "s:35DriveKitRegionMonitoringUtilsModule26DKGeozoneExitConfigurationC",
+        "mangledName": "$s35DriveKitRegionMonitoringUtilsModule26DKGeozoneExitConfigurationC",
+        "moduleName": "DriveKitRegionMonitoringUtilsModule",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DKGeozoneConfiguration",
+        "printedName": "DKGeozoneConfiguration",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "longitude",
+            "printedName": "longitude",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:35DriveKitRegionMonitoringUtilsModule22DKGeozoneConfigurationV9longitudeSdvp",
+            "mangledName": "$s35DriveKitRegionMonitoringUtilsModule22DKGeozoneConfigurationV9longitudeSdvp",
+            "moduleName": "DriveKitRegionMonitoringUtilsModule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule22DKGeozoneConfigurationV9longitudeSdvg",
+                "mangledName": "$s35DriveKitRegionMonitoringUtilsModule22DKGeozoneConfigurationV9longitudeSdvg",
+                "moduleName": "DriveKitRegionMonitoringUtilsModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "latitude",
+            "printedName": "latitude",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:35DriveKitRegionMonitoringUtilsModule22DKGeozoneConfigurationV8latitudeSdvp",
+            "mangledName": "$s35DriveKitRegionMonitoringUtilsModule22DKGeozoneConfigurationV8latitudeSdvp",
+            "moduleName": "DriveKitRegionMonitoringUtilsModule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule22DKGeozoneConfigurationV8latitudeSdvg",
+                "mangledName": "$s35DriveKitRegionMonitoringUtilsModule22DKGeozoneConfigurationV8latitudeSdvg",
+                "moduleName": "DriveKitRegionMonitoringUtilsModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "radius",
+            "printedName": "radius",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:35DriveKitRegionMonitoringUtilsModule22DKGeozoneConfigurationV6radiusSdvp",
+            "mangledName": "$s35DriveKitRegionMonitoringUtilsModule22DKGeozoneConfigurationV6radiusSdvp",
+            "moduleName": "DriveKitRegionMonitoringUtilsModule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Double",
+                    "printedName": "Swift.Double",
+                    "usr": "s:Sd"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule22DKGeozoneConfigurationV6radiusSdvg",
+                "mangledName": "$s35DriveKitRegionMonitoringUtilsModule22DKGeozoneConfigurationV6radiusSdvg",
+                "moduleName": "DriveKitRegionMonitoringUtilsModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(longitude:latitude:radius:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DKGeozoneConfiguration",
+                "printedName": "DriveKitRegionMonitoringUtilsModule.DKGeozoneConfiguration",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule22DKGeozoneConfigurationV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Double",
+                "printedName": "Swift.Double",
+                "usr": "s:Sd"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:35DriveKitRegionMonitoringUtilsModule22DKGeozoneConfigurationV9longitude8latitude6radiusACSd_S2dtcfc",
+            "mangledName": "$s35DriveKitRegionMonitoringUtilsModule22DKGeozoneConfigurationV9longitude8latitude6radiusACSd_S2dtcfc",
+            "moduleName": "DriveKitRegionMonitoringUtilsModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:35DriveKitRegionMonitoringUtilsModule22DKGeozoneConfigurationV",
+        "mangledName": "$s35DriveKitRegionMonitoringUtilsModule22DKGeozoneConfigurationV",
+        "moduleName": "DriveKitRegionMonitoringUtilsModule",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DKGeozoneExitResultsDelegate",
+        "printedName": "DKGeozoneExitResultsDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "geozoneEventDetected",
+            "printedName": "geozoneEventDetected(identifier:geozoneEventResults:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DKGeozoneExitResults",
+                "printedName": "DriveKitRegionMonitoringUtilsModule.DKGeozoneExitResults",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule20DKGeozoneExitResultsV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:35DriveKitRegionMonitoringUtilsModule28DKGeozoneExitResultsDelegateP20geozoneEventDetected10identifier0klI0ySS_AA0ghI0VtF",
+            "mangledName": "$s35DriveKitRegionMonitoringUtilsModule28DKGeozoneExitResultsDelegateP20geozoneEventDetected10identifier0klI0ySS_AA0ghI0VtF",
+            "moduleName": "DriveKitRegionMonitoringUtilsModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : DriveKitRegionMonitoringUtilsModule.DKGeozoneExitResultsDelegate>",
+            "sugared_genericSig": "<Self where Self : DriveKitRegionMonitoringUtilsModule.DKGeozoneExitResultsDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "identifierAlreadyRegisteredError",
+            "printedName": "identifierAlreadyRegisteredError(identifier:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:35DriveKitRegionMonitoringUtilsModule28DKGeozoneExitResultsDelegateP32identifierAlreadyRegisteredError0K0ySS_tF",
+            "mangledName": "$s35DriveKitRegionMonitoringUtilsModule28DKGeozoneExitResultsDelegateP32identifierAlreadyRegisteredError0K0ySS_tF",
+            "moduleName": "DriveKitRegionMonitoringUtilsModule",
+            "genericSig": "<τ_0_0 where τ_0_0 : DriveKitRegionMonitoringUtilsModule.DKGeozoneExitResultsDelegate>",
+            "sugared_genericSig": "<Self where Self : DriveKitRegionMonitoringUtilsModule.DKGeozoneExitResultsDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:35DriveKitRegionMonitoringUtilsModule28DKGeozoneExitResultsDelegateP",
+        "mangledName": "$s35DriveKitRegionMonitoringUtilsModule28DKGeozoneExitResultsDelegateP",
+        "moduleName": "DriveKitRegionMonitoringUtilsModule",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DKGeozoneExitResults",
+        "printedName": "DKGeozoneExitResults",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "detectedAt",
+            "printedName": "detectedAt",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Date",
+                "printedName": "Foundation.Date",
+                "usr": "s:10Foundation4DateV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:35DriveKitRegionMonitoringUtilsModule20DKGeozoneExitResultsV10detectedAt10Foundation4DateVvp",
+            "mangledName": "$s35DriveKitRegionMonitoringUtilsModule20DKGeozoneExitResultsV10detectedAt10Foundation4DateVvp",
+            "moduleName": "DriveKitRegionMonitoringUtilsModule",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Date",
+                    "printedName": "Foundation.Date",
+                    "usr": "s:10Foundation4DateV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule20DKGeozoneExitResultsV10detectedAt10Foundation4DateVvg",
+                "mangledName": "$s35DriveKitRegionMonitoringUtilsModule20DKGeozoneExitResultsV10detectedAt10Foundation4DateVvg",
+                "moduleName": "DriveKitRegionMonitoringUtilsModule",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Struct",
+        "usr": "s:35DriveKitRegionMonitoringUtilsModule20DKGeozoneExitResultsV",
+        "mangledName": "$s35DriveKitRegionMonitoringUtilsModule20DKGeozoneExitResultsV",
+        "moduleName": "DriveKitRegionMonitoringUtilsModule",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
         "declKind": "Import",
@@ -1600,6 +2242,13 @@
         "declAttributes": [
           "RawDocComment"
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreLocation",
+        "printedName": "CoreLocation",
+        "declKind": "Import",
+        "moduleName": "DriveKitRegionMonitoringUtilsModule"
       },
       {
         "kind": "Import",
@@ -1698,6 +2347,38 @@
           },
           {
             "kind": "Function",
+            "name": "registerDelegate",
+            "printedName": "registerDelegate(identifier:geozoneExitConfiguration:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DKGeozoneExitConfiguration",
+                "printedName": "DriveKitRegionMonitoringUtilsModule.DKGeozoneExitConfiguration",
+                "usr": "s:35DriveKitRegionMonitoringUtilsModule26DKGeozoneExitConfigurationC"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:35DriveKitRegionMonitoringUtilsModule08DKRegionD7ManagerC16registerDelegate10identifier24geozoneExitConfigurationySS_AA09DKGeozonemN0CtYaF",
+            "mangledName": "$s35DriveKitRegionMonitoringUtilsModule08DKRegionD7ManagerC16registerDelegate10identifier24geozoneExitConfigurationySS_AA09DKGeozonemN0CtYaF",
+            "moduleName": "DriveKitRegionMonitoringUtilsModule",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
             "name": "unregisterDelegate",
             "printedName": "unregisterDelegate(identifier:)",
             "children": [
@@ -1719,27 +2400,6 @@
             "moduleName": "DriveKitRegionMonitoringUtilsModule",
             "declAttributes": [
               "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "reset",
-            "printedName": "reset()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:35DriveKitRegionMonitoringUtilsModule08DKRegionD7ManagerC5resetyyF",
-            "mangledName": "$s35DriveKitRegionMonitoringUtilsModule08DKRegionD7ManagerC5resetyyF",
-            "moduleName": "DriveKitRegionMonitoringUtilsModule",
-            "declAttributes": [
-              "AccessControl",
-              "Nonisolated"
             ],
             "funcSelfKind": "NonMutating"
           },
@@ -1833,13 +2493,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "DKRegionMonitoringModule",
-            "printedName": "DKRegionMonitoringModule",
-            "usr": "s:18DriveKitCoreModule018DKRegionMonitoringD0P",
-            "mangledName": "$s18DriveKitCoreModule018DKRegionMonitoringD0P"
-          },
-          {
-            "kind": "Conformance",
             "name": "Sendable",
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
@@ -1914,42 +2567,63 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-region-monitoring-utils\/MonitoringService.swift",
       "kind": "Array",
-      "offset": 504,
+      "offset": 637,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-region-monitoring-utils\/MonitoringService.swift",
       "kind": "Array",
-      "offset": 550,
+      "offset": 699,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-region-monitoring-utils\/MonitoringService.swift",
+      "kind": "Array",
+      "offset": 741,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-region-monitoring-utils\/MonitoringService.swift",
+      "kind": "Array",
+      "offset": 797,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-region-monitoring-utils\/MonitoringService.swift",
       "kind": "BooleanLiteral",
-      "offset": 594,
+      "offset": 851,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-region-monitoring-utils\/MonitoringService.swift",
       "kind": "Array",
-      "offset": 644,
+      "offset": 901,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-region-monitoring-utils\/MonitoringService.swift",
+      "kind": "Array",
+      "offset": 959,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-region-monitoring-utils\/MonitoringService.swift",
       "kind": "BooleanLiteral",
-      "offset": 686,
+      "offset": 1011,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-region-monitoring-utils\/DKRegionMonitoringManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 422,
+      "offset": 416,
       "length": 2,
       "value": "20"
     },
@@ -1963,7 +2637,14 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-region-monitoring-utils\/DKRegionMonitoringManager.swift",
       "kind": "Dictionary",
-      "offset": 751,
+      "offset": 769,
+      "length": 3,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-region-monitoring-utils\/DKRegionMonitoringManager.swift",
+      "kind": "Dictionary",
+      "offset": 835,
       "length": 3,
       "value": "[]"
     },

@@ -666,11 +666,22 @@ public struct DKConfigStolenVehicleLocator {
 @_hasMissingDesignatedInitializers public class DKModuleManager {
   public var tripAnalysis: (any DriveKitCoreModule.DKTripAnalysisModule)?
   public var vehicle: (any DriveKitCoreModule.DKVehicleModule)?
-  public var regionMonitoringManager: (any DriveKitCoreModule.DKRegionMonitoringModule)?
+  public var locationUtils: (any DriveKitCoreModule.DKBaseModule)?
+  public var driverData: (any DriveKitCoreModule.DKBaseModule)?
+  public var driverAchievement: (any DriveKitCoreModule.DKBaseModule)?
+  public var challenge: (any DriveKitCoreModule.DKBaseModule)?
+  public var coaching: (any DriveKitCoreModule.DKBaseModule)?
+  public var group: (any DriveKitCoreModule.DKBaseModule)?
+  public var tripSimulator: (any DriveKitCoreModule.DKBaseModule)?
+  public var regionMonitoringManager: (any DriveKitCoreModule.DKBaseModule)?
   public var stolenVehicleLocator: (any DriveKitCoreModule.DKStolenVehicleLocatorModule)?
   @objc deinit
 }
-public protocol DKTripAnalysisModule {
+public protocol DKBaseModule {
+  func reset()
+  func clearSessionData()
+}
+public protocol DKTripAnalysisModule : DriveKitCoreModule.DKBaseModule {
   func checkTripToRepost()
   var bluetoothUsage: DriveKitCoreModule.DKBluetoothUsage { get }
   func tripSyncFinishedWithEndTripLocations(endTripLocations: [DriveKitCoreModule.DKTransportationMeans : any DriveKitCoreModule.DKTripLocation])
@@ -685,14 +696,11 @@ public enum DKBluetoothUsage {
     get
   }
 }
-public protocol DKVehicleModule {
+public protocol DKVehicleModule : DriveKitCoreModule.DKBaseModule {
   func syncVehicles(_ completionHandler: @escaping (Swift.Bool) -> Swift.Void)
   func getConfig() -> DriveKitCoreModule.DKConfigVehicle
 }
-public protocol DKRegionMonitoringModule {
-  func reset()
-}
-public protocol DKStolenVehicleLocatorModule {
+public protocol DKStolenVehicleLocatorModule : DriveKitCoreModule.DKBaseModule {
   func startPerformanceMode()
   func stopPerformanceMode()
   func beaconsToIgnoreUpdate(beacons: [DriveKitCoreModule.BeaconData])

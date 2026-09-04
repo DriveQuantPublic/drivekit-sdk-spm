@@ -667,6 +667,7 @@ SWIFT_PROTOCOL("_TtP26DriveKitTripAnalysisModule12TripListener_")
 @end
 
 @interface DriveKitTripAnalysis (SWIFT_EXTENSION(DriveKitTripAnalysisModule)) <TripListener>
+- (void)tripRecordingConfirmedWithState:(id <DKTripRecordingConfirmedState> _Nonnull)state;
 - (void)tripFinishedWithResponseStatus:(TripResponseStatus * _Nonnull)responseStatus;
 - (void)potentialTripStartWithStartMode:(enum StartMode)startMode;
 @end

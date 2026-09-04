@@ -6242,27 +6242,6 @@
         "printedName": "DriveKitVehicle",
         "children": [
           {
-            "kind": "Function",
-            "name": "getConfig",
-            "printedName": "getConfig()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "DKConfigVehicle",
-                "printedName": "DriveKitCoreModule.DKConfigVehicle",
-                "usr": "s:18DriveKitCoreModule15DKConfigVehicleV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:21DriveKitVehicleModule0abC0C9getConfig0ab4CoreD008DKConfigC0VyF",
-            "mangledName": "$s21DriveKitVehicleModule0abC0C9getConfig0ab4CoreD008DKConfigC0VyF",
-            "moduleName": "DriveKitVehicleModule",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
             "kind": "Var",
             "name": "sdkVersion",
             "printedName": "sdkVersion",
@@ -8240,44 +8219,6 @@
               "AccessControl"
             ],
             "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "syncVehicles",
-            "printedName": "syncVehicles(_:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(Swift.Bool) -> ()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  }
-                ]
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:21DriveKitVehicleModule0abC0C12syncVehiclesyyySbcF",
-            "mangledName": "$s21DriveKitVehicleModule0abC0C12syncVehiclesyyySbcF",
-            "moduleName": "DriveKitVehicleModule",
-            "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
           }
         ],
         "declKind": "Class",
@@ -8295,13 +8236,6 @@
           "ObjectiveC.NSObject"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "DKVehicleModule",
-            "printedName": "DKVehicleModule",
-            "usr": "s:18DriveKitCoreModule09DKVehicleD0P",
-            "mangledName": "$s18DriveKitCoreModule09DKVehicleD0P"
-          },
           {
             "kind": "Conformance",
             "name": "_KeyValueCodingAndObserving",
@@ -20221,28 +20155,28 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehicle.swift",
       "kind": "BooleanLiteral",
-      "offset": 6357,
+      "offset": 6422,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehicle.swift",
       "kind": "BooleanLiteral",
-      "offset": 8727,
+      "offset": 8792,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehicle.swift",
       "kind": "BooleanLiteral",
-      "offset": 12601,
+      "offset": 12666,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-vehicle\/DriveKitVehicle.swift",
       "kind": "BooleanLiteral",
-      "offset": 30998,
+      "offset": 31063,
       "length": 4,
       "value": "true"
     },

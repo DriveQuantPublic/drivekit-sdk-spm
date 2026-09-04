@@ -192,8 +192,7 @@ public enum TimelineSyncStatus {
 extension DriveKitVehicleModule.DKVehicleEngineIndex {
   public init(value: Swift.String)
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class DriveKitVehicle : ObjectiveC.NSObject, DriveKitCoreModule.DKVehicleModule {
-  public func getConfig() -> DriveKitCoreModule.DKConfigVehicle
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class DriveKitVehicle : ObjectiveC.NSObject {
   @objc public static let sdkVersion: Swift.String
   @objc public static let shared: DriveKitVehicleModule.DriveKitVehicle
   @objc public func initialize()
@@ -223,7 +222,6 @@ extension DriveKitVehicleModule.DKVehicleEngineIndex {
   @objc public func changeBeacon(vehicleId: Swift.String, oldVehicleId: Swift.String, beacon: DriveKitBeaconUtilsModule.DKBeacon, completionHandler: @escaping (DriveKitVehicleModule.DKVehicleBeaconStatus) -> Swift.Void)
   @objc public func removeBeacon(vehicleId: Swift.String, completionHandler: @escaping (DriveKitVehicleModule.DKVehicleBeaconRemoveStatus) -> Swift.Void)
   public func getTimeline(vehicleId: Swift.String, periods: [DriveKitCoreModule.DKPeriod], type: DriveKitCoreModule.SynchronizationType = .defaultSync, completionHandler: @escaping (DriveKitVehicleModule.TimelineSyncStatus, [DriveKitDBVehicleAccessModule.DKVehicleTimeline]?) -> Swift.Void)
-  public func syncVehicles(_ completionHandler: @escaping (Swift.Bool) -> Swift.Void)
   @objc deinit
 }
 @objc public enum DKTruckType : Swift.Int, Swift.CaseIterable {

@@ -99,12 +99,6 @@ public enum DKAddUuidErrorType {
   final public func disableScan(completion: @escaping (_ result: DriveKitStolenVehicleLocatorModule.DKDisableScanResult) -> Swift.Void)
   @objc deinit
 }
-extension DriveKitStolenVehicleLocatorModule.DriveKitStolenVehicleLocator : DriveKitCoreModule.DKStolenVehicleLocatorModule {
-  final public func startPerformanceMode()
-  final public func stopPerformanceMode()
-  final public func beaconsToIgnoreUpdate(beacons: [DriveKitCoreModule.BeaconData])
-  final public func getConfig() -> DriveKitCoreModule.DKConfigStolenVehicleLocator
-}
 extension DriveKitStolenVehicleLocatorModule.DriveKitStolenVehicleLocator : DriveKitDBVehicleAccessModule.DKVehicleUpdatedDelegate {
   final public func onVehicleUpdated()
 }

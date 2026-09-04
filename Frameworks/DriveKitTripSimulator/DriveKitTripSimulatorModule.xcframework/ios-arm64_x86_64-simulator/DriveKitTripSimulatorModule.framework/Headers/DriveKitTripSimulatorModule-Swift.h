@@ -382,11 +382,11 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) DriveKitTripSimulator * _Nonnull shared;)
 + (DriveKitTripSimulator * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly) BOOL isSimulatingTrip;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)initialize;
 - (void)startCrashTrip:(enum PresetCrashConfiguration)config delegate:(id <DKTripSimulatorDelegate> _Nullable)delegate;
 - (void)start:(enum PresetTrip)trip crash:(enum PresetCrash)crash crashTime:(NSInteger)crashTime delegate:(id <DKTripSimulatorDelegate> _Nullable)delegate;
 - (void)stop;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 #endif // defined(__OBJC__)
@@ -781,11 +781,11 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, copy) NSString * _No
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) DriveKitTripSimulator * _Nonnull shared;)
 + (DriveKitTripSimulator * _Nonnull)shared SWIFT_WARN_UNUSED_RESULT;
 @property (nonatomic, readonly) BOOL isSimulatingTrip;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 - (void)initialize;
 - (void)startCrashTrip:(enum PresetCrashConfiguration)config delegate:(id <DKTripSimulatorDelegate> _Nullable)delegate;
 - (void)start:(enum PresetTrip)trip crash:(enum PresetCrash)crash crashTime:(NSInteger)crashTime delegate:(id <DKTripSimulatorDelegate> _Nullable)delegate;
 - (void)stop;
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 #endif // defined(__OBJC__)

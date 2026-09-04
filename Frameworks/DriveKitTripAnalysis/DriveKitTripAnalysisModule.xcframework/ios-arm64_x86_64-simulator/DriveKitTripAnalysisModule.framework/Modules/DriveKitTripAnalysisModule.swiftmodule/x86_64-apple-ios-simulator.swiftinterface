@@ -378,7 +378,7 @@ public struct SpeedLimitContext : DriveKitNetworkingModule.DriveKitModel {
   public var crashFeedbackConfig: DriveKitTripAnalysisModule.DKCrashFeedbackConfig? {
     get
   }
-  public var useCLMonitor: Swift.Bool {
+  public var useRMU: Swift.Bool {
     get
   }
   @objc override dynamic public init()
@@ -565,8 +565,7 @@ public enum CrashFeedbackSeverity : Swift.String, Swift.Codable {
   public init(latitude: Swift.Double, longitude: Swift.Double, speed: Swift.Double, accuracy: Swift.Double, elevation: Swift.Double, distance: Swift.Double, heading: Swift.Double, duration: Swift.Double)
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class DriveKitTripAnalysis : ObjectiveC.NSObject, DriveKitCoreModule.DKTripAnalysisModule {
-  public func getConfig() -> DriveKitCoreModule.DKConfigTripAnalysis
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class DriveKitTripAnalysis : ObjectiveC.NSObject {
   @objc public static let sdkVersion: Swift.String
   @objc public static let shared: DriveKitTripAnalysisModule.DriveKitTripAnalysis
   @objc public var isCrashDetectionAvailable: Swift.Bool {
@@ -632,10 +631,6 @@ public enum CrashFeedbackSeverity : Swift.String, Swift.Codable {
   public func checkTripToRepost()
   @objc(checkTripToRepost) public func objc_checkTripToRepost()
   @objc(checkTripToRepost:) public func objc_checkTripToRepost(fromBackground: Swift.Bool)
-  public var bluetoothUsage: DriveKitCoreModule.DKBluetoothUsage {
-    get
-  }
-  public func tripSyncFinishedWithEndTripLocations(endTripLocations: [DriveKitCoreModule.DKTransportationMeans : any DriveKitCoreModule.DKTripLocation])
   @objc public func isTripRunning() -> Swift.Bool
   @objc public func getRecorderState() -> DriveKitTripAnalysisModule.State
   @objc public func temporaryDeactivationEndDate() -> Foundation.Date?
@@ -655,7 +650,7 @@ extension DriveKitTripAnalysisModule.DriveKitTripAnalysis : DriveKitCoreModule.D
   @objc dynamic public func driveKitDidConnect(_ driveKit: DriveKitCoreModule.DriveKit)
 }
 extension DriveKitTripAnalysisModule.DriveKitTripAnalysis : DriveKitTripAnalysisModule.TripListener {
-  public func tripStarted(startMode: DriveKitTripAnalysisModule.StartMode)
+  @objc dynamic public func tripRecordingConfirmed(state: any DriveKitTripAnalysisModule.DKTripRecordingConfirmedState)
   @objc dynamic public func tripFinished(responseStatus: DriveKitTripAnalysisModule.TripResponseStatus)
   @objc dynamic public func potentialTripStart(startMode: DriveKitTripAnalysisModule.StartMode)
 }

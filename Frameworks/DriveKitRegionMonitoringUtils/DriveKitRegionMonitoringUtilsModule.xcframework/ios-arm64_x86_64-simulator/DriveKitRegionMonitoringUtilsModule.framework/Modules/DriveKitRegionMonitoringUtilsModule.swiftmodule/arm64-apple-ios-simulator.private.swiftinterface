@@ -51,14 +51,34 @@ final public class DKBeaconScanResults : Swift.Sendable {
   public init(beacon: CoreLocation.CLBeacon, scanMode: DriveKitRegionMonitoringUtilsModule.DKScanMode)
   public init(uuid: Swift.String, major: Swift.Int?, minor: Swift.Int?, detectedAt: Foundation.Date, scanMode: DriveKitRegionMonitoringUtilsModule.DKScanMode)
   public init(uuid: Swift.String, detectedAt: Foundation.Date, scanMode: DriveKitRegionMonitoringUtilsModule.DKScanMode)
+  final public func matchUuid(_ uuid: Swift.String) -> Swift.Bool
   @objc deinit
 }
+public class DKGeozoneExitConfiguration {
+  final public let geozoneConfiguration: DriveKitRegionMonitoringUtilsModule.DKGeozoneConfiguration
+  weak public var delegate: (any DriveKitRegionMonitoringUtilsModule.DKGeozoneExitResultsDelegate)?
+  public init(geozoneConfiguration: DriveKitRegionMonitoringUtilsModule.DKGeozoneConfiguration, delegate: (any DriveKitRegionMonitoringUtilsModule.DKGeozoneExitResultsDelegate)? = nil)
+  @objc deinit
+}
+public struct DKGeozoneConfiguration {
+  public let longitude: _LocationEssentials.CLLocationDegrees
+  public let latitude: _LocationEssentials.CLLocationDegrees
+  public let radius: _LocationEssentials.CLLocationDistance
+  public init(longitude: _LocationEssentials.CLLocationDegrees, latitude: _LocationEssentials.CLLocationDegrees, radius: Swift.Double)
+}
+public protocol DKGeozoneExitResultsDelegate : AnyObject {
+  func geozoneEventDetected(identifier: Swift.String, geozoneEventResults: DriveKitRegionMonitoringUtilsModule.DKGeozoneExitResults)
+  func identifierAlreadyRegisteredError(identifier: Swift.String)
+}
+public struct DKGeozoneExitResults : Swift.Sendable {
+  public let detectedAt: Foundation.Date
+}
 @_hasMissingDesignatedInitializers @available(iOS 17.0, *)
-public actor DKRegionMonitoringManager : DriveKitCoreModule.DKRegionMonitoringModule {
+public actor DKRegionMonitoringManager {
   public static let shared: DriveKitRegionMonitoringUtilsModule.DKRegionMonitoringManager
   public func registerDelegate(identifier: Swift.String, beaconScanConfiguration: DriveKitRegionMonitoringUtilsModule.DKBeaconScanConfiguration) async
+  public func registerDelegate(identifier: Swift.String, geozoneExitConfiguration: DriveKitRegionMonitoringUtilsModule.DKGeozoneExitConfiguration) async
   public func unregisterDelegate(identifier: Swift.String) async
-  nonisolated public func reset()
   @objc deinit
   @available(iOS 17.0, tvOS 13.0, watchOS 6.0, macOS 10.15, *)
   @_semantics("defaultActor") nonisolated final public var unownedExecutor: _Concurrency.UnownedSerialExecutor {

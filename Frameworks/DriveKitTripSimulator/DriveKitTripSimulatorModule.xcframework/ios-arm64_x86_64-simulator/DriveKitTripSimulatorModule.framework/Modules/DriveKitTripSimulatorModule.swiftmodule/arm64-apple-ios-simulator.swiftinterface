@@ -27,11 +27,11 @@ public typealias DKTripSimulatorDelegate = DriveKitTripSimulatorApiModule.DKTrip
   @objc public var isSimulatingTrip: Swift.Bool {
     get
   }
+  @objc override dynamic public init()
   @objc public func initialize()
   @objc public func startCrashTrip(_ config: DriveKitTripSimulatorModule.PresetCrashConfiguration, delegate: (any DriveKitTripSimulatorApiModule.DKTripSimulatorDelegate)? = nil)
   @objc public func start(_ trip: DriveKitTripSimulatorModule.PresetTrip, crash: DriveKitTripSimulatorModule.PresetCrash = .none, crashTime: Swift.Int = -1, delegate: (any DriveKitTripSimulatorApiModule.DKTripSimulatorDelegate)? = nil)
   @objc public func stop()
-  @objc override dynamic public init()
   @objc deinit
 }
 extension DriveKitTripSimulatorApiModule.PresetTrip : @retroactive DriveKitTripSimulatorApiModule.PresetTripApi {

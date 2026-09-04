@@ -2377,109 +2377,6 @@
           },
           {
             "kind": "Function",
-            "name": "startPerformanceMode",
-            "printedName": "startPerformanceMode()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:34DriveKitStolenVehicleLocatorModule0abcdE0C20startPerformanceModeyyF",
-            "mangledName": "$s34DriveKitStolenVehicleLocatorModule0abcdE0C20startPerformanceModeyyF",
-            "moduleName": "DriveKitStolenVehicleLocatorModule",
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "stopPerformanceMode",
-            "printedName": "stopPerformanceMode()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:34DriveKitStolenVehicleLocatorModule0abcdE0C19stopPerformanceModeyyF",
-            "mangledName": "$s34DriveKitStolenVehicleLocatorModule0abcdE0C19stopPerformanceModeyyF",
-            "moduleName": "DriveKitStolenVehicleLocatorModule",
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "beaconsToIgnoreUpdate",
-            "printedName": "beaconsToIgnoreUpdate(beacons:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Array",
-                "printedName": "[DriveKitCoreModule.BeaconData]",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "BeaconData",
-                    "printedName": "DriveKitCoreModule.BeaconData",
-                    "usr": "c:@M@DriveKitCoreModule@objc(cs)BeaconData"
-                  }
-                ],
-                "usr": "s:Sa"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:34DriveKitStolenVehicleLocatorModule0abcdE0C21beaconsToIgnoreUpdate0G0ySay0ab4CoreF010BeaconDataCG_tF",
-            "mangledName": "$s34DriveKitStolenVehicleLocatorModule0abcdE0C21beaconsToIgnoreUpdate0G0ySay0ab4CoreF010BeaconDataCG_tF",
-            "moduleName": "DriveKitStolenVehicleLocatorModule",
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getConfig",
-            "printedName": "getConfig()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "DKConfigStolenVehicleLocator",
-                "printedName": "DriveKitCoreModule.DKConfigStolenVehicleLocator",
-                "usr": "s:18DriveKitCoreModule28DKConfigStolenVehicleLocatorV"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:34DriveKitStolenVehicleLocatorModule0abcdE0C9getConfig0ab4CoreF008DKConfigcdE0VyF",
-            "mangledName": "$s34DriveKitStolenVehicleLocatorModule0abcdE0C9getConfig0ab4CoreF008DKConfigcdE0VyF",
-            "moduleName": "DriveKitStolenVehicleLocatorModule",
-            "declAttributes": [
-              "Final",
-              "AccessControl"
-            ],
-            "isFromExtension": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
             "name": "onVehicleUpdated",
             "printedName": "onVehicleUpdated()",
             "children": [
@@ -2523,13 +2420,6 @@
             "printedName": "DKVehicleUpdatedDelegate",
             "usr": "s:29DriveKitDBVehicleAccessModule24DKVehicleUpdatedDelegateP",
             "mangledName": "$s29DriveKitDBVehicleAccessModule24DKVehicleUpdatedDelegateP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "DKStolenVehicleLocatorModule",
-            "printedName": "DKStolenVehicleLocatorModule",
-            "usr": "s:18DriveKitCoreModule022DKStolenVehicleLocatorD0P",
-            "mangledName": "$s18DriveKitCoreModule022DKStolenVehicleLocatorD0P"
           },
           {
             "kind": "Conformance",
@@ -2596,17 +2486,17 @@
           },
           {
             "kind": "Conformance",
-            "name": "Sendable",
-            "printedName": "Sendable",
-            "usr": "s:s8SendableP",
-            "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
             "name": "SendableMetatype",
             "printedName": "SendableMetatype",
             "usr": "s:s16SendableMetatypeP",
             "mangledName": "$ss16SendableMetatypeP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
           }
         ]
       },
@@ -3707,7 +3597,7 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-stolen-vehicle-locator\/DriveKitStolenVehicleLocator.swift",
       "kind": "BooleanLiteral",
-      "offset": 7362,
+      "offset": 7457,
       "length": 5,
       "value": "false"
     }
