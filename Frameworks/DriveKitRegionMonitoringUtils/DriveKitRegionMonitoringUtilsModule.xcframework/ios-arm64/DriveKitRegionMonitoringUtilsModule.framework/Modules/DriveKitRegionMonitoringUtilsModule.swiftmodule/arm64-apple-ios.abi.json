@@ -2420,15 +2420,7 @@
             "mangledName": "$s35DriveKitRegionMonitoringUtilsModule08DKRegionD7ManagerC15unownedExecutorScevp",
             "moduleName": "DriveKitRegionMonitoringUtilsModule",
             "implicit": true,
-            "intro_Macosx": "10.15",
-            "intro_iOS": "17.0",
-            "intro_tvOS": "13.0",
-            "intro_watchOS": "6.0",
             "declAttributes": [
-              "Available",
-              "Available",
-              "Available",
-              "Available",
               "Final",
               "Nonisolated",
               "Semantics"

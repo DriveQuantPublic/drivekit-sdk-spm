@@ -33826,6 +33826,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "CVAttachmentValueRepresentable",
+            "printedName": "CVAttachmentValueRepresentable",
+            "usr": "s:9CoreVideo30CVAttachmentValueRepresentableP",
+            "mangledName": "$s9CoreVideo30CVAttachmentValueRepresentableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "JSONSubscriptType",
             "printedName": "JSONSubscriptType",
             "usr": "s:24DriveKitNetworkingModule17JSONSubscriptTypeP",
@@ -34446,6 +34453,13 @@
         "conformances": [
           {
             "kind": "Conformance",
+            "name": "CVAttachmentValueRepresentable",
+            "printedName": "CVAttachmentValueRepresentable",
+            "usr": "s:9CoreVideo30CVAttachmentValueRepresentableP",
+            "mangledName": "$s9CoreVideo30CVAttachmentValueRepresentableP"
+          },
+          {
+            "kind": "Conformance",
             "name": "_FormatSpecifiable",
             "printedName": "_FormatSpecifiable",
             "children": [
@@ -34528,6 +34542,20 @@
             "printedName": "Comparable",
             "usr": "s:SL",
             "mangledName": "$sSL"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ConvertibleFromBytes",
+            "printedName": "ConvertibleFromBytes",
+            "usr": "s:s20ConvertibleFromBytesP",
+            "mangledName": "$ss20ConvertibleFromBytesP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "ConvertibleToBytes",
+            "printedName": "ConvertibleToBytes",
+            "usr": "s:s18ConvertibleToBytesP",
+            "mangledName": "$ss18ConvertibleToBytesP"
           },
           {
             "kind": "Conformance",
@@ -35007,8 +35035,7 @@
         "moduleName": "Foundation",
         "declAttributes": [
           "SynthesizedProtocol",
-          "NonSendable",
-          "Sendable"
+          "NonSendable"
         ],
         "isExternal": true,
         "conformances": [
@@ -35461,6 +35488,13 @@
         ],
         "isExternal": true,
         "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "CVAttachmentValueRepresentable",
+            "printedName": "CVAttachmentValueRepresentable",
+            "usr": "s:9CoreVideo30CVAttachmentValueRepresentableP",
+            "mangledName": "$s9CoreVideo30CVAttachmentValueRepresentableP"
+          },
           {
             "kind": "Conformance",
             "name": "ContiguousBytes",
@@ -36374,6 +36408,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "ConvertibleToBytes",
+            "printedName": "ConvertibleToBytes",
+            "usr": "s:s18ConvertibleToBytesP",
+            "mangledName": "$ss18ConvertibleToBytesP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Copyable",
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
@@ -36679,7 +36720,6 @@
           "ObjC",
           "SynthesizedProtocol",
           "NonSendable",
-          "Sendable",
           "Dynamic"
         ],
         "superclassUsr": "c:objc(cs)NSFormatter",
@@ -37001,7 +37041,6 @@
           "ObjC",
           "SynthesizedProtocol",
           "NonSendable",
-          "Sendable",
           "Dynamic"
         ],
         "superclassUsr": "c:objc(cs)NSObject",
@@ -37789,7 +37828,6 @@
         "declAttributes": [
           "ObjC",
           "SynthesizedProtocol",
-          "Sendable",
           "HasMissingDesignatedInitializers",
           "Dynamic"
         ],
@@ -37994,7 +38032,7 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/DriveKit.swift",
       "kind": "StringLiteral",
-      "offset": 20370,
+      "offset": 19626,
       "length": 19,
       "value": "\"DKAutoInitEnabled\""
     },
@@ -38274,35 +38312,35 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/sdkDiagnosis\/DKSDKDiagnosisOperation.swift",
       "kind": "IntegerLiteral",
-      "offset": 319,
+      "offset": 340,
       "length": 6,
       "value": "86400"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/sdkDiagnosis\/DKSDKDiagnosisOperation.swift",
       "kind": "FloatLiteral",
-      "offset": 385,
+      "offset": 406,
       "length": 4,
       "value": "26.0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/sdkDiagnosis\/DKSDKDiagnosisOperation.swift",
       "kind": "BooleanLiteral",
-      "offset": 709,
+      "offset": 730,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/sdkDiagnosis\/DKSDKDiagnosisOperation.swift",
       "kind": "BooleanLiteral",
-      "offset": 750,
+      "offset": 771,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/sdkDiagnosis\/DKSDKDiagnosisOperation.swift",
       "kind": "BooleanLiteral",
-      "offset": 796,
+      "offset": 817,
       "length": 5,
       "value": "false"
     },
@@ -38435,14 +38473,14 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/permissions\/DKDiagnosisHelper.swift",
       "kind": "FloatLiteral",
-      "offset": 6097,
+      "offset": 5743,
       "length": 3,
       "value": "0.1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/permissions\/DKDiagnosisHelper.swift",
       "kind": "IntegerLiteral",
-      "offset": 11162,
+      "offset": 10464,
       "length": 1,
       "value": "3"
     },

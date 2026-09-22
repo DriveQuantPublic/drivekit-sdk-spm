@@ -4906,6 +4906,27 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DriveKitDBChallengeAccessModule",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "DriveKitDBChallengeAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "DBChallenge",
         "printedName": "DBChallenge",
@@ -5060,8 +5081,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -5164,8 +5185,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -5268,8 +5289,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -5364,8 +5385,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -5452,8 +5473,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -5556,8 +5577,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -5652,8 +5673,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -5740,8 +5761,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -5836,8 +5857,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -5916,8 +5937,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -5996,8 +6017,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -6084,8 +6105,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -6180,8 +6201,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -6268,8 +6289,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -6372,8 +6393,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -6476,8 +6497,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -6580,8 +6601,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -6676,8 +6697,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -6764,8 +6785,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -6860,8 +6881,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -6948,8 +6969,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -7050,8 +7071,8 @@
             "objc_name": "addGroupsObject:",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -7082,8 +7103,8 @@
             "objc_name": "removeGroupsObject:",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -7114,8 +7135,8 @@
             "objc_name": "addGroups:",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -7146,8 +7167,8 @@
             "objc_name": "removeGroups:",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -7507,8 +7528,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -7603,8 +7624,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -7683,8 +7704,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -7771,8 +7792,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -7867,8 +7888,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -7947,8 +7968,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -8027,8 +8048,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -8115,8 +8136,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -8219,8 +8240,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -8323,8 +8344,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -8425,8 +8446,8 @@
             "objc_name": "addDriverRankedObject:",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -8457,8 +8478,8 @@
             "objc_name": "removeDriverRankedObject:",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -8489,8 +8510,8 @@
             "objc_name": "addDriverRanked:",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -8521,8 +8542,8 @@
             "objc_name": "removeDriverRanked:",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -8845,8 +8866,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -8925,8 +8946,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -9013,8 +9034,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -9109,8 +9130,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -9189,8 +9210,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -9277,8 +9298,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -9671,8 +9692,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -9751,8 +9772,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -9831,8 +9852,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -9911,8 +9932,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -9991,8 +10012,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -10079,8 +10100,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -10481,8 +10502,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -10585,8 +10606,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -10689,8 +10710,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -11091,8 +11112,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -11171,8 +11192,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -11251,8 +11272,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -11331,8 +11352,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -11411,8 +11432,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -11491,8 +11512,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -11571,8 +11592,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -11659,8 +11680,8 @@
             "moduleName": "DriveKitDBChallengeAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -11883,27 +11904,6 @@
             "usr": "s:s16SendableMetatypeP",
             "mangledName": "$ss16SendableMetatypeP"
           }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "DriveKitDBChallengeAccessModule",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "CoreData",
-        "printedName": "CoreData",
-        "declKind": "Import",
-        "moduleName": "DriveKitDBChallengeAccessModule",
-        "declAttributes": [
-          "AccessControl"
         ]
       },
       {

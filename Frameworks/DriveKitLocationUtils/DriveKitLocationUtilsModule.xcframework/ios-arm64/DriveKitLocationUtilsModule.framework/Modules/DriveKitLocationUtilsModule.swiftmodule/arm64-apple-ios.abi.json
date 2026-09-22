@@ -398,8 +398,8 @@
           },
           {
             "kind": "Function",
-            "name": "locationManager",
-            "printedName": "locationManager(_:didChangeAuthorization:)",
+            "name": "locationManagerDidChangeAuthorization",
+            "printedName": "locationManagerDidChangeAuthorization(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -411,19 +411,13 @@
                 "name": "CLLocationManager",
                 "printedName": "CoreLocation.CLLocationManager",
                 "usr": "c:objc(cs)CLLocationManager"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CLAuthorizationStatus",
-                "printedName": "CoreLocation.CLAuthorizationStatus",
-                "usr": "c:@E@CLAuthorizationStatus"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@DriveKitLocationUtilsModule@objc(cs)DKLocationManager(im)locationManager:didChangeAuthorizationStatus:",
-            "mangledName": "$s27DriveKitLocationUtilsModule17DKLocationManagerC08locationG0_22didChangeAuthorizationySo010CLLocationG0C_So21CLAuthorizationStatusVtF",
+            "usr": "c:@CM@DriveKitLocationUtilsModule@objc(cs)DKLocationManager(im)locationManagerDidChangeAuthorization:",
+            "mangledName": "$s27DriveKitLocationUtilsModule17DKLocationManagerC08locationG22DidChangeAuthorizationyySo010CLLocationG0CF",
             "moduleName": "DriveKitLocationUtilsModule",
-            "objc_name": "locationManager:didChangeAuthorizationStatus:",
+            "objc_name": "locationManagerDidChangeAuthorization:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -1195,7 +1189,7 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-location-utils\/DKLocationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 12032,
+      "offset": 12000,
       "length": 2,
       "value": "30"
     },

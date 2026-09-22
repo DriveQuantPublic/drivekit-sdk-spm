@@ -28050,70 +28050,70 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/CrashDetection\/service\/CrashFeedbackManager.swift",
       "kind": "StringLiteral",
-      "offset": 21463,
+      "offset": 21267,
       "length": 10,
       "value": "\"NO_CRASH\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/CrashDetection\/service\/CrashFeedbackManager.swift",
       "kind": "StringLiteral",
-      "offset": 21495,
+      "offset": 21299,
       "length": 17,
       "value": "\"CRASH_CONFIRMED\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/CrashDetection\/service\/CrashFeedbackManager.swift",
       "kind": "StringLiteral",
-      "offset": 21535,
+      "offset": 21339,
       "length": 13,
       "value": "\"NO_FEEDBACK\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/CrashDetection\/service\/CrashFeedbackManager.swift",
       "kind": "StringLiteral",
-      "offset": 21868,
+      "offset": 21672,
       "length": 6,
       "value": "\"NONE\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/CrashDetection\/service\/CrashFeedbackManager.swift",
       "kind": "StringLiteral",
-      "offset": 21892,
+      "offset": 21696,
       "length": 7,
       "value": "\"MINOR\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/CrashDetection\/service\/CrashFeedbackManager.swift",
       "kind": "StringLiteral",
-      "offset": 21920,
+      "offset": 21724,
       "length": 10,
       "value": "\"CRITICAL\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/CrashDetection\/service\/CrashFeedbackManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 22241,
+      "offset": 22045,
       "length": 9,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/CrashDetection\/service\/CrashFeedbackManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 22260,
+      "offset": 22064,
       "length": 10,
       "value": "2"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/CrashDetection\/service\/CrashFeedbackManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 22590,
+      "offset": 22394,
       "length": 5,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/CrashDetection\/service\/CrashFeedbackManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 22605,
+      "offset": 22409,
       "length": 8,
       "value": "2"
     },

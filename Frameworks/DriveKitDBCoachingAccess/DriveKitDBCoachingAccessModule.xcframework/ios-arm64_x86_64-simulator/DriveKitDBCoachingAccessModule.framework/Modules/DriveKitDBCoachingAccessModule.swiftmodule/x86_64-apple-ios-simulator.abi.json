@@ -3262,6 +3262,27 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DriveKitDBCoachingAccessModule",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "CoreData",
+        "printedName": "CoreData",
+        "declKind": "Import",
+        "moduleName": "DriveKitDBCoachingAccessModule",
+        "declAttributes": [
+          "AccessControl"
+        ]
+      },
+      {
         "kind": "TypeDecl",
         "name": "DBCoachingMessage",
         "printedName": "DBCoachingMessage",
@@ -3395,8 +3416,8 @@
             "moduleName": "DriveKitDBCoachingAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -3499,8 +3520,8 @@
             "moduleName": "DriveKitDBCoachingAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -3603,8 +3624,8 @@
             "moduleName": "DriveKitDBCoachingAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -3707,8 +3728,8 @@
             "moduleName": "DriveKitDBCoachingAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -3803,8 +3824,8 @@
             "moduleName": "DriveKitDBCoachingAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -3891,8 +3912,8 @@
             "moduleName": "DriveKitDBCoachingAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -3995,8 +4016,8 @@
             "moduleName": "DriveKitDBCoachingAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -4099,8 +4120,8 @@
             "moduleName": "DriveKitDBCoachingAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -4203,8 +4224,8 @@
             "moduleName": "DriveKitDBCoachingAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -4299,8 +4320,8 @@
             "moduleName": "DriveKitDBCoachingAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -4387,8 +4408,8 @@
             "moduleName": "DriveKitDBCoachingAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -4483,8 +4504,8 @@
             "moduleName": "DriveKitDBCoachingAccessModule",
             "declAttributes": [
               "Dynamic",
-              "Nonisolated",
               "AccessControl",
+              "Nonisolated",
               "NSManaged",
               "ObjC"
             ],
@@ -4691,27 +4712,6 @@
             "usr": "s:s16SendableMetatypeP",
             "mangledName": "$ss16SendableMetatypeP"
           }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "DriveKitDBCoachingAccessModule",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "CoreData",
-        "printedName": "CoreData",
-        "declKind": "Import",
-        "moduleName": "DriveKitDBCoachingAccessModule",
-        "declAttributes": [
-          "AccessControl"
         ]
       },
       {
