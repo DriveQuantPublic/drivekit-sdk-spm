@@ -1388,8 +1388,8 @@
             "moduleName": "DriveKitDBGroupAccessModule",
             "declAttributes": [
               "Dynamic",
-              "AccessControl",
               "Nonisolated",
+              "AccessControl",
               "NSManaged",
               "ObjC"
             ],
@@ -1492,8 +1492,8 @@
             "moduleName": "DriveKitDBGroupAccessModule",
             "declAttributes": [
               "Dynamic",
-              "AccessControl",
               "Nonisolated",
+              "AccessControl",
               "NSManaged",
               "ObjC"
             ],
@@ -1596,8 +1596,8 @@
             "moduleName": "DriveKitDBGroupAccessModule",
             "declAttributes": [
               "Dynamic",
-              "AccessControl",
               "Nonisolated",
+              "AccessControl",
               "NSManaged",
               "ObjC"
             ],
@@ -1692,8 +1692,8 @@
             "moduleName": "DriveKitDBGroupAccessModule",
             "declAttributes": [
               "Dynamic",
-              "AccessControl",
               "Nonisolated",
+              "AccessControl",
               "NSManaged",
               "ObjC"
             ],
@@ -1780,8 +1780,8 @@
             "moduleName": "DriveKitDBGroupAccessModule",
             "declAttributes": [
               "Dynamic",
-              "AccessControl",
               "Nonisolated",
+              "AccessControl",
               "NSManaged",
               "ObjC"
             ],

@@ -344,32 +344,6 @@
             ]
           },
           {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "DriveKitTripSimulator",
-                "printedName": "DriveKitTripSimulatorModule.DriveKitTripSimulator",
-                "usr": "c:@M@DriveKitTripSimulatorModule@objc(cs)DriveKitTripSimulator"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "c:@M@DriveKitTripSimulatorModule@objc(cs)DriveKitTripSimulator(im)init",
-            "mangledName": "$s27DriveKitTripSimulatorModule0abcD0CACycfc",
-            "moduleName": "DriveKitTripSimulatorModule",
-            "overriding": true,
-            "objc_name": "init",
-            "declAttributes": [
-              "Dynamic",
-              "ObjC",
-              "Override",
-              "AccessControl"
-            ],
-            "init_kind": "Designated"
-          },
-          {
             "kind": "Function",
             "name": "initialize",
             "printedName": "initialize()",
@@ -508,6 +482,32 @@
               "ObjC"
             ],
             "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DriveKitTripSimulator",
+                "printedName": "DriveKitTripSimulatorModule.DriveKitTripSimulator",
+                "usr": "c:@M@DriveKitTripSimulatorModule@objc(cs)DriveKitTripSimulator"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@DriveKitTripSimulatorModule@objc(cs)DriveKitTripSimulator(im)init",
+            "mangledName": "$s27DriveKitTripSimulatorModule0abcD0CACycfc",
+            "moduleName": "DriveKitTripSimulatorModule",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
           }
         ],
         "declKind": "Class",
@@ -887,119 +887,119 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-simulator\/DriveKitTripSimulator.swift",
       "kind": "IntegerLiteral",
-      "offset": 1889,
+      "offset": 1712,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-simulator\/DriveKitTripSimulator.swift",
       "kind": "FloatLiteral",
-      "offset": 2052,
+      "offset": 1875,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-simulator\/DriveKitTripSimulator.swift",
       "kind": "IntegerLiteral",
-      "offset": 2198,
+      "offset": 2021,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-simulator\/DriveKitTripSimulator.swift",
       "kind": "IntegerLiteral",
-      "offset": 2267,
+      "offset": 2090,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-simulator\/DriveKitTripSimulator.swift",
       "kind": "StringLiteral",
-      "offset": 2351,
+      "offset": 2174,
       "length": 57,
       "value": "\"Start trip simulation with profile : \""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-simulator\/DriveKitTripSimulator.swift",
       "kind": "StringLiteral",
-      "offset": 2407,
+      "offset": 2230,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-simulator\/DriveKitTripSimulator.swift",
       "kind": "IntegerLiteral",
-      "offset": 2523,
+      "offset": 2346,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-simulator\/DriveKitTripSimulator.swift",
       "kind": "StringLiteral",
-      "offset": 2612,
+      "offset": 2435,
       "length": 140,
       "value": "\"Warning: the PresetTrip \"\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-simulator\/DriveKitTripSimulator.swift",
       "kind": "StringLiteral",
-      "offset": 2657,
+      "offset": 2480,
       "length": 1,
       "value": "\"\" has been selected but no crash can appear with PresetCrash: \""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-simulator\/DriveKitTripSimulator.swift",
       "kind": "StringLiteral",
-      "offset": 2728,
+      "offset": 2551,
       "length": 3,
       "value": "\" and time: \""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-simulator\/DriveKitTripSimulator.swift",
       "kind": "StringLiteral",
-      "offset": 2751,
+      "offset": 2574,
       "length": 2,
       "value": "\"\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-simulator\/DriveKitTripSimulator.swift",
       "kind": "BooleanLiteral",
-      "offset": 2804,
+      "offset": 2627,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-simulator\/DriveKitTripSimulator.swift",
       "kind": "IntegerLiteral",
-      "offset": 2921,
+      "offset": 2744,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-simulator\/DriveKitTripSimulator.swift",
       "kind": "FloatLiteral",
-      "offset": 2987,
+      "offset": 2810,
       "length": 3,
       "value": "1.0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-simulator\/DriveKitTripSimulator.swift",
       "kind": "BooleanLiteral",
-      "offset": 3013,
+      "offset": 2836,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-simulator\/DriveKitTripSimulator.swift",
       "kind": "IntegerLiteral",
-      "offset": 3451,
+      "offset": 3274,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-simulator\/DriveKitTripSimulator.swift",
       "kind": "IntegerLiteral",
-      "offset": 3578,
+      "offset": 3401,
       "length": 1,
       "value": "0"
     }

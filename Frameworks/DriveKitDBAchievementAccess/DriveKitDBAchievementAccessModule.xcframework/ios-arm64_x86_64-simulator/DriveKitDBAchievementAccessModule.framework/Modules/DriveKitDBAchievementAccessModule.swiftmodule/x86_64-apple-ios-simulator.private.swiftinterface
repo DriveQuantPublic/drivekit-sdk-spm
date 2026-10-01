@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.4 effective-5.10 (swiftlang-6.4.0.34.1 clang-2100.3.34.1)
-// swift-module-flags: -target x86_64-apple-ios15.0-simulator -enable-objc-interop -enable-library-evolution -language-mode 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name DriveKitDBAchievementAccessModule
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.4
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name DriveKitDBAchievementAccessModule
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
 import CoreData
 import DriveKitCoreModule
 import Foundation
@@ -9,410 +9,410 @@ import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-@_hasMissingDesignatedInitializers @objc public class DKStreak : ObjectiveC::NSObject {
-  @objc final public let theme: DriveKitDBAchievementAccessModule::DKStreakTheme
-  @objc final public let current: DriveKitDBAchievementAccessModule::DKStreakResult
-  @objc final public let best: DriveKitDBAchievementAccessModule::DKStreakResult
+@_hasMissingDesignatedInitializers @objc public class DKStreak : ObjectiveC.NSObject {
+  @objc final public let theme: DriveKitDBAchievementAccessModule.DKStreakTheme
+  @objc final public let current: DriveKitDBAchievementAccessModule.DKStreakResult
+  @objc final public let best: DriveKitDBAchievementAccessModule.DKStreakResult
   @objc deinit
 }
-@objc public class DKStreakResult : ObjectiveC::NSObject {
-  @objc final public let distance: Swift::Double
-  @objc final public let duration: Swift::Double
-  @objc final public let tripNumber: Swift::Int
-  @objc final public let endDate: Foundation::Date
-  @objc final public let startDate: Foundation::Date
-  public init(distance: Swift::Double, duration: Swift::Double, tripNumber: Swift::Int, endDate: Foundation::Date, startDate: Foundation::Date)
+@objc public class DKStreakResult : ObjectiveC.NSObject {
+  @objc final public let distance: Swift.Double
+  @objc final public let duration: Swift.Double
+  @objc final public let tripNumber: Swift.Int
+  @objc final public let endDate: Foundation.Date
+  @objc final public let startDate: Foundation.Date
+  public init(distance: Swift.Double, duration: Swift.Double, tripNumber: Swift.Int, endDate: Foundation.Date, startDate: Foundation.Date)
   @objc deinit
 }
-@objc public enum DKStreakTheme : Swift::Int {
+@objc public enum DKStreakTheme : Swift.Int {
   case phoneDistraction, safety, adherence, brake, acceleration, speedLimits, call
-  public init?(rawValue: Swift::Int)
-  public typealias RawValue = Swift::Int
-  public var rawValue: Swift::Int {
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
     get
   }
 }
-extension DriveKitDBAchievementAccessModule::DBStreak : DriveKitCoreModule::DKUnmanagedObject {
+extension DriveKitDBAchievementAccessModule.DBStreak : DriveKitCoreModule.DKUnmanagedObject {
   nonisolated public func convertToUnmanagedObject<T>() -> T
 }
-extension DriveKitDBAchievementAccessModule::DBStreakResult : DriveKitCoreModule::DKUnmanagedObject {
+extension DriveKitDBAchievementAccessModule.DBStreakResult : DriveKitCoreModule.DKUnmanagedObject {
   nonisolated public func convertToUnmanagedObject<T>() -> T
 }
 @_hasMissingDesignatedInitializers @available(*, unavailable, renamed: "DKStreak")
 public class Streak {
-  final public let them: DriveKitDBAchievementAccessModule::DKStreakTheme
-  final public let current: DriveKitDBAchievementAccessModule::DKStreakResult
-  final public let best: DriveKitDBAchievementAccessModule::DKStreakResult
+  final public let them: DriveKitDBAchievementAccessModule.DKStreakTheme
+  final public let current: DriveKitDBAchievementAccessModule.DKStreakResult
+  final public let best: DriveKitDBAchievementAccessModule.DKStreakResult
   @objc deinit
 }
 @available(*, unavailable, renamed: "DKStreakResult")
 public class StreakResult {
-  final public let distance: Swift::Double
-  final public let duration: Swift::Double
-  final public let tripNumber: Swift::Int
-  final public let endDate: Foundation::Date
-  final public let startDate: Foundation::Date
-  public init(distance: Swift::Double, duration: Swift::Double, tripNumber: Swift::Int, endDate: Foundation::Date, startDate: Foundation::Date)
+  final public let distance: Swift.Double
+  final public let duration: Swift.Double
+  final public let tripNumber: Swift.Int
+  final public let endDate: Foundation.Date
+  final public let startDate: Foundation.Date
+  public init(distance: Swift.Double, duration: Swift.Double, tripNumber: Swift.Int, endDate: Foundation.Date, startDate: Foundation.Date)
   @objc deinit
 }
-@objc public class DKBadge : ObjectiveC::NSObject, Foundation::NSCoding {
-  @objc final public let theme: Swift::String
-  @objc final public let badgeCharacteristics: [DriveKitDBAchievementAccessModule::DKBadgeCharacteristics]
-  @objc final public let category: DriveKitDBAchievementAccessModule::DKBadgeCategory
-  public init(theme: Swift::String, badgeCharacteristics: [DriveKitDBAchievementAccessModule::DKBadgeCharacteristics], category: DriveKitDBAchievementAccessModule::DKBadgeCategory)
-  @objc public func encode(with aCoder: Foundation::NSCoder)
-  @objc required public init?(coder aDecoder: Foundation::NSCoder)
+@objc public class DKBadge : ObjectiveC.NSObject, Foundation.NSCoding {
+  @objc final public let theme: Swift.String
+  @objc final public let badgeCharacteristics: [DriveKitDBAchievementAccessModule.DKBadgeCharacteristics]
+  @objc final public let category: DriveKitDBAchievementAccessModule.DKBadgeCategory
+  public init(theme: Swift.String, badgeCharacteristics: [DriveKitDBAchievementAccessModule.DKBadgeCharacteristics], category: DriveKitDBAchievementAccessModule.DKBadgeCategory)
+  @objc public func encode(with aCoder: Foundation.NSCoder)
+  @objc required public init?(coder aDecoder: Foundation.NSCoder)
   @objc deinit
 }
-@objc public class DKBadgeCharacteristics : ObjectiveC::NSObject, Foundation::NSCoding {
-  @objc final public let level: DriveKitDBAchievementAccessModule::DKLevel
-  @objc final public let name: Swift::String
-  @objc final public let icon: Swift::String
-  @objc final public let defaultIcon: Swift::String
-  @objc final public let descriptionValue: Swift::String
-  @objc final public let progress: Swift::String
-  @objc final public let progressValue: Swift::Double
-  @objc final public let congrats: Swift::String
-  @objc final public let threshold: Swift::Int
-  public init(level: DriveKitDBAchievementAccessModule::DKLevel, name: Swift::String, icon: Swift::String, defaultIcon: Swift::String, descriptionValue: Swift::String, progress: Swift::String, progressValue: Swift::Double, congrats: Swift::String, threshold: Swift::Int)
-  @objc public func encode(with aCoder: Foundation::NSCoder)
-  @objc required public init?(coder aDecoder: Foundation::NSCoder)
+@objc public class DKBadgeCharacteristics : ObjectiveC.NSObject, Foundation.NSCoding {
+  @objc final public let level: DriveKitDBAchievementAccessModule.DKLevel
+  @objc final public let name: Swift.String
+  @objc final public let icon: Swift.String
+  @objc final public let defaultIcon: Swift.String
+  @objc final public let descriptionValue: Swift.String
+  @objc final public let progress: Swift.String
+  @objc final public let progressValue: Swift.Double
+  @objc final public let congrats: Swift.String
+  @objc final public let threshold: Swift.Int
+  public init(level: DriveKitDBAchievementAccessModule.DKLevel, name: Swift.String, icon: Swift.String, defaultIcon: Swift.String, descriptionValue: Swift.String, progress: Swift.String, progressValue: Swift.Double, congrats: Swift.String, threshold: Swift.Int)
+  @objc public func encode(with aCoder: Foundation.NSCoder)
+  @objc required public init?(coder aDecoder: Foundation.NSCoder)
   @objc deinit
 }
-@objc public enum DKBadgeCategory : Swift::Int {
+@objc public enum DKBadgeCategory : Swift.Int {
   case generic, ecodriving, safety, phoneDistraction, call
-  public var categoryString: Swift::String {
+  public var categoryString: Swift.String {
     get
   }
-  public init?(rawValue: Swift::Int)
-  public typealias RawValue = Swift::Int
-  public var rawValue: Swift::Int {
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
     get
   }
 }
-@objc public enum DKLevel : Swift::Int {
+@objc public enum DKLevel : Swift.Int {
   case bronze, silver, gold
-  public init?(rawValue: Swift::Int)
-  public typealias RawValue = Swift::Int
-  public var rawValue: Swift::Int {
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
     get
   }
 }
-extension DriveKitDBAchievementAccessModule::DBBadge : DriveKitCoreModule::DKUnmanagedObject {
+extension DriveKitDBAchievementAccessModule.DBBadge : DriveKitCoreModule.DKUnmanagedObject {
   nonisolated public func convertToUnmanagedObject<T>() -> T
 }
-extension DriveKitDBAchievementAccessModule::DBBadgeCharacteristics : DriveKitCoreModule::DKUnmanagedObject {
+extension DriveKitDBAchievementAccessModule.DBBadgeCharacteristics : DriveKitCoreModule.DKUnmanagedObject {
   nonisolated public func convertToUnmanagedObject<T>() -> T
 }
 @_hasMissingDesignatedInitializers public class DriveKitDBAchievementAccess {
-  public static let sdkVersion: Swift::String
-  public static let shared: DriveKitDBAchievementAccessModule::DriveKitDBAchievementAccess
+  public static let sdkVersion: Swift.String
+  public static let shared: DriveKitDBAchievementAccessModule.DriveKitDBAchievementAccess
   public func reset()
   public func deleteAllStreak()
-  public func streakQuery() -> DriveKitCoreModule::WhereReference<DriveKitDBAchievementAccessModule::DBStreak, DriveKitDBAchievementAccessModule::DKStreak>
+  public func streakQuery() -> DriveKitCoreModule.WhereReference<DriveKitDBAchievementAccessModule.DBStreak, DriveKitDBAchievementAccessModule.DKStreak>
   public func deleteAllBadges()
-  public func badgesQuery() -> DriveKitCoreModule::WhereReference<DriveKitDBAchievementAccessModule::DBBadge, DriveKitDBAchievementAccessModule::DKBadge>
+  public func badgesQuery() -> DriveKitCoreModule.WhereReference<DriveKitDBAchievementAccessModule.DBBadge, DriveKitDBAchievementAccessModule.DKBadge>
   public func deleteAllRanking()
-  public func rankingQuery() -> DriveKitCoreModule::WhereReference<DriveKitDBAchievementAccessModule::DBRanking, DriveKitDBAchievementAccessModule::DKRanking>
-  public func deleteRanking(rankingType: DriveKitDBAchievementAccessModule::DKRankingType, rankingPeriod: DriveKitDBAchievementAccessModule::DKRankingPeriod, groupName: Swift::String)
-  public func findRankingQuery(rankingType: DriveKitDBAchievementAccessModule::DKRankingType, rankingPeriod: DriveKitDBAchievementAccessModule::DKRankingPeriod, groupName: Swift::String) -> DriveKitCoreModule::ExecutableQueryOne<DriveKitDBAchievementAccessModule::DBRanking, DriveKitDBAchievementAccessModule::DKRanking>
-  public func createAchievement(block: (CoreData::NSManagedObjectContext) -> Swift::Void)
+  public func rankingQuery() -> DriveKitCoreModule.WhereReference<DriveKitDBAchievementAccessModule.DBRanking, DriveKitDBAchievementAccessModule.DKRanking>
+  public func deleteRanking(rankingType: DriveKitDBAchievementAccessModule.DKRankingType, rankingPeriod: DriveKitDBAchievementAccessModule.DKRankingPeriod, groupName: Swift.String)
+  public func findRankingQuery(rankingType: DriveKitDBAchievementAccessModule.DKRankingType, rankingPeriod: DriveKitDBAchievementAccessModule.DKRankingPeriod, groupName: Swift.String) -> DriveKitCoreModule.ExecutableQueryOne<DriveKitDBAchievementAccessModule.DBRanking, DriveKitDBAchievementAccessModule.DKRanking>
+  public func createAchievement(block: (CoreData.NSManagedObjectContext) -> Swift.Void)
   @objc deinit
 }
-extension DriveKitDBAchievementAccessModule::DBStreak {
+extension DriveKitDBAchievementAccessModule.DBStreak {
   nonisolated public func save()
 }
-extension DriveKitDBAchievementAccessModule::DBBadge {
+extension DriveKitDBAchievementAccessModule.DBBadge {
   nonisolated public func save()
 }
-extension DriveKitDBAchievementAccessModule::DBRanking {
+extension DriveKitDBAchievementAccessModule.DBRanking {
   nonisolated public func save()
 }
-@_hasMissingDesignatedInitializers @objc public class DKRanking : ObjectiveC::NSObject {
-  @objc final public let rankingType: DriveKitDBAchievementAccessModule::DKRankingType
-  @objc final public let rankingPeriod: DriveKitDBAchievementAccessModule::DKRankingPeriod
-  @objc final public let userPosition: Swift::Int
-  final public let userPreviousPosition: Swift::Int?
-  @objc(userPreviousPosition) public var objcUserPreviousPosition: Foundation::NSNumber? {
+@_hasMissingDesignatedInitializers @objc public class DKRanking : ObjectiveC.NSObject {
+  @objc final public let rankingType: DriveKitDBAchievementAccessModule.DKRankingType
+  @objc final public let rankingPeriod: DriveKitDBAchievementAccessModule.DKRankingPeriod
+  @objc final public let userPosition: Swift.Int
+  final public let userPreviousPosition: Swift.Int?
+  @objc(userPreviousPosition) public var objcUserPreviousPosition: Foundation.NSNumber? {
     @objc get
   }
-  @objc final public let nbDriverRanked: Swift::Int
-  @objc final public let driversRanked: [DriveKitDBAchievementAccessModule::DKDriverRanked]
-  @objc final public let groupName: Swift::String?
+  @objc final public let nbDriverRanked: Swift.Int
+  @objc final public let driversRanked: [DriveKitDBAchievementAccessModule.DKDriverRanked]
+  @objc final public let groupName: Swift.String?
   @objc deinit
 }
-@_hasMissingDesignatedInitializers @objc public class DKDriverRanked : ObjectiveC::NSObject {
-  @objc final public let userId: Swift::String?
-  @objc final public let nickname: Swift::String?
-  @objc final public let rank: Swift::Int
-  @objc final public let score: Swift::Double
-  @objc final public let distance: Swift::Double
+@_hasMissingDesignatedInitializers @objc public class DKDriverRanked : ObjectiveC.NSObject {
+  @objc final public let userId: Swift.String?
+  @objc final public let nickname: Swift.String?
+  @objc final public let rank: Swift.Int
+  @objc final public let score: Swift.Double
+  @objc final public let distance: Swift.Double
   @objc deinit
 }
-@objc public enum DKRankingType : Swift::Int, Swift::CaseIterable {
+@objc public enum DKRankingType : Swift.Int, Swift.CaseIterable {
   case safety, ecoDriving, distraction, speeding
-  public func stringValue() -> Swift::String
-  public init?(rawValue: Swift::Int)
-  public typealias AllCases = [DriveKitDBAchievementAccessModule::DKRankingType]
-  public typealias RawValue = Swift::Int
-  nonisolated public static var allCases: [DriveKitDBAchievementAccessModule::DKRankingType] {
+  public func stringValue() -> Swift.String
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [DriveKitDBAchievementAccessModule.DKRankingType]
+  public typealias RawValue = Swift.Int
+  nonisolated public static var allCases: [DriveKitDBAchievementAccessModule.DKRankingType] {
     get
   }
-  public var rawValue: Swift::Int {
+  public var rawValue: Swift.Int {
     get
   }
 }
-@objc public enum DKRankingPeriod : Swift::Int, Swift::CaseIterable {
-  public static var allCases: [DriveKitDBAchievementAccessModule::DKRankingPeriod]
+@objc public enum DKRankingPeriod : Swift.Int, Swift.CaseIterable {
+  public static var allCases: [DriveKitDBAchievementAccessModule.DKRankingPeriod]
   case weekly, monthly, allTime
-  public func stringValue() -> Swift::String
-  public init?(rawValue: Swift::Int)
-  public typealias AllCases = [DriveKitDBAchievementAccessModule::DKRankingPeriod]
-  public typealias RawValue = Swift::Int
-  public var rawValue: Swift::Int {
+  public func stringValue() -> Swift.String
+  public init?(rawValue: Swift.Int)
+  public typealias AllCases = [DriveKitDBAchievementAccessModule.DKRankingPeriod]
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
     get
   }
 }
-extension DriveKitDBAchievementAccessModule::DBRanking : DriveKitCoreModule::DKUnmanagedObject {
+extension DriveKitDBAchievementAccessModule.DBRanking : DriveKitCoreModule.DKUnmanagedObject {
   nonisolated public func convertToUnmanagedObject<T>() -> T
 }
-extension DriveKitDBAchievementAccessModule::DBDriverRanked : DriveKitCoreModule::DKUnmanagedObject {
+extension DriveKitDBAchievementAccessModule.DBDriverRanked : DriveKitCoreModule.DKUnmanagedObject {
   nonisolated public func convertToUnmanagedObject<T>() -> T
 }
-public typealias AchievementFoundationFrameworkSet = Foundation::NSSet
-public typealias AchievementCoreDataFrameworkManagedObject = CoreData::NSManagedObject
-public typealias DBBadgeCoreDataClassSet = Foundation::NSSet
-@_inheritsConvenienceInitializers @objc(DBBadge) nonisolated public class DBBadge : CoreData::NSManagedObject {
-  @objc override nonisolated dynamic public init(entity: CoreData::NSEntityDescription, insertInto context: CoreData::NSManagedObjectContext?)
+public typealias DBBadgeCoreDataClassSet = Foundation.NSSet
+@_inheritsConvenienceInitializers @objc(DBBadge) nonisolated public class DBBadge : CoreData.NSManagedObject {
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
 }
-public typealias DBBadgeCoreDataPropertiesSet = Foundation::NSSet
-extension DriveKitDBAchievementAccessModule::DBBadge {
-  @nonobjc public class func fetchRequest() -> CoreData::NSFetchRequest<DriveKitDBAchievementAccessModule::DBBadge>
-  @objc @NSManaged nonisolated dynamic public var category: Swift::String? {
+public typealias DBBadgeCoreDataPropertiesSet = Foundation.NSSet
+extension DriveKitDBAchievementAccessModule.DBBadge {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<DriveKitDBAchievementAccessModule.DBBadge>
+  @objc @NSManaged nonisolated dynamic public var category: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged nonisolated dynamic public var theme: Swift::String? {
+  @objc @NSManaged nonisolated dynamic public var theme: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged nonisolated dynamic public var badgeCharacteristics: Foundation::NSSet? {
+  @objc @NSManaged nonisolated dynamic public var badgeCharacteristics: Foundation.NSSet? {
     @objc get
     @objc set
   }
 }
-extension DriveKitDBAchievementAccessModule::DBBadge {
-  @objc(addBadgeCharacteristicsObject:) @NSManaged nonisolated dynamic public func addToBadgeCharacteristics(_ value: DriveKitDBAchievementAccessModule::DBBadgeCharacteristics)
-  @objc(removeBadgeCharacteristicsObject:) @NSManaged nonisolated dynamic public func removeFromBadgeCharacteristics(_ value: DriveKitDBAchievementAccessModule::DBBadgeCharacteristics)
-  @objc(addBadgeCharacteristics:) @NSManaged nonisolated dynamic public func addToBadgeCharacteristics(_ values: Foundation::NSSet)
-  @objc(removeBadgeCharacteristics:) @NSManaged nonisolated dynamic public func removeFromBadgeCharacteristics(_ values: Foundation::NSSet)
+extension DriveKitDBAchievementAccessModule.DBBadge {
+  @objc(addBadgeCharacteristicsObject:) @NSManaged nonisolated dynamic public func addToBadgeCharacteristics(_ value: DriveKitDBAchievementAccessModule.DBBadgeCharacteristics)
+  @objc(removeBadgeCharacteristicsObject:) @NSManaged nonisolated dynamic public func removeFromBadgeCharacteristics(_ value: DriveKitDBAchievementAccessModule.DBBadgeCharacteristics)
+  @objc(addBadgeCharacteristics:) @NSManaged nonisolated dynamic public func addToBadgeCharacteristics(_ values: Foundation.NSSet)
+  @objc(removeBadgeCharacteristics:) @NSManaged nonisolated dynamic public func removeFromBadgeCharacteristics(_ values: Foundation.NSSet)
 }
-extension DriveKitDBAchievementAccessModule::DBBadge : Swift::Identifiable {
-  public typealias ID = Swift::ObjectIdentifier
+extension DriveKitDBAchievementAccessModule.DBBadge : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
 }
-public typealias DBBadgeCharacteristicsCoreDataClassSet = Foundation::NSSet
-@_inheritsConvenienceInitializers @objc(DBBadgeCharacteristics) nonisolated public class DBBadgeCharacteristics : CoreData::NSManagedObject {
-  @objc override nonisolated dynamic public init(entity: CoreData::NSEntityDescription, insertInto context: CoreData::NSManagedObjectContext?)
+public typealias DBBadgeCharacteristicsCoreDataClassSet = Foundation.NSSet
+@_inheritsConvenienceInitializers @objc(DBBadgeCharacteristics) nonisolated public class DBBadgeCharacteristics : CoreData.NSManagedObject {
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
 }
-public typealias DBBadgeCharacteristicsCoreDataPropertiesSet = Foundation::NSSet
-extension DriveKitDBAchievementAccessModule::DBBadgeCharacteristics {
-  @nonobjc public class func fetchRequest() -> CoreData::NSFetchRequest<DriveKitDBAchievementAccessModule::DBBadgeCharacteristics>
-  @objc @NSManaged nonisolated dynamic public var congrats: Swift::String? {
+public typealias DBBadgeCharacteristicsCoreDataPropertiesSet = Foundation.NSSet
+extension DriveKitDBAchievementAccessModule.DBBadgeCharacteristics {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<DriveKitDBAchievementAccessModule.DBBadgeCharacteristics>
+  @objc @NSManaged nonisolated dynamic public var congrats: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged nonisolated dynamic public var defaultIcon: Swift::String? {
+  @objc @NSManaged nonisolated dynamic public var defaultIcon: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged nonisolated dynamic public var descriptionValue: Swift::String? {
+  @objc @NSManaged nonisolated dynamic public var descriptionValue: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged nonisolated dynamic public var icon: Swift::String? {
+  @objc @NSManaged nonisolated dynamic public var icon: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged nonisolated dynamic public var level: Swift::Int32 {
+  @objc @NSManaged nonisolated dynamic public var level: Swift.Int32 {
     @objc get
     @objc set
   }
-  @objc @NSManaged nonisolated dynamic public var name: Swift::String? {
+  @objc @NSManaged nonisolated dynamic public var name: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged nonisolated dynamic public var progress: Swift::String? {
+  @objc @NSManaged nonisolated dynamic public var progress: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged nonisolated dynamic public var progressValue: Swift::Double {
+  @objc @NSManaged nonisolated dynamic public var progressValue: Swift.Double {
     @objc get
     @objc set
   }
-  @objc @NSManaged nonisolated dynamic public var threshold: Swift::Int32 {
+  @objc @NSManaged nonisolated dynamic public var threshold: Swift.Int32 {
     @objc get
     @objc set
   }
-  @objc @NSManaged nonisolated dynamic public var badge: DriveKitDBAchievementAccessModule::DBBadge? {
+  @objc @NSManaged nonisolated dynamic public var badge: DriveKitDBAchievementAccessModule.DBBadge? {
     @objc get
     @objc set
   }
 }
-extension DriveKitDBAchievementAccessModule::DBBadgeCharacteristics : Swift::Identifiable {
-  public typealias ID = Swift::ObjectIdentifier
+extension DriveKitDBAchievementAccessModule.DBBadgeCharacteristics : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
 }
-public typealias DBDriverRankedCoreDataClassSet = Foundation::NSSet
-@_inheritsConvenienceInitializers @objc(DBDriverRanked) nonisolated public class DBDriverRanked : CoreData::NSManagedObject {
-  @objc override nonisolated dynamic public init(entity: CoreData::NSEntityDescription, insertInto context: CoreData::NSManagedObjectContext?)
+public typealias DBDriverRankedCoreDataClassSet = Foundation.NSSet
+@_inheritsConvenienceInitializers @objc(DBDriverRanked) nonisolated public class DBDriverRanked : CoreData.NSManagedObject {
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
 }
-public typealias DBDriverRankedCoreDataPropertiesSet = Foundation::NSSet
-extension DriveKitDBAchievementAccessModule::DBDriverRanked {
-  @nonobjc public class func fetchRequest() -> CoreData::NSFetchRequest<DriveKitDBAchievementAccessModule::DBDriverRanked>
-  @objc @NSManaged nonisolated dynamic public var distance: Swift::Double {
+public typealias DBDriverRankedCoreDataPropertiesSet = Foundation.NSSet
+extension DriveKitDBAchievementAccessModule.DBDriverRanked {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<DriveKitDBAchievementAccessModule.DBDriverRanked>
+  @objc @NSManaged nonisolated dynamic public var distance: Swift.Double {
     @objc get
     @objc set
   }
-  @objc @NSManaged nonisolated dynamic public var nickname: Swift::String? {
+  @objc @NSManaged nonisolated dynamic public var nickname: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged nonisolated dynamic public var rank: Swift::Int32 {
+  @objc @NSManaged nonisolated dynamic public var rank: Swift.Int32 {
     @objc get
     @objc set
   }
-  @objc @NSManaged nonisolated dynamic public var score: Swift::Double {
+  @objc @NSManaged nonisolated dynamic public var score: Swift.Double {
     @objc get
     @objc set
   }
-  @objc @NSManaged nonisolated dynamic public var userId: Swift::String? {
+  @objc @NSManaged nonisolated dynamic public var userId: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged nonisolated dynamic public var ranking: DriveKitDBAchievementAccessModule::DBRanking? {
+  @objc @NSManaged nonisolated dynamic public var ranking: DriveKitDBAchievementAccessModule.DBRanking? {
     @objc get
     @objc set
   }
 }
-extension DriveKitDBAchievementAccessModule::DBDriverRanked : Swift::Identifiable {
-  public typealias ID = Swift::ObjectIdentifier
+extension DriveKitDBAchievementAccessModule.DBDriverRanked : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
 }
-public typealias DBRankingCoreDataClassSet = Foundation::NSSet
-@_inheritsConvenienceInitializers @objc(DBRanking) nonisolated public class DBRanking : CoreData::NSManagedObject {
-  @objc override nonisolated dynamic public init(entity: CoreData::NSEntityDescription, insertInto context: CoreData::NSManagedObjectContext?)
+public typealias DBRankingCoreDataClassSet = Foundation.NSSet
+@_inheritsConvenienceInitializers @objc(DBRanking) nonisolated public class DBRanking : CoreData.NSManagedObject {
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
 }
-public typealias DBRankingCoreDataPropertiesSet = Foundation::NSSet
-extension DriveKitDBAchievementAccessModule::DBRanking {
-  @nonobjc public class func fetchRequest() -> CoreData::NSFetchRequest<DriveKitDBAchievementAccessModule::DBRanking>
-  @objc @NSManaged nonisolated dynamic public var groupName: Swift::String? {
+public typealias DBRankingCoreDataPropertiesSet = Foundation.NSSet
+extension DriveKitDBAchievementAccessModule.DBRanking {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<DriveKitDBAchievementAccessModule.DBRanking>
+  @objc @NSManaged nonisolated dynamic public var groupName: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged nonisolated dynamic public var nbDriversRanked: Swift::Int32 {
+  @objc @NSManaged nonisolated dynamic public var nbDriversRanked: Swift.Int32 {
     @objc get
     @objc set
   }
-  @objc @NSManaged nonisolated dynamic public var rankingPeriod: Swift::String? {
+  @objc @NSManaged nonisolated dynamic public var rankingPeriod: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged nonisolated dynamic public var rankingType: Swift::String? {
+  @objc @NSManaged nonisolated dynamic public var rankingType: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged nonisolated dynamic public var userPosition: Swift::Int32 {
+  @objc @NSManaged nonisolated dynamic public var userPosition: Swift.Int32 {
     @objc get
     @objc set
   }
-  @objc @NSManaged nonisolated dynamic public var userPreviousPosition: Foundation::NSNumber? {
+  @objc @NSManaged nonisolated dynamic public var userPreviousPosition: Foundation.NSNumber? {
     @objc get
     @objc set
   }
-  @objc @NSManaged nonisolated dynamic public var driversRanked: Foundation::NSSet? {
+  @objc @NSManaged nonisolated dynamic public var driversRanked: Foundation.NSSet? {
     @objc get
     @objc set
   }
 }
-extension DriveKitDBAchievementAccessModule::DBRanking {
-  @objc(addDriversRankedObject:) @NSManaged nonisolated dynamic public func addToDriversRanked(_ value: DriveKitDBAchievementAccessModule::DBDriverRanked)
-  @objc(removeDriversRankedObject:) @NSManaged nonisolated dynamic public func removeFromDriversRanked(_ value: DriveKitDBAchievementAccessModule::DBDriverRanked)
-  @objc(addDriversRanked:) @NSManaged nonisolated dynamic public func addToDriversRanked(_ values: Foundation::NSSet)
-  @objc(removeDriversRanked:) @NSManaged nonisolated dynamic public func removeFromDriversRanked(_ values: Foundation::NSSet)
+extension DriveKitDBAchievementAccessModule.DBRanking {
+  @objc(addDriversRankedObject:) @NSManaged nonisolated dynamic public func addToDriversRanked(_ value: DriveKitDBAchievementAccessModule.DBDriverRanked)
+  @objc(removeDriversRankedObject:) @NSManaged nonisolated dynamic public func removeFromDriversRanked(_ value: DriveKitDBAchievementAccessModule.DBDriverRanked)
+  @objc(addDriversRanked:) @NSManaged nonisolated dynamic public func addToDriversRanked(_ values: Foundation.NSSet)
+  @objc(removeDriversRanked:) @NSManaged nonisolated dynamic public func removeFromDriversRanked(_ values: Foundation.NSSet)
 }
-extension DriveKitDBAchievementAccessModule::DBRanking : Swift::Identifiable {
-  public typealias ID = Swift::ObjectIdentifier
+extension DriveKitDBAchievementAccessModule.DBRanking : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
 }
-public typealias DBStreakCoreDataClassSet = Foundation::NSSet
-@_inheritsConvenienceInitializers @objc(DBStreak) nonisolated public class DBStreak : CoreData::NSManagedObject {
-  @objc override nonisolated dynamic public init(entity: CoreData::NSEntityDescription, insertInto context: CoreData::NSManagedObjectContext?)
+public typealias DBStreakCoreDataClassSet = Foundation.NSSet
+@_inheritsConvenienceInitializers @objc(DBStreak) nonisolated public class DBStreak : CoreData.NSManagedObject {
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
 }
-public typealias DBStreakCoreDataPropertiesSet = Foundation::NSSet
-extension DriveKitDBAchievementAccessModule::DBStreak {
-  @nonobjc public class func fetchRequest() -> CoreData::NSFetchRequest<DriveKitDBAchievementAccessModule::DBStreak>
-  @objc @NSManaged nonisolated dynamic public var theme: Swift::String? {
+public typealias DBStreakCoreDataPropertiesSet = Foundation.NSSet
+extension DriveKitDBAchievementAccessModule.DBStreak {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<DriveKitDBAchievementAccessModule.DBStreak>
+  @objc @NSManaged nonisolated dynamic public var theme: Swift.String? {
     @objc get
     @objc set
   }
-  @objc @NSManaged nonisolated dynamic public var best: DriveKitDBAchievementAccessModule::DBStreakResult? {
+  @objc @NSManaged nonisolated dynamic public var best: DriveKitDBAchievementAccessModule.DBStreakResult? {
     @objc get
     @objc set
   }
-  @objc @NSManaged nonisolated dynamic public var current: DriveKitDBAchievementAccessModule::DBStreakResult? {
+  @objc @NSManaged nonisolated dynamic public var current: DriveKitDBAchievementAccessModule.DBStreakResult? {
     @objc get
     @objc set
   }
 }
-extension DriveKitDBAchievementAccessModule::DBStreak : Swift::Identifiable {
-  public typealias ID = Swift::ObjectIdentifier
+extension DriveKitDBAchievementAccessModule.DBStreak : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
 }
-public typealias DBStreakResultCoreDataClassSet = Foundation::NSSet
-@_inheritsConvenienceInitializers @objc(DBStreakResult) nonisolated public class DBStreakResult : CoreData::NSManagedObject {
-  @objc override nonisolated dynamic public init(entity: CoreData::NSEntityDescription, insertInto context: CoreData::NSManagedObjectContext?)
+public typealias DBStreakResultCoreDataClassSet = Foundation.NSSet
+@_inheritsConvenienceInitializers @objc(DBStreakResult) nonisolated public class DBStreakResult : CoreData.NSManagedObject {
+  @objc override nonisolated dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
 }
-public typealias DBStreakResultCoreDataPropertiesSet = Foundation::NSSet
-extension DriveKitDBAchievementAccessModule::DBStreakResult {
-  @nonobjc public class func fetchRequest() -> CoreData::NSFetchRequest<DriveKitDBAchievementAccessModule::DBStreakResult>
-  @objc @NSManaged nonisolated dynamic public var distance: Swift::Double {
+public typealias DBStreakResultCoreDataPropertiesSet = Foundation.NSSet
+extension DriveKitDBAchievementAccessModule.DBStreakResult {
+  @nonobjc public class func fetchRequest() -> CoreData.NSFetchRequest<DriveKitDBAchievementAccessModule.DBStreakResult>
+  @objc @NSManaged nonisolated dynamic public var distance: Swift.Double {
     @objc get
     @objc set
   }
-  @objc @NSManaged nonisolated dynamic public var duration: Swift::Double {
+  @objc @NSManaged nonisolated dynamic public var duration: Swift.Double {
     @objc get
     @objc set
   }
-  @objc @NSManaged nonisolated dynamic public var endDate: Foundation::Date? {
+  @objc @NSManaged nonisolated dynamic public var endDate: Foundation.Date? {
     @objc get
     @objc set
   }
-  @objc @NSManaged nonisolated dynamic public var startDate: Foundation::Date? {
+  @objc @NSManaged nonisolated dynamic public var startDate: Foundation.Date? {
     @objc get
     @objc set
   }
-  @objc @NSManaged nonisolated dynamic public var tripNumber: Swift::Int32 {
+  @objc @NSManaged nonisolated dynamic public var tripNumber: Swift.Int32 {
     @objc get
     @objc set
   }
 }
-extension DriveKitDBAchievementAccessModule::DBStreakResult : Swift::Identifiable {
-  public typealias ID = Swift::ObjectIdentifier
+extension DriveKitDBAchievementAccessModule.DBStreakResult : Swift.Identifiable {
+  public typealias ID = Swift.ObjectIdentifier
 }
-extension DriveKitDBAchievementAccessModule::DKStreakTheme : Swift::Equatable {}
-extension DriveKitDBAchievementAccessModule::DKStreakTheme : Swift::Hashable {}
-extension DriveKitDBAchievementAccessModule::DKStreakTheme : Swift::RawRepresentable {}
-extension DriveKitDBAchievementAccessModule::DKBadgeCategory : Swift::Equatable {}
-extension DriveKitDBAchievementAccessModule::DKBadgeCategory : Swift::Hashable {}
-extension DriveKitDBAchievementAccessModule::DKBadgeCategory : Swift::RawRepresentable {}
-extension DriveKitDBAchievementAccessModule::DKLevel : Swift::Equatable {}
-extension DriveKitDBAchievementAccessModule::DKLevel : Swift::Hashable {}
-extension DriveKitDBAchievementAccessModule::DKLevel : Swift::RawRepresentable {}
-extension DriveKitDBAchievementAccessModule::DKRankingType : Swift::Equatable {}
-extension DriveKitDBAchievementAccessModule::DKRankingType : Swift::Hashable {}
-extension DriveKitDBAchievementAccessModule::DKRankingType : Swift::RawRepresentable {}
-extension DriveKitDBAchievementAccessModule::DKRankingPeriod : Swift::Equatable {}
-extension DriveKitDBAchievementAccessModule::DKRankingPeriod : Swift::Hashable {}
-extension DriveKitDBAchievementAccessModule::DKRankingPeriod : Swift::RawRepresentable {}
+public typealias AchievementFoundationFrameworkSet = Foundation.NSSet
+public typealias AchievementCoreDataFrameworkManagedObject = CoreData.NSManagedObject
+extension DriveKitDBAchievementAccessModule.DKStreakTheme : Swift.Equatable {}
+extension DriveKitDBAchievementAccessModule.DKStreakTheme : Swift.Hashable {}
+extension DriveKitDBAchievementAccessModule.DKStreakTheme : Swift.RawRepresentable {}
+extension DriveKitDBAchievementAccessModule.DKBadgeCategory : Swift.Equatable {}
+extension DriveKitDBAchievementAccessModule.DKBadgeCategory : Swift.Hashable {}
+extension DriveKitDBAchievementAccessModule.DKBadgeCategory : Swift.RawRepresentable {}
+extension DriveKitDBAchievementAccessModule.DKLevel : Swift.Equatable {}
+extension DriveKitDBAchievementAccessModule.DKLevel : Swift.Hashable {}
+extension DriveKitDBAchievementAccessModule.DKLevel : Swift.RawRepresentable {}
+extension DriveKitDBAchievementAccessModule.DKRankingType : Swift.Equatable {}
+extension DriveKitDBAchievementAccessModule.DKRankingType : Swift.Hashable {}
+extension DriveKitDBAchievementAccessModule.DKRankingType : Swift.RawRepresentable {}
+extension DriveKitDBAchievementAccessModule.DKRankingPeriod : Swift.Equatable {}
+extension DriveKitDBAchievementAccessModule.DKRankingPeriod : Swift.Hashable {}
+extension DriveKitDBAchievementAccessModule.DKRankingPeriod : Swift.RawRepresentable {}

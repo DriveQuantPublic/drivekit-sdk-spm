@@ -398,8 +398,8 @@
           },
           {
             "kind": "Function",
-            "name": "locationManagerDidChangeAuthorization",
-            "printedName": "locationManagerDidChangeAuthorization(_:)",
+            "name": "locationManager",
+            "printedName": "locationManager(_:didChangeAuthorization:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -411,13 +411,19 @@
                 "name": "CLLocationManager",
                 "printedName": "CoreLocation.CLLocationManager",
                 "usr": "c:objc(cs)CLLocationManager"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "CLAuthorizationStatus",
+                "printedName": "CoreLocation.CLAuthorizationStatus",
+                "usr": "c:@E@CLAuthorizationStatus"
               }
             ],
             "declKind": "Func",
-            "usr": "c:@CM@DriveKitLocationUtilsModule@objc(cs)DKLocationManager(im)locationManagerDidChangeAuthorization:",
-            "mangledName": "$s27DriveKitLocationUtilsModule17DKLocationManagerC08locationG22DidChangeAuthorizationyySo010CLLocationG0CF",
+            "usr": "c:@CM@DriveKitLocationUtilsModule@objc(cs)DKLocationManager(im)locationManager:didChangeAuthorizationStatus:",
+            "mangledName": "$s27DriveKitLocationUtilsModule17DKLocationManagerC08locationG0_22didChangeAuthorizationySo010CLLocationG0C_So21CLAuthorizationStatusVtF",
             "moduleName": "DriveKitLocationUtilsModule",
-            "objc_name": "locationManagerDidChangeAuthorization:",
+            "objc_name": "locationManager:didChangeAuthorizationStatus:",
             "declAttributes": [
               "Dynamic",
               "ObjC",
@@ -532,7 +538,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(locationMode:listener:expirationDate:priority:)",
+            "printedName": "init(locationMode:listener:expirationDate:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -574,18 +580,11 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "hasDefaultArg": true,
-                "usr": "s:Si"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:27DriveKitLocationUtilsModule23DKLocationConfigurationC12locationMode8listener14expirationDate8priorityAcA0fI0O_AA0F8Delegate_pSg10Foundation0L0VSgSitcfc",
-            "mangledName": "$s27DriveKitLocationUtilsModule23DKLocationConfigurationC12locationMode8listener14expirationDate8priorityAcA0fI0O_AA0F8Delegate_pSg10Foundation0L0VSgSitcfc",
+            "usr": "s:27DriveKitLocationUtilsModule23DKLocationConfigurationC12locationMode8listener14expirationDateAcA0fI0O_AA0F8Delegate_pSg10Foundation0L0VSgtcfc",
+            "mangledName": "$s27DriveKitLocationUtilsModule23DKLocationConfigurationC12locationMode8listener14expirationDateAcA0fI0O_AA0F8Delegate_pSg10Foundation0L0VSgtcfc",
             "moduleName": "DriveKitLocationUtilsModule",
             "declAttributes": [
               "AccessControl"
@@ -1189,16 +1188,9 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-location-utils\/DKLocationManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 12000,
+      "offset": 11743,
       "length": 2,
       "value": "30"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/drivekit-location-utils\/DKLocationConfiguration.swift",
-      "kind": "IntegerLiteral",
-      "offset": 518,
-      "length": 1,
-      "value": "0"
     }
   ]
 }
