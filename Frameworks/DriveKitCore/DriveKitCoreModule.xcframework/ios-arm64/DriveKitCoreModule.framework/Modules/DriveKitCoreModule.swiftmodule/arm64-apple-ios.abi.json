@@ -38115,14 +38115,14 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/logs\/DriveKitLog.swift",
       "kind": "StringLiteral",
-      "offset": 15856,
+      "offset": 15861,
       "length": 7,
       "value": "\"ERROR\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/logs\/DriveKitLog.swift",
       "kind": "StringLiteral",
-      "offset": 15880,
+      "offset": 15885,
       "length": 6,
       "value": "\"INFO\""
     },
@@ -38682,70 +38682,70 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/logs\/SVLLog.swift",
       "kind": "StringLiteral",
-      "offset": 263,
+      "offset": 413,
       "length": 19,
       "value": "\"log-svl-detected-\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/logs\/SVLLog.swift",
       "kind": "StringLiteral",
-      "offset": 324,
+      "offset": 474,
       "length": 17,
       "value": "\"log-svl-posted-\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/logs\/SVLLog.swift",
       "kind": "StringLiteral",
-      "offset": 384,
+      "offset": 534,
       "length": 24,
       "value": "\"svl_logging_preference\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/logs\/SVLLog.swift",
       "kind": "IntegerLiteral",
-      "offset": 553,
+      "offset": 703,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/logs\/SVLLog.swift",
       "kind": "IntegerLiteral",
-      "offset": 603,
+      "offset": 753,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/logs\/SVLLog.swift",
       "kind": "IntegerLiteral",
-      "offset": 709,
+      "offset": 859,
       "length": 2,
       "value": "-1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/logs\/SVLLog.swift",
       "kind": "StringLiteral",
-      "offset": 837,
+      "offset": 987,
       "length": 10,
       "value": "\"svl-logs\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/logs\/SVLLog.swift",
       "kind": "BooleanLiteral",
-      "offset": 903,
+      "offset": 1053,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/logs\/SVLLog.swift",
       "kind": "StringLiteral",
-      "offset": 1086,
+      "offset": 1236,
       "length": 13,
       "value": "\"en_US_POSIX\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-core\/drivekit-core\/logs\/SVLLog.swift",
       "kind": "StringLiteral",
-      "offset": 1208,
+      "offset": 1358,
       "length": 12,
       "value": "\"yyyy-MM-dd\""
     },

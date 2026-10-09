@@ -29,7 +29,7 @@ extension DriveKitLocationUtilsModule.DKLocationManager : CoreLocation.CLLocatio
   @objc dynamic public func locationManager(_ manager: CoreLocation.CLLocationManager, didChangeAuthorization status: CoreLocation.CLAuthorizationStatus)
 }
 @objc public class DKLocationConfiguration : ObjectiveC.NSObject {
-  public init(locationMode: DriveKitLocationUtilsModule.DKLocationMode, listener: (any DriveKitLocationUtilsModule.DKLocationDelegate)?, expirationDate: Foundation.Date? = nil)
+  public init(locationMode: DriveKitLocationUtilsModule.DKLocationMode, listener: (any DriveKitLocationUtilsModule.DKLocationDelegate)?, expirationDate: Foundation.Date? = nil, priority: Swift.Int = 0)
   @objc deinit
 }
 public enum DKLocationMode : Swift.Comparable {

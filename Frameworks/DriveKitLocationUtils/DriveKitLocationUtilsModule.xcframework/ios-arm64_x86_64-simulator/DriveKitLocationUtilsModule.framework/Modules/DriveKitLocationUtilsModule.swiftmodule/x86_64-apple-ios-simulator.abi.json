@@ -538,7 +538,7 @@
           {
             "kind": "Constructor",
             "name": "init",
-            "printedName": "init(locationMode:listener:expirationDate:)",
+            "printedName": "init(locationMode:listener:expirationDate:priority:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -580,11 +580,18 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "hasDefaultArg": true,
+                "usr": "s:Si"
               }
             ],
             "declKind": "Constructor",
-            "usr": "s:27DriveKitLocationUtilsModule23DKLocationConfigurationC12locationMode8listener14expirationDateAcA0fI0O_AA0F8Delegate_pSg10Foundation0L0VSgtcfc",
-            "mangledName": "$s27DriveKitLocationUtilsModule23DKLocationConfigurationC12locationMode8listener14expirationDateAcA0fI0O_AA0F8Delegate_pSg10Foundation0L0VSgtcfc",
+            "usr": "s:27DriveKitLocationUtilsModule23DKLocationConfigurationC12locationMode8listener14expirationDate8priorityAcA0fI0O_AA0F8Delegate_pSg10Foundation0L0VSgSitcfc",
+            "mangledName": "$s27DriveKitLocationUtilsModule23DKLocationConfigurationC12locationMode8listener14expirationDate8priorityAcA0fI0O_AA0F8Delegate_pSg10Foundation0L0VSgSitcfc",
             "moduleName": "DriveKitLocationUtilsModule",
             "declAttributes": [
               "AccessControl"
@@ -1191,6 +1198,13 @@
       "offset": 11743,
       "length": 2,
       "value": "30"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-location-utils\/DKLocationConfiguration.swift",
+      "kind": "IntegerLiteral",
+      "offset": 518,
+      "length": 1,
+      "value": "0"
     }
   ]
 }

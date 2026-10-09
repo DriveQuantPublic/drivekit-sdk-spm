@@ -27716,7 +27716,7 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/recorder\/RecorderStateManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 23828,
+      "offset": 23877,
       "length": 1,
       "value": "0"
     },
@@ -28139,6 +28139,27 @@
       "offset": 6118,
       "length": 10,
       "value": "\"DKBeacon\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripAnalysisConstant.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6653,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripAnalysisConstant.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6698,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/TripAnalysisConstant.swift",
+      "kind": "IntegerLiteral",
+      "offset": 6739,
+      "length": 1,
+      "value": "2"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/CrashDetection\/utils\/CircularBuffer.swift",
@@ -28780,7 +28801,7 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/DriveKitTripAnalysis.swift",
       "kind": "BooleanLiteral",
-      "offset": 23816,
+      "offset": 23869,
       "length": 5,
       "value": "false"
     },
