@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
-// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name DriveKitCoreModule
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
+// swift-compiler-version: Apple Swift version 6.4 effective-5.10 (swiftlang-6.4.0.34.1 clang-2100.3.34.1)
+// swift-module-flags: -target arm64-apple-ios15.0 -enable-objc-interop -enable-library-evolution -language-mode 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name DriveKitCoreModule
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.4
 import BackgroundTasks
 import CommonCrypto
 import CoreBluetooth
@@ -18,75 +18,75 @@ import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
 @objc public protocol DriveKitDelegate {
-  @objc optional func driveKitDidConnect(_ driveKit: DriveKitCoreModule.DriveKit)
-  @objc optional func driveKitDidDisconnect(_ driveKit: DriveKitCoreModule.DriveKit)
-  @objc optional func driveKit(_ driveKit: DriveKitCoreModule.DriveKit, didReceiveAuthenticationError error: DriveKitCoreModule.RequestError)
-  @objc optional func userIdUpdateStatusChanged(status: DriveKitCoreModule.UpdateUserIdStatus, userId: Swift.String?)
-  @objc optional func driveKit(_ driveKit: DriveKitCoreModule.DriveKit, accountDeletionCompleted status: DriveKitCoreModule.DeleteAccountStatus)
-  @objc optional func driveKit(_ driveKit: DriveKitCoreModule.DriveKit, backgroundFetchStatusChanged status: DriveKitCoreModule.DriveKitBackgroundFetchStatus)
+  @objc optional func driveKitDidConnect(_ driveKit: DriveKitCoreModule::DriveKit)
+  @objc optional func driveKitDidDisconnect(_ driveKit: DriveKitCoreModule::DriveKit)
+  @objc optional func driveKit(_ driveKit: DriveKitCoreModule::DriveKit, didReceiveAuthenticationError error: DriveKitCoreModule::RequestError)
+  @objc optional func userIdUpdateStatusChanged(status: DriveKitCoreModule::UpdateUserIdStatus, userId: Swift::String?)
+  @objc optional func driveKit(_ driveKit: DriveKitCoreModule::DriveKit, accountDeletionCompleted status: DriveKitCoreModule::DeleteAccountStatus)
+  @objc optional func driveKit(_ driveKit: DriveKitCoreModule::DriveKit, backgroundFetchStatusChanged status: DriveKitCoreModule::DriveKitBackgroundFetchStatus)
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class DriveKit : ObjectiveC.NSObject {
-  @objc public static let sdkVersion: Swift.String
-  @objc public static let shared: DriveKitCoreModule.DriveKit
-  @objc public var config: DriveKitCoreModule.GlobalConfig
-  final public let modules: DriveKitCoreModule.DKModuleManager
-  @objc public var isInitialized: Swift.Bool {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class DriveKit : ObjectiveC::NSObject {
+  @objc public static let sdkVersion: Swift::String
+  @objc public static let shared: DriveKitCoreModule::DriveKit
+  @objc public var config: DriveKitCoreModule::GlobalConfig
+  final public let modules: DriveKitCoreModule::DKModuleManager
+  @objc public var isInitialized: Swift::Bool {
     get
   }
-  public var installationId: Swift.String? {
+  public var installationId: Swift::String? {
     get
   }
   @objc deinit
   @objc(initialize) public func objc_initialize()
-  @objc(initialize:) public func objc_initialize(delegate: (any DriveKitCoreModule.DriveKitDelegate)?)
-  public func initialize(delegate: (any DriveKitCoreModule.DriveKitDelegate)? = nil)
-  @objc public func isAutoInitEnabled() -> Swift.Bool
-  @objc public func isConfigured() -> Swift.Bool
-  @objc public func isUserConnected() -> Swift.Bool
-  @objc public func setApiKey(key: Swift.String)
-  @objc public func setUserId(userId: Swift.String)
-  @objc public func addDriveKitDelegate(_ delegate: any DriveKitCoreModule.DriveKitDelegate)
-  @objc public func removeDriveKitDelegate(_ delegate: any DriveKitCoreModule.DriveKitDelegate)
+  @objc(initialize:) public func objc_initialize(delegate: (any DriveKitCoreModule::DriveKitDelegate)?)
+  public func initialize(delegate: (any DriveKitCoreModule::DriveKitDelegate)? = nil)
+  @objc public func isAutoInitEnabled() -> Swift::Bool
+  @objc public func isConfigured() -> Swift::Bool
+  @objc public func isUserConnected() -> Swift::Bool
+  @objc public func setApiKey(key: Swift::String)
+  @objc public func setUserId(userId: Swift::String)
+  @objc public func addDriveKitDelegate(_ delegate: any DriveKitCoreModule::DriveKitDelegate)
+  @objc public func removeDriveKitDelegate(_ delegate: any DriveKitCoreModule::DriveKitDelegate)
   @objc public func removeAllDriveKitDelegates()
-  @objc public func deleteAccount(instantDeletion: Swift.Bool = false)
-  @objc public func enableLogging(showInConsole: Swift.Bool = true)
-  @objc public func disableLogging(showInConsole: Swift.Bool = true)
-  @objc public func isLoggingEnabled() -> Swift.Bool
-  @objc public func getUserInfo(synchronizationType: DriveKitCoreModule.SynchronizationType = .defaultSync, completion: @escaping (DriveKitCoreModule.UserInfoGetStatus, DriveKitCoreModule.UserInfo?) -> Swift.Void)
-  @objc public func updateUserInfo(firstname: Swift.String? = nil, lastname: Swift.String? = nil, pseudo: Swift.String? = nil, completion: @escaping (Swift.Bool) -> Swift.Void)
-  @objc public func updateUserId(userId: Swift.String)
-  public func isTokenValid() -> Swift.Bool
-  @objc public func registerNotificationDelegate(_ delegate: any UserNotifications.UNUserNotificationCenterDelegate)
-  @objc public func unregisterNotificationDelegate(_ delegate: any UserNotifications.UNUserNotificationCenterDelegate)
-  @objc public func addDeviceConfigurationDelegate(_ delegate: any DriveKitCoreModule.DKDeviceConfigurationDelegate)
-  @objc public func removeDeviceConfigurationDelegate(_ delegate: any DriveKitCoreModule.DKDeviceConfigurationDelegate)
+  @objc public func deleteAccount(instantDeletion: Swift::Bool = false)
+  @objc public func enableLogging(showInConsole: Swift::Bool = true)
+  @objc public func disableLogging(showInConsole: Swift::Bool = true)
+  @objc public func isLoggingEnabled() -> Swift::Bool
+  @objc public func getUserInfo(synchronizationType: DriveKitCoreModule::SynchronizationType = .defaultSync, completion: @escaping (DriveKitCoreModule::UserInfoGetStatus, DriveKitCoreModule::UserInfo?) -> Swift::Void)
+  @objc public func updateUserInfo(firstname: Swift::String? = nil, lastname: Swift::String? = nil, pseudo: Swift::String? = nil, completion: @escaping (Swift::Bool) -> Swift::Void)
+  @objc public func updateUserId(userId: Swift::String)
+  public func isTokenValid() -> Swift::Bool
+  @objc public func registerNotificationDelegate(_ delegate: any UserNotifications::UNUserNotificationCenterDelegate)
+  @objc public func unregisterNotificationDelegate(_ delegate: any UserNotifications::UNUserNotificationCenterDelegate)
+  @objc public func addDeviceConfigurationDelegate(_ delegate: any DriveKitCoreModule::DKDeviceConfigurationDelegate)
+  @objc public func removeDeviceConfigurationDelegate(_ delegate: any DriveKitCoreModule::DKDeviceConfigurationDelegate)
   @objc public func removeAllDeviceConfigurationDelegates()
   @objc public func reset()
-  public static func getSdkVersion(of sdkClass: Swift.AnyClass) -> Swift.String
+  public static func getSdkVersion(of sdkClass: Swift::AnyClass) -> Swift::String
 }
-extension DriveKitCoreModule.DriveKit : DriveKitCoreModule.DriveKitDelegate {
-  @objc dynamic public func driveKitDidConnect(_ driveKit: DriveKitCoreModule.DriveKit)
-  @objc dynamic public func driveKitDidDisconnect(_ driveKit: DriveKitCoreModule.DriveKit)
-  @objc dynamic public func driveKit(_ driveKit: DriveKitCoreModule.DriveKit, accountDeletionCompleted status: DriveKitCoreModule.DeleteAccountStatus)
-  @objc dynamic public func userIdUpdateStatusChanged(status: DriveKitCoreModule.UpdateUserIdStatus, userId: Swift.String?)
+extension DriveKitCoreModule::DriveKit : DriveKitCoreModule::DriveKitDelegate {
+  @objc dynamic public func driveKitDidConnect(_ driveKit: DriveKitCoreModule::DriveKit)
+  @objc dynamic public func driveKitDidDisconnect(_ driveKit: DriveKitCoreModule::DriveKit)
+  @objc dynamic public func driveKit(_ driveKit: DriveKitCoreModule::DriveKit, accountDeletionCompleted status: DriveKitCoreModule::DeleteAccountStatus)
+  @objc dynamic public func userIdUpdateStatusChanged(status: DriveKitCoreModule::UpdateUserIdStatus, userId: Swift::String?)
 }
 public struct DKAddress {
-  public let address: Swift.String?
-  public let city: Swift.String
-  public let state: Swift.String
-  public let country: Swift.String
-  public let postalCode: Swift.String
-  public init(address: Swift.String?, city: Swift.String, state: Swift.String, country: Swift.String, postalCode: Swift.String)
-  public static func isEmpty(_ value: Swift.String?) -> Swift.Bool
+  public let address: Swift::String?
+  public let city: Swift::String
+  public let state: Swift::String
+  public let country: Swift::String
+  public let postalCode: Swift::String
+  public init(address: Swift::String?, city: Swift::String, state: Swift::String, country: Swift::String, postalCode: Swift::String)
+  public static func isEmpty(_ value: Swift::String?) -> Swift::Bool
 }
-@objc public enum DKDay : Swift.Int, Swift.Codable {
+@objc public enum DKDay : Swift::Int, Swift::Codable {
   case monday = 0, tuesday = 1, wednesday = 2, thursday = 3, friday = 4, saturday = 5, sunday = 6, unknown = -1
-  public static func fromResponse(_ response: Swift.String) -> DriveKitCoreModule.DKDay
-  public func dayString() -> Swift.String
-  public func dayIndex() -> Swift.Int
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
+  public static func fromResponse(_ response: Swift::String) -> DriveKitCoreModule::DKDay
+  public func dayString() -> Swift::String
+  public func dayIndex() -> Swift::Int
+  public init?(rawValue: Swift::Int)
+  public typealias RawValue = Swift::Int
+  public var rawValue: Swift::Int {
     get
   }
 }
@@ -94,104 +94,104 @@ public enum DKCoordinateAccuracy {
   case good
   case fair
   case poor
-  public static func == (a: DriveKitCoreModule.DKCoordinateAccuracy, b: DriveKitCoreModule.DKCoordinateAccuracy) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
+  public static func == (a: DriveKitCoreModule::DKCoordinateAccuracy, b: DriveKitCoreModule::DKCoordinateAccuracy) -> Swift::Bool
+  public func hash(into hasher: inout Swift::Hasher)
+  public var hashValue: Swift::Int {
     get
   }
 }
-@objc public enum DKPermissionStatus : Swift.Int {
+@objc public enum DKPermissionStatus : Swift::Int {
   case valid, invalid, notDetermined, phoneRestricted
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
+  public init?(rawValue: Swift::Int)
+  public typealias RawValue = Swift::Int
+  public var rawValue: Swift::Int {
     get
   }
 }
-public enum DKSendTrigger : Swift.String {
-  public static let headerKey: Swift.String
+public enum DKSendTrigger : Swift::String {
+  public static let headerKey: Swift::String
   case immediate
   case delayed
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
+  public init?(rawValue: Swift::String)
+  public typealias RawValue = Swift::String
+  public var rawValue: Swift::String {
     get
   }
 }
-@objc public enum DKLocationAccuracy : Swift.Int {
+@objc public enum DKLocationAccuracy : Swift::Int {
   case precise, approximative, unknown
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
+  public init?(rawValue: Swift::Int)
+  public typealias RawValue = Swift::Int
+  public var rawValue: Swift::Int {
     get
   }
 }
 public enum TimeStoragePolicy {
   case standard
-  case appGroup(Swift.String)
-  public init(appGroupID: Swift.String?)
+  case appGroup(Swift::String)
+  public init(appGroupID: Swift::String?)
 }
 public struct TimeStorage {
-  public init(storagePolicy: DriveKitCoreModule.TimeStoragePolicy)
+  public init(storagePolicy: DriveKitCoreModule::TimeStoragePolicy)
 }
-extension Swift.Double {
-  public func coerceIn(minValue: Swift.Double, maxValue: Swift.Double) -> Swift.Double
-  public func reduceAccuracy(decimalNumber: Swift.Int) -> Foundation.Decimal
+extension Swift::Double {
+  public func coerceIn(minValue: Swift::Double, maxValue: Swift::Double) -> Swift::Double
+  public func reduceAccuracy(decimalNumber: Swift::Int) -> Foundation::Decimal
 }
-extension Foundation.Decimal {
-  public var doubleValue: Swift.Double {
+extension Foundation::Decimal {
+  public var doubleValue: Swift::Double {
     get
   }
 }
-extension Swift.Array {
-  public func elements(fromOffsets indexSet: Foundation.IndexSet) -> Swift.Array<Element>
+extension Swift::Array {
+  public func elements(fromOffsets indexSet: Foundation::IndexSet) -> Swift::Array<Element>
 }
-extension Swift.Array where Element : Swift.AdditiveArithmetic {
+extension Swift::Array where Element : Swift::AdditiveArithmetic {
   public func sumAll() -> Element
-  public func sum(fromOffsets indexSet: Foundation.IndexSet) -> Element
+  public func sum(fromOffsets indexSet: Foundation::IndexSet) -> Element
 }
-extension Swift.Array where Element == Swift.Double {
-  public func reduceAccuracy(decimalNumber: Swift.Int) -> [Foundation.Decimal]
-  public func average(fromOffsets indexSet: Foundation.IndexSet) -> Swift.Double
+extension Swift::Array where Element == Swift::Double {
+  public func reduceAccuracy(decimalNumber: Swift::Int) -> [Foundation::Decimal]
+  public func average(fromOffsets indexSet: Foundation::IndexSet) -> Swift::Double
 }
-extension Swift.Array where Element == Swift.Int {
-  public func average(fromOffsets indexSet: Foundation.IndexSet) -> Swift.Int
+extension Swift::Array where Element == Swift::Int {
+  public func average(fromOffsets indexSet: Foundation::IndexSet) -> Swift::Int
 }
-extension Swift.ClosedRange {
+extension Swift::ClosedRange {
   public func clamp(_ value: Bound) -> Bound
 }
 public struct WeakArray<Element> where Element : AnyObject {
   public init(_ elements: [Element] = [])
-  public subscript(index: Swift.Int) -> Element? {
+  public subscript(index: Swift::Int) -> Element? {
     get
   }
   public mutating func append(_ newElement: Element)
-  public mutating func append(_ newElement: DriveKitCoreModule.WeakReference<Element>)
+  public mutating func append(_ newElement: DriveKitCoreModule::WeakReference<Element>)
   public mutating func remove(_ element: Element)
-  public mutating func remove(_ element: DriveKitCoreModule.WeakReference<Element>)
+  public mutating func remove(_ element: DriveKitCoreModule::WeakReference<Element>)
 }
-extension DriveKitCoreModule.WeakArray : Swift.Collection {
-  public func index(after index: Swift.Int) -> Swift.Int
-  public var startIndex: Swift.Int {
+extension DriveKitCoreModule::WeakArray : Swift::Collection {
+  public func index(after index: Swift::Int) -> Swift::Int
+  public var startIndex: Swift::Int {
     get
   }
-  public var endIndex: Swift.Int {
+  public var endIndex: Swift::Int {
     get
   }
-  public typealias Index = Swift.Int
-  public typealias Indices = Swift.DefaultIndices<DriveKitCoreModule.WeakArray<Element>>
-  public typealias Iterator = Swift.IndexingIterator<DriveKitCoreModule.WeakArray<Element>>
-  public typealias SubSequence = Swift.Slice<DriveKitCoreModule.WeakArray<Element>>
+  public typealias Index = Swift::Int
+  public typealias Indices = Swift::DefaultIndices<DriveKitCoreModule::WeakArray<Element>>
+  public typealias Iterator = Swift::IndexingIterator<DriveKitCoreModule::WeakArray<Element>>
+  public typealias SubSequence = Swift::Slice<DriveKitCoreModule::WeakArray<Element>>
 }
 @_hasMissingDesignatedInitializers final public class WeakReference<T> where T : AnyObject {
   @objc deinit
 }
-@objc @_hasMissingDesignatedInitializers public class DKDeviceConfigurationEvent : ObjectiveC.NSObject {
-  @objc final public let type: DriveKitCoreModule.DKDeviceConfigurationEventType
-  @objc final public let isValid: Swift.Bool
+@objc @_hasMissingDesignatedInitializers public class DKDeviceConfigurationEvent : ObjectiveC::NSObject {
+  @objc final public let type: DriveKitCoreModule::DKDeviceConfigurationEventType
+  @objc final public let isValid: Swift::Bool
   @objc deinit
 }
-@objc public enum DKDeviceConfigurationEventType : Swift.Int {
+@objc public enum DKDeviceConfigurationEventType : Swift::Int {
   case activityPermission
   case locationPermission
   case bluetoothPermission
@@ -199,90 +199,90 @@ extension DriveKitCoreModule.WeakArray : Swift.Collection {
   case locationSensor
   case bluetoothSensor
   case lowPowerMode
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
+  public init?(rawValue: Swift::Int)
+  public typealias RawValue = Swift::Int
+  public var rawValue: Swift::Int {
     get
   }
 }
 @objc public protocol DKTripLocation {
-  @objc var date: Foundation.Date { get }
-  @objc var latitude: Swift.Double { get }
-  @objc var longitude: Swift.Double { get }
-  @objc var accuracyMeter: Swift.Double { get }
+  @objc var date: Foundation::Date { get }
+  @objc var latitude: Swift::Double { get }
+  @objc var longitude: Swift::Double { get }
+  @objc var accuracyMeter: Swift::Double { get }
 }
-extension DriveKitCoreModule.DKTripLocation {
-  public func getAccuracyLevel() -> DriveKitCoreModule.DKCoordinateAccuracy
+extension DriveKitCoreModule::DKTripLocation {
+  public func getAccuracyLevel() -> DriveKitCoreModule::DKCoordinateAccuracy
 }
 public struct DKDelegateList<Element> where Element : AnyObject {
   public init(_ delegates: [Element] = [])
-  public subscript(index: Swift.Int) -> Element? {
+  public subscript(index: Swift::Int) -> Element? {
     get
   }
   public mutating func append(_ delegate: Element)
   public mutating func remove(_ delegate: Element)
 }
-extension DriveKitCoreModule.DKDelegateList : Swift.Collection {
-  public func index(after index: Swift.Int) -> Swift.Int
-  public var startIndex: Swift.Int {
+extension DriveKitCoreModule::DKDelegateList : Swift::Collection {
+  public func index(after index: Swift::Int) -> Swift::Int
+  public var startIndex: Swift::Int {
     get
   }
-  public var endIndex: Swift.Int {
+  public var endIndex: Swift::Int {
     get
   }
-  public typealias Index = Swift.Int
-  public typealias Indices = Swift.DefaultIndices<DriveKitCoreModule.DKDelegateList<Element>>
-  public typealias Iterator = Swift.IndexingIterator<DriveKitCoreModule.DKDelegateList<Element>>
-  public typealias SubSequence = Swift.Slice<DriveKitCoreModule.DKDelegateList<Element>>
+  public typealias Index = Swift::Int
+  public typealias Indices = Swift::DefaultIndices<DriveKitCoreModule::DKDelegateList<Element>>
+  public typealias Iterator = Swift::IndexingIterator<DriveKitCoreModule::DKDelegateList<Element>>
+  public typealias SubSequence = Swift::Slice<DriveKitCoreModule::DKDelegateList<Element>>
 }
 public protocol DKSensorsListener : AnyObject {
-  func sensors() -> Swift.Set<DriveKitCoreModule.DKSensor>
-  func sensorsFrequency() -> Swift.Int
-  func onNewSensorsData(accelerometerData: CoreMotion.CMAccelerometerData?, deviceMotion: CoreMotion.CMDeviceMotion?, gyroscopeData: CoreMotion.CMGyroData?, magnetometerData: CoreMotion.CMMagnetometerData?)
+  func sensors() -> Swift::Set<DriveKitCoreModule::DKSensor>
+  func sensorsFrequency() -> Swift::Int
+  func onNewSensorsData(accelerometerData: CoreMotion::CMAccelerometerData?, deviceMotion: CoreMotion::CMDeviceMotion?, gyroscopeData: CoreMotion::CMGyroData?, magnetometerData: CoreMotion::CMMagnetometerData?)
 }
-public enum DKNetworkTaskFlag : Swift.Codable, Swift.Hashable {
-  case retryOnServerError(Swift.Bool)
-  public static func == (a: DriveKitCoreModule.DKNetworkTaskFlag, b: DriveKitCoreModule.DKNetworkTaskFlag) -> Swift.Bool
-  public func encode(to encoder: any Swift.Encoder) throws
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
+public enum DKNetworkTaskFlag : Swift::Codable, Swift::Hashable {
+  case retryOnServerError(Swift::Bool)
+  public static func == (a: DriveKitCoreModule::DKNetworkTaskFlag, b: DriveKitCoreModule::DKNetworkTaskFlag) -> Swift::Bool
+  public func encode(to encoder: any Swift::Encoder) throws
+  public func hash(into hasher: inout Swift::Hasher)
+  public var hashValue: Swift::Int {
     get
   }
-  public init(from decoder: any Swift.Decoder) throws
+  public init(from decoder: any Swift::Decoder) throws
 }
-public enum DKDiagnosisOperationSource : Swift.String {
+public enum DKDiagnosisOperationSource : Swift::String {
   case backgroundFetch, tripEvent, initialize, sensorUpdate, logFileRequested, userLogin, reset, powerStateUpdate, other
-  public init?(rawValue: Swift.String)
-  public typealias RawValue = Swift.String
-  public var rawValue: Swift.String {
+  public init?(rawValue: Swift::String)
+  public typealias RawValue = Swift::String
+  public var rawValue: Swift::String {
     get
   }
 }
-@objc public enum SynchronizationType : Swift.Int {
+@objc public enum SynchronizationType : Swift::Int {
   case defaultSync, cache
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
+  public init?(rawValue: Swift::Int)
+  public typealias RawValue = Swift::Int
+  public var rawValue: Swift::Int {
     get
   }
 }
 public enum DateUtils {
-  public static func convertDateToString(date: Foundation.Date) -> Swift.String
+  public static func convertDateToString(date: Foundation::Date) -> Swift::String
 }
-extension Foundation.DateFormatter {
-  public static let dateFormatter: Foundation.DateFormatter
+extension Foundation::DateFormatter {
+  public static let dateFormatter: Foundation::DateFormatter
 }
-extension Swift.Array where Element == Foundation.Date {
-  public func indexSetsByYear() -> [Foundation.Date : Foundation.IndexSet]
+extension Swift::Array where Element == Foundation::Date {
+  public func indexSetsByYear() -> [Foundation::Date : Foundation::IndexSet]
 }
-public struct DKTime : Swift.Codable {
-  public var hour: Swift.Int
-  public var minute: Swift.Int
-  public init(hour: Swift.Int, minute: Swift.Int)
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
+public struct DKTime : Swift::Codable {
+  public var hour: Swift::Int
+  public var minute: Swift::Int
+  public init(hour: Swift::Int, minute: Swift::Int)
+  public func encode(to encoder: any Swift::Encoder) throws
+  public init(from decoder: any Swift::Decoder) throws
 }
-@frozen public struct AnyDecodable : Swift.Decodable {
+@frozen public struct AnyDecodable : Swift::Decodable {
   public let value: Any
   public init<T>(_ value: T?)
 }
@@ -291,49 +291,49 @@ internal protocol _AnyDecodable {
   var value: Any { get }
   init<T>(_ value: T?)
 }
-extension DriveKitCoreModule.AnyDecodable : DriveKitCoreModule._AnyDecodable {
+extension DriveKitCoreModule::AnyDecodable : DriveKitCoreModule::_AnyDecodable {
 }
-extension DriveKitCoreModule._AnyDecodable {
-  public init(from decoder: any Swift.Decoder) throws
+extension DriveKitCoreModule::_AnyDecodable {
+  public init(from decoder: any Swift::Decoder) throws
 }
-extension DriveKitCoreModule.AnyDecodable : Swift.Equatable {
-  public static func == (lhs: DriveKitCoreModule.AnyDecodable, rhs: DriveKitCoreModule.AnyDecodable) -> Swift.Bool
+extension DriveKitCoreModule::AnyDecodable : Swift::Equatable {
+  public static func == (lhs: DriveKitCoreModule::AnyDecodable, rhs: DriveKitCoreModule::AnyDecodable) -> Swift::Bool
 }
-extension DriveKitCoreModule.AnyDecodable : Swift.CustomStringConvertible {
-  public var description: Swift.String {
+extension DriveKitCoreModule::AnyDecodable : Swift::CustomStringConvertible {
+  public var description: Swift::String {
     get
   }
 }
-extension DriveKitCoreModule.AnyDecodable : Swift.CustomDebugStringConvertible {
-  public var debugDescription: Swift.String {
+extension DriveKitCoreModule::AnyDecodable : Swift::CustomDebugStringConvertible {
+  public var debugDescription: Swift::String {
     get
   }
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class DKDiagnosisHelper : ObjectiveC.NSObject {
-  @objc public static let shared: DriveKitCoreModule.DKDiagnosisHelper
-  weak public var delegate: (any DriveKitCoreModule.DKDiagnosisHelperDelegate)?
-  @objc public func isActivated(_ connectivityType: DriveKitCoreModule.DKConnectivityType) -> Swift.Bool
-  @objc public func isBluetoothSensorReady() -> Swift.Bool
-  @objc public func isLowPowerModeEnabled() -> Swift.Bool
-  @objc public func getPermissionStatus(_ permissionType: DriveKitCoreModule.DKPermissionType) -> DriveKitCoreModule.DKPermissionStatus
-  @objc public func getNotificationPermissionStatus(completion: @escaping (DriveKitCoreModule.DKPermissionStatus) -> Swift.Void)
-  @objc public func getLocationPermissionStatus() -> DriveKitCoreModule.DKPermissionStatus
-  @objc public func getLocationAccuracy() -> DriveKitCoreModule.DKLocationAccuracy
-  @objc public func isNetworkReachable(timeout: Foundation.TimeInterval = 0.1) -> Swift.Bool
-  @objc public func requestPermission(_ permissionType: DriveKitCoreModule.DKPermissionType)
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class DKDiagnosisHelper : ObjectiveC::NSObject {
+  @objc public static let shared: DriveKitCoreModule::DKDiagnosisHelper
+  weak public var delegate: (any DriveKitCoreModule::DKDiagnosisHelperDelegate)?
+  @objc public func isActivated(_ connectivityType: DriveKitCoreModule::DKConnectivityType) -> Swift::Bool
+  @objc public func isBluetoothSensorReady() -> Swift::Bool
+  @objc public func isLowPowerModeEnabled() -> Swift::Bool
+  @objc public func getPermissionStatus(_ permissionType: DriveKitCoreModule::DKPermissionType) -> DriveKitCoreModule::DKPermissionStatus
+  @objc public func getNotificationPermissionStatus(completion: @escaping (DriveKitCoreModule::DKPermissionStatus) -> Swift::Void)
+  @objc public func getLocationPermissionStatus() -> DriveKitCoreModule::DKPermissionStatus
+  @objc public func getLocationAccuracy() -> DriveKitCoreModule::DKLocationAccuracy
+  @objc public func isNetworkReachable(timeout: Foundation::TimeInterval = 0.1) -> Swift::Bool
+  @objc public func requestPermission(_ permissionType: DriveKitCoreModule::DKPermissionType)
   @objc public func requestNotificationPermission()
-  @objc public func isActivityValid() -> Swift.Bool
-  @objc public func isBluetoothValid() -> Swift.Bool
-  @objc public func isLocationValid() -> Swift.Bool
-  @objc public func isNetworkValid() -> Swift.Bool
-  @objc public func isNotificationValid(completion: @escaping (Swift.Bool) -> Swift.Void)
+  @objc public func isActivityValid() -> Swift::Bool
+  @objc public func isBluetoothValid() -> Swift::Bool
+  @objc public func isLocationValid() -> Swift::Bool
+  @objc public func isNetworkValid() -> Swift::Bool
+  @objc public func isNotificationValid(completion: @escaping (Swift::Bool) -> Swift::Void)
   @objc deinit
 }
-extension DriveKitCoreModule.DKDiagnosisHelper : CoreBluetooth.CBCentralManagerDelegate {
-  @objc dynamic public func centralManagerDidUpdateState(_ central: CoreBluetooth.CBCentralManager)
+extension DriveKitCoreModule::DKDiagnosisHelper : CoreBluetooth::CBCentralManagerDelegate {
+  @objc dynamic public func centralManagerDidUpdateState(_ central: CoreBluetooth::CBCentralManager)
 }
-extension DriveKitCoreModule.DKDiagnosisHelper : CoreLocation.CLLocationManagerDelegate {
-  @objc dynamic public func locationManagerDidChangeAuthorization(_ manager: CoreLocation.CLLocationManager)
+extension DriveKitCoreModule::DKDiagnosisHelper : CoreLocation::CLLocationManagerDelegate {
+  @objc dynamic public func locationManagerDidChangeAuthorization(_ manager: CoreLocation::CLLocationManager)
 }
 public protocol DKDiagnosisHelperDelegate : AnyObject {
   func bluetoothStateChanged()
@@ -342,463 +342,471 @@ public protocol DKSDKDiagnosisDelegate : AnyObject {
   func bluetoothStateChanged()
   func gpsStateChanged()
 }
-@objc final public class UserInfo : ObjectiveC.NSObject, Swift.Codable {
-  final public let firstname: Swift.String?
-  final public let lastname: Swift.String?
-  final public let pseudo: Swift.String?
-  public init(firstname: Swift.String?, lastname: Swift.String?, pseudo: Swift.String?)
+@objc final public class UserInfo : ObjectiveC::NSObject, Swift::Codable {
+  final public let firstname: Swift::String?
+  final public let lastname: Swift::String?
+  final public let pseudo: Swift::String?
+  public init(firstname: Swift::String?, lastname: Swift::String?, pseudo: Swift::String?)
   @objc deinit
-  final public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
+  final public func encode(to encoder: any Swift::Encoder) throws
+  public init(from decoder: any Swift::Decoder) throws
 }
-@objc public enum DKConnectivityType : Swift.Int {
+@objc public enum DKConnectivityType : Swift::Int {
   case bluetooth, gps
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
+  public init?(rawValue: Swift::Int)
+  public typealias RawValue = Swift::Int
+  public var rawValue: Swift::Int {
     get
   }
 }
-@objc public enum DKRoadContext : Swift.Int, Swift.Codable {
+@objc public enum DKRoadContext : Swift::Int, Swift::Codable {
   case trafficJam
   case heavyUrbanTraffic
   case city
   case suburban
   case expressways
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
+  public init?(rawValue: Swift::Int)
+  public typealias RawValue = Swift::Int
+  public var rawValue: Swift::Int {
     get
   }
 }
 @_hasMissingDesignatedInitializers public class DriveKitLog {
-  public var isLoggingEnabled: Swift.Bool {
+  public var isLoggingEnabled: Swift::Bool {
     get
   }
-  public var showLogsInConsole: Swift.Bool {
+  public var showLogsInConsole: Swift::Bool {
     get
   }
-  public var currentLogFile: Foundation.URL? {
+  public var currentLogFile: Foundation::URL? {
     get
   }
-  public static let shared: DriveKitCoreModule.DriveKitLog
-  public func errorLog(tag: Swift.String, message: Swift.String)
-  public func infoLog(tag: Swift.String, message: Swift.String)
-  public func getZippedLogFilesUrl() -> Foundation.URL?
+  public static let shared: DriveKitCoreModule::DriveKitLog
+  public func errorLog(tag: Swift::String, message: Swift::String)
+  public func infoLog(tag: Swift::String, message: Swift::String)
+  public func getZippedLogFilesUrl() -> Foundation::URL?
   @objc deinit
 }
-public func zip<A, B, C>(_ a: A, _ b: B, _ c: C) -> DriveKitCoreModule.Zip3Sequence<A, B, C> where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence
-public func zip<A, B, C, D>(_ a: A, _ b: B, _ c: C, _ d: D) -> DriveKitCoreModule.Zip4Sequence<A, B, C, D> where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence
-public func zip<A, B, C, D, E>(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E) -> DriveKitCoreModule.Zip5Sequence<A, B, C, D, E> where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence
-public func zip<A, B, C, D, E, F>(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E, _ f: F) -> DriveKitCoreModule.Zip6Sequence<A, B, C, D, E, F> where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence
-public func zip<A, B, C, D, E, F, G>(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E, _ f: F, _ g: G) -> DriveKitCoreModule.Zip7Sequence<A, B, C, D, E, F, G> where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence, G : Swift.Sequence
-public func zip<A, B, C, D, E, F, G, H>(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E, _ f: F, _ g: G, _ h: H) -> DriveKitCoreModule.Zip8Sequence<A, B, C, D, E, F, G, H> where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence, G : Swift.Sequence, H : Swift.Sequence
-public func zip<A, B, C, D, E, F, G, H, I>(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E, _ f: F, _ g: G, _ h: H, _ i: I) -> DriveKitCoreModule.Zip9Sequence<A, B, C, D, E, F, G, H, I> where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence, G : Swift.Sequence, H : Swift.Sequence, I : Swift.Sequence
-public func zip<A, B, C, D, E, F, G, H, I, J>(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E, _ f: F, _ g: G, _ h: H, _ i: I, _ j: J) -> DriveKitCoreModule.Zip10Sequence<A, B, C, D, E, F, G, H, I, J> where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence, G : Swift.Sequence, H : Swift.Sequence, I : Swift.Sequence, J : Swift.Sequence
-public func zip<A, B, C, D, E, F, G, H, I, J, K>(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E, _ f: F, _ g: G, _ h: H, _ i: I, _ j: J, _ k: K) -> DriveKitCoreModule.Zip11Sequence<A, B, C, D, E, F, G, H, I, J, K> where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence, G : Swift.Sequence, H : Swift.Sequence, I : Swift.Sequence, J : Swift.Sequence, K : Swift.Sequence
-public func zip<A, B, C, D, E, F, G, H, I, J, K, L>(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E, _ f: F, _ g: G, _ h: H, _ i: I, _ j: J, _ k: K, _ l: L) -> DriveKitCoreModule.Zip12Sequence<A, B, C, D, E, F, G, H, I, J, K, L> where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence, G : Swift.Sequence, H : Swift.Sequence, I : Swift.Sequence, J : Swift.Sequence, K : Swift.Sequence, L : Swift.Sequence
-public func zip<A, B, C, D, E, F, G, H, I, J, K, L, M>(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E, _ f: F, _ g: G, _ h: H, _ i: I, _ j: J, _ k: K, _ l: L, _ m: M) -> DriveKitCoreModule.Zip13Sequence<A, B, C, D, E, F, G, H, I, J, K, L, M> where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence, G : Swift.Sequence, H : Swift.Sequence, I : Swift.Sequence, J : Swift.Sequence, K : Swift.Sequence, L : Swift.Sequence, M : Swift.Sequence
-public struct Zip3Sequence<A, B, C> : Swift.Sequence where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence {
+public func zip<A, B, C>(_ a: A, _ b: B, _ c: C) -> DriveKitCoreModule::Zip3Sequence<A, B, C> where A : Swift::Sequence, B : Swift::Sequence, C : Swift::Sequence
+public func zip<A, B, C, D>(_ a: A, _ b: B, _ c: C, _ d: D) -> DriveKitCoreModule::Zip4Sequence<A, B, C, D> where A : Swift::Sequence, B : Swift::Sequence, C : Swift::Sequence, D : Swift::Sequence
+public func zip<A, B, C, D, E>(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E) -> DriveKitCoreModule::Zip5Sequence<A, B, C, D, E> where A : Swift::Sequence, B : Swift::Sequence, C : Swift::Sequence, D : Swift::Sequence, E : Swift::Sequence
+public func zip<A, B, C, D, E, F>(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E, _ f: F) -> DriveKitCoreModule::Zip6Sequence<A, B, C, D, E, F> where A : Swift::Sequence, B : Swift::Sequence, C : Swift::Sequence, D : Swift::Sequence, E : Swift::Sequence, F : Swift::Sequence
+public func zip<A, B, C, D, E, F, G>(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E, _ f: F, _ g: G) -> DriveKitCoreModule::Zip7Sequence<A, B, C, D, E, F, G> where A : Swift::Sequence, B : Swift::Sequence, C : Swift::Sequence, D : Swift::Sequence, E : Swift::Sequence, F : Swift::Sequence, G : Swift::Sequence
+public func zip<A, B, C, D, E, F, G, H>(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E, _ f: F, _ g: G, _ h: H) -> DriveKitCoreModule::Zip8Sequence<A, B, C, D, E, F, G, H> where A : Swift::Sequence, B : Swift::Sequence, C : Swift::Sequence, D : Swift::Sequence, E : Swift::Sequence, F : Swift::Sequence, G : Swift::Sequence, H : Swift::Sequence
+public func zip<A, B, C, D, E, F, G, H, I>(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E, _ f: F, _ g: G, _ h: H, _ i: I) -> DriveKitCoreModule::Zip9Sequence<A, B, C, D, E, F, G, H, I> where A : Swift::Sequence, B : Swift::Sequence, C : Swift::Sequence, D : Swift::Sequence, E : Swift::Sequence, F : Swift::Sequence, G : Swift::Sequence, H : Swift::Sequence, I : Swift::Sequence
+public func zip<A, B, C, D, E, F, G, H, I, J>(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E, _ f: F, _ g: G, _ h: H, _ i: I, _ j: J) -> DriveKitCoreModule::Zip10Sequence<A, B, C, D, E, F, G, H, I, J> where A : Swift::Sequence, B : Swift::Sequence, C : Swift::Sequence, D : Swift::Sequence, E : Swift::Sequence, F : Swift::Sequence, G : Swift::Sequence, H : Swift::Sequence, I : Swift::Sequence, J : Swift::Sequence
+public func zip<A, B, C, D, E, F, G, H, I, J, K>(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E, _ f: F, _ g: G, _ h: H, _ i: I, _ j: J, _ k: K) -> DriveKitCoreModule::Zip11Sequence<A, B, C, D, E, F, G, H, I, J, K> where A : Swift::Sequence, B : Swift::Sequence, C : Swift::Sequence, D : Swift::Sequence, E : Swift::Sequence, F : Swift::Sequence, G : Swift::Sequence, H : Swift::Sequence, I : Swift::Sequence, J : Swift::Sequence, K : Swift::Sequence
+public func zip<A, B, C, D, E, F, G, H, I, J, K, L>(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E, _ f: F, _ g: G, _ h: H, _ i: I, _ j: J, _ k: K, _ l: L) -> DriveKitCoreModule::Zip12Sequence<A, B, C, D, E, F, G, H, I, J, K, L> where A : Swift::Sequence, B : Swift::Sequence, C : Swift::Sequence, D : Swift::Sequence, E : Swift::Sequence, F : Swift::Sequence, G : Swift::Sequence, H : Swift::Sequence, I : Swift::Sequence, J : Swift::Sequence, K : Swift::Sequence, L : Swift::Sequence
+public func zip<A, B, C, D, E, F, G, H, I, J, K, L, M>(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E, _ f: F, _ g: G, _ h: H, _ i: I, _ j: J, _ k: K, _ l: L, _ m: M) -> DriveKitCoreModule::Zip13Sequence<A, B, C, D, E, F, G, H, I, J, K, L, M> where A : Swift::Sequence, B : Swift::Sequence, C : Swift::Sequence, D : Swift::Sequence, E : Swift::Sequence, F : Swift::Sequence, G : Swift::Sequence, H : Swift::Sequence, I : Swift::Sequence, J : Swift::Sequence, K : Swift::Sequence, L : Swift::Sequence, M : Swift::Sequence
+public struct Zip3Sequence<A, B, C> : Swift::Sequence where A : Swift::Sequence, B : Swift::Sequence, C : Swift::Sequence {
   public init(_ a: A, _ b: B, _ c: C)
-  public struct Iterator : Swift.IteratorProtocol {
+  public struct Iterator : Swift::IteratorProtocol {
     public typealias Element = (A.Element, B.Element, C.Element)
-    public mutating func next() -> DriveKitCoreModule.Zip3Sequence<A, B, C>.Iterator.Element?
+    public mutating func next() -> DriveKitCoreModule::Zip3Sequence<A, B, C>.DriveKitCoreModule::Iterator.DriveKitCoreModule::Element?
   }
-  public func makeIterator() -> DriveKitCoreModule.Zip3Sequence<A, B, C>.Iterator
-  public typealias Element = DriveKitCoreModule.Zip3Sequence<A, B, C>.Iterator.Element
+  public func makeIterator() -> DriveKitCoreModule::Zip3Sequence<A, B, C>.DriveKitCoreModule::Iterator
+  public typealias Element = DriveKitCoreModule::Zip3Sequence<A, B, C>.DriveKitCoreModule::Iterator.DriveKitCoreModule::Element
 }
-public func zip<A, B, C>(with f: @escaping (A.Element, B.Element) -> C) -> (A, B) -> [C] where A : Swift.Sequence, B : Swift.Sequence
-public func zip<A, B, C, D>(with f: @escaping (A.Element, B.Element, C.Element) -> D) -> (A, B, C) -> [D] where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence
-public func zip<A, B, C, D, E>(with f: @escaping (A.Element, B.Element, C.Element, D.Element) -> E) -> (A, B, C, D) -> [E] where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence
-public func zip<A, B, C, D, E, F>(with f: @escaping (A.Element, B.Element, C.Element, D.Element, E.Element) -> F) -> (A, B, C, D, E) -> [F] where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence
-public func zip<A, B, C, D, E, F, G>(with f: @escaping (A.Element, B.Element, C.Element, D.Element, E.Element, F.Element) -> G) -> (A, B, C, D, E, F) -> [G] where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence
-public func zip<A, B, C, D, E, F, G, H>(with f: @escaping (A.Element, B.Element, C.Element, D.Element, E.Element, F.Element, G.Element) -> H) -> (A, B, C, D, E, F, G) -> [H] where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence, G : Swift.Sequence
-public func zip<A, B, C, D, E, F, G, H, I>(with f: @escaping (A.Element, B.Element, C.Element, D.Element, E.Element, F.Element, G.Element, H.Element) -> I) -> (A, B, C, D, E, F, G, H) -> [I] where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence, G : Swift.Sequence, H : Swift.Sequence
-public func zip<A, B, C, D, E, F, G, H, I, J>(with f: @escaping (A.Element, B.Element, C.Element, D.Element, E.Element, F.Element, G.Element, H.Element, I.Element) -> J) -> (A, B, C, D, E, F, G, H, I) -> [J] where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence, G : Swift.Sequence, H : Swift.Sequence, I : Swift.Sequence
-public func zip<A, B, C, D, E, F, G, H, I, J, K>(with f: @escaping (A.Element, B.Element, C.Element, D.Element, E.Element, F.Element, G.Element, H.Element, I.Element, J.Element) -> K) -> (A, B, C, D, E, F, G, H, I, J) -> [K] where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence, G : Swift.Sequence, H : Swift.Sequence, I : Swift.Sequence, J : Swift.Sequence
-public func zip<A, B, C, D, E, F, G, H, I, J, K, L>(with f: @escaping (A.Element, B.Element, C.Element, D.Element, E.Element, F.Element, G.Element, H.Element, I.Element, J.Element, K.Element) -> L) -> (A, B, C, D, E, F, G, H, I, J, K) -> [L] where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence, G : Swift.Sequence, H : Swift.Sequence, I : Swift.Sequence, J : Swift.Sequence, K : Swift.Sequence
-public func zip<A, B, C, D, E, F, G, H, I, J, K, L, M>(with f: @escaping (A.Element, B.Element, C.Element, D.Element, E.Element, F.Element, G.Element, H.Element, I.Element, J.Element, K.Element, L.Element) -> M) -> (A, B, C, D, E, F, G, H, I, J, K, L) -> [M] where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence, G : Swift.Sequence, H : Swift.Sequence, I : Swift.Sequence, J : Swift.Sequence, K : Swift.Sequence, L : Swift.Sequence
-public func zip<A, B, C, D, E, F, G, H, I, J, K, L, M, N>(with f: @escaping (A.Element, B.Element, C.Element, D.Element, E.Element, F.Element, G.Element, H.Element, I.Element, J.Element, K.Element, L.Element, M.Element) -> N) -> (A, B, C, D, E, F, G, H, I, J, K, L, M) -> [N] where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence, G : Swift.Sequence, H : Swift.Sequence, I : Swift.Sequence, J : Swift.Sequence, K : Swift.Sequence, L : Swift.Sequence, M : Swift.Sequence
-public struct Zip4Sequence<A, B, C, D> : Swift.Sequence where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence {
+public func zip<A, B, C>(with f: @escaping (A.Element, B.Element) -> C) -> (A, B) -> [C] where A : Swift::Sequence, B : Swift::Sequence
+public func zip<A, B, C, D>(with f: @escaping (A.Element, B.Element, C.Element) -> D) -> (A, B, C) -> [D] where A : Swift::Sequence, B : Swift::Sequence, C : Swift::Sequence
+public func zip<A, B, C, D, E>(with f: @escaping (A.Element, B.Element, C.Element, D.Element) -> E) -> (A, B, C, D) -> [E] where A : Swift::Sequence, B : Swift::Sequence, C : Swift::Sequence, D : Swift::Sequence
+public func zip<A, B, C, D, E, F>(with f: @escaping (A.Element, B.Element, C.Element, D.Element, E.Element) -> F) -> (A, B, C, D, E) -> [F] where A : Swift::Sequence, B : Swift::Sequence, C : Swift::Sequence, D : Swift::Sequence, E : Swift::Sequence
+public func zip<A, B, C, D, E, F, G>(with f: @escaping (A.Element, B.Element, C.Element, D.Element, E.Element, F.Element) -> G) -> (A, B, C, D, E, F) -> [G] where A : Swift::Sequence, B : Swift::Sequence, C : Swift::Sequence, D : Swift::Sequence, E : Swift::Sequence, F : Swift::Sequence
+public func zip<A, B, C, D, E, F, G, H>(with f: @escaping (A.Element, B.Element, C.Element, D.Element, E.Element, F.Element, G.Element) -> H) -> (A, B, C, D, E, F, G) -> [H] where A : Swift::Sequence, B : Swift::Sequence, C : Swift::Sequence, D : Swift::Sequence, E : Swift::Sequence, F : Swift::Sequence, G : Swift::Sequence
+public func zip<A, B, C, D, E, F, G, H, I>(with f: @escaping (A.Element, B.Element, C.Element, D.Element, E.Element, F.Element, G.Element, H.Element) -> I) -> (A, B, C, D, E, F, G, H) -> [I] where A : Swift::Sequence, B : Swift::Sequence, C : Swift::Sequence, D : Swift::Sequence, E : Swift::Sequence, F : Swift::Sequence, G : Swift::Sequence, H : Swift::Sequence
+public func zip<A, B, C, D, E, F, G, H, I, J>(with f: @escaping (A.Element, B.Element, C.Element, D.Element, E.Element, F.Element, G.Element, H.Element, I.Element) -> J) -> (A, B, C, D, E, F, G, H, I) -> [J] where A : Swift::Sequence, B : Swift::Sequence, C : Swift::Sequence, D : Swift::Sequence, E : Swift::Sequence, F : Swift::Sequence, G : Swift::Sequence, H : Swift::Sequence, I : Swift::Sequence
+public func zip<A, B, C, D, E, F, G, H, I, J, K>(with f: @escaping (A.Element, B.Element, C.Element, D.Element, E.Element, F.Element, G.Element, H.Element, I.Element, J.Element) -> K) -> (A, B, C, D, E, F, G, H, I, J) -> [K] where A : Swift::Sequence, B : Swift::Sequence, C : Swift::Sequence, D : Swift::Sequence, E : Swift::Sequence, F : Swift::Sequence, G : Swift::Sequence, H : Swift::Sequence, I : Swift::Sequence, J : Swift::Sequence
+public func zip<A, B, C, D, E, F, G, H, I, J, K, L>(with f: @escaping (A.Element, B.Element, C.Element, D.Element, E.Element, F.Element, G.Element, H.Element, I.Element, J.Element, K.Element) -> L) -> (A, B, C, D, E, F, G, H, I, J, K) -> [L] where A : Swift::Sequence, B : Swift::Sequence, C : Swift::Sequence, D : Swift::Sequence, E : Swift::Sequence, F : Swift::Sequence, G : Swift::Sequence, H : Swift::Sequence, I : Swift::Sequence, J : Swift::Sequence, K : Swift::Sequence
+public func zip<A, B, C, D, E, F, G, H, I, J, K, L, M>(with f: @escaping (A.Element, B.Element, C.Element, D.Element, E.Element, F.Element, G.Element, H.Element, I.Element, J.Element, K.Element, L.Element) -> M) -> (A, B, C, D, E, F, G, H, I, J, K, L) -> [M] where A : Swift::Sequence, B : Swift::Sequence, C : Swift::Sequence, D : Swift::Sequence, E : Swift::Sequence, F : Swift::Sequence, G : Swift::Sequence, H : Swift::Sequence, I : Swift::Sequence, J : Swift::Sequence, K : Swift::Sequence, L : Swift::Sequence
+public func zip<A, B, C, D, E, F, G, H, I, J, K, L, M, N>(with f: @escaping (A.Element, B.Element, C.Element, D.Element, E.Element, F.Element, G.Element, H.Element, I.Element, J.Element, K.Element, L.Element, M.Element) -> N) -> (A, B, C, D, E, F, G, H, I, J, K, L, M) -> [N] where A : Swift::Sequence, B : Swift::Sequence, C : Swift::Sequence, D : Swift::Sequence, E : Swift::Sequence, F : Swift::Sequence, G : Swift::Sequence, H : Swift::Sequence, I : Swift::Sequence, J : Swift::Sequence, K : Swift::Sequence, L : Swift::Sequence, M : Swift::Sequence
+public struct Zip4Sequence<A, B, C, D> : Swift::Sequence where A : Swift::Sequence, B : Swift::Sequence, C : Swift::Sequence, D : Swift::Sequence {
   public init(_ a: A, _ b: B, _ c: C, _ d: D)
-  public struct Iterator : Swift.IteratorProtocol {
+  public struct Iterator : Swift::IteratorProtocol {
     public typealias Element = (A.Element, B.Element, C.Element, D.Element)
-    public mutating func next() -> DriveKitCoreModule.Zip4Sequence<A, B, C, D>.Iterator.Element?
+    public mutating func next() -> DriveKitCoreModule::Zip4Sequence<A, B, C, D>.DriveKitCoreModule::Iterator.DriveKitCoreModule::Element?
   }
-  public func makeIterator() -> DriveKitCoreModule.Zip4Sequence<A, B, C, D>.Iterator
-  public typealias Element = DriveKitCoreModule.Zip4Sequence<A, B, C, D>.Iterator.Element
+  public func makeIterator() -> DriveKitCoreModule::Zip4Sequence<A, B, C, D>.DriveKitCoreModule::Iterator
+  public typealias Element = DriveKitCoreModule::Zip4Sequence<A, B, C, D>.DriveKitCoreModule::Iterator.DriveKitCoreModule::Element
 }
-public struct Zip5Sequence<A, B, C, D, E> : Swift.Sequence where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence {
+public struct Zip5Sequence<A, B, C, D, E> : Swift::Sequence where A : Swift::Sequence, B : Swift::Sequence, C : Swift::Sequence, D : Swift::Sequence, E : Swift::Sequence {
   public init(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E)
-  public struct Iterator : Swift.IteratorProtocol {
+  public struct Iterator : Swift::IteratorProtocol {
     public typealias Element = (A.Element, B.Element, C.Element, D.Element, E.Element)
-    public mutating func next() -> DriveKitCoreModule.Zip5Sequence<A, B, C, D, E>.Iterator.Element?
+    public mutating func next() -> DriveKitCoreModule::Zip5Sequence<A, B, C, D, E>.DriveKitCoreModule::Iterator.DriveKitCoreModule::Element?
   }
-  public func makeIterator() -> DriveKitCoreModule.Zip5Sequence<A, B, C, D, E>.Iterator
-  public typealias Element = DriveKitCoreModule.Zip5Sequence<A, B, C, D, E>.Iterator.Element
+  public func makeIterator() -> DriveKitCoreModule::Zip5Sequence<A, B, C, D, E>.DriveKitCoreModule::Iterator
+  public typealias Element = DriveKitCoreModule::Zip5Sequence<A, B, C, D, E>.DriveKitCoreModule::Iterator.DriveKitCoreModule::Element
 }
-public struct Zip6Sequence<A, B, C, D, E, F> : Swift.Sequence where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence {
+public struct Zip6Sequence<A, B, C, D, E, F> : Swift::Sequence where A : Swift::Sequence, B : Swift::Sequence, C : Swift::Sequence, D : Swift::Sequence, E : Swift::Sequence, F : Swift::Sequence {
   public init(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E, _ f: F)
-  public struct Iterator : Swift.IteratorProtocol {
+  public struct Iterator : Swift::IteratorProtocol {
     public typealias Element = (A.Element, B.Element, C.Element, D.Element, E.Element, F.Element)
-    public mutating func next() -> DriveKitCoreModule.Zip6Sequence<A, B, C, D, E, F>.Iterator.Element?
+    public mutating func next() -> DriveKitCoreModule::Zip6Sequence<A, B, C, D, E, F>.DriveKitCoreModule::Iterator.DriveKitCoreModule::Element?
   }
-  public func makeIterator() -> DriveKitCoreModule.Zip6Sequence<A, B, C, D, E, F>.Iterator
-  public typealias Element = DriveKitCoreModule.Zip6Sequence<A, B, C, D, E, F>.Iterator.Element
+  public func makeIterator() -> DriveKitCoreModule::Zip6Sequence<A, B, C, D, E, F>.DriveKitCoreModule::Iterator
+  public typealias Element = DriveKitCoreModule::Zip6Sequence<A, B, C, D, E, F>.DriveKitCoreModule::Iterator.DriveKitCoreModule::Element
 }
-public struct Zip7Sequence<A, B, C, D, E, F, G> : Swift.Sequence where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence, G : Swift.Sequence {
+public struct Zip7Sequence<A, B, C, D, E, F, G> : Swift::Sequence where A : Swift::Sequence, B : Swift::Sequence, C : Swift::Sequence, D : Swift::Sequence, E : Swift::Sequence, F : Swift::Sequence, G : Swift::Sequence {
   public init(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E, _ f: F, _ g: G)
-  public struct Iterator : Swift.IteratorProtocol {
+  public struct Iterator : Swift::IteratorProtocol {
     public typealias Element = (A.Element, B.Element, C.Element, D.Element, E.Element, F.Element, G.Element)
-    public mutating func next() -> DriveKitCoreModule.Zip7Sequence<A, B, C, D, E, F, G>.Iterator.Element?
+    public mutating func next() -> DriveKitCoreModule::Zip7Sequence<A, B, C, D, E, F, G>.DriveKitCoreModule::Iterator.DriveKitCoreModule::Element?
   }
-  public func makeIterator() -> DriveKitCoreModule.Zip7Sequence<A, B, C, D, E, F, G>.Iterator
-  public typealias Element = DriveKitCoreModule.Zip7Sequence<A, B, C, D, E, F, G>.Iterator.Element
+  public func makeIterator() -> DriveKitCoreModule::Zip7Sequence<A, B, C, D, E, F, G>.DriveKitCoreModule::Iterator
+  public typealias Element = DriveKitCoreModule::Zip7Sequence<A, B, C, D, E, F, G>.DriveKitCoreModule::Iterator.DriveKitCoreModule::Element
 }
-public struct Zip8Sequence<A, B, C, D, E, F, G, H> : Swift.Sequence where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence, G : Swift.Sequence, H : Swift.Sequence {
+public struct Zip8Sequence<A, B, C, D, E, F, G, H> : Swift::Sequence where A : Swift::Sequence, B : Swift::Sequence, C : Swift::Sequence, D : Swift::Sequence, E : Swift::Sequence, F : Swift::Sequence, G : Swift::Sequence, H : Swift::Sequence {
   public init(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E, _ f: F, _ g: G, _ h: H)
-  public struct Iterator : Swift.IteratorProtocol {
+  public struct Iterator : Swift::IteratorProtocol {
     public typealias Element = (A.Element, B.Element, C.Element, D.Element, E.Element, F.Element, G.Element, H.Element)
-    public mutating func next() -> DriveKitCoreModule.Zip8Sequence<A, B, C, D, E, F, G, H>.Iterator.Element?
+    public mutating func next() -> DriveKitCoreModule::Zip8Sequence<A, B, C, D, E, F, G, H>.DriveKitCoreModule::Iterator.DriveKitCoreModule::Element?
   }
-  public func makeIterator() -> DriveKitCoreModule.Zip8Sequence<A, B, C, D, E, F, G, H>.Iterator
-  public typealias Element = DriveKitCoreModule.Zip8Sequence<A, B, C, D, E, F, G, H>.Iterator.Element
+  public func makeIterator() -> DriveKitCoreModule::Zip8Sequence<A, B, C, D, E, F, G, H>.DriveKitCoreModule::Iterator
+  public typealias Element = DriveKitCoreModule::Zip8Sequence<A, B, C, D, E, F, G, H>.DriveKitCoreModule::Iterator.DriveKitCoreModule::Element
 }
-public struct Zip9Sequence<A, B, C, D, E, F, G, H, I> : Swift.Sequence where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence, G : Swift.Sequence, H : Swift.Sequence, I : Swift.Sequence {
+public struct Zip9Sequence<A, B, C, D, E, F, G, H, I> : Swift::Sequence where A : Swift::Sequence, B : Swift::Sequence, C : Swift::Sequence, D : Swift::Sequence, E : Swift::Sequence, F : Swift::Sequence, G : Swift::Sequence, H : Swift::Sequence, I : Swift::Sequence {
   public init(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E, _ f: F, _ g: G, _ h: H, _ i: I)
-  public struct Iterator : Swift.IteratorProtocol {
+  public struct Iterator : Swift::IteratorProtocol {
     public typealias Element = (A.Element, B.Element, C.Element, D.Element, E.Element, F.Element, G.Element, H.Element, I.Element)
-    public mutating func next() -> DriveKitCoreModule.Zip9Sequence<A, B, C, D, E, F, G, H, I>.Iterator.Element?
+    public mutating func next() -> DriveKitCoreModule::Zip9Sequence<A, B, C, D, E, F, G, H, I>.DriveKitCoreModule::Iterator.DriveKitCoreModule::Element?
   }
-  public func makeIterator() -> DriveKitCoreModule.Zip9Sequence<A, B, C, D, E, F, G, H, I>.Iterator
-  public typealias Element = DriveKitCoreModule.Zip9Sequence<A, B, C, D, E, F, G, H, I>.Iterator.Element
+  public func makeIterator() -> DriveKitCoreModule::Zip9Sequence<A, B, C, D, E, F, G, H, I>.DriveKitCoreModule::Iterator
+  public typealias Element = DriveKitCoreModule::Zip9Sequence<A, B, C, D, E, F, G, H, I>.DriveKitCoreModule::Iterator.DriveKitCoreModule::Element
 }
-public struct Zip10Sequence<A, B, C, D, E, F, G, H, I, J> : Swift.Sequence where A : Swift.Sequence, B : Swift.Sequence, C : Swift.Sequence, D : Swift.Sequence, E : Swift.Sequence, F : Swift.Sequence, G : Swift.Sequence, H : Swift.Sequence, I : Swift.Sequence, J : Swift.Sequence {
+public struct Zip10Sequence<A, B, C, D, E, F, G, H, I, J> : Swift::Sequence where A : Swift::Sequence, B : Swift::Sequence, C : Swift::Sequence, D : Swift::Sequence, E : Swift::Sequence, F : Swift::Sequence, G : Swift::Sequence, H : Swift::Sequence, I : Swift::Sequence, J : Swift::Sequence {
   public init(_ a: A, _ b: B, _ c: C, _ d: D, _ e: E, _ f: F, _ g: G, _ h: H, _ i: I, _ j: J)
-  public struct Iterator : Swift.IteratorProtocol {
+  public struct Iterator : Swift::IteratorProtocol {
     public typealias Element = (A.Element, B.Element, C.Element, D.Element, E.Element, F.Element, G.Element, H.Element, I.Element, J.Element)
-    public mutating func next() -> DriveKitCoreModule.Zip10Sequence<A, B, C, D, E, F, G, H, I, J>.Iterator.Element?
+    public mutating func next() -> DriveKitCoreModule::Zip10Sequence<A, B, C, D, E, F, G, H, I, J>.DriveKitCoreModule::Iterator.DriveKitCoreModule::Element?
   }
-  public func makeIterator() -> DriveKitCoreModule.Zip10Sequence<A, B, C, D, E, F, G, H, I, J>.Iterator
-  public typealias Element = DriveKitCoreModule.Zip10Sequence<A, B, C, D, E, F, G, H, I, J>.Iterator.Element
+  public func makeIterator() -> DriveKitCoreModule::Zip10Sequence<A, B, C, D, E, F, G, H, I, J>.DriveKitCoreModule::Iterator
+  public typealias Element = DriveKitCoreModule::Zip10Sequence<A, B, C, D, E, F, G, H, I, J>.DriveKitCoreModule::Iterator.DriveKitCoreModule::Element
 }
-public struct Zip11Sequence<S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11> : Swift.Sequence where S1 : Swift.Sequence, S2 : Swift.Sequence, S3 : Swift.Sequence, S4 : Swift.Sequence, S5 : Swift.Sequence, S6 : Swift.Sequence, S7 : Swift.Sequence, S8 : Swift.Sequence, S9 : Swift.Sequence, S10 : Swift.Sequence, S11 : Swift.Sequence {
+public struct Zip11Sequence<S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11> : Swift::Sequence where S1 : Swift::Sequence, S2 : Swift::Sequence, S3 : Swift::Sequence, S4 : Swift::Sequence, S5 : Swift::Sequence, S6 : Swift::Sequence, S7 : Swift::Sequence, S8 : Swift::Sequence, S9 : Swift::Sequence, S10 : Swift::Sequence, S11 : Swift::Sequence {
   public typealias Element = (S1.Element, S2.Element, S3.Element, S4.Element, S5.Element, S6.Element, S7.Element, S8.Element, S9.Element, S10.Element, S11.Element)
   public init(_ s1: S1, _ s2: S2, _ s3: S3, _ s4: S4, _ s5: S5, _ s6: S6, _ s7: S7, _ s8: S8, _ s9: S9, _ s10: S10, _ s11: S11)
-  public func makeIterator() -> DriveKitCoreModule.Zip11Sequence<S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11>.Iterator
-  public struct Iterator : Swift.IteratorProtocol {
+  public func makeIterator() -> DriveKitCoreModule::Zip11Sequence<S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11>.DriveKitCoreModule::Iterator
+  public struct Iterator : Swift::IteratorProtocol {
     public init(_ i1: S1.Iterator, _ i2: S2.Iterator, _ i3: S3.Iterator, _ i4: S4.Iterator, _ i5: S5.Iterator, _ i6: S6.Iterator, _ i7: S7.Iterator, _ i8: S8.Iterator, _ i9: S9.Iterator, _ i10: S10.Iterator, _ i11: S11.Iterator)
-    public mutating func next() -> DriveKitCoreModule.Zip11Sequence<S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11>.Element?
-    public typealias Element = DriveKitCoreModule.Zip11Sequence<S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11>.Element
+    public mutating func next() -> DriveKitCoreModule::Zip11Sequence<S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11>.DriveKitCoreModule::Element?
+    public typealias Element = DriveKitCoreModule::Zip11Sequence<S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11>.DriveKitCoreModule::Element
   }
 }
-public struct Zip12Sequence<S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12> : Swift.Sequence where S1 : Swift.Sequence, S2 : Swift.Sequence, S3 : Swift.Sequence, S4 : Swift.Sequence, S5 : Swift.Sequence, S6 : Swift.Sequence, S7 : Swift.Sequence, S8 : Swift.Sequence, S9 : Swift.Sequence, S10 : Swift.Sequence, S11 : Swift.Sequence, S12 : Swift.Sequence {
+public struct Zip12Sequence<S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12> : Swift::Sequence where S1 : Swift::Sequence, S2 : Swift::Sequence, S3 : Swift::Sequence, S4 : Swift::Sequence, S5 : Swift::Sequence, S6 : Swift::Sequence, S7 : Swift::Sequence, S8 : Swift::Sequence, S9 : Swift::Sequence, S10 : Swift::Sequence, S11 : Swift::Sequence, S12 : Swift::Sequence {
   public typealias Element = (S1.Element, S2.Element, S3.Element, S4.Element, S5.Element, S6.Element, S7.Element, S8.Element, S9.Element, S10.Element, S11.Element, S12.Element)
   public init(_ s1: S1, _ s2: S2, _ s3: S3, _ s4: S4, _ s5: S5, _ s6: S6, _ s7: S7, _ s8: S8, _ s9: S9, _ s10: S10, _ s11: S11, _ s12: S12)
-  public func makeIterator() -> DriveKitCoreModule.Zip12Sequence<S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12>.Iterator
-  public struct Iterator : Swift.IteratorProtocol {
+  public func makeIterator() -> DriveKitCoreModule::Zip12Sequence<S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12>.DriveKitCoreModule::Iterator
+  public struct Iterator : Swift::IteratorProtocol {
     public init(_ i1: S1.Iterator, _ i2: S2.Iterator, _ i3: S3.Iterator, _ i4: S4.Iterator, _ i5: S5.Iterator, _ i6: S6.Iterator, _ i7: S7.Iterator, _ i8: S8.Iterator, _ i9: S9.Iterator, _ i10: S10.Iterator, _ i11: S11.Iterator, _ i12: S12.Iterator)
-    public mutating func next() -> DriveKitCoreModule.Zip12Sequence<S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12>.Element?
-    public typealias Element = DriveKitCoreModule.Zip12Sequence<S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12>.Element
+    public mutating func next() -> DriveKitCoreModule::Zip12Sequence<S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12>.DriveKitCoreModule::Element?
+    public typealias Element = DriveKitCoreModule::Zip12Sequence<S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12>.DriveKitCoreModule::Element
   }
 }
-public struct Zip13Sequence<S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13> : Swift.Sequence where S1 : Swift.Sequence, S2 : Swift.Sequence, S3 : Swift.Sequence, S4 : Swift.Sequence, S5 : Swift.Sequence, S6 : Swift.Sequence, S7 : Swift.Sequence, S8 : Swift.Sequence, S9 : Swift.Sequence, S10 : Swift.Sequence, S11 : Swift.Sequence, S12 : Swift.Sequence, S13 : Swift.Sequence {
+public struct Zip13Sequence<S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13> : Swift::Sequence where S1 : Swift::Sequence, S2 : Swift::Sequence, S3 : Swift::Sequence, S4 : Swift::Sequence, S5 : Swift::Sequence, S6 : Swift::Sequence, S7 : Swift::Sequence, S8 : Swift::Sequence, S9 : Swift::Sequence, S10 : Swift::Sequence, S11 : Swift::Sequence, S12 : Swift::Sequence, S13 : Swift::Sequence {
   public typealias Element = (S1.Element, S2.Element, S3.Element, S4.Element, S5.Element, S6.Element, S7.Element, S8.Element, S9.Element, S10.Element, S11.Element, S12.Element, S13.Element)
   public init(_ s1: S1, _ s2: S2, _ s3: S3, _ s4: S4, _ s5: S5, _ s6: S6, _ s7: S7, _ s8: S8, _ s9: S9, _ s10: S10, _ s11: S11, _ s12: S12, _ s13: S13)
-  public func makeIterator() -> DriveKitCoreModule.Zip13Sequence<S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13>.Iterator
-  public struct Iterator : Swift.IteratorProtocol {
+  public func makeIterator() -> DriveKitCoreModule::Zip13Sequence<S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13>.DriveKitCoreModule::Iterator
+  public struct Iterator : Swift::IteratorProtocol {
     public init(_ i1: S1.Iterator, _ i2: S2.Iterator, _ i3: S3.Iterator, _ i4: S4.Iterator, _ i5: S5.Iterator, _ i6: S6.Iterator, _ i7: S7.Iterator, _ i8: S8.Iterator, _ i9: S9.Iterator, _ i10: S10.Iterator, _ i11: S11.Iterator, _ i12: S12.Iterator, _ i13: S13.Iterator)
-    public mutating func next() -> DriveKitCoreModule.Zip13Sequence<S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13>.Element?
-    public typealias Element = DriveKitCoreModule.Zip13Sequence<S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13>.Element
+    public mutating func next() -> DriveKitCoreModule::Zip13Sequence<S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13>.DriveKitCoreModule::Element?
+    public typealias Element = DriveKitCoreModule::Zip13Sequence<S1, S2, S3, S4, S5, S6, S7, S8, S9, S10, S11, S12, S13>.DriveKitCoreModule::Element
   }
 }
-extension Swift.String {
-  public func sha256() -> Swift.String
+extension Swift::String {
+  public func sha256() -> Swift::String
 }
 @_hasMissingDesignatedInitializers public class DKSDKDiagnosis {
-  public static let shared: DriveKitCoreModule.DKSDKDiagnosis
+  public static let shared: DriveKitCoreModule::DKSDKDiagnosis
   @objc deinit
-  public func enqueueDiagnosisOperation(source: DriveKitCoreModule.DKDiagnosisOperationSource, shouldForceEventSending: Swift.Bool = false, considerAllEventsAsNew: Swift.Bool = false, completionHandler: ((Swift.Bool) -> Swift.Void)? = nil)
+  public func enqueueDiagnosisOperation(source: DriveKitCoreModule::DKDiagnosisOperationSource, shouldForceEventSending: Swift::Bool = false, considerAllEventsAsNew: Swift::Bool = false, completionHandler: ((Swift::Bool) -> Swift::Void)? = nil)
 }
-extension DriveKitCoreModule.DKSDKDiagnosis : DriveKitCoreModule.DKSDKDiagnosisDelegate {
+extension DriveKitCoreModule::DKSDKDiagnosis : DriveKitCoreModule::DKSDKDiagnosisDelegate {
   public func bluetoothStateChanged()
   public func gpsStateChanged()
 }
-extension DriveKitCoreModule.DKSDKDiagnosis : DriveKitCoreModule.DriveKitDelegate {
-  @objc dynamic public func driveKitDidConnect(_ driveKit: DriveKitCoreModule.DriveKit)
+extension DriveKitCoreModule::DKSDKDiagnosis : DriveKitCoreModule::DriveKitDelegate {
+  @objc dynamic public func driveKitDidConnect(_ driveKit: DriveKitCoreModule::DriveKit)
 }
-@objc public enum DriveKitBackgroundFetchStatus : Swift.Int {
+@objc public enum DriveKitBackgroundFetchStatus : Swift::Int {
   case started
   case completed
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
+  public init?(rawValue: Swift::Int)
+  public typealias RawValue = Swift::Int
+  public var rawValue: Swift::Int {
     get
   }
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class DKReachability : ObjectiveC.NSObject {
-  @objc public static let shared: DriveKitCoreModule.DKReachability
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc final public class DKReachability : ObjectiveC::NSObject {
+  @objc public static let shared: DriveKitCoreModule::DKReachability
   final public func initialize()
   final public func reset()
   @available(*, deprecated, message: "Use instead `isConnectedToNetwork(_ completion: @escaping (Bool) -> Void)`")
-  @objc public static func isConnectedToNetwork() -> Swift.Bool
-  @objc public static func isConnectedToNetwork(_ completion: @escaping (Swift.Bool) -> Swift.Void)
-  final public func onNextConnection(taskId: Swift.String, callbackQoS: Dispatch.DispatchQoS.QoSClass = .unspecified, _ callback: @escaping () -> Swift.Void)
+  @objc public static func isConnectedToNetwork() -> Swift::Bool
+  @objc public static func isConnectedToNetwork(_ completion: @escaping (Swift::Bool) -> Swift::Void)
+  final public func onNextConnection(taskId: Swift::String, callbackQoS: Dispatch::DispatchQoS.Dispatch::QoSClass = .unspecified, _ callback: @escaping () -> Swift::Void)
   @objc deinit
 }
 public enum SmartphoneDataUtils {
-  public static var phoneModel: Swift.String {
+  public static var phoneModel: Swift::String {
     get
   }
-  public static var appBuildNumber: Swift.String {
+  public static var appBuildNumber: Swift::String {
     get
   }
-  public static var appVersion: Swift.String {
+  public static var appVersion: Swift::String {
     get
   }
-  public static var bundleIdentifier: Swift.String {
+  public static var bundleIdentifier: Swift::String {
     get
   }
-  public static var osVersion: Swift.String {
+  public static var osVersion: Swift::String {
     get
   }
-  public static var osType: Swift.String {
+  public static var osType: Swift::String {
     get
   }
-  public static var sdkVersion: Swift.String {
+  public static var sdkVersion: Swift::String {
     get
   }
-  public static var phoneLanguage: Swift.String {
+  public static var phoneLanguage: Swift::String {
     get
   }
-  public static var rawPhoneLanguage: Swift.String {
+  public static var rawPhoneLanguage: Swift::String {
     get
   }
 }
-@objc public class BeaconData : ObjectiveC.NSObject {
-  final public let proximityUuid: Swift.String
-  final public let major: Swift.Int
-  final public let minor: Swift.Int
-  @objc public init(proximityUuid: Swift.String, major: Swift.Int, minor: Swift.Int)
-  @objc public init(proximityUuid: Swift.String, major: Swift.Int)
-  @objc public init(proximityUuid: Swift.String)
-  required public init(json: DriveKitNetworkingModule.SwiftyJSON)
-  public func toJSON() -> [Swift.String : Any]
+@objc public class BeaconData : ObjectiveC::NSObject {
+  final public let proximityUuid: Swift::String
+  final public let major: Swift::Int
+  final public let minor: Swift::Int
+  @objc public init(proximityUuid: Swift::String, major: Swift::Int, minor: Swift::Int)
+  @objc public init(proximityUuid: Swift::String, major: Swift::Int)
+  @objc public init(proximityUuid: Swift::String)
+  required public init(json: DriveKitNetworkingModule::SwiftyJSON)
+  public func toJSON() -> [Swift::String : Any]
   @objc deinit
 }
-@_hasMissingDesignatedInitializers public class WhereReference<T, R> where T : DriveKitCoreModule.DKUnmanagedObject {
-  public init(request: CoreData.NSFetchRequest<T>, viewContext: CoreData.NSManagedObjectContext)
-  public func noFilter() -> DriveKitCoreModule.Query<T, R>
-  public func whereEqualTo(field: Swift.String, value: Any) -> DriveKitCoreModule.Query<T, R>
-  public func whereGreaterThan(field: Swift.String, value: Any) -> DriveKitCoreModule.Query<T, R>
-  public func whereGreaterThanOrEqual(field: Swift.String, value: Any) -> DriveKitCoreModule.Query<T, R>
-  public func whereLessThan(field: Swift.String, value: Any) -> DriveKitCoreModule.Query<T, R>
-  public func whereLessThanOrEqual(field: Swift.String, value: Any) -> DriveKitCoreModule.Query<T, R>
-  public func whereNotEqualTo(field: Swift.String, value: Any) -> DriveKitCoreModule.Query<T, R>
-  public func whereIn(field: Swift.String, value: Any) -> DriveKitCoreModule.Query<T, R>
-  public func whereNil(field: Swift.String) -> DriveKitCoreModule.Query<T, R>
+@_hasMissingDesignatedInitializers public class WhereReference<T, R> where T : DriveKitCoreModule::DKUnmanagedObject {
+  public init(request: CoreData::NSFetchRequest<T>, viewContext: CoreData::NSManagedObjectContext)
+  public func noFilter() -> DriveKitCoreModule::Query<T, R>
+  public func whereEqualTo(field: Swift::String, value: Any) -> DriveKitCoreModule::Query<T, R>
+  public func whereGreaterThan(field: Swift::String, value: Any) -> DriveKitCoreModule::Query<T, R>
+  public func whereGreaterThanOrEqual(field: Swift::String, value: Any) -> DriveKitCoreModule::Query<T, R>
+  public func whereLessThan(field: Swift::String, value: Any) -> DriveKitCoreModule::Query<T, R>
+  public func whereLessThanOrEqual(field: Swift::String, value: Any) -> DriveKitCoreModule::Query<T, R>
+  public func whereNotEqualTo(field: Swift::String, value: Any) -> DriveKitCoreModule::Query<T, R>
+  public func whereIn(field: Swift::String, value: Any) -> DriveKitCoreModule::Query<T, R>
+  public func whereNil(field: Swift::String) -> DriveKitCoreModule::Query<T, R>
   @objc deinit
 }
-@_hasMissingDesignatedInitializers public class RootQuery<T, R> where T : DriveKitCoreModule.DKUnmanagedObject {
-  public func query() -> DriveKitCoreModule.ExecutableQuery<T, R>
-  public func queryOne() -> DriveKitCoreModule.ExecutableQueryOne<T, R>
+@_hasMissingDesignatedInitializers public class RootQuery<T, R> where T : DriveKitCoreModule::DKUnmanagedObject {
+  public func query() -> DriveKitCoreModule::ExecutableQuery<T, R>
+  public func queryOne() -> DriveKitCoreModule::ExecutableQueryOne<T, R>
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class Query<T, R> : DriveKitCoreModule.RootQuery<T, R> where T : DriveKitCoreModule.DKUnmanagedObject {
-  public func and() -> DriveKitCoreModule.WhereReference<T, R>
-  public func or() -> DriveKitCoreModule.WhereReference<T, R>
-  public func orderBy(field: Swift.String, ascending: Swift.Bool) -> DriveKitCoreModule.SortedQuery<T, R>
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class Query<T, R> : DriveKitCoreModule::RootQuery<T, R> where T : DriveKitCoreModule::DKUnmanagedObject {
+  public func and() -> DriveKitCoreModule::WhereReference<T, R>
+  public func or() -> DriveKitCoreModule::WhereReference<T, R>
+  public func orderBy(field: Swift::String, ascending: Swift::Bool) -> DriveKitCoreModule::SortedQuery<T, R>
   @objc deinit
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class SortedQuery<T, R> : DriveKitCoreModule.RootQuery<T, R> where T : DriveKitCoreModule.DKUnmanagedObject {
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers public class SortedQuery<T, R> : DriveKitCoreModule::RootQuery<T, R> where T : DriveKitCoreModule::DKUnmanagedObject {
   @objc deinit
 }
-@_hasMissingDesignatedInitializers public class ExecutableQuery<T, R> where T : DriveKitCoreModule.DKUnmanagedObject {
-  public func limit(limit: Swift.Int) -> DriveKitCoreModule.ExecutableQuery<T, R>
+@_hasMissingDesignatedInitializers public class ExecutableQuery<T, R> where T : DriveKitCoreModule::DKUnmanagedObject {
+  public func limit(limit: Swift::Int) -> DriveKitCoreModule::ExecutableQuery<T, R>
   public func execute() -> [R]
   @objc deinit
 }
-@_hasMissingDesignatedInitializers public class ExecutableQueryOne<T, R> where T : DriveKitCoreModule.DKUnmanagedObject {
+@_hasMissingDesignatedInitializers public class ExecutableQueryOne<T, R> where T : DriveKitCoreModule::DKUnmanagedObject {
   public func managedObject() -> T?
   public func execute() -> R?
   @objc deinit
 }
 public struct DriveKitConfig {
-  public init(autoInitEnabled: Swift.Bool, isConfigured: Swift.Bool, isUserConnected: Swift.Bool, userId: Swift.String?, installationId: Swift.String?, isLoggingEnabled: Swift.Bool)
+  public init(autoInitEnabled: Swift::Bool, isConfigured: Swift::Bool, isUserConnected: Swift::Bool, userId: Swift::String?, installationId: Swift::String?, isLoggingEnabled: Swift::Bool)
 }
 public struct DKConfigTripAnalysis {
-  public init(isAutoStartEnabled: Swift.Bool, stopTimeout: Swift.Int, autoCancelTripMaxSpeed: Swift.Double, isMonitoringPotentialTripStart: Swift.Bool, isBeaconRequired: Swift.Bool, isBeaconAllowedToStartTrip: Swift.Bool, isBluetoothDeviceRequired: Swift.Bool, isCrashDetectionEnabled: Swift.Bool, isSharePositionEnabled: Swift.Bool, vehiclesConfigTakeover: Swift.Bool, beacons: [DriveKitCoreModule.DKConfigBeacon], bluetoothDevices: [DriveKitCoreModule.DKConfigBluetoothDevice])
+  public init(isAutoStartEnabled: Swift::Bool, stopTimeout: Swift::Int, autoCancelTripMaxSpeed: Swift::Double, isMonitoringPotentialTripStart: Swift::Bool, isBeaconRequired: Swift::Bool, isBeaconAllowedToStartTrip: Swift::Bool, isBluetoothDeviceRequired: Swift::Bool, isCrashDetectionEnabled: Swift::Bool, isSharePositionEnabled: Swift::Bool, vehiclesConfigTakeover: Swift::Bool, beacons: [DriveKitCoreModule::DKConfigBeacon], bluetoothDevices: [DriveKitCoreModule::DKConfigBluetoothDevice])
 }
 public struct DKConfigVehicle {
-  public init(vehiclesLastSync: Foundation.Date?, vehicles: [DriveKitCoreModule.DKConfigVehicleItem])
+  public init(vehiclesLastSync: Foundation::Date?, vehicles: [DriveKitCoreModule::DKConfigVehicleItem])
 }
 public struct DKConfigVehicleItem {
-  public init(vehicleId: Swift.String, detectionMode: DriveKitCoreModule.DKConfigDetectionMode?, beaconIdentifier: DriveKitCoreModule.DKConfigBeacon?, bluetoothDevice: DriveKitCoreModule.DKConfigBluetoothDevice?)
+  public init(vehicleId: Swift::String, detectionMode: DriveKitCoreModule::DKConfigDetectionMode?, beaconIdentifier: DriveKitCoreModule::DKConfigBeacon?, bluetoothDevice: DriveKitCoreModule::DKConfigBluetoothDevice?)
 }
-public enum DKConfigDetectionMode : Swift.Int {
+public enum DKConfigDetectionMode : Swift::Int {
   case gps
   case disabled
   case beacon
   case bluetooth
-  public init?(value: Swift.String)
-  public var value: Swift.String {
+  public init?(value: Swift::String)
+  public var value: Swift::String {
     get
   }
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
+  public init?(rawValue: Swift::Int)
+  public typealias RawValue = Swift::Int
+  public var rawValue: Swift::Int {
     get
   }
 }
-public struct DKConfigBeacon : Swift.Codable {
-  public init(proximityUuid: Swift.String, major: Swift.Int = -1, minor: Swift.Int = -1)
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
+public struct DKConfigBeacon : Swift::Codable {
+  public init(proximityUuid: Swift::String, major: Swift::Int = -1, minor: Swift::Int = -1)
+  public func encode(to encoder: any Swift::Encoder) throws
+  public init(from decoder: any Swift::Decoder) throws
 }
-public struct DKConfigBluetoothDevice : Swift.Codable {
-  public init(macAddress: Swift.String, name: Swift.String? = nil)
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
+public struct DKConfigBluetoothDevice : Swift::Codable {
+  public init(macAddress: Swift::String, name: Swift::String? = nil)
+  public func encode(to encoder: any Swift::Encoder) throws
+  public init(from decoder: any Swift::Decoder) throws
 }
 public struct DKConfigStolenVehicleLocator {
-  public init(scanEnabled: Swift.Bool, uuids: [Swift.String])
+  public init(scanEnabled: Swift::Bool, uuids: [Swift::String])
 }
 @_hasMissingDesignatedInitializers public class DKModuleManager {
-  public var tripAnalysis: (any DriveKitCoreModule.DKTripAnalysisModule)?
-  public var vehicle: (any DriveKitCoreModule.DKVehicleModule)?
-  public var regionMonitoringManager: (any DriveKitCoreModule.DKRegionMonitoringModule)?
-  public var stolenVehicleLocator: (any DriveKitCoreModule.DKStolenVehicleLocatorModule)?
+  public var tripAnalysis: (any DriveKitCoreModule::DKTripAnalysisModule)?
+  public var vehicle: (any DriveKitCoreModule::DKVehicleModule)?
+  public var locationUtils: (any DriveKitCoreModule::DKBaseModule)?
+  public var driverData: (any DriveKitCoreModule::DKBaseModule)?
+  public var driverAchievement: (any DriveKitCoreModule::DKBaseModule)?
+  public var challenge: (any DriveKitCoreModule::DKBaseModule)?
+  public var coaching: (any DriveKitCoreModule::DKBaseModule)?
+  public var group: (any DriveKitCoreModule::DKBaseModule)?
+  public var tripSimulator: (any DriveKitCoreModule::DKBaseModule)?
+  public var regionMonitoringManager: (any DriveKitCoreModule::DKBaseModule)?
+  public var stolenVehicleLocator: (any DriveKitCoreModule::DKStolenVehicleLocatorModule)?
   @objc deinit
 }
-public protocol DKTripAnalysisModule {
+public protocol DKBaseModule {
+  func reset()
+  func clearSessionData()
+}
+public protocol DKTripAnalysisModule : DriveKitCoreModule::DKBaseModule {
   func checkTripToRepost()
-  var bluetoothUsage: DriveKitCoreModule.DKBluetoothUsage { get }
-  func tripSyncFinishedWithEndTripLocations(endTripLocations: [DriveKitCoreModule.DKTransportationMeans : any DriveKitCoreModule.DKTripLocation])
-  func getConfig() -> DriveKitCoreModule.DKConfigTripAnalysis
-  func isTripRunning() -> Swift.Bool
+  var bluetoothUsage: DriveKitCoreModule::DKBluetoothUsage { get }
+  func tripSyncFinishedWithEndTripLocations(endTripLocations: [DriveKitCoreModule::DKTransportationMeans : any DriveKitCoreModule::DKTripLocation])
+  func getConfig() -> DriveKitCoreModule::DKConfigTripAnalysis
+  func isTripRunning() -> Swift::Bool
 }
 public enum DKBluetoothUsage {
   case none, configured, required
-  public static func == (a: DriveKitCoreModule.DKBluetoothUsage, b: DriveKitCoreModule.DKBluetoothUsage) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
+  public static func == (a: DriveKitCoreModule::DKBluetoothUsage, b: DriveKitCoreModule::DKBluetoothUsage) -> Swift::Bool
+  public func hash(into hasher: inout Swift::Hasher)
+  public var hashValue: Swift::Int {
     get
   }
 }
-public protocol DKVehicleModule {
-  func syncVehicles(_ completionHandler: @escaping (Swift.Bool) -> Swift.Void)
-  func getConfig() -> DriveKitCoreModule.DKConfigVehicle
+public protocol DKVehicleModule : DriveKitCoreModule::DKBaseModule {
+  func syncVehicles(_ completionHandler: @escaping (Swift::Bool) -> Swift::Void)
+  func getConfig() -> DriveKitCoreModule::DKConfigVehicle
 }
-public protocol DKRegionMonitoringModule {
-  func reset()
-}
-public protocol DKStolenVehicleLocatorModule {
+public protocol DKStolenVehicleLocatorModule : DriveKitCoreModule::DKBaseModule {
   func startPerformanceMode()
   func stopPerformanceMode()
-  func beaconsToIgnoreUpdate(beacons: [DriveKitCoreModule.BeaconData])
-  func getConfig() -> DriveKitCoreModule.DKConfigStolenVehicleLocator
+  func beaconsToIgnoreUpdate(beacons: [DriveKitCoreModule::BeaconData])
+  func getConfig() -> DriveKitCoreModule::DKConfigStolenVehicleLocator
 }
-extension UIKit.UIDevice {
-  @_Concurrency.MainActor @preconcurrency public var modelIdentifier: Swift.String {
+extension UIKit::UIDevice {
+  @_Concurrency::MainActor @preconcurrency public var modelIdentifier: Swift::String {
     get
   }
-  @_Concurrency.MainActor @preconcurrency public var modelName: Swift.String {
+  @_Concurrency::MainActor @preconcurrency public var modelName: Swift::String {
     get
   }
 }
-extension Foundation.ProcessInfo {
-  public static func isRunningUnitTest() -> Swift.Bool
+extension Foundation::ProcessInfo {
+  public static func isRunningUnitTest() -> Swift::Bool
 }
-@_inheritsConvenienceInitializers @objc public class GlobalConfig : ObjectiveC.NSObject {
-  public var sandbox: Swift.Bool {
+@_inheritsConvenienceInitializers @objc public class GlobalConfig : ObjectiveC::NSObject {
+  public var sandbox: Swift::Bool {
     get
   }
-  public var baseUrl: Swift.String {
+  public var baseUrl: Swift::String {
     get
   }
-  @objc public func getApiKey() -> Swift.String?
-  @objc public func getUserId() -> Swift.String?
+  @objc public func getApiKey() -> Swift::String?
+  @objc public func getUserId() -> Swift::String?
   @objc override dynamic public init()
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class DKSensorsManager {
-  public static let shared: DriveKitCoreModule.DKSensorsManager
-  public func isSensorAvailable(_ sensor: DriveKitCoreModule.DKSensor) -> Swift.Bool
-  public func registerListener(_ listener: any DriveKitCoreModule.DKSensorsListener)
-  public func unregisterListener(_ listener: any DriveKitCoreModule.DKSensorsListener)
-  public func isAltitudeAvailable() -> Swift.Bool
-  public func registerAltitudeListener(_ listener: any DriveKitCoreModule.DKAltitudeListener)
-  public func unregisterAltitudeListener(_ listener: any DriveKitCoreModule.DKAltitudeListener)
+  public static let shared: DriveKitCoreModule::DKSensorsManager
+  public func isSensorAvailable(_ sensor: DriveKitCoreModule::DKSensor) -> Swift::Bool
+  public func registerListener(_ listener: any DriveKitCoreModule::DKSensorsListener)
+  public func unregisterListener(_ listener: any DriveKitCoreModule::DKSensorsListener)
+  public func isAltitudeAvailable() -> Swift::Bool
+  public func registerAltitudeListener(_ listener: any DriveKitCoreModule::DKAltitudeListener)
+  public func unregisterAltitudeListener(_ listener: any DriveKitCoreModule::DKAltitudeListener)
   @objc deinit
 }
-@frozen public struct AnyCodable : Swift.Codable {
+@frozen public struct AnyCodable : Swift::Codable {
   public let value: Any
   public init<T>(_ value: T?)
 }
-extension DriveKitCoreModule.AnyCodable : DriveKitCoreModule._AnyEncodable, DriveKitCoreModule._AnyDecodable {
+extension DriveKitCoreModule::AnyCodable : DriveKitCoreModule::_AnyEncodable, DriveKitCoreModule::_AnyDecodable {
 }
-extension DriveKitCoreModule.AnyCodable : Swift.Equatable {
-  public static func == (lhs: DriveKitCoreModule.AnyCodable, rhs: DriveKitCoreModule.AnyCodable) -> Swift.Bool
+extension DriveKitCoreModule::AnyCodable : Swift::Equatable {
+  public static func == (lhs: DriveKitCoreModule::AnyCodable, rhs: DriveKitCoreModule::AnyCodable) -> Swift::Bool
 }
-extension DriveKitCoreModule.AnyCodable : Swift.CustomStringConvertible {
-  public var description: Swift.String {
+extension DriveKitCoreModule::AnyCodable : Swift::CustomStringConvertible {
+  public var description: Swift::String {
     get
   }
 }
-extension DriveKitCoreModule.AnyCodable : Swift.CustomDebugStringConvertible {
-  public var debugDescription: Swift.String {
+extension DriveKitCoreModule::AnyCodable : Swift::CustomDebugStringConvertible {
+  public var debugDescription: Swift::String {
     get
   }
 }
-extension DriveKitCoreModule.AnyCodable : Swift.ExpressibleByNilLiteral {
+extension DriveKitCoreModule::AnyCodable : Swift::ExpressibleByNilLiteral {
 }
-extension DriveKitCoreModule.AnyCodable : Swift.ExpressibleByBooleanLiteral {
-  public typealias BooleanLiteralType = Swift.Bool
+extension DriveKitCoreModule::AnyCodable : Swift::ExpressibleByBooleanLiteral {
+  public typealias BooleanLiteralType = Swift::Bool
 }
-extension DriveKitCoreModule.AnyCodable : Swift.ExpressibleByIntegerLiteral {
-  public typealias IntegerLiteralType = Swift.Int
+extension DriveKitCoreModule::AnyCodable : Swift::ExpressibleByIntegerLiteral {
+  public typealias IntegerLiteralType = Swift::Int
 }
-extension DriveKitCoreModule.AnyCodable : Swift.ExpressibleByFloatLiteral {
-  public typealias FloatLiteralType = Swift.Double
+extension DriveKitCoreModule::AnyCodable : Swift::ExpressibleByFloatLiteral {
+  public typealias FloatLiteralType = Swift::Double
 }
-extension DriveKitCoreModule.AnyCodable : Swift.ExpressibleByStringLiteral {
-  public typealias ExtendedGraphemeClusterLiteralType = Swift.String
-  public typealias StringLiteralType = Swift.String
-  public typealias UnicodeScalarLiteralType = Swift.String
+extension DriveKitCoreModule::AnyCodable : Swift::ExpressibleByStringLiteral {
+  public typealias ExtendedGraphemeClusterLiteralType = Swift::String
+  public typealias StringLiteralType = Swift::String
+  public typealias UnicodeScalarLiteralType = Swift::String
 }
-extension DriveKitCoreModule.AnyCodable : Swift.ExpressibleByArrayLiteral {
+extension DriveKitCoreModule::AnyCodable : Swift::ExpressibleByArrayLiteral {
   public typealias ArrayLiteralElement = Any
 }
-extension DriveKitCoreModule.AnyCodable : Swift.ExpressibleByDictionaryLiteral {
-  public typealias Key = Swift.AnyHashable
+extension DriveKitCoreModule::AnyCodable : Swift::ExpressibleByDictionaryLiteral {
+  public typealias Key = Swift::AnyHashable
   public typealias Value = Any
 }
 public enum DKFileUtils {
-  public static func dictionary(forKey key: Swift.String) -> [Swift.String : Any]?
-  public static func stringArray(forKey key: Swift.String) -> [Swift.String]?
-  public static func json(forKey key: Swift.String) -> DriveKitNetworkingModule.SwiftyJSON?
-  public static func string(forKey key: Swift.String) -> Swift.String?
-  public static func data(forKey key: Swift.String) -> Foundation.Data?
-  public static func hasData(forKey key: Swift.String) -> Swift.Bool
-  public static func save(_ dictionary: [Swift.String : Any], forKey key: Swift.String)
-  public static func save(_ stringArray: [Swift.String], forKey key: Swift.String)
-  public static func save(_ json: DriveKitNetworkingModule.SwiftyJSON, forKey key: Swift.String)
-  public static func save(_ string: Swift.String, forKey key: Swift.String)
-  public static func save(_ data: Foundation.Data, forKey key: Swift.String)
-  public static func delete(forKey key: Swift.String)
+  public static func dictionary(forKey key: Swift::String) -> [Swift::String : Any]?
+  public static func stringArray(forKey key: Swift::String) -> [Swift::String]?
+  public static func json(forKey key: Swift::String) -> DriveKitNetworkingModule::SwiftyJSON?
+  public static func string(forKey key: Swift::String) -> Swift::String?
+  public static func data(forKey key: Swift::String) -> Foundation::Data?
+  public static func hasData(forKey key: Swift::String) -> Swift::Bool
+  public static func save(_ dictionary: [Swift::String : Any], forKey key: Swift::String)
+  public static func save(_ stringArray: [Swift::String], forKey key: Swift::String)
+  public static func save(_ json: DriveKitNetworkingModule::SwiftyJSON, forKey key: Swift::String)
+  public static func save(_ string: Swift::String, forKey key: Swift::String)
+  public static func save(_ data: Foundation::Data, forKey key: Swift::String)
+  public static func delete(forKey key: Swift::String)
 }
 public enum DKSensor {
   case accelerometer
   case deviceMotion
   case gyroscope
   case magnetometer
-  public static func == (a: DriveKitCoreModule.DKSensor, b: DriveKitCoreModule.DKSensor) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
+  public static func == (a: DriveKitCoreModule::DKSensor, b: DriveKitCoreModule::DKSensor) -> Swift::Bool
+  public func hash(into hasher: inout Swift::Hasher)
+  public var hashValue: Swift::Int {
     get
   }
 }
-@frozen public struct AnyEncodable : Swift.Encodable {
+@frozen public struct AnyEncodable : Swift::Encodable {
   public let value: Any
   public init<T>(_ value: T?)
 }
@@ -807,134 +815,120 @@ internal protocol _AnyEncodable {
   var value: Any { get }
   init<T>(_ value: T?)
 }
-extension DriveKitCoreModule.AnyEncodable : DriveKitCoreModule._AnyEncodable {
+extension DriveKitCoreModule::AnyEncodable : DriveKitCoreModule::_AnyEncodable {
 }
-extension DriveKitCoreModule._AnyEncodable {
-  public func encode(to encoder: any Swift.Encoder) throws
+extension DriveKitCoreModule::_AnyEncodable {
+  public func encode(to encoder: any Swift::Encoder) throws
 }
-extension DriveKitCoreModule.AnyEncodable : Swift.Equatable {
-  public static func == (lhs: DriveKitCoreModule.AnyEncodable, rhs: DriveKitCoreModule.AnyEncodable) -> Swift.Bool
+extension DriveKitCoreModule::AnyEncodable : Swift::Equatable {
+  public static func == (lhs: DriveKitCoreModule::AnyEncodable, rhs: DriveKitCoreModule::AnyEncodable) -> Swift::Bool
 }
-extension DriveKitCoreModule.AnyEncodable : Swift.CustomStringConvertible {
-  public var description: Swift.String {
+extension DriveKitCoreModule::AnyEncodable : Swift::CustomStringConvertible {
+  public var description: Swift::String {
     get
   }
 }
-extension DriveKitCoreModule.AnyEncodable : Swift.CustomDebugStringConvertible {
-  public var debugDescription: Swift.String {
+extension DriveKitCoreModule::AnyEncodable : Swift::CustomDebugStringConvertible {
+  public var debugDescription: Swift::String {
     get
   }
 }
-extension DriveKitCoreModule.AnyEncodable : Swift.ExpressibleByNilLiteral {
+extension DriveKitCoreModule::AnyEncodable : Swift::ExpressibleByNilLiteral {
 }
-extension DriveKitCoreModule.AnyEncodable : Swift.ExpressibleByBooleanLiteral {
-  public typealias BooleanLiteralType = Swift.Bool
+extension DriveKitCoreModule::AnyEncodable : Swift::ExpressibleByBooleanLiteral {
+  public typealias BooleanLiteralType = Swift::Bool
 }
-extension DriveKitCoreModule.AnyEncodable : Swift.ExpressibleByIntegerLiteral {
-  public typealias IntegerLiteralType = Swift.Int
+extension DriveKitCoreModule::AnyEncodable : Swift::ExpressibleByIntegerLiteral {
+  public typealias IntegerLiteralType = Swift::Int
 }
-extension DriveKitCoreModule.AnyEncodable : Swift.ExpressibleByFloatLiteral {
-  public typealias FloatLiteralType = Swift.Double
+extension DriveKitCoreModule::AnyEncodable : Swift::ExpressibleByFloatLiteral {
+  public typealias FloatLiteralType = Swift::Double
 }
-extension DriveKitCoreModule.AnyEncodable : Swift.ExpressibleByStringLiteral {
-  public typealias ExtendedGraphemeClusterLiteralType = Swift.String
-  public typealias StringLiteralType = Swift.String
-  public typealias UnicodeScalarLiteralType = Swift.String
+extension DriveKitCoreModule::AnyEncodable : Swift::ExpressibleByStringLiteral {
+  public typealias ExtendedGraphemeClusterLiteralType = Swift::String
+  public typealias StringLiteralType = Swift::String
+  public typealias UnicodeScalarLiteralType = Swift::String
 }
-extension DriveKitCoreModule.AnyEncodable : Swift.ExpressibleByStringInterpolation {
-  public typealias StringInterpolation = Swift.DefaultStringInterpolation
+extension DriveKitCoreModule::AnyEncodable : Swift::ExpressibleByStringInterpolation {
+  public typealias StringInterpolation = Swift::DefaultStringInterpolation
 }
-extension DriveKitCoreModule.AnyEncodable : Swift.ExpressibleByArrayLiteral {
+extension DriveKitCoreModule::AnyEncodable : Swift::ExpressibleByArrayLiteral {
   public typealias ArrayLiteralElement = Any
 }
-extension DriveKitCoreModule.AnyEncodable : Swift.ExpressibleByDictionaryLiteral {
-  public typealias Key = Swift.AnyHashable
+extension DriveKitCoreModule::AnyEncodable : Swift::ExpressibleByDictionaryLiteral {
+  public typealias Key = Swift::AnyHashable
   public typealias Value = Any
 }
-extension DriveKitCoreModule._AnyEncodable {
+extension DriveKitCoreModule::_AnyEncodable {
   public init(nilLiteral _: ())
-  public init(booleanLiteral value: Swift.Bool)
-  public init(integerLiteral value: Swift.Int)
-  public init(floatLiteral value: Swift.Double)
-  public init(extendedGraphemeClusterLiteral value: Swift.String)
-  public init(stringLiteral value: Swift.String)
+  public init(booleanLiteral value: Swift::Bool)
+  public init(integerLiteral value: Swift::Int)
+  public init(floatLiteral value: Swift::Double)
+  public init(extendedGraphemeClusterLiteral value: Swift::String)
+  public init(stringLiteral value: Swift::String)
   public init(arrayLiteral elements: Any...)
-  public init(dictionaryLiteral elements: (Swift.AnyHashable, Any)...)
+  public init(dictionaryLiteral elements: (Swift::AnyHashable, Any)...)
 }
-public protocol DKUnmanagedObject : CoreData.NSManagedObject {
+public protocol DKUnmanagedObject : CoreData::NSManagedObject {
   func convertToUnmanagedObject<T>() -> T
 }
-extension Swift.Array where Element : DriveKitCoreModule.DKUnmanagedObject {
+extension Swift::Array where Element : DriveKitCoreModule::DKUnmanagedObject {
   public func convertToUnmanagedObject<T>() -> [T]
 }
-@objc public enum UserInfoGetStatus : Swift.Int {
+@objc public enum UserInfoGetStatus : Swift::Int {
   case success, cacheDataOnly, failedToSyncUserInfoCacheOnly
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
+  public init?(rawValue: Swift::Int)
+  public typealias RawValue = Swift::Int
+  public var rawValue: Swift::Int {
     get
   }
 }
-public enum DKTransportationMeans : Swift.Hashable {
+public enum DKTransportationMeans : Swift::Hashable {
   case unknownVehicle
-  case vehicle(_: Swift.String)
+  case vehicle(_: Swift::String)
   case other
-  public var key: Swift.String {
+  public var key: Swift::String {
     get
   }
-  public static func == (a: DriveKitCoreModule.DKTransportationMeans, b: DriveKitCoreModule.DKTransportationMeans) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
+  public static func == (a: DriveKitCoreModule::DKTransportationMeans, b: DriveKitCoreModule::DKTransportationMeans) -> Swift::Bool
+  public func hash(into hasher: inout Swift::Hasher)
+  public var hashValue: Swift::Int {
     get
   }
 }
-@_hasMissingDesignatedInitializers public class SVLLog {
-  public static let shared: DriveKitCoreModule.SVLLog
-  public var currentDetectedLogFile: Foundation.URL? {
-    get
-  }
-  public var currentPostedLogFile: Foundation.URL? {
-    get
-  }
-  public func enableLogging()
-  public func disableLogging()
-  public func writeDetectedCSVLine(line: Swift.String)
-  public func writePostedCSVLine(line: Swift.String)
-  @objc deinit
-}
-@objc public enum DeleteAccountStatus : Swift.Int {
+@objc public enum DeleteAccountStatus : Swift::Int {
   case success
   case failedToDelete
   case forbidden
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
+  public init?(rawValue: Swift::Int)
+  public typealias RawValue = Swift::Int
+  public var rawValue: Swift::Int {
     get
   }
 }
-extension Swift.Optional {
-  public var logOrNil: Swift.String {
+extension Swift::Optional {
+  public var logOrNil: Swift::String {
     get
   }
 }
-@objc public enum DKPeriod : Swift.Int, Swift.Codable {
+@objc public enum DKPeriod : Swift::Int, Swift::Codable {
   case week
   case month
   case year
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
+  public init?(rawValue: Swift::Int)
+  public typealias RawValue = Swift::Int
+  public var rawValue: Swift::Int {
     get
   }
 }
 public protocol RequestDelegate {
-  func onResponse(data: Foundation.Data?)
-  func onErrorResponse(httpStatusCode: Swift.Int, errorType: DriveKitCoreModule.RequestError, message: Swift.String)
+  func onResponse(data: Foundation::Data?)
+  func onErrorResponse(httpStatusCode: Swift::Int, errorType: DriveKitCoreModule::RequestError, message: Swift::String)
 }
-extension DriveKitCoreModule.RequestDelegate {
-  public func convertToType<T>(data: Foundation.Data?) -> T? where T : Swift.Decodable, T : Swift.Encodable
+extension DriveKitCoreModule::RequestDelegate {
+  public func convertToType<T>(data: Foundation::Data?) -> T? where T : Swift::Decodable, T : Swift::Encodable
 }
-@objc public enum RequestError : Swift.Int {
+@objc public enum RequestError : Swift::Int {
   case wrongUrl
   case noNetwork
   case unauthenticated
@@ -943,82 +937,82 @@ extension DriveKitCoreModule.RequestDelegate {
   case clientError
   case limitReached
   case unknownError
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
+  public init?(rawValue: Swift::Int)
+  public typealias RawValue = Swift::Int
+  public var rawValue: Swift::Int {
     get
   }
 }
 public protocol DKAltitudeListener : AnyObject {
-  func onNewAltitudeData(_ altitudeData: CoreMotion.CMAltitudeData)
+  func onNewAltitudeData(_ altitudeData: CoreMotion::CMAltitudeData)
 }
-@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class DriveKitAccess : ObjectiveC.NSObject {
-  @objc public static let shared: DriveKitCoreModule.DriveKitAccess
-  @objc final public let version: Swift.Int
-  @objc public func hasAccess(_ accessType: DriveKitCoreModule.AccessType) -> Swift.Bool
-  @objc public func addAccessRightListener(_ listener: any DriveKitCoreModule.AccessRightListener)
-  @objc public func removeAccessRightListener(_ listener: any DriveKitCoreModule.AccessRightListener)
+@_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class DriveKitAccess : ObjectiveC::NSObject {
+  @objc public static let shared: DriveKitCoreModule::DriveKitAccess
+  @objc final public let version: Swift::Int
+  @objc public func hasAccess(_ accessType: DriveKitCoreModule::AccessType) -> Swift::Bool
+  @objc public func addAccessRightListener(_ listener: any DriveKitCoreModule::AccessRightListener)
+  @objc public func removeAccessRightListener(_ listener: any DriveKitCoreModule::AccessRightListener)
   @objc public func updateAccessRights()
   @objc deinit
 }
-public class GenericErrorResponse : DriveKitNetworkingModule.DriveKitModel {
-  public var errorDescription: Swift.String
-  public var errorKey: Swift.String
-  public var status: Swift.Int
+public class GenericErrorResponse : DriveKitNetworkingModule::DriveKitModel {
+  public var errorDescription: Swift::String
+  public var errorKey: Swift::String
+  public var status: Swift::Int
   required public init()
-  public func toJSON() -> [Swift.String : Any]
-  required public init(json: DriveKitNetworkingModule.SwiftyJSON)
+  public func toJSON() -> [Swift::String : Any]
+  required public init(json: DriveKitNetworkingModule::SwiftyJSON)
   @objc deinit
 }
 @objc public protocol DKDeviceConfigurationDelegate {
-  @objc optional func deviceConfigurationDidChange(event: DriveKitCoreModule.DKDeviceConfigurationEvent)
+  @objc optional func deviceConfigurationDidChange(event: DriveKitCoreModule::DKDeviceConfigurationEvent)
 }
 @_hasMissingDesignatedInitializers public class NetworkingTaskManager {
-  public static let shared: DriveKitCoreModule.NetworkingTaskManager
-  public func registerRequestDelegate(identifier: Swift.String, delegate: any DriveKitCoreModule.RequestDelegate)
-  public func unregisterRequestDelegate(identifier: Swift.String)
-  public func addRequest<T>(method: DriveKitNetworkingModule.DKHttpMethod, url: Swift.String, identifier: Swift.String, headers: [Swift.String : Swift.String]?, parameters: [Swift.String : Swift.String]?, data: T?, needAuth: Swift.Bool, priority: DriveKitCoreModule.Priority = .low, canSave: Swift.Bool = true, flags: Swift.Set<DriveKitCoreModule.DKNetworkTaskFlag> = []) where T : Swift.Decodable, T : Swift.Encodable
-  public func removeNetworkTask(identifier: Swift.String)
+  public static let shared: DriveKitCoreModule::NetworkingTaskManager
+  public func registerRequestDelegate(identifier: Swift::String, delegate: any DriveKitCoreModule::RequestDelegate)
+  public func unregisterRequestDelegate(identifier: Swift::String)
+  public func addRequest<T>(method: DriveKitNetworkingModule::DKHttpMethod, url: Swift::String, identifier: Swift::String, headers: [Swift::String : Swift::String]?, parameters: [Swift::String : Swift::String]?, data: T?, needAuth: Swift::Bool, priority: DriveKitCoreModule::Priority = .low, canSave: Swift::Bool = true, flags: Swift::Set<DriveKitCoreModule::DKNetworkTaskFlag> = []) where T : Swift::Decodable, T : Swift::Encodable
+  public func removeNetworkTask(identifier: Swift::String)
   @objc deinit
 }
-extension DriveKitCoreModule.NetworkingTaskManager : DriveKitNetworkingModule.DriveKitRequestDelegate {
-  public func onResponse(identifier: Swift.String, data: Foundation.Data?, response: Foundation.HTTPURLResponse?)
-  public func onErrorResponse(identifier: Swift.String, error: DriveKitNetworkingModule.DKRequestError, message: Swift.String)
+extension DriveKitCoreModule::NetworkingTaskManager : DriveKitNetworkingModule::DriveKitRequestDelegate {
+  public func onResponse(identifier: Swift::String, data: Foundation::Data?, response: Foundation::HTTPURLResponse?)
+  public func onErrorResponse(identifier: Swift::String, error: DriveKitNetworkingModule::DKRequestError, message: Swift::String)
 }
 public enum Priority {
   case low, high
-  public static func == (a: DriveKitCoreModule.Priority, b: DriveKitCoreModule.Priority) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
+  public static func == (a: DriveKitCoreModule::Priority, b: DriveKitCoreModule::Priority) -> Swift::Bool
+  public func hash(into hasher: inout Swift::Hasher)
+  public var hashValue: Swift::Int {
     get
   }
 }
-extension DriveKitNetworkingModule.DQNetworking {
-  public static func postAuthenticatedRequest(headers: [Swift.String : Swift.String] = [:], urlString: Swift.String, data: [Swift.String : Any], completionHandler: @escaping (Swift.Bool, DriveKitNetworkingModule.ResponseData?, [Swift.AnyHashable : Any]?) -> Swift.Void)
-  public static func postAuthenticatedRequest(headers: [Swift.String : Swift.String] = [:], urlString: Swift.String, data: [Any?], completionHandler: @escaping (Swift.Bool, DriveKitNetworkingModule.ResponseData?, [Swift.AnyHashable : Any]?) -> Swift.Void)
+extension DriveKitNetworkingModule::DQNetworking {
+  public static func postAuthenticatedRequest(headers: [Swift::String : Swift::String] = [:], urlString: Swift::String, data: [Swift::String : Any], completionHandler: @escaping (Swift::Bool, DriveKitNetworkingModule::ResponseData?, [Swift::AnyHashable : Any]?) -> Swift::Void)
+  public static func postAuthenticatedRequest(headers: [Swift::String : Swift::String] = [:], urlString: Swift::String, data: [Any?], completionHandler: @escaping (Swift::Bool, DriveKitNetworkingModule::ResponseData?, [Swift::AnyHashable : Any]?) -> Swift::Void)
 }
-extension Dispatch.DispatchQueue {
-  public static func dispatchAsyncOnMainThread(_ block: @escaping () -> Swift.Void)
-  public static func dispatchSyncOnMainThread(_ block: @escaping () -> Swift.Void)
+extension Dispatch::DispatchQueue {
+  public static func dispatchAsyncOnMainThread(_ block: @escaping () -> Swift::Void)
+  public static func dispatchSyncOnMainThread(_ block: @escaping () -> Swift::Void)
 }
-public enum DKScoreType : Swift.String, Swift.Codable, Swift.CaseIterable {
+public enum DKScoreType : Swift::String, Swift::Codable, Swift::CaseIterable {
   case safety, ecoDriving, distraction, speeding
-  public func getSteps() -> [Swift.Double]
-  public func hasAccess() -> Swift.Bool
-  public var range: Swift.ClosedRange<Swift.Double> {
+  public func getSteps() -> [Swift::Double]
+  public func hasAccess() -> Swift::Bool
+  public var range: Swift::ClosedRange<Swift::Double> {
     get
   }
-  public init?(rawValue: Swift.String)
-  public typealias AllCases = [DriveKitCoreModule.DKScoreType]
-  public typealias RawValue = Swift.String
-  nonisolated public static var allCases: [DriveKitCoreModule.DKScoreType] {
+  public init?(rawValue: Swift::String)
+  public typealias AllCases = [DriveKitCoreModule::DKScoreType]
+  public typealias RawValue = Swift::String
+  nonisolated public static var allCases: [DriveKitCoreModule::DKScoreType] {
     get
   }
-  public var rawValue: Swift.String {
+  public var rawValue: Swift::String {
     get
   }
 }
-@objc public enum AccessType : Swift.Int, Swift.Codable, Swift.CaseIterable {
+@objc public enum AccessType : Swift::Int, Swift::Codable, Swift::CaseIterable {
   case crashDetection
   case ecoDriving
   case phoneDistraction
@@ -1027,52 +1021,52 @@ public enum DKScoreType : Swift.String, Swift.Codable, Swift.CaseIterable {
   case speeding
   case driverProfile
   case tripSharing
-  public init?(rawValue: Swift.Int)
-  public typealias AllCases = [DriveKitCoreModule.AccessType]
-  public typealias RawValue = Swift.Int
-  nonisolated public static var allCases: [DriveKitCoreModule.AccessType] {
+  public init?(rawValue: Swift::Int)
+  public typealias AllCases = [DriveKitCoreModule::AccessType]
+  public typealias RawValue = Swift::Int
+  nonisolated public static var allCases: [DriveKitCoreModule::AccessType] {
     get
   }
-  public var rawValue: Swift.Int {
+  public var rawValue: Swift::Int {
     get
   }
 }
-@objc public enum UpdateUserIdStatus : Swift.Int {
+@objc public enum UpdateUserIdStatus : Swift::Int {
   case updated
   case failedToUpdate
   case invalidUserId
   case alreadyUsed
   case savedForRepost
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
+  public init?(rawValue: Swift::Int)
+  public typealias RawValue = Swift::Int
+  public var rawValue: Swift::Int {
     get
   }
 }
-public struct LoginResponse : Swift.Codable {
-  public func encode(to encoder: any Swift.Encoder) throws
-  public init(from decoder: any Swift.Decoder) throws
+public struct LoginResponse : Swift::Codable {
+  public func encode(to encoder: any Swift::Encoder) throws
+  public init(from decoder: any Swift::Decoder) throws
 }
 public class ReverseGeocoder {
-  public static let defaultTimeout: Swift.Double
+  public static let defaultTimeout: Swift::Double
   public init()
-  public func getAddress(latitude: Swift.Double, longitude: Swift.Double, timeout: Foundation.TimeInterval = ReverseGeocoder.defaultTimeout, completionHandler: @escaping (DriveKitCoreModule.DKAddress?) -> Swift.Void)
-  public func getAddress(location: _LocationEssentials.CLLocation, timeout: Foundation.TimeInterval = ReverseGeocoder.defaultTimeout, completionHandler: @escaping (DriveKitCoreModule.DKAddress?) -> Swift.Void)
-  public static func getAddresses(locations: [_LocationEssentials.CLLocation], timeout: Foundation.TimeInterval = ReverseGeocoder.defaultTimeout, completionHandler: @escaping ([DriveKitCoreModule.DKAddress?]) -> Swift.Void)
+  public func getAddress(latitude: Swift::Double, longitude: Swift::Double, timeout: Foundation::TimeInterval = ReverseGeocoder.defaultTimeout, completionHandler: @escaping (DriveKitCoreModule::DKAddress?) -> Swift::Void)
+  public func getAddress(location: _LocationEssentials::CLLocation, timeout: Foundation::TimeInterval = ReverseGeocoder.defaultTimeout, completionHandler: @escaping (DriveKitCoreModule::DKAddress?) -> Swift::Void)
+  public static func getAddresses(locations: [_LocationEssentials::CLLocation], timeout: Foundation::TimeInterval = ReverseGeocoder.defaultTimeout, completionHandler: @escaping ([DriveKitCoreModule::DKAddress?]) -> Swift::Void)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class DKDeviceIdManager {
-  public static func getDeviceId() -> Swift.String
-  public static func getPreviousDeviceId() -> Swift.String?
-  public static func deviceSensorsAreReliable() -> Swift.Bool
-  public static func checkBrokenDeviceIds(deviceIds: [Swift.String]?)
+  public static func getDeviceId() -> Swift::String
+  public static func getPreviousDeviceId() -> Swift::String?
+  public static func deviceSensorsAreReliable() -> Swift::Bool
+  public static func checkBrokenDeviceIds(deviceIds: [Swift::String]?)
   @objc deinit
 }
-@objc public enum DKPermissionType : Swift.Int {
+@objc public enum DKPermissionType : Swift::Int {
   case activity, bluetooth, location, notifications
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
+  public init?(rawValue: Swift::Int)
+  public typealias RawValue = Swift::Int
+  public var rawValue: Swift::Int {
     get
   }
 }
@@ -1080,117 +1074,131 @@ public class ReverseGeocoder {
   @objc func onAccessRightsUpdated()
 }
 public struct Clock {
-  public static var storage: DriveKitCoreModule.TimeStorage
-  public static var timestamp: Foundation.TimeInterval? {
+  public static var storage: DriveKitCoreModule::TimeStorage
+  public static var timestamp: Foundation::TimeInterval? {
     get
   }
-  public static var now: Foundation.Date? {
+  public static var now: Foundation::Date? {
     get
   }
-  public static func sync(from pool: Swift.String = "time.apple.com", samples: Swift.Int = 4, first: ((Foundation.Date, Foundation.TimeInterval) -> Swift.Void)? = nil, completion: ((Foundation.Date?, Foundation.TimeInterval?) -> Swift.Void)? = nil)
+  public static func sync(from pool: Swift::String = "time.apple.com", samples: Swift::Int = 4, first: ((Foundation::Date, Foundation::TimeInterval) -> Swift::Void)? = nil, completion: ((Foundation::Date?, Foundation::TimeInterval?) -> Swift::Void)? = nil)
   public static func reset()
 }
 public protocol DKRemoteEventListener : AnyObject {
-  func desiredRemoteEvents() -> Swift.Set<DriveKitCoreModule.DKRemoteEvent>
-  func eventTriggered(_ event: DriveKitCoreModule.DKRemoteEvent, value: Swift.String)
+  func desiredRemoteEvents() -> Swift::Set<DriveKitCoreModule::DKRemoteEvent>
+  func eventTriggered(_ event: DriveKitCoreModule::DKRemoteEvent, value: Swift::String)
 }
-@objc public enum DKRemoteEvent : Swift.Int, Swift.CaseIterable {
+@objc public enum DKRemoteEvent : Swift::Int, Swift::CaseIterable {
   case logsUpload, vehiclesSync
-  public static func processHeaders(_ headers: [Swift.AnyHashable : Any])
-  public init?(rawValue: Swift.Int)
-  public typealias AllCases = [DriveKitCoreModule.DKRemoteEvent]
-  public typealias RawValue = Swift.Int
-  nonisolated public static var allCases: [DriveKitCoreModule.DKRemoteEvent] {
+  public static func processHeaders(_ headers: [Swift::AnyHashable : Any])
+  public init?(rawValue: Swift::Int)
+  public typealias AllCases = [DriveKitCoreModule::DKRemoteEvent]
+  public typealias RawValue = Swift::Int
+  nonisolated public static var allCases: [DriveKitCoreModule::DKRemoteEvent] {
     get
   }
-  public var rawValue: Swift.Int {
+  public var rawValue: Swift::Int {
     get
   }
+}
+@_hasMissingDesignatedInitializers public class SVLLog {
+  public static let shared: DriveKitCoreModule::SVLLog
+  public var currentDetectedLogFile: Foundation::URL? {
+    get
+  }
+  public var currentPostedLogFile: Foundation::URL? {
+    get
+  }
+  public func enableLogging()
+  public func disableLogging()
+  public func writeDetectedCSVLine(line: Swift::String)
+  public func writePostedCSVLine(line: Swift::String)
+  @objc deinit
 }
 @_hasMissingDesignatedInitializers public class DriveKitDatabaseAccessor {
-  public static func executeCoreDataRequest(context: CoreData.NSManagedObjectContext, block: (CoreData.NSManagedObjectContext) -> Swift.Void)
-  public static func save(context: CoreData.NSManagedObjectContext)
-  public static func deleteAll(context: CoreData.NSManagedObjectContext, entity: Swift.String)
+  public static func executeCoreDataRequest(context: CoreData::NSManagedObjectContext, block: (CoreData::NSManagedObjectContext) -> Swift::Void)
+  public static func save(context: CoreData::NSManagedObjectContext)
+  public static func deleteAll(context: CoreData::NSManagedObjectContext, entity: Swift::String)
   @objc deinit
 }
-public func dkPreconditionFailure(_ message: Swift.String)
+public func dkPreconditionFailure(_ message: Swift::String)
 @_hasMissingDesignatedInitializers public class DriveKitCoreUserDefaults {
-  public static func getPrimitiveType<T>(key: Swift.String) -> T?
-  public static func setPrimitiveType<T>(key: Swift.String, value: T)
-  public static func setData(key: Swift.String, data: Foundation.Data)
-  public static func getData(key: Swift.String) -> Foundation.Data?
-  public static func getObject(key: Swift.String) -> [Swift.String : Any]?
-  public static func setObject(key: Swift.String, value: [Swift.String : Any])
-  public static func get<T>(forKey key: Swift.String) -> T? where T : Swift.Decodable, T : Swift.Encodable
-  public static func set<T>(_ object: T, forKey key: Swift.String) where T : Swift.Decodable, T : Swift.Encodable
-  public static func removeObject(key: Swift.String)
+  public static func getPrimitiveType<T>(key: Swift::String) -> T?
+  public static func setPrimitiveType<T>(key: Swift::String, value: T)
+  public static func setData(key: Swift::String, data: Foundation::Data)
+  public static func getData(key: Swift::String) -> Foundation::Data?
+  public static func getObject(key: Swift::String) -> [Swift::String : Any]?
+  public static func setObject(key: Swift::String, value: [Swift::String : Any])
+  public static func get<T>(forKey key: Swift::String) -> T? where T : Swift::Decodable, T : Swift::Encodable
+  public static func set<T>(_ object: T, forKey key: Swift::String) where T : Swift::Decodable, T : Swift::Encodable
+  public static func removeObject(key: Swift::String)
   @objc deinit
 }
-extension DriveKitCoreModule.DKDay : Swift.Equatable {}
-extension DriveKitCoreModule.DKDay : Swift.Hashable {}
-extension DriveKitCoreModule.DKDay : Swift.RawRepresentable {}
-extension DriveKitCoreModule.DKCoordinateAccuracy : Swift.Equatable {}
-extension DriveKitCoreModule.DKCoordinateAccuracy : Swift.Hashable {}
-extension DriveKitCoreModule.DKPermissionStatus : Swift.Equatable {}
-extension DriveKitCoreModule.DKPermissionStatus : Swift.Hashable {}
-extension DriveKitCoreModule.DKPermissionStatus : Swift.RawRepresentable {}
-extension DriveKitCoreModule.DKSendTrigger : Swift.Equatable {}
-extension DriveKitCoreModule.DKSendTrigger : Swift.Hashable {}
-extension DriveKitCoreModule.DKSendTrigger : Swift.RawRepresentable {}
-extension DriveKitCoreModule.DKLocationAccuracy : Swift.Equatable {}
-extension DriveKitCoreModule.DKLocationAccuracy : Swift.Hashable {}
-extension DriveKitCoreModule.DKLocationAccuracy : Swift.RawRepresentable {}
-extension DriveKitCoreModule.DKDeviceConfigurationEventType : Swift.Equatable {}
-extension DriveKitCoreModule.DKDeviceConfigurationEventType : Swift.Hashable {}
-extension DriveKitCoreModule.DKDeviceConfigurationEventType : Swift.RawRepresentable {}
-extension DriveKitCoreModule.DKDiagnosisOperationSource : Swift.Equatable {}
-extension DriveKitCoreModule.DKDiagnosisOperationSource : Swift.Hashable {}
-extension DriveKitCoreModule.DKDiagnosisOperationSource : Swift.RawRepresentable {}
-extension DriveKitCoreModule.SynchronizationType : Swift.Equatable {}
-extension DriveKitCoreModule.SynchronizationType : Swift.Hashable {}
-extension DriveKitCoreModule.SynchronizationType : Swift.RawRepresentable {}
-extension DriveKitCoreModule.DKConnectivityType : Swift.Equatable {}
-extension DriveKitCoreModule.DKConnectivityType : Swift.Hashable {}
-extension DriveKitCoreModule.DKConnectivityType : Swift.RawRepresentable {}
-extension DriveKitCoreModule.DKRoadContext : Swift.Equatable {}
-extension DriveKitCoreModule.DKRoadContext : Swift.Hashable {}
-extension DriveKitCoreModule.DKRoadContext : Swift.RawRepresentable {}
-extension DriveKitCoreModule.DriveKitBackgroundFetchStatus : Swift.Equatable {}
-extension DriveKitCoreModule.DriveKitBackgroundFetchStatus : Swift.Hashable {}
-extension DriveKitCoreModule.DriveKitBackgroundFetchStatus : Swift.RawRepresentable {}
-extension DriveKitCoreModule.DKConfigDetectionMode : Swift.Equatable {}
-extension DriveKitCoreModule.DKConfigDetectionMode : Swift.Hashable {}
-extension DriveKitCoreModule.DKConfigDetectionMode : Swift.RawRepresentable {}
-extension DriveKitCoreModule.DKBluetoothUsage : Swift.Equatable {}
-extension DriveKitCoreModule.DKBluetoothUsage : Swift.Hashable {}
-extension DriveKitCoreModule.DKSensor : Swift.Equatable {}
-extension DriveKitCoreModule.DKSensor : Swift.Hashable {}
-extension DriveKitCoreModule.UserInfoGetStatus : Swift.Equatable {}
-extension DriveKitCoreModule.UserInfoGetStatus : Swift.Hashable {}
-extension DriveKitCoreModule.UserInfoGetStatus : Swift.RawRepresentable {}
-extension DriveKitCoreModule.DeleteAccountStatus : Swift.Equatable {}
-extension DriveKitCoreModule.DeleteAccountStatus : Swift.Hashable {}
-extension DriveKitCoreModule.DeleteAccountStatus : Swift.RawRepresentable {}
-extension DriveKitCoreModule.DKPeriod : Swift.Equatable {}
-extension DriveKitCoreModule.DKPeriod : Swift.Hashable {}
-extension DriveKitCoreModule.DKPeriod : Swift.RawRepresentable {}
-extension DriveKitCoreModule.RequestError : Swift.Equatable {}
-extension DriveKitCoreModule.RequestError : Swift.Hashable {}
-extension DriveKitCoreModule.RequestError : Swift.RawRepresentable {}
-extension DriveKitCoreModule.Priority : Swift.Equatable {}
-extension DriveKitCoreModule.Priority : Swift.Hashable {}
-extension DriveKitCoreModule.DKScoreType : Swift.Equatable {}
-extension DriveKitCoreModule.DKScoreType : Swift.Hashable {}
-extension DriveKitCoreModule.DKScoreType : Swift.RawRepresentable {}
-extension DriveKitCoreModule.AccessType : Swift.Equatable {}
-extension DriveKitCoreModule.AccessType : Swift.Hashable {}
-extension DriveKitCoreModule.AccessType : Swift.RawRepresentable {}
-extension DriveKitCoreModule.UpdateUserIdStatus : Swift.Equatable {}
-extension DriveKitCoreModule.UpdateUserIdStatus : Swift.Hashable {}
-extension DriveKitCoreModule.UpdateUserIdStatus : Swift.RawRepresentable {}
-extension DriveKitCoreModule.DKPermissionType : Swift.Equatable {}
-extension DriveKitCoreModule.DKPermissionType : Swift.Hashable {}
-extension DriveKitCoreModule.DKPermissionType : Swift.RawRepresentable {}
-extension DriveKitCoreModule.DKRemoteEvent : Swift.Equatable {}
-extension DriveKitCoreModule.DKRemoteEvent : Swift.Hashable {}
-extension DriveKitCoreModule.DKRemoteEvent : Swift.RawRepresentable {}
+extension DriveKitCoreModule::DKDay : Swift::Equatable {}
+extension DriveKitCoreModule::DKDay : Swift::Hashable {}
+extension DriveKitCoreModule::DKDay : Swift::RawRepresentable {}
+extension DriveKitCoreModule::DKCoordinateAccuracy : Swift::Equatable {}
+extension DriveKitCoreModule::DKCoordinateAccuracy : Swift::Hashable {}
+extension DriveKitCoreModule::DKPermissionStatus : Swift::Equatable {}
+extension DriveKitCoreModule::DKPermissionStatus : Swift::Hashable {}
+extension DriveKitCoreModule::DKPermissionStatus : Swift::RawRepresentable {}
+extension DriveKitCoreModule::DKSendTrigger : Swift::Equatable {}
+extension DriveKitCoreModule::DKSendTrigger : Swift::Hashable {}
+extension DriveKitCoreModule::DKSendTrigger : Swift::RawRepresentable {}
+extension DriveKitCoreModule::DKLocationAccuracy : Swift::Equatable {}
+extension DriveKitCoreModule::DKLocationAccuracy : Swift::Hashable {}
+extension DriveKitCoreModule::DKLocationAccuracy : Swift::RawRepresentable {}
+extension DriveKitCoreModule::DKDeviceConfigurationEventType : Swift::Equatable {}
+extension DriveKitCoreModule::DKDeviceConfigurationEventType : Swift::Hashable {}
+extension DriveKitCoreModule::DKDeviceConfigurationEventType : Swift::RawRepresentable {}
+extension DriveKitCoreModule::DKDiagnosisOperationSource : Swift::Equatable {}
+extension DriveKitCoreModule::DKDiagnosisOperationSource : Swift::Hashable {}
+extension DriveKitCoreModule::DKDiagnosisOperationSource : Swift::RawRepresentable {}
+extension DriveKitCoreModule::SynchronizationType : Swift::Equatable {}
+extension DriveKitCoreModule::SynchronizationType : Swift::Hashable {}
+extension DriveKitCoreModule::SynchronizationType : Swift::RawRepresentable {}
+extension DriveKitCoreModule::DKConnectivityType : Swift::Equatable {}
+extension DriveKitCoreModule::DKConnectivityType : Swift::Hashable {}
+extension DriveKitCoreModule::DKConnectivityType : Swift::RawRepresentable {}
+extension DriveKitCoreModule::DKRoadContext : Swift::Equatable {}
+extension DriveKitCoreModule::DKRoadContext : Swift::Hashable {}
+extension DriveKitCoreModule::DKRoadContext : Swift::RawRepresentable {}
+extension DriveKitCoreModule::DriveKitBackgroundFetchStatus : Swift::Equatable {}
+extension DriveKitCoreModule::DriveKitBackgroundFetchStatus : Swift::Hashable {}
+extension DriveKitCoreModule::DriveKitBackgroundFetchStatus : Swift::RawRepresentable {}
+extension DriveKitCoreModule::DKConfigDetectionMode : Swift::Equatable {}
+extension DriveKitCoreModule::DKConfigDetectionMode : Swift::Hashable {}
+extension DriveKitCoreModule::DKConfigDetectionMode : Swift::RawRepresentable {}
+extension DriveKitCoreModule::DKBluetoothUsage : Swift::Equatable {}
+extension DriveKitCoreModule::DKBluetoothUsage : Swift::Hashable {}
+extension DriveKitCoreModule::DKSensor : Swift::Equatable {}
+extension DriveKitCoreModule::DKSensor : Swift::Hashable {}
+extension DriveKitCoreModule::UserInfoGetStatus : Swift::Equatable {}
+extension DriveKitCoreModule::UserInfoGetStatus : Swift::Hashable {}
+extension DriveKitCoreModule::UserInfoGetStatus : Swift::RawRepresentable {}
+extension DriveKitCoreModule::DeleteAccountStatus : Swift::Equatable {}
+extension DriveKitCoreModule::DeleteAccountStatus : Swift::Hashable {}
+extension DriveKitCoreModule::DeleteAccountStatus : Swift::RawRepresentable {}
+extension DriveKitCoreModule::DKPeriod : Swift::Equatable {}
+extension DriveKitCoreModule::DKPeriod : Swift::Hashable {}
+extension DriveKitCoreModule::DKPeriod : Swift::RawRepresentable {}
+extension DriveKitCoreModule::RequestError : Swift::Equatable {}
+extension DriveKitCoreModule::RequestError : Swift::Hashable {}
+extension DriveKitCoreModule::RequestError : Swift::RawRepresentable {}
+extension DriveKitCoreModule::Priority : Swift::Equatable {}
+extension DriveKitCoreModule::Priority : Swift::Hashable {}
+extension DriveKitCoreModule::DKScoreType : Swift::Equatable {}
+extension DriveKitCoreModule::DKScoreType : Swift::Hashable {}
+extension DriveKitCoreModule::DKScoreType : Swift::RawRepresentable {}
+extension DriveKitCoreModule::AccessType : Swift::Equatable {}
+extension DriveKitCoreModule::AccessType : Swift::Hashable {}
+extension DriveKitCoreModule::AccessType : Swift::RawRepresentable {}
+extension DriveKitCoreModule::UpdateUserIdStatus : Swift::Equatable {}
+extension DriveKitCoreModule::UpdateUserIdStatus : Swift::Hashable {}
+extension DriveKitCoreModule::UpdateUserIdStatus : Swift::RawRepresentable {}
+extension DriveKitCoreModule::DKPermissionType : Swift::Equatable {}
+extension DriveKitCoreModule::DKPermissionType : Swift::Hashable {}
+extension DriveKitCoreModule::DKPermissionType : Swift::RawRepresentable {}
+extension DriveKitCoreModule::DKRemoteEvent : Swift::Equatable {}
+extension DriveKitCoreModule::DKRemoteEvent : Swift::Hashable {}
+extension DriveKitCoreModule::DKRemoteEvent : Swift::RawRepresentable {}

@@ -6,7 +6,7 @@
 	<dict>
 		<key>ios-arm64/DriveKitVehicleModule.framework/DriveKitVehicleModule</key>
 		<data>
-		peKS+Y9aKfeGWWlmAPNVRE8QJl0=
+		qjqy6Il4hr9JATWphdYDFsoC7/0=
 		</data>
 		<key>ios-arm64/DriveKitVehicleModule.framework/Headers/DriveKitVehicle.h</key>
 		<data>
@@ -14,27 +14,27 @@
 		</data>
 		<key>ios-arm64/DriveKitVehicleModule.framework/Headers/DriveKitVehicleModule-Swift.h</key>
 		<data>
-		E3hurhbnfxSEF2AMY6fLONMLHyA=
+		tti/PmP/VrPadgAWVGBdhgAwqLE=
 		</data>
 		<key>ios-arm64/DriveKitVehicleModule.framework/Info.plist</key>
 		<data>
-		tdALbqLUtcjLr+IKupyCgw4HhG0=
+		wS1meYM/bZzD/YdNnHjNsKnsQ7w=
 		</data>
 		<key>ios-arm64/DriveKitVehicleModule.framework/Modules/DriveKitVehicleModule.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		cNS9v92w3D3SFyB2YvX3Tg9agBE=
+		A6LmUBi7pvhMUoRJTrl0uVgo/FM=
 		</data>
 		<key>ios-arm64/DriveKitVehicleModule.framework/Modules/DriveKitVehicleModule.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		KznzEwi3DO0w1zxQfGhaHOsKPKM=
+		lU+qbU941ca+sNc243Ar07XfixE=
 		</data>
 		<key>ios-arm64/DriveKitVehicleModule.framework/Modules/DriveKitVehicleModule.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		CNTfXvm/WZqcZFm6UG+9XomVPLs=
+		8o76DxNVuzEUUXY+S6JpvwBwR+k=
 		</data>
 		<key>ios-arm64/DriveKitVehicleModule.framework/Modules/DriveKitVehicleModule.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		KznzEwi3DO0w1zxQfGhaHOsKPKM=
+		lU+qbU941ca+sNc243Ar07XfixE=
 		</data>
 		<key>ios-arm64/DriveKitVehicleModule.framework/Modules/module.modulemap</key>
 		<data>
@@ -46,7 +46,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitVehicleModule.framework/DriveKitVehicleModule</key>
 		<data>
-		z4UrLGaoDLqY40y6RU/Ep3zeY84=
+		cx3lETtwGiojVSzGj2nI9LINpwI=
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitVehicleModule.framework/Headers/DriveKitVehicle.h</key>
 		<data>
@@ -54,43 +54,43 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitVehicleModule.framework/Headers/DriveKitVehicleModule-Swift.h</key>
 		<data>
-		kEkwxOnCj+CCsMYKEAFqjYMJCAI=
+		O47y9w5iMKRmElakkxb4+Y/bgEI=
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitVehicleModule.framework/Info.plist</key>
 		<data>
-		fYDp7+3mDuZzPkTYQLjvCBeXUWI=
+		EAB/j9tP5YM00er3E1a0SgiA3T8=
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitVehicleModule.framework/Modules/DriveKitVehicleModule.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		cNS9v92w3D3SFyB2YvX3Tg9agBE=
+		A6LmUBi7pvhMUoRJTrl0uVgo/FM=
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitVehicleModule.framework/Modules/DriveKitVehicleModule.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		B1vLaW6fXe8pg47pMP9DF674YRA=
+		EaqE/w7Dop1zGxX0ydnNCrtB8EA=
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitVehicleModule.framework/Modules/DriveKitVehicleModule.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		CAPN8W8CGsGkF/ID5YzkmhnUbN4=
+		qaS2WZOnuJO1cBLiuyr+dIXWwjo=
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitVehicleModule.framework/Modules/DriveKitVehicleModule.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		B1vLaW6fXe8pg47pMP9DF674YRA=
+		EaqE/w7Dop1zGxX0ydnNCrtB8EA=
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitVehicleModule.framework/Modules/DriveKitVehicleModule.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		cNS9v92w3D3SFyB2YvX3Tg9agBE=
+		A6LmUBi7pvhMUoRJTrl0uVgo/FM=
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitVehicleModule.framework/Modules/DriveKitVehicleModule.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		YUeOepW5leDYWj7/a+DCCruPhks=
+		EszymEWoBYkMqJoPvsQEYR8zFjw=
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitVehicleModule.framework/Modules/DriveKitVehicleModule.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		IK/0kpL8GeHI2PaCUC+xoFue7dc=
+		tZu23XJ3LrwIA042xgFkfsaCGdI=
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitVehicleModule.framework/Modules/DriveKitVehicleModule.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		YUeOepW5leDYWj7/a+DCCruPhks=
+		EszymEWoBYkMqJoPvsQEYR8zFjw=
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitVehicleModule.framework/Modules/module.modulemap</key>
 		<data>
@@ -102,7 +102,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitVehicleModule.framework/_CodeSignature/CodeResources</key>
 		<data>
-		8D9rOC97nRVQ4kgHskU0e886z2o=
+		w4A+9fNI1u0Oc3sGsYeDp3bnmd0=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -111,7 +111,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			AIaLL1ojrpyxdr4dtB+7SKXPKWECXbBP3xz0g2pveKA=
+			odQbiCQjxXYLMXZb0L9d7Fxj+xl5IVw0ZVWlIj8tzh8=
 			</data>
 		</dict>
 		<key>ios-arm64/DriveKitVehicleModule.framework/Headers/DriveKitVehicle.h</key>
@@ -125,42 +125,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			gN8i3Ytl5fg+fgHrpfzXQz6OwmXBvjZyF+MLN7Ee96o=
+			xIDqdnSYUJQBga9T6gLpnPhgJcGiea4Juot8Fo6Lhcs=
 			</data>
 		</dict>
 		<key>ios-arm64/DriveKitVehicleModule.framework/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yY8CuSTOIMHR8lxZVbh2VMC9NFLyCO+mCxLbefkkSEs=
+			Ehi+2r828hwcVIm3RSBMaZrcNclOYra7iUFA7OEmR74=
 			</data>
 		</dict>
 		<key>ios-arm64/DriveKitVehicleModule.framework/Modules/DriveKitVehicleModule.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ra+iXd8yu33jzg7uEuH30Tt43jhfG9hCeNL6SDGPSAs=
+			TRPEVR4i26Y4/3cjQFTg3mjjSX8CI3gl1j86xYS5a04=
 			</data>
 		</dict>
 		<key>ios-arm64/DriveKitVehicleModule.framework/Modules/DriveKitVehicleModule.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ispb/IeXQy2x3cjBvy1PDhlZ69QmBpXl6fwSRBJnthI=
+			Q6AJdDPYuWzdMuOtveyJHRu5Wmay/6sxEEJCU8W8WJE=
 			</data>
 		</dict>
 		<key>ios-arm64/DriveKitVehicleModule.framework/Modules/DriveKitVehicleModule.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			oHCIVkaY12IiY98j42uCYAGk6HQJ57d4iPjwDBT61+A=
+			f8Cbu5d6YqGvHiYkBTSnwUyn6+TmkzdjSKcaU4nOZUc=
 			</data>
 		</dict>
 		<key>ios-arm64/DriveKitVehicleModule.framework/Modules/DriveKitVehicleModule.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ispb/IeXQy2x3cjBvy1PDhlZ69QmBpXl6fwSRBJnthI=
+			Q6AJdDPYuWzdMuOtveyJHRu5Wmay/6sxEEJCU8W8WJE=
 			</data>
 		</dict>
 		<key>ios-arm64/DriveKitVehicleModule.framework/Modules/module.modulemap</key>
@@ -181,7 +181,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			nXFBYaGvrx6xdTxxMYH+uoUn7+HU6RVd5jsuLWYsxfw=
+			DJxPHrM9q0OQLAjUyh9yCX0R1LSNjZi/bOn8WqfJGqo=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/DriveKitVehicleModule.framework/Headers/DriveKitVehicle.h</key>
@@ -195,70 +195,70 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			edduRIdBjXALJojVORiIOxTMbLcHz/OkvE4+Y20SoTQ=
+			ZYiroElG5YVmy5JamLiumthiXTE4gnOW3nAuOMJAco0=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/DriveKitVehicleModule.framework/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			zsSWkfAwkTfIr3Ej/0IdJClkF4M5i2IOY2KI/fsGEP8=
+			DgNaOmh7u9GjeDMQR+LGFMlofV9ySatM96kbDvJ9h4o=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/DriveKitVehicleModule.framework/Modules/DriveKitVehicleModule.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ra+iXd8yu33jzg7uEuH30Tt43jhfG9hCeNL6SDGPSAs=
+			TRPEVR4i26Y4/3cjQFTg3mjjSX8CI3gl1j86xYS5a04=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/DriveKitVehicleModule.framework/Modules/DriveKitVehicleModule.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WhNvrNvFzKHt1JJ8dYkYehQY/F1M5IT/n9QBfuBWno4=
+			W8Bup2D3fa6HkhfxnxFdEFr4nbT1s/aq0etqvXQnOOk=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/DriveKitVehicleModule.framework/Modules/DriveKitVehicleModule.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			M4+gHzgJhzJKEFpb0/YVhmiWh5VoSXYxyHhr+LRR78U=
+			ZL2IlVLFu5BmLROSTpl7qKAm7HFbDT88hN/sSMf4l6k=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/DriveKitVehicleModule.framework/Modules/DriveKitVehicleModule.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WhNvrNvFzKHt1JJ8dYkYehQY/F1M5IT/n9QBfuBWno4=
+			W8Bup2D3fa6HkhfxnxFdEFr4nbT1s/aq0etqvXQnOOk=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/DriveKitVehicleModule.framework/Modules/DriveKitVehicleModule.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ra+iXd8yu33jzg7uEuH30Tt43jhfG9hCeNL6SDGPSAs=
+			TRPEVR4i26Y4/3cjQFTg3mjjSX8CI3gl1j86xYS5a04=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/DriveKitVehicleModule.framework/Modules/DriveKitVehicleModule.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VD58Erf3RLjsfEXOnACaato8+aAkLytGVbd7L0aiPFU=
+			9AjULGyXxQEUyg9+lOxdDO4Qs4usL2uq7a8Jjl7zxDY=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/DriveKitVehicleModule.framework/Modules/DriveKitVehicleModule.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			j8YLuAOIwPx3fnZ7MFOAyzTI1NNev8YxNHR1r9VB6Y0=
+			nkRDsNhYqqZDF1JcxLzkJMNoLO/EVHf6UW29cA4FlPI=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/DriveKitVehicleModule.framework/Modules/DriveKitVehicleModule.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			VD58Erf3RLjsfEXOnACaato8+aAkLytGVbd7L0aiPFU=
+			9AjULGyXxQEUyg9+lOxdDO4Qs4usL2uq7a8Jjl7zxDY=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/DriveKitVehicleModule.framework/Modules/module.modulemap</key>
@@ -279,7 +279,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Sm2p7A4ChEi8vMuWp/wVNI/bcofUNR7tQBk4maKWqqE=
+			5YB+d3JkkbeJYFYNjfMumimgmitkGaespzqiYriprgY=
 			</data>
 		</dict>
 	</dict>
