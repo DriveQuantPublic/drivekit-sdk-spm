@@ -10,11 +10,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		UJzUxbSzQKH2soxlUTemnXkk2mo=
+		RLFqbl6Qyd66dkqlcwb9s1AztG8=
 		</data>
 		<key>Modules/DriveKitStolenVehicleLocatorModule.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		zqBMbKPz5/fGavXjjJtH958THew=
+		Byd949CKGNTvFJhoVG8+yOl3M+k=
 		</data>
 		<key>Modules/DriveKitStolenVehicleLocatorModule.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -30,11 +30,11 @@
 		</data>
 		<key>Modules/DriveKitStolenVehicleLocatorModule.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		hziEdCwVIU4PmAHptGHw30EHxFw=
+		+MX4rLkDGthfVqpykpQ9dxiyY8w=
 		</data>
 		<key>Modules/DriveKitStolenVehicleLocatorModule.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		zqBMbKPz5/fGavXjjJtH958THew=
+		Byd949CKGNTvFJhoVG8+yOl3M+k=
 		</data>
 		<key>Modules/DriveKitStolenVehicleLocatorModule.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -50,7 +50,7 @@
 		</data>
 		<key>Modules/DriveKitStolenVehicleLocatorModule.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		H1C8nCHwm7uoYr4HqN+fjvmwgtA=
+		beb0sw0XsrZ8JgWHg+dJu+ZxGvo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -74,7 +74,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			A5+LPo+0Fuv03tql05E3+pcixLrlNx4LfQzZHEQmQ0w=
+			aeXUqLmfNTGRvWzFUGuLjmhaS+Ty2/k39TCvPVU3CQk=
 			</data>
 		</dict>
 		<key>Modules/DriveKitStolenVehicleLocatorModule.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -102,14 +102,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Lm8exO3aMqsRZn7YKAE4rC4HhZHRt7r1P7uf9hk+lrw=
+			LLG0emd+GhxNigtLJdHazorj5Mk6lukK5E33voalmJg=
 			</data>
 		</dict>
 		<key>Modules/DriveKitStolenVehicleLocatorModule.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			A5+LPo+0Fuv03tql05E3+pcixLrlNx4LfQzZHEQmQ0w=
+			aeXUqLmfNTGRvWzFUGuLjmhaS+Ty2/k39TCvPVU3CQk=
 			</data>
 		</dict>
 		<key>Modules/DriveKitStolenVehicleLocatorModule.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
@@ -137,7 +137,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3bQte9l9XG6DOoo89mQdWfarkfJ/V6fLkDUBTbInUXw=
+			32QoFVwdGDyOTVA29MCBKFpoVtPYH4lVJ+Zumw853Ck=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

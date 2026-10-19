@@ -272,6 +272,11 @@ public enum DateUtils {
 extension Foundation::DateFormatter {
   public static let dateFormatter: Foundation::DateFormatter
 }
+extension Foundation::Date {
+  public var timestampInMs: Swift::Int64 {
+    get
+  }
+}
 extension Swift::Array where Element == Foundation::Date {
   public func indexSetsByYear() -> [Foundation::Date : Foundation::IndexSet]
 }
