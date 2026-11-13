@@ -373,40 +373,19 @@ extern "C" {
 
 #if defined(__OBJC__)
 
-@class NSString;
 SWIFT_CLASS("_TtC25DriveKitBeaconUtilsModule8DKBeacon")
 @interface DKBeacon : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nullable uniqueId;
-@property (nonatomic, readonly, copy) NSString * _Nonnull proximityUuid;
-@property (nonatomic, readonly) NSInteger major;
-@property (nonatomic, readonly) NSInteger minor;
-- (nonnull instancetype)initWithUniqueId:(NSString * _Nullable)uniqueId proximityUuid:(NSString * _Nonnull)proximityUuid major:(NSInteger)major minor:(NSInteger)minor OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-SWIFT_PROTOCOL("_TtP25DriveKitBeaconUtilsModule14DKBeaconConfig_")
-@protocol DKBeaconConfig
-@property (nonatomic, readonly, copy) NSString * _Nonnull serviceUuid;
-@property (nonatomic, readonly) NSInteger batteryLevelPositionInService;
-@property (nonatomic, readonly) NSInteger rssiAtOneMeter;
-@end
-
-@class CLBeacon;
 SWIFT_CLASS("_TtC25DriveKitBeaconUtilsModule15DKBeaconScanner")
 @interface DKBeaconScanner : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSArray<id <DKBeaconConfig>> * _Nonnull beaconConfigList;)
-+ (NSArray<id <DKBeaconConfig>> * _Nonnull)beaconConfigList SWIFT_WARN_UNUSED_RESULT;
-+ (void)setBeaconConfigList:(NSArray<id <DKBeaconConfig>> * _Nonnull)value;
-- (void)startBeaconScanWithBeacons:(NSArray<DKBeacon *> * _Nonnull)beacons useMajorMinor:(BOOL)useMajorMinor completion:(void (^ _Nonnull)(NSArray<CLBeacon *> * _Nonnull))completion;
-- (void)stopBeaconScan;
-- (void)startBeaconInfoScan:(void (^ _Nonnull)(NSInteger, double, double, NSInteger, BOOL))completion;
-- (void)startBeaconInfoRetrievalWithConfigurations:(NSArray<id <DKBeaconConfig>> * _Nonnull)configurations completion:(void (^ _Nonnull)(NSInteger, double, double, NSInteger, BOOL))completion;
-- (void)stopBeaconInfoScan;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class CLLocationManager;
+@class CLBeacon;
 @class CLBeaconIdentityConstraint;
 @interface DKBeaconScanner (SWIFT_EXTENSION(DriveKitBeaconUtilsModule)) <CLLocationManagerDelegate>
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didRangeBeacons:(NSArray<CLBeacon *> * _Nonnull)beacons satisfyingConstraint:(CLBeaconIdentityConstraint * _Nonnull)beaconConstraint;
@@ -414,6 +393,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSArray<id <DKBeaconConf
 
 @class CBCentralManager;
 @class CBPeripheral;
+@class NSString;
 @class NSNumber;
 @interface DKBeaconScanner (SWIFT_EXTENSION(DriveKitBeaconUtilsModule)) <CBCentralManagerDelegate>
 - (void)centralManagerDidUpdateState:(CBCentralManager * _Nonnull)centralManager;
@@ -421,27 +401,18 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSArray<id <DKBeaconConf
 @end
 
 SWIFT_CLASS("_TtC25DriveKitBeaconUtilsModule16DKFeasycomBeacon")
-@interface DKFeasycomBeacon : NSObject <DKBeaconConfig>
-@property (nonatomic, copy) NSString * _Nonnull serviceUuid;
-@property (nonatomic) NSInteger batteryLevelPositionInService;
-@property (nonatomic, readonly) NSInteger rssiAtOneMeter;
+@interface DKFeasycomBeacon : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 SWIFT_CLASS("_TtC25DriveKitBeaconUtilsModule15DKKontaktBeacon")
-@interface DKKontaktBeacon : NSObject <DKBeaconConfig>
-@property (nonatomic, copy) NSString * _Nonnull serviceUuid;
-@property (nonatomic) NSInteger batteryLevelPositionInService;
-@property (nonatomic) NSInteger rssiAtOneMeter;
+@interface DKKontaktBeacon : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 SWIFT_CLASS("_TtC25DriveKitBeaconUtilsModule18DKKontaktProBeacon")
-@interface DKKontaktProBeacon : NSObject <DKBeaconConfig>
-@property (nonatomic, copy) NSString * _Nonnull serviceUuid;
-@property (nonatomic) NSInteger batteryLevelPositionInService;
-@property (nonatomic) NSInteger rssiAtOneMeter;
+@interface DKKontaktProBeacon : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
@@ -828,40 +799,19 @@ extern "C" {
 
 #if defined(__OBJC__)
 
-@class NSString;
 SWIFT_CLASS("_TtC25DriveKitBeaconUtilsModule8DKBeacon")
 @interface DKBeacon : NSObject
-@property (nonatomic, readonly, copy) NSString * _Nullable uniqueId;
-@property (nonatomic, readonly, copy) NSString * _Nonnull proximityUuid;
-@property (nonatomic, readonly) NSInteger major;
-@property (nonatomic, readonly) NSInteger minor;
-- (nonnull instancetype)initWithUniqueId:(NSString * _Nullable)uniqueId proximityUuid:(NSString * _Nonnull)proximityUuid major:(NSInteger)major minor:(NSInteger)minor OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
-SWIFT_PROTOCOL("_TtP25DriveKitBeaconUtilsModule14DKBeaconConfig_")
-@protocol DKBeaconConfig
-@property (nonatomic, readonly, copy) NSString * _Nonnull serviceUuid;
-@property (nonatomic, readonly) NSInteger batteryLevelPositionInService;
-@property (nonatomic, readonly) NSInteger rssiAtOneMeter;
-@end
-
-@class CLBeacon;
 SWIFT_CLASS("_TtC25DriveKitBeaconUtilsModule15DKBeaconScanner")
 @interface DKBeaconScanner : NSObject
-SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSArray<id <DKBeaconConfig>> * _Nonnull beaconConfigList;)
-+ (NSArray<id <DKBeaconConfig>> * _Nonnull)beaconConfigList SWIFT_WARN_UNUSED_RESULT;
-+ (void)setBeaconConfigList:(NSArray<id <DKBeaconConfig>> * _Nonnull)value;
-- (void)startBeaconScanWithBeacons:(NSArray<DKBeacon *> * _Nonnull)beacons useMajorMinor:(BOOL)useMajorMinor completion:(void (^ _Nonnull)(NSArray<CLBeacon *> * _Nonnull))completion;
-- (void)stopBeaconScan;
-- (void)startBeaconInfoScan:(void (^ _Nonnull)(NSInteger, double, double, NSInteger, BOOL))completion;
-- (void)startBeaconInfoRetrievalWithConfigurations:(NSArray<id <DKBeaconConfig>> * _Nonnull)configurations completion:(void (^ _Nonnull)(NSInteger, double, double, NSInteger, BOOL))completion;
-- (void)stopBeaconInfoScan;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class CLLocationManager;
+@class CLBeacon;
 @class CLBeaconIdentityConstraint;
 @interface DKBeaconScanner (SWIFT_EXTENSION(DriveKitBeaconUtilsModule)) <CLLocationManagerDelegate>
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didRangeBeacons:(NSArray<CLBeacon *> * _Nonnull)beacons satisfyingConstraint:(CLBeaconIdentityConstraint * _Nonnull)beaconConstraint;
@@ -869,6 +819,7 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSArray<id <DKBeaconConf
 
 @class CBCentralManager;
 @class CBPeripheral;
+@class NSString;
 @class NSNumber;
 @interface DKBeaconScanner (SWIFT_EXTENSION(DriveKitBeaconUtilsModule)) <CBCentralManagerDelegate>
 - (void)centralManagerDidUpdateState:(CBCentralManager * _Nonnull)centralManager;
@@ -876,27 +827,18 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, copy) NSArray<id <DKBeaconConf
 @end
 
 SWIFT_CLASS("_TtC25DriveKitBeaconUtilsModule16DKFeasycomBeacon")
-@interface DKFeasycomBeacon : NSObject <DKBeaconConfig>
-@property (nonatomic, copy) NSString * _Nonnull serviceUuid;
-@property (nonatomic) NSInteger batteryLevelPositionInService;
-@property (nonatomic, readonly) NSInteger rssiAtOneMeter;
+@interface DKFeasycomBeacon : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
 SWIFT_CLASS("_TtC25DriveKitBeaconUtilsModule15DKKontaktBeacon")
-@interface DKKontaktBeacon : NSObject <DKBeaconConfig>
-@property (nonatomic, copy) NSString * _Nonnull serviceUuid;
-@property (nonatomic) NSInteger batteryLevelPositionInService;
-@property (nonatomic) NSInteger rssiAtOneMeter;
+@interface DKKontaktBeacon : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 SWIFT_CLASS("_TtC25DriveKitBeaconUtilsModule18DKKontaktProBeacon")
-@interface DKKontaktProBeacon : NSObject <DKBeaconConfig>
-@property (nonatomic, copy) NSString * _Nonnull serviceUuid;
-@property (nonatomic) NSInteger batteryLevelPositionInService;
-@property (nonatomic) NSInteger rssiAtOneMeter;
+@interface DKKontaktProBeacon : NSObject
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

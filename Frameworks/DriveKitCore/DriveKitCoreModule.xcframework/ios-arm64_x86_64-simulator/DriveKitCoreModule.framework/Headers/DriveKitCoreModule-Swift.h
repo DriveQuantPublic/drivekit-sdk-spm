@@ -395,6 +395,8 @@ SWIFT_CLASS("_TtC18DriveKitCoreModule10BeaconData")
 - (nonnull instancetype)initWithProximityUuid:(NSString * _Nonnull)proximityUuid major:(NSInteger)major minor:(NSInteger)minor OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithProximityUuid:(NSString * _Nonnull)proximityUuid major:(NSInteger)major OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithProximityUuid:(NSString * _Nonnull)proximityUuid OBJC_DESIGNATED_INITIALIZER;
+- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic, readonly) NSUInteger hash;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
@@ -1070,6 +1072,8 @@ SWIFT_CLASS("_TtC18DriveKitCoreModule10BeaconData")
 - (nonnull instancetype)initWithProximityUuid:(NSString * _Nonnull)proximityUuid major:(NSInteger)major minor:(NSInteger)minor OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithProximityUuid:(NSString * _Nonnull)proximityUuid major:(NSInteger)major OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithProximityUuid:(NSString * _Nonnull)proximityUuid OBJC_DESIGNATED_INITIALIZER;
+- (BOOL)isEqual:(id _Nullable)object SWIFT_WARN_UNUSED_RESULT;
+@property (nonatomic, readonly) NSUInteger hash;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end

@@ -388,6 +388,23 @@
         "name": "DriveKitCoreModule",
         "printedName": "DriveKitCoreModule",
         "declKind": "Import",
+        "moduleName": "DriveKitStolenVehicleLocatorModule"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DriveKitStolenVehicleLocatorModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "DriveKitCoreModule",
+        "printedName": "DriveKitCoreModule",
+        "declKind": "Import",
         "moduleName": "DriveKitStolenVehicleLocatorModule",
         "declAttributes": [
           "Preconcurrency"
@@ -1600,6 +1617,26 @@
         "printedName": "DriveKitCoreModule",
         "declKind": "Import",
         "moduleName": "DriveKitStolenVehicleLocatorModule"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "DriveKitStolenVehicleLocatorModule",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "DriveKitCoreModule",
+        "printedName": "DriveKitCoreModule",
+        "declKind": "Import",
+        "moduleName": "DriveKitStolenVehicleLocatorModule",
+        "declAttributes": [
+          "Preconcurrency"
+        ]
       },
       {
         "kind": "TypeDecl",
@@ -3469,6 +3506,34 @@
   },
   "ConstValues": [
     {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-stolen-vehicle-locator\/store\/HighFrequencyReportedBeaconsStore.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1242,
+      "length": 2,
+      "value": "30"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-stolen-vehicle-locator\/store\/HighFrequencyReportedBeaconsStore.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1247,
+      "length": 2,
+      "value": "24"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-stolen-vehicle-locator\/store\/HighFrequencyReportedBeaconsStore.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1252,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-stolen-vehicle-locator\/store\/HighFrequencyReportedBeaconsStore.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1257,
+      "length": 2,
+      "value": "60"
+    },
+    {
       "filePath": "\/Users\/vagrant\/git\/drivekit-stolen-vehicle-locator\/scanner\/StolenVehicleLocatorScannerConfigurationManager.swift",
       "kind": "Array",
       "offset": 410,
@@ -3491,29 +3556,36 @@
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-stolen-vehicle-locator\/scanner\/StolenVehicleLocatorScannerConfigurationManager.swift",
-      "kind": "BooleanLiteral",
-      "offset": 581,
-      "length": 5,
-      "value": "false"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/drivekit-stolen-vehicle-locator\/scanner\/StolenVehicleLocatorScannerConfigurationManager.swift",
       "kind": "Array",
-      "offset": 640,
+      "offset": 623,
       "length": 2,
       "value": "[]"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-stolen-vehicle-locator\/scanner\/StolenVehicleLocatorScannerConfigurationManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 683,
+      "offset": 665,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-stolen-vehicle-locator\/scanner\/StolenVehicleLocatorScannerConfigurationManager.swift",
+      "kind": "Array",
+      "offset": 724,
+      "length": 2,
+      "value": "[]"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-stolen-vehicle-locator\/scanner\/StolenVehicleLocatorScannerConfigurationManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 767,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-stolen-vehicle-locator\/scanner\/StolenVehicleLocatorScannerConfigurationManager.swift",
       "kind": "StringLiteral",
-      "offset": 780,
+      "offset": 868,
       "length": 55,
       "value": "\"StolenVehicleLocatorScannerConfigurationManagerAccess\""
     },
@@ -3527,28 +3599,14 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-stolen-vehicle-locator\/scanner\/StolenVehicleLocatorScanner.swift",
       "kind": "StringLiteral",
-      "offset": 926,
-      "length": 68,
-      "value": "\"drivekit-stolen-vehicle-locator-buffered-beacons-for-csv-recording\""
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/drivekit-stolen-vehicle-locator\/scanner\/StolenVehicleLocatorScanner.swift",
-      "kind": "IntegerLiteral",
-      "offset": 1039,
-      "length": 2,
-      "value": "60"
-    },
-    {
-      "filePath": "\/Users\/vagrant\/git\/drivekit-stolen-vehicle-locator\/scanner\/StolenVehicleLocatorScanner.swift",
-      "kind": "StringLiteral",
-      "offset": 1174,
+      "offset": 1550,
       "length": 13,
       "value": "\"en_US_POSIX\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-stolen-vehicle-locator\/scanner\/StolenVehicleLocatorScanner.swift",
       "kind": "StringLiteral",
-      "offset": 1296,
+      "offset": 1672,
       "length": 30,
       "value": "\"yyyy-MM-dd'T'HH:mm:ss.SSSxxx\""
     },
@@ -3569,65 +3627,100 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-stolen-vehicle-locator\/DriveKitStolenVehicleLocatorConstants.swift",
       "kind": "StringLiteral",
-      "offset": 466,
+      "offset": 471,
       "length": 43,
       "value": "\"drivekit-stolen-vehicle-locator-uuid-list\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-stolen-vehicle-locator\/DriveKitStolenVehicleLocatorConstants.swift",
       "kind": "StringLiteral",
-      "offset": 544,
+      "offset": 549,
       "length": 48,
       "value": "\"drivekit-stolen-vehicle-locator-scan-requested\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-stolen-vehicle-locator\/DriveKitStolenVehicleLocatorConstants.swift",
       "kind": "StringLiteral",
-      "offset": 629,
+      "offset": 634,
       "length": 50,
       "value": "\"drivekit-stolen-vehicle-locator-buffered-beacons\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-stolen-vehicle-locator\/DriveKitStolenVehicleLocatorConstants.swift",
       "kind": "StringLiteral",
-      "offset": 724,
+      "offset": 727,
+      "length": 68,
+      "value": "\"drivekit-stolen-vehicle-locator-buffered-beacons-for-csv-recording\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-stolen-vehicle-locator\/DriveKitStolenVehicleLocatorConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 843,
+      "length": 71,
+      "value": "\"drivekit-stolen-vehicle-locator-buffered-beacons-for-high-freq-report\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-stolen-vehicle-locator\/DriveKitStolenVehicleLocatorConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 951,
+      "length": 51,
+      "value": "\"drivekit-stolen-vehicle-locator-high-freq-beacons\""
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-stolen-vehicle-locator\/DriveKitStolenVehicleLocatorConstants.swift",
+      "kind": "StringLiteral",
+      "offset": 1052,
       "length": 44,
       "value": "\"drivekit-stolen-vehicle-locator-monitoring\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-stolen-vehicle-locator\/DriveKitStolenVehicleLocatorConstants.swift",
       "kind": "StringLiteral",
-      "offset": 810,
+      "offset": 1138,
       "length": 41,
       "value": "\"drivekit-stolen-vehicle-locator-ranging\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-stolen-vehicle-locator\/DriveKitStolenVehicleLocatorConstants.swift",
       "kind": "StringLiteral",
-      "offset": 1143,
+      "offset": 1476,
       "length": 49,
       "value": "\"drivekit-stolen-vehicle-locator-beacon-location\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-stolen-vehicle-locator\/DriveKitStolenVehicleLocatorConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1582,
+      "offset": 1915,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-stolen-vehicle-locator\/DriveKitStolenVehicleLocatorConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1621,
+      "offset": 1954,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-stolen-vehicle-locator\/DriveKitStolenVehicleLocatorConstants.swift",
       "kind": "IntegerLiteral",
-      "offset": 1682,
+      "offset": 2015,
       "length": 6,
       "value": "21600"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-stolen-vehicle-locator\/DriveKitStolenVehicleLocatorConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2098,
+      "length": 2,
+      "value": "60"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-stolen-vehicle-locator\/DriveKitStolenVehicleLocatorConstants.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2180,
+      "length": 3,
+      "value": "900"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-stolen-vehicle-locator\/DriveKitStolenVehicleLocator.swift",

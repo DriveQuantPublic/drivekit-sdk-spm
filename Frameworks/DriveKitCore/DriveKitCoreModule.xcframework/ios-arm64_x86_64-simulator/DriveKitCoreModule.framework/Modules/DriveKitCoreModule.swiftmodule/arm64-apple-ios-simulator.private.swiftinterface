@@ -589,6 +589,10 @@ public enum SmartphoneDataUtils {
   @objc public init(proximityUuid: Swift::String)
   required public init(json: DriveKitNetworkingModule::SwiftyJSON)
   public func toJSON() -> [Swift::String : Any]
+  @objc override dynamic public func isEqual(_ object: Any?) -> Swift::Bool
+  @objc override dynamic public var hash: Swift::Int {
+    @objc get
+  }
   @objc deinit
 }
 @_hasMissingDesignatedInitializers public class WhereReference<T, R> where T : DriveKitCoreModule::DKUnmanagedObject {
@@ -710,6 +714,8 @@ public protocol DKStolenVehicleLocatorModule : DriveKitCoreModule::DKBaseModule 
   func stopPerformanceMode()
   func beaconsToIgnoreUpdate(beacons: [DriveKitCoreModule::BeaconData])
   func getConfig() -> DriveKitCoreModule::DKConfigStolenVehicleLocator
+  func getBeaconLocationRequestIdentifierPrefix() -> Swift::String
+  func processBeaconLocationRequestResponse(data: Foundation::Data?)
 }
 extension UIKit::UIDevice {
   @_Concurrency::MainActor @preconcurrency public var modelIdentifier: Swift::String {
@@ -932,6 +938,9 @@ public protocol RequestDelegate {
 }
 extension DriveKitCoreModule::RequestDelegate {
   public func convertToType<T>(data: Foundation::Data?) -> T? where T : Swift::Decodable, T : Swift::Encodable
+}
+extension Swift::Optional where Wrapped == Foundation::Data {
+  public func convertToType<T>() -> T? where T : Swift::Decodable, T : Swift::Encodable
 }
 @objc public enum RequestError : Swift::Int {
   case wrongUrl

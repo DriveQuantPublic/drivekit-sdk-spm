@@ -1,10 +1,3 @@
 framework module DriveKitBeaconUtilsModule {
-  umbrella header "DriveKitBeaconUtilsModule.h"
-  export *
-
-  module * { export * }
-}
-
-module DriveKitBeaconUtilsModule.Swift {
   header "DriveKitBeaconUtilsModule-Swift.h"
 }
