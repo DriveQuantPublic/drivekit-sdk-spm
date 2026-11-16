@@ -10,7 +10,7 @@
 		</data>
 		<key>ios-arm64/DriveKitRegionMonitoringUtilsModule.framework/Info.plist</key>
 		<data>
-		8saEJEYUraMEodqiWsJLR+9tKkg=
+		coOktrjjdUl4Qg+IOdIxA+8JVOM=
 		</data>
 		<key>ios-arm64/DriveKitRegionMonitoringUtilsModule.framework/Modules/DriveKitRegionMonitoringUtilsModule.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
@@ -34,11 +34,11 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitRegionMonitoringUtilsModule.framework/DriveKitRegionMonitoringUtilsModule</key>
 		<data>
-		21JfIXLxIGBer5cyFEhWSYUw2Ko=
+		5YntyprDjdyXN+AQSsx/vdiJqE0=
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitRegionMonitoringUtilsModule.framework/Info.plist</key>
 		<data>
-		xbTFCkXGhcySfNBPwY1UYOz6B6E=
+		J9+KMyOk5mKvRudEuHj7EKGqLiI=
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitRegionMonitoringUtilsModule.framework/Modules/DriveKitRegionMonitoringUtilsModule.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/DriveKitRegionMonitoringUtilsModule.framework/_CodeSignature/CodeResources</key>
 		<data>
-		85F6LNm9IgNoUZpRADatZPuQqc0=
+		LnFkWbhW68lYNsXTFPFaLU1tozM=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -94,7 +94,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			add7z7ansVdxgWSTXohQg4vB+cbfrdFyJJFNs9pI2iY=
+			/0RBMplpMCf3aU9RLnL/+O+QeGejYAyvRLO8J+SoQjM=
 			</data>
 		</dict>
 		<key>ios-arm64/DriveKitRegionMonitoringUtilsModule.framework/Modules/DriveKitRegionMonitoringUtilsModule.swiftmodule/arm64-apple-ios.abi.json</key>
@@ -136,14 +136,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Iw6NYdUzBmq/LcabDt6rOt+bfV03+scpbTprRNGvsZc=
+			KrtLxx2BHrMRWZ1dZ708Z/YY5ZQmYHc4KzL2kfwFe9k=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/DriveKitRegionMonitoringUtilsModule.framework/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			kedcJ2oO2YtvsvyCrIInttgHEMR32N+wnR53jibPChQ=
+			K8RtzTWEr3AR+79m9RcsA6flSuA26Ez1S71CJPJuXWY=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/DriveKitRegionMonitoringUtilsModule.framework/Modules/DriveKitRegionMonitoringUtilsModule.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
@@ -213,7 +213,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			c0FqRKRrjWBQCgV53lOVvkQpd08ZiSPIEHtYp0ifaHQ=
+			3Cqv6TUglilu9uZVDb5UzVRElaWKPQS5RZOKbxZChNk=
 			</data>
 		</dict>
 	</dict>

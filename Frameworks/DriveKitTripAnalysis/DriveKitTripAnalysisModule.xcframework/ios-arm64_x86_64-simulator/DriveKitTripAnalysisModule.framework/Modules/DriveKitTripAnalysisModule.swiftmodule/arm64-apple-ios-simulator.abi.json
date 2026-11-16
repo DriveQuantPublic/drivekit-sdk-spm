@@ -26104,56 +26104,63 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/recorder\/StartingState.swift",
       "kind": "IntegerLiteral",
-      "offset": 394,
+      "offset": 429,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/recorder\/StartingState.swift",
+      "kind": "IntegerLiteral",
+      "offset": 469,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/recorder\/StartingState.swift",
       "kind": "IntegerLiteral",
-      "offset": 434,
+      "offset": 509,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/recorder\/StartingState.swift",
       "kind": "FloatLiteral",
-      "offset": 472,
+      "offset": 547,
       "length": 4,
       "value": "15.0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/recorder\/StartingState.swift",
       "kind": "IntegerLiteral",
-      "offset": 511,
+      "offset": 586,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/recorder\/StartingState.swift",
       "kind": "BooleanLiteral",
-      "offset": 574,
+      "offset": 649,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/recorder\/StartingState.swift",
       "kind": "BooleanLiteral",
-      "offset": 612,
+      "offset": 687,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/recorder\/StartingState.swift",
       "kind": "IntegerLiteral",
-      "offset": 644,
+      "offset": 719,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/recorder\/StartingState.swift",
       "kind": "Array",
-      "offset": 799,
+      "offset": 874,
       "length": 2,
       "value": "[]"
     },
@@ -26433,35 +26440,35 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/autostart\/GeoZoneStartManager.swift",
       "kind": "StringLiteral",
-      "offset": 7460,
+      "offset": 7574,
       "length": 110,
       "value": "\"^(\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/autostart\/GeoZoneStartManager.swift",
       "kind": "StringLiteral",
-      "offset": 7509,
+      "offset": 7623,
       "length": 1,
       "value": "\"|\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/autostart\/GeoZoneStartManager.swift",
       "kind": "StringLiteral",
-      "offset": 7563,
+      "offset": 7677,
       "length": 1,
       "value": "\")[01]$\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/autostart\/GeoZoneStartManager.swift",
       "kind": "StringLiteral",
-      "offset": 7601,
+      "offset": 7715,
       "length": 54,
       "value": "\"^\""
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/autostart\/GeoZoneStartManager.swift",
       "kind": "StringLiteral",
-      "offset": 7649,
+      "offset": 7763,
       "length": 1,
       "value": "\"[01]$\""
     },
@@ -27574,7 +27581,7 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/recorder\/RecorderStateManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 23877,
+      "offset": 24186,
       "length": 1,
       "value": "0"
     },
@@ -28827,28 +28834,28 @@
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/recorder\/RecorderState.swift",
       "kind": "IntegerLiteral",
-      "offset": 760,
+      "offset": 805,
       "length": 8,
       "value": "1"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/recorder\/RecorderState.swift",
       "kind": "IntegerLiteral",
-      "offset": 770,
+      "offset": 815,
       "length": 7,
       "value": "2"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/recorder\/RecorderState.swift",
       "kind": "IntegerLiteral",
-      "offset": 779,
+      "offset": 824,
       "length": 8,
       "value": "3"
     },
     {
       "filePath": "\/Users\/vagrant\/git\/drivekit-trip-analysis\/service\/recorder\/RecorderState.swift",
       "kind": "IntegerLiteral",
-      "offset": 789,
+      "offset": 834,
       "length": 7,
       "value": "4"
     },
